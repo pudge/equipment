@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <base href="http://pudge.net/tunes/equipment/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- https://datatables.net/download/ -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/b-1.5.6/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./equipment/style.css">
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/dt-1.10.18/b-1.5.6/datatables.min.js"></script>
+    <script type="text/javascript"src="./equipment/data.js"></script>
+    <script type="text/javascript"src="./equipment/code.js"></script>
+
+    <script type="text/javascript">$(document).ready( function() { equipmentInit(); modalInit(); } );</script>
+
+    <title>Pudge&rsquo;s Music Equipment 🎸🤘🏼</title>
+  </head>
+  <body>
+    <div id="pic_modal" class="modal">
+        <div id="pic_caption"></div>
+        <span id="pic_close">&times;</span>
+        <img class="modal-content" id="pic_img">
+    </div>
+
+    <div id="container" style="width:100%; padding-left:12pt; padding-right:12pt; padding-top:12pt">
+        <span class="h2">Pudge&rsquo;s Music Equipment 🎸🤘🏼</span>
+        <span class="h6 float-right">Pics: <a class="pic_modalize" onclick="picClick(this, event); return false;" alt="Pudge&rsquo;s Studio" href="./images/studio.jpg">Studio</a><!--  | <a class="pic_modalize" onclick="picClick(this, event); return false;" alt="Pudge&rsquo;s Office" href="./images/studio.jpg">Office</a> --></span>
+        <table id="equipment" class="display cell-border compact hover order-column row-border stripe" style="width:100%"></table>
+    </div>
+
+    <p style="padding-top:1em">Last modified <span id="lastModified">25 October 2021</span>.</p>
+  </body>
+</html>
