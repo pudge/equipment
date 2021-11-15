@@ -1,4 +1,4 @@
-var lastModified = new Date("2021-11-13T12:00:00+0000");
+var lastModified = new Date("2021-11-15T12:00:00+0000");
 var equipment_data = {};
 var equipment = [
     {
@@ -165,7 +165,7 @@ var equipment = [
         category: 'Instruments',
         type: 'Bass Guitar',
         year: '2021',
-        notes: ['MSS2-4-BLK', 'Slinky Bass 2850', 'GTSA-GTRBASS'],
+        notes: ['MSS2-4-BLK', 'Slinky Bass 2850', 'SGR-6B'],
         link: 'https://www.schecterguitars.com/bass/hellraiser-extreme-2013-11-07/hellraiser-extreme-5-detail',
         image: true,
         serial: 'W21052189',
@@ -645,15 +645,25 @@ var equipment = [
     },
 
     {
-        make: 'Gator',
-        model: 'GTSA-GTRBASS',
+        make: 'Schecter',
+        model: 'SGR-6B',
         category: 'Stands etc.',
         type: 'Instrument Case',
         year: '2021',
         notes: ['bass guitar'],
-        link: 'https://www.gatorcases.com/products/guitar/instrument-bassguitar/tsa-ata-guitar-cases/tsa-guitar/bass-guitar-case-gtsa-gtrbass/',
+        link: 'https://www.schecterguitars.com/accessories/bass-cases/sgr-6b-c-shape-bass-hardcase-detail',
         image: true,
     },
+//     {
+//         make: 'Gator',
+//         model: 'GTSA-GTRBASS',
+//         category: 'Stands etc.',
+//         type: 'Instrument Case',
+//         year: '2021',
+//         notes: ['bass guitar'],
+//         link: 'https://www.gatorcases.com/products/guitar/instrument-bassguitar/tsa-ata-guitar-cases/tsa-guitar/bass-guitar-case-gtsa-gtrbass/',
+//         image: true,
+//     },
     {
         make: 'Gator',
         model: 'GC-ELECTRIC-A',
