@@ -22,9 +22,12 @@ function makeLink(text, link) {
   return '<a href="'+link+'">'+text+'<\/a>';
 }
 
-function linkShow(acc, text) {
+function linkShow(acc, text, other) {
   if (!text) {
     text = [acc, equipment_data[acc]['type']].join(' ');
+  }
+  else if (!acc && other) {
+    return '<span title="' + other + '">' + text + '</span>';
   }
   return '<a href="#" onclick="doShow(\''+ acc + '\'); return false">' + text + '</a>';
 }
@@ -38,13 +41,24 @@ function doShow(item) {
 }
 
 function linkItNotes(nTd, sData, oData, iRow, iCol) {
-  var thisData = Array.isArray(sData) ? sData : [sData];
+  var thisData = Array.isArray(sData) ? sData : [sData].filter(x => x);
+  if (oData['not_mine']) {
+    thisData.push('NOTMINE');
+  }
+  else if (oData['hide']) {
+    thisData.push('HIDDEN');
+  }
   $(nTd).html(oData['notes'] = thisData.map(x => {
-    var subData = x === 'LINKME'
-      ? linkShow(oData['model'], '\u{1F517}')
+    var subData =
+      x === 'LINKME'
+        ? linkShow(oData['model'], '\u{1F517}')
+      : x === 'NOTMINE'
+        ? linkShow('', '\u{1F91D}', 'holding for a friend')
+      : x === 'HIDDEN'
+        ? linkShow('', '\u{1F977}', 'hidden')
       : equipment_data[x]
         ? linkShow(x)
-        : x;
+      : x;
       //? [equipment_data[x]['make'], x, equipment_data[x]['type']].map(y => linkHtml(y)).join(' ')
     return linkHtml(subData);
   }).join(', '));
@@ -85,7 +99,7 @@ function equipmentInit() {
       }
     }
 
-    if (x['hide']) {
+    if (x['hide'] || x['not_mine']) {
       removeElements.push(index);
     }
   });
@@ -93,7 +107,7 @@ function equipmentInit() {
   equipment.forEach(function(x, index, object) {
     if (x['notes']) {
       var thisData = Array.isArray(x['notes']) ? x['notes'] : [x['notes']];
-      thisData.forEach(y => { if (links[y]) { foundNote[y] = 1 } });
+      thisData.forEach(y => { if (equipment_data[y]) { foundNote[y] = 1 } });
     }
   });
 
@@ -129,6 +143,7 @@ function equipmentInit() {
       { data: 'notes', title: 'Notes', createdCell: linkItNotes, defaultContent: '', orderable: false },
     ],
     order: [[ 3, 'asc' ], [ 0, 'asc' ], [ 1, 'asc' ]],
+    //aaSorting: [],
     data: equipment,
     paging: false,
     search: { search: anchorText },
@@ -166,7 +181,7 @@ function equipmentInit() {
             column_d
               .search( val ? '^'+val+'$' : '', true, false )
               .draw();
-            drawDropdowns(i);
+            //drawDropdowns(i);
             columns.filter(j => i != j).forEach(j => drawDropdowns(j));
           });
         drawDropdowns(i);
