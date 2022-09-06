@@ -1,4 +1,4 @@
-var lastModified = new Date("2021-11-21T12:00:00+0000");
+var lastModified = new Date("2022-07-24T12:00:00+0000");
 var equipment_data = {};
 var equipment = [
     {
@@ -7,12 +7,13 @@ var equipment = [
         category: 'Instruments',
         type: 'Acoustic Guitar',
         year: '2012',
-        notes: ['AA Lifespan 2.0 MA550T', 'M17SS-DBR', '445', 'F1 Aura+'],
+        notes: ['AA Lifespan 2.0 MA550T', 'Acetal Standard', 'S1', 'C1K', 'M17SS-DBR', '445', 'F1 Aura+'],
         link: 'https://www.martinguitar.com/guitars/discontinued-guitars/hd-28e-retro/',
         image: true,
         serial: '1633689',
         production_year: 'October 2012',
         location: 'Nazareth, Pennsylvania, USA',
+        featured: true,
     },
     {
         make: 'Martin',
@@ -20,7 +21,7 @@ var equipment = [
         category: 'Instruments',
         type: 'Acoustic Guitar',
         year: '2000',
-        notes: ['AA Lifespan 2.0 MA550T', 'M17SS-DBR', 'Ellipse Matrix Blend'],
+        notes: ['AA Lifespan 2.0 MA550T', 'Acetal Standard', 'S1', 'C1K', 'M17SS-DBR', 'Ellipse Matrix Blend'],
         image: true,
         serial: '728931',
         production_year: 'February 2000',
@@ -32,10 +33,11 @@ var equipment = [
         category: 'Instruments',
         type: 'Acoustic Guitar',
         year: '2018',
-        notes: ['AA Lifespan 2.0 MA530T', 'Mahogany'],
+        notes: ['AA Lifespan 2.0 MA530T', 'Acetal Standard', 'S1', 'C1K', 'Mahogany'],
         link: 'https://travelerguitar.com/products/escape-mark-3-mahogany',
         image: true,
         serial: 'M3-02910',
+        featured: true,
     },
     {
         make: 'Yamaha',
@@ -84,11 +86,12 @@ var equipment = [
         category: 'Instruments',
         type: 'Electric Guitar',
         year: '2003',
-        notes: ['EXL110', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A'],
+        notes: ['EXL110', 'Acetal Standard', 'S1', 'C1K', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A'],
         link: 'https://line6.com/legacy/variax500',
         image: true,
         serial: '03058431',
         location: 'Korea',
+        featured: true,
     },
     {
         make: 'Epiphone',
@@ -96,10 +99,11 @@ var equipment = [
         category: 'Instruments',
         type: 'Electric Guitar',
         year: '1987',
-        notes: ['EXL110', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A', 'Spyder', 'Fat 50&rsquo;s'], // , 'Strat-style'
+        notes: ['EXL110', 'Acetal Standard', 'S1', 'C1K', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A', 'Spyder', 'Fat 50&rsquo;s'], // , 'Strat-style'
         image: true,
         serial: '1103087',
         location: 'Samick, Korea',
+        featured: true,
     },
     {
         make: 'Epiphone',
@@ -108,11 +112,12 @@ var equipment = [
         type: 'Electric Guitar',
         year: '2021',
         link: 'https://www.epiphone.com/Guitar/EPINA3562/Les-Paul-Standard-60s/Ebony',
-        notes: ['EXL110', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A', 'Standard \'60s Quilt Top', 'Translucent Blue'],
+        notes: ['EXL110', 'Acetal Standard', 'S1', 'C1K', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A', 'Standard \'60s Quilt Top', 'Translucent Blue'],
         image: true,
         serial: '21021527363', // local serial: 27363
         production_year: 'February 2021',
         location: 'Qingdao (electric), China',
+        featured: true,
     },
     {
         make: 'Washburn',
@@ -120,7 +125,7 @@ var equipment = [
         category: 'Instruments',
         type: 'Electric Guitar',
         year: '2002',
-        notes: ['EXL110', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A'],
+        notes: ['EXL110', 'Acetal Standard', 'S1', 'C1K', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A'],
         link: 'https://www.washburn.com/instrument-style/double-cut-solid-body/',
         image: true,
         serial: '2110103',
@@ -144,11 +149,12 @@ var equipment = [
         category: 'Instruments',
         type: 'Bass Guitar',
         year: '2004',
-        notes: ['Slinky Bass 2834', 'MSS3-BRN', 'Straplok'],
+        notes: ['Slinky Bass 2834', 'Tortex Standard', 'MSS3-BRN', 'Straplok'],
         link: 'https://line6.com/legacy/variaxbass700',
         image: true,
         serial: '04101739',
         location: 'Korea',
+        featured: true,
     },
     {
         make: 'Ibanez',
@@ -156,7 +162,7 @@ var equipment = [
         category: 'Instruments',
         type: 'Bass Guitar',
         year: '1986',
-        notes: ['Slinky Bass 2834', 'MSS3-BRN', 'Straplok'],
+        notes: ['Slinky Bass 2834', 'Tortex Standard', 'MSS3-BRN', 'Straplok'],
         link: 'https://www.ibanez.com/usa/products/category/electric_basses/',
         image: true,
         serial: 'A865503', // local serial: 5503
@@ -169,12 +175,13 @@ var equipment = [
         category: 'Instruments',
         type: 'Bass Guitar',
         year: '2021',
-        notes: ['Slinky Bass 2850', 'MSS2-4-BLK', 'Straplok', 'SGR-6B'],
+        notes: ['Slinky Bass 2850', 'Tortex Standard', 'MSS2-4-BLK', 'Straplok', 'SGR-6B'],
         link: 'https://www.schecterguitars.com/bass/hellraiser-extreme-2013-11-07/hellraiser-extreme-5-detail',
         image: true,
         serial: 'W21052189',
         production_year: '2021',
         location: 'South Korea',
+        featured: true,
     },
 //     {
 //         make: 'Schecter',
@@ -195,10 +202,11 @@ var equipment = [
         category: 'Instruments',
         type: 'Mandolin',
         year: '2018',
-        notes: ['A250', 'M19PR-TAN', 'Mandolin Twin'],
+        notes: ['A250', 'Golden Gate MP-12', 'C5-R', 'C5K', 'M19PR-TAN', 'Mandolin Twin'],
         link: 'https://www.northfieldinstruments.com/thecalhoun',
         image: true,
         serial: 'FT180030',
+        featured: true,
     },
     {
         make: 'Framus',
@@ -206,9 +214,10 @@ var equipment = [
         category: 'Instruments',
         type: 'Banjo',
         year: '1968', // ?
-        notes: ['EXL110', 'PM14-DBR', 'C-3770 Trailpak II', 'Irish Tenor tuning: 13/17/26/36'],
+        notes: ['EXL110', 'Nylon Standard', 'C5-R', 'C5K', 'PM14-DBR', 'C-3770 Trailpak II', 'Irish Tenor tuning: 13/17/26/36'],
         image: true,
         serial: '27726-680',
+        featured: true,
     },
     {
         make: 'Wm. Schmick',
@@ -233,6 +242,7 @@ var equipment = [
         image: true,
         serial: '12060058',
         location: 'China',
+        featured: true,
     },
 
     {
@@ -240,18 +250,22 @@ var equipment = [
         model: 'Marine Band Deluxe',
         category: 'Instruments',
         type: 'Harmonica',
-        notes: ['G'],
+        notes: ['G', 'FlexRack'],
+        year: '2020',
         link: 'https://www.hohner.de/en/instruments/harmonicas/diatonic/marine-band/marine-band-deluxe',
         image: true,
+        featured: true,
     },
     {
         make: 'Hohner',
         model: 'Special 20',
         category: 'Instruments',
         type: 'Harmonica',
-        notes: ['A', 'C', 'D', 'E', 'F', 'G'],
+        notes: ['A', 'C', 'D', 'E', 'F', 'G', 'FlexRack'],
+        year: 'various',
         link: 'https://www.hohner.de/en/instruments/harmonicas/diatonic/progressive/special-20',
         image: true,
+        featured: true,
     },
     {
         make: 'Yamaha',
@@ -335,6 +349,16 @@ var equipment = [
         notes: ['6&quot;', '7.25&quot;'],
         image: true,
     },
+    {
+        make: 'Meinl',
+        model: 'JC50AB-B',  
+        category: 'Instruments',
+        type: 'Cajon',
+        year: '2022',
+        notes: ['Snare Cajon 50, Baltic Birch, Almond Birch'],
+        link: 'https://meinlpercussion.com/en/products/jc50ab-b-m5746.html',
+        image: true,
+    },
 
     {
         make: 'Line 6',
@@ -344,6 +368,7 @@ var equipment = [
         year: '2010',
         link: 'https://line6.com/legacy/podx3live',
         image: true,
+        featured: true,
     },
     {
         make: 'BOSS',
@@ -379,7 +404,9 @@ var equipment = [
         type: 'Amplifier',
         year: '2021',
         link: 'https://usa.yamaha.com/products/musical_instruments/guitars_basses/amps_accessories/thr-ii/',
+        notes: ['G10'],
         image: true,
+        featured: true,
     },
     {
         make: 'Line 6',
@@ -390,6 +417,7 @@ var equipment = [
         year: '2021',
         link: 'https://line6.com/relay-wireless/g10-g10s/',
         image: true,
+        featured: true,
     },
     {
         make: 'Line 6',
@@ -435,7 +463,6 @@ var equipment = [
         year: '2021',
         link: 'https://www.ehx.com/products/deluxe-bass-big-muff-pi',
         image: true,
-        not_mine: true,
     },
     {
         make: 'Digitech',
@@ -452,7 +479,7 @@ var equipment = [
         type: 'Amplifier',
         year: '2020',
         link: 'https://www.blackstaramps.com/uk/products/fly-3',
-        image: true
+        image: true,
     },
 
     {
@@ -775,6 +802,7 @@ var equipment = [
         model: 'Harmonica Case',
         category: 'Stands etc.',
         type: 'Instrument Case',
+        year: '2000',
         link: 'https://www.hohner.de/en/instruments/harmonicas/accessories/harmonica-case',
         image: true,
     },
@@ -858,6 +886,15 @@ var equipment = [
         link: 'https://www.sagamusic.com/shop/fretted-instrument-accessories/golden-gate-accessories/golden-gate-mp-12-deluxe-tortoise-style-flat-pick-rounded-triangle-extra-stiff-dozen/',
         image: true,
     },
+    {
+        make: 'Thalia',
+        model: 'Pick Puck',
+        category: 'Accessories',
+        type: 'Guitar Accessory',
+        year: '2022',
+        link: 'https://www.thaliacapos.com/collections/pick-pucks',
+        image: true,
+    },
 
     {
         make: 'Shubb',
@@ -915,7 +952,7 @@ var equipment = [
         category: 'Accessories',
         type: 'Guitar Accessory',
         notes: 'ebow',
-        year: '2000s',
+        year: '2000',
         image: true,
     },
 
@@ -1255,6 +1292,7 @@ var links = {
     'Studio Projects': 'http://www.studioprojects.com/',
 //     'Tama': 'https://www.tama.com/',
     'Tapco': 'https://www.mackie.com/',
+    'Thalia': 'https://www.thaliacapos.com/collections/pick-pucks',
     'Traveler': 'https://travelerguitar.com/',
     'Warwick': 'https://www.warwick.de/en/Warwick-.html',
     'Washburn': 'https://www.washburn.com/',

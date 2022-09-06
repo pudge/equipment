@@ -1,5 +1,6 @@
-var columns = [0, 1, 3, 4];
-var columnMap = { "1": "2" };
+var columns = [0, 1, 2, 3];
+var columnMap = { "0": "5" };
+var columnOrder = [[ 1, 'asc' ], [ 2, 'asc' ], [ 0, 'asc' ]];
 
 var anchorText;
 
@@ -10,7 +11,7 @@ function linkIt(nTd, sData, oData, iRow, iCol, img) {
   }
 
   $(nTd).html(data.map(function(x) {
-    return img + linkHtml(x);
+    return img + faCat(oData['category'], iCol) + linkHtml(x);
   }).join(', '));
 }
 
@@ -64,11 +65,28 @@ function linkItNotes(nTd, sData, oData, iRow, iCol) {
   }).join(', '));
 }
 
+function faCat(cat, iCol) {
+  return '';
+  if (iCol == 1)
+    return '';
+  var faImg =
+    cat == 'Instruments'
+      ? 'guitar'
+      : cat == 'Accessories'
+        ? 'record-vinyl'
+        : cat == 'Hardware'
+          ? 'headphones'
+          : cat == 'Stands etc.'
+            ? 'suitcase'
+            : 'circle-question';
+  return '<i class="fas fa-' + faImg + '">&nbsp;</i>'
+}
+
 function linkItModel(nTd, sData, oData, iRow, iCol) {
   var img = imgIt(nTd, sData, oData, iRow, iCol);
   if (img.length) { img = img + '&nbsp;'  }
   if (oData['link']) {
-    $(nTd).html(img + makeLink(sData, oData['link']));
+    $(nTd).html(img + faCat(oData['category'], iCol) + makeLink(sData, oData['link']));
   }
   else {
     linkIt(nTd, sData, oData, iRow, iCol, img);
@@ -82,15 +100,18 @@ function imgIt(nTd, sData, oData, iRow, iCol) {
     if (oData['image'] === true) {
       oData['image'] = name + '.jpg';
     }
-    return '<a id="pic_' + name + '" onclick="picClick(this, event); return false" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '\u{1F5BC}' + '<\/a>';
+    return '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '<i class="fas fa-image fa-fw"></i></a>';
+
   }
-  return '';
+  return '<i class="fas fa-fw"></i>';
 }
 
 function equipmentInit() {
   var removeElements = [];
   var foundNote = {};
   equipment.forEach(function(x, index, object) {
+    x['x'] = '';
+    x['featured'] = x['featured'] ? 'featured' : '';
     if (x['model']) {
       equipment_data[x['model']] = x;
       if (x['link']) {
@@ -128,24 +149,36 @@ function equipmentInit() {
   var query_idx = uri.indexOf('?');
   var anchor_idx = uri.indexOf('#');
   var query = query_idx === -1 ? null : anchor_idx === -1 ? uri.substring(query_idx+1) : uri.substring(query_idx+1, anchor_idx);
-  anchorText = anchor_idx === -1 ? '' : unescape(uri.substring(anchor_idx+1));
+  anchorText = anchor_idx === -1 ? 'featured' : unescape(uri.substring(anchor_idx+1));
   if (query != 'hidden') {
     removeElements.reverse().forEach(x => equipment.splice(x, 1));
   }
 
   $('#equipment').DataTable( {
+//      fixedHeader: true,
+//      responsive: { details: { type: 'inline' } },
+//      responsive: true,
+    responsive: {
+      details: {
+        renderer: $.fn.dataTable.Responsive.renderer.listHidden()
+        //$.fn.dataTable.Responsive.renderer.tableAll()
+      }
+    },
     columns: [
-      { data: 'make', title: 'Make', createdCell: linkIt },
-      { data: 'model', title: 'Model', createdCell: linkItModel },
-      { data: 'category', title: 'Category', visible: false },
-      { data: 'type', title: 'Type' },
-      { data: 'year', title: 'Year', defaultContent: '-' },
-      { data: 'notes', title: 'Notes', createdCell: linkItNotes, defaultContent: '', orderable: false },
+      { responsivePriority: 10, data: 'model', title: 'Model', createdCell: linkItModel },
+      { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
+      { responsivePriority: 40, data: 'make', title: 'Make', createdCell: linkIt },
+      { responsivePriority: 80, data: 'year', title: 'Year', defaultContent: '-' },
+      { responsivePriority: 90, data: 'notes', title: 'Notes', className: 'none', createdCell: linkItNotes, defaultContent: '', orderable: false },
+      { responsivePriority: 98, data: 'category', title: 'Category', visible: false },
+      { responsivePriority: 99, data: 'featured', title: 'Featured', visible: false },
     ],
-    order: [[ 3, 'asc' ], [ 0, 'asc' ], [ 1, 'asc' ]],
+    scrollX: true,
+    order: columnOrder,
     //aaSorting: [],
     data: equipment,
     paging: false,
+    pageLength: 200,
     search: { search: anchorText },
     dom: "'<'dataTables_filter text-right'B>frtip",
     buttons: [
@@ -186,7 +219,8 @@ function equipmentInit() {
           });
         drawDropdowns(i);
       });
-    }
+    },
+    drawCallback: picInit,
   });
 }
 
@@ -214,6 +248,7 @@ function picClick(t, e) {
   modal.css('display', 'block');
   caption.html( $(t).attr('alt') );
   image.attr('src', $(t).attr('href') );
+  return false;
 }
 
 function modalInit() {
@@ -236,7 +271,7 @@ function modalInit() {
     image.css('height', 'auto');
 
     var win_height = $(window).height() - 150;
-    var win_width  = $(window).width() - 300;
+    var win_width  = $(window).width() - 25;
 
     var img_height = image.height();
     var img_width = image.width();
@@ -265,3 +300,15 @@ function modalInit() {
   });
 }
 
+function picInit() {
+  $('.pic_modalize:not([data-linked="1"]').each(function() {
+    $(this).click(function() { return picClick(this, event) });
+    $(this).attr('data-linked', 1);
+  });
+}
+
+$(document).ready(function() {
+  equipmentInit();
+  modalInit();
+  //picInit();
+});
