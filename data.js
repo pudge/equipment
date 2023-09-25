@@ -1,4 +1,4 @@
-var lastModified = new Date("2022-07-24T12:00:00+0000");
+var lastModified = new Date("2023-09-25T12:00:00+0000");
 var equipment_data = {};
 var equipment = [
     {
@@ -111,13 +111,26 @@ var equipment = [
         category: 'Instruments',
         type: 'Electric Guitar',
         year: '2021',
-        link: 'https://www.epiphone.com/Guitar/EPINA3562/Les-Paul-Standard-60s/Ebony',
+        link: 'https://www.epiphone.com/en-US/Electric-Guitar/EPINA3562/Ebony',
         notes: ['EXL110', 'Acetal Standard', 'S1', 'C1K', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A', 'Standard \'60s Quilt Top', 'Translucent Blue'],
         image: true,
         serial: '21021527363', // local serial: 27363
         production_year: 'February 2021',
         location: 'Qingdao (electric), China',
-        featured: true,
+    },
+    {
+        make: 'Epiphone',
+        model: 'SG Standard',
+        category: 'Instruments',
+        type: 'Electric Guitar',
+        year: '2023',
+        link: 'https://www.epiphone.com/en-US/Electric-Guitar/EPIJ1X839/Heritage-Cherry',
+        notes: ['EXL110', 'Heritage Cherry'],
+        image: true,
+        serial: '21021527363', // local serial: 27363
+        production_year: 'February 2021',
+        location: 'Qingdao (electric), China',
+        not_mine: true,
     },
     {
         make: 'Washburn',

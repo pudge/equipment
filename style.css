@@ -1,7 +1,7 @@
 body {
-    background-color: #282a36;
-    color: #f8f8f2;
-	font-family: karla, 'trebuchet ms', tahoma, sans-serif;
+    background-color: #21262C;
+    color: #F8F8F2;
+    font-family: karla, 'trebuchet ms', tahoma, sans-serif;
     font-size: 1em;
     margin: 1em;
 }
@@ -39,15 +39,15 @@ img.imgsmall {
 
 th { vertical-align: bottom }
 
-a:visited { color: #bd93f9 }
-a:link    { color: #bd93f9 }
-a:visited { color: #bd93f9 }
-a:link    { color: #bd93f9 }
+a:visited { color: #9580FF }
+a:link    { color: #9580FF }
+a:visited { color: #9580FF }
+a:link    { color: #9580FF }
 
-a.pic_modalize:link     { color: #50fa7b }
-a.pic_modalize:visited  { color: #50fa7b }
-a.pic_modalize:hover    { color: #50fa7b }
-a.pic_modalize:active   { color: #50fa7b }
+a.pic_modalize:link     { color: #8AFF80 }
+a.pic_modalize:visited  { color: #8AFF80 }
+a.pic_modalize:hover    { color: #8AFF80 }
+a.pic_modalize:active   { color: #8AFF80 }
 
 .dt-buttons button { font-size: 90% }
 
@@ -105,7 +105,7 @@ a.pic_modalize:active   { color: #50fa7b }
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
+    color: #F8F8F2;
     padding: 0;
     height: 50px;
 }
@@ -126,7 +126,7 @@ a.pic_modalize:active   { color: #50fa7b }
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: #F8F8F2;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -134,7 +134,7 @@ a.pic_modalize:active   { color: #50fa7b }
 
 #pic_close:hover,
 #pic_close:focus {
-    color: #bbb;
+    color: #414D58;
     text-decoration: none;
     cursor: pointer;
 }
