@@ -101,7 +101,6 @@ function imgIt(nTd, sData, oData, iRow, iCol) {
       oData['image'] = name + '.jpg';
     }
     return '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '<i class="fas fa-image fa-fw"></i></a>';
-
   }
   return '<i class="fas fa-fw"></i>';
 }
