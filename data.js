@@ -60,7 +60,7 @@ var equipment = [
         type: 'Acoustic Guitar',
         year: '2021',
         notes: ['AA Lifespan 2.0 MA550T', 'Ebony'],
-        link: 'https://www.epiphone.com/en-US/Guitar/EPIKWM803/Songmaker-DR-100/Ebony',
+        link: 'https://www.epiphone.com/en-US/Acoustic-Guitar/EPIKWM803/Ebony',
         image: true,
         serial: '', // TBD
         production_year: '',
@@ -112,11 +112,12 @@ var equipment = [
         type: 'Electric Guitar',
         year: '2021',
         link: 'https://www.epiphone.com/en-US/Electric-Guitar/EPINA3562/Ebony',
-        notes: ['EXL110', 'Acetal Standard', 'S1', 'C1K', 'M17SS-BLK', 'S-Locks', 'GC-ELECTRIC-A', 'Standard \'60s Quilt Top', 'Translucent Blue'],
+        notes: ['EXL110', 'Acetal Standard', 'S1', 'C1K', 'M17SS-BLK', 'S-Locks', 'Standard \'60s Quilt Top', 'Translucent Blue'],
         image: true,
         serial: '21021527363', // local serial: 27363
         production_year: 'February 2021',
         location: 'Qingdao (electric), China',
+        featured: true,
     },
     {
         make: 'Epiphone',
@@ -127,8 +128,8 @@ var equipment = [
         link: 'https://www.epiphone.com/en-US/Electric-Guitar/EPIJ1X839/Heritage-Cherry',
         notes: ['EXL110', 'Heritage Cherry'],
         image: true,
-        serial: '21021527363', // local serial: 27363
-        production_year: 'February 2021',
+        serial: '23051530731', // local serial: 30731
+        production_year: 'May 2023',
         location: 'Qingdao (electric), China',
         not_mine: true,
     },
@@ -623,6 +624,14 @@ var equipment = [
         type: 'Controller',
         year: '2004',
         notes: 'USB',
+        image: true,
+    },
+    {
+        make: 'IK Multimedia',
+        model: 'iRig',
+        category: 'Hardware',
+        type: 'Controller',
+        year: '2011',
         image: true,
     },
 
@@ -1282,6 +1291,7 @@ var links = {
     'Hercules': 'http://herculesstands.com/',
     'Hohner': 'https://www.hohner.de/',
     'Ibanez': 'https://www.ibanez.com/',
+    'IK Multimedia': 'https://www.ikmultimedia.com/',
     'Kamoa': 'https://kamoaukuleles.myshopify.com/',
     'K&amp;K': 'https://kksound.com/',
     'Kahler': 'https://www.kahlerusa.com/',
