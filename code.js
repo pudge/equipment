@@ -1,6 +1,7 @@
-var columns = [0, 1, 2, 3];
-var columnMap = { "0": "5" };
-var columnOrder = [[ 1, 'asc' ], [ 2, 'asc' ], [ 0, 'asc' ]];
+var columns = [0, 1, 2, 3, 4];
+var columnMap = { "1": "6" };
+var columnOrder = [[ 2, 'asc' ], [ 3, 'asc' ], [ 1, 'asc' ]];
+const equipmentOrig = structuredClone(equipment);
 
 var anchorText;
 
@@ -11,7 +12,7 @@ function linkIt(nTd, sData, oData, iRow, iCol, img) {
   }
 
   $(nTd).html(data.map(function(x) {
-    return img + faCat(oData['category'], iCol) + linkHtml(x);
+    return clipIt(iRow, iCol) + img + faCat(oData['category'], iCol) + linkHtml(x);
   }).join(', '));
 }
 
@@ -65,9 +66,20 @@ function linkItNotes(nTd, sData, oData, iRow, iCol) {
   }).join(', '));
 }
 
+function clipInfo(el, iRow) {
+  navigator.clipboard.writeText(JSON.stringify(equipmentOrig[iRow]));
+  el.classList.add('copying');
+  setTimeout(() => { el.classList.remove('copying') }, 500);
+}
+
+function clipIt(iRow, iCol) {
+  if (iCol != 1)
+    return '';
+  return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, ' + iRow + ')" title="copy info"></i>';
+}
+
 function faCat(cat, iCol) {
-  return '';
-  if (iCol == 1)
+  if (iCol != 1)
     return '';
   var faImg =
     cat == 'Instruments'
@@ -79,14 +91,14 @@ function faCat(cat, iCol) {
           : cat == 'Stands etc.'
             ? 'suitcase'
             : 'circle-question';
-  return '<i class="fas fa-' + faImg + '">&nbsp;</i>'
+  return '<i class="fas fa-' + faImg + ' fa-fw" title="' + cat + '">&nbsp;</i>'
 }
 
 function linkItModel(nTd, sData, oData, iRow, iCol) {
   var img = imgIt(nTd, sData, oData, iRow, iCol);
   if (img.length) { img = img + '&nbsp;'  }
   if (oData['link']) {
-    $(nTd).html(img + faCat(oData['category'], iCol) + makeLink(sData, oData['link']));
+    $(nTd).html(clipIt(iRow, iCol) + img + faCat(oData['category'], iCol) + makeLink(sData, oData['link']));
   }
   else {
     linkIt(nTd, sData, oData, iRow, iCol, img);
@@ -100,7 +112,7 @@ function imgIt(nTd, sData, oData, iRow, iCol) {
     if (oData['image'] === true) {
       oData['image'] = name + '.jpg';
     }
-    return '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '<i class="fas fa-image fa-fw"></i></a>';
+    return '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '<i class="fas fa-image fa-fw" title="picture"></i></a>';
   }
   return '<i class="fas fa-fw"></i>';
 }
@@ -164,6 +176,7 @@ function equipmentInit() {
       }
     },
     columns: [
+      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info">', createdCell: clipIt, orderable: false },
       { responsivePriority: 10, data: 'model', title: 'Model', createdCell: linkItModel },
       { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
       { responsivePriority: 40, data: 'make', title: 'Make', createdCell: linkIt },
@@ -172,20 +185,27 @@ function equipmentInit() {
       { responsivePriority: 98, data: 'category', title: 'Category', visible: false },
       { responsivePriority: 99, data: 'featured', title: 'Featured', visible: false },
     ],
+    //bStateSave: true,
     scrollX: true,
     order: columnOrder,
     //aaSorting: [],
     data: equipment,
+
     paging: false,
-    pageLength: 200,
     search: { search: anchorText },
-    dom: "'<'dataTables_filter text-right'B>frtip",
-    buttons: [
-      {
-        text: 'clear search',
-        action: function ( e, dt, node, config ) { doShow('') },
-      }
-    ],
+    language: { search: "" },
+    dom: 'fti',
+
+//     paging: false,
+//     pageLength: 200,
+//     search: { search: anchorText },
+//     dom: "'<'dataTables_filter text-right'B>frtip",
+//     buttons: [
+//       {
+//         text: 'clear search',
+//         action: function ( e, dt, node, config ) { doShow('') },
+//       }
+//     ],
 
     initComplete: function () {
       var month = {
@@ -202,21 +222,23 @@ function equipmentInit() {
       // create dropdown filters
       var table = this.api().table();
       table.columns(columns).every(function (i) {
-        var column = this;
-        var column_d = table.column(columnMap[i] || i);
-        var select = $('<select id="sel_' + i + '"></select><br>')
-          .prependTo( $(column.header()) )
-          .on( 'change', function () {
-            var val = $.fn.dataTable.util.escapeRegex(
-                $(this).val()
-            );
-            column_d
-              .search( val ? '^'+val+'$' : '', true, false )
-              .draw();
-            //drawDropdowns(i);
-            columns.filter(j => i != j).forEach(j => drawDropdowns(j));
-          });
-        drawDropdowns(i);
+        if (i != 0) {
+          var column = this;
+          var column_d = table.column(columnMap[i] || i);
+          var select = $('<select id="sel_' + i + '"></select><br>')
+            .prependTo( $(column.header()) )
+            .on( 'change', function () {
+              var val = $.fn.dataTable.util.escapeRegex(
+                  $(this).val()
+              );
+              column_d
+                .search( val ? '^'+val+'$' : '', true, false )
+                .draw();
+              //drawDropdowns(i);
+              columns.filter(j => i != j).forEach(j => drawDropdowns(j));
+            });
+          drawDropdowns(i);
+        }
       });
     },
     drawCallback: picInit,
@@ -306,8 +328,13 @@ function picInit() {
   });
 }
 
+function clearSearchInit() {
+  $('#equipment_filter').append('<i id="clear_search" class="fas fa-circle-xmark fa-fw" onclick="doShow(\'\')"></i>');
+}
+
 $(document).ready(function() {
   equipmentInit();
+  clearSearchInit();
   modalInit();
   //picInit();
 });
