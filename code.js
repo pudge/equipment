@@ -40,6 +40,8 @@ function doShow(item) {
   table.columns().search('').draw();
   columns.forEach(j => drawDropdowns(j))
   columns.forEach(function (i) { $('#sel_' + i).val('') });
+  // collapse child rows
+  table.rows('.parent').nodes().to$().find('td:first-child').trigger('click');
 }
 
 function linkItNotes(nTd, sData, oData, iRow, iCol) {
@@ -54,6 +56,8 @@ function linkItNotes(nTd, sData, oData, iRow, iCol) {
     var subData =
       x === 'LINKME'
         ? linkShow(oData['model'], '\u{1F517}')
+      : x === 'LINKEDME'
+        ? linkShow(oData['model'], '\u{1F578}')
       : x === 'NOTMINE'
         ? linkShow('', '\u{1F91D}', 'holding for a friend')
       : x === 'HIDDEN'
@@ -122,6 +126,7 @@ function equipmentInit() {
   var foundNote = {};
   equipment.forEach(function(x, index, object) {
     x['x'] = '';
+    x['reverse_notes'] = [];
     x['featured'] = x['featured'] ? 'featured' : '';
     if (x['model']) {
       equipment_data[x['model']] = x;
@@ -139,7 +144,17 @@ function equipmentInit() {
   equipment.forEach(function(x, index, object) {
     if (x['notes']) {
       var thisData = Array.isArray(x['notes']) ? x['notes'] : [x['notes']];
-      thisData.forEach(y => { if (equipment_data[y]) { foundNote[y] = 1 } });
+      var found = false;
+      thisData.forEach(y => {
+        if (equipment_data[y]) {
+          foundNote[y] = true;
+          found = true;
+          equipment_data[y]['reverse_notes'].push(x['model']);
+        }
+      });
+      if (found === true) {
+        thisData.unshift('LINKEDME');
+      }
     }
   });
 
@@ -184,6 +199,7 @@ function equipmentInit() {
       { responsivePriority: 90, data: 'notes', title: 'Notes', className: 'none', createdCell: linkItNotes, defaultContent: '', orderable: false },
       { responsivePriority: 98, data: 'category', title: 'Category', visible: false },
       { responsivePriority: 99, data: 'featured', title: 'Featured', visible: false },
+      { responsivePriority: 91, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
     ],
     //bStateSave: true,
     scrollX: true,

@@ -482,6 +482,8 @@ var equipment = [
         type: 'Pedal',
         year: '2005',
         image: true,
+        notes: 'sold 2023',
+        hide: true,
     },
     {
         make: 'Blackstar',
@@ -1144,6 +1146,15 @@ var equipment = [
 //         type: 'Strings',
 //         notes: ['light', '.010-.038', 'phosphor bronze'],
 //         link: 'https://www.daddario.com/products/guitar/mandolin/phosphor-bronze-mandolin/ej73-mandolin-phosphor-bronze-light-10-38/',
+//         image: true,
+//     },
+//     {
+//         make: 'D&rsquo;Addario',
+//         model: 'EJ88S',
+//         category: 'Accessories',
+//         type: 'Strings',
+//         notes: ['ukulele', 'soprano', '.024, .030, .036, .026', 'nylon'],
+//         link: 'https://www.daddario.com/products/guitar/ukulele/nyltech-ukulele/ej88s-nyltech-ukulele-soprano/',
 //         image: true,
 //     },
     {
