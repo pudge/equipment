@@ -278,7 +278,7 @@ var equipment = [
       "category" : "Instruments",
       "featured" : true,
       "image" : true,
-      "link" : "https://www.schecterguitars.com/bass/hellraiser-extreme-2013-11-07/hellraiser-extreme-5-detail",
+      "link" : "https://www.schecterguitars.com/Hellraiser-Extreme-5?quantity=1&custitem_color_master_list=438",
       "location" : "South Korea",
       "make" : "Schecter",
       "model" : "Hellraiser Extreme-5",
@@ -454,7 +454,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "image" : true,
-      "link" : "https://zildjian.com/18-planet-z-crash-ride.html",
+      "link" : "https://zildjian.com/products/18-planet-z-crash-ride",
       "make" : "Zildjian",
       "model" : "Planet Z 18” Crash Ride",
       "type" : "Cymbal",
@@ -464,7 +464,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "image" : true,
-      "link" : "https://zildjian.com/13-planet-z-hihats-pair.html",
+      "link" : "https://zildjian.com/products/planet-z-hihats?variant=45264675406116",
       "make" : "Zildjian",
       "model" : "Planet Z 13” Hi-Hat",
       "type" : "Cymbal",
@@ -510,7 +510,7 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "link" : "https://herculesstands.com/us/products/microphone/boom/ms531b/",
+      "link" : "http://herculesstands.com/us/products/microphone/boom/ms531b/",
       "make" : "Hercules",
       "model" : "MS531B",
       "type" : "Microphone Stand",
@@ -519,7 +519,7 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "link" : "https://www.gatorframeworks.com/products/telescoping-boom-podcast-bass-drum-and-amp-mic-stand-gfw-mic-0822/",
+      "link" : "https://gatorco.com/product/telescoping-boom-podcast-bass-drum-and-amp-mic-stand-gfw-mic-0822/",
       "make" : "Gator",
       "model" : "GFW-MIC-0822",
       "type" : "Microphone Stand",
@@ -538,7 +538,7 @@ var equipment = [
       "category" : "Stands etc.",
       "image" : true,
       "instrument" : "bass guitar",
-      "link" : "https://www.schecterguitars.com/accessories/bass-cases/sgr-6b-c-shape-bass-hardcase-detail",
+      "link" : "https://www.schecterguitars.com/sgr-6b-c-shape-bass-hardcase",
       "make" : "Schecter",
       "model" : "SGR-6B",
       "notes" : [
@@ -551,7 +551,7 @@ var equipment = [
       "category" : "Stands etc.",
       "image" : true,
       "instrument" : "electric guitar",
-      "link" : "https://www.gatorcases.com/products/guitar/molded-guitar-cases/gc-guitar/electric-guitar-case-gc-electric-a/",
+      "link" : "https://gatorco.com/product/electric-guitar-case-gc-electric-a/",
       "make" : "Gator",
       "model" : "GC-ELECTRIC-A",
       "notes" : [
@@ -564,7 +564,7 @@ var equipment = [
       "category" : "Stands etc.",
       "image" : true,
       "instrument" : "ukulele",
-      "link" : "https://www.gatorcases.com/products/guitar/gig-bags/gbe/soprano-ukulele-gig-bag-gbe-uke-sop/",
+      "link" : "https://gatorco.com/product/soprano-ukulele-gig-bag-gbe-uke-sop/",
       "make" : "Gator",
       "model" : "GBE-UKE-SOP",
       "notes" : [
@@ -622,7 +622,7 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "link" : "https://rocnsoc.com/new/product-line/nitro-throne",
+      "link" : "https://www.rocnsoc.com/products/",
       "make" : "Roc-N-Soc",
       "model" : "Nitro",
       "type" : "Furniture",
@@ -644,7 +644,7 @@ var equipment = [
       "category" : "Stands etc.",
       "image" : true,
       "instrument" : "guitar",
-      "link" : "https://shopframuswarwickusa.com/collections/rockstand/products/rockstand-multiple-guitar-stands?variant=40790902407320",
+      "link" : "https://shopwmusicdistributionusa.com/collections/rockstand/products/rockstand-multiple-guitar-rack-flat-packs?variant=40798720196760",
       "make" : "Warwick",
       "model" : "RS 20861",
       "notes" : [
@@ -692,6 +692,20 @@ var equipment = [
       "type" : "Instrument Stand",
       "year" : "2013",
       "year_uncertain" : true
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://www.ultimatesupport.com/products/gs-102",
+      "make" : "Ultimate Support",
+      "model" : "GS-102",
+      "not_mine" : true,
+      "notes" : [
+         "guitar"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2023"
    },
    {
       "category" : "Hardware",
@@ -750,20 +764,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "hide" : true,
       "image" : true,
-      "make" : "Digitech",
-      "model" : "Digidelay",
-      "notes" : [
-         "sold 2023"
-      ],
-      "type" : "Pedal",
-      "year" : "2005"
-   },
-   {
-      "category" : "Hardware",
-      "image" : true,
-      "link" : "https://pignoseamps.com/product/legendary-7-100-portable-amp/",
       "make" : "Pignose",
       "model" : "7-100",
       "type" : "Amplifier",
@@ -788,6 +789,9 @@ var equipment = [
       "link" : "https://line6.com/spider-guitar-amp/amps/",
       "make" : "Line 6",
       "model" : "Spider IV 15",
+      "notes" : [
+         "MkI"
+      ],
       "type" : "Amplifier",
       "year" : "2015",
       "year_uncertain" : true
@@ -1163,21 +1167,6 @@ var equipment = [
    },
    {
       "category" : "Accessories",
-      "gauge" : "2.0mm",
-      "hide" : true,
-      "image" : true,
-      "instrument" : "bass",
-      "link" : "https://www.jimdunlop.com/big-stubby-pick-2-00mm/",
-      "make" : "Dunlop",
-      "model" : "Big Stubby",
-      "notes" : [
-         "2.0mm",
-         "bass"
-      ],
-      "type" : "Pick"
-   },
-   {
-      "category" : "Accessories",
       "image" : true,
       "instrument" : "mandolin",
       "link" : "https://www.sagamusic.com/shop/fretted-instrument-accessories/golden-gate-accessories/golden-gate-mp-12-deluxe-tortoise-style-flat-pick-rounded-triangle-extra-stiff-dozen/",
@@ -1200,7 +1189,6 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
-      "link" : "https://shubb.com/",
       "make" : "Shubb",
       "model" : "Axys",
       "notes" : [
@@ -1509,7 +1497,7 @@ var links = {
    "Fender" : "https://www.fender.com/",
    "Fishman" : "https://www.fishman.com/",
    "Focusrite" : "https://focusrite.com/",
-   "Framus" : "https://www.framus-vintage.de/en/modules/modells/modells5084.html?classID=5&typeID=1-8&katID=4673&cl=EN",
+   "Framus" : "https://www.framus-vintage.de/en/Other/Banjos/",
    "Furman" : "https://www.furmanpower.com/",
    "GHS" : "https://www.ghsstrings.com/",
    "Gator" : "https://www.gatorcases.com/",
@@ -1550,6 +1538,7 @@ var links = {
    "Tapco" : "https://www.mackie.com/",
    "Thalia" : "https://www.thaliacapos.com/collections/pick-pucks",
    "Traveler" : "https://travelerguitar.com/",
+   "Ultimate Support" : "https://www.ultimatesupport.com/",
    "Warwick" : "https://www.warwick.de/en/Warwick-.html",
    "Washburn" : "https://www.washburn.com/",
    "Wittner" : "https://www.wittner-gmbh.de/",
