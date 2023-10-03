@@ -419,7 +419,7 @@ var equipment = [
       "year" : "2007"
    },
    {
-      "category" : "Instruments",
+      "category" : "Percussion Instruments",
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/drums/el_drums/digital_percussion/",
       "make" : "Yamaha",
@@ -428,7 +428,7 @@ var equipment = [
       "year" : "2007"
    },
    {
-      "category" : "Instruments",
+      "category" : "Percussion Instruments",
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/drums/ac_drums/drum_sets/rydeen/",
       "make" : "Yamaha",
@@ -442,7 +442,7 @@ var equipment = [
       "year_uncertain" : true
    },
    {
-      "category" : "Instruments",
+      "category" : "Percussion Instruments",
       "image" : true,
       "link" : "https://meinlcymbals.com/en/products/hcs14c-m3486.html",
       "make" : "Meinl",
@@ -452,7 +452,7 @@ var equipment = [
       "year_uncertain" : true
    },
    {
-      "category" : "Instruments",
+      "category" : "Percussion Instruments",
       "image" : true,
       "link" : "https://zildjian.com/products/18-planet-z-crash-ride",
       "make" : "Zildjian",
@@ -462,7 +462,7 @@ var equipment = [
       "year_uncertain" : true
    },
    {
-      "category" : "Instruments",
+      "category" : "Percussion Instruments",
       "image" : true,
       "link" : "https://zildjian.com/products/planet-z-hihats?variant=45264675406116",
       "make" : "Zildjian",
@@ -472,7 +472,7 @@ var equipment = [
       "year_uncertain" : true
    },
    {
-      "category" : "Instruments",
+      "category" : "Percussion Instruments",
       "image" : true,
       "make" : "Adam",
       "model" : "Bongos",
@@ -485,7 +485,7 @@ var equipment = [
       "year_uncertain" : true
    },
    {
-      "category" : "Instruments",
+      "category" : "Percussion Instruments",
       "image" : true,
       "link" : "https://meinlpercussion.com/en/products/jc50ab-b-m5746.html",
       "make" : "Meinl",
@@ -854,7 +854,7 @@ var equipment = [
       "image" : true,
       "make" : "IK Multimedia",
       "model" : "iRig",
-      "type" : "Controller",
+      "type" : "Interface",
       "year" : "2011"
    },
    {

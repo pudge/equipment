@@ -90,11 +90,13 @@ function faCat(cat, iCol) {
       ? 'guitar'
       : cat == 'Accessories'
         ? 'record-vinyl'
-        : cat == 'Hardware'
-          ? 'headphones'
-          : cat == 'Stands etc.'
-            ? 'suitcase'
-            : 'circle-question';
+        : cat == 'Percussion Instruments'
+          ? 'drum'
+          : cat == 'Hardware'
+            ? 'headphones'
+            : cat == 'Stands etc.'
+              ? 'suitcase'
+              : 'circle-question';
   return '<i class="fas fa-' + faImg + ' fa-fw" title="' + cat + '">&nbsp;</i>'
 }
 
@@ -191,7 +193,7 @@ function equipmentInit() {
       }
     },
     columns: [
-      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info">', createdCell: clipIt, orderable: false },
+      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw">', createdCell: clipIt, orderable: false },
       { responsivePriority: 10, data: 'model', title: 'Model', createdCell: linkItModel },
       { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
       { responsivePriority: 40, data: 'make', title: 'Make', createdCell: linkIt },
