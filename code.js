@@ -1,7 +1,17 @@
-var columns = [0, 1, 2, 3, 4];
-var columnMap = { "1": "6" };
-var columnOrder = [[ 2, 'asc' ], [ 3, 'asc' ], [ 1, 'asc' ]];
-const equipmentOrig = structuredClone(equipment);
+const COL_INFO  = 0;
+const COL_IMG   = 1;
+const COL_MODEL = 2;
+const COL_TYPE  = 3;
+const COL_MAKE  = 4;
+const COL_YEAR  = 5;
+const COL_NOTES = 6;
+const COL_CAT   = 7;
+const COL_NOTER = 8;
+
+const columns = [COL_INFO, COL_IMG, COL_MODEL, COL_TYPE, COL_MAKE, COL_YEAR];
+var columnMap = {};
+columnMap[COL_MODEL] = COL_CAT;
+const columnOrder = [[ COL_TYPE, 'asc' ], [ COL_MAKE, 'asc' ], [ COL_MODEL, 'asc' ]];
 
 var anchorText;
 
@@ -12,7 +22,7 @@ function linkIt(nTd, sData, oData, iRow, iCol, img) {
   }
 
   $(nTd).html(data.map(function(x) {
-    return clipIt(iRow, iCol) + img + faCat(oData['category'], iCol) + linkHtml(x);
+    return clipIt(iRow, iCol) + linkHtml(x);
   }).join(', '));
 }
 
@@ -65,69 +75,51 @@ function linkItNotes(nTd, sData, oData, iRow, iCol) {
       : equipment_data[x]
         ? linkShow(x)
       : x;
-      //? [equipment_data[x]['make'], x, equipment_data[x]['type']].map(y => linkHtml(y)).join(' ')
     return linkHtml(subData);
   }).join(', '));
 }
 
 function clipInfo(el, iRow) {
-  navigator.clipboard.writeText(JSON.stringify(equipmentOrig[iRow]));
+  navigator.clipboard.writeText(JSON.stringify(equipment[iRow]['orig']));
   el.classList.add('copying');
   setTimeout(() => { el.classList.remove('copying') }, 500);
 }
 
 function clipIt(iRow, iCol) {
-  if (iCol != 1)
+  if (iCol != COL_MODEL)
     return '';
   return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, ' + iRow + ')" title="copy info"></i>';
 }
 
-function faCat(cat, iCol) {
-  if (iCol != 1)
-    return '';
-  var faImg =
-    cat == 'Instruments'
-      ? 'guitar'
-      : cat == 'Accessories'
-        ? 'record-vinyl'
-        : cat == 'Percussion Instruments'
-          ? 'drum'
-          : cat == 'Hardware'
-            ? 'headphones'
-            : cat == 'Stands etc.'
-              ? 'suitcase'
-              : 'circle-question';
-  return '<i class="fas fa-' + faImg + ' fa-fw" title="' + cat + '">&nbsp;</i>'
-}
-
 function linkItModel(nTd, sData, oData, iRow, iCol) {
-  var img = imgIt(nTd, sData, oData, iRow, iCol);
-  if (img.length) { img = img + '&nbsp;'  }
   if (oData['link']) {
-    $(nTd).html(clipIt(iRow, iCol) + img + faCat(oData['category'], iCol) + makeLink(sData, oData['link']));
+    $(nTd).html(clipIt(iRow, iCol) + makeLink(sData, oData['link']));
   }
   else {
-    linkIt(nTd, sData, oData, iRow, iCol, img);
+    linkIt(nTd, sData, oData, iRow, iCol);
   }
 }
 
 function imgIt(nTd, sData, oData, iRow, iCol) {
+  var text = '<i class="fas fa-fw"></i>'
   if (oData['image']) {
     var alt = [oData['make'], oData['model'], oData['type']].join(' ');
     var name = oData['model'].replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase();
     if (oData['image'] === true) {
-      oData['image'] = name + '.jpg';
+      oData['image'] = name + '.png';
     }
-    return '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '<i class="fas fa-image fa-fw" title="picture"></i></a>';
+    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '<img class="imgsmall" src="'+ './images/' + oData['image'] + '" /></a>';
   }
-  return '<i class="fas fa-fw"></i>';
+  $(nTd).html(text);
 }
 
 function equipmentInit() {
   var removeElements = [];
   var foundNote = {};
   equipment.forEach(function(x, index, object) {
+    x['orig'] = structuredClone(x);
     x['x'] = '';
+    x['img'] = '';
     x['reverse_notes'] = [];
     x['featured'] = x['featured'] ? 'featured' : '';
     if (x['model']) {
@@ -183,17 +175,14 @@ function equipmentInit() {
   }
 
   $('#equipment').DataTable( {
-//      fixedHeader: true,
-//      responsive: { details: { type: 'inline' } },
-//      responsive: true,
     responsive: {
       details: {
         renderer: $.fn.dataTable.Responsive.renderer.listHidden()
-        //$.fn.dataTable.Responsive.renderer.tableAll()
       }
     },
     columns: [
-      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw">', createdCell: clipIt, orderable: false },
+      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', orderable: false },
+      { responsivePriority: 25, data: 'img', title: '<i class="fas fa-image fa-fw"></i>', createdCell: imgIt, className: "dt-head-center", orderable: false },
       { responsivePriority: 10, data: 'model', title: 'Model', createdCell: linkItModel },
       { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
       { responsivePriority: 40, data: 'make', title: 'Make', createdCell: linkIt },
@@ -203,27 +192,14 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'featured', title: 'Featured', visible: false },
       { responsivePriority: 91, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
     ],
-    //bStateSave: true,
     scrollX: true,
     order: columnOrder,
-    //aaSorting: [],
     data: equipment,
 
     paging: false,
     search: { search: anchorText },
     language: { search: "" },
     dom: 'fti',
-
-//     paging: false,
-//     pageLength: 200,
-//     search: { search: anchorText },
-//     dom: "'<'dataTables_filter text-right'B>frtip",
-//     buttons: [
-//       {
-//         text: 'clear search',
-//         action: function ( e, dt, node, config ) { doShow('') },
-//       }
-//     ],
 
     initComplete: function () {
       var month = {
@@ -240,7 +216,7 @@ function equipmentInit() {
       // create dropdown filters
       var table = this.api().table();
       table.columns(columns).every(function (i) {
-        if (i != 0) {
+        if (i != COL_INFO && i != COL_IMG) {
           var column = this;
           var column_d = table.column(columnMap[i] || i);
           var select = $('<select id="sel_' + i + '"></select><br>')
@@ -259,7 +235,7 @@ function equipmentInit() {
         }
       });
     },
-    drawCallback: picInit,
+    drawCallback: function() { picInit(); fixImg(); }
   });
 }
 
@@ -354,10 +330,23 @@ function redrawTable() {
   $('#equipment').DataTable().draw();
 }
 
+function fixImg() {
+  $('#equipment .dt-head-center img').each(function(i, el) {
+    if (el.width && el.height && (el.width*1.6 < el.height)) {
+      console.log(el.style);
+      el.style.margin = "-1.5em";
+      el.style.transform = "rotate(90deg)";
+      el.style.width = "1.5em";
+      el.style.height = "auto";
+    }
+  });
+}
+
 $(document).ready(function() {
   equipmentInit();
   clearSearchInit();
   modalInit();
+  redrawTable();
   window.addEventListener('resize', redrawTable);
   window.addEventListener('orientationchange', redrawTable);
 

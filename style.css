@@ -26,11 +26,9 @@ body {
     padding-top: 1em;
 }
 
-span.imgsmall {
-    height: 1.5em;
-    width: 4.5em; /* pb48.jpg */
-    display: inline-block;
+.dt-head-center {
     text-align: center;
+    width: 4.5em;
 }
 
 img.imgsmall {
