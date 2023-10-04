@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-03T12:00:00+0000")
+var lastModified = new Date("2023-10-04T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -73,8 +73,7 @@ var equipment = [
       "model" : "FG-230",
       "notes" : [
          "12-string",
-         "Nippon Gakki",
-         "d. 2014"
+         "Nippon Gakki"
       ],
       "production_year" : "November 1967",
       "serial" : "726838",
@@ -228,10 +227,12 @@ var equipment = [
       "model" : "Daisy Short-Scale",
       "not_mine" : true,
       "notes" : [
+         "EXL110",
          "22 1/2\" scale",
          "Awesome Blue"
       ],
       "serial" : "207757",
+      "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2004"
    },
@@ -359,10 +360,12 @@ var equipment = [
       "make" : "Kamoa",
       "model" : "E3-S",
       "notes" : [
+         "EJ99SC",
          "Soprano",
          "GBE-UKE-SOP"
       ],
       "serial" : "12060058",
+      "strings" : "EJ99SC",
       "type" : "Ukulele",
       "year" : "2015",
       "year_uncertain" : true
@@ -1388,6 +1391,42 @@ var equipment = [
          "acoustic guitar",
          "extra light",
          "92/8 phosphor bronze"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "gauge" : ".024, .030, .036, .026",
+      "image" : true,
+      "instrument" : "soprano ukulele",
+      "link" : "https://www.daddario.com/products/guitar/ukulele/nyltech-ukulele/ej88s-nyltech-ukulele-soprano/item/daddario-ej88s-nyltech-ukulele-strings-soprano-1244/",
+      "make" : "D’Addario",
+      "model" : "EJ88S",
+      "notes" : [
+         ".024",
+         ".030",
+         ".036",
+         ".026",
+         "soprano ukulele",
+         "nyltech"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "gauge" : ".0205, .026, .0319, .0224",
+      "image" : true,
+      "instrument" : "soprano ukulele",
+      "link" : "https://www.daddario.com/products/guitar/ukulele/pro-arte-carbon-ukulele/ej99sc-pro-arte-carbon-ukulele-soprano-concert/",
+      "make" : "D’Addario",
+      "model" : "EJ99SC",
+      "notes" : [
+         ".0205",
+         ".026",
+         ".0319",
+         ".0224",
+         "soprano ukulele",
+         "fluorocarbon"
       ],
       "type" : "Strings"
    },
