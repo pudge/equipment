@@ -372,6 +372,40 @@ var equipment = [
    },
    {
       "category" : "Instruments",
+      "image" : true,
+      "location" : "China",
+      "make" : "Mahalo",
+      "model" : "U/USA",
+      "not_mine" : true,
+      "notes" : [
+         "EJ88S",
+         "Soprano",
+         "GBE-UKE-SOP"
+      ],
+      "strings" : "EJ88S",
+      "type" : "Ukulele",
+      "year" : "2015"
+   },
+   {
+      "category" : "Instruments",
+      "image" : true,
+      "link" : "https://kalabrand.com/products/mk-sd-rdburst?_pos=5&_sid=e7e1bb13e&_ss=r",
+      "make" : "Makala",
+      "model" : "MK-SD/RDBURST",
+      "not_mine" : true,
+      "notes" : [
+         "EJ88S",
+         "Soprano",
+         "GBE-UKE-SOP",
+         "Dolphin",
+         "Red Burst"
+      ],
+      "strings" : "EJ88S",
+      "type" : "Ukulele",
+      "year" : "2000s"
+   },
+   {
+      "category" : "Instruments",
       "featured" : true,
       "image" : true,
       "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/marine-band/marine-band-deluxe",
@@ -1553,6 +1587,8 @@ var links = {
    "M-Audio" : "https://www.m-audio.com/",
    "MOTU" : "https://www.motu.com/",
    "Mackie" : "https://www.mackie.com/",
+   "Mahalo" : "https://mahaloukuleles.com/",
+   "Makala" : "https://kalabrand.com/",
    "Martin" : "https://www.martinguitar.com/",
    "Meinl" : "https://meinlcymbals.com/",
    "Northfield" : "https://www.northfieldinstruments.com/",
