@@ -3,7 +3,7 @@ body {
     color: #F8F8F2;
     font-family: karla, 'trebuchet ms', tahoma, sans-serif;
     font-size: 1em;
-    margin: 1em;
+    margin: 1/5em;
 }
 
 #main {
@@ -53,6 +53,7 @@ a.pic_modalize:active   { color: #8AFF80 }
 
 .h2 {
     font-family: 'New Rocker', luminari;
+    text-align: center;
 }
 
 /* modal image */

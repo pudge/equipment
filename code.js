@@ -350,9 +350,16 @@ function clearSearchInit() {
   $('#equipment_filter').append('<i id="clear_search" class="fas fa-circle-xmark fa-fw" onclick="doShow(\'\')"></i>');
 }
 
+function redrawTable() {
+  $('#equipment').DataTable().draw();
+}
+
 $(document).ready(function() {
   equipmentInit();
   clearSearchInit();
   modalInit();
+  window.addEventListener('resize', redrawTable);
+  window.addEventListener('orientationchange', redrawTable);
+
   //picInit();
 });
