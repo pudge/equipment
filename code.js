@@ -6,7 +6,10 @@ const COL_MAKE  = 4;
 const COL_YEAR  = 5;
 const COL_NOTES = 6;
 const COL_CAT   = 7;
-const COL_NOTER = 8;
+const COL_FEAT  = 8;
+const COL_NOTER = 9;
+const COL_NMINE = 10;
+const COL_HIDE  = 11;
 
 const columns = [COL_INFO, COL_IMG, COL_MODEL, COL_TYPE, COL_MAKE, COL_YEAR];
 var columnMap = {};
@@ -122,6 +125,8 @@ function equipmentInit() {
     x['x'] = '';
     x['img'] = '';
     x['reverse_notes'] = [];
+    x['not_mine'] = x['not_mine'] ? 'not mine' : '';
+    x['hide'] = x['hide'] ? 'hidden' : '';
     x['featured'] = x['featured'] ? 'featured' : '';
     if (x['model']) {
       equipment_data[x['model']] = x;
@@ -131,7 +136,7 @@ function equipmentInit() {
       }
     }
 
-    if (x['hide'] || x['not_mine']) {
+    if (x['hide']) { // || x['not_mine']) {
       removeElements.push(index);
     }
   });
@@ -189,9 +194,11 @@ function equipmentInit() {
       { responsivePriority: 40, data: 'make', title: 'Make', createdCell: linkIt },
       { responsivePriority: 80, data: 'year', title: 'Year', defaultContent: '-' },
       { responsivePriority: 90, data: 'notes', title: 'Notes', className: 'none', createdCell: linkItNotes, defaultContent: '', orderable: false },
-      { responsivePriority: 98, data: 'category', title: 'Category', visible: false },
-      { responsivePriority: 99, data: 'featured', title: 'Featured', visible: false },
-      { responsivePriority: 91, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
+      { responsivePriority: 98, data: 'category', visible: false },
+      { responsivePriority: 99, data: 'featured', visible: false },
+      { responsivePriority: 99, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
+      { responsivePriority: 99, data: 'not_mine', visible: false },
+      { responsivePriority: 99, data: 'hide', visible: false },
     ],
     scrollX: true,
     order: columnOrder,
