@@ -413,7 +413,8 @@ var equipment = [
       "model" : "Marine Band Deluxe",
       "notes" : [
          "G",
-         "FlexRack"
+         "FlexRack",
+         "C12"
       ],
       "type" : "Harmonica",
       "year" : "2020"
@@ -432,7 +433,8 @@ var equipment = [
          "E",
          "F",
          "G",
-         "FlexRack"
+         "FlexRack",
+         "C12"
       ],
       "type" : "Harmonica",
       "year" : "various"
@@ -650,9 +652,13 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
+      "instrument" : "harmonica",
       "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/harmonica-case",
       "make" : "Hohner",
-      "model" : "Harmonica Case",
+      "model" : "C12",
+      "notes" : [
+         "harmonica"
+      ],
       "type" : "Instrument Case",
       "year" : "2000"
    },
