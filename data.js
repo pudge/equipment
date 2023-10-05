@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-04T12:00:00+0000")
+var lastModified = new Date("2023-10-05T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -171,7 +171,7 @@ var equipment = [
          "C1K",
          "M17SS-BLK",
          "S-Locks",
-         "Standard \"60s Quilt Top",
+         "Standard ’60s Quilt Top",
          "Translucent Blue"
       ],
       "production_year" : "February 2021",
@@ -1112,6 +1112,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "hide" : true,
       "image" : true,
       "link" : "https://www.apple.com/macbook-pro/",
       "make" : "Apple",
@@ -1121,6 +1122,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "hide" : true,
       "image" : true,
       "link" : "https://www.apple.com/ipad-pro/",
       "make" : "Apple",
