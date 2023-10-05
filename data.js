@@ -148,7 +148,7 @@ var equipment = [
          "M17SS-BLK",
          "S-Locks",
          "GC-ELECTRIC-A",
-         "Spyder",
+         "Spyder 2700",
          "Fat 50’s"
       ],
       "serial" : "1103087",
@@ -859,7 +859,7 @@ var equipment = [
       "image" : true,
       "link" : "https://www.kahlerusa.com",
       "make" : "Kahler",
-      "model" : "Spyder",
+      "model" : "Spyder 2700",
       "notes" : [
          "locking tremolo"
       ],
