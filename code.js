@@ -106,9 +106,10 @@ function imgIt(nTd, sData, oData, iRow, iCol) {
     var alt = [oData['make'], oData['model'], oData['type']].join(' ');
     var name = oData['model'].replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase();
     if (oData['image'] === true) {
-      oData['image'] = name + '.png';
+      oData['image'] = './images/' + name + '.png';
+      oData['image_sm'] = './images/sm/' + name + '-sm.png';
     }
-    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ './images/' + oData['image'] + '">' + '<img class="imgsmall" src="'+ './images/' + oData['image'] + '" /></a>';
+    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '" /></a>';
   }
   $(nTd).html(text);
 }
@@ -182,7 +183,7 @@ function equipmentInit() {
     },
     columns: [
       { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', orderable: false },
-      { responsivePriority: 25, data: 'img', title: '<i class="fas fa-image fa-fw"></i>', createdCell: imgIt, className: "dt-head-center", orderable: false },
+      { responsivePriority: 25, data: 'img', createdCell: imgIt, className: "dt-head-center", orderable: false },
       { responsivePriority: 10, data: 'model', title: 'Model', createdCell: linkItModel },
       { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
       { responsivePriority: 40, data: 'make', title: 'Make', createdCell: linkIt },
@@ -235,7 +236,7 @@ function equipmentInit() {
         }
       });
     },
-    drawCallback: function() { picInit(); fixImg(); }
+    drawCallback: picInit,
   });
 }
 
@@ -330,18 +331,6 @@ function redrawTable() {
   $('#equipment').DataTable().draw();
 }
 
-function fixImg() {
-  $('#equipment .dt-head-center img').each(function(i, el) {
-    if (el.width && el.height && (el.width*1.6 < el.height)) {
-      console.log(el.style);
-      el.style.margin = "-1.5em";
-      el.style.transform = "rotate(90deg)";
-      el.style.width = "1.5em";
-      el.style.height = "auto";
-    }
-  });
-}
-
 $(document).ready(function() {
   equipmentInit();
   clearSearchInit();
@@ -349,6 +338,4 @@ $(document).ready(function() {
   redrawTable();
   window.addEventListener('resize', redrawTable);
   window.addEventListener('orientationchange', redrawTable);
-
-  //picInit();
 });
