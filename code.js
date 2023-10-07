@@ -1,33 +1,27 @@
-const COL_INFO  = 0;
-const COL_IMG   = 1;
-const COL_MODEL = 2;
-const COL_TYPE  = 3;
-const COL_MAKE  = 4;
-const COL_YEAR  = 5;
-const COL_NOTES = 6;
-const COL_CAT   = 7;
-const COL_FEAT  = 8;
-const COL_NOTER = 9;
-const COL_NMINE = 10;
-const COL_HIDE  = 11;
+const COL = {
+  INFO     :  0,
+  IMG      :  1,
+  MODEL    :  2,
+  TYPE     :  3,
+  MAKE     :  4,
+  YEAR     :  5,
+  NOTES    :  6,
+  CAT      :  7,
+  FEAT     :  8,
+  NOTER    :  9,
+  NMINE    : 10,
+  HIDE     : 11,
+  DETAILS  : 12,
+  MANUALS  : 13,
+}
 
-const columns = [COL_INFO, COL_IMG, COL_MODEL, COL_TYPE, COL_MAKE, COL_YEAR];
+const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.TYPE, COL.MAKE, COL.YEAR];
+const columnOrder = [[ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
 var columnMap = {};
-columnMap[COL_MODEL] = COL_CAT;
-const columnOrder = [[ COL_TYPE, 'asc' ], [ COL_MAKE, 'asc' ], [ COL_MODEL, 'asc' ]];
-
+columnMap[COL.MODEL] = COL.CAT;
 var anchorText;
 
-function linkIt(nTd, sData, oData, iRow, iCol, img) {
-  var data = Array.isArray(sData) ? sData : [sData];
-  if (typeof img === 'undefined') {
-    img = '';
-  }
-
-  $(nTd).html(data.map(function(x) {
-    return clipIt(iRow, iCol) + linkHtml(x);
-  }).join(', '));
-}
+// link handling
 
 function linkHtml(text) {
   return links[text] ? makeLink(text, links[text]) : text;
@@ -47,83 +41,85 @@ function linkShow(acc, text, other) {
   return '<a href="#" onclick="doShow(\''+ acc + '\'); return false">' + text + '</a>';
 }
 
-function doShow(item) {
-  var table = $('#equipment').dataTable().api().table();
-  table.search(item).draw();
-  table.columns().search('').draw();
-  columns.forEach(j => drawDropdowns(j))
-  columns.forEach(function (i) { $('#sel_' + i).val('') });
-  // collapse child rows
-  table.rows('.parent').nodes().to$().find('td:first-child').trigger('click');
-}
-
-function linkItNotes(nTd, sData, oData, iRow, iCol) {
-  var thisData = Array.isArray(sData) ? sData : [sData].filter(x => x);
+function linkItNotes(oData) {
+  var thisData = Array.isArray(oData['notes']) ? oData['notes'] : [oData['notes']].filter(x => x);
   if (oData['not_mine']) {
     thisData.push('NOTMINE');
   }
   else if (oData['hide']) {
     thisData.push('HIDDEN');
   }
-  $(nTd).html(oData['notes'] = thisData.map(x => {
-    var subData =
-      x === 'LINKME'
-        ? linkShow(oData['model'], '\u{1F517}')
-      : x === 'LINKEDME'
-        ? linkShow(oData['model'], '\u{1F578}')
-      : x === 'NOTMINE'
-        ? linkShow('', '\u{1F91D}', 'holding for a friend')
-      : x === 'HIDDEN'
-        ? linkShow('', '\u{1F977}', 'hidden')
-      : equipment_data[x]
-        ? linkShow(x)
-      : x;
-    return linkHtml(subData);
-  }).join(', '));
+
+  var icons = [ clipIt(oData['idx']) ];
+  var newData = [];
+  thisData.forEach(x => {
+    if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN') {
+      icons.push(
+        x === 'LINKME'
+          ? linkShow(oData['model'], '\u{1F517}')
+        : x === 'LINKEDME'
+          ? linkShow(oData['model'], '\u{1F578}')
+        : x === 'NOTMINE'
+          ? linkShow('', '\u{1F91D}', 'holding for a friend')
+        : x === 'HIDDEN'
+          ? linkShow('', '\u{1F977}', 'hidden')
+          : ''
+      );
+    }
+    else {
+      newData.push( linkHtml(equipment_data[x] ? linkShow(x) : x) );
+    }
+  });
+
+  return icons.join('') + '&nbsp;' + newData.join(', ');
 }
 
-function clipInfo(el, iRow) {
-  navigator.clipboard.writeText(JSON.stringify(equipment[iRow]['orig']));
-  el.classList.add('copying');
-  setTimeout(() => { el.classList.remove('copying') }, 500);
+function linkItDetail(oData) {
+  if (oData['detail'] == null) {
+    return '<div class="detail" />';
+  }
+
+  return '<div class="detail">' + Object.keys(oData['detail']).map(
+      x => `<div class="detail_row"><span class="detail_head">${x}</span>: <span class="detail_body">${oData['detail'][x]}</span></div>`
+    ).join('') + '</div>';
 }
 
-function clipIt(iRow, iCol) {
-  if (iCol != COL_MODEL)
-    return '';
+function linkItManuals(oData) {
+  if (oData['manuals'] == null) {
+    return '<div class="manuals" />';
+  }
+
+  return '<div class="manuals">' + Object.keys(oData['manuals']).map(
+      x => `<div class="manual_row"><a target="_blank" href="manuals/${fixModelName(oData['model'])}/${oData['manuals'][x]}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
+    ).join('') + '</div>';
+}
+
+function clipIt(iRow) {
   return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, ' + iRow + ')" title="copy info"></i>';
 }
 
-function linkItModel(nTd, sData, oData, iRow, iCol) {
-  if (oData['link']) {
-    $(nTd).html(clipIt(iRow, iCol) + makeLink(sData, oData['link']));
-  }
-  else {
-    linkIt(nTd, sData, oData, iRow, iCol);
-  }
-}
-
-function imgIt(nTd, sData, oData, iRow, iCol) {
+function imgIt(oData) {
   var text = '<i class="fas fa-fw"></i>'
   if (oData['image']) {
     var alt = [oData['make'], oData['model'], oData['type']].join(' ');
-    var name = oData['model'].replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase();
+    var name = fixModelName(oData['model']);
     if (oData['image'] === true) {
       oData['image'] = './images/' + name + '.png';
       oData['image_sm'] = './images/sm/' + name + '-sm.png';
     }
     text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '" /></a>';
   }
-  $(nTd).html(text);
+  return text;
 }
+
+
+// do the table
 
 function equipmentInit() {
   var removeElements = [];
   var foundNote = {};
   equipment.forEach(function(x, index, object) {
     x['orig'] = structuredClone(x);
-    x['x'] = '';
-    x['img'] = '';
     x['reverse_notes'] = [];
     x['not_mine'] = x['not_mine'] ? 'not mine' : '';
     x['hide'] = x['hide'] ? 'hidden' : '';
@@ -168,6 +164,14 @@ function equipmentInit() {
       thisData.unshift('LINKME');
       x['notes'] = thisData;
     }
+
+    x['idx'] = index-1;
+    x['img'] = imgIt(x);
+    x['manuals'] = linkItManuals(x);
+    x['detail'] = linkItDetail(x);
+    x['notes'] = linkItNotes(x);
+    x['model'] = linkHtml(x['model']);
+    x['make'] = linkHtml(x['make']);
   });
 
   // remove hidden elements
@@ -180,25 +184,28 @@ function equipmentInit() {
     removeElements.reverse().forEach(x => equipment.splice(x, 1));
   }
 
-  $('#equipment').DataTable( {
+  var table = $('#equipment').DataTable( {
     responsive: {
       details: {
-        renderer: $.fn.dataTable.Responsive.renderer.listHidden()
+        renderer: $.fn.dataTable.Responsive.renderer.listHidden(),
+        // display: $.fn.dataTable.Responsive.display.childRowImmediate,
       }
     },
     columns: [
-      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', orderable: false },
-      { responsivePriority: 25, data: 'img', createdCell: imgIt, className: "dt-head-center", orderable: false },
-      { responsivePriority: 10, data: 'model', title: 'Model', createdCell: linkItModel },
+      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', defaultContent: '', orderable: false },
+      { responsivePriority: 25, data: 'img', title: '<i class="fas fa-image fa-fw"></i>', className: 'dt-center', orderable: false },
+      { responsivePriority: 10, data: 'model', title: 'Model' },
       { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
-      { responsivePriority: 40, data: 'make', title: 'Make', createdCell: linkIt },
+      { responsivePriority: 40, data: 'make', title: 'Make' },
       { responsivePriority: 80, data: 'year', title: 'Year', defaultContent: '-' },
-      { responsivePriority: 90, data: 'notes', title: 'Notes', className: 'none', createdCell: linkItNotes, defaultContent: '', orderable: false },
+      { responsivePriority: 90, data: 'notes', title: 'Notes', className: 'none', defaultContent: '', orderable: false },
       { responsivePriority: 98, data: 'category', visible: false },
       { responsivePriority: 99, data: 'featured', visible: false },
       { responsivePriority: 99, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
       { responsivePriority: 99, data: 'not_mine', visible: false },
       { responsivePriority: 99, data: 'hide', visible: false },
+      { responsivePriority: 99, data: 'manuals', title: 'Manuals', defaultContent: '', className: 'none' },
+      { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
     ],
     scrollX: true,
     order: columnOrder,
@@ -224,7 +231,7 @@ function equipmentInit() {
       // create dropdown filters
       var table = this.api().table();
       table.columns(columns).every(function (i) {
-        if (i != COL_INFO && i != COL_IMG) {
+        if (i != COL.INFO && i != COL.IMG) {
           var column = this;
           var column_d = table.column(columnMap[i] || i);
           var select = $('<select id="sel_' + i + '"></select><br>')
@@ -245,6 +252,8 @@ function equipmentInit() {
     },
     drawCallback: picInit,
   });
+
+  table.on('responsive-display', childRowCleanUp);
 }
 
 function drawDropdowns(i) {
@@ -260,6 +269,19 @@ function drawDropdowns(i) {
     }
   });
   select.val(val);
+}
+
+
+// misc events
+
+function doShow(item) {
+  var table = $('#equipment').dataTable().api().table();
+  table.search(item).draw();
+  table.columns().search('').draw();
+  columns.forEach(j => drawDropdowns(j))
+  columns.forEach(function (i) { $('#sel_' + i).val('') });
+  // collapse child rows
+  table.rows('.parent').nodes().to$().find('td:first-child').trigger('click');
 }
 
 function picClick(t, e) {
@@ -330,6 +352,12 @@ function picInit() {
   });
 }
 
+function clipInfo(el, iRow) {
+  navigator.clipboard.writeText(JSON.stringify(equipment[iRow]['orig']));
+  el.classList.add('copying');
+  setTimeout(() => { el.classList.remove('copying') }, 500);
+}
+
 function clearSearchInit() {
   $('#equipment_filter').append('<i id="clear_search" class="fas fa-circle-xmark fa-fw" onclick="doShow(\'\')"></i>');
 }
@@ -337,6 +365,17 @@ function clearSearchInit() {
 function redrawTable() {
   $('#equipment').DataTable().draw();
 }
+
+function childRowCleanUp() {
+  $('.dtr-data .manuals:empty').parent().parent().hide();
+  $('.dtr-data .detail:empty').parent().parent().hide();
+  picInit();
+}
+
+function fixModelName(str) {
+  return str.replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase();
+}
+
 
 $(document).ready(function() {
   equipmentInit();

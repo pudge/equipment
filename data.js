@@ -1,12 +1,62 @@
-var lastModified = new Date("2023-10-05T12:00:00+0000")
+var lastModified = new Date("2023-10-07T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
       "category" : "Instruments",
+      "detail" : {
+         "Back Inlay Material" : "Multi-Stripe",
+         "Back Material" : "East Indian Rosewood",
+         "Back Purfling/Strip" : "Zig-Zag",
+         "Back and Side Finish" : "Gloss",
+         "Binding" : "Grained Ivoroid",
+         "Body Size" : "D-14 Fret",
+         "Brace Material" : "Spruce",
+         "Brace Shape" : "Scalloped",
+         "Brace Size" : "5/16\"",
+         "Bracing Pattern" : "Forward-Shifted X-Brace",
+         "Bridge Material" : "Ebony",
+         "Bridge Pin Dots" : "Faux Tortoise",
+         "Bridge Pin Material" : "White Plastic",
+         "Bridge String Spacing" : "2 5/32\"",
+         "Bridge Style" : "Modern Belly - Drop in Saddle",
+         "Construction" : "Dovetail Neck Joint",
+         "Electronics" : "Fishman Aura F1+",
+         "Fingerboard Inlay Material" : "Abalone",
+         "Fingerboard Inlay Style" : "Diamonds and Squares Long Pattern",
+         "Fingerboard Width at 12th Fret" : "2 1/8\"",
+         "Fingerboard Width at Nut" : "1 3/4\"",
+         "Finish Neck" : "Satin",
+         "Finish Top" : "Gloss",
+         "Headplate Logo Style" : "Script Old Style Overlay",
+         "Headplate Material" : "East Indian Rosewood",
+         "Headstock Shape" : "Solid with Square Taper and Diamond",
+         "Heelcap" : "Grained Ivoroid",
+         "Knob" : "Butterbean",
+         "Location" : "Nazareth, Pennsylvania, USA",
+         "Neck Color" : "Dark Mahogany",
+         "Neck Joins Body At" : "14th Fret",
+         "Neck Material" : "Select Hardwood",
+         "Neck Shape" : "Modified Low Oval",
+         "Neck Taper" : "High-Performance Taper",
+         "Number of Frets Total" : "20",
+         "Nut Material" : "Bone",
+         "Pickguard" : "Tortoise Pattern",
+         "Production Year" : "October 2012",
+         "Rosette" : "Style 28 Multi-Stripe",
+         "Saddle" : "Compensated White Tusq",
+         "Saddle Radius" : "16\"",
+         "Scale Length" : "25.4\"",
+         "Serial" : "1633689",
+         "Side Dots" : "White",
+         "Side Material" : "East Indian Rosewood",
+         "Top Color" : "Aging Toner",
+         "Top Inlay Material" : "Bold Herringbone",
+         "Top Material" : "Spruce",
+         "Tuning Machines" : "Nickel Open Gear"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://www.martinguitar.com/guitars/discontinued/HD-28E-Retro.html",
-      "location" : "Nazareth, Pennsylvania, USA",
       "make" : "Martin",
       "model" : "HD-28E Retro",
       "notes" : [
@@ -18,16 +68,29 @@ var equipment = [
          "445",
          "F1 Aura+"
       ],
-      "production_year" : "October 2012",
-      "serial" : "1633689",
       "strings" : "AA Lifespan 2.0 MA550T",
       "type" : "Acoustic Guitar",
       "year" : "2012"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Back Material" : "High Pressure Laminate",
+         "Body Size" : "D-14 Fret",
+         "Finish Top" : "Satin",
+         "Location" : "Nazareth, Pennsylvania, USA",
+         "Neck Joins Body At" : "14th Fret",
+         "Neck Material" : "Plywood",
+         "Number of Frets Total" : "20",
+         "Nut Material" : "Corian",
+         "Production Year" : "February 2000",
+         "Scale Length" : "25.4\"",
+         "Serial" : "728931",
+         "Side Material" : "High Pressure Laminate",
+         "Top Color" : "Natural",
+         "Top Material" : "Sitka Price"
+      },
       "image" : true,
-      "location" : "Nazareth, Pennsylvania, USA",
       "make" : "Martin",
       "model" : "DX1",
       "notes" : [
@@ -38,18 +101,39 @@ var equipment = [
          "M17SS-DBR",
          "Ellipse Matrix Blend"
       ],
-      "production_year" : "February 2000",
-      "serial" : "728931",
       "strings" : "AA Lifespan 2.0 MA550T",
       "type" : "Acoustic Guitar",
       "year" : "2000"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body Material" : "Mahogany",
+         "Body Thickness" : "1.75\"",
+         "Body Width" : "10.75\"",
+         "Fingerboard" : "Black Walnut",
+         "Finish" : "Satin",
+         "Fret Count" : "22",
+         "Frets" : "Medium Profile",
+         "Neck" : "Mahogany",
+         "Neck Radius" : "9.5\"",
+         "Neck Width at Nut" : "1.75\"",
+         "Overall Depth" : "2.13\"",
+         "Overall Length" : "30\"",
+         "Pickup(s)" : "Shadow Nanoflex",
+         "Scale Length" : "25.5\"",
+         "Serial" : "M3-02910",
+         "Tuning Hardware" : "Black Anodized Closed Gear",
+         "Weight" : "4 lbs 4 oz",
+         "dB at 1'" : "Peak: 93db, Average: 80db"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://travelerguitar.com/products/escape-mark-3-mahogany",
       "make" : "Traveler",
+      "manuals" : {
+         "Manual" : "Escape_Mark_3_Manual.pdf"
+      },
       "model" : "Escape Mark III",
       "notes" : [
          "AA Lifespan 2.0 MA530T",
@@ -58,30 +142,48 @@ var equipment = [
          "C1K",
          "Mahogany"
       ],
-      "serial" : "M3-02910",
       "strings" : "AA Lifespan 2.0 MA530T",
       "type" : "Acoustic Guitar",
       "year" : "2018"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Location" : "Tenryu/Wada Factory, Japan",
+         "Production Year" : "November 1967",
+         "Serial" : "726838",
+         "Year Lost" : "2014"
+      },
       "hide" : true,
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/guitars_basses/ac_guitars/fg_fgx/index.html",
-      "location" : "Tenryu/Wada Factory, Japan",
       "make" : "Yamaha",
       "model" : "FG-230",
       "notes" : [
          "12-string",
          "Nippon Gakki"
       ],
-      "production_year" : "November 1967",
-      "serial" : "726838",
       "type" : "Acoustic Guitar",
       "year" : "1967"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body Finish" : "Gloss",
+         "Body Material" : "Mahogany",
+         "Fret Count" : "20",
+         "Frets" : "Medium Jumbo",
+         "Inlays" : "Dot",
+         "Neck Joint" : "Dovetail; Glued-in",
+         "Neck Profile" : "SlimTaper C-profile",
+         "Nut Width" : "43.0 mm / 1.692 in",
+         "Pickguard" : "1-Ply; Black PVC",
+         "Scale Length" : "647.7 mm / 25.5 in",
+         "Serial" : "TBD",
+         "Top" : "Select Spruce",
+         "Truss Rod" : "2-way Adjustable",
+         "Tuning Machines" : "Premium Die Cast"
+      },
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/Acoustic-Guitar/EPIKWM803/Ebony",
       "make" : "Epiphone",
@@ -91,13 +193,28 @@ var equipment = [
          "AA Lifespan 2.0 MA550T",
          "Ebony"
       ],
-      "serial" : "TBD",
       "strings" : "AA Lifespan 2.0 MA550T",
       "type" : "Acoustic Guitar",
       "year" : "2021"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body Finish" : "Satin Body Finish",
+         "Body Material" : "Laminated Sapele",
+         "Body Style" : "3/4 scale",
+         "Bracing" : "X Bracing",
+         "Bridge" : "Rosewood with Compensated Saddle",
+         "Fret Count" : "18",
+         "Neck Finish" : "Satin Neck Finish",
+         "Neck Material" : "Nato",
+         "Nut Material" : "Synthetic Bone",
+         "Nut Width" : "1.69 in. (43 mm)",
+         "Scale Length" : "23.3 in. (592 mm)",
+         "Serial" : "OI14087311",
+         "Top" : "Laminated Agathis",
+         "Tuning Machines" : "Die-Cast Machine Heads"
+      },
       "image" : true,
       "link" : "https://www.fender.com/en-US/acoustic-guitars/",
       "make" : "Fender",
@@ -106,18 +223,32 @@ var equipment = [
       "notes" : [
          "AA Lifespan 2.0 MA540T"
       ],
-      "serial" : "OI14087311",
       "strings" : "AA Lifespan 2.0 MA540T",
       "type" : "Acoustic Guitar",
       "year" : "2014"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body Material" : "Basswood",
+         "Color" : "Black",
+         "Fingerboard Radius" : "10\"",
+         "Fingerboard material" : "Rosewood",
+         "Fret Count" : "22",
+         "Frets" : "Medium Profile",
+         "Location" : "Korea",
+         "Neck Material" : "Maple",
+         "Nut width" : "1.5\"",
+         "Scale length" : "25.5”",
+         "Serial" : "3058431"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://line6.com/legacy/variax500",
-      "location" : "Korea",
       "make" : "Line 6",
+      "manuals" : {
+         "Pilot’s Handbook" : "Variax 500.pdf"
+      },
       "model" : "Variax 500",
       "notes" : [
          "EXL110",
@@ -128,16 +259,18 @@ var equipment = [
          "S-Locks",
          "GC-ELECTRIC-A"
       ],
-      "serial" : "3058431",
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2003"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Location" : "Samick, Korea",
+         "Serial" : "1103087"
+      },
       "featured" : true,
       "image" : true,
-      "location" : "Samick, Korea",
       "make" : "Epiphone",
       "model" : "S-310B",
       "notes" : [
@@ -151,17 +284,48 @@ var equipment = [
          "Spyder 2700",
          "Fat 50’s"
       ],
-      "serial" : "1103087",
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "1987"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Binding" : "Cream",
+         "Body Finish" : "Gloss",
+         "Body Material" : "Mahogany",
+         "Bridge" : "LockTone™ ABR Tune-o-matic™",
+         "Bridge Pickup" : "ProBucker™ 3",
+         "Color" : "Translucent Blue",
+         "Control Knobs" : "Gold insert knobs with nickel plated dial pointers",
+         "Controls" : "2 Volume, 2 Tone, CTS® potentiometers",
+         "Fingerboard Material" : "Laurel",
+         "Fingerboard Radius" : "304.8 mm / 12 in",
+         "Finish" : "Nickel",
+         "Fret Count" : "22",
+         "Frets" : "Medium Jumbo",
+         "Inlays" : "Pearloid Trapezoid",
+         "Joint" : "Glued in",
+         "Local Serial" : "27363",
+         "Location" : "Qingdao (electric), China",
+         "Neck Pickup" : "ProBucker™ 2",
+         "Nut Material" : "Graph Tech®",
+         "Nut Width" : "43.0 mm / 1.692 in",
+         "Pickguard" : "Cream",
+         "Pickup Covers" : "Nickel",
+         "Pickup Selector" : "3-way Epiphone toggle",
+         "Production Year" : "February 2021",
+         "Profile" : "SlimTaper™ 60s C",
+         "Scale Length" : "628.65 mm / 24.75 in",
+         "Serial" : "21021527363",
+         "Tailpiece" : "Stopbar",
+         "Top" : "AA Flame Maple",
+         "Truss Rod" : "Adjustable",
+         "Truss Rod Cover" : "\"Bell Shaped\"; 2-layer (Black/White); 60s era E",
+         "Tuning Machines" : "Grover® Rotomatic® 18:1"
+      },
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/Electric-Guitar/EPINA3562/Ebony",
-      "local_serial" : "27363",
-      "location" : "Qingdao (electric), China",
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
@@ -174,18 +338,44 @@ var equipment = [
          "Standard ’60s Quilt Top",
          "Translucent Blue"
       ],
-      "production_year" : "February 2021",
-      "serial" : "21021527363",
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2021"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body Finish" : "Gloss",
+         "Body Material" : "Mahogany",
+         "Bridge" : "Epiphone LockTone™ Tune-O-Matic",
+         "Bridge Pickup" : "Epiphone Alnico Classic PRO™ Bridge",
+         "Control Knobs" : "Black Top Hats with Inserts",
+         "Controls" : "2- Volume, 2- Tone CTS pots",
+         "Fingerboard Material" : "Laurel",
+         "Fingerboard Radius" : "304.8 mm / 12 in",
+         "Finish" : "Nickel",
+         "Fret Count" : "22",
+         "Frets" : "Medium Jumbo",
+         "Inlays" : "Trapezoid",
+         "Joint" : "Glued in; Set Neck",
+         "Local Serial" : "30731",
+         "Location" : "Qingdao (electric), China",
+         "Neck Pickup" : "Epiphone Alnico Classic PRO™ Neck",
+         "Nut Material" : "Graph Tech NuBone®",
+         "Nut Width" : "43.0 mm / 1.692 in",
+         "Pickguard" : "5-Ply, Black",
+         "Pickup Selector" : "3-way Epiphone toggle",
+         "Production Year" : "May 2023",
+         "Profile" : "60s SlimTaper™",
+         "Scale Length" : "628.65 mm / 24.75 in",
+         "Serial" : "23051530731",
+         "Strap Buttons" : "2 - bottom and heel",
+         "Tailpiece" : "Epiphone LockTone™ Stop Bar",
+         "Truss Rod" : "Adjustable",
+         "Tuning Machines" : "Epiphone Deluxe Tuners 18:1 ratio"
+      },
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/Electric-Guitar/EPIJ1X839/Heritage-Cherry",
-      "local_serial" : "30731",
-      "location" : "Qingdao (electric), China",
       "make" : "Epiphone",
       "model" : "SG Standard",
       "not_mine" : true,
@@ -193,17 +383,26 @@ var equipment = [
          "EXL110",
          "Heritage Cherry"
       ],
-      "production_year" : "May 2023",
-      "serial" : "23051530731",
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2023"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body material" : "Mahogany",
+         "Bridge" : "Schaller Floyd Rose tremolo",
+         "Fingerboaerd material" : "Maple",
+         "Fret count" : "24",
+         "Frets" : "Jumbo",
+         "Location" : "Korea",
+         "Neck material" : "Rosewood",
+         "Pickup configuration" : "H-H",
+         "Scale Length" : "25.5\"",
+         "Serial" : "2110103"
+      },
       "image" : true,
       "link" : "https://www.washburn.com/instrument-style/double-cut-solid-body/",
-      "location" : "Korea",
       "make" : "Washburn",
       "model" : "X40",
       "notes" : [
@@ -215,13 +414,24 @@ var equipment = [
          "S-Locks",
          "GC-ELECTRIC-A"
       ],
-      "serial" : "2110103",
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2002"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body material" : "solid basswood",
+         "Body style" : "3/4 size",
+         "Fingerboard material" : "Rosewood",
+         "Fret count" : "22",
+         "Neck material" : "Hard Rock Maple",
+         "Neck style" : "slim",
+         "Pickups" : "Seymour Duncan open coil humbucker, and lipstick-style single coil",
+         "Scale length" : "24 3/4″",
+         "Serial" : "207757",
+         "Tuning hardware" : "Grover"
+      },
       "image" : true,
       "make" : "Daisy Rock",
       "model" : "Daisy Short-Scale",
@@ -231,18 +441,32 @@ var equipment = [
          "22 1/2\" scale",
          "Awesome Blue"
       ],
-      "serial" : "207757",
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2004"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body Material" : "Alder",
+         "Color" : "Sunburst",
+         "Fingerboard Radius" : "10\"",
+         "Fingerboard material" : "Rosewood",
+         "Fret Count" : "21",
+         "Frets" : "Medium Profile",
+         "Location" : "Korea",
+         "Neck Material" : "Maple",
+         "Nut width" : "1.5\"",
+         "Scale length" : "34\"",
+         "Serial" : "4101739"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://line6.com/legacy/variaxbass700",
-      "location" : "Korea",
       "make" : "Line 6",
+      "manuals" : {
+         "Pilot’s Handbook" : "Variax Bass Manual - English ( Rev A ).pdf"
+      },
       "model" : "Variax 700",
       "notes" : [
          "EXL170",
@@ -250,17 +474,41 @@ var equipment = [
          "MSS3-BRN",
          "Straplok"
       ],
-      "serial" : "4101739",
       "strings" : "EXL170",
       "type" : "Bass Guitar",
       "year" : "2004"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body material" : "Basswood and birch",
+         "Body type" : "Solid body",
+         "Bridge" : "Standard (19mm string spacing)",
+         "Bridge pickup" : "Super P4",
+         "Controls" : "Master volume / Master tone / Balancer",
+         "Electronics/ Strings" : "",
+         "Fingerboard inlays" : "Pearl dot and side dots",
+         "Fingerboard material" : "Rosewood",
+         "Fret count" : "22",
+         "Frets" : "medium",
+         "Hardware color" : "Chrome",
+         "Knob style" : "Sure Grip II",
+         "Local Serial" : "5503",
+         "Location" : "FujiGen Gakki, Japan",
+         "Machine heads" : "Hercules B",
+         "Neck joint" : "AANJ",
+         "Neck material" : "1-piece maple",
+         "Neck pickup" : "Super J4",
+         "Neck type" : "D shape",
+         "Nut" : "Plastic",
+         "Nut width" : "41mm",
+         "Pickup configuration" : "PJ",
+         "Production Year" : "January 1986",
+         "Scale length" : "864mm / 34\"",
+         "Serial" : "A865503"
+      },
       "image" : true,
       "link" : "https://www.ibanez.com/usa/products/category/electric_basses/",
-      "local_serial" : "5503",
-      "location" : "FujiGen Gakki, Japan",
       "make" : "Ibanez",
       "model" : "Roadstar II RB650",
       "notes" : [
@@ -269,18 +517,49 @@ var equipment = [
          "MSS3-BRN",
          "Straplok"
       ],
-      "production_year" : "January 1986",
-      "serial" : "A865503",
       "strings" : "EXL170",
       "type" : "Bass Guitar",
       "year" : "1986"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Battery Compartment" : "18-volt w/Screw Plate",
+         "Binding" : "MOP w/ BLK/WHT/BLK Multi-ply",
+         "Body Material" : "Mahogany",
+         "Bridge" : "Schecter Custom Bass String Thru",
+         "Bridge Pickup" : "EMG 40TW",
+         "Color" : "See-Thru Black Satin (STBLS)",
+         "Construction" : "Neck-Thru w/Ultra Access",
+         "Controls" : "Volume (Push-Pull)/Volume (Push-Pull)/ Active EMG 3-Band EQ",
+         "Fret Count" : "24",
+         "Fretboard Material" : "Ebony",
+         "Fretboard Radius" : "16\" (406mm)",
+         "Frets" : "X-Jumbo",
+         "Hardware Color" : "Black Chrome",
+         "Inlays" : "MOP Gothic Crosses",
+         "Item Number" : "1918",
+         "Knobs" : "Metal Knurled w/ Set Screw",
+         "Location" : "South Korea",
+         "Neck @ 12th Fret" : ".866\" (22mm)",
+         "Neck Material" : "Maple/Walnut Multi-ply",
+         "Neck Pickup" : "EMG 40TW",
+         "Neck Shape" : "Thin \"C\"",
+         "Next @ 1st Fret" : ".787\" (20mm)",
+         "Nut" : "Graph Tech XL Black Tusq",
+         "Nut Width" : "1.771\" (45mm)",
+         "Production Year" : "2021",
+         "Scale" : "35\" (889mm)",
+         "Serial" : "W21052189",
+         "Strings" : "Ernie Ball 5 String Super Long #2850 (.045-.130)",
+         "Top Contour" : "Arched Top",
+         "Top Material" : "Quilted Maple",
+         "Truss Rod" : "2-Way Adjustable Rod w/ 5/32\" (4mm) Allen Nut",
+         "Tuners" : "Grover"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://www.schecterguitars.com/Hellraiser-Extreme-5?quantity=1&custitem_color_master_list=438",
-      "location" : "South Korea",
       "make" : "Schecter",
       "model" : "Hellraiser Extreme-5",
       "notes" : [
@@ -290,14 +569,32 @@ var equipment = [
          "Straplok",
          "SGR-6B"
       ],
-      "production_year" : "2021",
-      "serial" : "W21052189",
       "strings" : "ECB81-5SL",
       "type" : "Bass Guitar",
       "year" : "2021"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Back / Neck / Sides" : "Figured Maple",
+         "Binding" : "None",
+         "Bridge / Fingerboard" : "Black Walnut",
+         "Color" : "Natural Amber",
+         "Depth of Body" : "1.7\" (43mm)",
+         "Fingerboard Radius" : "15.5” (394mm)",
+         "Finish" : "Spirit Varnish",
+         "Length of Body (w/ heel)" : "12.5\" (318mm)",
+         "Location" : "Qingdao, China?",
+         "Nut Width" : "1 - 1/8\" (28mm)",
+         "Pickguard" : "Adhered Maple",
+         "Serial" : "FT180030",
+         "Strings" : "Northfield LITE, Phosphor Bronze, Loop end: G (.036), D (.024), A (.015), E (.010)",
+         "Tailpiece" : "Cast",
+         "Top" : "Spruce",
+         "Total Length" : "25.5\" (648mm)",
+         "Tuners" : "Gotoh",
+         "Width of Body" : "10\" (254mm)"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://www.northfieldinstruments.com/thecalhoun",
@@ -309,30 +606,35 @@ var equipment = [
          "C5-R",
          "C5K",
          "M19PR-TAN",
+         "C-3770 Trailpak II",
          "Mandolin Twin"
       ],
-      "serial" : "FT180030",
       "strings" : "EFW74",
       "type" : "Mandolin",
       "year" : "2018"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Location" : "Camden, NJ, USA",
+         "Production Year" : "Patented Sept. 23, 1914",
+         "Serial" : "unnumbered"
+      },
       "image" : true,
-      "location" : "Camden, NJ, USA",
       "make" : "Wm. Schmick",
       "model" : "Lyric Banjo",
       "notes" : [
          "EJ74"
       ],
-      "production_year" : "Patented Sept. 23, 1914",
-      "serial" : "unnumbered",
       "strings" : "EJ74",
       "type" : "Mandolin",
       "year" : "1920s?"
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Serial" : "27726-680"
+      },
       "image" : true,
       "make" : "Framus",
       "model" : "Tenor Banjo",
@@ -342,10 +644,8 @@ var equipment = [
          "C5-R",
          "C5K",
          "PM14-DBR",
-         "C-3770 Trailpak II",
          "Irish Tenor tuning: 13/17/26/36"
       ],
-      "serial" : "27726-680",
       "strings" : "EXL110",
       "type" : "Banjo",
       "year" : "1968",
@@ -353,10 +653,13 @@ var equipment = [
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Location" : "China",
+         "Serial" : "12060058"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://kamoaukuleles.myshopify.com/collections/kamoa-e3-s/products/kamoa-e3-s-soprano-red",
-      "location" : "China",
       "make" : "Kamoa",
       "model" : "E3-S",
       "notes" : [
@@ -364,7 +667,6 @@ var equipment = [
          "Soprano",
          "GBE-UKE-SOP"
       ],
-      "serial" : "12060058",
       "strings" : "EJ99SC",
       "type" : "Ukulele",
       "year" : "2015",
@@ -372,8 +674,21 @@ var equipment = [
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Body material" : "Sengon",
+         "Bridge material" : "Mahogany",
+         "Fingerboard material" : "Mahogany",
+         "Finish" : "High Gloss",
+         "Fret count" : "12",
+         "Fret material" : "Nickel",
+         "Location" : "China",
+         "Machine heads" : "Dolphin, Gold Plated",
+         "Neck material" : "Jabon",
+         "Nut" : "ABS, White",
+         "Saddle" : "Graph Tech NuBone XB",
+         "Scale length" : "346mm"
+      },
       "image" : true,
-      "location" : "China",
       "make" : "Mahalo",
       "model" : "U/USA",
       "not_mine" : true,
@@ -388,6 +703,25 @@ var equipment = [
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Back and Sides" : "Composite",
+         "Body Depth" : "2.375\"",
+         "Body Length" : "9.3125\"",
+         "Fingerboard" : "Rosewood",
+         "Fingerboard Width at Nut" : "1.375\"",
+         "Fingerboard width at neck/body joint" : "1.6875\"",
+         "Finish" : "Gloss",
+         "Neck" : "Mahogany",
+         "Number of Frets" : "12",
+         "Nut" : "Plastic",
+         "Overall Instrument Length" : "20.875\"",
+         "Saddle" : "Plastic",
+         "Scale Length" : "13.5\"",
+         "Top" : "Philippine Mahogany",
+         "Width at Lower Bout" : "6.8125\"",
+         "Width at Upper Bout" : "5.0625\"",
+         "Width at Waist" : "4.4375\""
+      },
       "image" : true,
       "link" : "https://kalabrand.com/products/mk-sd-rdburst?_pos=5&_sid=e7e1bb13e&_ss=r",
       "make" : "Makala",
@@ -406,6 +740,21 @@ var equipment = [
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Comb (finish)" : "triple lacquered",
+         "Comb (material, color)" : "pearwood, brown",
+         "Cover plates" : "stainless steel",
+         "Keys" : "F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G",
+         "Length" : "3.9\" (10 cm)",
+         "Mouthpiece (surface)" : "pearwood",
+         "Number of holes" : "10",
+         "Reed plates (material, thickness)" : "brass, 0.9 mm",
+         "Reed plates (surface)" : "brass",
+         "Reeds (number, material)" : "20, brass",
+         "Tonal range" : "3 octaves",
+         "Tuning" : "Richter",
+         "Type" : "diatonic"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/marine-band/marine-band-deluxe",
@@ -421,6 +770,21 @@ var equipment = [
    },
    {
       "category" : "Instruments",
+      "detail" : {
+         "Comb (finish)" : "ABS",
+         "Comb (material, color)" : "ABS, black",
+         "Cover plates" : "stainless steel",
+         "Keys" : "HG, F#, F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G",
+         "Length" : "4.0\" (10.2 cm)",
+         "Mouthpiece (surface)" : "ABS",
+         "Number of holes" : "10",
+         "Reed plates (material, thickness)" : "brass, 0.9 mm",
+         "Reed plates (surface)" : "brass",
+         "Reeds (number, material)" : "20, brass",
+         "Tonal range" : "3 octaves",
+         "Tuning" : "Richter/Country (Country just in F#, F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G)",
+         "Type" : "diatonic"
+      },
       "featured" : true,
       "image" : true,
       "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/progressive/special-20",
@@ -444,6 +808,9 @@ var equipment = [
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/pianos/arius/",
       "make" : "Yamaha",
+      "manuals" : {
+         "Manual" : "YDP223.pdf"
+      },
       "model" : "YDP-223",
       "type" : "Keyboard",
       "year" : "2006"
@@ -453,6 +820,9 @@ var equipment = [
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/keyboards/portable_keyboards/",
       "make" : "Yamaha",
+      "manuals" : {
+         "Manual" : "YPT300_1.pdf"
+      },
       "model" : "YPT-300",
       "type" : "Keyboard",
       "year" : "2007"
@@ -462,6 +832,9 @@ var equipment = [
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/drums/el_drums/digital_percussion/",
       "make" : "Yamaha",
+      "manuals" : {
+         "Manual" : "dd55.pdf"
+      },
       "model" : "DD-55C",
       "type" : "Drums",
       "year" : "2007"
@@ -525,6 +898,10 @@ var equipment = [
    },
    {
       "category" : "Percussion Instruments",
+      "detail" : {
+         "Material" : "Baltic Birch",
+         "String" : "Dual internal fixed snare wires"
+      },
       "image" : true,
       "link" : "https://meinlpercussion.com/en/products/jc50ab-b-m5746.html",
       "make" : "Meinl",
@@ -756,6 +1133,11 @@ var equipment = [
       "image" : true,
       "link" : "https://line6.com/legacy/podx3live",
       "make" : "Line 6",
+      "manuals" : {
+         "Advanced Guide" : "POD X3 Advanced Guide - English ( Rev E ).pdf",
+         "Model Gallery" : "POD X3 Model Gallery - English ( Rev B ).pdf",
+         "Quick Start" : "POD X3 Quick Start - English ( Rev F ).pdf"
+      },
       "model" : "POD X3 Live",
       "type" : "Pedal",
       "year" : "2010"
@@ -765,6 +1147,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.boss.info/us/products/rc-2/",
       "make" : "BOSS",
+      "manuals" : {
+         "Owner’s Manual" : "RC-2_e2.pdf"
+      },
       "model" : "RC-2 Loop Station",
       "type" : "Pedal",
       "year" : "2006"
@@ -780,27 +1165,60 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Audio" : "Mono",
+         "Bypass" : "True Bypass",
+         "Circuit" : "Analog",
+         "Current Draw" : "3mA",
+         "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
+         "Power Supply" : "9V"
+      },
       "image" : true,
       "link" : "https://www.ehx.com/products/nano-big-muff-pi",
       "make" : "Electro-Harmonix",
+      "manuals" : {
+         "Manual" : "nano-big-muff-pi-manual.pdf"
+      },
       "model" : "Nano Big Muff Pi",
       "type" : "Pedal",
       "year" : "2020"
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Audio" : "Mono",
+         "Bypass" : "Buffered Bypass",
+         "Circuit" : "Analog",
+         "Current Draw" : "25 mA",
+         "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
+         "Power Supply" : "9V"
+      },
       "image" : true,
       "link" : "https://www.ehx.com/products/metal-muff",
       "make" : "Electro-Harmonix",
+      "manuals" : {
+         "Manual" : "metal-muff-manual.pdf"
+      },
       "model" : "Metal Muff",
       "type" : "Pedal",
       "year" : "2020"
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Audio" : "Mono",
+         "Bypass" : "Buffered Bypass",
+         "Circuit" : "Analog",
+         "Current Draw" : "15mA",
+         "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
+         "Power Supply" : "9V"
+      },
       "image" : true,
       "link" : "https://www.ehx.com/products/deluxe-bass-big-muff-pi",
       "make" : "Electro-Harmonix",
+      "manuals" : {
+         "Manual" : "deluxe-bass-big-muff-pi.pdf"
+      },
       "model" : "Deluxe Bass Big Muff Pi",
       "type" : "Pedal",
       "year" : "2021"
@@ -819,6 +1237,9 @@ var equipment = [
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/guitars_basses/amps_accessories/thr-ii/",
       "make" : "Yamaha",
+      "manuals" : {
+         "Reference Manual" : "thr30ii_en_rm_c0.pdf"
+      },
       "model" : "THR30II Wireless",
       "notes" : [
          "G10"
@@ -831,6 +1252,9 @@ var equipment = [
       "image" : true,
       "link" : "https://line6.com/spider-guitar-amp/amps/",
       "make" : "Line 6",
+      "manuals" : {
+         "Pilot’s Handbook" : "Spider IV 15 Pilot's Guide - English ( Rev F ).pdf"
+      },
       "model" : "Spider IV 15",
       "notes" : [
          "MkI"
@@ -844,6 +1268,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.blackstaramps.com/uk/products/fly-3",
       "make" : "Blackstar",
+      "manuals" : {
+         "Owner’s Manual" : "fly-handbook.pdf"
+      },
       "model" : "Fly 3",
       "type" : "Amplifier",
       "year" : "2020"
@@ -877,6 +1304,9 @@ var equipment = [
       "image" : true,
       "link" : "https://line6.com/legacy/fbve",
       "make" : "Line 6",
+      "manuals" : {
+         "User Manual" : "FBV User Manual - English.pdf"
+      },
       "model" : "FBV Express",
       "type" : "Controller",
       "year" : "2015"
@@ -885,6 +1315,9 @@ var equipment = [
       "category" : "Hardware",
       "image" : true,
       "make" : "M-Audio",
+      "manuals" : {
+         "Manual" : "Oxygen8.pdf"
+      },
       "model" : "Oxygen8",
       "notes" : [
          "USB"
@@ -902,6 +1335,12 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Depth" : "90 mm / 3-9/16 inches",
+         "Height" : "43 mm / 1-3/4 inches",
+         "Weight" : "240 g / 0 lbs. 9 oz.",
+         "Width" : "96 mm / 3-13/16 inches"
+      },
       "image" : true,
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
       "make" : "BOSS",
@@ -914,24 +1353,65 @@ var equipment = [
       "image" : true,
       "link" : "http://www.studioprojects.com/b1.html",
       "make" : "Studio Projects",
+      "manuals" : {
+         "Manual" : "studio_projects_b_series_manual.pdf",
+         "Pattern" : "studio_projects_b1.pdf"
+      },
       "model" : "B1",
       "type" : "Microphone",
       "year" : "2004"
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Audio frequency bandwidth" : "20 - 20000 Hz",
+         "Bass cut filter" : "300 Hz - 12 dB/octave",
+         "Contacts" : "3-pin",
+         "Current" : "<= 3 mA",
+         "Diameter" : "54 mm",
+         "Electrical impedance" : "<= 200 Ohms",
+         "Equivalent noise level" : "16 dB-A",
+         "Gender" : "Male",
+         "Length" : "165 mm",
+         "Net Weight" : "530 g",
+         "Polar Pattern" : "Cardioid",
+         "Preattenuation Pad" : "-20 dB",
+         "Recommended load impedance" : ">= 1000 Ohms",
+         "Sensitivity" : "20 mV/Pa",
+         "Signal to Noise" : "78 dB-A",
+         "Type" : "Balanced XLR",
+         "Voltage" : "44 to 52 V"
+      },
       "image" : true,
       "link" : "https://www.akg.com/Microphones/Condenser%20Microphones/P220.html",
       "make" : "AKG",
+      "manuals" : {
+         "User Instructions" : "585203.pdf"
+      },
       "model" : "P220",
       "type" : "Microphone",
       "year" : "2021"
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Connector" : "XLR-3",
+         "Dimensions" : "Ø 48 x 180 mm",
+         "Frequency response (Microphone)" : "40 - 16000 Hz",
+         "Min. terminating impedance" : "1000 Ω",
+         "Nominal impedance" : "350 Ω",
+         "Sensitivity in free field, no load (1kHz)" : "2,7 mV/Pa",
+         "Weight" : "330 g",
+         "Weight w/o cable" : "330 g"
+      },
       "image" : true,
       "link" : "https://en-us.sennheiser.com/live-performance-microphone-vocal-stage-e-835",
       "make" : "Sennheiser",
+      "manuals" : {
+         "Manual" : "e835_Manual_01_2019_EN.pdf",
+         "Product Specification" : "SP_1209_v1.0_e_835_e_835-S_Product_Specification_EN.pdf",
+         "Quick Guide" : "e835_Quick_Guide_09_2023.pdf"
+      },
       "model" : "e 835",
       "type" : "Microphone",
       "year" : "2011"
@@ -941,6 +1421,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.shure.com/en-US/products/microphones/sm58",
       "make" : "Shure",
+      "manuals" : {
+         "User Guide" : "us_pro_sm58_ug.pdf"
+      },
       "model" : "SM-58",
       "type" : "Microphone",
       "year" : "2007"
@@ -949,12 +1432,28 @@ var equipment = [
       "category" : "Hardware",
       "image" : true,
       "make" : "Edirol",
+      "manuals" : {
+         "Owner’s Manual" : "MA-20D_egfis2.pdf"
+      },
       "model" : "MA-20D",
       "type" : "Monitors",
       "year" : "2004"
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Cable" : "11' (3.4 m) (OFC litz wire, left-side exit)",
+         "Connector" : "1/4\" (6.3 mm) phone plug",
+         "Driver Diameter" : "40 mm",
+         "Frequency Response" : "5-28,000 Hz",
+         "Impedance" : "60 ohms",
+         "Magnet" : "Neodymium",
+         "Maximum Input Power" : "1,600 mW at 1 kHz",
+         "Sensitivity" : "100 dB",
+         "Type" : "Closed-back dynamic",
+         "Voice Coil" : "Copper-clad aluminum wire",
+         "Weight" : "8.8 oz (250 g) without cable"
+      },
       "image" : true,
       "link" : "https://www.audio-technica.com/en-us/ath-m40fs",
       "make" : "Audio Technica",
@@ -964,18 +1463,43 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Cord" : "Coiled 1-3m long single-sided OFC litz cord with gold plated stereo unimatch plug",
+         "Driver Diameter" : "40 mm",
+         "Frequency Range" : "5-30,000 Hz",
+         "Impedance" : "45Ω at 1 kHz",
+         "Mass" : "Approx. 260g (9 3/16 oz) (without cord)",
+         "Power handling capacity" : "1,000 mW",
+         "Sensitivity" : "106 dB",
+         "Type" : "Closed-back dynamic"
+      },
       "image" : true,
       "link" : "https://www.sony.com/electronics/headphones/t/headband-headphones",
       "make" : "Sony",
+      "manuals" : {
+         "Operating Instructions" : "26673061M.pdf"
+      },
       "model" : "MDR-V600",
       "type" : "Headphones",
       "year" : "1999"
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Frequency Range" : "SE215 22 Hz–17.5 kHz",
+         "Impedance at 1 kHz" : "17 Ω",
+         "Net Weight" : "30 g (1 oz.)",
+         "Sensitivity at 1 kHz" : "107 dB SPL/mW",
+         "Transducer Type" : "Single High-Definition MicroDriver"
+      },
       "image" : true,
       "link" : "https://www.shure.com/en-US/products/earphones/se215cl",
       "make" : "Shure",
+      "manuals" : {
+         "Earphone Resource Center" : "Earphone-Resource-Center_guide_en-US.pdf",
+         "Exploded View" : "SE215_Exploded_View.pdf",
+         "User Guide" : "SE215M_guide_en-US.pdf"
+      },
       "model" : "SE215-CL",
       "type" : "Headphones",
       "year" : "2021"
@@ -985,6 +1509,10 @@ var equipment = [
       "image" : true,
       "link" : "https://mackie.com/products/big-knob-series-monitor-controllers-interfaces",
       "make" : "Mackie",
+      "manuals" : {
+         "Operation Guide" : "big_knob_studio_command_system.pdf",
+         "Quick Start Guide" : "big_knob.pdf"
+      },
       "model" : "Big Knob",
       "type" : "Mixer",
       "year" : "2014"
@@ -995,6 +1523,9 @@ var equipment = [
       "image" : true,
       "link" : "https://peavey.com/products/mixers.cfm",
       "make" : "Peavey",
+      "manuals" : {
+         "Operations Guide" : "pv6_manual.pdf"
+      },
       "model" : "PV 6",
       "type" : "Mixer",
       "year" : "2006"
@@ -1004,6 +1535,9 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "make" : "Tapco",
+      "manuals" : {
+         "Manual" : "MixSeries_OM.pdf"
+      },
       "model" : "Mix.50",
       "type" : "Mixer",
       "year" : "2008"
@@ -1013,6 +1547,9 @@ var equipment = [
       "image" : true,
       "link" : "https://usa.yamaha.com/products/proaudio/pa_systems/",
       "make" : "Yamaha",
+      "manuals" : {
+         "Owner’s Manual" : "stagepas500_en_om_d0.pdf"
+      },
       "model" : "STAGEPAS 500",
       "type" : "PA",
       "year" : "2011"
@@ -1022,6 +1559,10 @@ var equipment = [
       "image" : true,
       "link" : "https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2",
       "make" : "Focusrite",
+      "manuals" : {
+         "Focusrite Control User Guide" : "Focusrite Control Scarlett 3rd Gen User Guide_EN_0.pdf",
+         "User Guide" : "516658.pdf"
+      },
       "model" : "Scarlett 2i2",
       "notes" : [
          "Gen3",
@@ -1035,6 +1576,10 @@ var equipment = [
       "image" : true,
       "link" : "https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-18i20",
       "make" : "Focusrite",
+      "manuals" : {
+         "Focusrite Control User Guide" : "Focusrite Control Scarlett 2nd Gen User Guide - EN.pdf",
+         "User Guide" : "374164.pdf"
+      },
       "model" : "Scarlett 18i20",
       "notes" : [
          "Gen2",
@@ -1048,6 +1593,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.motu.com/products/motuaudio/828/",
       "make" : "MOTU",
+      "manuals" : {
+         "User Guide" : "828mkII_Manual_Mac.pdf"
+      },
       "model" : "828mkII",
       "notes" : [
          "FireWire"
@@ -1060,6 +1608,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/",
       "make" : "Korg",
+      "manuals" : {
+         "Owner’s Manual" : "DTR2000_1000_EFG2.pdf"
+      },
       "model" : "DTR-2000",
       "notes" : [
          "rackmount"
@@ -1072,6 +1623,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/sledgehammer_pro/",
       "make" : "Korg",
+      "manuals" : {
+         "Owner’s Manual" : "SledgehammerPro_OM_EFGSJ2.pdf"
+      },
       "model" : "Sledgehammer Pro",
       "notes" : [
          "Clip-on"
@@ -1083,6 +1637,9 @@ var equipment = [
       "category" : "Hardware",
       "image" : true,
       "make" : "Furman",
+      "manuals" : {
+         "Owner’s Manual" : "SERIES_II_15AMP_manual.pdf"
+      },
       "model" : "PM-8 II",
       "notes" : [
          "power conditioner"
@@ -1094,6 +1651,9 @@ var equipment = [
       "category" : "Hardware",
       "image" : true,
       "make" : "Furman",
+      "manuals" : {
+         "Owner’s Manual" : "PB-48_PB-48D_manual.pdf"
+      },
       "model" : "PB-48",
       "notes" : [
          "patch bay"
@@ -1106,6 +1666,9 @@ var equipment = [
       "image" : true,
       "link" : "https://wittner-gmbh.de/wittner_metronome_maelzel_wooden_casing.html",
       "make" : "Wittner",
+      "manuals" : {
+         "Manual" : "maelzel_gebrauchsanleitung.pdf"
+      },
       "model" : "801m",
       "type" : "Metronome",
       "year" : "2007"
@@ -1132,18 +1695,43 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Bobbin Material" : "Fiber",
+         "Configuration" : "SSS",
+         "DC Resistance" : "Neck: 6.26K, Middle: 6.34K, Bridge: 6.43K",
+         "Inductance" : "Neck: 2.49 Henries, Middle: 2.5 Henries, Bridge: 2.63 Henries",
+         "Lead Wire" : "Cloth-covered",
+         "Magnet Type" : "Alnico 5",
+         "Magnet Wire" : "Formvar-coated",
+         "Output" : "Moderate (3 out of 5)",
+         "Pole Pieces" : "Staggered hand-beveled",
+         "Style" : "Custom Shop",
+         "Tone" : "Modern"
+      },
       "image" : true,
       "link" : "https://shop.fender.com/en-US/parts/stratocaster-parts/custom-shop-fat-50s-stratocaster-pickups/0992113000.html",
       "make" : "Fender",
+      "manuals" : {
+         "Wiring Diagram" : "0992113000_custom_shop_fat_50s_strat_pickups.pdf"
+      },
       "model" : "Fat 50’s",
       "type" : "Pickup",
       "year" : "2004"
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Battery Life" : "220 hours",
+         "Pickup Length" : "2.65\" (67.3 mm)",
+         "Soundhole" : "Round soundholes from 3 7/8\" (98 mm) to 4 1/8\" (105 mm) in diameter"
+      },
       "image" : true,
-      "link" : "https://www.fishman.com/product-series-matrix-pickup-systems/",
+      "link" : "https://www.fishman.com/portfolio/ellipse-matrix-blend-pickup-preamp-system/",
       "make" : "Fishman",
+      "manuals" : {
+         "Installation Guide" : "ellipse_matrix_blend_installation_guide.pdf",
+         "User Guide" : "ellipse_matrix_blend_user_guide.pdf"
+      },
       "model" : "Ellipse Matrix Blend",
       "type" : "Pickup",
       "year" : "2000s"
@@ -1153,6 +1741,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.fishman.com/product-series-aura-imaging/",
       "make" : "Fishman",
+      "manuals" : {
+         "User Guide" : "f1-aura-plus.pdf"
+      },
       "model" : "F1 Aura+",
       "type" : "Pickup",
       "year" : "2012"
@@ -1162,6 +1753,9 @@ var equipment = [
       "image" : true,
       "link" : "https://kksound.com/products/mandolintwin.php",
       "make" : "K&K",
+      "manuals" : {
+         "Installation Guide" : "mandolintwin-internal-new.pdf"
+      },
       "model" : "Mandolin Twin",
       "type" : "Pickup",
       "year" : "2019"
@@ -1246,6 +1840,9 @@ var equipment = [
       "category" : "Accessories",
       "image" : true,
       "make" : "EBow",
+      "manuals" : {
+         "Player’s Guide" : "EBowPlayersGuide.pdf"
+      },
       "model" : "EBow",
       "notes" : [
          "ebow"

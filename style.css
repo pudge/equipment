@@ -26,9 +26,16 @@ body {
     padding-top: 1em;
 }
 
-.dt-head-center {
-    text-align: center;
-    width: 4.5em;
+.detail, .manuals {
+    font-size: smaller;
+}
+
+.detail_head {
+    font-weight: bold;
+}
+
+.detail_row, .manual_row {
+    padding-left: 2em;
 }
 
 img.imgsmall {
@@ -47,18 +54,10 @@ a.pic_modalize:visited  { color: #8AFF80 }
 a.pic_modalize:hover    { color: #8AFF80 }
 a.pic_modalize:active   { color: #8AFF80 }
 
-.dt-buttons button { font-size: 90% }
-
 .h2 {
     font-family: 'New Rocker', luminari;
     text-align: center;
 }
-
-/* modal image */
-/* 
-.pic_modalize { float: right }
- */
-
 
 /* Style the Image Used to Trigger the Modal */
 #pic_img {
@@ -68,10 +67,6 @@ a.pic_modalize:active   { color: #8AFF80 }
     max-height: 100%;
     max-width: 100%;
 }
-
-/* 
-#pic_img:hover {opacity: 0.7;}
- */
 
 /* The Modal (background) */
 #pic_modal {
@@ -149,9 +144,6 @@ a.pic_modalize:active   { color: #8AFF80 }
 #clear_search {
     color: #222;
     margin-left: -1.3em;
-/*
-    margin-right: 1.3em;
- */
 }
 
 .copying {
