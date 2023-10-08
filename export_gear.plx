@@ -55,7 +55,6 @@ sub get_gear {
 #             local_serial    => idx($x->{'Local Serial'}),
 #             location        => idx($x->{'Location'}),
             strings         => $x->{'Strings'},
-            gauge           => $x->{'Gauge'},
             instrument      => $x->{'Instrument'},
             notes           => $x->{'Notes'},
             link            => $x->{'Link'}, # TBD
@@ -78,10 +77,6 @@ sub get_gear {
         if ($y->{instrument}) {
             $y->{notes} //= [];
             unshift @{$y->{notes}}, split ', ', $y->{instrument};
-        }
-        if ($y->{gauge}) {
-            $y->{notes} //= [];
-            unshift @{$y->{notes}}, split ', ', $y->{gauge};
         }
         if ($y->{strings}) {
             $y->{notes} //= [];

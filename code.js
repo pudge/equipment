@@ -16,6 +16,8 @@ const COL = {
 }
 
 const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.TYPE, COL.MAKE, COL.YEAR];
+// can do this once we make CAT an int
+// const columnOrder = [[ COL.CAT, 'desc' ], [ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
 const columnOrder = [[ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
 var columnMap = {};
 columnMap[COL.MODEL] = COL.CAT;

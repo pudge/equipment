@@ -4,10 +4,10 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Back / Side Finish" : "Gloss",
          "Back Inlay Material" : "Multi-Stripe",
          "Back Material" : "East Indian Rosewood",
          "Back Purfling/Strip" : "Zig-Zag",
-         "Back and Side Finish" : "Gloss",
          "Binding" : "Grained Ivoroid",
          "Body Size" : "D-14 Fret",
          "Brace Material" : "Spruce",
@@ -27,18 +27,17 @@ var equipment = [
          "Fingerboard Width at Nut" : "1 3/4\"",
          "Finish Neck" : "Satin",
          "Finish Top" : "Gloss",
+         "Fret Count" : "20",
          "Headplate Logo Style" : "Script Old Style Overlay",
          "Headplate Material" : "East Indian Rosewood",
          "Headstock Shape" : "Solid with Square Taper and Diamond",
          "Heelcap" : "Grained Ivoroid",
-         "Knob" : "Butterbean",
          "Location" : "Nazareth, Pennsylvania, USA",
          "Neck Color" : "Dark Mahogany",
          "Neck Joins Body At" : "14th Fret",
          "Neck Material" : "Select Hardwood",
          "Neck Shape" : "Modified Low Oval",
          "Neck Taper" : "High-Performance Taper",
-         "Number of Frets Total" : "20",
          "Nut Material" : "Bone",
          "Pickguard" : "Tortoise Pattern",
          "Production Year" : "October 2012",
@@ -52,6 +51,7 @@ var equipment = [
          "Top Color" : "Aging Toner",
          "Top Inlay Material" : "Bold Herringbone",
          "Top Material" : "Spruce",
+         "Tuning Knobs" : "Butterbean",
          "Tuning Machines" : "Nickel Open Gear"
       },
       "featured" : true,
@@ -78,10 +78,10 @@ var equipment = [
          "Back Material" : "High Pressure Laminate",
          "Body Size" : "D-14 Fret",
          "Finish Top" : "Satin",
+         "Fret Count" : "20",
          "Location" : "Nazareth, Pennsylvania, USA",
          "Neck Joins Body At" : "14th Fret",
          "Neck Material" : "Plywood",
-         "Number of Frets Total" : "20",
          "Nut Material" : "Corian",
          "Production Year" : "February 2000",
          "Scale Length" : "25.4\"",
@@ -108,23 +108,24 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Body Depth" : "1.75\"",
          "Body Material" : "Mahogany",
-         "Body Thickness" : "1.75\"",
          "Body Width" : "10.75\"",
-         "Fingerboard" : "Black Walnut",
+         "Color" : "Mahogany",
+         "Fingerboard Material" : "Black Walnut",
          "Finish" : "Satin",
          "Fret Count" : "22",
          "Frets" : "Medium Profile",
          "Neck" : "Mahogany",
          "Neck Radius" : "9.5\"",
          "Neck Width at Nut" : "1.75\"",
-         "Overall Depth" : "2.13\"",
-         "Overall Length" : "30\"",
-         "Pickup(s)" : "Shadow Nanoflex",
+         "Pickups" : "Shadow Nanoflex",
          "Scale Length" : "25.5\"",
          "Serial" : "M3-02910",
-         "Tuning Hardware" : "Black Anodized Closed Gear",
-         "Weight" : "4 lbs 4 oz",
+         "Total Depth" : "2.13\"",
+         "Total Length" : "30\"",
+         "Tuning Machines" : "Black Anodized Closed Gear",
+         "Weight" : "4lbs, 4oz",
          "dB at 1'" : "Peak: 93db, Average: 80db"
       },
       "featured" : true,
@@ -139,8 +140,7 @@ var equipment = [
          "AA Lifespan 2.0 MA530T",
          "Acetal Standard",
          "S1",
-         "C1K",
-         "Mahogany"
+         "C1K"
       ],
       "strings" : "AA Lifespan 2.0 MA530T",
       "type" : "Acoustic Guitar",
@@ -171,17 +171,18 @@ var equipment = [
       "detail" : {
          "Body Finish" : "Gloss",
          "Body Material" : "Mahogany",
+         "Color" : "Ebony",
+         "Fingerboard Inlays" : "Dot",
          "Fret Count" : "20",
          "Frets" : "Medium Jumbo",
-         "Inlays" : "Dot",
          "Neck Joint" : "Dovetail; Glued-in",
          "Neck Profile" : "SlimTaper C-profile",
-         "Nut Width" : "43.0 mm / 1.692 in",
+         "Nut Width" : "43.0mm (1.692”)",
          "Pickguard" : "1-Ply; Black PVC",
-         "Scale Length" : "647.7 mm / 25.5 in",
+         "Scale Length" : "647.7mm (25.5”)",
          "Serial" : "TBD",
-         "Top" : "Select Spruce",
-         "Truss Rod" : "2-way Adjustable",
+         "Top Material" : "Select Spruce",
+         "Truss Rod" : "2-Way Adjustable",
          "Tuning Machines" : "Premium Die Cast"
       },
       "image" : true,
@@ -190,8 +191,7 @@ var equipment = [
       "model" : "Songmaker DR-100",
       "not_mine" : true,
       "notes" : [
-         "AA Lifespan 2.0 MA550T",
-         "Ebony"
+         "AA Lifespan 2.0 MA550T"
       ],
       "strings" : "AA Lifespan 2.0 MA550T",
       "type" : "Acoustic Guitar",
@@ -202,17 +202,17 @@ var equipment = [
       "detail" : {
          "Body Finish" : "Satin Body Finish",
          "Body Material" : "Laminated Sapele",
-         "Body Style" : "3/4 scale",
-         "Bracing" : "X Bracing",
+         "Body Style" : "3/4 size",
+         "Bracing Pattern" : "X Bracing",
          "Bridge" : "Rosewood with Compensated Saddle",
          "Fret Count" : "18",
          "Neck Finish" : "Satin Neck Finish",
          "Neck Material" : "Nato",
          "Nut Material" : "Synthetic Bone",
-         "Nut Width" : "1.69 in. (43 mm)",
-         "Scale Length" : "23.3 in. (592 mm)",
+         "Nut Width" : "1.69\" (43mm)",
+         "Scale Length" : "23.3\" (592mm)",
          "Serial" : "OI14087311",
-         "Top" : "Laminated Agathis",
+         "Top Material" : "Laminated Agathis",
          "Tuning Machines" : "Die-Cast Machine Heads"
       },
       "image" : true,
@@ -232,14 +232,14 @@ var equipment = [
       "detail" : {
          "Body Material" : "Basswood",
          "Color" : "Black",
+         "Fingerboard Material" : "Rosewood",
          "Fingerboard Radius" : "10\"",
-         "Fingerboard material" : "Rosewood",
          "Fret Count" : "22",
          "Frets" : "Medium Profile",
          "Location" : "Korea",
          "Neck Material" : "Maple",
-         "Nut width" : "1.5\"",
-         "Scale length" : "25.5”",
+         "Nut Width" : "1.5\"",
+         "Scale Length" : "25.5”",
          "Serial" : "3058431"
       },
       "featured" : true,
@@ -298,30 +298,30 @@ var equipment = [
          "Bridge Pickup" : "ProBucker™ 3",
          "Color" : "Translucent Blue",
          "Control Knobs" : "Gold insert knobs with nickel plated dial pointers",
-         "Controls" : "2 Volume, 2 Tone, CTS® potentiometers",
+         "Controls" : "2 Volume, 2 Tone, CTS® Potentiometers",
+         "Fingerboard Inlays" : "Pearloid Trapezoid",
          "Fingerboard Material" : "Laurel",
-         "Fingerboard Radius" : "304.8 mm / 12 in",
+         "Fingerboard Radius" : "304.8mm / 12\"",
          "Finish" : "Nickel",
          "Fret Count" : "22",
          "Frets" : "Medium Jumbo",
-         "Inlays" : "Pearloid Trapezoid",
          "Joint" : "Glued in",
          "Local Serial" : "27363",
          "Location" : "Qingdao (electric), China",
          "Neck Pickup" : "ProBucker™ 2",
+         "Neck Profile" : "SlimTaper™ 60s C",
          "Nut Material" : "Graph Tech®",
-         "Nut Width" : "43.0 mm / 1.692 in",
+         "Nut Width" : "43.0mm (1.692”)",
          "Pickguard" : "Cream",
          "Pickup Covers" : "Nickel",
          "Pickup Selector" : "3-way Epiphone toggle",
          "Production Year" : "February 2021",
-         "Profile" : "SlimTaper™ 60s C",
-         "Scale Length" : "628.65 mm / 24.75 in",
+         "Scale Length" : "628.65mm (24.75”)",
          "Serial" : "21021527363",
          "Tailpiece" : "Stopbar",
-         "Top" : "AA Flame Maple",
+         "Top Material" : "AA Flame Maple",
          "Truss Rod" : "Adjustable",
-         "Truss Rod Cover" : "\"Bell Shaped\"; 2-layer (Black/White); 60s era E",
+         "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White); 60s-era E",
          "Tuning Machines" : "Grover® Rotomatic® 18:1"
       },
       "image" : true,
@@ -335,8 +335,7 @@ var equipment = [
          "C1K",
          "M17SS-BLK",
          "S-Locks",
-         "Standard ’60s Quilt Top",
-         "Translucent Blue"
+         "Standard ’60s Quilt Top"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -349,27 +348,27 @@ var equipment = [
          "Body Material" : "Mahogany",
          "Bridge" : "Epiphone LockTone™ Tune-O-Matic",
          "Bridge Pickup" : "Epiphone Alnico Classic PRO™ Bridge",
+         "Color" : "Heritage Cherry",
          "Control Knobs" : "Black Top Hats with Inserts",
-         "Controls" : "2- Volume, 2- Tone CTS pots",
+         "Controls" : "2 Volume, 2 Tone, CTS® Potentiometers",
+         "Fingerboard Inlays" : "Trapezoid",
          "Fingerboard Material" : "Laurel",
-         "Fingerboard Radius" : "304.8 mm / 12 in",
+         "Fingerboard Radius" : "304.8mm / 12\"",
          "Finish" : "Nickel",
          "Fret Count" : "22",
          "Frets" : "Medium Jumbo",
-         "Inlays" : "Trapezoid",
          "Joint" : "Glued in; Set Neck",
          "Local Serial" : "30731",
          "Location" : "Qingdao (electric), China",
          "Neck Pickup" : "Epiphone Alnico Classic PRO™ Neck",
+         "Neck Profile" : "60s SlimTaper™",
          "Nut Material" : "Graph Tech NuBone®",
-         "Nut Width" : "43.0 mm / 1.692 in",
+         "Nut Width" : "43.0mm (1.692”)",
          "Pickguard" : "5-Ply, Black",
          "Pickup Selector" : "3-way Epiphone toggle",
          "Production Year" : "May 2023",
-         "Profile" : "60s SlimTaper™",
-         "Scale Length" : "628.65 mm / 24.75 in",
+         "Scale Length" : "628.65mm (24.75”)",
          "Serial" : "23051530731",
-         "Strap Buttons" : "2 - bottom and heel",
          "Tailpiece" : "Epiphone LockTone™ Stop Bar",
          "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Epiphone Deluxe Tuners 18:1 ratio"
@@ -380,8 +379,7 @@ var equipment = [
       "model" : "SG Standard",
       "not_mine" : true,
       "notes" : [
-         "EXL110",
-         "Heritage Cherry"
+         "EXL110"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -390,14 +388,14 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Body material" : "Mahogany",
-         "Bridge" : "Schaller Floyd Rose tremolo",
+         "Body Material" : "Mahogany",
+         "Bridge" : "Schaller Floyd Rose Tremolo",
          "Fingerboaerd material" : "Maple",
-         "Fret count" : "24",
+         "Fret Count" : "24",
          "Frets" : "Jumbo",
          "Location" : "Korea",
-         "Neck material" : "Rosewood",
-         "Pickup configuration" : "H-H",
+         "Neck Material" : "Rosewood",
+         "Pickup Configuration" : "HH",
          "Scale Length" : "25.5\"",
          "Serial" : "2110103"
       },
@@ -421,25 +419,24 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Body material" : "solid basswood",
-         "Body style" : "3/4 size",
-         "Fingerboard material" : "Rosewood",
-         "Fret count" : "22",
-         "Neck material" : "Hard Rock Maple",
-         "Neck style" : "slim",
+         "Body Material" : "Solid Basswood",
+         "Body Style" : "3/4 size",
+         "Color" : "Awesome Blue",
+         "Fingerboard Material" : "Rosewood",
+         "Fret Count" : "22",
+         "Neck Material" : "Hard Rock Maple",
+         "Neck Style" : "Slim",
          "Pickups" : "Seymour Duncan open coil humbucker, and lipstick-style single coil",
-         "Scale length" : "24 3/4″",
+         "Scale Length" : "22 1/2\" scale",
          "Serial" : "207757",
-         "Tuning hardware" : "Grover"
+         "Tuners" : "Grover"
       },
       "image" : true,
       "make" : "Daisy Rock",
       "model" : "Daisy Short-Scale",
       "not_mine" : true,
       "notes" : [
-         "EXL110",
-         "22 1/2\" scale",
-         "Awesome Blue"
+         "EXL110"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -450,14 +447,14 @@ var equipment = [
       "detail" : {
          "Body Material" : "Alder",
          "Color" : "Sunburst",
+         "Fingerboard Material" : "Rosewood",
          "Fingerboard Radius" : "10\"",
-         "Fingerboard material" : "Rosewood",
          "Fret Count" : "21",
          "Frets" : "Medium Profile",
          "Location" : "Korea",
          "Neck Material" : "Maple",
-         "Nut width" : "1.5\"",
-         "Scale length" : "34\"",
+         "Nut Width" : "1.5\"",
+         "Scale Length" : "34\"",
          "Serial" : "4101739"
       },
       "featured" : true,
@@ -481,31 +478,29 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Body material" : "Basswood and birch",
-         "Body type" : "Solid body",
+         "Body Material" : "Basswood and Birch",
          "Bridge" : "Standard (19mm string spacing)",
-         "Bridge pickup" : "Super P4",
-         "Controls" : "Master volume / Master tone / Balancer",
-         "Electronics/ Strings" : "",
-         "Fingerboard inlays" : "Pearl dot and side dots",
-         "Fingerboard material" : "Rosewood",
-         "Fret count" : "22",
-         "Frets" : "medium",
-         "Hardware color" : "Chrome",
-         "Knob style" : "Sure Grip II",
+         "Bridge Pickup" : "Super P4",
+         "Controls" : "Volume, Tone, Balancer",
+         "Fingerboard Inlay Style" : "Pearl dot and side dots",
+         "Fingerboard Material" : "Rosewood",
+         "Fret Count" : "22",
+         "Frets" : "Medium",
+         "Hardware Color" : "Chrome",
+         "Knobs" : "Sure Grip II",
          "Local Serial" : "5503",
          "Location" : "FujiGen Gakki, Japan",
-         "Machine heads" : "Hercules B",
-         "Neck joint" : "AANJ",
-         "Neck material" : "1-piece maple",
-         "Neck pickup" : "Super J4",
-         "Neck type" : "D shape",
+         "Neck Joint" : "AANJ",
+         "Neck Material" : "1-Piece Maple",
+         "Neck Pickup" : "Super J4",
+         "Neck Type" : "D shape",
          "Nut" : "Plastic",
-         "Nut width" : "41mm",
-         "Pickup configuration" : "PJ",
+         "Nut Width" : "41mm",
+         "Pickup Configuration" : "PJ",
          "Production Year" : "January 1986",
-         "Scale length" : "864mm / 34\"",
-         "Serial" : "A865503"
+         "Scale Length" : "864mm (34”)",
+         "Serial" : "A865503",
+         "Tuning Machines" : "Hercules B"
       },
       "image" : true,
       "link" : "https://www.ibanez.com/usa/products/category/electric_basses/",
@@ -524,28 +519,28 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Battery Compartment" : "18-volt w/Screw Plate",
+         "Battery Compartment" : "18V w/Screw Plate",
          "Binding" : "MOP w/ BLK/WHT/BLK Multi-ply",
          "Body Material" : "Mahogany",
          "Bridge" : "Schecter Custom Bass String Thru",
          "Bridge Pickup" : "EMG 40TW",
          "Color" : "See-Thru Black Satin (STBLS)",
          "Construction" : "Neck-Thru w/Ultra Access",
-         "Controls" : "Volume (Push-Pull)/Volume (Push-Pull)/ Active EMG 3-Band EQ",
+         "Controls" : "2 Volume (Push-Pull), Active EMG 3-Band EQ",
+         "Fingerboard Inlays" : "MOP Gothic Crosses",
+         "Fingerboard Material" : "Ebony",
+         "Fingerboard Radius" : "16\" (406mm)",
          "Fret Count" : "24",
-         "Fretboard Material" : "Ebony",
-         "Fretboard Radius" : "16\" (406mm)",
          "Frets" : "X-Jumbo",
          "Hardware Color" : "Black Chrome",
-         "Inlays" : "MOP Gothic Crosses",
          "Item Number" : "1918",
          "Knobs" : "Metal Knurled w/ Set Screw",
          "Location" : "South Korea",
          "Neck @ 12th Fret" : ".866\" (22mm)",
+         "Neck @ 1st Fret" : ".787\" (20mm)",
          "Neck Material" : "Maple/Walnut Multi-ply",
          "Neck Pickup" : "EMG 40TW",
-         "Neck Shape" : "Thin \"C\"",
-         "Next @ 1st Fret" : ".787\" (20mm)",
+         "Neck Shape" : "Thin “C”",
          "Nut" : "Graph Tech XL Black Tusq",
          "Nut Width" : "1.771\" (45mm)",
          "Production Year" : "2021",
@@ -576,21 +571,21 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Back / Neck / Sides" : "Figured Maple",
+         "Back / Neck / Sides Material" : "Figured Maple",
          "Binding" : "None",
-         "Bridge / Fingerboard" : "Black Walnut",
+         "Bridge / Fingerboard Material" : "Black Walnut",
          "Color" : "Natural Amber",
          "Depth of Body" : "1.7\" (43mm)",
-         "Fingerboard Radius" : "15.5” (394mm)",
+         "Fingerboard Radius" : "15.5\" (394mm)",
          "Finish" : "Spirit Varnish",
          "Length of Body (w/ heel)" : "12.5\" (318mm)",
          "Location" : "Qingdao, China?",
-         "Nut Width" : "1 - 1/8\" (28mm)",
+         "Nut Width" : "1 1/8\" (28mm)",
          "Pickguard" : "Adhered Maple",
          "Serial" : "FT180030",
          "Strings" : "Northfield LITE, Phosphor Bronze, Loop end: G (.036), D (.024), A (.015), E (.010)",
          "Tailpiece" : "Cast",
-         "Top" : "Spruce",
+         "Top Material" : "Spruce",
          "Total Length" : "25.5\" (648mm)",
          "Tuners" : "Gotoh",
          "Width of Body" : "10\" (254mm)"
@@ -675,18 +670,18 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Body material" : "Sengon",
-         "Bridge material" : "Mahogany",
-         "Fingerboard material" : "Mahogany",
+         "Body Material" : "Sengon",
+         "Bridge Material" : "Mahogany",
+         "Fingerboard Material" : "Mahogany",
          "Finish" : "High Gloss",
-         "Fret count" : "12",
-         "Fret material" : "Nickel",
+         "Fret Count" : "12",
+         "Fret Material" : "Nickel",
          "Location" : "China",
-         "Machine heads" : "Dolphin, Gold Plated",
-         "Neck material" : "Jabon",
+         "Neck Material" : "Jabon",
          "Nut" : "ABS, White",
          "Saddle" : "Graph Tech NuBone XB",
-         "Scale length" : "346mm"
+         "Scale Length" : "346mm",
+         "Tuning Machines" : "Dolphin, Gold Plated"
       },
       "image" : true,
       "make" : "Mahalo",
@@ -704,20 +699,22 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Back and Sides" : "Composite",
+         "Back / Sides Material" : "Composite",
          "Body Depth" : "2.375\"",
          "Body Length" : "9.3125\"",
-         "Fingerboard" : "Rosewood",
+         "Color" : "Red Burst",
+         "Fingerboard Material" : "Rosewood",
+         "Fingerboard Width at Neck/Body Joint" : "1.6875\"",
          "Fingerboard Width at Nut" : "1.375\"",
-         "Fingerboard width at neck/body joint" : "1.6875\"",
          "Finish" : "Gloss",
+         "Fret Count" : "12",
          "Neck" : "Mahogany",
-         "Number of Frets" : "12",
          "Nut" : "Plastic",
-         "Overall Instrument Length" : "20.875\"",
          "Saddle" : "Plastic",
          "Scale Length" : "13.5\"",
-         "Top" : "Philippine Mahogany",
+         "Style" : "Dolphin",
+         "Top Material" : "Philippine Mahogany",
+         "Total Length" : "20.875\"",
          "Width at Lower Bout" : "6.8125\"",
          "Width at Upper Bout" : "5.0625\"",
          "Width at Waist" : "4.4375\""
@@ -730,9 +727,7 @@ var equipment = [
       "notes" : [
          "EJ88S",
          "Soprano",
-         "GBE-UKE-SOP",
-         "Dolphin",
-         "Red Burst"
+         "GBE-UKE-SOP"
       ],
       "strings" : "EJ88S",
       "type" : "Ukulele",
@@ -741,19 +736,22 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Comb (finish)" : "triple lacquered",
-         "Comb (material, color)" : "pearwood, brown",
-         "Cover plates" : "stainless steel",
+         "Comb (color)" : "Brown",
+         "Comb (finish)" : "Triple Lacquered",
+         "Comb (material)" : "Pearwood",
+         "Cover Plates" : "Stainless Steel",
          "Keys" : "F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G",
-         "Length" : "3.9\" (10 cm)",
-         "Mouthpiece (surface)" : "pearwood",
-         "Number of holes" : "10",
-         "Reed plates (material, thickness)" : "brass, 0.9 mm",
-         "Reed plates (surface)" : "brass",
-         "Reeds (number, material)" : "20, brass",
+         "Length" : "3.9\" (10cm)",
+         "Mouthpiece (surface)" : "Pearwood",
+         "Number of Holes" : "10",
+         "Reed Count" : "20",
+         "Reed Material" : "Brass",
+         "Reed Plates (material)" : "Brass",
+         "Reed Plates (surface)" : "Brass",
+         "Reed Plates (thickness)" : "0.9mm",
          "Tonal range" : "3 octaves",
          "Tuning" : "Richter",
-         "Type" : "diatonic"
+         "Type" : "Diatonic"
       },
       "featured" : true,
       "image" : true,
@@ -771,19 +769,22 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Comb (color)" : "Black",
          "Comb (finish)" : "ABS",
-         "Comb (material, color)" : "ABS, black",
-         "Cover plates" : "stainless steel",
+         "Comb (material)" : "ABS",
+         "Cover Plates" : "Stainless Steel",
          "Keys" : "HG, F#, F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G",
-         "Length" : "4.0\" (10.2 cm)",
+         "Length" : "4.0\" (10.2cm)",
          "Mouthpiece (surface)" : "ABS",
-         "Number of holes" : "10",
-         "Reed plates (material, thickness)" : "brass, 0.9 mm",
-         "Reed plates (surface)" : "brass",
-         "Reeds (number, material)" : "20, brass",
+         "Number of Holes" : "10",
+         "Reed Count" : "20",
+         "Reed Material" : "Brass",
+         "Reed Plates (material)" : "Brass",
+         "Reed Plates (surface)" : "Brass",
+         "Reed Plates (thickness)" : "0.9mm",
          "Tonal range" : "3 octaves",
          "Tuning" : "Richter/Country (Country just in F#, F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G)",
-         "Type" : "diatonic"
+         "Type" : "Diatonic"
       },
       "featured" : true,
       "image" : true,
@@ -841,14 +842,14 @@ var equipment = [
    },
    {
       "category" : "Percussion Instruments",
+      "detail" : {
+         "Bass Drum" : "20\"",
+         "Color" : "Burgundy Glitter"
+      },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/drums/ac_drums/drum_sets/rydeen/",
       "make" : "Yamaha",
       "model" : "Rydeen",
-      "notes" : [
-         "20” bass",
-         "burgundy glitter"
-      ],
       "type" : "Drums",
       "year" : "2013",
       "year_uncertain" : true
@@ -858,7 +859,7 @@ var equipment = [
       "image" : true,
       "link" : "https://meinlcymbals.com/en/products/hcs14c-m3486.html",
       "make" : "Meinl",
-      "model" : "HCS 14” Crash",
+      "model" : "HCS 14\" Crash",
       "type" : "Cymbal",
       "year" : "2013",
       "year_uncertain" : true
@@ -868,7 +869,7 @@ var equipment = [
       "image" : true,
       "link" : "https://zildjian.com/products/18-planet-z-crash-ride",
       "make" : "Zildjian",
-      "model" : "Planet Z 18” Crash Ride",
+      "model" : "Planet Z 18\" Crash Ride",
       "type" : "Cymbal",
       "year" : "2013",
       "year_uncertain" : true
@@ -878,20 +879,19 @@ var equipment = [
       "image" : true,
       "link" : "https://zildjian.com/products/planet-z-hihats?variant=45264675406116",
       "make" : "Zildjian",
-      "model" : "Planet Z 13” Hi-Hat",
+      "model" : "Planet Z 13\" Hi-Hat",
       "type" : "Cymbal",
       "year" : "2013",
       "year_uncertain" : true
    },
    {
       "category" : "Percussion Instruments",
+      "detail" : {
+         "Size" : "6\", 7.25\""
+      },
       "image" : true,
       "make" : "Adam",
       "model" : "Bongos",
-      "notes" : [
-         "6”",
-         "7.25”"
-      ],
       "type" : "Bongos",
       "year" : "2013",
       "year_uncertain" : true
@@ -899,7 +899,7 @@ var equipment = [
    {
       "category" : "Percussion Instruments",
       "detail" : {
-         "Material" : "Baltic Birch",
+         "Material" : "Baltic Birch, Almond Birch",
          "String" : "Dual internal fixed snare wires"
       },
       "image" : true,
@@ -907,9 +907,7 @@ var equipment = [
       "make" : "Meinl",
       "model" : "JC50AB-B",
       "notes" : [
-         "Snare Cajon 50",
-         "Baltic Birch",
-         "Almond Birch"
+         "Snare Cajon 50"
       ],
       "type" : "Cajon",
       "year" : "2022"
@@ -1051,12 +1049,14 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "instrument" : "guitar",
+      "instrument" : "guitar, banjo, mandolin",
       "link" : "https://www.stringswing.com/product/cc01k-hardwood-home-studio-guitar-keeper-wall-mounted-guitar-hanger",
       "make" : "String Swing",
       "model" : "CC01K",
       "notes" : [
-         "guitar"
+         "guitar",
+         "banjo",
+         "mandolin"
       ],
       "type" : "Instrument Stand"
    },
@@ -1166,7 +1166,7 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Audio" : "Mono",
+         "Audio Channels" : "Mono",
          "Bypass" : "True Bypass",
          "Circuit" : "Analog",
          "Current Draw" : "3mA",
@@ -1186,10 +1186,10 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Audio" : "Mono",
+         "Audio Channels" : "Mono",
          "Bypass" : "Buffered Bypass",
          "Circuit" : "Analog",
-         "Current Draw" : "25 mA",
+         "Current Draw" : "25mA",
          "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
          "Power Supply" : "9V"
       },
@@ -1206,7 +1206,7 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Audio" : "Mono",
+         "Audio Channels" : "Mono",
          "Bypass" : "Buffered Bypass",
          "Circuit" : "Analog",
          "Current Draw" : "15mA",
@@ -1336,10 +1336,10 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Depth" : "90 mm / 3-9/16 inches",
-         "Height" : "43 mm / 1-3/4 inches",
-         "Weight" : "240 g / 0 lbs. 9 oz.",
-         "Width" : "96 mm / 3-13/16 inches"
+         "Depth" : "90mm (3 9/16”)",
+         "Height" : "43mm (1 3/4”)",
+         "Weight" : "240g / 9oz",
+         "Width" : "96mm (3 13/16”)"
       },
       "image" : true,
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
@@ -1364,23 +1364,22 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Audio frequency bandwidth" : "20 - 20000 Hz",
-         "Bass cut filter" : "300 Hz - 12 dB/octave",
-         "Contacts" : "3-pin",
-         "Current" : "<= 3 mA",
-         "Diameter" : "54 mm",
-         "Electrical impedance" : "<= 200 Ohms",
-         "Equivalent noise level" : "16 dB-A",
+         "Audio frequency Bandwidth" : "20 - 20000 Hz",
+         "Bass Cut Filter" : "300Hz - 12dB/octave",
+         "Current" : "<= 3mA",
+         "Diameter" : "54mm",
+         "Electrical impedance" : "<= 200Ω",
+         "Equivalent noise level" : "16dB-A",
          "Gender" : "Male",
-         "Length" : "165 mm",
-         "Net Weight" : "530 g",
+         "Length" : "165mm",
+         "Net Weight" : "530g",
          "Polar Pattern" : "Cardioid",
-         "Preattenuation Pad" : "-20 dB",
-         "Recommended load impedance" : ">= 1000 Ohms",
+         "Preattenuation Pad" : "-20dB",
+         "Recommended load impedance" : ">= 1000Ω",
          "Sensitivity" : "20 mV/Pa",
-         "Signal to Noise" : "78 dB-A",
+         "Signal to Noise" : "78dB-A",
          "Type" : "Balanced XLR",
-         "Voltage" : "44 to 52 V"
+         "Voltage" : "44 - 52 V"
       },
       "image" : true,
       "link" : "https://www.akg.com/Microphones/Condenser%20Microphones/P220.html",
@@ -1397,12 +1396,12 @@ var equipment = [
       "detail" : {
          "Connector" : "XLR-3",
          "Dimensions" : "Ø 48 x 180 mm",
-         "Frequency response (Microphone)" : "40 - 16000 Hz",
-         "Min. terminating impedance" : "1000 Ω",
-         "Nominal impedance" : "350 Ω",
+         "Frequency Response" : "40 - 16000 Hz",
+         "Min. terminating impedance" : "1000Ω",
+         "Nominal impedance" : "350Ω",
          "Sensitivity in free field, no load (1kHz)" : "2,7 mV/Pa",
-         "Weight" : "330 g",
-         "Weight w/o cable" : "330 g"
+         "Weight" : "330g",
+         "Weight w/o cable" : "330g"
       },
       "image" : true,
       "link" : "https://en-us.sennheiser.com/live-performance-microphone-vocal-stage-e-835",
@@ -1442,17 +1441,17 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Cable" : "11' (3.4 m) (OFC litz wire, left-side exit)",
-         "Connector" : "1/4\" (6.3 mm) phone plug",
-         "Driver Diameter" : "40 mm",
-         "Frequency Response" : "5-28,000 Hz",
-         "Impedance" : "60 ohms",
+         "Connector" : "1/4\" (6.3 mm) Phone Plug",
+         "Cord" : "11' (3.4m) (OFC litz wire, left-side exit)",
+         "Driver Diameter" : "40mm",
+         "Frequency Response" : "5 - 28000 Hz",
+         "Impedance" : "60Ω",
          "Magnet" : "Neodymium",
          "Maximum Input Power" : "1,600 mW at 1 kHz",
-         "Sensitivity" : "100 dB",
+         "Sensitivity" : "100dB",
          "Type" : "Closed-back dynamic",
          "Voice Coil" : "Copper-clad aluminum wire",
-         "Weight" : "8.8 oz (250 g) without cable"
+         "Weight" : "8.8oz (250g) without cable"
       },
       "image" : true,
       "link" : "https://www.audio-technica.com/en-us/ath-m40fs",
@@ -1465,12 +1464,12 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Cord" : "Coiled 1-3m long single-sided OFC litz cord with gold plated stereo unimatch plug",
-         "Driver Diameter" : "40 mm",
-         "Frequency Range" : "5-30,000 Hz",
+         "Driver Diameter" : "40mm",
+         "Frequency Range" : "5 - 30000 Hz",
          "Impedance" : "45Ω at 1 kHz",
          "Mass" : "Approx. 260g (9 3/16 oz) (without cord)",
          "Power handling capacity" : "1,000 mW",
-         "Sensitivity" : "106 dB",
+         "Sensitivity" : "106dB",
          "Type" : "Closed-back dynamic"
       },
       "image" : true,
@@ -1486,10 +1485,10 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Frequency Range" : "SE215 22 Hz–17.5 kHz",
-         "Impedance at 1 kHz" : "17 Ω",
-         "Net Weight" : "30 g (1 oz.)",
-         "Sensitivity at 1 kHz" : "107 dB SPL/mW",
+         "Frequency Range" : "22 - 17500 Hz",
+         "Impedance" : "17Ω at 1 kHz",
+         "Net Weight" : "30g (1oz)",
+         "Sensitivity at 1 kHz" : "107dB SPL/mW",
          "Transducer Type" : "Single High-Definition MicroDriver"
       },
       "image" : true,
@@ -1697,16 +1696,15 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Bobbin Material" : "Fiber",
-         "Configuration" : "SSS",
          "DC Resistance" : "Neck: 6.26K, Middle: 6.34K, Bridge: 6.43K",
          "Inductance" : "Neck: 2.49 Henries, Middle: 2.5 Henries, Bridge: 2.63 Henries",
          "Lead Wire" : "Cloth-covered",
-         "Magnet Type" : "Alnico 5",
+         "Magnet" : "Alnico 5",
          "Magnet Wire" : "Formvar-coated",
          "Output" : "Moderate (3 out of 5)",
+         "Pickup Configuration" : "SSS",
          "Pole Pieces" : "Staggered hand-beveled",
-         "Style" : "Custom Shop",
-         "Tone" : "Modern"
+         "Style" : "Custom Shop"
       },
       "image" : true,
       "link" : "https://shop.fender.com/en-US/parts/stratocaster-parts/custom-shop-fat-50s-stratocaster-pickups/0992113000.html",
@@ -1723,7 +1721,7 @@ var equipment = [
       "detail" : {
          "Battery Life" : "220 hours",
          "Pickup Length" : "2.65\" (67.3 mm)",
-         "Soundhole" : "Round soundholes from 3 7/8\" (98 mm) to 4 1/8\" (105 mm) in diameter"
+         "Soundhole" : "Round soundholes from 3 7/8\" (98mm) to 4 1/8\" (105mm) in diameter"
       },
       "image" : true,
       "link" : "https://www.fishman.com/portfolio/ellipse-matrix-blend-pickup-preamp-system/",
@@ -1762,45 +1760,42 @@ var equipment = [
    },
    {
       "category" : "Accessories",
-      "gauge" : ".50mm/acoustic, .80mm/electric",
       "image" : true,
       "instrument" : "acoustic guitar, electric guitar",
       "link" : "https://www.steveclayton.com/acetal.php",
       "make" : "Clayton",
       "model" : "Acetal Standard",
       "notes" : [
-         ".50mm/acoustic",
-         ".80mm/electric",
          "acoustic guitar",
-         "electric guitar"
+         "electric guitar",
+         ".50mm/acoustic",
+         ".80mm/electric"
       ],
       "type" : "Pick"
    },
    {
       "category" : "Accessories",
-      "gauge" : "1.14mm",
       "image" : true,
       "instrument" : "bass",
       "link" : "https://www.jimdunlop.com/tortex-standard-pick-1-14mm/",
       "make" : "Dunlop",
       "model" : "Tortex Standard",
       "notes" : [
-         "1.14mm",
-         "bass"
+         "bass",
+         "1.14mm"
       ],
       "type" : "Pick"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".6mm",
       "image" : true,
       "instrument" : "banjo",
       "link" : "https://www.jimdunlop.com/nylon-standard-pick-60mm/",
       "make" : "Dunlop",
       "model" : "Nylon Standard",
       "notes" : [
-         ".6mm",
-         "banjo"
+         "banjo",
+         ".6mm"
       ],
       "type" : "Pick"
    },
@@ -1987,170 +1982,175 @@ var equipment = [
    },
    {
       "category" : "Accessories",
-      "gauge" : ".013-.056",
+      "detail" : {
+         "Gauge" : ".013, .017, .026, .035, .045, .056",
+         "Gauge Name" : "Medium",
+         "Material" : "92/8 Phosphor Bronze"
+      },
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://www.martinguitar.com/strings/authentic-acoustic/martin-authentic-acoustic-lifespan-2.0-guitar-strings-92-8-phosphor-bronze.html",
       "make" : "Martin",
       "model" : "AA Lifespan 2.0 MA550T",
       "notes" : [
-         ".013-.056",
-         "acoustic guitar",
-         "medium",
-         "92/8 phosphor bronze"
+         "acoustic guitar"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".012-.054",
+      "detail" : {
+         "Gauge" : ".012, .016, .025, .032, .042, .054",
+         "Gauge Name" : "Light",
+         "Material" : "92/8 Phosphor Bronze"
+      },
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://www.martinguitar.com/strings/authentic-acoustic/martin-authentic-acoustic-lifespan-2.0-guitar-strings-92-8-phosphor-bronze.html",
       "make" : "Martin",
       "model" : "AA Lifespan 2.0 MA540T",
       "notes" : [
-         ".012-.054",
-         "acoustic guitar",
-         "light",
-         "92/8 phosphor bronze"
+         "acoustic guitar"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".010-.047",
+      "detail" : {
+         "Gauge" : ".010, .014, .023, .030, .039, .047",
+         "Gauge Name" : "Extra Light",
+         "Material" : "92/8 Phosphor Bronze"
+      },
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://www.martinguitar.com/strings/authentic-acoustic/martin-authentic-acoustic-lifespan-2.0-guitar-strings-92-8-phosphor-bronze.html",
       "make" : "Martin",
       "model" : "AA Lifespan 2.0 MA530T",
       "notes" : [
-         ".010-.047",
-         "acoustic guitar",
-         "extra light",
-         "92/8 phosphor bronze"
+         "acoustic guitar"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".024, .030, .036, .026",
+      "detail" : {
+         "Gauge" : ".024, .030, .036, .026",
+         "Material" : "Nyltech",
+         "Tuning" : "AECG"
+      },
       "image" : true,
       "instrument" : "soprano ukulele",
       "link" : "https://www.daddario.com/products/guitar/ukulele/nyltech-ukulele/ej88s-nyltech-ukulele-soprano/item/daddario-ej88s-nyltech-ukulele-strings-soprano-1244/",
       "make" : "D’Addario",
       "model" : "EJ88S",
       "notes" : [
-         ".024",
-         ".030",
-         ".036",
-         ".026",
-         "soprano ukulele",
-         "nyltech"
+         "soprano ukulele"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".0205, .026, .0319, .0224",
+      "detail" : {
+         "Gauge" : ".0205, .026, .0319, .0224",
+         "Material" : "Fluorocarbon",
+         "Tuning" : "AECG"
+      },
       "image" : true,
       "instrument" : "soprano ukulele",
       "link" : "https://www.daddario.com/products/guitar/ukulele/pro-arte-carbon-ukulele/ej99sc-pro-arte-carbon-ukulele-soprano-concert/",
       "make" : "D’Addario",
       "model" : "EJ99SC",
       "notes" : [
-         ".0205",
-         ".026",
-         ".0319",
-         ".0224",
-         "soprano ukulele",
-         "fluorocarbon"
+         "soprano ukulele"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".011-.040",
+      "detail" : {
+         "Gauge" : ".011, .015, .026, .040",
+         "Gauge Name" : "Medium",
+         "Material" : "Phosphor Bronze"
+      },
       "image" : true,
       "instrument" : "mandolin",
       "link" : "https://www.daddario.com/products/guitar/mandolin/phosphor-bronze-mandolin/ej74-mandolin-phosphor-bronze-medium-11-40/",
       "make" : "D’Addario",
       "model" : "EJ74",
       "notes" : [
-         ".011-.040",
-         "mandolin",
-         "medium",
-         "phosphor bronze"
+         "mandolin"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".011-.036",
+      "detail" : {
+         "Gauge" : ".011, .015, .026, .036",
+         "Gauge Name" : "Medium",
+         "Material" : "Stainless Steel, Flatwound"
+      },
       "image" : true,
       "instrument" : "mandolin",
       "link" : "https://www.daddario.com/products/guitar/mandolin/flatwound-mandolin/efw74-mandolin-flat-wound-medium-11-36/",
       "make" : "D’Addario",
       "model" : "EFW74",
       "notes" : [
-         ".011-.036",
-         "mandolin",
-         "medium",
-         "flatwound"
+         "mandolin"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".010-.046",
+      "detail" : {
+         "Gauge" : ".010, .013, .017, .026, .036, .046",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Nickel"
+      },
       "image" : true,
       "instrument" : "electric guitar, banjo",
       "link" : "https://www.daddario.com/products/guitar/electric-guitar/xl-nickel/exl110-nickel-wound-regular-light-10-46/",
       "make" : "D’Addario",
       "model" : "EXL110",
       "notes" : [
-         ".010-.046",
          "electric guitar",
-         "banjo",
-         "light",
-         "nickel"
+         "banjo"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".045-.100",
+      "detail" : {
+         "Gauge" : ".045, .065, .080, .100",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Nickel",
+         "Scale Length" : "Long"
+      },
       "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://www.daddario.com/products/guitar/bass-guitar/xl-nickel-bass/exl170-nickel-wound-bass-light-45-100-long-scale/",
       "make" : "D’Addario",
       "model" : "EXL170",
       "notes" : [
-         ".045-.100",
-         "bass guitar",
-         "long",
-         "nickel",
-         "roundwound"
+         "bass guitar"
       ],
       "type" : "Strings"
    },
    {
       "category" : "Accessories",
-      "gauge" : ".045-.132",
+      "detail" : {
+         "Gauge" : ".045, .065, .080, .100, .132",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Stainless Steel, Flatwound",
+         "Scale Length" : "Super Long",
+         "String Count" : "5"
+      },
       "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://www.daddario.com/products/guitar/bass-guitar/xl-chromes-bass/ecb81-5sl-chromes-bass-5-string-light-45-132-super-long-scale/",
       "make" : "D’Addario",
       "model" : "ECB81-5SL",
       "notes" : [
-         ".045-.132",
-         "bass guitar",
-         "bass",
-         "super long",
-         "chrome",
-         "flatwound",
-         "5-string"
+         "bass guitar"
       ],
       "type" : "Strings"
    }
