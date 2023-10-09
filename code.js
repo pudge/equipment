@@ -22,6 +22,7 @@ const columnOrder = [[ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc
 var columnMap = {};
 columnMap[COL.MODEL] = COL.CAT;
 var anchorText;
+var equipmentOrig = {};
 
 // link handling
 
@@ -52,7 +53,7 @@ function linkItNotes(oData) {
     thisData.push('HIDDEN');
   }
 
-  var icons = [ clipIt(oData['idx']) ];
+  var icons = [ clipIt( fixModelName(oData['model']) ) ];
   var newData = [];
   thisData.forEach(x => {
     if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN') {
@@ -96,8 +97,8 @@ function linkItManuals(oData) {
     ).join('') + '</div>';
 }
 
-function clipIt(iRow) {
-  return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, ' + iRow + ')" title="copy info"></i>';
+function clipIt(model) {
+  return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, \'' + model + '\')" title="copy info"></i>';
 }
 
 function imgIt(oData) {
@@ -121,7 +122,7 @@ function equipmentInit() {
   var removeElements = [];
   var foundNote = {};
   equipment.forEach(function(x, index, object) {
-    x['orig'] = structuredClone(x);
+    equipmentOrig[ fixModelName(x['model']) ] = structuredClone(x);
     x['reverse_notes'] = [];
     x['not_mine'] = x['not_mine'] ? 'not mine' : '';
     x['hide'] = x['hide'] ? 'hidden' : '';
@@ -267,7 +268,8 @@ function drawDropdowns(i) {
   select.html('<option value=""></option>');
   column.data().unique().sort().each( function ( d, j ) {
     if (d !== null) {
-      select.append( '<option value="'+d+'">'+d+'</option>' )
+      x = d.replace(/<.+?>/g, '');
+      select.append( '<option value="'+x+'">'+x+'</option>' );
     }
   });
   select.val(val);
@@ -354,8 +356,8 @@ function picInit() {
   });
 }
 
-function clipInfo(el, iRow) {
-  navigator.clipboard.writeText(JSON.stringify(equipment[iRow]['orig']));
+function clipInfo(el, model) {
+  navigator.clipboard.writeText(JSON.stringify(equipmentOrig[model]));
   el.classList.add('copying');
   setTimeout(() => { el.classList.remove('copying') }, 500);
 }
