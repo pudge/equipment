@@ -404,7 +404,7 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Amplifier" : "5W",
-         "Battery Compartment" : "AAA x 6",
+         "Battery Compartment" : "AA x 6",
          "Dimensions" : "6-1/4\" x 5\" x 9-1/2\"",
          "Guitar Input" : "1/4\"",
          "Serial" : "03/04183",
@@ -2382,6 +2382,26 @@ var equipment = [
       "model" : "HS10 Swingstar",
       "type" : "Snare Drum Stand",
       "year" : "2007"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Battery Compartment" : "AAA x 2",
+         "Battery Life" : "27 hours",
+         "Dimensions" : "86mm x 80mm x 31mm (3.39\" x 3.15\" x 1.22”)",
+         "Line In" : "1/8\" stereo",
+         "Phones" : "1/8\"",
+         "Weight" : "40g (1.41oz)"
+      },
+      "image" : true,
+      "link" : "https://voxamps.com/product/amplug/",
+      "make" : "VOX",
+      "manuals" : {
+         "Owner’s Manual" : "amPlug_30_CR_Metal.pdf"
+      },
+      "model" : "amPlug AC30",
+      "type" : "Amplifier",
+      "year" : "2009"
    }
 ]
 
@@ -2450,6 +2470,7 @@ var links = {
    "Thalia" : "https://www.thaliacapos.com/collections/pick-pucks",
    "Traveler" : "https://travelerguitar.com/",
    "Ultimate Support" : "https://www.ultimatesupport.com/",
+   "VOX" : "https://voxamps.com/",
    "Warwick" : "https://www.warwick.de/en/Warwick-.html",
    "Washburn" : "https://www.washburn.com/",
    "Wittner" : "https://www.wittner-gmbh.de/",
