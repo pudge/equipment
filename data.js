@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-08T12:00:00+0000")
+var lastModified = new Date("2023-10-10T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -420,6 +420,26 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Battery Compartment" : "AAA x 2",
+         "Battery Life" : "27 hours",
+         "Dimensions" : "86mm x 80mm x 31mm (3.39\" x 3.15\" x 1.22”)",
+         "Line In" : "1/8\" stereo",
+         "Phones" : "1/8\" stereo",
+         "Weight" : "40g (1.41oz)"
+      },
+      "image" : true,
+      "link" : "https://voxamps.com/product/amplug/",
+      "make" : "VOX",
+      "manuals" : {
+         "Owner’s Manual" : "amPlug_30_CR_Metal.pdf"
+      },
+      "model" : "amPlug AC30",
+      "type" : "Amplifier",
+      "year" : "2009"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Amplifier" : "3W",
          "Guitar Input" : "1/4\"",
          "Line In" : "1/8\" stereo",
@@ -531,7 +551,7 @@ var equipment = [
       "detail" : {
          "Depth" : "90mm (3 9/16”)",
          "Height" : "43mm (1 3/4”)",
-         "Serial" : "GU 97541, ET 31580, HV 22318",
+         "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
          "Weight" : "240g / 9oz",
          "Width" : "96mm (3 13/16”)"
       },
@@ -539,7 +559,7 @@ var equipment = [
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
       "make" : "BOSS",
       "model" : "FS-5U",
-      "type" : "Controller",
+      "type" : "Pedal",
       "year" : "2007"
    },
    {
@@ -565,21 +585,20 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
-         "Serial" : "W100M7038017336-1"
+         "Serial" : "W100M7038017336, W1ROM7244018777"
       },
       "image" : true,
       "link" : "https://line6.com/relay-wireless/g10-g10s/",
       "make" : "Line 6",
       "manuals" : {
-         "Pilot’s Guide" : "Relay G10 Pilot's Guide - English .pdf",
-         "Pilot’s Guide Addendum" : "Relay G10T G10 G10S Pilot's Guide Addendum - English .pdf"
+         "Pilot’s Guide" : "Relay G10TII - G10 - G10S Pilot's Guide - English .pdf"
       },
       "model" : "Relay G10",
       "notes" : [
-         "wireless"
+         "G10TII transmitter"
       ],
-      "type" : "Guitar Accessory",
-      "year" : "2021"
+      "type" : "Wireless",
+      "year" : "2023"
    },
    {
       "category" : "Hardware",
@@ -596,7 +615,7 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Connector" : "1/4\" (6.3 mm) Phone Plug",
+         "Connector" : "1/4\" stereo",
          "Cord" : "11' (3.4m) (OFC litz wire, left-side exit)",
          "Driver Diameter" : "40mm",
          "Frequency Response" : "5 - 28000 Hz",
@@ -618,14 +637,15 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Cord" : "Coiled 1-3m long single-sided OFC litz cord with gold plated stereo unimatch plug",
+         "Connector" : "1/8\" stereo (gold-plated)",
+         "Cord" : "Coiled 1-3m long single-sided OFC litz cord",
          "Driver Diameter" : "40mm",
          "Frequency Range" : "5 - 30000 Hz",
          "Impedance" : "45Ω at 1 kHz",
-         "Mass" : "Approx. 260g (9 3/16 oz) (without cord)",
          "Power handling capacity" : "1,000 mW",
          "Sensitivity" : "106dB",
-         "Type" : "Closed-back dynamic"
+         "Type" : "Closed-back dynamic",
+         "Weight" : "Approx. 260g (9 3/16 oz) (without cord)"
       },
       "image" : true,
       "link" : "https://www.sony.com/electronics/headphones/t/headband-headphones",
@@ -669,7 +689,7 @@ var equipment = [
          "Digital Outputs" : "TOSLINK, S/PDIF RCA coaxial",
          "Dimensions" : "1U",
          "MIDI" : "In/Out",
-         "Phones" : "1/4\"",
+         "Phones" : "1/4\" stereo",
          "Sample Rates" : "44.1kHz, 48kHz, 88.2kHz, 96kHz",
          "Serial" : "8282153750",
          "Sync" : "In/Out, Word clock, ADAT sync, SMPTE I/O"
@@ -705,6 +725,7 @@ var equipment = [
          "Computer Interface" : "USB-B",
          "Dimensions" : "11cm x 7cm x 4.4cm (4.3\" x 2.7\" x 1.73\")",
          "MIDI" : "In/Out x 4",
+         "Serial" : "MPU04150700109",
          "Weight" : "0.323kg (0.71lbs)"
       },
       "image" : true,
@@ -731,7 +752,7 @@ var equipment = [
          "Digital Outputs" : "TOSLINK, S/PDIF RCA coaxial",
          "Dimensions" : "482mm x 45mm (1U) x 286mm (19\" x 1.73\" (1U) x 11.26”)",
          "MIDI" : "In/Out",
-         "Phones" : "1/4\"",
+         "Phones" : "1/4\" stereo",
          "Sample Rates" : "44.1kHz, 48kHz, 88.2kHz, 96kHz, 176.4kHz, 192kHz",
          "Serial" : "V96613100879",
          "Sync" : "Out, Word clock",
@@ -760,7 +781,7 @@ var equipment = [
          "Computer Interface" : "USB-C",
          "Converters" : "24-bit",
          "Dimensions" : "175mm x 47.5mm x 99mm (6.89\" x 1.87\" x 3.89”)",
-         "Phones" : "1/4\"",
+         "Phones" : "1/4\" stereo",
          "Sample Rates" : "44.1kHz, 48kHz, 88.2kHz, 96kHz, 176.4kHz, 192kHz",
          "Serial" : "Y8Y8R4X0CAB486",
          "Weight" : "470g (1.04lbs)"
@@ -813,7 +834,7 @@ var equipment = [
          "Frequency Response" : "40 - 16000 Hz",
          "Min. terminating impedance" : "1000Ω",
          "Nominal impedance" : "350Ω",
-         "Sensitivity in free field, no load (1kHz)" : "2,7 mV/Pa",
+         "Sensitivity in free field, no load (1kHz)" : "2.7 mV/Pa",
          "Weight" : "330g"
       },
       "image" : true,
@@ -835,8 +856,8 @@ var equipment = [
          "Bass Cut Filter" : "300Hz - 12dB/octave",
          "Current" : "<= 3mA",
          "Diameter" : "54mm",
-         "Electrical impedance" : "<= 200Ω",
-         "Equivalent noise level" : "16dB-A",
+         "Electrical Impedance" : "<= 200Ω",
+         "Equivalent Noise Level" : "16dB-A",
          "Gender" : "Male",
          "Length" : "165mm",
          "Net Weight" : "530g",
@@ -876,7 +897,7 @@ var equipment = [
          "Analog Inputs" : "Stereo 1/4\" TRS balanced x 4, stereo RCA phono",
          "Analog Outputs" : "Stereo 1/4\" TRS balanced x 8",
          "Dimensions" : "3.2” x 13.5” x 5.9” (81mm x 343mm x 150mm)",
-         "Phones" : "1/4\" x 2",
+         "Phones" : "1/4\" stereo x 2",
          "Serial" : "2034070CWFU0456",
          "Weight" : "3.5lbs (1.6kg)"
       },
@@ -926,7 +947,7 @@ var equipment = [
          "Dimensions" : "170mm x 261mm x 280mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
          "Frequency Range" : "50 - 22000 Hz",
          "Input Impedance" : "18000Ω",
-         "Phones" : "1/4\"",
+         "Phones" : "1/4\" stereo",
          "Sample Rates" : "32, 44.1, 48, 96kHz",
          "Serial" : "ZR32193",
          "Speaker" : "12cm (4 3/4”), 4cm (1 5/8”)",
@@ -947,7 +968,7 @@ var equipment = [
          "Amplifier" : "250W x 2",
          "Analog Inputs" : "XLR/TS combo x 4, stereo 1/4\" x 2, stereo RCA x 2",
          "Analog Outputs" : "Stereo 1/4\" x 2, stereo RCA",
-         "Serial" : "",
+         "Serial" : "HH01636",
          "Speaker" : "10\" (25cm)"
       },
       "image" : true,
@@ -1030,10 +1051,10 @@ var equipment = [
          "Computer Interface" : "USB-B",
          "Digital Outputs" : "S/PDIF RCA coaxial",
          "Dimensions" : "21.5\" x 10\" x 4.75\"",
-         "Guitar Input" : "1/4”, Variax",
+         "Guitar Input" : "1/4\", Variax",
          "Line In" : "1/8\" stereo",
          "MIDI" : "In/Out+Thru",
-         "Phones" : "1/4\"",
+         "Phones" : "1/4\" stereo",
          "Serial" : "X3L1S5937000703",
          "Weight" : "8.4lbs"
       },
@@ -1114,7 +1135,7 @@ var equipment = [
       "detail" : {
          "Bobbin Material" : "Fiber",
          "DC Resistance" : "Neck: 6.26K, Middle: 6.34K, Bridge: 6.43K",
-         "Inductance" : "Neck: 2.49 Henries, Middle: 2.5 Henries, Bridge: 2.63 Henries",
+         "Inductance" : "Neck: 2.4H, Middle: 2.5H, Bridge: 2.63H",
          "Lead Wire" : "Cloth-covered",
          "Magnet" : "Alnico 5",
          "Magnet Wire" : "Formvar-coated",
@@ -1195,9 +1216,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "detail" : {
-         "Serial" : ""
-      },
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/sledgehammer_pro/",
       "make" : "Korg",
@@ -1255,7 +1273,7 @@ var equipment = [
          "Finish" : "Satin",
          "Fret Count" : "22",
          "Frets" : "Medium Profile",
-         "Neck" : "Mahogany",
+         "Neck Material" : "Mahogany",
          "Neck Radius" : "9.5\"",
          "Neck Width at Nut" : "1.75\"",
          "Pickups" : "Shadow Nanoflex",
@@ -1264,7 +1282,7 @@ var equipment = [
          "Total Depth" : "2.13\"",
          "Total Length" : "30\"",
          "Tuning Machines" : "Black Anodized Closed Gear",
-         "Weight" : "4lbs, 4oz",
+         "Weight" : "4lbs 4oz",
          "dB at 1'" : "Peak: 93db, Average: 80db"
       },
       "featured" : true,
@@ -1326,7 +1344,7 @@ var equipment = [
          "Construction" : "Dovetail Neck Joint",
          "Electronics" : "Fishman Aura F1+",
          "Fingerboard Inlay Material" : "Abalone",
-         "Fingerboard Inlay Style" : "Diamonds and Squares Long Pattern",
+         "Fingerboard Inlays" : "Diamonds and Squares Long Pattern",
          "Fingerboard Width at 12th Fret" : "2 1/8\"",
          "Fingerboard Width at Nut" : "1 3/4\"",
          "Finish Neck" : "Satin",
@@ -1483,7 +1501,7 @@ var equipment = [
          "Neck Material" : "Maple/Walnut Multi-ply",
          "Neck Pickup" : "EMG 40TW",
          "Neck Shape" : "Thin “C”",
-         "Nut" : "Graph Tech XL Black Tusq",
+         "Nut Material" : "Graph Tech XL Black Tusq",
          "Nut Width" : "1.771\" (45mm)",
          "Production Year" : "2021",
          "Scale" : "35\" (889mm)",
@@ -1517,7 +1535,7 @@ var equipment = [
          "Bridge" : "Standard (19mm string spacing)",
          "Bridge Pickup" : "Super P4",
          "Controls" : "Volume, Tone, Balancer",
-         "Fingerboard Inlay Style" : "Pearl dot and side dots",
+         "Fingerboard Inlays" : "Pearl dot and side dots",
          "Fingerboard Material" : "Rosewood",
          "Fret Count" : "22",
          "Frets" : "Medium",
@@ -1529,7 +1547,7 @@ var equipment = [
          "Neck Material" : "1-Piece Maple",
          "Neck Pickup" : "Super J4",
          "Neck Type" : "D shape",
-         "Nut" : "Plastic",
+         "Nut Material" : "Plastic",
          "Nut Width" : "41mm",
          "Pickup Configuration" : "PJ",
          "Production Year" : "January 1986",
@@ -1773,7 +1791,7 @@ var equipment = [
       "detail" : {
          "Body Material" : "Mahogany",
          "Bridge" : "Schaller Floyd Rose Tremolo",
-         "Fingerboaerd material" : "Maple",
+         "Fingerboard Material" : "Maple",
          "Fret Count" : "24",
          "Frets" : "Jumbo",
          "Location" : "Korea",
@@ -1806,7 +1824,7 @@ var equipment = [
          "Comb (finish)" : "Triple Lacquered",
          "Comb (material)" : "Pearwood",
          "Cover Plates" : "Stainless Steel",
-         "Keys" : "F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G",
+         "Keys" : "G, Ab, A, Bb, B, C, Db, D, Eb, E, F",
          "Length" : "3.9\" (10cm)",
          "Mouthpiece (surface)" : "Pearwood",
          "Number of Holes" : "10",
@@ -1823,6 +1841,9 @@ var equipment = [
       "image" : true,
       "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/marine-band/marine-band-deluxe",
       "make" : "Hohner",
+      "manuals" : {
+         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
+      },
       "model" : "Marine Band Deluxe",
       "notes" : [
          "G",
@@ -1839,7 +1860,7 @@ var equipment = [
          "Comb (finish)" : "ABS",
          "Comb (material)" : "ABS",
          "Cover Plates" : "Stainless Steel",
-         "Keys" : "HG, F#, F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G",
+         "Keys" : "G, Ab, A, Bb, B, C, Db, D, Eb, E, F, F#, HG",
          "Length" : "4.0\" (10.2cm)",
          "Mouthpiece (surface)" : "ABS",
          "Number of Holes" : "10",
@@ -1849,13 +1870,16 @@ var equipment = [
          "Reed Plates (surface)" : "Brass",
          "Reed Plates (thickness)" : "0.9mm",
          "Tonal range" : "3 octaves",
-         "Tuning" : "Richter/Country (Country just in F#, F, E, Eb, D, Db, C, B(H), Bb, A, Ab, G)",
+         "Tuning" : "Richter",
          "Type" : "Diatonic"
       },
       "featured" : true,
       "image" : true,
       "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/progressive/special-20",
       "make" : "Hohner",
+      "manuals" : {
+         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
+      },
       "model" : "Special 20",
       "notes" : [
          "A",
@@ -1879,7 +1903,7 @@ var equipment = [
          "Dimensions" : "1370mm x 518mm x 850mm (53 15/16\" x 20 3/8\" x 33 7/16\")",
          "Keys" : "88 (A1 - C7)",
          "MIDI" : "In/Out/Thru",
-         "Phones" : "1/4\" x 2",
+         "Phones" : "1/4\" stereo x 2",
          "Polyphony" : "64 notes",
          "Serial" : "0606872",
          "Sound Source" : "AWM Stereo Sampling",
@@ -1903,7 +1927,7 @@ var equipment = [
          "Dimensions" : "945mm x 370mm x 128mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
          "Keys" : "66 (C1 - C6)",
          "MIDI" : "In/Out",
-         "Phones" : "1/4\"",
+         "Phones" : "1/4\" stereo",
          "Polyphony" : "32 notes",
          "Power Consumption" : "10W",
          "Serial" : "UBMJ03785",
@@ -1924,6 +1948,8 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Armrest Dimensions" : "3 5/8\" x 11/16\" x 3/8\" (9.2cm x 1.8cm x 1cm)",
+         "Armrest Material" : "Michigan Koa (Silver Maple)",
          "Back / Neck / Sides Material" : "Figured Maple",
          "Binding" : "None",
          "Bridge / Fingerboard Material" : "Black Walnut",
@@ -1936,7 +1962,7 @@ var equipment = [
          "Nut Width" : "1 1/8\" (28mm)",
          "Pickguard" : "Adhered Maple",
          "Serial" : "FT180030",
-         "Strings" : "Northfield LITE, Phosphor Bronze, Loop end: G (.036), D (.024), A (.015), E (.010)",
+         "Strings" : "Northfield LITE, Phosphor Bronze, Loop end: E (.010), A (.015), D (.024), G (.036)",
          "Tailpiece" : "Cast",
          "Top Material" : "Spruce",
          "Total Length" : "25.5\" (648mm)",
@@ -2011,8 +2037,8 @@ var equipment = [
          "Fingerboard Width at Nut" : "1.375\"",
          "Finish" : "Gloss",
          "Fret Count" : "12",
-         "Neck" : "Mahogany",
-         "Nut" : "Plastic",
+         "Neck Material" : "Mahogany",
+         "Nut Material" : "Plastic",
          "Saddle" : "Plastic",
          "Scale Length" : "13.5\"",
          "Style" : "Dolphin",
@@ -2047,7 +2073,7 @@ var equipment = [
          "Fret Material" : "Nickel",
          "Location" : "China",
          "Neck Material" : "Jabon",
-         "Nut" : "ABS, White",
+         "Nut Material" : "ABS, White",
          "Saddle" : "Graph Tech NuBone XB",
          "Scale Length" : "346mm",
          "Tuning Machines" : "Dolphin, Gold Plated"
@@ -2382,26 +2408,6 @@ var equipment = [
       "model" : "HS10 Swingstar",
       "type" : "Snare Drum Stand",
       "year" : "2007"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Battery Compartment" : "AAA x 2",
-         "Battery Life" : "27 hours",
-         "Dimensions" : "86mm x 80mm x 31mm (3.39\" x 3.15\" x 1.22”)",
-         "Line In" : "1/8\" stereo",
-         "Phones" : "1/8\"",
-         "Weight" : "40g (1.41oz)"
-      },
-      "image" : true,
-      "link" : "https://voxamps.com/product/amplug/",
-      "make" : "VOX",
-      "manuals" : {
-         "Owner’s Manual" : "amPlug_30_CR_Metal.pdf"
-      },
-      "model" : "amPlug AC30",
-      "type" : "Amplifier",
-      "year" : "2009"
    }
 ]
 
