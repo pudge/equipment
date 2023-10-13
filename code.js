@@ -1,3 +1,4 @@
+const CTOKEN = 'BIA-0';
 const COL = {
   INFO     :  0,
   IMG      :  1,
@@ -110,7 +111,7 @@ function imgIt(oData) {
       oData['image'] = './images/' + name + '.png';
       oData['image_sm'] = './images/sm/' + name + '-sm.png';
     }
-    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '" /></a>';
+    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + CTOKEN + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + CTOKEN + '" /></a>';
   }
   return text;
 }

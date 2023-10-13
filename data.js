@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-10T12:00:00+0000")
+var lastModified = new Date("2023-10-12T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1245,7 +1245,8 @@ var equipment = [
          "Serial" : "728931",
          "Side Material" : "High Pressure Laminate",
          "Top Color" : "Natural",
-         "Top Material" : "Sitka Price"
+         "Top Material" : "Sitka Spruce",
+         "Truss Rod" : "5mm Allen Nut"
       },
       "image" : true,
       "make" : "Martin",
@@ -1281,6 +1282,7 @@ var equipment = [
          "Serial" : "M3-02910",
          "Total Depth" : "2.13\"",
          "Total Length" : "30\"",
+         "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Black Anodized Closed Gear",
          "Weight" : "4lbs 4oz",
          "dB at 1'" : "Peak: 93db, Average: 80db"
@@ -1373,6 +1375,7 @@ var equipment = [
          "Top Color" : "Aging Toner",
          "Top Inlay Material" : "Bold Herringbone",
          "Top Material" : "Spruce",
+         "Truss Rod" : "5mm Allen Nut",
          "Tuning Knobs" : "Butterbean",
          "Tuning Machines" : "Nickel Open Gear"
       },
@@ -1410,6 +1413,7 @@ var equipment = [
          "Scale Length" : "23.3\" (592mm)",
          "Serial" : "OI14087311",
          "Top Material" : "Laminated Agathis",
+         "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Die-Cast Machine Heads"
       },
       "image" : true,
@@ -1509,7 +1513,7 @@ var equipment = [
          "Strings" : "Ernie Ball 5 String Super Long #2850 (.045-.130)",
          "Top Contour" : "Arched Top",
          "Top Material" : "Quilted Maple",
-         "Truss Rod" : "2-Way Adjustable Rod w/ 5/32\" (4mm) Allen Nut",
+         "Truss Rod" : "2-Way Adjustable, 5/32\" (4mm) Allen Nut",
          "Tuners" : "Grover"
       },
       "featured" : true,
@@ -1553,6 +1557,7 @@ var equipment = [
          "Production Year" : "January 1986",
          "Scale Length" : "864mm (34”)",
          "Serial" : "A865503",
+         "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Hercules B"
       },
       "image" : true,
@@ -1582,7 +1587,8 @@ var equipment = [
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
          "Scale Length" : "34\"",
-         "Serial" : "4101739"
+         "Serial" : "4101739",
+         "Truss Rod" : "4mm Allen Nut"
       },
       "featured" : true,
       "image" : true,
@@ -1615,6 +1621,7 @@ var equipment = [
          "Pickups" : "Seymour Duncan open coil humbucker, and lipstick-style single coil",
          "Scale Length" : "22 1/2\" scale",
          "Serial" : "207757",
+         "Truss Rod" : "Adjustable",
          "Tuners" : "Grover"
       },
       "image" : true,
@@ -1660,7 +1667,7 @@ var equipment = [
          "Serial" : "21021527363",
          "Tailpiece" : "Stopbar",
          "Top Material" : "AA Flame Maple",
-         "Truss Rod" : "Adjustable",
+         "Truss Rod" : "Adjustable, 4mm Allen Nut",
          "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White); 60s-era E",
          "Tuning Machines" : "Grover® Rotomatic® 18:1"
       },
@@ -1685,7 +1692,8 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Location" : "Samick, Korea",
-         "Serial" : "1103087"
+         "Serial" : "1103087",
+         "Truss Rod" : "Adjustable"
       },
       "featured" : true,
       "image" : true,
@@ -1735,7 +1743,7 @@ var equipment = [
          "Scale Length" : "628.65mm (24.75”)",
          "Serial" : "23051530731",
          "Tailpiece" : "Epiphone LockTone™ Stop Bar",
-         "Truss Rod" : "Adjustable",
+         "Truss Rod" : "Adjustable, 4mm Allen Nut",
          "Tuning Machines" : "Epiphone Deluxe Tuners 18:1 ratio"
       },
       "image" : true,
@@ -1763,7 +1771,8 @@ var equipment = [
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
          "Scale Length" : "25.5”",
-         "Serial" : "3058431"
+         "Serial" : "3058431",
+         "Truss Rod" : "4mm Allen Nut"
       },
       "featured" : true,
       "image" : true,
@@ -1798,7 +1807,8 @@ var equipment = [
          "Neck Material" : "Rosewood",
          "Pickup Configuration" : "HH",
          "Scale Length" : "25.5\"",
-         "Serial" : "2110103"
+         "Serial" : "2110103",
+         "Truss Rod" : "Adjustable"
       },
       "image" : true,
       "link" : "https://www.washburn.com/instrument-style/double-cut-solid-body/",
