@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-12T12:00:00+0000")
+var lastModified = new Date("2023-10-17T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -549,22 +549,6 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Depth" : "90mm (3 9/16”)",
-         "Height" : "43mm (1 3/4”)",
-         "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
-         "Weight" : "240g / 9oz",
-         "Width" : "96mm (3 13/16”)"
-      },
-      "image" : true,
-      "link" : "https://www.boss.info/us/products/fs-5u_5l/",
-      "make" : "BOSS",
-      "model" : "FS-5U",
-      "type" : "Pedal",
-      "year" : "2007"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
          "Computer Interface" : "USB-B",
          "MIDI" : "Out x 2",
          "Serial" : "2105084"
@@ -580,25 +564,6 @@ var equipment = [
       ],
       "type" : "Controller",
       "year" : "2004"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
-         "Serial" : "W100M7038017336, W1ROM7244018777"
-      },
-      "image" : true,
-      "link" : "https://line6.com/relay-wireless/g10-g10s/",
-      "make" : "Line 6",
-      "manuals" : {
-         "Pilot’s Guide" : "Relay G10TII - G10 - G10S Pilot's Guide - English .pdf"
-      },
-      "model" : "Relay G10",
-      "notes" : [
-         "G10TII transmitter"
-      ],
-      "type" : "Wireless",
-      "year" : "2023"
    },
    {
       "category" : "Hardware",
@@ -1006,6 +971,22 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Depth" : "90mm (3 9/16”)",
+         "Height" : "43mm (1 3/4”)",
+         "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
+         "Weight" : "240g / 9oz",
+         "Width" : "96mm (3 13/16”)"
+      },
+      "image" : true,
+      "link" : "https://www.boss.info/us/products/fs-5u_5l/",
+      "make" : "BOSS",
+      "model" : "FS-5U",
+      "type" : "Pedal",
+      "year" : "2007"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered Bypass",
          "Circuit" : "Analog",
@@ -1224,10 +1205,42 @@ var equipment = [
       },
       "model" : "Sledgehammer Pro",
       "notes" : [
-         "Clip-on"
+         "clip-on"
       ],
       "type" : "Tuner",
       "year" : "2019"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://www.korg.com/us/products/tuners/cm_300/index.php",
+      "make" : "Korg",
+      "model" : "CM-300",
+      "notes" : [
+         "DTR-2000",
+         "clip-on"
+      ],
+      "type" : "Tuner Microphone",
+      "year" : "2023"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
+         "Serial" : "W100M7038017336, W1ROM7244018777"
+      },
+      "image" : true,
+      "link" : "https://line6.com/relay-wireless/g10-g10s/",
+      "make" : "Line 6",
+      "manuals" : {
+         "Pilot’s Guide" : "Relay G10TII - G10 - G10S Pilot's Guide - English .pdf"
+      },
+      "model" : "Relay G10",
+      "notes" : [
+         "G10TII transmitter"
+      ],
+      "type" : "Wireless",
+      "year" : "2023"
    },
    {
       "category" : "Instruments",
@@ -2220,7 +2233,8 @@ var equipment = [
       "category" : "Stands etc.",
       "image" : true,
       "instrument" : "mandolin",
-      "make" : "Superior",
+      "link" : "https://www.sagamusic.com/shop/cases-and-bags/superior-c-3770-trailpak-ii-a-or-f-model-mandolin-gig-bag/",
+      "make" : "Saga",
       "model" : "C-3770 Trailpak II",
       "notes" : [
          "mandolin"

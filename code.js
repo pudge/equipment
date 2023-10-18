@@ -1,4 +1,4 @@
-const CTOKEN = 'BIA-0';
+const CTOKEN = 'BIA-1';
 const COL = {
   INFO     :  0,
   IMG      :  1,
