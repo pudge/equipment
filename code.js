@@ -1,4 +1,3 @@
-const CTOKEN = 'BIA-1';
 const COL = {
   INFO     :  0,
   IMG      :  1,
@@ -24,6 +23,7 @@ var columnMap = {};
 columnMap[COL.MODEL] = COL.CAT;
 var anchorText;
 var equipmentOrig = {};
+var currentImgRow = null;
 
 // link handling
 
@@ -290,14 +290,20 @@ function doShow(item) {
 }
 
 function picClick(t, e) {
+  if (t == null) {
+    return;
+  }
   var modal = $('#pic_modal');
   var image = $('#pic_img');
   var caption = $('#pic_caption');
 
-  e.preventDefault();
+  if (e) {
+    e.preventDefault();
+  }
   modal.css('display', 'block');
   caption.html( $(t).attr('alt') );
   image.attr('src', $(t).attr('href') );
+  currentImgRow = $(t).parents()[1];
   return false;
 }
 
@@ -311,8 +317,23 @@ function modalInit() {
   $('#pic_modal').click(close_modal);
   $('#pic_img').click(function() { return false });
   $(document).keydown(function(e) {
-    if (e.key === 'Escape') {
-      close_modal();
+    if (modal.css('display') != 'none') {
+      if (e.key === 'Escape') {
+        close_modal();
+      }
+      if (currentImgRow != null) {
+        var sibling;
+        if (e.which == 40 || e.which == 39) { // down or right
+          sibling = currentImgRow.nextSibling;
+        }
+        else if (e.which == 38 || e.which == 37) { // up or left
+          sibling = currentImgRow.previousSibling;
+        }
+        if (sibling) {
+          close_modal();
+          picClick(sibling.children[1].children[0]);
+        }
+      }
     }
   });
 

@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-17T12:00:00+0000")
+var lastModified = new Date("2023-10-19T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -605,8 +605,8 @@ var equipment = [
          "Connector" : "1/8\" stereo (gold-plated)",
          "Cord" : "Coiled 1-3m long single-sided OFC litz cord",
          "Driver Diameter" : "40mm",
-         "Frequency Range" : "5 - 30000 Hz",
-         "Impedance" : "45Ω at 1 kHz",
+         "Frequency Range" : "5 - 30000Hz",
+         "Impedance" : "45Ω at 1kHz",
          "Power handling capacity" : "1,000 mW",
          "Sensitivity" : "106dB",
          "Type" : "Closed-back dynamic",
@@ -625,8 +625,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Frequency Range" : "22 - 17500 Hz",
-         "Impedance" : "17Ω at 1 kHz",
+         "Frequency Range" : "22 - 17500Hz",
+         "Impedance" : "17Ω at 1kHz",
          "Net Weight" : "30g (1oz)",
          "Sensitivity at 1 kHz" : "107dB SPL/mW",
          "Transducer Type" : "Single High-Definition MicroDriver"
@@ -795,10 +795,10 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Connector" : "XLR-3",
-         "Dimensions" : "Ø 48 x 180 mm",
-         "Frequency Response" : "40 - 16000 Hz",
-         "Min. terminating impedance" : "1000Ω",
-         "Nominal impedance" : "350Ω",
+         "Dimensions" : "Ø 48 x 180mm",
+         "Frequency Response" : "40 - 16000Hz",
+         "Min. Terminating Impedance" : "1000Ω",
+         "Nominal Impedance" : "350Ω",
          "Sensitivity in free field, no load (1kHz)" : "2.7 mV/Pa",
          "Weight" : "330g"
       },
@@ -817,7 +817,33 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Audio frequency Bandwidth" : "20 - 20000 Hz",
+         "Diaphragm" : "Makrofol",
+         "Dimensions" : "Ø 23 x 260mm",
+         "Frequency Response" : "40 - 20000Hz",
+         "Load Impedance" : "≥ 200Ω",
+         "Nominal Impedance" : "200Ω",
+         "Open Circuit Voltage at 1kHz" : "1.3mV/Pa",
+         "Operating Principle" : "Pressure",
+         "Output Level" : "-57dBm",
+         "Polar Pattern" : "Omnidirectional",
+         "Sensitivity" : "-149dBm",
+         "Transducer Type" : "Dynamic moving coil",
+         "Weight" : "256g"
+      },
+      "image" : true,
+      "make" : "Beyer Dynamic",
+      "manuals" : {
+         "Datasheet" : "Beyer M58 datasheet.pdf"
+      },
+      "model" : "M 58",
+      "type" : "Microphone",
+      "year" : "2022",
+      "year_uncertain" : true
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Audio frequency Bandwidth" : "20 - 20000Hz",
          "Bass Cut Filter" : "300Hz - 12dB/octave",
          "Current" : "<= 3mA",
          "Diameter" : "54mm",
@@ -910,7 +936,7 @@ var equipment = [
          "Converters" : "24-bit",
          "Digital Inputs" : "optical, coax",
          "Dimensions" : "170mm x 261mm x 280mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
-         "Frequency Range" : "50 - 22000 Hz",
+         "Frequency Range" : "50 - 22000Hz",
          "Input Impedance" : "18000Ω",
          "Phones" : "1/4\" stereo",
          "Sample Rates" : "32, 44.1, 48, 96kHz",
@@ -1222,6 +1248,44 @@ var equipment = [
       ],
       "type" : "Tuner Microphone",
       "year" : "2023"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Adjacent Channel Rejection" : "≥ 65 dB",
+         "Battery Compartment" : "AA x 2",
+         "Blocking" : "≥ 70 dB",
+         "Dimensions" : "82mm x 64mm x 24mm",
+         "Frequency Range" : "518 - 544MHz (A)",
+         "Frequency Response" : "40 - 18000Hz",
+         "Frequency Stability" : "≤±15ppm",
+         "Intermodulation Attenuation" : "≥ 65 dB",
+         "Maximum SPL" : "120 dB SPL",
+         "Modulation" : "Wideband FM",
+         "Nominal Deviation" : "± 24kHz",
+         "Operating Time" : "> 8h",
+         "Peak Deviation" : "± 48kHz",
+         "Polar Pattern" : "Super Cardioid",
+         "Power Consumption" : "~130 mA (EK 100), ≤ 170mA (SK 100)",
+         "S/N Ratio (at 1mV and peak deviation)" : "≥ 110dB",
+         "Sensitivity" : "<2.5 μV at 52 dBA(rms) S/N ratio (EK 100), 40 mV/Pa (ME-4)",
+         "Serial" : "Transmitter: 163351, Receiver: 135282",
+         "Squelch" : "OFF, LO: 5 dBμV, MID: 15 dBμV, HI: 25 dBμV",
+         "Switching Bandwidth" : "36 MHz",
+         "THD (at nominal deviation and 1 kHz)" : "≤ 0.9%",
+         "Temperature Range" : "-10C - 55C",
+         "Transducer Type" : "Condenser",
+         "Weight" : "158g (EK 100)"
+      },
+      "image" : true,
+      "make" : "Sennheiser",
+      "manuals" : {
+         "Instructions" : "Sennheiser_Ew100_ENGG2.pdf"
+      },
+      "model" : "ew 122-p G2",
+      "type" : "Wireless",
+      "year" : "2022",
+      "year_uncertain" : true
    },
    {
       "category" : "Hardware",
@@ -2440,6 +2504,7 @@ var links = {
    "Apple" : "https://www.apple.com/",
    "Audio Technica" : "https://www.audio-technica.com/",
    "BOSS" : "https://www.boss.info/us/",
+   "Beyer Dynamic" : "https://north-america.beyerdynamic.com/",
    "Blackstar" : "https://www.blackstaramps.com/",
    "Clayton" : "https://www.steveclayton.com/",
    "Daisy Rock" : "https://www.daisyrock.com/",
