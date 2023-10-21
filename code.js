@@ -24,6 +24,7 @@ columnMap[COL.MODEL] = COL.CAT;
 var anchorText;
 var equipmentOrig = {};
 var currentImgRow = null;
+var touchstartX, touchstartY, touchendX, touchendY;
 
 // link handling
 
@@ -330,9 +331,41 @@ function modalInit() {
           sibling = currentImgRow.previousSibling;
         }
         if (sibling) {
+          event.preventDefault();
           close_modal();
           picClick(sibling.children[1].children[0]);
         }
+      }
+    }
+  })
+  .on('touchstart', function(event) {
+    if (modal.css('display') != 'none' && currentImgRow != null) {
+      touchstartX = event.pageX;
+      touchstartY = event.pageY;
+    }
+  })
+  .on('touchend', function(event) {
+    if (modal.css('display') != 'none' && currentImgRow != null) {
+      touchendX = event.pageX;
+      touchendY = event.pageY;
+      var horiz = touchstartX - touchendX;
+      var vert  = touchstartY - touchendY;
+
+      var sibling;
+      if (Math.abs(horiz) > Math.abs(vert)) { // swipe horizontally
+        if (horiz > 0) {
+          // right
+          sibling = currentImgRow.nextSibling;
+        }
+        else {
+          // left
+          sibling = currentImgRow.previousSibling;
+        }
+      }
+      if (sibling) {
+        event.preventDefault();
+        close_modal();
+        picClick(sibling.children[1].children[0]);
       }
     }
   });
