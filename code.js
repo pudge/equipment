@@ -112,7 +112,7 @@ function imgIt(oData) {
       oData['image'] = './images/' + name + '.png';
       oData['image_sm'] = './images/sm/' + name + '-sm.png';
     }
-    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + CTOKEN + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + CTOKEN + '" /></a>';
+    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + md5s[oData['image']].substr(0, 5) + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + md5s[oData['image_sm']].substr(0, 5) + '" /></a>';
   }
   return text;
 }
