@@ -31,6 +31,7 @@ sub get_gear {
     my $data = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/All Gear-Table 1.csv", headers => "auto");
     my $detail = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/Gear Detail-Table 1.csv", headers => "auto");
     my $manuals = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/Gear Manuals-Table 1.csv", headers => "auto");
+    my $instrumans = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/Instruments-Table 1.csv", headers => "auto");
 
     my %detail;
     for my $x (@$detail) {
@@ -40,6 +41,12 @@ sub get_gear {
     my %manuals;
     for my $x (@$manuals) {
         $manuals{ $x->{'Model'} }{ $x->{'Name'} } = $x->{'File'};
+    }
+
+    my %instrumans;
+    for my $x (@$instrumans) {
+        $instrumans{ $x->{'Model'} } = $x->{'Last Strung'}
+            if $x->{'Last Strung'} && $x->{'Last Strung'} ne '-';
     }
 
     my @out;
@@ -81,6 +88,9 @@ sub get_gear {
         if ($y->{strings}) {
             $y->{notes} //= [];
             unshift @{$y->{notes}}, split ', ', $y->{strings};
+            if ($instrumans{$y->{model}}) {
+                $y->{notes}[0] .= " ($instrumans{$y->{model}})";
+            }
         }
 
         $y->{'detail'} = $detail{$y->{model}} if $detail{$y->{model}};

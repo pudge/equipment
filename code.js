@@ -72,7 +72,16 @@ function linkItNotes(oData) {
       );
     }
     else {
-      newData.push( linkHtml(equipment_data[x] ? linkShow(x) : x) );
+      var text = x;
+      var matches = text.match(/^(.+?)( \(.+?\))$/);
+      if (matches && matches[2]) {
+        text = matches[1];
+      }
+      var link = linkHtml(equipment_data[text] ? linkShow(text) : text);
+      if (matches && matches[2]) {
+        link += matches[2];
+      }
+      newData.push(link);
     }
   });
 

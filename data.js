@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-19T12:00:00+0000")
+var lastModified = new Date("2023-10-23T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1329,7 +1329,7 @@ var equipment = [
       "make" : "Martin",
       "model" : "DX1",
       "notes" : [
-         "AA Lifespan 2.0 MA550T",
+         "AA Lifespan 2.0 MA550T (2023-10-19)",
          "Acetal Standard",
          "S1",
          "C1K",
@@ -1373,7 +1373,7 @@ var equipment = [
       },
       "model" : "Escape Mark III",
       "notes" : [
-         "AA Lifespan 2.0 MA530T",
+         "AA Lifespan 2.0 MA530T (2023-10-19)",
          "Acetal Standard",
          "S1",
          "C1K"
@@ -1462,7 +1462,7 @@ var equipment = [
       "make" : "Martin",
       "model" : "HD-28E Retro",
       "notes" : [
-         "AA Lifespan 2.0 MA550T",
+         "AA Lifespan 2.0 MA550T (2023-10-19)",
          "Acetal Standard",
          "S1",
          "C1K",
@@ -1499,7 +1499,7 @@ var equipment = [
       "model" : "MA-1",
       "not_mine" : true,
       "notes" : [
-         "AA Lifespan 2.0 MA540T"
+         "AA Lifespan 2.0 MA540T (2023-10-16)"
       ],
       "strings" : "AA Lifespan 2.0 MA540T",
       "type" : "Acoustic Guitar",
@@ -1545,7 +1545,7 @@ var equipment = [
       "make" : "Framus",
       "model" : "Tenor Banjo",
       "notes" : [
-         "EXL110",
+         "EXL110 (2021-09-03)",
          "Nylon Standard",
          "C5-R",
          "C5K",
@@ -1599,7 +1599,7 @@ var equipment = [
       "make" : "Schecter",
       "model" : "Hellraiser Extreme-5",
       "notes" : [
-         "ECB81-5SL",
+         "ECB81-5SL (2023-10-03)",
          "Tortex Standard",
          "MSS2-4-BLK",
          "Straplok",
@@ -1642,7 +1642,7 @@ var equipment = [
       "make" : "Ibanez",
       "model" : "Roadstar II RB650",
       "notes" : [
-         "EXL170",
+         "EXL170 (2023-09-30)",
          "Tortex Standard",
          "MSS3-BRN",
          "Straplok"
@@ -1676,7 +1676,7 @@ var equipment = [
       },
       "model" : "Variax 700",
       "notes" : [
-         "EXL170",
+         "EXL170 (2023-10-18)",
          "Tortex Standard",
          "MSS3-BRN",
          "Straplok"
@@ -1706,7 +1706,7 @@ var equipment = [
       "model" : "Daisy Short-Scale",
       "not_mine" : true,
       "notes" : [
-         "EXL110"
+         "EXL110 (2023-09-30)"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -1753,7 +1753,7 @@ var equipment = [
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
-         "EXL110",
+         "EXL110 (2021-08-09)",
          "Acetal Standard",
          "S1",
          "C1K",
@@ -1829,7 +1829,7 @@ var equipment = [
       "model" : "SG Standard",
       "not_mine" : true,
       "notes" : [
-         "EXL110"
+         "EXL110 (2023-10-01)"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -1892,7 +1892,7 @@ var equipment = [
       "make" : "Washburn",
       "model" : "X40",
       "notes" : [
-         "EXL110",
+         "EXL110 (2023-09-30)",
          "Acetal Standard",
          "S1",
          "C1K",
@@ -2062,7 +2062,7 @@ var equipment = [
       "make" : "Northfield",
       "model" : "Calhoun",
       "notes" : [
-         "EFW74",
+         "EFW74 (2023-10-14)",
          "Golden Gate MP-12",
          "C5-R",
          "C5K",
@@ -2085,7 +2085,7 @@ var equipment = [
       "make" : "Wm. Schmick",
       "model" : "Lyric Banjo",
       "notes" : [
-         "EJ74"
+         "EJ74 (2023-10-10)"
       ],
       "strings" : "EJ74",
       "type" : "Mandolin",
@@ -2103,7 +2103,7 @@ var equipment = [
       "make" : "Kamoa",
       "model" : "E3-S",
       "notes" : [
-         "EJ99SC",
+         "EJ99SC (2023-10-16)",
          "Soprano",
          "GBE-UKE-SOP"
       ],
