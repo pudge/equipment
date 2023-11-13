@@ -5,18 +5,53 @@ use feature ':5.10';
 
 use JSON::XS;
 
-my @dirs = ('images', 'images/sm');
 my %md5s;
-for my $dir (@dirs) {
-    chomp(my @md5s = `md5sum $dir/*.png`);
-    for my $line (@md5s) {
-        my($md5, $file) = split ' ', $line, 2;
-        $md5s{'./' . $file} = $md5;
+my @main = qw(data.js code.js style.css);
+
+get_md5s();
+save_md5s();
+save_index();
+exit();
+
+sub get_md5s {
+    # get main files
+    md5sum($_, \%md5s) for @main;
+    
+    # get image files
+    my @dirs = ('images', 'images/sm');
+    for my $dir (@dirs) {
+        md5sum("$dir/*.png", \%md5s);
     }
 }
 
-my $JSON = JSON::XS->new->pretty->canonical;
-open my $fh, '>', 'md5s.js';
-printf $fh <<EOT, $JSON->encode(\%md5s);
-const md5s = %s
-EOT
+sub save_md5s {
+    my $JSON = JSON::XS->new->pretty->canonical;
+    open my $fh, '>', 'md5s.js' or die "cannot open md5.js: $!";
+    my $md5s_json = $JSON->encode(\%md5s);
+    printf $fh "const md5s = $md5s_json\n";
+    close $fh;
+}
+
+
+sub save_index {
+    md5sum("md5s.js", \%md5s);
+    open my $fh, '<', 'index.html' or die "cannot open index.html: $!";
+    my $index = join '', <$fh>;
+    close $fh;
+
+    $index =~ s!((?:href|src)="./$_)\?.*?"!$1?$md5s{"./$_"}"! for (@main, 'md5s.js');
+
+    open $fh, '>', 'index.html' or die "cannot open index.html: $!";
+    print $fh $index;
+    close $fh;
+}
+
+
+sub md5sum {
+    my($f, $m) = @_;
+    chomp(my @md5s = `md5sum $f`);
+    for my $line (@md5s) {
+        my($md5, $file) = split ' ', $line, 2;
+        $m->{'./' . $file} = $md5;
+    }
+}

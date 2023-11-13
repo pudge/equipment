@@ -1,4 +1,6 @@
 const md5s = {
+   "./code.js" : "09b193437fff357e25779efe3c1a2a0a",
+   "./data.js" : "893148f38a13223eee1b0cf013c0d58e",
    "./images/445.png" : "cb2806a143a952ae2dc2a5bbd592c5c2",
    "./images/7100.png" : "e1a00e604cb4160911e780a84432f608",
    "./images/801m.png" : "a1e9d491e15f98e4958305e08548819a",
@@ -283,6 +285,7 @@ const md5s = {
    "./images/vp2611.png" : "b1df38243175067114e65badc81199ca",
    "./images/x40.png" : "81dbb4ad3bb9a37b1f77afe7f31ad00a",
    "./images/ydp223.png" : "3833cc426a865369e32b47ec7844ea2f",
-   "./images/ypt300.png" : "a293aaf2bdea52a6458e018e7ef61d68"
+   "./images/ypt300.png" : "a293aaf2bdea52a6458e018e7ef61d68",
+   "./style.css" : "776981cdb6bee4e8398889bccc2677ba"
 }
 

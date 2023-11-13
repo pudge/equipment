@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-10-23T12:00:00+0000")
+var lastModified = new Date("2023-11-12T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1860,7 +1860,7 @@ var equipment = [
       },
       "model" : "Variax 500",
       "notes" : [
-         "EXL110",
+         "EXL110 (2023-11-12)",
          "Acetal Standard",
          "S1",
          "C1K",
