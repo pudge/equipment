@@ -1,6 +1,6 @@
 const md5s = {
    "./code.js" : "09b193437fff357e25779efe3c1a2a0a",
-   "./data.js" : "893148f38a13223eee1b0cf013c0d58e",
+   "./data.js" : "1750acac63c033d7e798507d2a422144",
    "./images/445.png" : "cb2806a143a952ae2dc2a5bbd592c5c2",
    "./images/7100.png" : "e1a00e604cb4160911e780a84432f608",
    "./images/801m.png" : "a1e9d491e15f98e4958305e08548819a",
@@ -262,6 +262,8 @@ const md5s = {
    "./images/sm/variax700-sm.png" : "36050b02c3d8fc965da9c106d0373605",
    "./images/sm/vp2611-sm.png" : "384d77d9e336a71b4ee2366e81f2ff2d",
    "./images/sm/x40-sm.png" : "1e845607b20345beab13a5af9d9baca7",
+   "./images/sm/xtapb1356-sm.png" : "601adf0dd6861a47f892a3d1e2975e40",
+   "./images/sm/xte1046-sm.png" : "0c87a1e83968a4a1f20939f701a5a8cb",
    "./images/sm/ydp223-sm.png" : "0dc0c35a0346d1a0f4e38e0cd0f30474",
    "./images/sm/ypt300-sm.png" : "48a994acf3d699e648fe079aedf953ad",
    "./images/sm58.png" : "d5237db86ea3c7f1fc56c7a80d24233d",
@@ -284,6 +286,8 @@ const md5s = {
    "./images/variax700.png" : "53c232662c0d67f73e0727a9bd1aefb7",
    "./images/vp2611.png" : "b1df38243175067114e65badc81199ca",
    "./images/x40.png" : "81dbb4ad3bb9a37b1f77afe7f31ad00a",
+   "./images/xtapb1356.png" : "66d1a3101a88af1dbc209fa6cbf6cecc",
+   "./images/xte1046.png" : "a835dc119c9ee7d152cab9d852281973",
    "./images/ydp223.png" : "3833cc426a865369e32b47ec7844ea2f",
    "./images/ypt300.png" : "a293aaf2bdea52a6458e018e7ef61d68",
    "./style.css" : "776981cdb6bee4e8398889bccc2677ba"

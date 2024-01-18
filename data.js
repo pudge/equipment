@@ -1,4 +1,4 @@
-var lastModified = new Date("2023-11-12T12:00:00+0000")
+var lastModified = new Date("2024-01-18T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -397,6 +397,43 @@ var equipment = [
       "model" : "EXL170",
       "notes" : [
          "bass guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".013, .017, .026, .035, .045, .056",
+         "Gauge Name" : "Medium",
+         "Material" : "92/8 Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1356-xt-acoustic-phosphor-bronze-medium-13-562/",
+      "make" : "D’Addario",
+      "model" : "XTAPB1356",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".010, .013, .017, .026, .036, .046",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Nickel"
+      },
+      "image" : true,
+      "instrument" : "electric guitar, banjo",
+      "link" : "https://www.daddario.com/products/guitar/electric-guitar/xt-nickel/xte1046-xt-electric-nickel-plated-steel-regular-light-10-462/item/daddario-xte1046-xt-electric-nickel-plated-steel-regular-light-electric-guitar-strings-10-46-8959/",
+      "make" : "D’Addario",
+      "model" : "XTE1046",
+      "notes" : [
+         "electric guitar",
+         "banjo"
       ],
       "type" : "Strings"
    },
@@ -1545,7 +1582,7 @@ var equipment = [
       "make" : "Framus",
       "model" : "Tenor Banjo",
       "notes" : [
-         "EXL110 (2021-09-03)",
+         "EXL110",
          "Nylon Standard",
          "C5-R",
          "C5K",
@@ -1753,7 +1790,7 @@ var equipment = [
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
-         "EXL110 (2021-08-09)",
+         "EXL110",
          "Acetal Standard",
          "S1",
          "C1K",
