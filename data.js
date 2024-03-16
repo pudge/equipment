@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-01-18T12:00:00+0000")
+var lastModified = new Date("2024-03-16T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1567,7 +1567,7 @@ var equipment = [
       "model" : "Songmaker DR-100",
       "not_mine" : true,
       "notes" : [
-         "AA Lifespan 2.0 MA550T"
+         "AA Lifespan 2.0 MA550T (2024-03-16)"
       ],
       "strings" : "AA Lifespan 2.0 MA550T",
       "type" : "Acoustic Guitar",
