@@ -277,12 +277,14 @@ function drawDropdowns(i) {
   var select = $('#sel_' + i);
   var val = select.val();
   select.html('<option value=""></option>');
+  var data = [];
   column.data().unique().sort().each( function ( d, j ) {
     if (d !== null) {
       x = d.replace(/<.+?>/g, '');
-      select.append( '<option value="'+x+'">'+x+'</option>' );
+      data.push(x);
     }
   });
+  data.sort().forEach( x => select.append( '<option value="'+x+'">'+x+'</option>' ) );
   select.val(val);
 }
 
