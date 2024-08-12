@@ -6,7 +6,7 @@ use feature ':5.10';
 use JSON::XS;
 
 my %md5s;
-my @main = qw(data.js code.js style.css);
+my @main = qw(data.js code.js style.css lastmod.js footer.js);
 
 get_md5s();
 save_md5s();
@@ -22,6 +22,8 @@ sub get_md5s {
     for my $dir (@dirs) {
         md5sum("$dir/*.png", \%md5s);
     }
+
+    md5sum("manuals/*/*", \%md5s);
 }
 
 sub save_md5s {
@@ -31,7 +33,6 @@ sub save_md5s {
     printf $fh "const md5s = $md5s_json\n";
     close $fh;
 }
-
 
 sub save_index {
     md5sum("md5s.js", \%md5s);
@@ -45,7 +46,6 @@ sub save_index {
     print $fh $index;
     close $fh;
 }
-
 
 sub md5sum {
     my($f, $m) = @_;

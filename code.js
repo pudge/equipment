@@ -73,7 +73,7 @@ function linkItNotes(oData) {
     }
     else {
       var text = x;
-      var matches = text.match(/^(.+?)( \(.+?\))$/);
+      var matches = text.match(/^(.+?)( \(\d\d\d\d-\d\d-\d\d\))$/);
       if (matches && matches[2]) {
         text = matches[1];
       }
@@ -103,9 +103,12 @@ function linkItManuals(oData) {
     return '<div class="manuals" />';
   }
 
-  return '<div class="manuals">' + Object.keys(oData['manuals']).map(
-      x => `<div class="manual_row"><a target="_blank" href="manuals/${fixModelName(oData['model'])}/${oData['manuals'][x]}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
-    ).join('') + '</div>';
+  var modelName = fixModelName(oData['model']);
+  return '<div class="manuals">' + Object.keys(oData['manuals']).map((x) => {
+      var file = `./manuals/${modelName}/${oData['manuals'][x]}`;
+      var md5 = md5s[file].substr(0, 5);
+      return `<div class="manual_row"><a target="_blank" href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`;
+    }).join('') + '</div>';
 }
 
 function clipIt(model) {
@@ -113,6 +116,7 @@ function clipIt(model) {
 }
 
 function imgIt(oData) {
+  //console.log(oData)
   var text = '<i class="fas fa-fw"></i>'
   if (oData['image']) {
     var alt = [oData['make'], oData['model'], oData['type']].join(' ');
@@ -231,17 +235,6 @@ function equipmentInit() {
     dom: 'fti',
 
     initComplete: function () {
-      var month = {
-        0: 'Jan', 1: 'Feb', 2: 'Mar', 3: 'Apr',  4: 'May',  5: 'Jun',
-        6: 'Jul', 7: 'Aug', 8: 'Sep', 9: 'Oct', 10: 'Nov', 11: 'Dec'
-      };
-      var lastModMonth = month[ lastModified.getMonth() ];
-      var lastModDay   = lastModified.getDate();
-      var lastModYear  = lastModified.getFullYear();
-      $('#lastModified').html(
-        lastModDay + ' ' + lastModMonth + ' ' + lastModYear
-      );
-
       // create dropdown filters
       var table = this.api().table();
       table.columns(columns).every(function (i) {
@@ -336,15 +329,10 @@ function modalInit() {
       if (currentImgRow != null) {
         var sibling;
         if (e.which == 40 || e.which == 39) { // down or right
-          sibling = currentImgRow.nextSibling;
+          swapPic('right');
         }
         else if (e.which == 38 || e.which == 37) { // up or left
-          sibling = currentImgRow.previousSibling;
-        }
-        if (sibling) {
-          event.preventDefault();
-          close_modal();
-          picClick(sibling.children[1].children[0]);
+          swapPic('left');
         }
       }
     }
@@ -362,21 +350,13 @@ function modalInit() {
       var horiz = touchstartX - touchendX;
       var vert  = touchstartY - touchendY;
 
-      var sibling;
       if (Math.abs(horiz) > Math.abs(vert)) { // swipe horizontally
         if (horiz > 0) {
-          // right
-          sibling = currentImgRow.nextSibling;
+          swapPic('right');
         }
         else {
-          // left
-          sibling = currentImgRow.previousSibling;
+          swapPic('left');
         }
-      }
-      if (sibling) {
-        event.preventDefault();
-        close_modal();
-        picClick(sibling.children[1].children[0]);
       }
     }
   });
@@ -415,6 +395,27 @@ function modalInit() {
   });
 }
 
+function swapPic(direction) {
+  var sibling;
+  if (direction == 'right') { // down or right
+    sibling = currentImgRow.nextSibling;
+    if (sibling != null && sibling.classList.contains('child')) {
+      sibling = sibling.nextSibling;
+    }
+  }
+  else if (direction == 'left') { // up or left
+    sibling = currentImgRow.previousSibling;
+    if (sibling != null && sibling.classList.contains('child')) {
+      sibling = sibling.previousSibling;
+    }
+  }
+  if (sibling) {
+    event.preventDefault();
+    $('#pic_modal').click;
+    picClick(sibling.children[1].children[0]);
+  }
+}
+
 function picInit() {
   $('.pic_modalize:not([data-linked="1"]').each(function() {
     $(this).click(function() { return picClick(this, event) });
@@ -446,12 +447,45 @@ function fixModelName(str) {
   return str.replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase();
 }
 
+function initListeners() {
+  window.addEventListener('resize', redrawTable);
+  window.addEventListener('orientationchange', redrawTable);
+}
 
-$(document).ready(function() {
+function initCache() {
+  if (window.navigator.standalone) {
+    caches.has('v1.0.3').then((e) => {
+      if (e === false) {
+        // only cache images for now
+        var files = Object.keys(md5s).filter(k => k.match(/\.png$/)).map(k => `${k}?${md5s[k].substr(0,5)}`)
+        caches
+          .open('v1.0.3')
+          .then((cache) => {
+              cache.addAll(files);
+            }
+          )
+      }
+    })
+  }
+
+//   self.addEventListener('install', (event) => {
+//     event.waitUntil(
+//       caches
+//         .open('v1')
+//         .then((cache) => {
+//             cache.addAll(Object.keys(md5s));
+//           }
+//         )
+//     )
+//   });
+}
+
+$(document).ready(async function() {
+  await setLastMod('#lastModified');
   equipmentInit();
   clearSearchInit();
   modalInit();
   redrawTable();
-  window.addEventListener('resize', redrawTable);
-  window.addEventListener('orientationchange', redrawTable);
+  initListeners();
+  initCache();
 });

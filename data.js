@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-03-16T12:00:00+0000")
+var lastModified = new Date("2024-08-11T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -147,6 +147,35 @@ var equipment = [
    },
    {
       "category" : "Accessories",
+      "hide" : true,
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://www.ernieball.com/guitar-accessories/guitar-straps/comfort-collection-straps#P05328",
+      "make" : "Ernie Ball",
+      "model" : "Stretch Comfort (racer yellow)",
+      "notes" : [
+         "guitar",
+         "Flex Lock Strap Blocks"
+      ],
+      "type" : "Strap",
+      "year" : "2000s"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://www.ernieball.com/guitar-accessories/guitar-straps/polypro-guitar-straps#P04037",
+      "make" : "Ernie Ball",
+      "model" : "Polypro (black)",
+      "notes" : [
+         "guitar",
+         "Flex Lock Strap Blocks"
+      ],
+      "type" : "Strap",
+      "year" : "2000s"
+   },
+   {
+      "category" : "Accessories",
       "image" : true,
       "link" : "https://www.levysleathers.com/product/guitar-strap-m17ss-blk/",
       "make" : "Levys",
@@ -207,6 +236,15 @@ var equipment = [
       "model" : "PM14-DBR",
       "type" : "Strap",
       "year" : "2020"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "link" : "https://www.daddario.com/products/accessories/strap-accessories/strap-locks/flex-lock-strap-blocks/",
+      "make" : "D’Addario",
+      "model" : "Flex Lock Strap Blocks",
+      "type" : "Strap Retainers",
+      "year" : "2024"
    },
    {
       "category" : "Accessories",
@@ -402,6 +440,18 @@ var equipment = [
    },
    {
       "category" : "Accessories",
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1047-xt-acoustic-phosphor-bronze-extra-light-10-47/",
+      "make" : "D’Addario",
+      "model" : "XTAPB1047",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
       "detail" : {
          "Coating" : "XT",
          "Gauge" : ".013, .017, .026, .035, .045, .056",
@@ -493,6 +543,26 @@ var equipment = [
       "model" : "Fly 3",
       "type" : "Amplifier",
       "year" : "2020"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Amplifier" : "5W",
+         "Battery" : "Rechargable (USB-C)",
+         "Dimensions" : "6\" x 3.75\" x 3\"",
+         "Guitar Input" : "1/4\"",
+         "Line In" : "1/8\" stereo",
+         "Phones" : "1/8\" stereo",
+         "Power" : "5V 1A",
+         "Speakers" : "2 x 2\"",
+         "Weight" : "12 ounces"
+      },
+      "image" : true,
+      "link" : "https://travelerguitar.com/products/ma-5-micro-amp",
+      "make" : "Traveler",
+      "model" : "MA-5 Micro Amp",
+      "type" : "Amplifier",
+      "year" : "2024"
    },
    {
       "category" : "Hardware",
@@ -1108,8 +1178,7 @@ var equipment = [
       "make" : "Line 6",
       "manuals" : {
          "Advanced Guide" : "POD X3 Advanced Guide - English ( Rev E ).pdf",
-         "Model Gallery" : "POD X3 Model Gallery - English ( Rev B ).pdf",
-         "Quick Start" : "POD X3 Quick Start - English ( Rev F ).pdf"
+         "Model Gallery" : "POD X3 Model Gallery - English ( Rev B ).pdf"
       },
       "model" : "POD X3 Live",
       "type" : "Pedal",
@@ -1380,14 +1449,17 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Battery Compartment" : "2 x AAA",
          "Body Depth" : "1.75\"",
          "Body Material" : "Mahogany",
          "Body Width" : "10.75\"",
          "Color" : "Mahogany",
+         "Electronics" : "Active preamp, volume/treble/bass, 1/8\" aux in, 1/8\" headphone out, tuner",
          "Fingerboard Material" : "Black Walnut",
          "Finish" : "Satin",
          "Fret Count" : "22",
          "Frets" : "Medium Profile",
+         "Inputs" : "1/8\" stereo",
          "Neck Material" : "Mahogany",
          "Neck Radius" : "9.5\"",
          "Neck Width at Nut" : "1.75\"",
@@ -1398,12 +1470,12 @@ var equipment = [
          "Total Length" : "30\"",
          "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Black Anodized Closed Gear",
-         "Weight" : "4lbs 4oz",
+         "Weight" : "4lbs 3oz",
          "dB at 1'" : "Peak: 93db, Average: 80db"
       },
       "featured" : true,
       "image" : true,
-      "link" : "https://travelerguitar.com/products/escape-mark-3-mahogany",
+      "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=39754219192405",
       "make" : "Traveler",
       "manuals" : {
          "Manual" : "Escape_Mark_3_Manual.pdf"
@@ -1413,11 +1485,55 @@ var equipment = [
          "AA Lifespan 2.0 MA530T (2023-10-19)",
          "Acetal Standard",
          "S1",
-         "C1K"
+         "C1K",
+         "Polypro (black)"
       ],
       "strings" : "AA Lifespan 2.0 MA530T",
       "type" : "Acoustic Guitar",
       "year" : "2018"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
+         "Battery Compartment" : "2 x AAA",
+         "Body Depth" : "1.75\"",
+         "Body Material" : "Mahogany",
+         "Body Width" : "10.75\"",
+         "Color" : "Black Satin",
+         "Electronics" : "Active preamp, volume/treble/bass, 1/8\" aux in, 1/8\" headphone out, tuner",
+         "Fingerboard Material" : "Black Walnut",
+         "Finish" : "Satin",
+         "Fret Count" : "22",
+         "Frets" : "Medium Profile",
+         "Inputs" : "1/8\" stereo",
+         "Neck Material" : "Mahogany",
+         "Neck Radius" : "9.5\"",
+         "Neck Width at Nut" : "1.75\"",
+         "Pickups" : "Shadow Nanoflex",
+         "Scale Length" : "25.5\"",
+         "Serial" : "M3-07576",
+         "Total Depth" : "2.13\"",
+         "Total Length" : "30\"",
+         "Truss Rod" : "Adjustable",
+         "Tuning Machines" : "Black Anodized Closed Gear",
+         "Weight" : "4lbs 3oz",
+         "dB at 1'" : "Peak: 93db, Average: 80db"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=40446336335957",
+      "make" : "Traveler",
+      "manuals" : {
+         "Manual" : "Escape_Mark_3_Manual.pdf"
+      },
+      "model" : "Escape Mark III (black)",
+      "not_mine" : true,
+      "notes" : [
+         "AA Lifespan 2.0 MA530T"
+      ],
+      "strings" : "AA Lifespan 2.0 MA530T",
+      "type" : "Acoustic Guitar",
+      "year" : "2024"
    },
    {
       "category" : "Instruments",
@@ -1593,6 +1709,25 @@ var equipment = [
       "type" : "Banjo",
       "year" : "1968",
       "year_uncertain" : true
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
+         "Location" : "Indonesia",
+         "Production Year" : "2019",
+         "Serial" : "IW19030720",
+         "Year Lost" : "2021"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.schecterguitars.com/bass/apocalypse-series-1/c-5-apocalypse-rusty-grey-detail",
+      "make" : "Schecter",
+      "model" : "C-5 Apocalypse",
+      "notes" : [
+         "DOA"
+      ],
+      "type" : "Bass Guitar",
+      "year" : "2021"
    },
    {
       "category" : "Instruments",
@@ -1785,6 +1920,7 @@ var equipment = [
          "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White); 60s-era E",
          "Tuning Machines" : "Grover® Rotomatic® 18:1"
       },
+      "featured": true,
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/Electric-Guitar/EPINA3562/Ebony",
       "make" : "Epiphone",
@@ -1908,6 +2044,52 @@ var equipment = [
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2003"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
+         "Battery Compartment" : "2 x AAA, 1 x 9V",
+         "Binding" : "6-ply Cream/Black",
+         "Body Depth" : "1.63\"",
+         "Body Material" : "Carved Top Mahogany",
+         "Body Width" : "10.5\"",
+         "Color" : "Black",
+         "Electronics" : "Active preamp, volume/tone, 1/8\" aux in, 1/8\" headphone out, clean/boost/overdrive/distortion",
+         "Fingerboard Material" : "Black Walnut",
+         "Finish" : "Vintage Black Matte",
+         "Fret Count" : "22",
+         "Frets" : "Jumbo Profile",
+         "Inputs" : "1/8\" stereo",
+         "Neck Material" : "Mahogany",
+         "Neck Radius" : "15.75\"",
+         "Neck Width at Nut" : "1.63\"",
+         "Pickups" : "ESP ALH-200B Active Humbucker",
+         "Scale Length" : "24.75\"",
+         "Serial" : "M3-07576",
+         "Total Depth" : "2.75\"",
+         "Total Length" : "30\"",
+         "Truss Rod" : "Adjustable",
+         "Tuning Machines" : "Gold Locking",
+         "Weight" : "5lbs 4oz"
+      },
+      "featured": true,
+      "hide" : true,
+      "image" : true,
+      "link" : "https://travelerguitar.com/products/ltd-ec-1?variant=39665627136085",
+      "make" : "Traveler",
+      "manuals" : {
+         "Manual" : "EC-1_Manual.pdf"
+      },
+      "model" : "LTD EC-1",
+      "notes" : [
+         "EXL110",
+         "Acetal Standard",
+         "S1",
+         "C1K",
+         "Stretch Comfort (racer yellow)"
+      ],
+      "strings" : "EXL110",
+      "type" : "Electric Guitar"
    },
    {
       "category" : "Instruments",
