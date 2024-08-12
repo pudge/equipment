@@ -160,6 +160,10 @@ function equipmentInit() {
       var thisData = Array.isArray(x['notes']) ? x['notes'] : [x['notes']];
       var found = false;
       thisData.forEach(y => {
+        var matches = y.match(/^(.+?)( \(\d\d\d\d-\d\d-\d\d\))$/);
+        if (matches && matches[2]) {
+          y = matches[1];
+        }
         if (equipment_data[y]) {
           foundNote[y] = true;
           found = true;

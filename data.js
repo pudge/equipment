@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-08-11T12:00:00+0000")
+var lastModified = new Date("2024-08-12T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -147,35 +147,6 @@ var equipment = [
    },
    {
       "category" : "Accessories",
-      "hide" : true,
-      "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://www.ernieball.com/guitar-accessories/guitar-straps/comfort-collection-straps#P05328",
-      "make" : "Ernie Ball",
-      "model" : "Stretch Comfort (racer yellow)",
-      "notes" : [
-         "guitar",
-         "Flex Lock Strap Blocks"
-      ],
-      "type" : "Strap",
-      "year" : "2000s"
-   },
-   {
-      "category" : "Accessories",
-      "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://www.ernieball.com/guitar-accessories/guitar-straps/polypro-guitar-straps#P04037",
-      "make" : "Ernie Ball",
-      "model" : "Polypro (black)",
-      "notes" : [
-         "guitar",
-         "Flex Lock Strap Blocks"
-      ],
-      "type" : "Strap",
-      "year" : "2000s"
-   },
-   {
-      "category" : "Accessories",
       "image" : true,
       "link" : "https://www.levysleathers.com/product/guitar-strap-m17ss-blk/",
       "make" : "Levys",
@@ -236,6 +207,35 @@ var equipment = [
       "model" : "PM14-DBR",
       "type" : "Strap",
       "year" : "2020"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://www.ernieball.com/guitar-accessories/guitar-straps/polypro-guitar-straps#P04037",
+      "make" : "Ernie Ball",
+      "model" : "Polypro (black)",
+      "notes" : [
+         "guitar",
+         "Flex Lock Strap Blocks"
+      ],
+      "type" : "Strap",
+      "year" : "2000s"
+   },
+   {
+      "category" : "Accessories",
+      "hide" : true,
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://www.ernieball.com/guitar-accessories/guitar-straps/comfort-collection-straps#P05328",
+      "make" : "Ernie Ball",
+      "model" : "Stretch Comfort (racer yellow)",
+      "notes" : [
+         "guitar",
+         "Flex Lock Strap Blocks"
+      ],
+      "type" : "Strap",
+      "year" : "2000s"
    },
    {
       "category" : "Accessories",
@@ -440,11 +440,35 @@ var equipment = [
    },
    {
       "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".010, .014, .023, .030, .039, .047",
+         "Gauge Name" : "Extra Light",
+         "Material" : "92/8 Phosphor Bronze"
+      },
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1047-xt-acoustic-phosphor-bronze-extra-light-10-47/",
       "make" : "D’Addario",
       "model" : "XTAPB1047",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".012, .016, .024, .032, .042, .053",
+         "Gauge Name" : "Light",
+         "Material" : "92/8 Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1253-xt-acoustic-phosphor-bronze-light-12-532/",
+      "make" : "D’Addario",
+      "model" : "XTAPB1253",
       "notes" : [
          "acoustic guitar"
       ],
@@ -1435,14 +1459,14 @@ var equipment = [
       "make" : "Martin",
       "model" : "DX1",
       "notes" : [
-         "AA Lifespan 2.0 MA550T (2023-10-19)",
+         "XTAPB1356 (2023-10-19)",
          "Acetal Standard",
          "S1",
          "C1K",
          "M17SS-DBR",
          "Ellipse Matrix Blend"
       ],
-      "strings" : "AA Lifespan 2.0 MA550T",
+      "strings" : "XTAPB1356",
       "type" : "Acoustic Guitar",
       "year" : "2000"
    },
@@ -1482,13 +1506,13 @@ var equipment = [
       },
       "model" : "Escape Mark III",
       "notes" : [
-         "AA Lifespan 2.0 MA530T (2023-10-19)",
+         "XTAPB1047",
          "Acetal Standard",
          "S1",
          "C1K",
          "Polypro (black)"
       ],
-      "strings" : "AA Lifespan 2.0 MA530T",
+      "strings" : "XTAPB1047",
       "type" : "Acoustic Guitar",
       "year" : "2018"
    },
@@ -1529,9 +1553,9 @@ var equipment = [
       "model" : "Escape Mark III (black)",
       "not_mine" : true,
       "notes" : [
-         "AA Lifespan 2.0 MA530T"
+         "XTAPB1047"
       ],
-      "strings" : "AA Lifespan 2.0 MA530T",
+      "strings" : "XTAPB1047",
       "type" : "Acoustic Guitar",
       "year" : "2024"
    },
@@ -1615,7 +1639,7 @@ var equipment = [
       "make" : "Martin",
       "model" : "HD-28E Retro",
       "notes" : [
-         "AA Lifespan 2.0 MA550T (2023-10-19)",
+         "XTAPB1356 (2023-10-19)",
          "Acetal Standard",
          "S1",
          "C1K",
@@ -1623,7 +1647,7 @@ var equipment = [
          "445",
          "F1 Aura+"
       ],
-      "strings" : "AA Lifespan 2.0 MA550T",
+      "strings" : "XTAPB1356",
       "type" : "Acoustic Guitar",
       "year" : "2012"
    },
@@ -1683,9 +1707,9 @@ var equipment = [
       "model" : "Songmaker DR-100",
       "not_mine" : true,
       "notes" : [
-         "AA Lifespan 2.0 MA550T (2024-03-16)"
+         "XTAPB1356 (2024-03-16)"
       ],
-      "strings" : "AA Lifespan 2.0 MA550T",
+      "strings" : "XTAPB1356",
       "type" : "Acoustic Guitar",
       "year" : "2021"
    },
@@ -1920,7 +1944,7 @@ var equipment = [
          "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White); 60s-era E",
          "Tuning Machines" : "Grover® Rotomatic® 18:1"
       },
-      "featured": true,
+      "featured" : true,
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/Electric-Guitar/EPINA3562/Ebony",
       "make" : "Epiphone",
@@ -1937,6 +1961,52 @@ var equipment = [
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2021"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
+         "Battery Compartment" : "2 x AAA, 1 x 9V",
+         "Binding" : "6-ply Cream/Black",
+         "Body Depth" : "1.63\"",
+         "Body Material" : "Carved Top Mahogany",
+         "Body Width" : "10.5\"",
+         "Color" : "Black",
+         "Electronics" : "Active preamp, volume/tone, 1/8\" aux in, 1/8\" headphone out, clean/boost/overdrive/distortion",
+         "Fingerboard Material" : "Black Walnut",
+         "Finish" : "Vintage Black Matte",
+         "Fret Count" : "22",
+         "Frets" : "Jumbo Profile",
+         "Inputs" : "1/8\" stereo",
+         "Neck Material" : "Mahogany",
+         "Neck Radius" : "15.75\"",
+         "Neck Width at Nut" : "1.63\"",
+         "Pickups" : "ESP ALH-200B Active Humbucker",
+         "Scale Length" : "24.75\"",
+         "Serial" : "M3-07576",
+         "Total Depth" : "2.75\"",
+         "Total Length" : "30\"",
+         "Truss Rod" : "Adjustable",
+         "Tuning Machines" : "Gold Locking",
+         "Weight" : "5lbs 4oz"
+      },
+      "featured" : true,
+      "hide" : true,
+      "image" : true,
+      "link" : "https://travelerguitar.com/products/ltd-ec-1?variant=39665627136085",
+      "make" : "Traveler",
+      "manuals" : {
+         "Manual" : "EC-1_Manual.pdf"
+      },
+      "model" : "LTD EC-1",
+      "notes" : [
+         "EXL110",
+         "Acetal Standard",
+         "S1",
+         "C1K",
+         "Stretch Comfort (racer yellow)"
+      ],
+      "strings" : "EXL110",
+      "type" : "Electric Guitar"
    },
    {
       "category" : "Instruments",
@@ -2044,52 +2114,6 @@ var equipment = [
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2003"
-   },
-   {
-      "category" : "Instruments",
-      "detail" : {
-         "Battery Compartment" : "2 x AAA, 1 x 9V",
-         "Binding" : "6-ply Cream/Black",
-         "Body Depth" : "1.63\"",
-         "Body Material" : "Carved Top Mahogany",
-         "Body Width" : "10.5\"",
-         "Color" : "Black",
-         "Electronics" : "Active preamp, volume/tone, 1/8\" aux in, 1/8\" headphone out, clean/boost/overdrive/distortion",
-         "Fingerboard Material" : "Black Walnut",
-         "Finish" : "Vintage Black Matte",
-         "Fret Count" : "22",
-         "Frets" : "Jumbo Profile",
-         "Inputs" : "1/8\" stereo",
-         "Neck Material" : "Mahogany",
-         "Neck Radius" : "15.75\"",
-         "Neck Width at Nut" : "1.63\"",
-         "Pickups" : "ESP ALH-200B Active Humbucker",
-         "Scale Length" : "24.75\"",
-         "Serial" : "M3-07576",
-         "Total Depth" : "2.75\"",
-         "Total Length" : "30\"",
-         "Truss Rod" : "Adjustable",
-         "Tuning Machines" : "Gold Locking",
-         "Weight" : "5lbs 4oz"
-      },
-      "featured": true,
-      "hide" : true,
-      "image" : true,
-      "link" : "https://travelerguitar.com/products/ltd-ec-1?variant=39665627136085",
-      "make" : "Traveler",
-      "manuals" : {
-         "Manual" : "EC-1_Manual.pdf"
-      },
-      "model" : "LTD EC-1",
-      "notes" : [
-         "EXL110",
-         "Acetal Standard",
-         "S1",
-         "C1K",
-         "Stretch Comfort (racer yellow)"
-      ],
-      "strings" : "EXL110",
-      "type" : "Electric Guitar"
    },
    {
       "category" : "Instruments",
