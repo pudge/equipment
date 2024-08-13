@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-08-12T12:00:00+0000")
+var lastModified = new Date("2024-08-13T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -224,21 +224,6 @@ var equipment = [
    },
    {
       "category" : "Accessories",
-      "hide" : true,
-      "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://www.ernieball.com/guitar-accessories/guitar-straps/comfort-collection-straps#P05328",
-      "make" : "Ernie Ball",
-      "model" : "Stretch Comfort (racer yellow)",
-      "notes" : [
-         "guitar",
-         "Flex Lock Strap Blocks"
-      ],
-      "type" : "Strap",
-      "year" : "2000s"
-   },
-   {
-      "category" : "Accessories",
       "image" : true,
       "link" : "https://www.daddario.com/products/accessories/strap-accessories/strap-locks/flex-lock-strap-blocks/",
       "make" : "D’Addario",
@@ -444,7 +429,7 @@ var equipment = [
          "Coating" : "XT",
          "Gauge" : ".010, .014, .023, .030, .039, .047",
          "Gauge Name" : "Extra Light",
-         "Material" : "92/8 Phosphor Bronze"
+         "Material" : "Phosphor Bronze"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -462,7 +447,7 @@ var equipment = [
          "Coating" : "XT",
          "Gauge" : ".012, .016, .024, .032, .042, .053",
          "Gauge Name" : "Light",
-         "Material" : "92/8 Phosphor Bronze"
+         "Material" : "Phosphor Bronze"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -480,7 +465,7 @@ var equipment = [
          "Coating" : "XT",
          "Gauge" : ".013, .017, .026, .035, .045, .056",
          "Gauge Name" : "Medium",
-         "Material" : "92/8 Phosphor Bronze"
+         "Material" : "Phosphor Bronze"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -1440,6 +1425,7 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Back Material" : "High Pressure Laminate",
+         "Battery Compartment" : "9V",
          "Body Size" : "D-14 Fret",
          "Finish Top" : "Satin",
          "Fret Count" : "20",
@@ -1453,7 +1439,7 @@ var equipment = [
          "Side Material" : "High Pressure Laminate",
          "Top Color" : "Natural",
          "Top Material" : "Sitka Spruce",
-         "Truss Rod" : "5mm Allen Nut"
+         "Truss Rod" : "Adjustable, 5mm Allen Nut"
       },
       "image" : true,
       "make" : "Martin",
@@ -1586,6 +1572,7 @@ var equipment = [
          "Back Inlay Material" : "Multi-Stripe",
          "Back Material" : "East Indian Rosewood",
          "Back Purfling/Strip" : "Zig-Zag",
+         "Battery Compartment" : "9V",
          "Binding" : "Grained Ivoroid",
          "Body Size" : "D-14 Fret",
          "Brace Material" : "Spruce",
@@ -1629,7 +1616,7 @@ var equipment = [
          "Top Color" : "Aging Toner",
          "Top Inlay Material" : "Bold Herringbone",
          "Top Material" : "Spruce",
-         "Truss Rod" : "5mm Allen Nut",
+         "Truss Rod" : "Adjustable, 5mm Allen Nut",
          "Tuning Knobs" : "Butterbean",
          "Tuning Machines" : "Nickel Open Gear"
       },
@@ -1756,7 +1743,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Battery Compartment" : "18V w/Screw Plate",
+         "Battery Compartment" : "2 x 9V w/Screw Plate",
          "Binding" : "MOP w/ BLK/WHT/BLK Multi-ply",
          "Body Material" : "Mahogany",
          "Bridge" : "Schecter Custom Bass String Thru",
@@ -1850,6 +1837,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Battery Compartment" : "6 x AA or 1 x 9V",
          "Body Material" : "Alder",
          "Color" : "Sunburst",
          "Fingerboard Material" : "Rosewood",
@@ -1861,7 +1849,7 @@ var equipment = [
          "Nut Width" : "1.5\"",
          "Scale Length" : "34\"",
          "Serial" : "4101739",
-         "Truss Rod" : "4mm Allen Nut"
+         "Truss Rod" : "Adjustable, 4mm Allen Nut"
       },
       "featured" : true,
       "image" : true,
@@ -2003,7 +1991,7 @@ var equipment = [
          "Acetal Standard",
          "S1",
          "C1K",
-         "Stretch Comfort (racer yellow)"
+         "Polypro (black)"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar"
@@ -2081,6 +2069,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Battery Compartment" : "6 x AA or 1 x 9V",
          "Body Material" : "Basswood",
          "Color" : "Black",
          "Fingerboard Material" : "Rosewood",
@@ -2092,7 +2081,7 @@ var equipment = [
          "Nut Width" : "1.5\"",
          "Scale Length" : "25.5”",
          "Serial" : "3058431",
-         "Truss Rod" : "4mm Allen Nut"
+         "Truss Rod" : "Adjustable, 4mm Allen Nut"
       },
       "featured" : true,
       "image" : true,

@@ -484,8 +484,8 @@ function initCache() {
 //   });
 }
 
-$(document).ready(async function() {
-  await setLastMod('#lastModified');
+$(document).ready(function() {
+  setLastMod('#lastModified');
   equipmentInit();
   clearSearchInit();
   modalInit();

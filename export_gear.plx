@@ -28,10 +28,18 @@ EOT
 }
 
 sub get_gear {
-    my $data = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/All Gear-Table 1.csv", headers => "auto");
-    my $detail = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/Gear Detail-Table 1.csv", headers => "auto");
-    my $manuals = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/Gear Manuals-Table 1.csv", headers => "auto");
-    my $instrumans = csv(in => "$ENV{HOME}/Downloads/Guitar Strings/Instruments-Table 1.csv", headers => "auto");
+    my $dir = "$ENV{HOME}/Downloads/Guitar Strings";
+    open my $gd_fh, '<', "$dir/Gear Detail-Table 1.csv" or die $!;
+    my $gd = '';
+    while (my $line = <$gd_fh>) {
+        if ($line =~ s/^,//) {
+            $gd .= $line;
+        }
+    }
+    my $detail      = csv(in => \$gd, headers => "auto");
+    my $data        = csv(in => "$dir/All Gear-Table 1.csv",     headers => "auto");
+    my $manuals     = csv(in => "$dir/Gear Manuals-Table 1.csv", headers => "auto");
+    my $instrumans  = csv(in => "$dir/Instruments-Table 1.csv",  headers => "auto");
 
     my %detail;
     for my $x (@$detail) {
