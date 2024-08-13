@@ -58,6 +58,7 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
+      "link" : "https://shubb.com/product/shubb-reversible-guitar-slide/",
       "make" : "Shubb",
       "model" : "Axys",
       "notes" : [
@@ -72,6 +73,7 @@ var equipment = [
          "Battery Compartment" : "9V"
       },
       "image" : true,
+      "link" : "https://ebow.com/",
       "make" : "EBow",
       "manuals" : {
          "Player’s Guide" : "EBowPlayersGuide.pdf"
@@ -86,11 +88,20 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
-      "link" : "https://www.thaliacapos.com/collections/pick-pucks",
+      "link" : "https://www.thaliacapos.com/collections/pick-pucks/products/old-glory-pick-puck-2-0",
       "make" : "Thalia",
       "model" : "Pick Puck",
       "type" : "Guitar Accessory",
       "year" : "2022"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "link" : "https://www.thaliacapos.com/products/u-s-coast-guard-pick-tin",
+      "make" : "Thalia",
+      "model" : "Pick Tin",
+      "type" : "Guitar Accessory",
+      "year" : "2023"
    },
    {
       "category" : "Accessories",
@@ -508,6 +519,7 @@ var equipment = [
          "Weight" : "6lbs"
       },
       "image" : true,
+      "link" : "https://pignoseamps.com/",
       "make" : "Pignose",
       "model" : "7-100",
       "type" : "Amplifier",
@@ -1851,7 +1863,6 @@ var equipment = [
          "Serial" : "4101739",
          "Truss Rod" : "Adjustable, 4mm Allen Nut"
       },
-      "featured" : true,
       "image" : true,
       "link" : "https://line6.com/legacy/variaxbass700",
       "make" : "Line 6",
@@ -1932,7 +1943,6 @@ var equipment = [
          "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White); 60s-era E",
          "Tuning Machines" : "Grover® Rotomatic® 18:1"
       },
-      "featured" : true,
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/Electric-Guitar/EPINA3562/Ebony",
       "make" : "Epiphone",
@@ -1970,7 +1980,7 @@ var equipment = [
          "Neck Width at Nut" : "1.63\"",
          "Pickups" : "ESP ALH-200B Active Humbucker",
          "Scale Length" : "24.75\"",
-         "Serial" : "M3-07576",
+         "Serial" : "",
          "Total Depth" : "2.75\"",
          "Total Length" : "30\"",
          "Truss Rod" : "Adjustable",
@@ -2083,7 +2093,6 @@ var equipment = [
          "Serial" : "3058431",
          "Truss Rod" : "Adjustable, 4mm Allen Nut"
       },
-      "featured" : true,
       "image" : true,
       "link" : "https://line6.com/legacy/variax500",
       "make" : "Line 6",
@@ -2794,7 +2803,7 @@ var links = {
    "Studio Projects" : "http://www.studioprojects.com/",
    "Tama" : "https://www.tama.com/",
    "Tapco" : "https://www.mackie.com/",
-   "Thalia" : "https://www.thaliacapos.com/collections/pick-pucks",
+   "Thalia" : "https://www.thaliacapos.com/",
    "Traveler" : "https://travelerguitar.com/",
    "Ultimate Support" : "https://www.ultimatesupport.com/",
    "VOX" : "https://voxamps.com/",
