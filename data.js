@@ -1653,6 +1653,57 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Back Material" : "Laminated Sapele",
+         "Binding" : "Aged White",
+         "Body Depth" : "3.75\" (95mm)",
+         "Body Finish" : "Semi-Gloss",
+         "Body Length" : "17.8\" (45.2cm)",
+         "Body Material" : "Sapele",
+         "Body Style" : "Parlor",
+         "Bracing Pattern" : "X Bracing",
+         "Bridge" : "Walnut with Compensated Saddle",
+         "Color" : "Frontier Stain",
+         "Fingerboard Inlays" : "White Pearloid Dot",
+         "Fingerboard Material" : "Walnut",
+         "Fingerboard Radius" : "12\"",
+         "Fret Count" : "18",
+         "Frets" : "Vintage",
+         "Headstock Shape" : "1950’s Gretsch 3x3",
+         "Model Number" : "2711020579",
+         "Neck Finish" : "Semi-Gloss",
+         "Neck Material" : "Nato",
+         "Neck Shape" : "“C” Shape",
+         "Nut Material" : "Synthetic Bone",
+         "Nut Width" : "1.69\" (43mm)",
+         "Pickguard" : "1-Ply Aged White with Black “G”",
+         "Rosette" : "White/Black Rings",
+         "Scale Length" : "24\"",
+         "Serial" : "",
+         "Side Material" : "Laminated Sapele",
+         "Top Material" : "Laminated Sapele",
+         "Truss Rod" : "Adjustable, 4mm Allen Nut",
+         "Tuning Machines" : "Open-Gear Die-Cast"
+      },
+      "featured" : true,
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.gretschguitars.com/gear/build/acoustic/jim-dandy-parlor/2711020579",
+      "make" : "Gretsch",
+      "model" : "Jim Dandy Parlor",
+      "notes" : [
+         "XTAPB1253",
+         "Acetal Standard",
+         "S1",
+         "C1K",
+         "Mini Acoustic Guitar Gig Bag"
+      ],
+      "strings" : "XTAPB1253",
+      "type" : "Acoustic Guitar",
+      "year" : "2024"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
          "Body Finish" : "Satin Body Finish",
          "Body Material" : "Laminated Sapele",
          "Body Style" : "3/4 size",
@@ -1675,9 +1726,9 @@ var equipment = [
       "model" : "MA-1",
       "not_mine" : true,
       "notes" : [
-         "AA Lifespan 2.0 MA540T (2023-10-16)"
+         "XTAPB1253 (2023-10-16)"
       ],
-      "strings" : "AA Lifespan 2.0 MA540T",
+      "strings" : "XTAPB1253",
       "type" : "Acoustic Guitar",
       "year" : "2014"
    },
@@ -2588,6 +2639,16 @@ var equipment = [
    },
    {
       "category" : "Stands etc.",
+      "hide" : true,
+      "image" : true,
+      "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
+      "make" : "Gator",
+      "model" : "Mini Acoustic Guitar Gig Bag",
+      "type" : "Instrument Case",
+      "year" : "2024"
+   },
+   {
+      "category" : "Stands etc.",
       "image" : true,
       "instrument" : "electric guitar",
       "link" : "https://roadrunnercases.com/rr3eg-electric-guitar-gig-bag/",
@@ -2638,6 +2699,22 @@ var equipment = [
       ],
       "type" : "Instrument Stand",
       "year" : "2016"
+   },
+   {
+      "category" : "Stands etc.",
+      "hide" : true,
+      "image" : true,
+      "instrument" : "guitar, banjo, mandolin",
+      "link" : "https://en.guittochina.com/Details/20.html",
+      "make" : "Guitto",
+      "model" : "GGS-01",
+      "notes" : [
+         "guitar",
+         "banjo",
+         "mandolin"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2024"
    },
    {
       "category" : "Stands etc.",
@@ -2764,6 +2841,8 @@ var links = {
    "Furman" : "https://www.furmanpower.com/",
    "GHS" : "https://www.ghsstrings.com/",
    "Gator" : "https://www.gatorcases.com/",
+   "Gretsch" : "https://www.gretschguitars.com/",
+   "Guitto" : "https://en.guittochina.com/",
    "Hercules" : "http://herculesstands.com/",
    "Hohner" : "https://www.hohner.de/",
    "IK Multimedia" : "https://www.ikmultimedia.com/",
