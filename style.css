@@ -2,7 +2,7 @@ body {
     background-color: #21262C;
     color: #F8F8F2;
     font-family: karla, 'trebuchet ms', tahoma, sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 1/5em;
 }
 
@@ -165,7 +165,10 @@ td.dt-center {
 
 .featured {
     color: #FFFF80;
-    font-size: 0.75em;
+    font-size: 0.5em;
+    position: relative;
+    bottom: 0.25em;
+    left: -0.25em;
 }
 
 /*

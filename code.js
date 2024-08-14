@@ -25,9 +25,13 @@ const CAT = {
 }
 
 const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.TYPE, COL.MAKE, COL.YEAR];
-// can do this once we make CAT an int
-// const columnOrder = [[ COL.CAT, 'desc' ], [ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
-const columnOrder = [[ COL.FEAT, 'desc' ], [COL.CAT_SORT, 'asc'], [ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
+const columnOrder = [
+  [ COL.FEAT,     'desc' ],
+  [ COL.CAT_SORT, 'asc'  ],
+  [ COL.TYPE,     'asc'  ],
+  [ COL.MAKE,     'asc'  ],
+  [ COL.MODEL,    'asc'  ],
+];
 var columnMap = {};
 columnMap[COL.MODEL] = COL.CAT;
 var anchorText;
@@ -204,7 +208,7 @@ function equipmentInit() {
     x['notes'] = linkItNotes(x);
     x['model'] = linkHtml(x['model']);
     if (x['featured']) {
-      x['model'] += ' <i class="fa-solid fa-star featured"></i>';
+      x['x'] = ' <i class="fa-solid fa-star featured"></i>';
     }
     x['make'] = linkHtml(x['make']);
   });
@@ -262,6 +266,9 @@ function equipmentInit() {
           var column_d = table.column(columnMap[i] || i);
           var select = $('<select id="sel_' + i + '"></select><br>')
             .prependTo( $(column.header()) )
+            .on( 'click', function (event) {
+              event.stopPropagation();
+            })
             .on( 'change', function () {
               var val = $.fn.dataTable.util.escapeRegex(
                   $(this).val()
@@ -269,7 +276,6 @@ function equipmentInit() {
               column_d
                 .search( val ? '^'+val+'$' : '', true, false )
                 .draw();
-              //drawDropdowns(i);
               columns.filter(j => i != j).forEach(j => drawDropdowns(j));
             });
           drawDropdowns(i);
@@ -486,17 +492,6 @@ function initCache() {
       }
     })
   }
-
-//   self.addEventListener('install', (event) => {
-//     event.waitUntil(
-//       caches
-//         .open('v1')
-//         .then((cache) => {
-//             cache.addAll(Object.keys(md5s));
-//           }
-//         )
-//     )
-//   });
 }
 
 $(document).ready(function() {
