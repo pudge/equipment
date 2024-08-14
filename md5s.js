@@ -1,6 +1,6 @@
 const md5s = {
    "./code.js" : "54bd1a72942f482e5d7a2b58318241cf",
-   "./data.js" : "a0395bad22a0033dcb4ae908034bb5a7",
+   "./data.js" : "e085849f31c1bb079ddc7f17158074d5",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/445.png" : "cb2806a143a952ae2dc2a5bbd592c5c2",
    "./images/7100.png" : "e1a00e604cb4160911e780a84432f608",
@@ -80,6 +80,7 @@ const md5s = {
    "./images/m17ssblk.png" : "630b54c9e10d562828fd3d1771227d3a",
    "./images/m17ssdbr.png" : "000e3fbb14fd2b5591b114d86cd0555b",
    "./images/m19prtan.png" : "a09d1c8f00b20013398064305263c573",
+   "./images/m25dbr.png" : "ae3940016b7f2e4515a0ddaa430c199d",
    "./images/m58.png" : "324fb4de51ac28735ca75285b0b6b61d",
    "./images/ma1.png" : "410295c99320174ff4cca9cb2eb6816f",
    "./images/ma20d.png" : "bb314b2da29ed3d639d93d0e3ba52a66",
@@ -209,6 +210,7 @@ const md5s = {
    "./images/sm/m17ssblk-sm.png" : "c751b55fb16557ca5592d507da324570",
    "./images/sm/m17ssdbr-sm.png" : "58460d9a2073f7c6d46ba894d45c1568",
    "./images/sm/m19prtan-sm.png" : "cd5b7278f7a3a5657ca01f5a5275d7fc",
+   "./images/sm/m25dbr-sm.png" : "e171db9d254ddb0075d7fdcd279d4e3b",
    "./images/sm/m58-sm.png" : "b304cdd7fddfe1a78bf1fd94aa5d9237",
    "./images/sm/ma1-sm.png" : "acbcd93371081cbe7f7f924c9e4b363b",
    "./images/sm/ma20d-sm.png" : "1ac50cc1d9ff74107daf30900b865d7b",

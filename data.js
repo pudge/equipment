@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-08-13T12:00:00+0000")
+var lastModified = new Date("2024-08-14T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -159,10 +159,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
+      "instrument" : "electric guitar",
       "link" : "https://www.levysleathers.com/product/guitar-strap-m17ss-blk/",
       "make" : "Levys",
       "model" : "M17SS-BLK",
       "notes" : [
+         "electric guitar",
          "S-Locks"
       ],
       "type" : "Strap",
@@ -171,28 +173,53 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
+      "instrument" : "acoustic guitar",
       "link" : "https://www.levysleathers.com/product/guitar-strap-m17ss/",
       "make" : "Levys",
       "model" : "M17SS-DBR",
+      "notes" : [
+         "acoustic guitar"
+      ],
       "type" : "Strap",
       "year" : "2013"
    },
    {
       "category" : "Accessories",
       "image" : true,
+      "instrument" : "mandolin",
       "link" : "https://www.levysleathers.com/product/mandolin-strap-m19pr/",
       "make" : "Levys",
       "model" : "M19PR-TAN",
+      "notes" : [
+         "mandolin"
+      ],
       "type" : "Strap",
       "year" : "2019"
    },
    {
       "category" : "Accessories",
+      "hide" : true,
       "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://levysleathers.com/collections/leather-guitar-straps/products/holly-deluxe-series?variant=47870207066428",
+      "make" : "Levys",
+      "model" : "M25-DBR",
+      "notes" : [
+         "acoustic guitar",
+         "Flex Lock Strap Blocks"
+      ],
+      "type" : "Strap",
+      "year" : "2024"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "bass guitar",
       "link" : "https://www.levysleathers.com/product/guitar-strap-mss2-4-blk/",
       "make" : "Levys",
       "model" : "MSS2-4-BLK",
       "notes" : [
+         "bass guitar",
          "Straplok"
       ],
       "type" : "Strap",
@@ -201,10 +228,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
+      "instrument" : "bass guitar",
       "link" : "https://www.levysleathers.com/product/guitar-strap-mss3-brn/",
       "make" : "Levys",
       "model" : "MSS3-BRN",
       "notes" : [
+         "bass guitar",
          "Straplok"
       ],
       "type" : "Strap",
@@ -1695,6 +1724,7 @@ var equipment = [
          "Acetal Standard",
          "S1",
          "C1K",
+         "M25-DBR",
          "Mini Acoustic Guitar Gig Bag"
       ],
       "strings" : "XTAPB1253",
