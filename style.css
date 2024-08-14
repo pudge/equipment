@@ -124,8 +124,8 @@ td.dt-center {
 /* The Close Button */
 #pic_close {
     position: absolute;
-    top: 15px;
-    right: 35px;
+    top: -0.25em;
+    right: 0.25em;
     color: #F8F8F2;
     font-size: 40px;
     font-weight: bold;

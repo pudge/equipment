@@ -380,6 +380,6 @@ const md5s = {
    "./manuals/variax700/Variax Bass Manual - English ( Rev A ).pdf" : "4ea506846827b12467c60f3d6414d079",
    "./manuals/ydp223/YDP223.pdf" : "be913fb5737ab4e6cd092edd536ca95d",
    "./manuals/ypt300/YPT300_1.pdf" : "05b566baeb4e9064ab170a87abddcb1d",
-   "./style.css" : "c2e36688083829061ced80e5cd92d655"
+   "./style.css" : "852bfb9c09e6e17aedc0a2a772391a5c"
 }
 
