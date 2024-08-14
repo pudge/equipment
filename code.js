@@ -11,14 +11,23 @@ const COL = {
   NOTER    :  9,
   NMINE    : 10,
   HIDE     : 11,
-  DETAILS  : 12,
-  MANUALS  : 13,
+  MANUALS  : 12,
+  DETAILS  : 13,
+  CAT_SORT : 14,
+}
+
+const CAT = {
+  "Instruments":              1,
+  "Hardware":                 2,
+  "Accessories":              3,
+  "Percussion Instruments":   4,
+  "Stands etc.":              5,
 }
 
 const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.TYPE, COL.MAKE, COL.YEAR];
 // can do this once we make CAT an int
 // const columnOrder = [[ COL.CAT, 'desc' ], [ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
-const columnOrder = [[ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
+const columnOrder = [[ COL.FEAT, 'desc' ], [COL.CAT_SORT, 'asc'], [ COL.TYPE, 'asc' ], [ COL.MAKE, 'asc' ], [ COL.MODEL, 'asc' ]];
 var columnMap = {};
 columnMap[COL.MODEL] = COL.CAT;
 var anchorText;
@@ -142,6 +151,7 @@ function equipmentInit() {
     x['not_mine'] = x['not_mine'] ? 'not mine' : '';
     x['hide'] = x['hide'] ? 'hidden' : '';
     x['featured'] = x['featured'] ? 'featured' : '';
+    x['category_sort'] = CAT[x['category']] || 99;
     if (x['model']) {
       equipment_data[x['model']] = x;
       if (x['link']) {
@@ -193,6 +203,9 @@ function equipmentInit() {
     x['detail'] = linkItDetail(x);
     x['notes'] = linkItNotes(x);
     x['model'] = linkHtml(x['model']);
+    if (x['featured']) {
+      x['model'] += ' <i class="fa-solid fa-star featured"></i>';
+    }
     x['make'] = linkHtml(x['make']);
   });
 
@@ -201,7 +214,8 @@ function equipmentInit() {
   var query_idx = uri.indexOf('?');
   var anchor_idx = uri.indexOf('#');
   var query = query_idx === -1 ? null : anchor_idx === -1 ? uri.substring(query_idx+1) : uri.substring(query_idx+1, anchor_idx);
-  anchorText = anchor_idx === -1 ? 'featured' : unescape(uri.substring(anchor_idx+1));
+//   anchorText = anchor_idx === -1 ? 'featured' : unescape(uri.substring(anchor_idx+1));
+  anchorText = anchor_idx === -1 ? '' : unescape(uri.substring(anchor_idx+1));
   if (query != 'hidden') {
     removeElements.reverse().forEach(x => equipment.splice(x, 1));
   }
@@ -228,6 +242,7 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'hide', visible: false },
       { responsivePriority: 99, data: 'manuals', title: 'Manuals', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
+      { responsivePriority: 99, data: 'category_sort', visible: false },
     ],
     scrollX: true,
     order: columnOrder,

@@ -163,6 +163,10 @@ td.dt-center {
     to { transform:rotate(360deg) }
 }
 
+.featured {
+    color: #FFFF80;
+    font-size: 0.75em;
+}
 
 /*
  * Table styles

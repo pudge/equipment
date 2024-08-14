@@ -1,5 +1,5 @@
 const md5s = {
-   "./code.js" : "cfcf3a5ac0ddcaa24b85c1929e9a984e",
+   "./code.js" : "e5699022fc6cbdcf6096f620d1715c7b",
    "./data.js" : "a0395bad22a0033dcb4ae908034bb5a7",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/445.png" : "cb2806a143a952ae2dc2a5bbd592c5c2",
@@ -378,6 +378,6 @@ const md5s = {
    "./manuals/variax700/Variax Bass Manual - English ( Rev A ).pdf" : "4ea506846827b12467c60f3d6414d079",
    "./manuals/ydp223/YDP223.pdf" : "be913fb5737ab4e6cd092edd536ca95d",
    "./manuals/ypt300/YPT300_1.pdf" : "05b566baeb4e9064ab170a87abddcb1d",
-   "./style.css" : "776981cdb6bee4e8398889bccc2677ba"
+   "./style.css" : "71baeba0e51014e03705e102dff7cccb"
 }
 
