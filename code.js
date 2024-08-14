@@ -390,7 +390,7 @@ function modalInit() {
     image.css('width', 'auto');
     image.css('height', 'auto');
 
-    var win_height = $(window).height() - 150;
+    var win_height = $(window).height() - 50;
     var win_width  = $(window).width() - 25;
 
     var img_height = image.height();
