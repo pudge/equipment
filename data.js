@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-08-14T12:00:00+0000")
+var lastModified = new Date("2024-08-16T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -121,6 +121,19 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
+      "instrument" : "bass",
+      "link" : "https://www.jimdunlop.com/big-stubby-pick-2-00mm/",
+      "make" : "Dunlop",
+      "model" : "Big Stubby",
+      "notes" : [
+         "bass",
+         "2.0mm"
+      ],
+      "type" : "Pick"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
       "instrument" : "mandolin",
       "link" : "https://www.sagamusic.com/shop/fretted-instrument-accessories/golden-gate-accessories/golden-gate-mp-12-deluxe-tortoise-style-flat-pick-rounded-triangle-extra-stiff-dozen/",
       "make" : "Saga",
@@ -198,7 +211,6 @@ var equipment = [
    },
    {
       "category" : "Accessories",
-      "hide" : true,
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://levysleathers.com/collections/leather-guitar-straps/products/holly-deluxe-series?variant=47870207066428",
@@ -224,6 +236,20 @@ var equipment = [
       ],
       "type" : "Strap",
       "year" : "2021"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://levysleathers.com/collections/poly-print-straps/products/3-wide-poly-series",
+      "make" : "Levys",
+      "model" : "M8P3-BLK",
+      "notes" : [
+         "guitar",
+         "Flex Lock Strap Blocks"
+      ],
+      "type" : "Strap",
+      "year" : "2024"
    },
    {
       "category" : "Accessories",
@@ -268,8 +294,7 @@ var equipment = [
       "link" : "https://www.daddario.com/products/accessories/strap-accessories/strap-locks/flex-lock-strap-blocks/",
       "make" : "D’Addario",
       "model" : "Flex Lock Strap Blocks",
-      "type" : "Strap Retainers",
-      "year" : "2024"
+      "type" : "Strap Retainers"
    },
    {
       "category" : "Accessories",
@@ -277,8 +302,7 @@ var equipment = [
       "link" : "https://schaller.info/en/slocks/",
       "make" : "Schaller",
       "model" : "S-Locks",
-      "type" : "Strap Retainers",
-      "year" : "2000"
+      "type" : "Strap Retainers"
    },
    {
       "category" : "Accessories",
@@ -286,8 +310,7 @@ var equipment = [
       "link" : "https://www.jimdunlop.com/straplok-strap-retainers-original-nickel/",
       "make" : "Dunlop",
       "model" : "Straplok",
-      "type" : "Strap Retainers",
-      "year" : "2020"
+      "type" : "Strap Retainers"
    },
    {
       "category" : "Accessories",
@@ -667,26 +690,6 @@ var equipment = [
       ],
       "type" : "Amplifier",
       "year" : "2021"
-   },
-   {
-      "category" : "Hardware",
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.apple.com/ipad-pro/",
-      "make" : "Apple",
-      "model" : "iPad Pro",
-      "type" : "Computer",
-      "year" : "2021"
-   },
-   {
-      "category" : "Hardware",
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.apple.com/macbook-pro/",
-      "make" : "Apple",
-      "model" : "MacBook Pro",
-      "type" : "Computer",
-      "year" : "2020"
    },
    {
       "category" : "Hardware",
@@ -1533,7 +1536,7 @@ var equipment = [
       },
       "model" : "Escape Mark III",
       "notes" : [
-         "XTAPB1047",
+         "XTAPB1047 (2024-08-15)",
          "Acetal Standard",
          "S1",
          "C1K",
@@ -1707,14 +1710,13 @@ var equipment = [
          "Pickguard" : "1-Ply Aged White with Black “G”",
          "Rosette" : "White/Black Rings",
          "Scale Length" : "24\"",
-         "Serial" : "",
+         "Serial" : "IWA2425089",
          "Side Material" : "Laminated Sapele",
          "Top Material" : "Laminated Sapele",
          "Truss Rod" : "Adjustable, 4mm Allen Nut",
          "Tuning Machines" : "Open-Gear Die-Cast"
       },
       "featured" : true,
-      "hide" : true,
       "image" : true,
       "link" : "https://www.gretschguitars.com/gear/build/acoustic/jim-dandy-parlor/2711020579",
       "make" : "Gretsch",
@@ -1771,12 +1773,13 @@ var equipment = [
          "Fingerboard Inlays" : "Dot",
          "Fret Count" : "20",
          "Frets" : "Medium Jumbo",
+         "Model Number" : "DR-100 EB",
          "Neck Joint" : "Dovetail; Glued-in",
          "Neck Profile" : "SlimTaper C-profile",
          "Nut Width" : "43.0mm (1.692”)",
          "Pickguard" : "1-Ply; Black PVC",
          "Scale Length" : "647.7mm (25.5”)",
-         "Serial" : "",
+         "Serial" : "20121301028",
          "Top Material" : "Select Spruce",
          "Truss Rod" : "2-Way Adjustable",
          "Tuning Machines" : "Premium Die Cast"
@@ -1802,7 +1805,7 @@ var equipment = [
       "make" : "Framus",
       "model" : "Tenor Banjo",
       "notes" : [
-         "EXL110",
+         "EXL110 (2021-09-03)",
          "Nylon Standard",
          "C5-R",
          "C5K",
@@ -1813,25 +1816,6 @@ var equipment = [
       "type" : "Banjo",
       "year" : "1968",
       "year_uncertain" : true
-   },
-   {
-      "category" : "Instruments",
-      "detail" : {
-         "Location" : "Indonesia",
-         "Production Year" : "2019",
-         "Serial" : "IW19030720",
-         "Year Lost" : "2021"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.schecterguitars.com/bass/apocalypse-series-1/c-5-apocalypse-rusty-grey-detail",
-      "make" : "Schecter",
-      "model" : "C-5 Apocalypse",
-      "notes" : [
-         "DOA"
-      ],
-      "type" : "Bass Guitar",
-      "year" : "2021"
    },
    {
       "category" : "Instruments",
@@ -2029,7 +2013,7 @@ var equipment = [
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
-         "EXL110",
+         "EXL110 (2021-08-09)",
          "Acetal Standard",
          "S1",
          "C1K",
@@ -2061,7 +2045,7 @@ var equipment = [
          "Neck Width at Nut" : "1.63\"",
          "Pickups" : "ESP ALH-200B Active Humbucker",
          "Scale Length" : "24.75\"",
-         "Serial" : "",
+         "Serial" : "LTD02455",
          "Total Depth" : "2.75\"",
          "Total Length" : "30\"",
          "Truss Rod" : "Adjustable",
@@ -2085,7 +2069,8 @@ var equipment = [
          "Polypro (black)"
       ],
       "strings" : "EXL110",
-      "type" : "Electric Guitar"
+      "type" : "Electric Guitar",
+      "year" : "2024"
    },
    {
       "category" : "Instruments",
@@ -2669,7 +2654,6 @@ var equipment = [
    },
    {
       "category" : "Stands etc.",
-      "hide" : true,
       "image" : true,
       "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
       "make" : "Gator",
@@ -2732,7 +2716,6 @@ var equipment = [
    },
    {
       "category" : "Stands etc.",
-      "hide" : true,
       "image" : true,
       "instrument" : "guitar, banjo, mandolin",
       "link" : "https://en.guittochina.com/Details/20.html",

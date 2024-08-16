@@ -119,7 +119,7 @@ function linkItManuals(oData) {
   var modelName = fixModelName(oData['model']);
   return '<div class="manuals">' + Object.keys(oData['manuals']).map((x) => {
       var file = `./manuals/${modelName}/${oData['manuals'][x]}`;
-      var md5 = md5s[file].substr(0, 5);
+      var md5 = (md5s[file] || '').substr(0, 5);
       return `<div class="manual_row"><a target="_blank" href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`;
     }).join('') + '</div>';
 }
@@ -138,7 +138,7 @@ function imgIt(oData) {
       oData['image'] = './images/' + name + '.png';
       oData['image_sm'] = './images/sm/' + name + '-sm.png';
     }
-    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + md5s[oData['image']].substr(0, 5) + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + md5s[oData['image_sm']].substr(0, 5) + '" /></a>';
+    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + (md5s[oData['image']] || '').substr(0, 5) + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + (md5s[oData['image_sm']] || '').substr(0, 5) + '" /></a>';
   }
   return text;
 }
@@ -482,7 +482,7 @@ function initCache() {
     caches.has('v1.0.3').then((e) => {
       if (e === false) {
         // only cache images for now
-        var files = Object.keys(md5s).filter(k => k.match(/\.png$/)).map(k => `${k}?${md5s[k].substr(0,5)}`)
+        var files = Object.keys(md5s).filter(k => k.match(/\.png$/)).map(k => `${k}?${(md5s[k] || '').substr(0,5)}`)
         caches
           .open('v1.0.3')
           .then((cache) => {
