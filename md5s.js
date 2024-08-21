@@ -1,6 +1,6 @@
 const md5s = {
    "./code.js" : "668a4953b7d746eea59b32e80faf2b81",
-   "./data.js" : "777c98bfd61ed9251aa7583cc8f05a7d",
+   "./data.js" : "361715cd479cc57464389cfd59c16e58",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/445.png" : "cb2806a143a952ae2dc2a5bbd592c5c2",
    "./images/7100.png" : "e1a00e604cb4160911e780a84432f608",
@@ -62,6 +62,7 @@ const md5s = {
    "./images/gcelectrica.png" : "f5fee07adea38820c55ee106003350bb",
    "./images/gfwmic0822.png" : "8d7971e6d186777208781e73eb45757e",
    "./images/ggs01.png" : "e91dd4d5310371132d74c4ad154e9060",
+   "./images/gnled.png" : "eb83e33699b1a1ee27fa122eabd18559",
    "./images/goldengatemp12.png" : "1e94b8c3e0835fb2c2b2bbaef3a5056f",
    "./images/gs102.png" : "c8e0894ac498cf9af3f15984ae42eca3",
    "./images/gs550a.png" : "ca044ce59e32bb72d98631521163eefe",
@@ -193,6 +194,7 @@ const md5s = {
    "./images/sm/gcelectrica-sm.png" : "8d106ef1b7f638b3e9aac3c055127660",
    "./images/sm/gfwmic0822-sm.png" : "9ec5ef63679a25cf4ab060823e0b5af6",
    "./images/sm/ggs01-sm.png" : "afdc288bab92dbc2870a0651ac9aef32",
+   "./images/sm/gnled-sm.png" : "a03a4350e515e87b9ad37d0d0cbacb2e",
    "./images/sm/goldengatemp12-sm.png" : "30238243897a4a5158ae6265c67abc2d",
    "./images/sm/gs102-sm.png" : "58b8820b8ca76a28a7ec5de86afdc655",
    "./images/sm/gs550a-sm.png" : "68a82859a733f6da3c5a5146a189cd37",

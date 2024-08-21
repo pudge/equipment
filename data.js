@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-08-16T12:00:00+0000")
+var lastModified = new Date("2024-08-21T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -173,7 +173,7 @@ var equipment = [
       "category" : "Accessories",
       "image" : true,
       "instrument" : "electric guitar",
-      "link" : "https://www.levysleathers.com/product/guitar-strap-m17ss-blk/",
+      "link" : "https://levysleathers.com/products/the-ebony-series?variant=47870343938364",
       "make" : "Levys",
       "model" : "M17SS-BLK",
       "notes" : [
@@ -187,7 +187,7 @@ var equipment = [
       "category" : "Accessories",
       "image" : true,
       "instrument" : "acoustic guitar",
-      "link" : "https://www.levysleathers.com/product/guitar-strap-m17ss/",
+      "link" : "https://levysleathers.com/products/the-ebony-series?variant=47870343938364",
       "make" : "Levys",
       "model" : "M17SS-DBR",
       "notes" : [
@@ -200,7 +200,7 @@ var equipment = [
       "category" : "Accessories",
       "image" : true,
       "instrument" : "mandolin",
-      "link" : "https://www.levysleathers.com/product/mandolin-strap-m19pr/",
+      "link" : "https://levysleathers.com/products/mandolin-series?variant=47870295703868",
       "make" : "Levys",
       "model" : "M19PR-TAN",
       "notes" : [
@@ -227,7 +227,7 @@ var equipment = [
       "category" : "Accessories",
       "image" : true,
       "instrument" : "bass guitar",
-      "link" : "https://www.levysleathers.com/product/guitar-strap-mss2-4-blk/",
+      "link" : "https://levysleathers.com/products/signature-legacy-series?variant=47870206279996",
       "make" : "Levys",
       "model" : "MSS2-4-BLK",
       "notes" : [
@@ -255,7 +255,7 @@ var equipment = [
       "category" : "Accessories",
       "image" : true,
       "instrument" : "bass guitar",
-      "link" : "https://www.levysleathers.com/product/guitar-strap-mss3-brn/",
+      "link" : "https://levysleathers.com/products/signature-suede-series?variant=47870205034812",
       "make" : "Levys",
       "model" : "MSS3-BRN",
       "notes" : [
@@ -268,7 +268,7 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
-      "link" : "https://www.levysleathers.com/product/banjo-strap-pm14-dbr/",
+      "link" : "https://levysleathers.com/products/banjo-master-series?variant=47870295212348",
       "make" : "Levys",
       "model" : "PM14-DBR",
       "type" : "Strap",
@@ -315,10 +315,47 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Gauge" : ".010, .015, .024, .036",
+         "Gauge Name" : "Light",
+         "Material" : "Phosphor Bronze"
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "mandolin",
+      "link" : "https://www.ghsstrings.com/products/11374-phosphor-bronze-mandolin/options/12146-loop-end-light",
+      "make" : "GHS",
+      "model" : "A250",
+      "notes" : [
+         "mandolin"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".011, .016, .026, .040",
+         "Gauge Name" : "Medium",
+         "Material" : "Phosphor Bronze"
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "mandolin",
+      "link" : "https://www.ghsstrings.com/products/11374-phosphor-bronze-mandolin/options/12146-loop-end-light",
+      "make" : "GHS",
+      "model" : "A270",
+      "notes" : [
+         "mandolin"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
          "Gauge" : ".010, .014, .023, .030, .039, .047",
          "Gauge Name" : "Extra Light",
          "Material" : "92/8 Phosphor Bronze"
       },
+      "hide" : true,
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://www.martinguitar.com/strings/authentic-acoustic/martin-authentic-acoustic-lifespan-2.0-guitar-strings-92-8-phosphor-bronze.html",
@@ -336,6 +373,7 @@ var equipment = [
          "Gauge Name" : "Light",
          "Material" : "92/8 Phosphor Bronze"
       },
+      "hide" : true,
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://www.martinguitar.com/strings/authentic-acoustic/martin-authentic-acoustic-lifespan-2.0-guitar-strings-92-8-phosphor-bronze.html",
@@ -353,6 +391,7 @@ var equipment = [
          "Gauge Name" : "Medium",
          "Material" : "92/8 Phosphor Bronze"
       },
+      "hide" : true,
       "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://www.martinguitar.com/strings/authentic-acoustic/martin-authentic-acoustic-lifespan-2.0-guitar-strings-92-8-phosphor-bronze.html",
@@ -571,7 +610,7 @@ var equipment = [
          "Weight" : "6lbs"
       },
       "image" : true,
-      "link" : "https://pignoseamps.com/",
+      "link" : "https://pignoseamps.com/product/legendary-7-100/",
       "make" : "Pignose",
       "model" : "7-100",
       "type" : "Amplifier",
@@ -650,7 +689,7 @@ var equipment = [
          "Weight" : "17lbs (7.7kg)"
       },
       "image" : true,
-      "link" : "https://line6.com/spider-guitar-amp/amps/",
+      "link" : "https://line6.com/legacy/spideriv15",
       "make" : "Line 6",
       "manuals" : {
          "Pilot’s Handbook" : "Spider IV 15 Pilot's Guide - English ( Rev F ).pdf"
@@ -714,6 +753,7 @@ var equipment = [
          "Serial" : "2105084"
       },
       "image" : true,
+      "link" : "https://www.m-audio.com/products/browse/category/keyboards-and-controllers",
       "make" : "M-Audio",
       "manuals" : {
          "Manual" : "Oxygen8.pdf"
@@ -839,6 +879,7 @@ var equipment = [
          "Analog Outputs" : "1/8\" stereo"
       },
       "image" : true,
+      "link" : "https://www.ikmultimedia.com/products/irig/",
       "make" : "IK Multimedia",
       "model" : "iRig",
       "type" : "Interface",
@@ -991,6 +1032,7 @@ var equipment = [
          "Weight" : "256g"
       },
       "image" : true,
+      "link" : "https://north-america.beyerdynamic.com/microphones.html",
       "make" : "Beyer Dynamic",
       "manuals" : {
          "Datasheet" : "Beyer M58 datasheet.pdf"
@@ -1067,6 +1109,7 @@ var equipment = [
       "category" : "Hardware",
       "hide" : true,
       "image" : true,
+      "link" : "https://mackie.com/en/products/mixers/mix-series",
       "make" : "Tapco",
       "manuals" : {
          "Manual" : "MixSeries_OM.pdf"
@@ -1079,7 +1122,7 @@ var equipment = [
       "category" : "Hardware",
       "hide" : true,
       "image" : true,
-      "link" : "https://peavey.com/products/mixers.cfm",
+      "link" : "https://peavey.com/product-category/pro-audio/mixers/compact-mixers/",
       "make" : "Peavey",
       "manuals" : {
          "Operations Guide" : "pv6_manual.pdf"
@@ -1349,16 +1392,27 @@ var equipment = [
    {
       "category" : "Hardware",
       "image" : true,
+      "link" : "https://furmanpower.com/pro-av-power/",
       "make" : "Furman",
       "manuals" : {
          "Owner’s Manual" : "SERIES_II_15AMP_manual.pdf"
       },
       "model" : "PM-8 II",
       "notes" : [
-         "power conditioner"
+         "power conditioner",
+         "GN-LED"
       ],
       "type" : "Rack Hardware",
       "year" : "2005"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://furmanpower.com/product/led-rear-rack-gooseneck-lamp/",
+      "make" : "Furman",
+      "model" : "GN-LED",
+      "type" : "Rack Hardware",
+      "year" : "2006"
    },
    {
       "category" : "Hardware",
@@ -1437,6 +1491,7 @@ var equipment = [
          "Weight" : "158g (EK 100)"
       },
       "image" : true,
+      "link" : "https://www.sennheiser.com/en-us/catalog/products/wireless-systems",
       "make" : "Sennheiser",
       "manuals" : {
          "Instructions" : "Sennheiser_Ew100_ENGG2.pdf"
@@ -1486,6 +1541,7 @@ var equipment = [
          "Truss Rod" : "Adjustable, 5mm Allen Nut"
       },
       "image" : true,
+      "link" : "https://www.martinguitar.com/series-x-series.html",
       "make" : "Martin",
       "model" : "DX1",
       "notes" : [
@@ -1785,7 +1841,7 @@ var equipment = [
          "Tuning Machines" : "Premium Die Cast"
       },
       "image" : true,
-      "link" : "https://www.epiphone.com/en-US/Acoustic-Guitar/EPIKWM803/Ebony",
+      "link" : "https://www.epiphone.com/en-US/p/Acoustic-Guitar/EPIKWM803/Ebony",
       "make" : "Epiphone",
       "model" : "Songmaker DR-100",
       "not_mine" : true,
@@ -1802,6 +1858,7 @@ var equipment = [
          "Serial" : "27726-680"
       },
       "image" : true,
+      "link" : "https://www.framus-vintage.de/en/Other/Banjos/",
       "make" : "Framus",
       "model" : "Tenor Banjo",
       "notes" : [
@@ -1962,6 +2019,7 @@ var equipment = [
          "Tuners" : "Grover"
       },
       "image" : true,
+      "link" : "https://www.daisyrock.com/collections/",
       "make" : "Daisy Rock",
       "model" : "Daisy Short-Scale",
       "not_mine" : true,
@@ -2009,7 +2067,7 @@ var equipment = [
          "Tuning Machines" : "Grover® Rotomatic® 18:1"
       },
       "image" : true,
-      "link" : "https://www.epiphone.com/en-US/Electric-Guitar/EPINA3562/Ebony",
+      "link" : "https://www.epiphone.com/en-US/p/Electric-Guitar/EPINA3562/Ebony",
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
@@ -2131,7 +2189,7 @@ var equipment = [
          "Tuning Machines" : "Epiphone Deluxe Tuners 18:1 ratio"
       },
       "image" : true,
-      "link" : "https://www.epiphone.com/en-US/Electric-Guitar/EPIJ1X839/Heritage-Cherry",
+      "link" : "https://www.epiphone.com/en-US/p/Electric-Guitar/EPIJ1X839/Heritage-Cherry",
       "make" : "Epiphone",
       "model" : "SG Standard",
       "not_mine" : true,
@@ -2473,6 +2531,7 @@ var equipment = [
          "Tuning Machines" : "Dolphin, Gold Plated"
       },
       "image" : true,
+      "link" : "https://mahaloukuleles.com/instrument-types/soprano/",
       "make" : "Mahalo",
       "model" : "U/USA",
       "not_mine" : true,
@@ -2795,7 +2854,7 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "link" : "http://herculesstands.com/us/products/microphone/boom/ms531b/",
+      "link" : "https://herculesstands.us/product/ms531b/",
       "make" : "Hercules",
       "model" : "MS531B",
       "type" : "Microphone Stand",
@@ -2822,7 +2881,7 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "link" : "https://www.tama.com/usa/products/category/hardware/",
+      "link" : "https://www.tama.com/usa/products/hardware/snare_stands/",
       "make" : "Tama",
       "model" : "HS10 Swingstar",
       "type" : "Snare Drum Stand",
@@ -2833,7 +2892,7 @@ var equipment = [
 var links = {
    "AKG" : "https://www.akg.com/",
    "Apple" : "https://www.apple.com/",
-   "Audio Technica" : "https://www.audio-technica.com/",
+   "Audio Technica" : "https://www.audio-technica.com/en-us/",
    "BOSS" : "https://www.boss.info/us/",
    "Beyer Dynamic" : "https://north-america.beyerdynamic.com/",
    "Blackstar" : "https://www.blackstaramps.com/",
@@ -2843,14 +2902,14 @@ var links = {
    "Dunlop" : "https://www.jimdunlop.com/",
    "D’Addario" : "https://www.daddario.com/",
    "EBow" : "https://www.ebow.com/",
-   "Edirol" : "https://www.roland.com/",
+   "Edirol" : "https://www.roland.com/us/",
    "Electro-Harmonix" : "https://www.ehx.com/",
    "Epiphone" : "https://www.epiphone.com/",
    "Ernie Ball" : "https://www.ernieball.com/",
    "Fender" : "https://www.fender.com/",
    "Fishman" : "https://www.fishman.com/",
    "Focusrite" : "https://focusrite.com/",
-   "Framus" : "https://www.framus-vintage.de/en/Other/Banjos/",
+   "Framus" : "https://www.framus-vintage.de/en/",
    "Furman" : "https://www.furmanpower.com/",
    "GHS" : "https://www.ghsstrings.com/",
    "Gator" : "https://www.gatorcases.com/",
@@ -2867,7 +2926,7 @@ var links = {
    "Levys" : "https://www.levysleathers.com/",
    "Line 6" : "https://line6.com/",
    "M-Audio" : "https://www.m-audio.com/",
-   "MIDIPLUS" : "https://www.midiplus.com.tw/",
+   "MIDIPLUS" : "https://www.midiplus.com.tw/en/",
    "MOTU" : "https://www.motu.com/",
    "Mackie" : "https://www.mackie.com/",
    "Mahalo" : "https://mahaloukuleles.com/",
