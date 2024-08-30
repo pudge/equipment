@@ -1,19 +1,6 @@
-var lastModified = new Date("2024-08-21T12:00:00+0000")
+var lastModified = new Date("2024-08-29T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
-   {
-      "category" : "Accessories",
-      "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://shubb.com/product/capo-noir-c1k/",
-      "make" : "Shubb",
-      "model" : "C1K",
-      "notes" : [
-         "guitar"
-      ],
-      "type" : "Capo",
-      "year" : "2021"
-   },
    {
       "category" : "Accessories",
       "image" : true,
@@ -38,6 +25,19 @@ var equipment = [
       "notes" : [
          "banjo",
          "mandolin"
+      ],
+      "type" : "Capo",
+      "year" : "2021"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://shubb.com/product/capo-noir-c1k/",
+      "make" : "Shubb",
+      "model" : "C1K",
+      "notes" : [
+         "guitar"
       ],
       "type" : "Capo",
       "year" : "2021"
@@ -121,13 +121,39 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
-      "instrument" : "bass",
+      "instrument" : "banjo",
+      "link" : "https://www.jimdunlop.com/nylon-standard-pick-60mm/",
+      "make" : "Dunlop",
+      "model" : "Nylon Standard",
+      "notes" : [
+         "banjo",
+         ".6mm"
+      ],
+      "type" : "Pick"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "bass guitar",
       "link" : "https://www.jimdunlop.com/big-stubby-pick-2-00mm/",
       "make" : "Dunlop",
       "model" : "Big Stubby",
       "notes" : [
-         "bass",
+         "bass guitar",
          "2.0mm"
+      ],
+      "type" : "Pick"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "bass guitar",
+      "link" : "https://www.jimdunlop.com/tortex-standard-pick-1-14mm/",
+      "make" : "Dunlop",
+      "model" : "Tortex Standard",
+      "notes" : [
+         "bass guitar",
+         "1.14mm"
       ],
       "type" : "Pick"
    },
@@ -146,46 +172,6 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
-      "instrument" : "banjo",
-      "link" : "https://www.jimdunlop.com/nylon-standard-pick-60mm/",
-      "make" : "Dunlop",
-      "model" : "Nylon Standard",
-      "notes" : [
-         "banjo",
-         ".6mm"
-      ],
-      "type" : "Pick"
-   },
-   {
-      "category" : "Accessories",
-      "image" : true,
-      "instrument" : "bass",
-      "link" : "https://www.jimdunlop.com/tortex-standard-pick-1-14mm/",
-      "make" : "Dunlop",
-      "model" : "Tortex Standard",
-      "notes" : [
-         "bass",
-         "1.14mm"
-      ],
-      "type" : "Pick"
-   },
-   {
-      "category" : "Accessories",
-      "image" : true,
-      "instrument" : "electric guitar",
-      "link" : "https://levysleathers.com/products/the-ebony-series?variant=47870343938364",
-      "make" : "Levys",
-      "model" : "M17SS-BLK",
-      "notes" : [
-         "electric guitar",
-         "S-Locks"
-      ],
-      "type" : "Strap",
-      "year" : "2013"
-   },
-   {
-      "category" : "Accessories",
-      "image" : true,
       "instrument" : "acoustic guitar",
       "link" : "https://levysleathers.com/products/the-ebony-series?variant=47870343938364",
       "make" : "Levys",
@@ -195,19 +181,6 @@ var equipment = [
       ],
       "type" : "Strap",
       "year" : "2013"
-   },
-   {
-      "category" : "Accessories",
-      "image" : true,
-      "instrument" : "mandolin",
-      "link" : "https://levysleathers.com/products/mandolin-series?variant=47870295703868",
-      "make" : "Levys",
-      "model" : "M19PR-TAN",
-      "notes" : [
-         "mandolin"
-      ],
-      "type" : "Strap",
-      "year" : "2019"
    },
    {
       "category" : "Accessories",
@@ -240,20 +213,6 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://levysleathers.com/collections/poly-print-straps/products/3-wide-poly-series",
-      "make" : "Levys",
-      "model" : "M8P3-BLK",
-      "notes" : [
-         "guitar",
-         "Flex Lock Strap Blocks"
-      ],
-      "type" : "Strap",
-      "year" : "2024"
-   },
-   {
-      "category" : "Accessories",
-      "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://levysleathers.com/products/signature-suede-series?variant=47870205034812",
       "make" : "Levys",
@@ -268,11 +227,30 @@ var equipment = [
    {
       "category" : "Accessories",
       "image" : true,
-      "link" : "https://levysleathers.com/products/banjo-master-series?variant=47870295212348",
+      "instrument" : "electric guitar",
+      "link" : "https://levysleathers.com/products/the-ebony-series?variant=47870343938364",
       "make" : "Levys",
-      "model" : "PM14-DBR",
+      "model" : "M17SS-BLK",
+      "notes" : [
+         "electric guitar",
+         "S-Locks"
+      ],
       "type" : "Strap",
-      "year" : "2020"
+      "year" : "2013"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://levysleathers.com/collections/poly-print-straps/products/3-wide-poly-series",
+      "make" : "Levys",
+      "model" : "M8P3-BLK",
+      "notes" : [
+         "guitar",
+         "Flex Lock Strap Blocks"
+      ],
+      "type" : "Strap",
+      "year" : "2024"
    },
    {
       "category" : "Accessories",
@@ -287,6 +265,28 @@ var equipment = [
       ],
       "type" : "Strap",
       "year" : "2000s"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "instrument" : "mandolin",
+      "link" : "https://levysleathers.com/products/mandolin-series?variant=47870295703868",
+      "make" : "Levys",
+      "model" : "M19PR-TAN",
+      "notes" : [
+         "mandolin"
+      ],
+      "type" : "Strap",
+      "year" : "2019"
+   },
+   {
+      "category" : "Accessories",
+      "image" : true,
+      "link" : "https://levysleathers.com/products/banjo-master-series?variant=47870295212348",
+      "make" : "Levys",
+      "model" : "PM14-DBR",
+      "type" : "Strap",
+      "year" : "2020"
    },
    {
       "category" : "Accessories",
@@ -311,42 +311,6 @@ var equipment = [
       "make" : "Dunlop",
       "model" : "Straplok",
       "type" : "Strap Retainers"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Gauge" : ".010, .015, .024, .036",
-         "Gauge Name" : "Light",
-         "Material" : "Phosphor Bronze"
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "mandolin",
-      "link" : "https://www.ghsstrings.com/products/11374-phosphor-bronze-mandolin/options/12146-loop-end-light",
-      "make" : "GHS",
-      "model" : "A250",
-      "notes" : [
-         "mandolin"
-      ],
-      "type" : "Strings"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Gauge" : ".011, .016, .026, .040",
-         "Gauge Name" : "Medium",
-         "Material" : "Phosphor Bronze"
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "mandolin",
-      "link" : "https://www.ghsstrings.com/products/11374-phosphor-bronze-mandolin/options/12146-loop-end-light",
-      "make" : "GHS",
-      "model" : "A270",
-      "notes" : [
-         "mandolin"
-      ],
-      "type" : "Strings"
    },
    {
       "category" : "Accessories",
@@ -405,6 +369,111 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Gauge" : ".010, .014, .023, .030, .039, .047",
+         "Gauge Name" : "Extra Light",
+         "Material" : "Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/phosphor-bronze/ej15-phosphor-bronze-acoustic-guitar-strings-extra-light-10-47/item/daddario-ej15-phosphor-bronze-acoustic-guitar-strings-extra-light-10-47-733/",
+      "make" : "D’Addario",
+      "model" : "EJ15",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".012, .016, .024, .032, .042, .053",
+         "Gauge Name" : "Light",
+         "Material" : "Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/phosphor-bronze/ej16-phosphor-bronze-acoustic-guitar-strings-light-12-53/",
+      "make" : "D’Addario",
+      "model" : "EJ16",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".013, .017, .026, .035, .045, .056",
+         "Gauge Name" : "Medium",
+         "Material" : "Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/phosphor-bronze/ej17-phosphor-bronze-acoustic-guitar-strings-medium-13-56/",
+      "make" : "D’Addario",
+      "model" : "EJ17",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".010, .014, .023, .030, .039, .047",
+         "Gauge Name" : "Extra Light",
+         "Material" : "Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1047-xt-acoustic-phosphor-bronze-extra-light-10-47/",
+      "make" : "D’Addario",
+      "model" : "XTAPB1047",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".012, .016, .024, .032, .042, .053",
+         "Gauge Name" : "Light",
+         "Material" : "Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1253-xt-acoustic-phosphor-bronze-light-12-532/",
+      "make" : "D’Addario",
+      "model" : "XTAPB1253",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".013, .017, .026, .035, .045, .056",
+         "Gauge Name" : "Medium",
+         "Material" : "Phosphor Bronze"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1356-xt-acoustic-phosphor-bronze-medium-13-562/",
+      "make" : "D’Addario",
+      "model" : "XTAPB1356",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
          "Gauge" : ".045, .065, .080, .100, .132",
          "Gauge Name" : "Regular Light",
          "Material" : "Stainless Steel, Flatwound",
@@ -418,6 +487,115 @@ var equipment = [
       "model" : "ECB81-5SL",
       "notes" : [
          "bass guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".045, .065, .080, .100",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Nickel",
+         "Scale Length" : "Long"
+      },
+      "image" : true,
+      "instrument" : "bass guitar",
+      "link" : "https://www.daddario.com/products/guitar/bass-guitar/xl-nickel-bass/exl170-nickel-wound-bass-light-45-100-long-scale/",
+      "make" : "D’Addario",
+      "model" : "EXL170",
+      "notes" : [
+         "bass guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".045, .065, .080, .100, .130",
+         "Material" : "Nickel",
+         "Scale Length" : "Long"
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "bass guitar",
+      "link" : "https://www.ernieball.com/guitar-strings/bass-strings/slinky-nickel-wound-electric-bass-strings/long-scale#P02850",
+      "make" : "Ernie Ball",
+      "model" : "Slinky Bass 2850",
+      "notes" : [
+         "bass guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".010, .013, .017, .026, .036, .046",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Nickel"
+      },
+      "image" : true,
+      "instrument" : "electric guitar, banjo",
+      "link" : "https://www.daddario.com/products/guitar/electric-guitar/xl-nickel/exl110-nickel-wound-regular-light-10-46/",
+      "make" : "D’Addario",
+      "model" : "EXL110",
+      "notes" : [
+         "electric guitar",
+         "banjo"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "XT",
+         "Gauge" : ".010, .013, .017, .026, .036, .046",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Nickel"
+      },
+      "image" : true,
+      "instrument" : "electric guitar, banjo",
+      "link" : "https://www.daddario.com/products/guitar/electric-guitar/xt-nickel/xte1046-xt-electric-nickel-plated-steel-regular-light-10-462/item/daddario-xte1046-xt-electric-nickel-plated-steel-regular-light-electric-guitar-strings-10-46-8959/",
+      "make" : "D’Addario",
+      "model" : "XTE1046",
+      "notes" : [
+         "electric guitar",
+         "banjo"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".010, .015, .024, .036",
+         "Gauge Name" : "Light",
+         "Material" : "Phosphor Bronze"
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "mandolin",
+      "link" : "https://www.ghsstrings.com/products/11374-phosphor-bronze-mandolin/options/12146-loop-end-light",
+      "make" : "GHS",
+      "model" : "A250",
+      "notes" : [
+         "mandolin"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Gauge" : ".011, .016, .026, .040",
+         "Gauge Name" : "Medium",
+         "Material" : "Phosphor Bronze"
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "mandolin",
+      "link" : "https://www.ghsstrings.com/products/11374-phosphor-bronze-mandolin/options/12150-loop-end-medium",
+      "make" : "GHS",
+      "model" : "A270",
+      "notes" : [
+         "mandolin"
       ],
       "type" : "Strings"
    },
@@ -486,115 +664,6 @@ var equipment = [
       "model" : "EJ99SC",
       "notes" : [
          "soprano ukulele"
-      ],
-      "type" : "Strings"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Gauge" : ".010, .013, .017, .026, .036, .046",
-         "Gauge Name" : "Regular Light",
-         "Material" : "Nickel"
-      },
-      "image" : true,
-      "instrument" : "electric guitar, banjo",
-      "link" : "https://www.daddario.com/products/guitar/electric-guitar/xl-nickel/exl110-nickel-wound-regular-light-10-46/",
-      "make" : "D’Addario",
-      "model" : "EXL110",
-      "notes" : [
-         "electric guitar",
-         "banjo"
-      ],
-      "type" : "Strings"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Gauge" : ".045, .065, .080, .100",
-         "Gauge Name" : "Regular Light",
-         "Material" : "Nickel",
-         "Scale Length" : "Long"
-      },
-      "image" : true,
-      "instrument" : "bass guitar",
-      "link" : "https://www.daddario.com/products/guitar/bass-guitar/xl-nickel-bass/exl170-nickel-wound-bass-light-45-100-long-scale/",
-      "make" : "D’Addario",
-      "model" : "EXL170",
-      "notes" : [
-         "bass guitar"
-      ],
-      "type" : "Strings"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Coating" : "XT",
-         "Gauge" : ".010, .014, .023, .030, .039, .047",
-         "Gauge Name" : "Extra Light",
-         "Material" : "Phosphor Bronze"
-      },
-      "image" : true,
-      "instrument" : "acoustic guitar",
-      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1047-xt-acoustic-phosphor-bronze-extra-light-10-47/",
-      "make" : "D’Addario",
-      "model" : "XTAPB1047",
-      "notes" : [
-         "acoustic guitar"
-      ],
-      "type" : "Strings"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Coating" : "XT",
-         "Gauge" : ".012, .016, .024, .032, .042, .053",
-         "Gauge Name" : "Light",
-         "Material" : "Phosphor Bronze"
-      },
-      "image" : true,
-      "instrument" : "acoustic guitar",
-      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1253-xt-acoustic-phosphor-bronze-light-12-532/",
-      "make" : "D’Addario",
-      "model" : "XTAPB1253",
-      "notes" : [
-         "acoustic guitar"
-      ],
-      "type" : "Strings"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Coating" : "XT",
-         "Gauge" : ".013, .017, .026, .035, .045, .056",
-         "Gauge Name" : "Medium",
-         "Material" : "Phosphor Bronze"
-      },
-      "image" : true,
-      "instrument" : "acoustic guitar",
-      "link" : "https://www.daddario.com/products/guitar/acoustic-guitar/xt-phosphor-bronze/xtapb1356-xt-acoustic-phosphor-bronze-medium-13-562/",
-      "make" : "D’Addario",
-      "model" : "XTAPB1356",
-      "notes" : [
-         "acoustic guitar"
-      ],
-      "type" : "Strings"
-   },
-   {
-      "category" : "Accessories",
-      "detail" : {
-         "Coating" : "XT",
-         "Gauge" : ".010, .013, .017, .026, .036, .046",
-         "Gauge Name" : "Regular Light",
-         "Material" : "Nickel"
-      },
-      "image" : true,
-      "instrument" : "electric guitar, banjo",
-      "link" : "https://www.daddario.com/products/guitar/electric-guitar/xt-nickel/xte1046-xt-electric-nickel-plated-steel-regular-light-10-462/item/daddario-xte1046-xt-electric-nickel-plated-steel-regular-light-electric-guitar-strings-10-46-8959/",
-      "make" : "D’Addario",
-      "model" : "XTE1046",
-      "notes" : [
-         "electric guitar",
-         "banjo"
       ],
       "type" : "Strings"
    },
@@ -1378,6 +1447,15 @@ var equipment = [
    {
       "category" : "Hardware",
       "image" : true,
+      "link" : "https://furmanpower.com/product/led-rear-rack-gooseneck-lamp/",
+      "make" : "Furman",
+      "model" : "GN-LED",
+      "type" : "Rack Hardware",
+      "year" : "2006"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
       "make" : "Furman",
       "manuals" : {
          "Owner’s Manual" : "PB-48_PB-48D_manual.pdf"
@@ -1404,15 +1482,6 @@ var equipment = [
       ],
       "type" : "Rack Hardware",
       "year" : "2005"
-   },
-   {
-      "category" : "Hardware",
-      "image" : true,
-      "link" : "https://furmanpower.com/product/led-rear-rack-gooseneck-lamp/",
-      "make" : "Furman",
-      "model" : "GN-LED",
-      "type" : "Rack Hardware",
-      "year" : "2006"
    },
    {
       "category" : "Hardware",
@@ -2662,41 +2731,15 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "instrument" : "mandolin",
-      "link" : "https://www.sagamusic.com/shop/cases-and-bags/superior-c-3770-trailpak-ii-a-or-f-model-mandolin-gig-bag/",
-      "make" : "Saga",
-      "model" : "C-3770 Trailpak II",
+      "instrument" : "bass guitar",
+      "link" : "https://www.schecterguitars.com/sgr-6b-c-shape-bass-hardcase",
+      "make" : "Schecter",
+      "model" : "SGR-6B",
       "notes" : [
-         "mandolin"
+         "bass guitar"
       ],
       "type" : "Instrument Case",
-      "year" : "2018"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "harmonica",
-      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/harmonica-case",
-      "make" : "Hohner",
-      "model" : "C12",
-      "notes" : [
-         "harmonica"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2000"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "ukulele",
-      "link" : "https://gatorco.com/product/soprano-ukulele-gig-bag-gbe-uke-sop/",
-      "make" : "Gator",
-      "model" : "GBE-UKE-SOP",
-      "notes" : [
-         "ukulele"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2015"
+      "year" : "2021"
    },
    {
       "category" : "Stands etc.",
@@ -2714,15 +2757,6 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
-      "make" : "Gator",
-      "model" : "Mini Acoustic Guitar Gig Bag",
-      "type" : "Instrument Case",
-      "year" : "2024"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
       "instrument" : "electric guitar",
       "link" : "https://roadrunnercases.com/rr3eg-electric-guitar-gig-bag/",
       "make" : "Road Runner",
@@ -2736,56 +2770,53 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
-      "instrument" : "bass guitar",
-      "link" : "https://www.schecterguitars.com/sgr-6b-c-shape-bass-hardcase",
-      "make" : "Schecter",
-      "model" : "SGR-6B",
-      "notes" : [
-         "bass guitar"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2021"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "guitar, banjo, mandolin",
-      "link" : "https://www.stringswing.com/product/cc01k-hardwood-home-studio-guitar-keeper-wall-mounted-guitar-hanger",
-      "make" : "String Swing",
-      "model" : "CC01K",
-      "notes" : [
-         "guitar",
-         "banjo",
-         "mandolin"
-      ],
-      "type" : "Instrument Stand"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
       "instrument" : "harmonica",
-      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/flexrack",
+      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/harmonica-case",
       "make" : "Hohner",
-      "model" : "FlexRack",
+      "model" : "C12",
       "notes" : [
          "harmonica"
       ],
-      "type" : "Instrument Stand",
-      "year" : "2016"
+      "type" : "Instrument Case",
+      "year" : "2000"
    },
    {
       "category" : "Stands etc.",
       "image" : true,
-      "instrument" : "guitar, banjo, mandolin",
-      "link" : "https://en.guittochina.com/Details/20.html",
-      "make" : "Guitto",
-      "model" : "GGS-01",
+      "instrument" : "mandolin",
+      "link" : "https://www.sagamusic.com/shop/cases-and-bags/superior-c-3770-trailpak-ii-a-or-f-model-mandolin-gig-bag/",
+      "make" : "Saga",
+      "model" : "C-3770 Trailpak II",
       "notes" : [
-         "guitar",
-         "banjo",
          "mandolin"
       ],
-      "type" : "Instrument Stand",
+      "type" : "Instrument Case",
+      "year" : "2018"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "ukulele",
+      "link" : "https://gatorco.com/product/soprano-ukulele-gig-bag-gbe-uke-sop/",
+      "make" : "Gator",
+      "model" : "GBE-UKE-SOP",
+      "notes" : [
+         "ukulele"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2015"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
+      "make" : "Gator",
+      "model" : "Mini Acoustic Guitar Gig Bag",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Instrument Case",
       "year" : "2024"
    },
    {
@@ -2828,6 +2859,48 @@ var equipment = [
       ],
       "type" : "Instrument Stand",
       "year" : "2007"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar, banjo, mandolin",
+      "link" : "https://www.stringswing.com/product/cc01k-hardwood-home-studio-guitar-keeper-wall-mounted-guitar-hanger",
+      "make" : "String Swing",
+      "model" : "CC01K",
+      "notes" : [
+         "guitar",
+         "banjo",
+         "mandolin"
+      ],
+      "type" : "Instrument Stand"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar, banjo, mandolin",
+      "link" : "https://en.guittochina.com/Details/20.html",
+      "make" : "Guitto",
+      "model" : "GGS-01",
+      "notes" : [
+         "guitar",
+         "banjo",
+         "mandolin"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2024"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "harmonica",
+      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/flexrack",
+      "make" : "Hohner",
+      "model" : "FlexRack",
+      "notes" : [
+         "harmonica"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2016"
    },
    {
       "category" : "Stands etc.",

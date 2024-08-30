@@ -14,6 +14,7 @@ const COL = {
   MANUALS  : 12,
   DETAILS  : 13,
   CAT_SORT : 14,
+  INST     : 15,
 }
 
 const CAT = {
@@ -29,6 +30,7 @@ const columnOrder = [
   [ COL.FEAT,     'desc' ],
   [ COL.CAT_SORT, 'asc'  ],
   [ COL.TYPE,     'asc'  ],
+  [ COL.INST,     'asc'  ],
   [ COL.MAKE,     'asc'  ],
   [ COL.MODEL,    'asc'  ],
 ];
@@ -155,6 +157,7 @@ function equipmentInit() {
     x['not_mine'] = x['not_mine'] ? 'not mine' : '';
     x['hide'] = x['hide'] ? 'hidden' : '';
     x['featured'] = x['featured'] ? 'featured' : '';
+    x['instrument'] = x['instrument'] || '';
     x['category_sort'] = CAT[x['category']] || 99;
     if (x['model']) {
       equipment_data[x['model']] = x;
@@ -247,6 +250,7 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'manuals', title: 'Manuals', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'category_sort', visible: false },
+      { responsivePriority: 99, data: 'instrument', visible: false },
     ],
     scrollX: true,
     order: columnOrder,
