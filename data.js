@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-08-29T12:00:00+0000")
+var lastModified = new Date("2024-09-08T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -315,9 +315,13 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "Steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".010, .014, .023, .030, .039, .047",
          "Gauge Name" : "Extra Light",
-         "Material" : "92/8 Phosphor Bronze"
+         "Material" : "92/8 Phosphor Bronze",
+         "String Count" : "6",
+         "Treatment" : "Anti-Corrosion"
       },
       "hide" : true,
       "image" : true,
@@ -333,9 +337,13 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "Steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".012, .016, .025, .032, .042, .054",
          "Gauge Name" : "Light",
-         "Material" : "92/8 Phosphor Bronze"
+         "Material" : "92/8 Phosphor Bronze",
+         "String Count" : "6",
+         "Treatment" : "Anti-Corrosion"
       },
       "hide" : true,
       "image" : true,
@@ -351,9 +359,13 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "Steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".013, .017, .026, .035, .045, .056",
          "Gauge Name" : "Medium",
-         "Material" : "92/8 Phosphor Bronze"
+         "Material" : "92/8 Phosphor Bronze",
+         "String Count" : "6",
+         "Treatment" : "Anti-Corrosion"
       },
       "hide" : true,
       "image" : true,
@@ -369,9 +381,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".010, .014, .023, .030, .039, .047",
          "Gauge Name" : "Extra Light",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -386,9 +401,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".012, .016, .024, .032, .042, .053",
          "Gauge Name" : "Light",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -403,9 +421,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".013, .017, .026, .035, .045, .056",
          "Gauge Name" : "Medium",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -421,9 +442,12 @@ var equipment = [
       "category" : "Accessories",
       "detail" : {
          "Coating" : "XT",
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".010, .014, .023, .030, .039, .047",
          "Gauge Name" : "Extra Light",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -439,9 +463,12 @@ var equipment = [
       "category" : "Accessories",
       "detail" : {
          "Coating" : "XT",
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".012, .016, .024, .032, .042, .053",
          "Gauge Name" : "Light",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -457,9 +484,12 @@ var equipment = [
       "category" : "Accessories",
       "detail" : {
          "Coating" : "XT",
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".013, .017, .026, .035, .045, .056",
          "Gauge Name" : "Medium",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "acoustic guitar",
@@ -474,6 +504,8 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".045, .065, .080, .100, .132",
          "Gauge Name" : "Regular Light",
          "Material" : "Stainless Steel, Flatwound",
@@ -493,10 +525,13 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".045, .065, .080, .100",
          "Gauge Name" : "Regular Light",
          "Material" : "Nickel",
-         "Scale Length" : "Long"
+         "Scale Length" : "Long",
+         "String Count" : "4"
       },
       "image" : true,
       "instrument" : "bass guitar",
@@ -511,9 +546,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "Steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".045, .065, .080, .100, .130",
          "Material" : "Nickel",
-         "Scale Length" : "Long"
+         "Scale Length" : "Long",
+         "String Count" : "5"
       },
       "hide" : true,
       "image" : true,
@@ -529,9 +567,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".010, .013, .017, .026, .036, .046",
          "Gauge Name" : "Regular Light",
-         "Material" : "Nickel"
+         "Material" : "Nickel",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "electric guitar, banjo",
@@ -548,9 +589,12 @@ var equipment = [
       "category" : "Accessories",
       "detail" : {
          "Coating" : "XT",
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Ball",
          "Gauge" : ".010, .013, .017, .026, .036, .046",
          "Gauge Name" : "Regular Light",
-         "Material" : "Nickel"
+         "Material" : "Nickel",
+         "String Count" : "6"
       },
       "image" : true,
       "instrument" : "electric guitar, banjo",
@@ -566,9 +610,11 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "End" : "Loop",
          "Gauge" : ".010, .015, .024, .036",
          "Gauge Name" : "Light",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "8"
       },
       "hide" : true,
       "image" : true,
@@ -584,9 +630,11 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "End" : "Loop",
          "Gauge" : ".011, .016, .026, .040",
          "Gauge Name" : "Medium",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "8"
       },
       "hide" : true,
       "image" : true,
@@ -602,9 +650,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Loop",
          "Gauge" : ".011, .015, .026, .036",
          "Gauge Name" : "Medium",
-         "Material" : "Stainless Steel, Flatwound"
+         "Material" : "Stainless Steel, Flatwound",
+         "String Count" : "8"
       },
       "image" : true,
       "instrument" : "mandolin",
@@ -619,9 +670,12 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
+         "End" : "Loop",
          "Gauge" : ".011, .015, .026, .040",
          "Gauge Name" : "Medium",
-         "Material" : "Phosphor Bronze"
+         "Material" : "Phosphor Bronze",
+         "String Count" : "8"
       },
       "image" : true,
       "instrument" : "mandolin",
@@ -636,8 +690,11 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "End" : "Tie",
          "Gauge" : ".024, .030, .036, .026",
          "Material" : "Nyltech",
+         "Size" : "Concert/Soprano",
+         "String Count" : "4",
          "Tuning" : "AECG"
       },
       "image" : true,
@@ -653,8 +710,11 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "End" : "Tie",
          "Gauge" : ".0205, .026, .0319, .0224",
          "Material" : "Fluorocarbon",
+         "Size" : "Concert/Soprano",
+         "String Count" : "4",
          "Tuning" : "AECG"
       },
       "image" : true,
@@ -2202,9 +2262,26 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Body Finish" : "Gloss",
+         "Bridge" : "Kahler Spyder 2700 Double-Locking Tremolo*",
+         "Color" : "Black",
+         "Controls" : "1 Volume, 2 Tone, Fender Potentiometers*",
+         "Fingerboard Inlays" : "Black Dots",
+         "Fingerboard Material" : "Maple",
+         "Fret Count" : "21",
+         "Frets" : "Medium Jumbo",
+         "Joint" : "Bolt-on",
          "Location" : "Samick, Korea",
+         "Nut Material" : "Plastic",
+         "Nut Width" : "42mm (1.65\")",
+         "Pickguard" : "Black and White Pearl*",
+         "Pickup Selector" : "5-way Fender toggle*",
+         "Pickups" : "Fender Fat 50’s*",
+         "Production Year" : "1991",
+         "Scale Length" : "25.5\"",
          "Serial" : "1103087",
-         "Truss Rod" : "Adjustable"
+         "Truss Rod" : "Adjustable, 5mm Allen Nut",
+         "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White)*"
       },
       "featured" : true,
       "image" : true,
@@ -2479,7 +2556,7 @@ var equipment = [
          "Fingerboard Radius" : "15.5\" (394mm)",
          "Finish" : "Spirit Varnish",
          "Length of Body (w/ heel)" : "12.5\" (318mm)",
-         "Location" : "Qingdao, China?",
+         "Location" : "Michigan, USA",
          "Nut Width" : "1 1/8\" (28mm)",
          "Pickguard" : "Adhered Maple",
          "Serial" : "FT180030",
@@ -2731,6 +2808,19 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
+      "make" : "Gator",
+      "model" : "Mini Acoustic Guitar Gig Bag",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2024"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://www.schecterguitars.com/sgr-6b-c-shape-bass-hardcase",
       "make" : "Schecter",
@@ -2805,19 +2895,6 @@ var equipment = [
       ],
       "type" : "Instrument Case",
       "year" : "2015"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "acoustic guitar",
-      "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
-      "make" : "Gator",
-      "model" : "Mini Acoustic Guitar Gig Bag",
-      "notes" : [
-         "acoustic guitar"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2024"
    },
    {
       "category" : "Stands etc.",
