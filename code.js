@@ -2,19 +2,20 @@ const COL = {
   INFO     :  0,
   IMG      :  1,
   MODEL    :  2,
-  TYPE     :  3,
-  MAKE     :  4,
-  YEAR     :  5,
-  NOTES    :  6,
-  CAT      :  7,
-  FEAT     :  8,
-  NOTER    :  9,
-  NMINE    : 10,
-  HIDE     : 11,
-  MANUALS  : 12,
-  DETAILS  : 13,
-  CAT_SORT : 14,
-  INST     : 15,
+  FINDVAL  :  3,
+  TYPE     :  4,
+  MAKE     :  5,
+  YEAR     :  6,
+  NOTES    :  7,
+  CAT      :  8,
+  FEAT     :  9,
+  NOTER    : 10,
+  NMINE    : 11,
+  HIDE     : 12,
+  MANUALS  : 13,
+  DETAILS  : 14,
+  CAT_SORT : 15,
+  INST     : 16,
 }
 
 const CAT = {
@@ -25,7 +26,7 @@ const CAT = {
   "Stands etc.":              5,
 }
 
-const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.TYPE, COL.MAKE, COL.YEAR];
+const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.FINDVAL, COL.TYPE, COL.MAKE, COL.YEAR];
 const columnOrder = [
   [ COL.FEAT,     'desc' ],
   [ COL.CAT_SORT, 'asc'  ],
@@ -48,7 +49,7 @@ function linkHtml(text) {
 }
 
 function makeLink(text, link) {
-  return '<a href="'+link+'">'+text+'<\/a>';
+  return '<a target="_blank" href="'+link+'">'+text+'<\/a>';
 }
 
 function linkShow(acc, text, other) {
@@ -111,6 +112,13 @@ function linkItDetail(oData) {
   return '<div class="detail">' + Object.keys(oData['detail']).map(
       x => `<div class="detail_row"><span class="detail_head">${x}</span>: <span class="detail_body">${oData['detail'][x]}</span></div>`
     ).join('') + '</div>';
+}
+
+function linkItFindValue(oData) {
+  var link = 'https://reverb.com/marketplace?query='
+    + escape([oData['make'], oData['model'], oData['type']].join(' '))
+    // + '&condition=used'
+  return `<a target="_blank" href="${link}"><img class="findvalue" src="/reverb.webp" /></a>`
 }
 
 function linkItManuals(oData) {
@@ -208,8 +216,9 @@ function equipmentInit() {
     x['img'] = imgIt(x);
     x['manuals'] = linkItManuals(x);
     x['detail'] = linkItDetail(x);
+    x['findvalue'] = linkItFindValue(x);
     x['notes'] = linkItNotes(x);
-    x['model'] = linkHtml(x['model']);
+    x['model'] = linkItFindValue(x) + ' ' + linkHtml(x['model']);
     if (x['featured']) {
       x['x'] = ' <i class="fa-solid fa-star featured"></i>';
     }
@@ -235,9 +244,10 @@ function equipmentInit() {
       }
     },
     columns: [
-      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', defaultContent: '', orderable: false },
+      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', className: 'dt-center', defaultContent: '', orderable: false },
       { responsivePriority: 25, data: 'img', title: '<i class="fas fa-image fa-fw"></i>', className: 'dt-center', orderable: false },
       { responsivePriority: 10, data: 'model', title: 'Model' },
+      { responsivePriority: 95, data: 'findvalue', title: '$', orderable: false, visible: false },
       { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
       { responsivePriority: 40, data: 'make', title: 'Make' },
       { responsivePriority: 80, data: 'year', title: 'Year', defaultContent: '-' },
@@ -265,7 +275,7 @@ function equipmentInit() {
       // create dropdown filters
       var table = this.api().table();
       table.columns(columns).every(function (i) {
-        if (i != COL.INFO && i != COL.IMG) {
+        if (i != COL.INFO && i != COL.IMG && i != COL.FINDVAL) {
           var column = this;
           var column_d = table.column(columnMap[i] || i);
           var select = $('<select id="sel_' + i + '"></select><br>')

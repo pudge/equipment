@@ -42,6 +42,13 @@ img.imgsmall {
     height: 1.5em;
 }
 
+img.findvalue {
+    float: right;
+    height: 0.8em;
+    margin-top: 3pt;
+    filter: grayscale(100%) brightness(125%);
+}
+
 th { vertical-align: bottom }
 
 a:visited { color: #9580FF }

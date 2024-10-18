@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-09-08T12:00:00+0000")
+var lastModified = new Date("2024-10-18T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -100,6 +100,25 @@ var equipment = [
       "link" : "https://www.thaliacapos.com/products/u-s-coast-guard-pick-tin",
       "make" : "Thalia",
       "model" : "Pick Tin",
+      "type" : "Guitar Accessory",
+      "year" : "2023"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
+         "Serial" : "W100M7038017336, W1ROM7244018777"
+      },
+      "image" : true,
+      "link" : "https://line6.com/relay-wireless/g10-g10s/",
+      "make" : "Line 6",
+      "manuals" : {
+         "Pilot’s Guide" : "Relay G10TII - G10 - G10S Pilot's Guide - English .pdf"
+      },
+      "model" : "Relay G10",
+      "notes" : [
+         "G10TII transmitter"
+      ],
       "type" : "Guitar Accessory",
       "year" : "2023"
    },
@@ -504,6 +523,25 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
+         "End" : "Ball",
+         "Gauge" : ".010",
+         "Material" : "Steel",
+         "String Count" : "1"
+      },
+      "image" : true,
+      "instrument" : "acoustic guitar, electric guitar",
+      "link" : "https://www.daddario.com/products/guitar/single-strings/plain-steel-singles/plain-steel-singles/item/daddario-pl010-plain-steel-guitar-single-string-.010-428/",
+      "make" : "D’Addario",
+      "model" : "PL010",
+      "notes" : [
+         "acoustic guitar",
+         "electric guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
          "Core Wire" : "High-carbon steel, hexagonal",
          "End" : "Ball",
          "Gauge" : ".045, .065, .080, .100, .132",
@@ -561,6 +599,27 @@ var equipment = [
       "model" : "Slinky Bass 2850",
       "notes" : [
          "bass guitar"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Coating" : "K3™ black coating",
+         "Core Wire" : "Steel, hexagonal",
+         "End" : "Ball",
+         "Gauge" : ".010, .013, .017, .026, .036, .046",
+         "Gauge Name" : "Medium",
+         "Material" : "Nickel-Plated Steel",
+         "String Count" : "6"
+      },
+      "image" : true,
+      "instrument" : "electric guitar",
+      "link" : "https://www.drstrings.com/product-page/black-beauties-black-colored-electric-guitar-strings-medium-10-46",
+      "make" : "DR Strings",
+      "model" : "Black Beauties 10-46",
+      "notes" : [
+         "electric guitar"
       ],
       "type" : "Strings"
    },
@@ -825,7 +884,8 @@ var equipment = [
       },
       "model" : "Spider IV 15",
       "notes" : [
-         "MkI"
+         "MkI",
+         "FBV Express"
       ],
       "type" : "Amplifier",
       "year" : "2015",
@@ -861,50 +921,49 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "detail" : {
-         "Serial" : "X110P5604007958"
-      },
       "image" : true,
-      "link" : "https://line6.com/legacy/fbve",
-      "make" : "Line 6",
-      "manuals" : {
-         "User Manual" : "FBV User Manual - English.pdf"
-      },
-      "model" : "FBV Express",
-      "type" : "Controller",
-      "year" : "2015"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Computer Interface" : "USB-B",
-         "MIDI" : "Out x 2",
-         "Serial" : "2105084"
-      },
-      "image" : true,
-      "link" : "https://www.m-audio.com/products/browse/category/keyboards-and-controllers",
-      "make" : "M-Audio",
-      "manuals" : {
-         "Manual" : "Oxygen8.pdf"
-      },
-      "model" : "Oxygen8",
+      "link" : "https://www.guyker.com/products/1-piece-metal-pure-copper-potentiometer-knob-inner-diameter-6mm-for-electric-guitar-or-bass-in-five-colors?variant=43538741166258",
+      "make" : "Guyker",
+      "model" : "CKB005",
       "notes" : [
-         "USB"
-      ],
-      "type" : "Controller",
-      "year" : "2004"
-   },
-   {
-      "category" : "Hardware",
-      "image" : true,
-      "link" : "https://www.kahlerusa.com",
-      "make" : "Kahler",
-      "model" : "Spyder 2700",
-      "notes" : [
-         "locking tremolo"
+         "volume/tone knobs"
       ],
       "type" : "Guitar Accessory",
-      "year" : "1987"
+      "year" : "2024"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://kahlerusa.com/product/stringlock-pro/",
+      "make" : "Kahler",
+      "manuals" : {
+         "Brochure" : "stringlocks-locknuts.jpg",
+         "Installation Guide" : "X-5513-5514W.gif"
+      },
+      "model" : "Deluxe Stringlock",
+      "notes" : [
+         "string lock",
+         "Killer 2710"
+      ],
+      "type" : "Guitar Accessory",
+      "year" : "1991"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://kahlerusa.com/product/2700-series-fulcrum-tremolo-system/",
+      "make" : "Kahler",
+      "manuals" : {
+         "Brochure" : "Fulcrum-Systems.jpg",
+         "Installation Guide" : "Double locking tremolo installation instructions.pdf"
+      },
+      "model" : "Killer 2710",
+      "notes" : [
+         "locking tremolo",
+         "Deluxe Stringlock"
+      ],
+      "type" : "Guitar Accessory",
+      "year" : "1991"
    },
    {
       "category" : "Hardware",
@@ -1098,6 +1157,26 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Computer Interface" : "USB-B",
+         "MIDI" : "Out x 2",
+         "Serial" : "2105084"
+      },
+      "image" : true,
+      "link" : "https://www.m-audio.com/products/browse/category/keyboards-and-controllers",
+      "make" : "M-Audio",
+      "manuals" : {
+         "Manual" : "Oxygen8.pdf"
+      },
+      "model" : "Oxygen8",
+      "notes" : [
+         "USB"
+      ],
+      "type" : "Keyboard",
+      "year" : "2004"
+   },
+   {
+      "category" : "Hardware",
       "image" : true,
       "link" : "https://wittner-gmbh.de/wittner_metronome_maelzel_wooden_casing.html",
       "make" : "Wittner",
@@ -1143,6 +1222,45 @@ var equipment = [
       "model" : "e 835",
       "type" : "Microphone",
       "year" : "2011"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Adjacent Channel Rejection" : "≥ 65 dB",
+         "Battery Compartment" : "AA x 2",
+         "Blocking" : "≥ 70 dB",
+         "Dimensions" : "82mm x 64mm x 24mm",
+         "Frequency Range" : "518 - 544MHz (A)",
+         "Frequency Response" : "40 - 18000Hz",
+         "Frequency Stability" : "≤±15ppm",
+         "Intermodulation Attenuation" : "≥ 65 dB",
+         "Maximum SPL" : "120 dB SPL",
+         "Modulation" : "Wideband FM",
+         "Nominal Deviation" : "± 24kHz",
+         "Operating Time" : "> 8h",
+         "Peak Deviation" : "± 48kHz",
+         "Polar Pattern" : "Super Cardioid",
+         "Power Consumption" : "~130 mA (EK 100), ≤ 170mA (SK 100)",
+         "S/N Ratio (at 1mV and peak deviation)" : "≥ 110dB",
+         "Sensitivity" : "<2.5 μV at 52 dBA(rms) S/N ratio (EK 100), 40 mV/Pa (ME-4)",
+         "Serial" : "Transmitter: 163351, Receiver: 135282",
+         "Squelch" : "OFF, LO: 5 dBμV, MID: 15 dBμV, HI: 25 dBμV",
+         "Switching Bandwidth" : "36 MHz",
+         "THD (at nominal deviation and 1 kHz)" : "≤ 0.9%",
+         "Temperature Range" : "-10C - 55C",
+         "Transducer Type" : "Condenser",
+         "Weight" : "158g (EK 100)"
+      },
+      "image" : true,
+      "link" : "https://www.sennheiser.com/en-us/catalog/products/wireless-systems",
+      "make" : "Sennheiser",
+      "manuals" : {
+         "Instructions" : "Sennheiser_Ew100_ENGG2.pdf"
+      },
+      "model" : "ew 122-p G2",
+      "type" : "Microphone",
+      "year" : "2022",
+      "year_uncertain" : true
    },
    {
       "category" : "Hardware",
@@ -1329,6 +1447,21 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Serial" : "X110P5604007958"
+      },
+      "image" : true,
+      "link" : "https://line6.com/legacy/fbve",
+      "make" : "Line 6",
+      "manuals" : {
+         "User Manual" : "FBV User Manual - English.pdf"
+      },
+      "model" : "FBV Express",
+      "type" : "Pedal",
+      "year" : "2015"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Depth" : "90mm (3 9/16”)",
          "Height" : "43mm (1 3/4”)",
          "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
@@ -1441,6 +1574,25 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Battery Life" : "1500 Hours",
+         "Current @9V" : "160µA",
+         "Magnet" : "Ceramic and Steel",
+         "Maximum Supply" : "27V DC",
+         "Output Impedance" : "10000Ω",
+         "Output Noise (60 Hz)" : "-107 (single-coil), -109 (dual-coil)",
+         "Output Voltage (finger, thumb)" : "finger, thumb: 1.00V (single-coil), 2.00V (dual-coil); thump: 3.00V (single-coil), 4.50V (dual-coil)",
+         "Resonant Frequency" : "5.40 kHz (single-coil), 2.50 kHz (dual-coil)"
+      },
+      "image" : true,
+      "link" : "https://www.emgpickups.com/40tw.html",
+      "make" : "EMG",
+      "model" : "40TW",
+      "type" : "Pickup",
+      "year" : "2021"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Battery Life" : "220 hours",
          "Pickup Length" : "2.65\" (67.3 mm)",
          "Soundhole" : "Round soundholes from 3 7/8\" (98mm) to 4 1/8\" (105mm) in diameter"
@@ -1507,6 +1659,18 @@ var equipment = [
    {
       "category" : "Hardware",
       "image" : true,
+      "link" : "https://shadowelectronics.com/products/shadow-nanoflex-undersaddle-pickup",
+      "make" : "Shadow",
+      "model" : "Nanoflex",
+      "notes" : [
+         "undersaddle pickup"
+      ],
+      "type" : "Pickup",
+      "year" : "2018"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
       "link" : "https://furmanpower.com/product/led-rear-rack-gooseneck-lamp/",
       "make" : "Furman",
       "model" : "GN-LED",
@@ -1545,6 +1709,19 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "image" : true,
+      "link" : "https://www.korg.com/us/products/tuners/cm_300/index.php",
+      "make" : "Korg",
+      "model" : "CM-300",
+      "notes" : [
+         "DTR-2000",
+         "clip-on"
+      ],
+      "type" : "Tuner",
+      "year" : "2023"
+   },
+   {
+      "category" : "Hardware",
       "detail" : {
          "Analog Inputs" : "1/4\" x 3 (two channels)",
          "Analog Outputs" : "1/4\"",
@@ -1579,77 +1756,6 @@ var equipment = [
       "year" : "2019"
    },
    {
-      "category" : "Hardware",
-      "image" : true,
-      "link" : "https://www.korg.com/us/products/tuners/cm_300/index.php",
-      "make" : "Korg",
-      "model" : "CM-300",
-      "notes" : [
-         "DTR-2000",
-         "clip-on"
-      ],
-      "type" : "Tuner Microphone",
-      "year" : "2023"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Adjacent Channel Rejection" : "≥ 65 dB",
-         "Battery Compartment" : "AA x 2",
-         "Blocking" : "≥ 70 dB",
-         "Dimensions" : "82mm x 64mm x 24mm",
-         "Frequency Range" : "518 - 544MHz (A)",
-         "Frequency Response" : "40 - 18000Hz",
-         "Frequency Stability" : "≤±15ppm",
-         "Intermodulation Attenuation" : "≥ 65 dB",
-         "Maximum SPL" : "120 dB SPL",
-         "Modulation" : "Wideband FM",
-         "Nominal Deviation" : "± 24kHz",
-         "Operating Time" : "> 8h",
-         "Peak Deviation" : "± 48kHz",
-         "Polar Pattern" : "Super Cardioid",
-         "Power Consumption" : "~130 mA (EK 100), ≤ 170mA (SK 100)",
-         "S/N Ratio (at 1mV and peak deviation)" : "≥ 110dB",
-         "Sensitivity" : "<2.5 μV at 52 dBA(rms) S/N ratio (EK 100), 40 mV/Pa (ME-4)",
-         "Serial" : "Transmitter: 163351, Receiver: 135282",
-         "Squelch" : "OFF, LO: 5 dBμV, MID: 15 dBμV, HI: 25 dBμV",
-         "Switching Bandwidth" : "36 MHz",
-         "THD (at nominal deviation and 1 kHz)" : "≤ 0.9%",
-         "Temperature Range" : "-10C - 55C",
-         "Transducer Type" : "Condenser",
-         "Weight" : "158g (EK 100)"
-      },
-      "image" : true,
-      "link" : "https://www.sennheiser.com/en-us/catalog/products/wireless-systems",
-      "make" : "Sennheiser",
-      "manuals" : {
-         "Instructions" : "Sennheiser_Ew100_ENGG2.pdf"
-      },
-      "model" : "ew 122-p G2",
-      "type" : "Wireless",
-      "year" : "2022",
-      "year_uncertain" : true
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
-         "Serial" : "W100M7038017336, W1ROM7244018777"
-      },
-      "image" : true,
-      "link" : "https://line6.com/relay-wireless/g10-g10s/",
-      "make" : "Line 6",
-      "manuals" : {
-         "Pilot’s Guide" : "Relay G10TII - G10 - G10S Pilot's Guide - English .pdf"
-      },
-      "model" : "Relay G10",
-      "notes" : [
-         "G10TII transmitter"
-      ],
-      "type" : "Wireless",
-      "year" : "2023"
-   },
-   {
       "category" : "Instruments",
       "detail" : {
          "Back Material" : "High Pressure Laminate",
@@ -1661,6 +1767,7 @@ var equipment = [
          "Neck Joins Body At" : "14th Fret",
          "Neck Material" : "Plywood",
          "Nut Material" : "Corian",
+         "Pickups" : "Fishman Ellipse Matrix Blend",
          "Production Year" : "February 2000",
          "Scale Length" : "25.4\"",
          "Serial" : "728931",
@@ -1725,7 +1832,8 @@ var equipment = [
          "Acetal Standard",
          "S1",
          "C1K",
-         "Polypro (black)"
+         "Polypro (black)",
+         "Nanoflex"
       ],
       "strings" : "XTAPB1047",
       "type" : "Acoustic Guitar",
@@ -1768,7 +1876,8 @@ var equipment = [
       "model" : "Escape Mark III (black)",
       "not_mine" : true,
       "notes" : [
-         "XTAPB1047"
+         "XTAPB1047",
+         "Nanoflex"
       ],
       "strings" : "XTAPB1047",
       "type" : "Acoustic Guitar",
@@ -1962,7 +2071,7 @@ var equipment = [
          "Neck Joint" : "Dovetail; Glued-in",
          "Neck Profile" : "SlimTaper C-profile",
          "Nut Width" : "43.0mm (1.692”)",
-         "Pickguard" : "1-Ply; Black PVC",
+         "Pickguard" : "1-Ply Black PVC",
          "Scale Length" : "647.7mm (25.5”)",
          "Serial" : "20121301028",
          "Top Material" : "Select Spruce",
@@ -1984,6 +2093,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Fret Count" : "19",
          "Serial" : "27726-680"
       },
       "image" : true,
@@ -2007,7 +2117,7 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Battery Compartment" : "2 x 9V w/Screw Plate",
-         "Binding" : "MOP w/ BLK/WHT/BLK Multi-ply",
+         "Binding" : "MOP Multi-Ply Black/White/Black",
          "Body Material" : "Mahogany",
          "Bridge" : "Schecter Custom Bass String Thru",
          "Bridge Pickup" : "EMG 40TW",
@@ -2025,7 +2135,7 @@ var equipment = [
          "Location" : "South Korea",
          "Neck @ 12th Fret" : ".866\" (22mm)",
          "Neck @ 1st Fret" : ".787\" (20mm)",
-         "Neck Material" : "Maple/Walnut Multi-ply",
+         "Neck Material" : "Multi-Ply Maple/Walnut",
          "Neck Pickup" : "EMG 40TW",
          "Neck Shape" : "Thin “C”",
          "Nut Material" : "Graph Tech XL Black Tusq",
@@ -2049,7 +2159,8 @@ var equipment = [
          "Tortex Standard",
          "MSS2-4-BLK",
          "Straplok",
-         "SGR-6B"
+         "SGR-6B",
+         "40TW"
       ],
       "strings" : "ECB81-5SL",
       "type" : "Bass Guitar",
@@ -2216,7 +2327,7 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Battery Compartment" : "2 x AAA, 1 x 9V",
-         "Binding" : "6-ply Cream/Black",
+         "Binding" : "6-Ply Cream/Black",
          "Body Depth" : "1.63\"",
          "Body Material" : "Carved Top Mahogany",
          "Body Width" : "10.5\"",
@@ -2263,49 +2374,6 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Body Finish" : "Gloss",
-         "Bridge" : "Kahler Spyder 2700 Double-Locking Tremolo*",
-         "Color" : "Black",
-         "Controls" : "1 Volume, 2 Tone, Fender Potentiometers*",
-         "Fingerboard Inlays" : "Black Dots",
-         "Fingerboard Material" : "Maple",
-         "Fret Count" : "21",
-         "Frets" : "Medium Jumbo",
-         "Joint" : "Bolt-on",
-         "Location" : "Samick, Korea",
-         "Nut Material" : "Plastic",
-         "Nut Width" : "42mm (1.65\")",
-         "Pickguard" : "Black and White Pearl*",
-         "Pickup Selector" : "5-way Fender toggle*",
-         "Pickups" : "Fender Fat 50’s*",
-         "Production Year" : "1991",
-         "Scale Length" : "25.5\"",
-         "Serial" : "1103087",
-         "Truss Rod" : "Adjustable, 5mm Allen Nut",
-         "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White)*"
-      },
-      "featured" : true,
-      "image" : true,
-      "make" : "Epiphone",
-      "model" : "S-310B",
-      "notes" : [
-         "EXL110",
-         "Acetal Standard",
-         "S1",
-         "C1K",
-         "M17SS-BLK",
-         "S-Locks",
-         "GC-ELECTRIC-A",
-         "Spyder 2700",
-         "Fat 50’s"
-      ],
-      "strings" : "EXL110",
-      "type" : "Electric Guitar",
-      "year" : "1987"
-   },
-   {
-      "category" : "Instruments",
-      "detail" : {
-         "Body Finish" : "Gloss",
          "Body Material" : "Mahogany",
          "Bridge" : "Epiphone LockTone™ Tune-O-Matic",
          "Bridge Pickup" : "Epiphone Alnico Classic PRO™ Bridge",
@@ -2325,7 +2393,7 @@ var equipment = [
          "Neck Profile" : "60s SlimTaper™",
          "Nut Material" : "Graph Tech NuBone®",
          "Nut Width" : "43.0mm (1.692”)",
-         "Pickguard" : "5-Ply, Black",
+         "Pickguard" : "5-Ply Black",
          "Pickup Selector" : "3-way Epiphone toggle",
          "Production Year" : "May 2023",
          "Scale Length" : "628.65mm (24.75”)",
@@ -2345,6 +2413,61 @@ var equipment = [
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2023"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
+         "Body Finish" : "Gloss",
+         "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Deluxe Stringlock*",
+         "Color" : "Black",
+         "Control Knobs" : "Guyker CKB005 Revolver Cylinders*",
+         "Controls" : "Fender 250K Potentiometers (1 Volume, 1 Push/Pull Neck Tone, 1 Middle/Bridge Tone); .022µF capacitor*",
+         "Fingerboard Inlays" : "Black Dots",
+         "Fingerboard Material" : "Maple",
+         "Fret Count" : "21",
+         "Frets" : "Medium Jumbo",
+         "Jack" : "Pure Tone Multi-Contact, Black Nickel*",
+         "Jack Plate" : "Black*",
+         "Joint" : "Bolt-on",
+         "Location" : "Samick, Korea",
+         "Model Number" : "S-310B",
+         "Neck Material" : "Maple",
+         "Neck Plate" : "Black*",
+         "Nut Dimensions" : "41.85mm w x 8.54mm h x 5.87mm d, 34.01mm E-to-E",
+         "Nut Material" : "Graph Tech XL Black Tusq (model 6060-00)*",
+         "Pickguard" : "3-Ply Matte Yellow/Black/Yellow*",
+         "Pickup Covers" : "Solid Black Plastic*",
+         "Pickup Selector" : "Fender 5-way Selector Switch, Blacked, w/Black Metal Tip; Neck Tone “pull” adds neck pickup*",
+         "Pickups" : "Fender Fat 50’s*",
+         "Production Year" : "1991",
+         "Rear Cover" : "1-Ply Black*",
+         "Scale Length" : "25.5\"",
+         "Serial" : "1103087",
+         "Truss Rod" : "Adjustable, 5mm Allen Nut",
+         "Truss Rod Cover" : "“Bell Shaped”; 2-Ply Black/White*",
+         "Tuning Machines" : "Locking, 15:1*"
+      },
+      "featured" : true,
+      "image" : true,
+      "link" : "https://pudge.substack.com/p/theseia-the-guitar-of-theseus",
+      "make" : "Epiphone",
+      "model" : "Theseia",
+      "notes" : [
+         "EXL110 (2024-10-06)",
+         "Acetal Standard",
+         "S1",
+         "C1K",
+         "M17SS-BLK",
+         "S-Locks",
+         "GC-ELECTRIC-A",
+         "Killer 2710",
+         "Deluxe Stringlock",
+         "Fat 50’s",
+         "CKB005"
+      ],
+      "strings" : "EXL110",
+      "type" : "Electric Guitar",
+      "year" : "1991"
    },
    {
       "category" : "Instruments",
@@ -2393,7 +2516,7 @@ var equipment = [
          "Frets" : "Jumbo",
          "Location" : "Korea",
          "Neck Material" : "Rosewood",
-         "Pickup Configuration" : "HH",
+         "Pickup Configuration" : "HSH",
          "Scale Length" : "25.5\"",
          "Serial" : "2110103",
          "Truss Rod" : "Adjustable"
@@ -2555,10 +2678,12 @@ var equipment = [
          "Depth of Body" : "1.7\" (43mm)",
          "Fingerboard Radius" : "15.5\" (394mm)",
          "Finish" : "Spirit Varnish",
+         "Fret Count" : "19",
          "Length of Body (w/ heel)" : "12.5\" (318mm)",
          "Location" : "Michigan, USA",
          "Nut Width" : "1 1/8\" (28mm)",
          "Pickguard" : "Adhered Maple",
+         "Pickups" : "K&K Sound Mandolin Twin",
          "Serial" : "FT180030",
          "Strings" : "Northfield LITE, Phosphor Bronze, Loop end: E (.010), A (.015), D (.024), G (.036)",
          "Tailpiece" : "Cast",
@@ -2588,7 +2713,14 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Body" : "Resonator",
+         "Fingerboard Inlay Material" : "MOP",
+         "Fret Material" : "Nickel-Silver",
+         "Fretboard" : "Ebony",
+         "Headplate Material" : "Rosewood",
          "Location" : "Camden, NJ, USA",
+         "Manufacturer" : "Vega",
+         "Neck Material" : "Maple",
          "Production Year" : "Patented Sept. 23, 1914",
          "Serial" : "unnumbered"
       },
@@ -2605,6 +2737,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Fret Count" : "16",
          "Location" : "China",
          "Serial" : "12060058"
       },
@@ -2995,6 +3128,15 @@ var equipment = [
    {
       "category" : "Stands etc.",
       "image" : true,
+      "link" : "https://www.tama.com/usa/products/hardware/snare_stands/",
+      "make" : "Tama",
+      "model" : "HS10 Swingstar",
+      "type" : "Instrument Stand",
+      "year" : "2007"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
       "link" : "https://gatorco.com/product/telescoping-boom-podcast-bass-drum-and-amp-mic-stand-gfw-mic-0822/",
       "make" : "Gator",
       "model" : "GFW-MIC-0822",
@@ -3025,17 +3167,8 @@ var equipment = [
       "link" : "https://www.skbcases.com/music/products/proddetail.php?f=&id=819&o=&offset=4&c=80&s=80",
       "make" : "SKB",
       "model" : "SKB-R8",
-      "type" : "Rack",
+      "type" : "Rack Hardware",
       "year" : "2005"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "link" : "https://www.tama.com/usa/products/hardware/snare_stands/",
-      "make" : "Tama",
-      "model" : "HS10 Swingstar",
-      "type" : "Snare Drum Stand",
-      "year" : "2007"
    }
 ]
 
@@ -3047,11 +3180,14 @@ var links = {
    "Beyer Dynamic" : "https://north-america.beyerdynamic.com/",
    "Blackstar" : "https://www.blackstaramps.com/",
    "Clayton" : "https://www.steveclayton.com/",
+   "DR Strings" : "https://www.drstrings.com/",
    "Daisy Rock" : "https://www.daisyrock.com/",
    "Digitech" : "https://www.digitech.com/",
    "Dunlop" : "https://www.jimdunlop.com/",
    "D’Addario" : "https://www.daddario.com/",
    "EBow" : "https://www.ebow.com/",
+   "EMG" : "https://www.emgpickups.com/",
+   "ESP" : "https://www.espguitars.com/",
    "Edirol" : "https://www.roland.com/us/",
    "Electro-Harmonix" : "https://www.ehx.com/",
    "Epiphone" : "https://www.epiphone.com/",
@@ -3065,6 +3201,7 @@ var links = {
    "Gator" : "https://www.gatorcases.com/",
    "Gretsch" : "https://www.gretschguitars.com/",
    "Guitto" : "https://en.guittochina.com/",
+   "Guyker" : "https://www.guyker.com/",
    "Hercules" : "http://herculesstands.com/",
    "Hohner" : "https://www.hohner.de/",
    "IK Multimedia" : "https://www.ikmultimedia.com/",
@@ -3095,6 +3232,7 @@ var links = {
    "Schaller" : "https://schaller.info/",
    "Schecter" : "https://www.schecterguitars.com/",
    "Sennheiser" : "https://en-us.sennheiser.com/",
+   "Shadow" : "https://shadowelectronics.com/",
    "Shubb" : "https://www.shubb.com/",
    "Shure" : "https://www.shure.com/",
    "Sony" : "https://www.sony.com/",
