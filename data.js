@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-10-18T12:00:00+0000")
+var lastModified = new Date("2024-12-25T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -547,7 +547,7 @@ var equipment = [
          "Gauge" : ".045, .065, .080, .100, .132",
          "Gauge Name" : "Regular Light",
          "Material" : "Stainless Steel, Flatwound",
-         "Scale Length" : "Super Long",
+         "Scale" : "Super Long",
          "String Count" : "5"
       },
       "image" : true,
@@ -568,7 +568,7 @@ var equipment = [
          "Gauge" : ".045, .065, .080, .100",
          "Gauge Name" : "Regular Light",
          "Material" : "Nickel",
-         "Scale Length" : "Long",
+         "Scale" : "Long",
          "String Count" : "4"
       },
       "image" : true,
@@ -1866,7 +1866,6 @@ var equipment = [
          "Weight" : "4lbs 3oz",
          "dB at 1'" : "Peak: 93db, Average: 80db"
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=40446336335957",
       "make" : "Traveler",
@@ -1945,7 +1944,7 @@ var equipment = [
          "Pickguard" : "Tortoise Pattern",
          "Production Year" : "October 2012",
          "Rosette" : "Style 28 Multi-Stripe",
-         "Saddle" : "Compensated White Tusq",
+         "Saddle Material" : "Compensated White Tusq",
          "Saddle Radius" : "16\"",
          "Scale Length" : "25.4\"",
          "Serial" : "1633689",
@@ -2141,7 +2140,7 @@ var equipment = [
          "Nut Material" : "Graph Tech XL Black Tusq",
          "Nut Width" : "1.771\" (45mm)",
          "Production Year" : "2021",
-         "Scale" : "35\" (889mm)",
+         "Scale Length" : "35\" (889mm)",
          "Serial" : "W21052189",
          "Strings" : "Ernie Ball 5 String Super Long #2850 (.045-.130)",
          "Top Contour" : "Arched Top",
@@ -2253,7 +2252,7 @@ var equipment = [
          "Neck Material" : "Hard Rock Maple",
          "Neck Style" : "Slim",
          "Pickups" : "Seymour Duncan open coil humbucker, and lipstick-style single coil",
-         "Scale Length" : "22 1/2\" scale",
+         "Scale Length" : "22 1/2\"",
          "Serial" : "207757",
          "Truss Rod" : "Adjustable",
          "Tuners" : "Grover"
@@ -2351,7 +2350,6 @@ var equipment = [
          "Weight" : "5lbs 4oz"
       },
       "featured" : true,
-      "hide" : true,
       "image" : true,
       "link" : "https://travelerguitar.com/products/ltd-ec-1?variant=39665627136085",
       "make" : "Traveler",
@@ -2759,6 +2757,44 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Back / Sides Material" : "Poplar",
+         "Body Depth" : " 2.0\"",
+         "Body Length" : " 9.0625\"",
+         "Fingerboard Material" : "Rosewood",
+         "Fingerboard Width at Neck/Body Joint" : " 1.75\"",
+         "Fingerboard Width at Nut" : " 1.4375\"",
+         "Finish" : "Matte",
+         "Fret Count" : " 12",
+         "Length" : " 20.625\"",
+         "Neck Material" : "Pine",
+         "Nut Material" : "Plastic",
+         "Saddle Material" : "Plastic",
+         "Scale Length" : " 13.5\"",
+         "Strap Button" : "Black x 1",
+         "Strings" : "Aquila Super Nylgut®",
+         "Top Material" : "Poplar",
+         "Width at Lower Bout" : " 7.0\"",
+         "Width at Upper Bout" : " 5.4375\"",
+         "Width at Waist" : " 4.75\""
+      },
+      "image" : true,
+      "link" : "https://kalabrand.com/collections/graphic-top-ukadelic/products/uk-happycamper?variant=31294286659654",
+      "make" : "Kala",
+      "model" : "Happy Camper",
+      "not_mine" : true,
+      "notes" : [
+         "EJ88S",
+         "Soprano",
+         "Ukadelic",
+         "GBE-UKE-SOP"
+      ],
+      "strings" : "EJ88S",
+      "type" : "Ukulele",
+      "year" : "2024"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
          "Back / Sides Material" : "Composite",
          "Body Depth" : "2.375\"",
          "Body Length" : "9.3125\"",
@@ -2770,7 +2806,7 @@ var equipment = [
          "Fret Count" : "12",
          "Neck Material" : "Mahogany",
          "Nut Material" : "Plastic",
-         "Saddle" : "Plastic",
+         "Saddle Material" : "Plastic",
          "Scale Length" : "13.5\"",
          "Style" : "Dolphin",
          "Top Material" : "Philippine Mahogany",
@@ -2781,12 +2817,13 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://kalabrand.com/products/mk-sd-rdburst?_pos=5&_sid=e7e1bb13e&_ss=r",
-      "make" : "Makala",
+      "make" : "Kala",
       "model" : "MK-SD/RDBURST",
       "not_mine" : true,
       "notes" : [
          "EJ88S",
          "Soprano",
+         "Makala",
          "GBE-UKE-SOP"
       ],
       "strings" : "EJ88S",
@@ -2805,7 +2842,7 @@ var equipment = [
          "Location" : "China",
          "Neck Material" : "Jabon",
          "Nut Material" : "ABS, White",
-         "Saddle" : "Graph Tech NuBone XB",
+         "Saddle Material" : "Graph Tech NuBone XB",
          "Scale Length" : "346mm",
          "Tuning Machines" : "Dolphin, Gold Plated"
       },
@@ -3208,6 +3245,7 @@ var links = {
    "Ibanez" : "https://www.ibanez.com/",
    "K&K" : "https://kksound.com/",
    "Kahler" : "https://www.kahlerusa.com/",
+   "Kala" : "https://kalabrand.com/",
    "Kamoa" : "https://kamoaukuleles.myshopify.com/",
    "Korg" : "https://www.korg.com/",
    "Levys" : "https://www.levysleathers.com/",
@@ -3217,7 +3255,6 @@ var links = {
    "MOTU" : "https://www.motu.com/",
    "Mackie" : "https://www.mackie.com/",
    "Mahalo" : "https://mahaloukuleles.com/",
-   "Makala" : "https://kalabrand.com/",
    "Martin" : "https://www.martinguitar.com/",
    "Meinl" : "https://meinlcymbals.com/",
    "Northfield" : "https://www.northfieldinstruments.com/",
