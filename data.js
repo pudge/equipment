@@ -1,4 +1,4 @@
-var lastModified = new Date("2024-12-25T12:00:00+0000")
+var lastModified = new Date("2025-06-01T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1725,7 +1725,14 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "1/4\" x 3 (two channels)",
          "Analog Outputs" : "1/4\"",
-         "Serial" : "13751"
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "A0 (27.5 Hz)–C8 (4186 Hz)",
+         "Dimensions" : "18.94\" x 4.45\" x 1.81\"",
+         "Power Consumption" : "75mA",
+         "Reference Pitch" : "A4=438-455 Hz",
+         "Scale" : "12-note equal temperament",
+         "Serial" : "13751",
+         "Weight" : "3.09 lbs"
       },
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/",
@@ -1742,6 +1749,44 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "C0 (16.35 Hz)–C8 (4186 Hz)",
+         "Dimensions" : "2.76\" x 3.15\" x 1.85\"",
+         "Input Impedance" : "10 MΩ",
+         "Power Consumption" : "40mA max",
+         "Power Supply" : "9V",
+         "Reference Pitch" : "A4=436-445 Hz",
+         "Scale" : "12-note equal temperament",
+         "Serial" : "",
+         "Weight" : "6.98 oz"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.korg.com/us/products/tuners/pbxsbass/",
+      "make" : "Korg",
+      "manuals" : {
+         "Owner’s Manual" : "Pitchblack_XS_Bass_OM_EFGSCJ1.pdf"
+      },
+      "model" : "Pitchblack XS Bass",
+      "notes" : [
+         "pedal"
+      ],
+      "type" : "Tuner",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Battery" : "CR2032",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "A0 (27.5 Hz)–C8 (4186 Hz)",
+         "Reference Pitch" : "A4=436-445 Hz",
+         "Scale" : "12-note equal temperament",
+         "Weight" : "0.99 oz"
+      },
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/sledgehammer_pro/",
       "make" : "Korg",
@@ -2450,6 +2495,7 @@ var equipment = [
       "link" : "https://pudge.substack.com/p/theseia-the-guitar-of-theseus",
       "make" : "Epiphone",
       "model" : "Theseia",
+      "no_reverb" : true,
       "notes" : [
          "EXL110 (2024-10-06)",
          "Acetal Standard",

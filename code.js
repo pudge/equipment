@@ -115,6 +115,9 @@ function linkItDetail(oData) {
 }
 
 function linkItFindValue(oData) {
+  if (oData['no_reverb']) {
+    return '';
+  }
   var link = 'https://reverb.com/marketplace?query='
     + escape([oData['make'], oData['model'], oData['type']].join(' '))
     // + '&condition=used'

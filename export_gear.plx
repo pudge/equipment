@@ -80,6 +80,7 @@ sub get_gear {
             hide            => bool($x->{'Hide'}),
             not_mine        => bool($x->{'Not Mine'}),
             inactive        => bool($x->{'Inactive'}),
+            no_reverb       => bool($x->{'No Reverb'}),
         };
 
         for my $k (keys %$y) {
