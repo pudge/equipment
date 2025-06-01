@@ -1441,6 +1441,9 @@ var equipment = [
          "Manual" : "deluxe-bass-big-muff-pi.pdf"
       },
       "model" : "Deluxe Bass Big Muff Pi",
+      "notes" : [
+         "bass fuzz"
+      ],
       "type" : "Pedal",
       "year" : "2021"
    },
@@ -1492,6 +1495,9 @@ var equipment = [
          "Manual" : "metal-muff-manual.pdf"
       },
       "model" : "Metal Muff",
+      "notes" : [
+         "fuzz"
+      ],
       "type" : "Pedal",
       "year" : "2020"
    },
@@ -1512,8 +1518,41 @@ var equipment = [
          "Manual" : "nano-big-muff-pi-manual.pdf"
       },
       "model" : "Nano Big Muff Pi",
+      "notes" : [
+         "fuzz"
+      ],
       "type" : "Pedal",
       "year" : "2020"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "C0 (16.35 Hz)–C8 (4186 Hz)",
+         "Dimensions" : "2.76\" x 3.15\" x 1.85\"",
+         "Input Impedance" : "10 MΩ",
+         "Power Consumption" : "40mA max",
+         "Power Supply" : "9V",
+         "Reference Pitch" : "A4=436-445 Hz",
+         "Scale" : "12-note equal temperament",
+         "Serial" : "",
+         "Weight" : "6.98 oz"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.korg.com/us/products/tuners/pbxsbass/",
+      "make" : "Korg",
+      "manuals" : {
+         "Owner’s Manual" : "Pitchblack_XS_Bass_OM_EFGSCJ1.pdf"
+      },
+      "model" : "Pitchblack XS Bass",
+      "notes" : [
+         "tuner"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1539,6 +1578,9 @@ var equipment = [
          "Model Gallery" : "POD X3 Model Gallery - English ( Rev B ).pdf"
       },
       "model" : "POD X3 Live",
+      "notes" : [
+         "multi-effects"
+      ],
       "type" : "Pedal",
       "year" : "2010"
    },
@@ -1559,8 +1601,46 @@ var equipment = [
          "Owner’s Manual" : "RC-2_e2.pdf"
       },
       "model" : "RC-2 Loop Station",
+      "notes" : [
+         "looper"
+      ],
       "type" : "Pedal",
       "year" : "2006"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Computer Interface" : "Micro USB",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
+         "Dimensions" : "5.1\" x 2.6\" x 2.1\"",
+         "Input Impedance" : "5 MΩ",
+         "Output Impedance" : "1 LΩ",
+         "Power Consumption" : "85mA nominal",
+         "Power Supply" : "9V",
+         "Reference Pitch" : "A4=390Hz-490Hz",
+         "Scale" : "configurable",
+         "Serial" : "",
+         "Weight" : "14 oz"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.petersontuners.com/products/stroboStompHD/",
+      "make" : "Peterson",
+      "manuals" : {
+         "Guided Tuning Manual" : "Guided Tuning Manual.pdf",
+         "StroboStomp HD Manual" : "StroboStomp_HD_Manual_v1.1_EN.pdf",
+         "StroboStomp HD Specifications" : "StroboStompHD_Specifications_rev1.0.pdf",
+         "StroboStomp HD Tuning & Sweetener Presets" : "StroboStomp HD Tuning & Sweetener Presets.pdf"
+      },
+      "model" : "StroboStomp HD",
+      "notes" : [
+         "tuner"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1568,6 +1648,9 @@ var equipment = [
       "link" : "https://www.quiklok.com/product/vp-2611-mono-volume-pedal/",
       "make" : "Quick-Lok",
       "model" : "VP-2611",
+      "notes" : [
+         "volume"
+      ],
       "type" : "Pedal",
       "year" : "2016"
    },
@@ -1728,7 +1811,7 @@ var equipment = [
          "Detection Accuracy" : "±0.1 cent",
          "Detection Range" : "A0 (27.5 Hz)–C8 (4186 Hz)",
          "Dimensions" : "18.94\" x 4.45\" x 1.81\"",
-         "Power Consumption" : "75mA",
+         "Power Consumption" : "75mA nominal",
          "Reference Pitch" : "A4=438-455 Hz",
          "Scale" : "12-note equal temperament",
          "Serial" : "13751",
@@ -1746,36 +1829,6 @@ var equipment = [
       ],
       "type" : "Tuner",
       "year" : "2005"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Detection Accuracy" : "±0.1 cent",
-         "Detection Range" : "C0 (16.35 Hz)–C8 (4186 Hz)",
-         "Dimensions" : "2.76\" x 3.15\" x 1.85\"",
-         "Input Impedance" : "10 MΩ",
-         "Power Consumption" : "40mA max",
-         "Power Supply" : "9V",
-         "Reference Pitch" : "A4=436-445 Hz",
-         "Scale" : "12-note equal temperament",
-         "Serial" : "",
-         "Weight" : "6.98 oz"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.korg.com/us/products/tuners/pbxsbass/",
-      "make" : "Korg",
-      "manuals" : {
-         "Owner’s Manual" : "Pitchblack_XS_Bass_OM_EFGSCJ1.pdf"
-      },
-      "model" : "Pitchblack XS Bass",
-      "notes" : [
-         "pedal"
-      ],
-      "type" : "Tuner",
-      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -3306,6 +3359,7 @@ var links = {
    "Northfield" : "https://www.northfieldinstruments.com/",
    "O.C. White" : "https://www.ocwhite.com/",
    "Peavey" : "https://peavey.com/",
+   "Peterson" : "https://www.petersontuners.com/",
    "Pignose" : "https://pignoseamps.com/",
    "Quick-Lok" : "https://www.quiklok.com/",
    "Road Runner" : "https://roadrunnercases.com/",
