@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-01T12:00:00+0000")
+var lastModified = new Date("2025-06-02T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1465,6 +1465,30 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Other" : "1/4\" Expression Pedal jack",
+         "Power Consumption" : "85 mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/collections/all-products/products/flight-delay?variant=44569062309988",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-FlightDelay-Manual-English.pdf"
+      },
+      "model" : "Flight Delay",
+      "notes" : [
+         "delay"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Depth" : "90mm (3 9/16”)",
          "Height" : "43mm (1 3/4”)",
          "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
@@ -1583,6 +1607,31 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2010"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\", XLR balanced",
+         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
+         "Other" : "Ground-lift switch; always-on buffer",
+         "Power Consumption" : "32 mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/collections/compression/products/pulp-n-peel-v4",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-PulpNPeelV4-Manual-English.pdf"
+      },
+      "model" : "Pulp ’N’ Peel",
+      "notes" : [
+         "compressor; v4"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -3342,6 +3391,7 @@ var links = {
    "Hohner" : "https://www.hohner.de/",
    "IK Multimedia" : "https://www.ikmultimedia.com/",
    "Ibanez" : "https://www.ibanez.com/",
+   "JHS" : "https://jhspedals.info/",
    "K&K" : "https://kksound.com/",
    "Kahler" : "https://www.kahlerusa.com/",
    "Kala" : "https://kalabrand.com/",
