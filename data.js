@@ -789,6 +789,31 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Amplifier" : "30W",
+         "Dimensions" : "17\" x 16.2\" x 12\"",
+         "Guitar Inputs" : "1/4\" 0dB (500 kΩ); 1/4\" -15dB (75 kΩ)",
+         "Speaker" : "8\"",
+         "Weight" : "23 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "bass guitar",
+      "link" : "https://ampeg.com/rocket-bass/rb-108.html",
+      "make" : "Ampeg",
+      "manuals" : {
+         "Manual" : "Owner’s Manual - English .pdf",
+         "Quick Start Guide" : "Quick Start Guide - English .pdf"
+      },
+      "model" : "RB-108",
+      "notes" : [
+         "bass guitar"
+      ],
+      "type" : "Amplifier",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Amplifier" : "5W",
          "Battery Compartment" : "AA x 6",
          "Dimensions" : "6-1/4\" x 5\" x 9-1/2\"",
@@ -798,9 +823,13 @@ var equipment = [
          "Weight" : "6lbs"
       },
       "image" : true,
+      "instrument" : "guitar",
       "link" : "https://pignoseamps.com/product/legendary-7-100/",
       "make" : "Pignose",
       "model" : "7-100",
+      "notes" : [
+         "guitar"
+      ],
       "type" : "Amplifier",
       "year" : "2000s"
    },
@@ -815,12 +844,16 @@ var equipment = [
          "Weight" : "40g (1.41oz)"
       },
       "image" : true,
+      "instrument" : "guitar",
       "link" : "https://voxamps.com/product/amplug/",
       "make" : "VOX",
       "manuals" : {
          "Owner’s Manual" : "amPlug_30_CR_Metal.pdf"
       },
       "model" : "amPlug AC30",
+      "notes" : [
+         "guitar"
+      ],
       "type" : "Amplifier",
       "year" : "2009"
    },
@@ -835,12 +868,16 @@ var equipment = [
          "Speaker" : "3\""
       },
       "image" : true,
+      "instrument" : "guitar",
       "link" : "https://www.blackstaramps.com/uk/products/fly-3",
       "make" : "Blackstar",
       "manuals" : {
          "Owner’s Manual" : "fly-handbook.pdf"
       },
       "model" : "Fly 3",
+      "notes" : [
+         "guitar"
+      ],
       "type" : "Amplifier",
       "year" : "2020"
    },
@@ -858,9 +895,13 @@ var equipment = [
          "Weight" : "12 ounces"
       },
       "image" : true,
+      "instrument" : "guitar",
       "link" : "https://travelerguitar.com/products/ma-5-micro-amp",
       "make" : "Traveler",
       "model" : "MA-5 Micro Amp",
+      "notes" : [
+         "guitar"
+      ],
       "type" : "Amplifier",
       "year" : "2024"
    },
@@ -877,6 +918,7 @@ var equipment = [
          "Weight" : "17lbs (7.7kg)"
       },
       "image" : true,
+      "instrument" : "guitar",
       "link" : "https://line6.com/legacy/spideriv15",
       "make" : "Line 6",
       "manuals" : {
@@ -884,6 +926,7 @@ var equipment = [
       },
       "model" : "Spider IV 15",
       "notes" : [
+         "guitar",
          "MkI",
          "FBV Express"
       ],
@@ -907,6 +950,7 @@ var equipment = [
       },
       "featured" : true,
       "image" : true,
+      "instrument" : "guitar",
       "link" : "https://usa.yamaha.com/products/musical_instruments/guitars_basses/amps_accessories/thr-ii/",
       "make" : "Yamaha",
       "manuals" : {
@@ -914,6 +958,7 @@ var equipment = [
       },
       "model" : "THR30II Wireless",
       "notes" : [
+         "guitar",
          "Relay G10"
       ],
       "type" : "Amplifier",
@@ -1425,13 +1470,44 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Bypass" : "True/Buffered",
+         "Circuit" : "Digital",
+         "Dimensions" : "4.5\" x 4\" x 2.4\"",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "100 Ω",
+         "Power Consumption" : "300mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.strymon.net/product/bluesky/",
+      "make" : "Strymon",
+      "manuals" : {
+         "Manual" : "blueSky_v2_UserManual_RevC.pdf",
+         "Quick Start Guide" : "blueSky_v2_QuickStart_Website_RevA.pdf",
+         "Secondary Functions" : "Strymon_Secondary_Functions_Mobile_RevA.pdf",
+         "Secondary Functions (mobile)" : "Strymon_Secondary_Functions_RevA.pdf"
+      },
+      "model" : "blueSky",
+      "notes" : [
+         "reverb; v.2"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Audio Channels" : "Mono",
-         "Bypass" : "Buffered Bypass",
+         "Bypass" : "Buffered",
          "Circuit" : "Analog",
-         "Current Draw" : "15mA",
          "DI Output" : "XLR balanced",
          "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
          "Direct Output" : "1/4\"",
+         "Input Impedance" : "2 MΩ",
+         "Output Impedance" : "600 Ω",
+         "Power Consumption" : "100mA",
          "Power Supply" : "9V"
       },
       "image" : true,
@@ -1506,10 +1582,12 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Audio Channels" : "Mono",
-         "Bypass" : "Buffered Bypass",
+         "Bypass" : "Buffered",
          "Circuit" : "Analog",
-         "Current Draw" : "25mA",
          "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "600 Ω",
+         "Power Consumption" : "100mA",
          "Power Supply" : "9V"
       },
       "image" : true,
@@ -1529,10 +1607,11 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Audio Channels" : "Mono",
-         "Bypass" : "True Bypass",
+         "Bypass" : "True",
          "Circuit" : "Analog",
-         "Current Draw" : "3mA",
          "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
+         "Input Impedance" : "130 kΩ",
+         "Power Consumption" : "25mA",
          "Power Supply" : "9V"
       },
       "image" : true,
@@ -1637,8 +1716,10 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Audio Channels" : "Mono",
-         "Current Draw" : "50mA",
          "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "50mA",
          "Power Supply" : "9V",
          "Serial" : "AV 20887",
          "Weight" : "420g (15oz)"
@@ -1799,6 +1880,23 @@ var equipment = [
       ],
       "type" : "Pickup",
       "year" : "2018"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "6.5\" x 1.97\" x 1.5\"",
+         "Outputs" : "11 isolated: (6) 9V 100mA; (2) 9V 400mA; (1) 12V 100mA; (1) 18V 100mA; (1) 5V 2A (USB)",
+         "Power Supply" : "240V 400mA",
+         "Weight" : "1.18 lbs"
+      },
+      "image" : true,
+      "make" : "Godtone",
+      "model" : "GD-02",
+      "notes" : [
+         "pedalboard power"
+      ],
+      "type" : "Rack Hardware",
+      "year" : "2024"
    },
    {
       "category" : "Hardware",
@@ -3359,6 +3457,7 @@ var equipment = [
 
 var links = {
    "AKG" : "https://www.akg.com/",
+   "Ampeg" : "https://ampeg.com/",
    "Apple" : "https://www.apple.com/",
    "Audio Technica" : "https://www.audio-technica.com/en-us/",
    "BOSS" : "https://www.boss.info/us/",
@@ -3384,6 +3483,7 @@ var links = {
    "Furman" : "https://www.furmanpower.com/",
    "GHS" : "https://www.ghsstrings.com/",
    "Gator" : "https://www.gatorcases.com/",
+   "Godtone" : "",
    "Gretsch" : "https://www.gretschguitars.com/",
    "Guitto" : "https://en.guittochina.com/",
    "Guyker" : "https://www.guyker.com/",
@@ -3426,6 +3526,7 @@ var links = {
    "Stageline" : "https://www.stagelinestands.com/",
    "Stagg" : "https://staggmusic.com/",
    "String Swing" : "https://www.stringswing.com/",
+   "Strymon" : "https://www.strymon.net/",
    "Studio Projects" : "http://www.studioprojects.com/",
    "Tama" : "https://www.tama.com/",
    "Tapco" : "https://www.mackie.com/",
