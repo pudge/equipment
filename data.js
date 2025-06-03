@@ -1008,6 +1008,7 @@ var equipment = [
       "model" : "Killer 2710",
       "notes" : [
          "locking tremolo",
+         "not a Spyder",
          "Deluxe Stringlock"
       ],
       "type" : "Guitar Accessory",
@@ -1609,6 +1610,55 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "2.2\" x 4.8\" x 1.6\"",
+         "Power Consumption" : "30 mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/collections/overdrive-distortions/products/moonshine-v2",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-MoonshineV2-Manual-English.pdf"
+      },
+      "model" : "Moonshine",
+      "notes" : [
+         "overdrive/distortion; v2"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
+         "Other" : "Footswitch 1/4\" input",
+         "Power Consumption" : "43 mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-MorningGloryV4-Manual-English.pdf"
+      },
+      "model" : "Morning Glory",
+      "notes" : [
+         "overdrive; v4"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -1629,36 +1679,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2020"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Detection Accuracy" : "±0.1 cent",
-         "Detection Range" : "C0 (16.35 Hz)–C8 (4186 Hz)",
-         "Dimensions" : "2.76\" x 3.15\" x 1.85\"",
-         "Input Impedance" : "10 MΩ",
-         "Power Consumption" : "40mA max",
-         "Power Supply" : "9V",
-         "Reference Pitch" : "A4=436-445 Hz",
-         "Scale" : "12-note equal temperament",
-         "Serial" : "",
-         "Weight" : "6.98 oz"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.korg.com/us/products/tuners/pbxsbass/",
-      "make" : "Korg",
-      "manuals" : {
-         "Owner’s Manual" : "Pitchblack_XS_Bass_OM_EFGSCJ1.pdf"
-      },
-      "model" : "Pitchblack XS Bass",
-      "notes" : [
-         "tuner"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
    },
    {
       "category" : "Hardware",
