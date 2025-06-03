@@ -1763,6 +1763,24 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Dimensions" : "2\"x2\"x1.25\"",
+         "Serial" : ""
+      },
+      "link" : "https://jhspedals.info/collections/utilities/products/red-remote",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS_RED_REMOTE_Manual_EN.pdf"
+      },
+      "model" : "Red Remote",
+      "notes" : [
+         "switch"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
          "Computer Interface" : "Micro USB",
