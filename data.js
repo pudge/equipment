@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-02T12:00:00+0000")
+var lastModified = new Date("2025-06-03T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -789,22 +789,25 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "30W",
-         "Dimensions" : "17\" x 16.2\" x 12\"",
-         "Guitar Inputs" : "1/4\" 0dB (500 kΩ); 1/4\" -15dB (75 kΩ)",
-         "Speaker" : "8\"",
-         "Weight" : "23 lbs"
+         "Amplifier" : "40W",
+         "Analog Inputs" : "1/4\", 1/8\"",
+         "Analog Outputs" : "XLR balanced, 1/8\"",
+         "Dimensions" : "16.5\" x 16.5\" x 12\"",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "3.3 kΩ",
+         "Serial" : "",
+         "Speaker" : "10\"",
+         "Weight" : "18 lbs"
       },
       "hide" : true,
       "image" : true,
       "instrument" : "bass guitar",
-      "link" : "https://ampeg.com/rocket-bass/rb-108.html",
-      "make" : "Ampeg",
+      "link" : "https://www.fender.com/products/rumble-40",
+      "make" : "Fender",
       "manuals" : {
-         "Manual" : "Owner’s Manual - English .pdf",
-         "Quick Start Guide" : "Quick Start Guide - English .pdf"
+         "Manual" : "237030_bamp_manual_all_revA.pdf"
       },
-      "model" : "RB-108",
+      "model" : "Rumble 40",
       "notes" : [
          "bass guitar"
       ],
@@ -1557,7 +1560,7 @@ var equipment = [
       },
       "model" : "Flight Delay",
       "notes" : [
-         "delay"
+         "delay; white"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -3457,7 +3460,6 @@ var equipment = [
 
 var links = {
    "AKG" : "https://www.akg.com/",
-   "Ampeg" : "https://ampeg.com/",
    "Apple" : "https://www.apple.com/",
    "Audio Technica" : "https://www.audio-technica.com/en-us/",
    "BOSS" : "https://www.boss.info/us/",
