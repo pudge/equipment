@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-03T12:00:00+0000")
+var lastModified = new Date("2025-06-07T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1255,7 +1255,7 @@ var equipment = [
          "Connector" : "XLR-3",
          "Dimensions" : "Ø 48 x 180mm",
          "Frequency Response" : "40 - 16000Hz",
-         "Min. Terminating Impedance" : "1000Ω",
+         "Min. Terminating Impedance" : "1MΩ",
          "Nominal Impedance" : "350Ω",
          "Sensitivity in free field, no load (1kHz)" : "2.7 mV/Pa",
          "Weight" : "330g"
@@ -1289,7 +1289,7 @@ var equipment = [
          "Operating Time" : "> 8h",
          "Peak Deviation" : "± 48kHz",
          "Polar Pattern" : "Super Cardioid",
-         "Power Consumption" : "~130 mA (EK 100), ≤ 170mA (SK 100)",
+         "Power Consumption" : "~130mA (EK 100), ≤ 170mA (SK 100)",
          "S/N Ratio (at 1mV and peak deviation)" : "≥ 110dB",
          "Sensitivity" : "<2.5 μV at 52 dBA(rms) S/N ratio (EK 100), 40 mV/Pa (ME-4)",
          "Serial" : "Transmitter: 163351, Receiver: 135282",
@@ -1343,16 +1343,16 @@ var equipment = [
       "detail" : {
          "Audio frequency Bandwidth" : "20 - 20000Hz",
          "Bass Cut Filter" : "300Hz - 12dB/octave",
-         "Current" : "<= 3mA",
+         "Current" : "≤ 3mA",
          "Diameter" : "54mm",
-         "Electrical Impedance" : "<= 200Ω",
+         "Electrical Impedance" : "≤ 200Ω",
          "Equivalent Noise Level" : "16dB-A",
          "Gender" : "Male",
          "Length" : "165mm",
          "Net Weight" : "530g",
          "Polar Pattern" : "Cardioid",
          "Preattenuation Pad" : "-20dB",
-         "Recommended load impedance" : ">= 1000Ω",
+         "Recommended load impedance" : "≥ 1MΩ",
          "Sensitivity" : "20 mV/Pa",
          "Signal to Noise" : "78dB-A",
          "Type" : "Balanced XLR",
@@ -1436,7 +1436,7 @@ var equipment = [
          "Digital Inputs" : "optical, coax",
          "Dimensions" : "170mm x 261mm x 280mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
          "Frequency Range" : "50 - 22000Hz",
-         "Input Impedance" : "18000Ω",
+         "Input Impedance" : "18MΩ",
          "Phones" : "1/4\" stereo",
          "Sample Rates" : "32, 44.1, 48, 96kHz",
          "Serial" : "ZR32193",
@@ -1474,28 +1474,151 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
          "Bypass" : "True/Buffered",
-         "Circuit" : "Digital",
-         "Dimensions" : "4.5\" x 4\" x 2.4\"",
-         "Input Impedance" : "1 MΩ",
-         "Output Impedance" : "100 Ω",
-         "Power Consumption" : "300mA",
+         "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
+         "Other" : "Bucket Brigade 3207 chipset",
+         "Power Consumption" : "57mA",
          "Power Supply" : "9V",
          "Serial" : ""
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://www.strymon.net/product/bluesky/",
-      "make" : "Strymon",
+      "instrument" : "chorus",
+      "link" : "https://jhspedals.info/products/emperor-v2",
+      "make" : "JHS",
       "manuals" : {
-         "Manual" : "blueSky_v2_UserManual_RevC.pdf",
-         "Quick Start Guide" : "blueSky_v2_QuickStart_Website_RevA.pdf",
-         "Secondary Functions" : "Strymon_Secondary_Functions_Mobile_RevA.pdf",
-         "Secondary Functions (mobile)" : "Strymon_Secondary_Functions_RevA.pdf"
+         "Manual" : "JHS-Pedals-EmperorV2-Manual-English.pdf"
       },
-      "model" : "blueSky",
+      "model" : "Emperor V2",
       "notes" : [
-         "reverb; v.2"
+         "chorus"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
+         "Circuit" : "Digital",
+         "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
+         "Power Consumption" : "150mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "delay",
+      "link" : "https://www.ehx.com/products/oceans-11/",
+      "make" : "Electro-Harmonix",
+      "manuals" : {
+         "Manual" : "canyon-manual.pdf"
+      },
+      "model" : "Canyon",
+      "notes" : [
+         "delay"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "4.6\" x 3.7\" x 1.5\"",
+         "Other" : "Footswitch 1/4\" input; Morning Glory V4; Moonshine V2",
+         "Power Consumption" : "108mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "overdrive",
+      "link" : "https://jhspedals.info/products/double-barrel-v4",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-DoubleBarrelV4-Manual-English.pdf"
+      },
+      "model" : "Double Barrel V4",
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\", XLR balanced",
+         "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
+         "Input Impedance" : "> 1MΩ",
+         "Other" : "±15dB @ 10kHz (treble); ±15dB @ 1.2kHz (mid); ±15dB @ 270Hz (bass; 3dB freq); low cut -3dB @ 212Hz",
+         "Output Impedance" : "520Ω",
+         "Power Consumption" : "45.5mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "preamp",
+      "link" : "https://jhspedals.info/products/clover",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-Clover-Manual-English.pdf"
+      },
+      "model" : "Clover",
+      "notes" : [
+         "preamp"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
+         "Circuit" : "Digital",
+         "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
+         "Power Consumption" : "150mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "reverb",
+      "link" : "https://www.ehx.com/products/canyon/",
+      "make" : "Electro-Harmonix",
+      "manuals" : {
+         "Manual" : "oceans-11-manual.pdf"
+      },
+      "model" : "Oceans 11",
+      "notes" : [
+         "reverb"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Bypass" : "True",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "<10 kΩ",
+         "Power Consumption" : "6.3mA",
+         "Power Supply" : "9V"
+      },
+      "hide" : true,
+      "link" : "https://www.jimdunlop.com/cae-wah/",
+      "make" : "Dunlop",
+      "model" : "MC404 CAE WAH",
+      "notes" : [
+         "wah"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1512,7 +1635,8 @@ var equipment = [
          "Input Impedance" : "2 MΩ",
          "Output Impedance" : "600 Ω",
          "Power Consumption" : "100mA",
-         "Power Supply" : "9V"
+         "Power Supply" : "9V",
+         "Serial" : ""
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/deluxe-bass-big-muff-pi",
@@ -1545,30 +1669,6 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Other" : "1/4\" Expression Pedal jack",
-         "Power Consumption" : "85 mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://jhspedals.info/collections/all-products/products/flight-delay?variant=44569062309988",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-FlightDelay-Manual-English.pdf"
-      },
-      "model" : "Flight Delay",
-      "notes" : [
-         "delay; white"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
          "Depth" : "90mm (3 9/16”)",
          "Height" : "43mm (1 3/4”)",
          "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
@@ -1592,7 +1692,8 @@ var equipment = [
          "Input Impedance" : "1 MΩ",
          "Output Impedance" : "600 Ω",
          "Power Consumption" : "100mA",
-         "Power Supply" : "9V"
+         "Power Supply" : "9V",
+         "Serial" : ""
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/metal-muff",
@@ -1613,7 +1714,7 @@ var equipment = [
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
          "Dimensions" : "2.2\" x 4.8\" x 1.6\"",
-         "Power Consumption" : "30 mA",
+         "Power Consumption" : "30mA",
          "Power Supply" : "9V",
          "Serial" : ""
       },
@@ -1624,9 +1725,9 @@ var equipment = [
       "manuals" : {
          "Manual" : "JHS-Pedals-MoonshineV2-Manual-English.pdf"
       },
-      "model" : "Moonshine",
+      "model" : "Moonshine V2",
       "notes" : [
-         "overdrive/distortion; v2"
+         "overdrive/distortion"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1638,7 +1739,7 @@ var equipment = [
          "Analog Outputs" : "1/4\"",
          "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
          "Other" : "Footswitch 1/4\" input",
-         "Power Consumption" : "43 mA",
+         "Power Consumption" : "43mA",
          "Power Supply" : "9V",
          "Serial" : ""
       },
@@ -1649,9 +1750,9 @@ var equipment = [
       "manuals" : {
          "Manual" : "JHS-Pedals-MorningGloryV4-Manual-English.pdf"
       },
-      "model" : "Morning Glory",
+      "model" : "Morning Glory V4",
       "notes" : [
-         "overdrive; v4"
+         "overdrive"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1715,9 +1816,10 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\", XLR balanced",
+         "Bypass" : "True/Buffered",
          "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
          "Other" : "Ground-lift switch; always-on buffer",
-         "Power Consumption" : "32 mA",
+         "Power Consumption" : "32mA",
          "Power Supply" : "9V",
          "Serial" : ""
       },
@@ -1728,9 +1830,9 @@ var equipment = [
       "manuals" : {
          "Manual" : "JHS-Pedals-PulpNPeelV4-Manual-English.pdf"
       },
-      "model" : "Pulp ’N’ Peel",
+      "model" : "Pulp ’N’ Peel V4",
       "notes" : [
-         "compressor; v4"
+         "compressor"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1766,6 +1868,7 @@ var equipment = [
          "Dimensions" : "2\"x2\"x1.25\"",
          "Serial" : ""
       },
+      "image" : true,
       "link" : "https://jhspedals.info/collections/utilities/products/red-remote",
       "make" : "JHS",
       "manuals" : {
@@ -1783,13 +1886,14 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
+         "Bypass" : "True/Buffered",
          "Computer Interface" : "Micro USB",
          "Detection Accuracy" : "±0.1 cent",
          "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
          "Dimensions" : "5.1\" x 2.6\" x 2.1\"",
          "Input Impedance" : "5 MΩ",
          "Output Impedance" : "1 LΩ",
-         "Power Consumption" : "85mA nominal",
+         "Power Consumption" : "85mA",
          "Power Supply" : "9V",
          "Reference Pitch" : "A4=390Hz-490Hz",
          "Scale" : "configurable",
@@ -1815,6 +1919,21 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "hide" : true,
+      "link" : "https://www.jimdunlop.com/volume-x-mini-pedal/",
+      "make" : "Dunlop",
+      "model" : "DVP4 Volume (X) Mini",
+      "notes" : [
+         "volume"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "9.25\" x 2.76\" x 3.94\""
+      },
       "image" : true,
       "link" : "https://www.quiklok.com/product/vp-2611-mono-volume-pedal/",
       "make" : "Quick-Lok",
@@ -1832,7 +1951,7 @@ var equipment = [
          "Current @9V" : "160µA",
          "Magnet" : "Ceramic and Steel",
          "Maximum Supply" : "27V DC",
-         "Output Impedance" : "10000Ω",
+         "Output Impedance" : "10MΩ",
          "Output Noise (60 Hz)" : "-107 (single-coil), -109 (dual-coil)",
          "Output Voltage (finger, thumb)" : "finger, thumb: 1.00V (single-coil), 2.00V (dual-coil); thump: 3.00V (single-coil), 4.50V (dual-coil)",
          "Resonant Frequency" : "5.40 kHz (single-coil), 2.50 kHz (dual-coil)"
@@ -1999,7 +2118,7 @@ var equipment = [
          "Detection Accuracy" : "±0.1 cent",
          "Detection Range" : "A0 (27.5 Hz)–C8 (4186 Hz)",
          "Dimensions" : "18.94\" x 4.45\" x 1.81\"",
-         "Power Consumption" : "75mA nominal",
+         "Power Consumption" : "75mA",
          "Reference Pitch" : "A4=438-455 Hz",
          "Scale" : "12-note equal temperament",
          "Serial" : "13751",
