@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-07T12:00:00+0000")
+var lastModified = new Date("2025-06-08T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1607,25 +1607,6 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Bypass" : "True",
-         "Input Impedance" : "1 MΩ",
-         "Output Impedance" : "<10 kΩ",
-         "Power Consumption" : "6.3mA",
-         "Power Supply" : "9V"
-      },
-      "hide" : true,
-      "link" : "https://www.jimdunlop.com/cae-wah/",
-      "make" : "Dunlop",
-      "model" : "MC404 CAE WAH",
-      "notes" : [
-         "wah"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
          "Circuit" : "Analog",
@@ -1635,8 +1616,7 @@ var equipment = [
          "Input Impedance" : "2 MΩ",
          "Output Impedance" : "600 Ω",
          "Power Consumption" : "100mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
+         "Power Supply" : "9V"
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/deluxe-bass-big-muff-pi",
@@ -1650,6 +1630,18 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2021"
+   },
+   {
+      "category" : "Hardware",
+      "hide" : true,
+      "link" : "https://www.jimdunlop.com/volume-x-mini-pedal/",
+      "make" : "Dunlop",
+      "model" : "DVP4 Volume (X) Mini",
+      "notes" : [
+         "volume"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1685,6 +1677,25 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Bypass" : "True",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "<10 kΩ",
+         "Power Consumption" : "6.3mA",
+         "Power Supply" : "9V"
+      },
+      "hide" : true,
+      "link" : "https://www.jimdunlop.com/cae-wah/",
+      "make" : "Dunlop",
+      "model" : "MC404 CAE WAH",
+      "notes" : [
+         "wah"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
          "Circuit" : "Analog",
@@ -1692,8 +1703,7 @@ var equipment = [
          "Input Impedance" : "1 MΩ",
          "Output Impedance" : "600 Ω",
          "Power Consumption" : "100mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
+         "Power Supply" : "9V"
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/metal-muff",
@@ -1919,18 +1929,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "hide" : true,
-      "link" : "https://www.jimdunlop.com/volume-x-mini-pedal/",
-      "make" : "Dunlop",
-      "model" : "DVP4 Volume (X) Mini",
-      "notes" : [
-         "volume"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
       "detail" : {
          "Dimensions" : "9.25\" x 2.76\" x 3.94\""
       },
@@ -1943,6 +1941,40 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2016"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
+         "Material" : "Aluminum",
+         "Mods" : "4XMOD Pro V2; 4XMOD"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.templeaudio.com/templeboards",
+      "make" : "Temple Audio",
+      "model" : "Templeboard DUO 34",
+      "notes" : [
+         "temple red"
+      ],
+      "type" : "Pedalboard Hardware",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "12.28\" x 2.12\" x 1\"",
+         "Outputs" : "9V 500mA (13), 9V 500mA/12V 375 mA/18V 250mA (2), USB-C 5V 1.5A (1), 24V thru, center-positive (1)",
+         "Power Supply" : "24V 4A / 96W",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.walrusaudio.com/products/canvas-power-15?variant=45194582524139",
+      "make" : "Walrus Audio",
+      "model" : "Canvas Power 15",
+      "type" : "Pedalboard Hardware",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -3689,10 +3721,12 @@ var links = {
    "Studio Projects" : "http://www.studioprojects.com/",
    "Tama" : "https://www.tama.com/",
    "Tapco" : "https://www.mackie.com/",
+   "Temple Audio" : "https://www.templeaudio.com/",
    "Thalia" : "https://www.thaliacapos.com/",
    "Traveler" : "https://travelerguitar.com/",
    "Ultimate Support" : "https://www.ultimatesupport.com/",
    "VOX" : "https://voxamps.com/",
+   "Walrus Audio" : "https://www.walrusaudio.com/",
    "Warwick" : "https://www.warwick.de/en/Warwick-.html",
    "Washburn" : "https://www.washburn.com/",
    "Wittner" : "https://www.wittner-gmbh.de/",
