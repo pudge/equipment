@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-08T12:00:00+0000")
+var lastModified = new Date("2025-06-11T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1474,139 +1474,6 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Bypass" : "True/Buffered",
-         "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
-         "Other" : "Bucket Brigade 3207 chipset",
-         "Power Consumption" : "57mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "chorus",
-      "link" : "https://jhspedals.info/products/emperor-v2",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-EmperorV2-Manual-English.pdf"
-      },
-      "model" : "Emperor V2",
-      "notes" : [
-         "chorus"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Audio Channels" : "Mono",
-         "Bypass" : "Buffered",
-         "Circuit" : "Digital",
-         "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
-         "Power Consumption" : "150mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "delay",
-      "link" : "https://www.ehx.com/products/oceans-11/",
-      "make" : "Electro-Harmonix",
-      "manuals" : {
-         "Manual" : "canyon-manual.pdf"
-      },
-      "model" : "Canyon",
-      "notes" : [
-         "delay"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Dimensions" : "4.6\" x 3.7\" x 1.5\"",
-         "Other" : "Footswitch 1/4\" input; Morning Glory V4; Moonshine V2",
-         "Power Consumption" : "108mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "overdrive",
-      "link" : "https://jhspedals.info/products/double-barrel-v4",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-DoubleBarrelV4-Manual-English.pdf"
-      },
-      "model" : "Double Barrel V4",
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\", XLR balanced",
-         "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
-         "Input Impedance" : "> 1MΩ",
-         "Other" : "±15dB @ 10kHz (treble); ±15dB @ 1.2kHz (mid); ±15dB @ 270Hz (bass; 3dB freq); low cut -3dB @ 212Hz",
-         "Output Impedance" : "520Ω",
-         "Power Consumption" : "45.5mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "preamp",
-      "link" : "https://jhspedals.info/products/clover",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-Clover-Manual-English.pdf"
-      },
-      "model" : "Clover",
-      "notes" : [
-         "preamp"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Audio Channels" : "Mono",
-         "Bypass" : "Buffered",
-         "Circuit" : "Digital",
-         "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
-         "Power Consumption" : "150mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "reverb",
-      "link" : "https://www.ehx.com/products/canyon/",
-      "make" : "Electro-Harmonix",
-      "manuals" : {
-         "Manual" : "oceans-11-manual.pdf"
-      },
-      "model" : "Oceans 11",
-      "notes" : [
-         "reverb"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
          "Circuit" : "Analog",
@@ -1630,18 +1497,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2021"
-   },
-   {
-      "category" : "Hardware",
-      "hide" : true,
-      "link" : "https://www.jimdunlop.com/volume-x-mini-pedal/",
-      "make" : "Dunlop",
-      "model" : "DVP4 Volume (X) Mini",
-      "notes" : [
-         "volume"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1677,19 +1532,27 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Bypass" : "True",
-         "Input Impedance" : "1 MΩ",
-         "Output Impedance" : "<10 kΩ",
-         "Power Consumption" : "6.3mA",
-         "Power Supply" : "9V"
+         "Analog Inputs" : "1/4\" x 2, 1/4\" return x 2",
+         "Analog Outputs" : "1/4\" x 2, 1/4\" stereo send",
+         "Computer Interface" : "USB-B",
+         "Dimensions" : "12.4\" x 4.7\" x 2.7\"",
+         "Expression" : "TRS",
+         "MIDI" : "In/Out+Thru",
+         "Phones" : "1/4\" stereo",
+         "Power Consumption" : "3A",
+         "Power Supply" : "9V",
+         "Serial" : "",
+         "Weight" : "3.3lbs"
       },
+      "featured" : true,
       "hide" : true,
-      "link" : "https://www.jimdunlop.com/cae-wah/",
-      "make" : "Dunlop",
-      "model" : "MC404 CAE WAH",
-      "notes" : [
-         "wah"
-      ],
+      "image" : true,
+      "link" : "https://line6.com/hx-stomp-xl/",
+      "make" : "Line 6",
+      "manuals" : {
+         "Manual" : "HX Stomp XL 3.80 Owner's Manual - English .pdf"
+      },
+      "model" : "HX Stomp XL",
       "type" : "Pedal",
       "year" : "2025"
    },
@@ -1717,55 +1580,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2020"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Dimensions" : "2.2\" x 4.8\" x 1.6\"",
-         "Power Consumption" : "30mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://jhspedals.info/collections/overdrive-distortions/products/moonshine-v2",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-MoonshineV2-Manual-English.pdf"
-      },
-      "model" : "Moonshine V2",
-      "notes" : [
-         "overdrive/distortion"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
-         "Other" : "Footswitch 1/4\" input",
-         "Power Consumption" : "43mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-MorningGloryV4-Manual-English.pdf"
-      },
-      "model" : "Morning Glory V4",
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1824,32 +1638,6 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\", XLR balanced",
-         "Bypass" : "True/Buffered",
-         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
-         "Other" : "Ground-lift switch; always-on buffer",
-         "Power Consumption" : "32mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://jhspedals.info/collections/compression/products/pulp-n-peel-v4",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-PulpNPeelV4-Manual-English.pdf"
-      },
-      "model" : "Pulp ’N’ Peel V4",
-      "notes" : [
-         "compressor"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
          "Audio Channels" : "Mono",
          "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
          "Input Impedance" : "1 MΩ",
@@ -1875,18 +1663,23 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Dimensions" : "2\"x2\"x1.25\"",
-         "Serial" : ""
+         "Dimensions" : "9.9\" x 4.0\" x 3.25\" (8.7\" x 3.0\" pedal)",
+         "Impedance" : "10 KΩ",
+         "Output" : "1/4\" TS x 2",
+         "Serial" : "",
+         "Taper" : "Linear",
+         "Weight" : "3.5lbs"
       },
+      "hide" : true,
       "image" : true,
-      "link" : "https://jhspedals.info/collections/utilities/products/red-remote",
-      "make" : "JHS",
+      "link" : "https://missionengineering.com/shop/sp1-l6h/",
+      "make" : "Mission Engineering",
       "manuals" : {
-         "Manual" : "JHS_RED_REMOTE_Manual_EN.pdf"
+         "Manual" : "Mission-EP1_SP1_QS-Guide.pdf"
       },
-      "model" : "Red Remote",
+      "model" : "SP1-L6H",
       "notes" : [
-         "switch"
+         "expression (dual)"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1945,6 +1738,26 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
+         "Outputs" : "9V 500mA (7); 9V 500mA/12V 375 mA/18V 250mA; 9V/12V 3A (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
+         "Power Supply" : "24V 4A / 96W",
+         "Serial" : "",
+         "Weight" : "0.93lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
+      "make" : "Walrus Audio",
+      "manuals" : {
+         "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
+      },
+      "model" : "Canvas Power HP+",
+      "type" : "Pedalboard Hardware",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
          "Material" : "Aluminum",
          "Mods" : "4XMOD Pro V2; 4XMOD"
@@ -1957,22 +1770,6 @@ var equipment = [
       "notes" : [
          "temple red"
       ],
-      "type" : "Pedalboard Hardware",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Dimensions" : "12.28\" x 2.12\" x 1\"",
-         "Outputs" : "9V 500mA (13), 9V 500mA/12V 375 mA/18V 250mA (2), USB-C 5V 1.5A (1), 24V thru, center-positive (1)",
-         "Power Supply" : "24V 4A / 96W",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.walrusaudio.com/products/canvas-power-15?variant=45194582524139",
-      "make" : "Walrus Audio",
-      "model" : "Canvas Power 15",
       "type" : "Pedalboard Hardware",
       "year" : "2025"
    },
@@ -3697,6 +3494,7 @@ var links = {
    "Mahalo" : "https://mahaloukuleles.com/",
    "Martin" : "https://www.martinguitar.com/",
    "Meinl" : "https://meinlcymbals.com/",
+   "Mission Engineering" : "https://missionengineering.com/",
    "Northfield" : "https://www.northfieldinstruments.com/",
    "O.C. White" : "https://www.ocwhite.com/",
    "Peavey" : "https://peavey.com/",
