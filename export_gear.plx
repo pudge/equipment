@@ -81,6 +81,8 @@ sub get_gear {
             not_mine        => bool($x->{'Not Mine'}),
             inactive        => bool($x->{'Inactive'}),
             no_reverb       => bool($x->{'No Reverb'}),
+            current_pedal   => bool($x->{'Current Pedal'}),
+            current_rack    => bool($x->{'Current Rack'}),
         };
 
         for my $k (keys %$y) {

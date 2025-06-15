@@ -1,3 +1,6 @@
+const IMAGE_TYPE = 'webp'
+const IMAGE_PATH = '/images/'
+
 const COL = {
   INFO     :  0,
   IMG      :  1,
@@ -34,32 +37,37 @@ const columnOrder = [
   [ COL.INST,     'asc'  ],
   [ COL.MAKE,     'asc'  ],
   [ COL.MODEL,    'asc'  ],
-];
-var columnMap = {};
-columnMap[COL.MODEL] = COL.CAT;
-var anchorText;
-var equipmentOrig = {};
-var currentImgRow = null;
-var touchstartX, touchstartY, touchendX, touchendY;
+]
+var columnMap = {}
+columnMap[COL.MODEL] = COL.CAT
+var anchorText
+var equipmentOrig = {}
+var currentImgRow = null
+var touchstartX, touchstartY, touchendX, touchendY
 
 // link handling
 
 function linkHtml(text) {
-  return links[text] ? makeLink(text, links[text]) : text;
+  return links[text] ? makeLink(text, links[text]) : text
 }
 
 function makeLink(text, link) {
-  return '<a target="_blank" href="'+link+'">'+text+'<\/a>';
+  return '<a target="_blank" href="'+link+'">'+text+'<\/a>'
 }
 
 function linkShow(acc, text, other) {
   if (!text) {
-    text = [acc, equipment_data[acc]['type']].join(' ');
+    text = [acc, equipment_data[acc]['type']].join(' ')
   }
   else if (!acc && other) {
-    return '<span title="' + other + '">' + text + '</span>';
+    return '<span title="' + other + '">' + text + '</span>'
   }
-  return '<a href="#" onclick="doShow(\''+ acc + '\'); return false">' + text + '</a>';
+  else if (!other) {
+    return '<a href="#" onclick="doShow(\''+ acc + '\'); return false">' + text + '</a>'
+  }
+  else {
+    return '<a href="#" onclick="doShow(\''+ acc + '\'); return false" title="' + other + '">' + text + '</a>'
+  }
 }
 
 function linkItNotes(oData) {
@@ -70,11 +78,17 @@ function linkItNotes(oData) {
   else if (oData['hide']) {
     thisData.push('HIDDEN');
   }
+  else if (oData['current_pedal']) {
+    thisData.push('CURRENT_PEDAL');
+  }
+  else if (oData['current_rack']) {
+    thisData.push('CURRENT_RACK');
+  }
 
   var icons = [ clipIt( fixModelName(oData['model']) ) ];
   var newData = [];
   thisData.forEach(x => {
-    if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN') {
+    if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_PEDAL' || x === 'CURRENT_RACK') {
       icons.push(
         x === 'LINKME'
           ? linkShow(oData['model'], '\u{1F517}')
@@ -84,6 +98,10 @@ function linkItNotes(oData) {
           ? linkShow('', '\u{1F91D}', 'holding for a friend')
         : x === 'HIDDEN'
           ? linkShow('', '\u{1F977}', 'hidden')
+        : x === 'CURRENT_PEDAL'
+          ? linkShow('current_pedal', '\u{1F9B6}', 'in pedalboard')
+        : x === 'CURRENT_RACK'
+          ? linkShow('current_rack', '\u{1F5C4}\u{FE0F}', 'in rack')
           : ''
       );
     }
@@ -119,7 +137,7 @@ function linkItFindValue(oData) {
     return '';
   }
   var link = 'https://reverb.com/marketplace?query='
-    + escape([oData['make'], oData['model'], oData['type']].join(' '))
+    + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
     // + '&condition=used'
   return `<a target="_blank" href="${link}"><img class="findvalue" src="/reverb.webp" /></a>`
 }
@@ -148,8 +166,8 @@ function imgIt(oData) {
     var alt = [oData['make'], oData['model'], oData['type']].join(' ');
     var name = fixModelName(oData['model']);
     if (oData['image'] === true) {
-      oData['image'] = './images/' + name + '.png';
-      oData['image_sm'] = './images/sm/' + name + '-sm.png';
+      oData['image'] = '.' + IMAGE_PATH + name + '.' + IMAGE_TYPE;
+      oData['image_sm'] = '.' + IMAGE_PATH + 'sm/' + name + '-sm.' + IMAGE_TYPE;
     }
     text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + (md5s[oData['image']] || '').substr(0, 5) + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + (md5s[oData['image_sm']] || '').substr(0, 5) + '" /></a>';
   }
@@ -167,6 +185,8 @@ function equipmentInit() {
     x['reverse_notes'] = [];
     x['not_mine'] = x['not_mine'] ? 'not mine' : '';
     x['hide'] = x['hide'] ? 'hidden' : '';
+    x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
+    x['current_rack'] = x['current_rack'] ? 'current_rack' : ''
     x['featured'] = x['featured'] ? 'featured' : '';
     x['instrument'] = x['instrument'] || '';
     x['category_sort'] = CAT[x['category']] || 99;
@@ -260,6 +280,8 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
       { responsivePriority: 99, data: 'not_mine', visible: false },
       { responsivePriority: 99, data: 'hide', visible: false },
+      { responsivePriority: 99, data: 'current_pedal', visible: false },
+      { responsivePriority: 99, data: 'current_rack', visible: false },
       { responsivePriority: 99, data: 'manuals', title: 'Manuals', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'category_sort', visible: false },
@@ -499,7 +521,7 @@ function initCache() {
     caches.has('v1.0.3').then((e) => {
       if (e === false) {
         // only cache images for now
-        var files = Object.keys(md5s).filter(k => k.match(/\.png$/)).map(k => `${k}?${(md5s[k] || '').substr(0,5)}`)
+        var files = Object.keys(md5s).filter(k => k.match(new RegExp(`\\.${IMAGE_TYPE}$`))).map(k => `${k}?${(md5s[k] || '').substr(0,5)}`)
         caches
           .open('v1.0.3')
           .then((cache) => {

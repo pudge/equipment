@@ -20,7 +20,7 @@ sub get_md5s {
     # get image files
     my @dirs = ('images', 'images/sm');
     for my $dir (@dirs) {
-        md5sum("$dir/*.png", \%md5s);
+        md5sum("$dir/*.webp", \%md5s);
     }
 
     md5sum("manuals/*/*", \%md5s);

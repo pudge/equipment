@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-11T12:00:00+0000")
+var lastModified = new Date("2025-06-15T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1082,6 +1082,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
       "detail" : {
          "Analog Inputs" : "1/4\" TRS x 8, XLR/TRS combo x 2",
          "Analog Outputs" : "1/4\" TRS x 8, 1/4\" TRS main x 2, 1/4\" TRS monitor x 2",
@@ -1146,6 +1147,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
       "detail" : {
          "Analog Inputs" : "XLR/TRS combo x 8",
          "Analog Outputs" : "1/4\" TRS x 10",
@@ -1206,6 +1208,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
       "detail" : {
          "Computer Interface" : "USB-B",
          "MIDI" : "Out x 2",
@@ -1473,6 +1476,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
@@ -1482,7 +1486,7 @@ var equipment = [
          "Direct Output" : "1/4\"",
          "Input Impedance" : "2 MΩ",
          "Output Impedance" : "600 Ω",
-         "Power Consumption" : "100mA",
+         "Power Consumption" : "15mA",
          "Power Supply" : "9V"
       },
       "image" : true,
@@ -1515,6 +1519,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Depth" : "90mm (3 9/16”)",
          "Height" : "43mm (1 3/4”)",
@@ -1526,11 +1531,15 @@ var equipment = [
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
       "make" : "BOSS",
       "model" : "FS-5U",
+      "notes" : [
+         "non-latching switch"
+      ],
       "type" : "Pedal",
       "year" : "2007"
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Analog Inputs" : "1/4\" x 2, 1/4\" return x 2",
          "Analog Outputs" : "1/4\" x 2, 1/4\" stereo send",
@@ -1553,11 +1562,15 @@ var equipment = [
          "Manual" : "HX Stomp XL 3.80 Owner's Manual - English .pdf"
       },
       "model" : "HX Stomp XL",
+      "notes" : [
+         "multi-effects"
+      ],
       "type" : "Pedal",
       "year" : "2025"
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
@@ -1565,7 +1578,7 @@ var equipment = [
          "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
          "Input Impedance" : "1 MΩ",
          "Output Impedance" : "600 Ω",
-         "Power Consumption" : "100mA",
+         "Power Consumption" : "25mA",
          "Power Supply" : "9V"
       },
       "image" : true,
@@ -1583,13 +1596,14 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
          "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
          "Input Impedance" : "130 kΩ",
-         "Power Consumption" : "25mA",
+         "Power Consumption" : "3mA",
          "Power Supply" : "9V"
       },
       "image" : true,
@@ -1607,6 +1621,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Analog Inputs" : "1/4”, XLR, 1/4” return x 2",
          "Analog Outputs" : "Stereo 1/4\" x 2, stereo XLR, 1/4\" send",
@@ -1617,6 +1632,8 @@ var equipment = [
          "Line In" : "1/8\" stereo",
          "MIDI" : "In/Out+Thru",
          "Phones" : "1/4\" stereo",
+         "Power Consumption" : "2A",
+         "Power Supply" : "9V",
          "Serial" : "X3L1S5937000703",
          "Weight" : "8.4lbs"
       },
@@ -1637,6 +1654,33 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\", XLR balanced",
+         "Bypass" : "True/Buffered",
+         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
+         "Other" : "Ground-lift switch; always-on buffer",
+         "Power Consumption" : "32mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/collections/compression/products/pulp-n-peel-v4",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-PulpNPeelV4-Manual-English.pdf"
+      },
+      "model" : "Pulp ’N’ Peel V4",
+      "notes" : [
+         "compressor"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
@@ -1662,6 +1706,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "9.9\" x 4.0\" x 3.25\" (8.7\" x 3.0\" pedal)",
          "Impedance" : "10 KΩ",
@@ -1686,6 +1731,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
@@ -1722,6 +1768,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "9.25\" x 2.76\" x 3.94\""
       },
@@ -1734,44 +1781,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2016"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
-         "Outputs" : "9V 500mA (7); 9V 500mA/12V 375 mA/18V 250mA; 9V/12V 3A (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
-         "Power Supply" : "24V 4A / 96W",
-         "Serial" : "",
-         "Weight" : "0.93lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
-      "make" : "Walrus Audio",
-      "manuals" : {
-         "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
-      },
-      "model" : "Canvas Power HP+",
-      "type" : "Pedalboard Hardware",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
-         "Material" : "Aluminum",
-         "Mods" : "4XMOD Pro V2; 4XMOD"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.templeaudio.com/templeboards",
-      "make" : "Temple Audio",
-      "model" : "Templeboard DUO 34",
-      "notes" : [
-         "temple red"
-      ],
-      "type" : "Pedalboard Hardware",
-      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1872,6 +1881,31 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
+         "Outputs" : "9V 500mA (7); 9V 500mA/12V 375 mA/18V 250mA; 9V/12V 3A (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
+         "Power Supply" : "24V 4A / 96W",
+         "Serial" : "",
+         "Weight" : "0.93lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
+      "make" : "Walrus Audio",
+      "manuals" : {
+         "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
+      },
+      "model" : "Canvas Power HP+",
+      "notes" : [
+         "pedal power"
+      ],
+      "type" : "Power",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "6.5\" x 1.97\" x 1.5\"",
          "Outputs" : "11 isolated: (6) 9V 100mA; (2) 9V 400mA; (1) 12V 100mA; (1) 18V 100mA; (1) 5V 2A (USB)",
@@ -1882,22 +1916,74 @@ var equipment = [
       "make" : "Godtone",
       "model" : "GD-02",
       "notes" : [
-         "pedalboard power"
+         "pedal power; current_pedal"
       ],
-      "type" : "Rack Hardware",
+      "type" : "Power",
       "year" : "2024"
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
+      "image" : true,
+      "link" : "https://furmanpower.com/pro-av-power/",
+      "make" : "Furman",
+      "manuals" : {
+         "Owner’s Manual" : "SERIES_II_15AMP_manual.pdf"
+      },
+      "model" : "PM-8 II",
+      "notes" : [
+         "power conditioner",
+         "GN-LED"
+      ],
+      "type" : "Power",
+      "year" : "2005"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\", XLR balanced",
+         "Power Consumption" : "2A",
+         "Power Supply" : "9V"
+      },
+      "image" : true,
+      "link" : "https://line6.com/support/page/kb/legacy-products/variax-guitars-bass-workbench/variax-xps-amp-vdi-cable-faqs-r511/",
+      "make" : "Line 6",
+      "model" : "XPS-AB",
+      "type" : "Power",
+      "year" : "2004"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Power Consumption" : "2A",
+         "Power Supply" : "9V"
+      },
+      "image" : true,
+      "link" : "https://line6.com/support/page/kb/legacy-products/variax-guitars-bass-workbench/variax-xps-amp-vdi-cable-faqs-r511/",
+      "make" : "Line 6",
+      "model" : "XPS-DI",
+      "type" : "Power",
+      "year" : "2003"
+   },
+   {
+      "category" : "Hardware",
+      "current_rack" : true,
       "image" : true,
       "link" : "https://furmanpower.com/product/led-rear-rack-gooseneck-lamp/",
       "make" : "Furman",
       "model" : "GN-LED",
+      "notes" : [
+         "current_rack"
+      ],
       "type" : "Rack Hardware",
       "year" : "2006"
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
       "image" : true,
       "make" : "Furman",
       "manuals" : {
@@ -1912,22 +1998,26 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "image" : true,
-      "link" : "https://furmanpower.com/pro-av-power/",
-      "make" : "Furman",
-      "manuals" : {
-         "Owner’s Manual" : "SERIES_II_15AMP_manual.pdf"
+      "current_pedal" : true,
+      "detail" : {
+         "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
+         "Material" : "Aluminum",
+         "Mods" : "4XMOD Pro V2; 4XMOD"
       },
-      "model" : "PM-8 II",
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.templeaudio.com/templeboards",
+      "make" : "Temple Audio",
+      "model" : "Templeboard DUO 34",
       "notes" : [
-         "power conditioner",
-         "GN-LED"
+         "temple red"
       ],
       "type" : "Rack Hardware",
-      "year" : "2005"
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/cm_300/index.php",
       "make" : "Korg",
@@ -1941,6 +2031,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
       "detail" : {
          "Analog Inputs" : "1/4\" x 3 (two channels)",
          "Analog Outputs" : "1/4\"",
@@ -2454,6 +2545,8 @@ var equipment = [
          "Location" : "Korea",
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
+         "Power Consumption" : "500mA",
+         "Power Supply" : "7V",
          "Scale Length" : "34\"",
          "Serial" : "4101739",
          "Truss Rod" : "Adjustable, 4mm Allen Nut"
@@ -2469,7 +2562,8 @@ var equipment = [
          "EXL170 (2023-10-18)",
          "Tortex Standard",
          "MSS3-BRN",
-         "Straplok"
+         "Straplok",
+         "XPS-AB"
       ],
       "strings" : "EXL170",
       "type" : "Bass Guitar",
@@ -2715,6 +2809,8 @@ var equipment = [
          "Location" : "Korea",
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
+         "Power Consumption" : "500mA",
+         "Power Supply" : "7V",
          "Scale Length" : "25.5”",
          "Serial" : "3058431",
          "Truss Rod" : "Adjustable, 4mm Allen Nut"
@@ -2733,7 +2829,8 @@ var equipment = [
          "C1K",
          "M17SS-BLK",
          "S-Locks",
-         "GC-ELECTRIC-A"
+         "GC-ELECTRIC-A",
+         "XPS-DI"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -3435,10 +3532,14 @@ var equipment = [
    },
    {
       "category" : "Stands etc.",
+      "current_rack" : true,
       "image" : true,
       "link" : "https://www.skbcases.com/music/products/proddetail.php?f=&id=819&o=&offset=4&c=80&s=80",
       "make" : "SKB",
       "model" : "SKB-R8",
+      "notes" : [
+         "current_rack"
+      ],
       "type" : "Rack Hardware",
       "year" : "2005"
    }
