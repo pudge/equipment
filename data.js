@@ -1916,7 +1916,7 @@ var equipment = [
       "make" : "Godtone",
       "model" : "GD-02",
       "notes" : [
-         "pedal power; current_pedal"
+         "pedal power"
       ],
       "type" : "Power",
       "year" : "2024"
@@ -1975,9 +1975,6 @@ var equipment = [
       "link" : "https://furmanpower.com/product/led-rear-rack-gooseneck-lamp/",
       "make" : "Furman",
       "model" : "GN-LED",
-      "notes" : [
-         "current_rack"
-      ],
       "type" : "Rack Hardware",
       "year" : "2006"
    },
@@ -3537,9 +3534,6 @@ var equipment = [
       "link" : "https://www.skbcases.com/music/products/proddetail.php?f=&id=819&o=&offset=4&c=80&s=80",
       "make" : "SKB",
       "model" : "SKB-R8",
-      "notes" : [
-         "current_rack"
-      ],
       "type" : "Rack Hardware",
       "year" : "2005"
    }

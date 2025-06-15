@@ -62,12 +62,10 @@ function linkShow(acc, text, other) {
   else if (!acc && other) {
     return '<span title="' + other + '">' + text + '</span>'
   }
-  else if (!other) {
-    return '<a href="#" onclick="doShow(\''+ acc + '\'); return false">' + text + '</a>'
-  }
-  else {
+  else if (other) {
     return '<a href="#" onclick="doShow(\''+ acc + '\'); return false" title="' + other + '">' + text + '</a>'
   }
+  return '<a href="#" onclick="doShow(\''+ acc + '\'); return false">' + text + '</a>'
 }
 
 function linkItNotes(oData) {
