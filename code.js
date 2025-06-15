@@ -29,7 +29,7 @@ const CAT = {
   "Stands etc.":              5,
 }
 
-const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.FINDVAL, COL.TYPE, COL.MAKE, COL.YEAR];
+const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.FINDVAL, COL.TYPE, COL.MAKE, COL.YEAR]
 const columnOrder = [
   [ COL.FEAT,     'desc' ],
   [ COL.CAT_SORT, 'asc'  ],
@@ -71,22 +71,22 @@ function linkShow(acc, text, other) {
 }
 
 function linkItNotes(oData) {
-  var thisData = Array.isArray(oData['notes']) ? oData['notes'] : [oData['notes']].filter(x => x);
+  var thisData = Array.isArray(oData['notes']) ? oData['notes'] : [oData['notes']].filter(x => x)
   if (oData['not_mine']) {
-    thisData.push('NOTMINE');
+    thisData.push('NOTMINE')
   }
   else if (oData['hide']) {
-    thisData.push('HIDDEN');
+    thisData.push('HIDDEN')
   }
   else if (oData['current_pedal']) {
-    thisData.push('CURRENT_PEDAL');
+    thisData.push('CURRENT_PEDAL')
   }
   else if (oData['current_rack']) {
-    thisData.push('CURRENT_RACK');
+    thisData.push('CURRENT_RACK')
   }
 
-  var icons = [ clipIt( fixModelName(oData['model']) ) ];
-  var newData = [];
+  var icons = [ clipIt( fixModelName(oData['model']) ) ]
+  var newData = []
   thisData.forEach(x => {
     if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_PEDAL' || x === 'CURRENT_RACK') {
       icons.push(
@@ -103,38 +103,38 @@ function linkItNotes(oData) {
         : x === 'CURRENT_RACK'
           ? linkShow('current_rack', '\u{1F5C4}\u{FE0F}', 'in rack')
           : ''
-      );
+      )
     }
     else {
-      var text = x;
-      var matches = text.match(/^(.+?)( \(\d\d\d\d-\d\d-\d\d\))$/);
+      var text = x
+      var matches = text.match(/^(.+?)( \(\d\d\d\d-\d\d-\d\d\))$/)
       if (matches && matches[2]) {
-        text = matches[1];
+        text = matches[1]
       }
-      var link = linkHtml(equipment_data[text] ? linkShow(text) : text);
+      var link = linkHtml(equipment_data[text] ? linkShow(text) : text)
       if (matches && matches[2]) {
-        link += matches[2];
+        link += matches[2]
       }
-      newData.push(link);
+      newData.push(link)
     }
-  });
+  })
 
-  return icons.join('') + '&nbsp;' + newData.join(', ');
+  return icons.join('') + '&nbsp;' + newData.join(', ')
 }
 
 function linkItDetail(oData) {
   if (oData['detail'] == null) {
-    return '<div class="detail" />';
+    return '<div class="detail" />'
   }
 
   return '<div class="detail">' + Object.keys(oData['detail']).map(
       x => `<div class="detail_row"><span class="detail_head">${x}</span>: <span class="detail_body">${oData['detail'][x]}</span></div>`
-    ).join('') + '</div>';
+    ).join('') + '</div>'
 }
 
 function linkItFindValue(oData) {
   if (oData['no_reverb']) {
-    return '';
+    return ''
   }
   var link = 'https://reverb.com/marketplace?query='
     + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
@@ -144,85 +144,85 @@ function linkItFindValue(oData) {
 
 function linkItManuals(oData) {
   if (oData['manuals'] == null) {
-    return '<div class="manuals" />';
+    return '<div class="manuals" />'
   }
 
-  var modelName = fixModelName(oData['model']);
+  var modelName = fixModelName(oData['model'])
   return '<div class="manuals">' + Object.keys(oData['manuals']).map((x) => {
-      var file = `./manuals/${modelName}/${oData['manuals'][x]}`;
-      var md5 = (md5s[file] || '').substr(0, 5);
-      return `<div class="manual_row"><a target="_blank" href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`;
-    }).join('') + '</div>';
+      var file = `./manuals/${modelName}/${oData['manuals'][x]}`
+      var md5 = (md5s[file] || '').substr(0, 5)
+      return `<div class="manual_row"><a target="_blank" href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
+    }).join('') + '</div>'
 }
 
 function clipIt(model) {
-  return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, \'' + model + '\')" title="copy info"></i>';
+  return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, \'' + model + '\')" title="copy info"></i>'
 }
 
 function imgIt(oData) {
   //console.log(oData)
   var text = '<i class="fas fa-fw"></i>'
   if (oData['image']) {
-    var alt = [oData['make'], oData['model'], oData['type']].join(' ');
-    var name = fixModelName(oData['model']);
+    var alt = [oData['make'], oData['model'], oData['type']].join(' ')
+    var name = fixModelName(oData['model'])
     if (oData['image'] === true) {
-      oData['image'] = '.' + IMAGE_PATH + name + '.' + IMAGE_TYPE;
-      oData['image_sm'] = '.' + IMAGE_PATH + 'sm/' + name + '-sm.' + IMAGE_TYPE;
+      oData['image'] = '.' + IMAGE_PATH + name + '.' + IMAGE_TYPE
+      oData['image_sm'] = '.' + IMAGE_PATH + 'sm/' + name + '-sm.' + IMAGE_TYPE
     }
-    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + (md5s[oData['image']] || '').substr(0, 5) + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + (md5s[oData['image_sm']] || '').substr(0, 5) + '" /></a>';
+    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + (md5s[oData['image']] || '').substr(0, 5) + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + (md5s[oData['image_sm']] || '').substr(0, 5) + '" /></a>'
   }
-  return text;
+  return text
 }
 
 
 // do the table
 
 function equipmentInit() {
-  var removeElements = [];
-  var foundNote = {};
+  var removeElements = []
+  var foundNote = {}
   equipment.forEach(function(x, index, object) {
-    equipmentOrig[ fixModelName(x['model']) ] = structuredClone(x);
-    x['reverse_notes'] = [];
-    x['not_mine'] = x['not_mine'] ? 'not mine' : '';
-    x['hide'] = x['hide'] ? 'hidden' : '';
+    equipmentOrig[ fixModelName(x['model']) ] = structuredClone(x)
+    x['reverse_notes'] = []
+    x['not_mine'] = x['not_mine'] ? 'not mine' : ''
+    x['hide'] = x['hide'] ? 'hidden' : ''
     x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
     x['current_rack'] = x['current_rack'] ? 'current_rack' : ''
-    x['featured'] = x['featured'] ? 'featured' : '';
-    x['instrument'] = x['instrument'] || '';
-    x['category_sort'] = CAT[x['category']] || 99;
+    x['featured'] = x['featured'] ? 'featured' : ''
+    x['instrument'] = x['instrument'] || ''
+    x['category_sort'] = CAT[x['category']] || 99
     if (x['model']) {
-      equipment_data[x['model']] = x;
+      equipment_data[x['model']] = x
       if (x['link']) {
-        links[x['model']] = x['link'];
-        links[x['make'] + ' ' + x['model'] + ' ' + x['type']] = x['link'];
+        links[x['model']] = x['link']
+        links[x['make'] + ' ' + x['model'] + ' ' + x['type']] = x['link']
       }
     }
 
     if (x['hide']) { // || x['not_mine']) {
-      removeElements.push(index);
+      removeElements.push(index)
     }
-  });
+  })
 
   equipment.forEach(function(x, index, object) {
     if (x['notes']) {
-      var thisData = Array.isArray(x['notes']) ? x['notes'] : [x['notes']];
-      var found = false;
+      var thisData = Array.isArray(x['notes']) ? x['notes'] : [x['notes']]
+      var found = false
       thisData.forEach(y => {
-        var matches = y.match(/^(.+?)( \(\d\d\d\d-\d\d-\d\d\))$/);
+        var matches = y.match(/^(.+?)( \(\d\d\d\d-\d\d-\d\d\))$/)
         if (matches && matches[2]) {
-          y = matches[1];
+          y = matches[1]
         }
         if (equipment_data[y]) {
-          foundNote[y] = true;
-          found = true;
-          equipment_data[y]['reverse_notes'].push(x['model']);
+          foundNote[y] = true
+          found = true
+          equipment_data[y]['reverse_notes'].push(x['model'])
         }
-      });
+      })
       if (found === true) {
-        thisData.unshift('LINKEDME');
+        thisData.unshift('LINKEDME')
       }
     }
-  });
+  })
 
   equipment.forEach(function(x, index, object) {
     if (foundNote[x['model']]) {
@@ -230,33 +230,33 @@ function equipmentInit() {
         ? Array.isArray(x['notes'])
           ? x['notes']
           : [x['notes']]
-        : [];
-      thisData.unshift('LINKME');
-      x['notes'] = thisData;
+        : []
+      thisData.unshift('LINKME')
+      x['notes'] = thisData
     }
 
-    x['idx'] = index-1;
-    x['img'] = imgIt(x);
-    x['manuals'] = linkItManuals(x);
-    x['detail'] = linkItDetail(x);
-    x['findvalue'] = linkItFindValue(x);
-    x['notes'] = linkItNotes(x);
-    x['model'] = linkItFindValue(x) + ' ' + linkHtml(x['model']);
+    x['idx'] = index-1
+    x['img'] = imgIt(x)
+    x['manuals'] = linkItManuals(x)
+    x['detail'] = linkItDetail(x)
+    x['findvalue'] = linkItFindValue(x)
+    x['notes'] = linkItNotes(x)
+    x['model'] = linkItFindValue(x) + ' ' + linkHtml(x['model'])
     if (x['featured']) {
-      x['x'] = ' <i class="fa-solid fa-star featured"></i>';
+      x['x'] = ' <i class="fa-solid fa-star featured"></i>'
     }
-    x['make'] = linkHtml(x['make']);
-  });
+    x['make'] = linkHtml(x['make'])
+  })
 
   // remove hidden elements
-  var uri = window.location.href;
-  var query_idx = uri.indexOf('?');
-  var anchor_idx = uri.indexOf('#');
-  var query = query_idx === -1 ? null : anchor_idx === -1 ? uri.substring(query_idx+1) : uri.substring(query_idx+1, anchor_idx);
-//   anchorText = anchor_idx === -1 ? 'featured' : unescape(uri.substring(anchor_idx+1));
-  anchorText = anchor_idx === -1 ? '' : unescape(uri.substring(anchor_idx+1));
+  var uri = window.location.href
+  var query_idx = uri.indexOf('?')
+  var anchor_idx = uri.indexOf('#')
+  var query = query_idx === -1 ? null : anchor_idx === -1 ? uri.substring(query_idx+1) : uri.substring(query_idx+1, anchor_idx)
+//   anchorText = anchor_idx === -1 ? 'featured' : unescape(uri.substring(anchor_idx+1))
+  anchorText = anchor_idx === -1 ? '' : unescape(uri.substring(anchor_idx+1))
   if (query != 'hidden') {
-    removeElements.reverse().forEach(x => equipment.splice(x, 1));
+    removeElements.reverse().forEach(x => equipment.splice(x, 1))
   }
 
   var table = $('#equipment').DataTable( {
@@ -298,222 +298,222 @@ function equipmentInit() {
 
     initComplete: function () {
       // create dropdown filters
-      var table = this.api().table();
+      var table = this.api().table()
       table.columns(columns).every(function (i) {
         if (i != COL.INFO && i != COL.IMG && i != COL.FINDVAL) {
-          var column = this;
-          var column_d = table.column(columnMap[i] || i);
+          var column = this
+          var column_d = table.column(columnMap[i] || i)
           var select = $('<select id="sel_' + i + '"></select><br>')
             .prependTo( $(column.header()) )
             .on( 'click', function (event) {
-              event.stopPropagation();
+              event.stopPropagation()
             })
             .on( 'change', function () {
               var val = $.fn.dataTable.util.escapeRegex(
                   $(this).val()
-              );
+              )
               column_d
                 .search( val ? '^'+val+'$' : '', true, false )
-                .draw();
-              columns.filter(j => i != j).forEach(j => drawDropdowns(j));
-            });
-          drawDropdowns(i);
+                .draw()
+              columns.filter(j => i != j).forEach(j => drawDropdowns(j))
+            })
+          drawDropdowns(i)
         }
-      });
+      })
     },
     drawCallback: picInit,
-  });
+  })
 
-  table.on('responsive-display', childRowCleanUp);
+  table.on('responsive-display', childRowCleanUp)
 }
 
 function drawDropdowns(i) {
-  var table = $('#equipment').dataTable().api().table();
+  var table = $('#equipment').dataTable().api().table()
 
-  var column = table.column(columnMap[i] || i, {filter: 'applied'});
-  var select = $('#sel_' + i);
-  var val = select.val();
-  select.html('<option value=""></option>');
-  var data = [];
+  var column = table.column(columnMap[i] || i, {filter: 'applied'})
+  var select = $('#sel_' + i)
+  var val = select.val()
+  select.html('<option value=""></option>')
+  var data = []
   column.data().unique().sort().each( function ( d, j ) {
     if (d !== null) {
-      x = d.replace(/<.+?>/g, '');
-      data.push(x);
+      x = d.replace(/<.+?>/g, '')
+      data.push(x)
     }
-  });
-  data.sort().forEach( x => select.append( '<option value="'+x+'">'+x+'</option>' ) );
-  select.val(val);
+  })
+  data.sort().forEach( x => select.append( '<option value="'+x+'">'+x+'</option>' ) )
+  select.val(val)
 }
 
 
 // misc events
 
 function doShow(item) {
-  var table = $('#equipment').dataTable().api().table();
-  table.search(item).draw();
-  table.columns().search('').draw();
+  var table = $('#equipment').dataTable().api().table()
+  table.search(item).draw()
+  table.columns().search('').draw()
   columns.forEach(j => drawDropdowns(j))
-  columns.forEach(function (i) { $('#sel_' + i).val('') });
+  columns.forEach(function (i) { $('#sel_' + i).val('') })
   // collapse child rows
-  table.rows('.parent').nodes().to$().find('td:first-child').trigger('click');
+  table.rows('.parent').nodes().to$().find('td:first-child').trigger('click')
 }
 
 function picClick(t, e) {
   if (t == null) {
-    return;
+    return
   }
-  var modal = $('#pic_modal');
-  var image = $('#pic_img');
-  var caption = $('#pic_caption');
+  var modal = $('#pic_modal')
+  var image = $('#pic_img')
+  var caption = $('#pic_caption')
 
   if (e) {
-    e.preventDefault();
+    e.preventDefault()
   }
-  modal.css('display', 'block');
-  caption.html( $(t).attr('alt') );
-  image.attr('src', $(t).attr('href') );
-  currentImgRow = $(t).parents()[1];
-  return false;
+  modal.css('display', 'block')
+  caption.html( $(t).attr('alt') )
+  image.attr('src', $(t).attr('href') )
+  currentImgRow = $(t).parents()[1]
+  return false
 }
 
 function modalInit() {
-  var modal = $('#pic_modal');
-  var image = $('#pic_img');
-  var caption = $('#pic_caption');
+  var modal = $('#pic_modal')
+  var image = $('#pic_img')
+  var caption = $('#pic_caption')
 
   var close_modal = function() { modal.css('display', 'none') }
-  $('#pic_close').click(close_modal);
-  $('#pic_modal').click(close_modal);
-  $('#pic_img').click(function() { return false });
+  $('#pic_close').click(close_modal)
+  $('#pic_modal').click(close_modal)
+  $('#pic_img').click(function() { return false })
   $(document).keydown(function(e) {
     if (modal.css('display') != 'none') {
       if (e.key === 'Escape') {
-        close_modal();
+        close_modal()
       }
       if (currentImgRow != null) {
-        var sibling;
+        var sibling
         if (e.which == 40 || e.which == 39) { // down or right
-          swapPic('right');
+          swapPic('right')
         }
         else if (e.which == 38 || e.which == 37) { // up or left
-          swapPic('left');
+          swapPic('left')
         }
       }
     }
   })
   .on('touchstart', function(event) {
     if (modal.css('display') != 'none' && currentImgRow != null) {
-      touchstartX = event.pageX;
-      touchstartY = event.pageY;
+      touchstartX = event.pageX
+      touchstartY = event.pageY
     }
   })
   .on('touchend', function(event) {
     if (modal.css('display') != 'none' && currentImgRow != null) {
-      touchendX = event.pageX;
-      touchendY = event.pageY;
-      var horiz = touchstartX - touchendX;
-      var vert  = touchstartY - touchendY;
+      touchendX = event.pageX
+      touchendY = event.pageY
+      var horiz = touchstartX - touchendX
+      var vert  = touchstartY - touchendY
 
       if (Math.abs(horiz) > Math.abs(vert)) { // swipe horizontally
         if (horiz > 0) {
-          swapPic('right');
+          swapPic('right')
         }
         else {
-          swapPic('left');
+          swapPic('left')
         }
       }
     }
-  });
+  })
 
   $('#pic_img').on('load', function() {
-    image.css('width', 'auto');
-    image.css('height', 'auto');
+    image.css('width', 'auto')
+    image.css('height', 'auto')
 
-    var win_height = $(window).height() - 50;
-    var win_width  = $(window).width() - 25;
+    var win_height = $(window).height() - 50
+    var win_width  = $(window).width() - 25
 
-    var img_height = image.height();
-    var img_width = image.width();
+    var img_height = image.height()
+    var img_width = image.width()
 
-    var scale = 1;
+    var scale = 1
     if (img_height > win_height) {
-      scale = win_height / img_height;
-      img_width *= scale;
-      image.css('width', img_width);
+      scale = win_height / img_height
+      img_width *= scale
+      image.css('width', img_width)
 
       if (img_width > win_width) {
-        img_height *= scale;
-        image.css('height', img_height);
+        img_height *= scale
+        image.css('height', img_height)
       }
     }
     else if (img_width > win_width) {
-      scale = win_width / img_width;
-      img_height *= scale;
-      image.css('height', img_height);
+      scale = win_width / img_width
+      img_height *= scale
+      image.css('height', img_height)
 
       if (img_height > win_height) {
-        img_width *= scale;
-        image.css('width', img_width);
+        img_width *= scale
+        image.css('width', img_width)
       }
     }
-  });
+  })
 }
 
 function swapPic(direction) {
-  var sibling;
+  var sibling
   if (direction == 'right') { // down or right
-    sibling = currentImgRow.nextSibling;
+    sibling = currentImgRow.nextSibling
     if (sibling != null && sibling.classList.contains('child')) {
-      sibling = sibling.nextSibling;
+      sibling = sibling.nextSibling
     }
   }
   else if (direction == 'left') { // up or left
-    sibling = currentImgRow.previousSibling;
+    sibling = currentImgRow.previousSibling
     if (sibling != null && sibling.classList.contains('child')) {
-      sibling = sibling.previousSibling;
+      sibling = sibling.previousSibling
     }
   }
   if (sibling) {
-    event.preventDefault();
-    $('#pic_modal').click;
-    picClick(sibling.children[1].children[0]);
+    event.preventDefault()
+    $('#pic_modal').click
+    picClick(sibling.children[1].children[0])
   }
 }
 
 function picInit() {
   $('.pic_modalize:not([data-linked="1"]').each(function() {
-    $(this).click(function() { return picClick(this, event) });
-    $(this).attr('data-linked', 1);
-  });
+    $(this).click(function() { return picClick(this, event) })
+    $(this).attr('data-linked', 1)
+  })
 }
 
 function clipInfo(el, model) {
-  navigator.clipboard.writeText(JSON.stringify(equipmentOrig[model]));
-  el.classList.add('copying');
-  setTimeout(() => { el.classList.remove('copying') }, 500);
+  navigator.clipboard.writeText(JSON.stringify(equipmentOrig[model]))
+  el.classList.add('copying')
+  setTimeout(() => { el.classList.remove('copying') }, 500)
 }
 
 function clearSearchInit() {
-  $('#equipment_filter').append('<i id="clear_search" class="fas fa-circle-xmark fa-fw" onclick="doShow(\'\')"></i>');
+  $('#equipment_filter').append('<i id="clear_search" class="fas fa-circle-xmark fa-fw" onclick="doShow(\'\')"></i>')
 }
 
 function redrawTable() {
-  $('#equipment').DataTable().draw();
+  $('#equipment').DataTable().draw()
 }
 
 function childRowCleanUp() {
-  $('.dtr-data .manuals:empty').parent().parent().hide();
-  $('.dtr-data .detail:empty').parent().parent().hide();
-  picInit();
+  $('.dtr-data .manuals:empty').parent().parent().hide()
+  $('.dtr-data .detail:empty').parent().parent().hide()
+  picInit()
 }
 
 function fixModelName(str) {
-  return str.replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase();
+  return str.replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase()
 }
 
 function initListeners() {
-  window.addEventListener('resize', redrawTable);
-  window.addEventListener('orientationchange', redrawTable);
+  window.addEventListener('resize', redrawTable)
+  window.addEventListener('orientationchange', redrawTable)
 }
 
 function initCache() {
@@ -525,7 +525,7 @@ function initCache() {
         caches
           .open('v1.0.3')
           .then((cache) => {
-              cache.addAll(files);
+              cache.addAll(files)
             }
           )
       }
@@ -534,11 +534,11 @@ function initCache() {
 }
 
 $(document).ready(function() {
-  setLastMod('#lastModified');
-  equipmentInit();
-  clearSearchInit();
-  modalInit();
-  redrawTable();
-  initListeners();
-  initCache();
-});
+  setLastMod('#lastModified')
+  equipmentInit()
+  clearSearchInit()
+  modalInit()
+  redrawTable()
+  initListeners()
+  initCache()
+})
