@@ -15,10 +15,13 @@ const COL = {
   NOTER    : 10,
   NMINE    : 11,
   HIDE     : 12,
-  MANUALS  : 13,
-  DETAILS  : 14,
-  CAT_SORT : 15,
-  INST     : 16,
+  MAIN     : 13,
+  CPEDAL   : 14,
+  CRACK    : 15,
+  MANUALS  : 16,
+  DETAILS  : 17,
+  CAT_SORT : 18,
+  INST     : 19,
 }
 
 const CAT = {
@@ -70,16 +73,17 @@ function linkShow(acc, text, other) {
 
 function linkItNotes(oData) {
   var thisData = Array.isArray(oData['notes']) ? oData['notes'] : [oData['notes']].filter(x => x)
+
   if (oData['not_mine']) {
     thisData.push('NOTMINE')
   }
-  else if (oData['hide']) {
+  if (oData['hide']) {
     thisData.push('HIDDEN')
   }
-  else if (oData['current_pedal']) {
+  if (oData['current_pedal']) {
     thisData.push('CURRENT_PEDAL')
   }
-  else if (oData['current_rack']) {
+  if (oData['current_rack']) {
     thisData.push('CURRENT_RACK')
   }
 
@@ -176,16 +180,34 @@ function imgIt(oData) {
 // do the table
 
 function equipmentInit() {
+//   // custom search
+//   $.fn.dataTable.ext.search = []
+//   
+//   $.fn.dataTable.ext.search.push(function (settings, data, dataIndex) {
+//     const searchInput = $('#equipment_filter input[type=search]').val().trim().toLowerCase()
+//     if (!searchInput) return true
+//   
+//     const terms = searchInput.split(/\s+/)
+//   
+//     return terms.some(term =>
+//       data.some(cell =>
+//         (cell || '').toString().toLowerCase().includes(term)
+//       )
+//     )
+//   })
+
   var removeElements = []
   var foundNote = {}
   equipment.forEach(function(x, index, object) {
     equipmentOrig[ fixModelName(x['model']) ] = structuredClone(x)
     x['reverse_notes'] = []
-    x['not_mine'] = x['not_mine'] ? 'not mine' : ''
+    x['not_mine'] = x['not_mine'] ? 'not_mine' : ''
     x['hide'] = x['hide'] ? 'hidden' : ''
+    x['main_rig'] = x['main_rig'] ? 'main_rig' : ''
     x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
     x['current_rack'] = x['current_rack'] ? 'current_rack' : ''
     x['featured'] = x['featured'] ? 'featured' : ''
+    x['main_rig'] = (x['featured'] || x['main_rig']) ? 'main_rig' : ''
     x['instrument'] = x['instrument'] || ''
     x['category_sort'] = CAT[x['category']] || 99
     if (x['model']) {
@@ -251,8 +273,7 @@ function equipmentInit() {
   var query_idx = uri.indexOf('?')
   var anchor_idx = uri.indexOf('#')
   var query = query_idx === -1 ? null : anchor_idx === -1 ? uri.substring(query_idx+1) : uri.substring(query_idx+1, anchor_idx)
-//   anchorText = anchor_idx === -1 ? 'featured' : unescape(uri.substring(anchor_idx+1))
-  anchorText = anchor_idx === -1 ? '' : unescape(uri.substring(anchor_idx+1))
+  anchorText = anchor_idx === -1 ? 'main_rig' : unescape(uri.substring(anchor_idx+1))
   if (query != 'hidden') {
     removeElements.reverse().forEach(x => equipment.splice(x, 1))
   }
@@ -278,18 +299,20 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
       { responsivePriority: 99, data: 'not_mine', visible: false },
       { responsivePriority: 99, data: 'hide', visible: false },
+      { responsivePriority: 99, data: 'main_rig', visible: false },
       { responsivePriority: 99, data: 'current_pedal', visible: false },
       { responsivePriority: 99, data: 'current_rack', visible: false },
       { responsivePriority: 99, data: 'manuals', title: 'Manuals', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
-      { responsivePriority: 99, data: 'category_sort', visible: false },
-      { responsivePriority: 99, data: 'instrument', visible: false },
+      { responsivePriority: 99, data: 'category_sort', visible: false, orderable: true },
+      { responsivePriority: 99, data: 'instrument', visible: false, orderable: true },
     ],
     scrollX: true,
     order: columnOrder,
     data: equipment,
 
     paging: false,
+    // search: { smart: false, regex: false, search: anchorText },
     search: { search: anchorText },
     language: { search: "" },
     dom: 'fti',
@@ -321,6 +344,10 @@ function equipmentInit() {
     },
     drawCallback: picInit,
   })
+
+//   $('#equipment_filter input[type=search]').off().on('input', function () {
+//     table.draw()
+//   })
 
   table.on('responsive-display', childRowCleanUp)
 }

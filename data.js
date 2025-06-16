@@ -803,6 +803,7 @@ var equipment = [
       "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://www.fender.com/products/rumble-40",
+      "main_rig" : true,
       "make" : "Fender",
       "manuals" : {
          "Manual" : "237030_bamp_manual_all_revA.pdf"
@@ -923,6 +924,7 @@ var equipment = [
       "image" : true,
       "instrument" : "guitar",
       "link" : "https://line6.com/legacy/spideriv15",
+      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Pilot’s Handbook" : "Spider IV 15 Pilot's Guide - English ( Rev F ).pdf"
@@ -955,6 +957,7 @@ var equipment = [
       "image" : true,
       "instrument" : "guitar",
       "link" : "https://usa.yamaha.com/products/musical_instruments/guitars_basses/amps_accessories/thr-ii/",
+      "main_rig" : true,
       "make" : "Yamaha",
       "manuals" : {
          "Reference Manual" : "thr30ii_en_rm_c0.pdf"
@@ -982,23 +985,6 @@ var equipment = [
    {
       "category" : "Hardware",
       "image" : true,
-      "link" : "https://kahlerusa.com/product/stringlock-pro/",
-      "make" : "Kahler",
-      "manuals" : {
-         "Brochure" : "stringlocks-locknuts.jpg",
-         "Installation Guide" : "X-5513-5514W.gif"
-      },
-      "model" : "Deluxe Stringlock",
-      "notes" : [
-         "string lock",
-         "Killer 2710"
-      ],
-      "type" : "Guitar Accessory",
-      "year" : "1991"
-   },
-   {
-      "category" : "Hardware",
-      "image" : true,
       "link" : "https://kahlerusa.com/product/2700-series-fulcrum-tremolo-system/",
       "make" : "Kahler",
       "manuals" : {
@@ -1009,10 +995,28 @@ var equipment = [
       "notes" : [
          "locking tremolo",
          "not a Spyder",
-         "Deluxe Stringlock"
+         "Standard Stringlock"
       ],
       "type" : "Guitar Accessory",
       "year" : "1991"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://kahlerusa.com/product/standard-stringlock/",
+      "make" : "Kahler",
+      "manuals" : {
+         "Brochure" : "stringlocks-locknuts.jpg",
+         "Installation Guide" : "X-5513-5514W.gif"
+      },
+      "model" : "Standard Stringlock",
+      "notes" : [
+         "string lock",
+         "black krome",
+         "Killer 2710"
+      ],
+      "type" : "Guitar Accessory",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1125,6 +1129,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_rack" : true,
       "detail" : {
          "Computer Interface" : "USB-B",
          "Dimensions" : "11cm x 7cm x 4.4cm (4.3\" x 2.7\" x 1.73\")",
@@ -1149,6 +1154,27 @@ var equipment = [
       "category" : "Hardware",
       "current_rack" : true,
       "detail" : {
+         "Computer Interface" : "USB-B",
+         "MIDI" : "Out x 2",
+         "Serial" : "2105084"
+      },
+      "image" : true,
+      "link" : "https://www.m-audio.com/products/browse/category/keyboards-and-controllers",
+      "make" : "M-Audio",
+      "manuals" : {
+         "Manual" : "Oxygen8.pdf"
+      },
+      "model" : "Oxygen8",
+      "notes" : [
+         "USB"
+      ],
+      "type" : "Interface",
+      "year" : "2004"
+   },
+   {
+      "category" : "Hardware",
+      "current_rack" : true,
+      "detail" : {
          "Analog Inputs" : "XLR/TRS combo x 8",
          "Analog Outputs" : "1/4\" TRS x 10",
          "Computer Interface" : "USB-B",
@@ -1165,6 +1191,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-18i20",
+      "main_rig" : true,
       "make" : "Focusrite",
       "manuals" : {
          "Focusrite Control User Guide" : "Focusrite Control Scarlett 2nd Gen User Guide - EN.pdf",
@@ -1210,22 +1237,96 @@ var equipment = [
       "category" : "Hardware",
       "current_rack" : true,
       "detail" : {
-         "Computer Interface" : "USB-B",
-         "MIDI" : "Out x 2",
-         "Serial" : "2105084"
+         "Analog Inputs" : "Stereo 1/4\" TRS balanced x 4, stereo RCA phono",
+         "Analog Outputs" : "Stereo 1/4\" TRS balanced x 8",
+         "Dimensions" : "3.2” x 13.5” x 5.9” (81mm x 343mm x 150mm)",
+         "Phones" : "1/4\" stereo x 2",
+         "Serial" : "2034070CWFU0456",
+         "Weight" : "3.5lbs (1.6kg)"
       },
       "image" : true,
-      "link" : "https://www.m-audio.com/products/browse/category/keyboards-and-controllers",
-      "make" : "M-Audio",
+      "link" : "https://mackie.com/products/big-knob-series-monitor-controllers-interfaces",
+      "main_rig" : true,
+      "make" : "Mackie",
       "manuals" : {
-         "Manual" : "Oxygen8.pdf"
+         "Operation Guide" : "big_knob_studio_command_system.pdf",
+         "Quick Start Guide" : "big_knob.pdf"
       },
-      "model" : "Oxygen8",
-      "notes" : [
-         "USB"
-      ],
-      "type" : "Keyboard",
+      "model" : "Big Knob",
+      "type" : "Live Audio",
+      "year" : "2014"
+   },
+   {
+      "category" : "Hardware",
+      "current_rack" : true,
+      "detail" : {
+         "Amplifier" : "20W x 2",
+         "Analog Inputs" : "Stereo 1/4\", stereo RCA phono",
+         "Converters" : "24-bit",
+         "Digital Inputs" : "optical, coax",
+         "Dimensions" : "170mm x 261mm x 280mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
+         "Frequency Range" : "50 - 22000Hz",
+         "Input Impedance" : "18MΩ",
+         "Phones" : "1/4\" stereo",
+         "Sample Rates" : "32, 44.1, 48, 96kHz",
+         "Serial" : "ZR32193",
+         "Speaker" : "12cm (4 3/4”), 4cm (1 5/8”)",
+         "Weight" : "4.5kg (9lbs 15oz) x 2"
+      },
+      "image" : true,
+      "make" : "Edirol",
+      "manuals" : {
+         "Owner’s Manual" : "MA-20D_egfis2.pdf"
+      },
+      "model" : "MA-20D",
+      "type" : "Live Audio",
       "year" : "2004"
+   },
+   {
+      "category" : "Hardware",
+      "hide" : true,
+      "image" : true,
+      "link" : "https://mackie.com/en/products/mixers/mix-series",
+      "make" : "Tapco",
+      "manuals" : {
+         "Manual" : "MixSeries_OM.pdf"
+      },
+      "model" : "Mix.50",
+      "type" : "Live Audio",
+      "year" : "2008"
+   },
+   {
+      "category" : "Hardware",
+      "hide" : true,
+      "image" : true,
+      "link" : "https://peavey.com/product-category/pro-audio/mixers/compact-mixers/",
+      "make" : "Peavey",
+      "manuals" : {
+         "Operations Guide" : "pv6_manual.pdf"
+      },
+      "model" : "PV 6",
+      "type" : "Live Audio",
+      "year" : "2006"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Amplifier" : "250W x 2",
+         "Analog Inputs" : "XLR/TS combo x 4, stereo 1/4\" x 2, stereo RCA x 2",
+         "Analog Outputs" : "Stereo 1/4\" x 2, stereo RCA",
+         "Serial" : "HH01636",
+         "Speaker" : "10\" (25cm)"
+      },
+      "image" : true,
+      "link" : "https://usa.yamaha.com/products/proaudio/pa_systems/",
+      "main_rig" : true,
+      "make" : "Yamaha",
+      "manuals" : {
+         "Owner’s Manual" : "stagepas500_en_om_d0.pdf"
+      },
+      "model" : "STAGEPAS 500",
+      "type" : "Live Audio",
+      "year" : "2011"
    },
    {
       "category" : "Hardware",
@@ -1385,97 +1486,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "Stereo 1/4\" TRS balanced x 4, stereo RCA phono",
-         "Analog Outputs" : "Stereo 1/4\" TRS balanced x 8",
-         "Dimensions" : "3.2” x 13.5” x 5.9” (81mm x 343mm x 150mm)",
-         "Phones" : "1/4\" stereo x 2",
-         "Serial" : "2034070CWFU0456",
-         "Weight" : "3.5lbs (1.6kg)"
-      },
-      "image" : true,
-      "link" : "https://mackie.com/products/big-knob-series-monitor-controllers-interfaces",
-      "make" : "Mackie",
-      "manuals" : {
-         "Operation Guide" : "big_knob_studio_command_system.pdf",
-         "Quick Start Guide" : "big_knob.pdf"
-      },
-      "model" : "Big Knob",
-      "type" : "Mixer",
-      "year" : "2014"
-   },
-   {
-      "category" : "Hardware",
-      "hide" : true,
-      "image" : true,
-      "link" : "https://mackie.com/en/products/mixers/mix-series",
-      "make" : "Tapco",
-      "manuals" : {
-         "Manual" : "MixSeries_OM.pdf"
-      },
-      "model" : "Mix.50",
-      "type" : "Mixer",
-      "year" : "2008"
-   },
-   {
-      "category" : "Hardware",
-      "hide" : true,
-      "image" : true,
-      "link" : "https://peavey.com/product-category/pro-audio/mixers/compact-mixers/",
-      "make" : "Peavey",
-      "manuals" : {
-         "Operations Guide" : "pv6_manual.pdf"
-      },
-      "model" : "PV 6",
-      "type" : "Mixer",
-      "year" : "2006"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Amplifier" : "20W x 2",
-         "Analog Inputs" : "Stereo 1/4\", stereo RCA phono",
-         "Converters" : "24-bit",
-         "Digital Inputs" : "optical, coax",
-         "Dimensions" : "170mm x 261mm x 280mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
-         "Frequency Range" : "50 - 22000Hz",
-         "Input Impedance" : "18MΩ",
-         "Phones" : "1/4\" stereo",
-         "Sample Rates" : "32, 44.1, 48, 96kHz",
-         "Serial" : "ZR32193",
-         "Speaker" : "12cm (4 3/4”), 4cm (1 5/8”)",
-         "Weight" : "4.5kg (9lbs 15oz) x 2"
-      },
-      "image" : true,
-      "make" : "Edirol",
-      "manuals" : {
-         "Owner’s Manual" : "MA-20D_egfis2.pdf"
-      },
-      "model" : "MA-20D",
-      "type" : "Monitors",
-      "year" : "2004"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Amplifier" : "250W x 2",
-         "Analog Inputs" : "XLR/TS combo x 4, stereo 1/4\" x 2, stereo RCA x 2",
-         "Analog Outputs" : "Stereo 1/4\" x 2, stereo RCA",
-         "Serial" : "HH01636",
-         "Speaker" : "10\" (25cm)"
-      },
-      "image" : true,
-      "link" : "https://usa.yamaha.com/products/proaudio/pa_systems/",
-      "make" : "Yamaha",
-      "manuals" : {
-         "Owner’s Manual" : "stagepas500_en_om_d0.pdf"
-      },
-      "model" : "STAGEPAS 500",
-      "type" : "PA",
-      "year" : "2011"
-   },
-   {
-      "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
@@ -1491,6 +1501,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/deluxe-bass-big-muff-pi",
+      "main_rig" : true,
       "make" : "Electro-Harmonix",
       "manuals" : {
          "Manual" : "deluxe-bass-big-muff-pi.pdf"
@@ -1529,6 +1540,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
+      "main_rig" : true,
       "make" : "BOSS",
       "model" : "FS-5U",
       "notes" : [
@@ -1557,6 +1569,7 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://line6.com/hx-stomp-xl/",
+      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Manual" : "HX Stomp XL 3.80 Owner's Manual - English .pdf"
@@ -1564,6 +1577,33 @@ var equipment = [
       "model" : "HX Stomp XL",
       "notes" : [
          "multi-effects"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
+         "Input Impedance" : "130 kΩ",
+         "Power Consumption" : "5mA",
+         "Power Supply" : "9V"
+      },
+      "image" : true,
+      "link" : "https://www.ehx.com/products/lizard-queen/",
+      "main_rig" : true,
+      "make" : "Electro-Harmonix",
+      "manuals" : {
+         "Manual" : "lizard-queen-manual.pdf"
+      },
+      "model" : "Lizard Queen",
+      "notes" : [
+         "octave fuzz",
+         "JHS"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1583,6 +1623,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/metal-muff",
+      "main_rig" : true,
       "make" : "Electro-Harmonix",
       "manuals" : {
          "Manual" : "metal-muff-manual.pdf"
@@ -1608,6 +1649,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/nano-big-muff-pi",
+      "main_rig" : true,
       "make" : "Electro-Harmonix",
       "manuals" : {
          "Manual" : "nano-big-muff-pi-manual.pdf"
@@ -1640,6 +1682,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://line6.com/legacy/podx3live",
+      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Advanced Guide" : "POD X3 Advanced Guide - English ( Rev E ).pdf",
@@ -1693,6 +1736,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.boss.info/us/products/rc-2/",
+      "main_rig" : true,
       "make" : "BOSS",
       "manuals" : {
          "Owner’s Manual" : "RC-2_e2.pdf"
@@ -1718,6 +1762,7 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://missionengineering.com/shop/sp1-l6h/",
+      "main_rig" : true,
       "make" : "Mission Engineering",
       "manuals" : {
          "Manual" : "Mission-EP1_SP1_QS-Guide.pdf"
@@ -1752,6 +1797,7 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://www.petersontuners.com/products/stroboStompHD/",
+      "main_rig" : true,
       "make" : "Peterson",
       "manuals" : {
          "Guided Tuning Manual" : "Guided Tuning Manual.pdf",
@@ -1774,6 +1820,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.quiklok.com/product/vp-2611-mono-volume-pedal/",
+      "main_rig" : true,
       "make" : "Quick-Lok",
       "model" : "VP-2611",
       "notes" : [
@@ -1892,6 +1939,7 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
+      "main_rig" : true,
       "make" : "Walrus Audio",
       "manuals" : {
          "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
@@ -1913,6 +1961,7 @@ var equipment = [
          "Weight" : "1.18 lbs"
       },
       "image" : true,
+      "main_rig" : true,
       "make" : "Godtone",
       "model" : "GD-02",
       "notes" : [
@@ -2004,6 +2053,7 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://www.templeaudio.com/templeboards",
+      "main_rig" : true,
       "make" : "Temple Audio",
       "model" : "Templeboard DUO 34",
       "notes" : [
@@ -2043,6 +2093,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/",
+      "main_rig" : true,
       "make" : "Korg",
       "manuals" : {
          "Owner’s Manual" : "DTR2000_1000_EFG2.pdf"
@@ -2144,6 +2195,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=39754219192405",
+      "main_rig" : true,
       "make" : "Traveler",
       "manuals" : {
          "Manual" : "Escape_Mark_3_Manual.pdf"
@@ -2282,6 +2334,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://www.martinguitar.com/guitars/discontinued/HD-28E-Retro.html",
+      "main_rig" : true,
       "make" : "Martin",
       "model" : "HD-28E Retro",
       "notes" : [
@@ -2334,6 +2387,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://www.gretschguitars.com/gear/build/acoustic/jim-dandy-parlor/2711020579",
+      "main_rig" : true,
       "make" : "Gretsch",
       "model" : "Jim Dandy Parlor",
       "notes" : [
@@ -2419,6 +2473,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.framus-vintage.de/en/Other/Banjos/",
+      "main_rig" : true,
       "make" : "Framus",
       "model" : "Tenor Banjo",
       "notes" : [
@@ -2473,6 +2528,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://www.schecterguitars.com/Hellraiser-Extreme-5?quantity=1&custitem_color_master_list=438",
+      "main_rig" : true,
       "make" : "Schecter",
       "model" : "Hellraiser Extreme-5",
       "notes" : [
@@ -2517,6 +2573,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ibanez.com/usa/products/category/electric_basses/",
+      "main_rig" : true,
       "make" : "Ibanez",
       "model" : "Roadstar II RB650",
       "notes" : [
@@ -2550,6 +2607,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://line6.com/legacy/variaxbass700",
+      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Pilot’s Handbook" : "Variax Bass Manual - English ( Rev A ).pdf"
@@ -2632,6 +2690,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/p/Electric-Guitar/EPINA3562/Ebony",
+      "main_rig" : true,
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
@@ -2677,6 +2736,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://travelerguitar.com/products/ltd-ec-1?variant=39665627136085",
+      "main_rig" : true,
       "make" : "Traveler",
       "manuals" : {
          "Manual" : "EC-1_Manual.pdf"
@@ -2741,7 +2801,7 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Body Finish" : "Gloss",
-         "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Deluxe Stringlock*",
+         "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Standard Stringlock*",
          "Color" : "Black",
          "Control Knobs" : "Guyker CKB005 Revolver Cylinders*",
          "Controls" : "Fender 250K Potentiometers (1 Volume, 1 Push/Pull Neck Tone, 1 Middle/Bridge Tone); .022µF capacitor*",
@@ -2773,6 +2833,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://pudge.substack.com/p/theseia-the-guitar-of-theseus",
+      "main_rig" : true,
       "make" : "Epiphone",
       "model" : "Theseia",
       "no_reverb" : true,
@@ -2785,7 +2846,7 @@ var equipment = [
          "S-Locks",
          "GC-ELECTRIC-A",
          "Killer 2710",
-         "Deluxe Stringlock",
+         "Standard Stringlock",
          "Fat 50’s",
          "CKB005"
       ],
@@ -2814,6 +2875,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://line6.com/legacy/variax500",
+      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Pilot’s Handbook" : "Variax 500.pdf"
@@ -2888,6 +2950,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/marine-band/marine-band-deluxe",
+      "main_rig" : true,
       "make" : "Hohner",
       "manuals" : {
          "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
@@ -2924,6 +2987,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/progressive/special-20",
+      "main_rig" : true,
       "make" : "Hohner",
       "manuals" : {
          "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
@@ -2960,6 +3024,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/pianos/arius/",
+      "main_rig" : true,
       "make" : "Yamaha",
       "manuals" : {
          "Manual" : "YDP223.pdf"
@@ -3022,6 +3087,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://www.northfieldinstruments.com/thecalhoun",
+      "main_rig" : true,
       "make" : "Northfield",
       "model" : "Calhoun",
       "notes" : [
@@ -3071,6 +3137,7 @@ var equipment = [
       "featured" : true,
       "image" : true,
       "link" : "https://kamoaukuleles.myshopify.com/collections/kamoa-e3-s/products/kamoa-e3-s-soprano-red",
+      "main_rig" : true,
       "make" : "Kamoa",
       "model" : "E3-S",
       "notes" : [
@@ -3195,6 +3262,7 @@ var equipment = [
          "Size" : "6\", 7.25\""
       },
       "image" : true,
+      "main_rig" : true,
       "make" : "Adam",
       "model" : "Bongos",
       "type" : "Bongos",
@@ -3209,6 +3277,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://meinlpercussion.com/en/products/jc50ab-b-m5746.html",
+      "main_rig" : true,
       "make" : "Meinl",
       "model" : "JC50AB-B",
       "notes" : [
@@ -3277,6 +3346,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/drums/ac_drums/drum_sets/rydeen/",
+      "main_rig" : true,
       "make" : "Yamaha",
       "model" : "Rydeen",
       "type" : "Drums",

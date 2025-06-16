@@ -83,6 +83,7 @@ sub get_gear {
             no_reverb       => bool($x->{'No Reverb'}),
             current_pedal   => bool($x->{'Current Pedal'}),
             current_rack    => bool($x->{'Current Rack'}),
+            main_rig        => bool($x->{'Main Rig'}),
         };
 
         for my $k (keys %$y) {
