@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-15T12:00:00+0000")
+var lastModified = new Date("2025-06-16T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -105,6 +105,7 @@ var equipment = [
    },
    {
       "category" : "Accessories",
+      "current_pedal" : true,
       "detail" : {
          "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
          "Serial" : "W100M7038017336, W1ROM7244018777"
@@ -1488,6 +1489,40 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "AD/DA Conversion" : "32 bits",
+         "Bypass" : "Buffered",
+         "Computer Interface" : "USB Micro-B",
+         "Input Impedance" : "2 MΩ",
+         "Inputs" : "1/4\" TS x 2",
+         "MIDI" : "In/Out",
+         "Memory" : "127 + manual",
+         "Other" : "1/4\" TRS Expression / Ctrl TRS",
+         "Output Impedance" : "1 kΩ",
+         "Outputs" : "1/4\" TS x 2",
+         "Power Consumption" : "225 mA",
+         "Power Supply" : "9V",
+         "Processing" : "32-bit floating point",
+         "Sample Rates" : "96 kHz",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.boss.info/us/products/dd-200/",
+      "make" : "BOSS",
+      "manuals" : {
+         "Owner’s Manual" : "DD-200_eng03_W.pdf"
+      },
+      "model" : "DD-200",
+      "notes" : [
+         "delay"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
          "Circuit" : "Analog",
@@ -1501,7 +1536,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/deluxe-bass-big-muff-pi",
-      "main_rig" : true,
       "make" : "Electro-Harmonix",
       "manuals" : {
          "Manual" : "deluxe-bass-big-muff-pi.pdf"
@@ -1512,6 +1546,62 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2021"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS x 2",
+         "Analog Outputs" : "1/4\" TS x 2",
+         "Bypass" : "True",
+         "Computer Interface" : "USB Mini-B",
+         "Dimensions" : "2.8\" x 4.8\" x 2\"",
+         "Loop Time" : "5 minutes",
+         "Power Consumption" : "100mA",
+         "Power Supply" : "9V",
+         "Serial" : "",
+         "Weight" : "0.94 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.tcelectronic.com/product.html?modelCode=0709-AFY",
+      "make" : "tc electronic",
+      "manuals" : {
+         "Manual" : "Manual - Ditto Stereo Looper.pdf",
+         "Quick Start Guide" : "QSG_TE_0709-AFY_DITTO-STEREO-LOOPER_WW.pdf"
+      },
+      "model" : "Ditto Stereo",
+      "notes" : [
+         "looper"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "4.6\" x 3.7\" x 1.5\"",
+         "Other" : "Footswitch 1/4\" input; Morning Glory V4; Moonshine V2",
+         "Power Consumption" : "108mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/products/double-barrel-v4",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-DoubleBarrelV4-Manual-English.pdf"
+      },
+      "model" : "Double Barrel V4",
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1540,7 +1630,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
-      "main_rig" : true,
       "make" : "BOSS",
       "model" : "FS-5U",
       "notes" : [
@@ -1548,6 +1637,63 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2007"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS x 2",
+         "Analog Outputs" : "1/4\" TS x 2",
+         "Bypass" : "True",
+         "Computer Interface" : "USB Mini-B",
+         "Dimensions" : "2.8\" x 4.8\" x 2\"",
+         "Power Consumption" : "300mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.tcelectronic.com/product.html?modelCode=0709-AFS",
+      "make" : "tc electronic",
+      "manuals" : {
+         "Quick Start Guide" : "QSG_TE_0709-AFS_HALL-OF-FAME-2-REVERB_WW.pdf",
+         "User Manual" : "hall-of-fame-2-reverb-manual-rev-4.pdf"
+      },
+      "model" : "Hall of Fame 2",
+      "notes" : [
+         "reverb"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Bypass" : "True",
+         "Dimensions" : "2.5\" x 4.8\" x 2.6\"",
+         "Input Impedance" : "1MΩ",
+         "Output Impedance" : "100Ω",
+         "Power Consumption" : "250mA",
+         "Power Supply" : "9V",
+         "Serial" : "",
+         "Weight" : "1 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://empresseffects.com/products/heavy-menace",
+      "make" : "Empress",
+      "manuals" : {
+         "User Manual" : "Heavy_Menace_manual_rev11_Web.pdf"
+      },
+      "model" : "Heavy Menace",
+      "notes" : [
+         "distortion"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1572,6 +1718,8 @@ var equipment = [
       "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
+         "Cheat Sheet" : "HX Stomp XL Cheat Sheet - English .pdf",
+         "HX Edit Pilot’s Guide" : "HX Edit Pilots Guide 3.80 - English .pdf",
          "Manual" : "HX Stomp XL 3.80 Owner's Manual - English .pdf"
       },
       "model" : "HX Stomp XL",
@@ -1595,7 +1743,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/lizard-queen/",
-      "main_rig" : true,
       "make" : "Electro-Harmonix",
       "manuals" : {
          "Manual" : "lizard-queen-manual.pdf"
@@ -1623,7 +1770,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/metal-muff",
-      "main_rig" : true,
       "make" : "Electro-Harmonix",
       "manuals" : {
          "Manual" : "metal-muff-manual.pdf"
@@ -1639,6 +1785,33 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Bypass" : "True",
+         "Dimensions" : "1.5\" x 3.5\" x 1.5\"",
+         "Power Consumption" : "14mA/22mA",
+         "Power Supply" : "9V/18V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.wamplerpedals.com/products/compression/mini-ego-compressor/",
+      "make" : "Wampler",
+      "manuals" : {
+         "Manual" : "mini_ego_2019.pdf",
+         "Quick Start Guide" : "WP_-EgoCompressor-mini-Wampler-Manual-10-19-21_OL-w-bleed.pdf"
+      },
+      "model" : "Mini Ego",
+      "notes" : [
+         "compressor"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -1649,7 +1822,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/nano-big-muff-pi",
-      "main_rig" : true,
       "make" : "Electro-Harmonix",
       "manuals" : {
          "Manual" : "nano-big-muff-pi-manual.pdf"
@@ -1660,6 +1832,60 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2020"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Bypass" : "True",
+         "Dimensions" : "2.2\" x 4.8\" x 1.6\"",
+         "Power Consumption" : "100mA",
+         "Power Supply" : "9V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/products/packrat",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-PackRat-Manual-English.pdf"
+      },
+      "model" : "PackRat",
+      "notes" : [
+         "distortion"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Bypass" : "True",
+         "Dimensions" : "3.9\" x 4.8\" x 2.5\"",
+         "Power Consumption" : "123mA",
+         "Power Supply" : "9V",
+         "Serial" : "",
+         "Weight" : "1.5 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.ibanez.com/eu/products/detail/pteq.html",
+      "make" : "Ibanez",
+      "manuals" : {
+         "Owner’s Manual" : "PTEQ.pdf"
+      },
+      "model" : "Pentatone Equalizer",
+      "notes" : [
+         "equalizer",
+         "PTEQ"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1697,37 +1923,12 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\", XLR balanced",
-         "Bypass" : "True/Buffered",
-         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
-         "Other" : "Ground-lift switch; always-on buffer",
-         "Power Consumption" : "32mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://jhspedals.info/collections/compression/products/pulp-n-peel-v4",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-PulpNPeelV4-Manual-English.pdf"
-      },
-      "model" : "Pulp ’N’ Peel V4",
-      "notes" : [
-         "compressor"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
          "Input Impedance" : "1 MΩ",
+         "Loop Time" : "16 minutes",
          "Output Impedance" : "1 kΩ",
          "Power Consumption" : "50mA",
          "Power Supply" : "9V",
@@ -1736,7 +1937,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.boss.info/us/products/rc-2/",
-      "main_rig" : true,
       "make" : "BOSS",
       "manuals" : {
          "Owner’s Manual" : "RC-2_e2.pdf"
@@ -1747,6 +1947,20 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2006"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "hide" : true,
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/Power-Manager-for-Line6-Variax-Line6-XPS--Handmade-USA_p_19.html",
+      "make" : "Sweet Foot",
+      "model" : "SchwartzPower",
+      "notes" : [
+         "Variax power",
+         "custom with additional A/B switch"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1762,7 +1976,6 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://missionengineering.com/shop/sp1-l6h/",
-      "main_rig" : true,
       "make" : "Mission Engineering",
       "manuals" : {
          "Manual" : "Mission-EP1_SP1_QS-Guide.pdf"
@@ -1797,7 +2010,6 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://www.petersontuners.com/products/stroboStompHD/",
-      "main_rig" : true,
       "make" : "Peterson",
       "manuals" : {
          "Guided Tuning Manual" : "Guided Tuning Manual.pdf",
@@ -1820,7 +2032,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.quiklok.com/product/vp-2611-mono-volume-pedal/",
-      "main_rig" : true,
       "make" : "Quick-Lok",
       "model" : "VP-2611",
       "notes" : [
@@ -1939,7 +2150,6 @@ var equipment = [
       "hide" : true,
       "image" : true,
       "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
-      "main_rig" : true,
       "make" : "Walrus Audio",
       "manuals" : {
          "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
@@ -1961,7 +2171,6 @@ var equipment = [
          "Weight" : "1.18 lbs"
       },
       "image" : true,
-      "main_rig" : true,
       "make" : "Godtone",
       "model" : "GD-02",
       "notes" : [
@@ -2046,15 +2255,20 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Attachments" : "Dual Lock",
          "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
          "Material" : "Aluminum",
-         "Mods" : "4XMOD Pro V2; 4XMOD"
+         "Mods" : "IEC MOD, SUM MOD2, 4X MOD",
+         "Serial" : ""
       },
       "hide" : true,
       "image" : true,
       "link" : "https://www.templeaudio.com/templeboards",
-      "main_rig" : true,
       "make" : "Temple Audio",
+      "manuals" : {
+         "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
+         "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
+      },
       "model" : "Templeboard DUO 34",
       "notes" : [
          "temple red"
@@ -3627,6 +3841,7 @@ var links = {
    "ESP" : "https://www.espguitars.com/",
    "Edirol" : "https://www.roland.com/us/",
    "Electro-Harmonix" : "https://www.ehx.com/",
+   "Empress" : "https://empresseffects.com/",
    "Epiphone" : "https://www.epiphone.com/",
    "Ernie Ball" : "https://www.ernieball.com/",
    "Fender" : "https://www.fender.com/",
@@ -3682,6 +3897,7 @@ var links = {
    "String Swing" : "https://www.stringswing.com/",
    "Strymon" : "https://www.strymon.net/",
    "Studio Projects" : "http://www.studioprojects.com/",
+   "Sweet Foot" : "https://www.sweetfootpedals.com/",
    "Tama" : "https://www.tama.com/",
    "Tapco" : "https://www.mackie.com/",
    "Temple Audio" : "https://www.templeaudio.com/",
@@ -3690,9 +3906,11 @@ var links = {
    "Ultimate Support" : "https://www.ultimatesupport.com/",
    "VOX" : "https://voxamps.com/",
    "Walrus Audio" : "https://www.walrusaudio.com/",
+   "Wampler" : "https://www.wamplerpedals.com/",
    "Warwick" : "https://www.warwick.de/en/Warwick-.html",
    "Washburn" : "https://www.washburn.com/",
    "Wittner" : "https://www.wittner-gmbh.de/",
    "Yamaha" : "https://usa.yamaha.com/",
-   "Zildjian" : "https://zildjian.com/"
+   "Zildjian" : "https://zildjian.com/",
+   "tc electronic" : "https://www.tcelectronic.com/"
 }

@@ -366,7 +366,10 @@ function drawDropdowns(i) {
       data.push(x)
     }
   })
-  data.sort().forEach( x => select.append( '<option value="'+x+'">'+x+'</option>' ) )
+
+  data.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+      .forEach(x => select.append('<option value="'+x+'">'+x+'</option>'))
+
   select.val(val)
 }
 
