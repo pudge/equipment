@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-16T12:00:00+0000")
+var lastModified = new Date("2025-06-24T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -70,7 +70,7 @@ var equipment = [
    {
       "category" : "Accessories",
       "detail" : {
-         "Battery Compartment" : "9V"
+         "Battery Compartment" : "9 V"
       },
       "image" : true,
       "link" : "https://ebow.com/",
@@ -790,7 +790,7 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "40W",
+         "Amplifier" : "40 W",
          "Analog Inputs" : "1/4\", 1/8\"",
          "Analog Outputs" : "XLR balanced, 1/8\"",
          "Dimensions" : "16.5\" x 16.5\" x 12\"",
@@ -810,6 +810,7 @@ var equipment = [
          "Manual" : "237030_bamp_manual_all_revA.pdf"
       },
       "model" : "Rumble 40",
+      "not_yet" : true,
       "notes" : [
          "bass guitar"
       ],
@@ -819,13 +820,13 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "5W",
+         "Amplifier" : "5 W",
          "Battery Compartment" : "AA x 6",
          "Dimensions" : "6-1/4\" x 5\" x 9-1/2\"",
          "Guitar Input" : "1/4\"",
          "Serial" : "03/04183",
          "Speaker" : "6\"",
-         "Weight" : "6lbs"
+         "Weight" : "6 lbs"
       },
       "image" : true,
       "instrument" : "guitar",
@@ -843,10 +844,10 @@ var equipment = [
       "detail" : {
          "Battery Compartment" : "AAA x 2",
          "Battery Life" : "27 hours",
-         "Dimensions" : "86mm x 80mm x 31mm (3.39\" x 3.15\" x 1.22”)",
+         "Dimensions" : "86 mm x 80 mm x 31 mm (3.39\" x 3.15\" x 1.22”)",
          "Line In" : "1/8\" stereo",
          "Phones" : "1/8\" stereo",
-         "Weight" : "40g (1.41oz)"
+         "Weight" : "40 g (1.41 oz)"
       },
       "image" : true,
       "instrument" : "guitar",
@@ -865,7 +866,7 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "3W",
+         "Amplifier" : "3 W",
          "Guitar Input" : "1/4\"",
          "Line In" : "1/8\" stereo",
          "Phones" : "1/8\" stereo",
@@ -895,9 +896,9 @@ var equipment = [
          "Guitar Input" : "1/4\"",
          "Line In" : "1/8\" stereo",
          "Phones" : "1/8\" stereo",
-         "Power" : "5V 1A",
+         "Power" : "5 V 1 A",
          "Speakers" : "2 x 2\"",
-         "Weight" : "12 ounces"
+         "Weight" : "12 oz"
       },
       "image" : true,
       "instrument" : "guitar",
@@ -913,14 +914,14 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "15W",
-         "Dimensions" : "16” x 15\" x 8.5\" (406.4mm x 381mm x 215.9mm)",
+         "Amplifier" : "15 W",
+         "Dimensions" : "16” x 15\" x 8.5\" (406.4 mm x 381 mm x 215.9 mm)",
          "Guitar Input" : "1/4\"",
          "Line In" : "1/8\" stereo",
          "Output" : "1/4\"",
          "Serial" : "SF11L6420006862",
          "Speaker" : "8\"",
-         "Weight" : "17lbs (7.7kg)"
+         "Weight" : "17 lbs (7.7 kg)"
       },
       "image" : true,
       "instrument" : "guitar",
@@ -943,16 +944,16 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "15W x 2; battery operation 7.5W x 2",
-         "Dimensions" : "420mm x 195mm x 155mm (16.5\" × 7.7\" × 6.1\")",
+         "Amplifier" : "15 W x 2; battery operation 7.5 W x 2",
+         "Dimensions" : "420 mm x 195 mm x 155 mm (16.5\" × 7.7\" × 6.1\")",
          "Guitar Input" : "1/4\"",
          "Line In" : "1/8\" stereo",
          "Output" : "1/4\" balanced",
          "Phones" : "1/8\" stereo",
-         "Power Consumption" : "22W",
+         "Power Consumption" : "22 W",
          "Serial" : "T219990XZ",
-         "Speaker" : "3.5\" (9cm) x 2",
-         "Weight" : "4.3kg (9lbs 8oz)"
+         "Speaker" : "3.5\" (9 cm) x 2",
+         "Weight" : "4.3 kg (9 lbs 8 oz)"
       },
       "featured" : true,
       "image" : true,
@@ -982,6 +983,22 @@ var equipment = [
       ],
       "type" : "Guitar Accessory",
       "year" : "2024"
+   },
+   {
+      "category" : "Hardware",
+      "hide" : true,
+      "image" : true,
+      "link" : "https://kahlerusa.com/product/stringlock-pro/",
+      "make" : "Kahler",
+      "model" : "Deluxe Stringlock",
+      "notes" : [
+         "string lock",
+         "black krome",
+         "Killer 2710",
+         "broke"
+      ],
+      "type" : "Guitar Accessory",
+      "year" : "1991"
    },
    {
       "category" : "Hardware",
@@ -1023,16 +1040,16 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Connector" : "1/4\" stereo",
-         "Cord" : "11' (3.4m) (OFC litz wire, left-side exit)",
-         "Driver Diameter" : "40mm",
+         "Cord" : "11' (3.4 m) (OFC litz wire, left-side exit)",
+         "Driver Diameter" : "40 mm",
          "Frequency Response" : "5 - 28000 Hz",
-         "Impedance" : "60Ω",
+         "Impedance" : "60 Ω",
          "Magnet" : "Neodymium",
          "Maximum Input Power" : "1,600 mW at 1 kHz",
-         "Sensitivity" : "100dB",
+         "Sensitivity" : "100 dB",
          "Type" : "Closed-back dynamic",
          "Voice Coil" : "Copper-clad aluminum wire",
-         "Weight" : "8.8oz (250g) without cable"
+         "Weight" : "8.8 oz (250 g) without cable"
       },
       "image" : true,
       "link" : "https://www.audio-technica.com/en-us/ath-m40fs",
@@ -1045,14 +1062,14 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Connector" : "1/8\" stereo (gold-plated)",
-         "Cord" : "Coiled 1-3m long single-sided OFC litz cord",
-         "Driver Diameter" : "40mm",
-         "Frequency Range" : "5 - 30000Hz",
-         "Impedance" : "45Ω at 1kHz",
+         "Cord" : "Coiled 1-3 m long single-sided OFC litz cord",
+         "Driver Diameter" : "40 mm",
+         "Frequency Range" : "5 - 30000 Hz",
+         "Impedance" : "45 Ω at 1 kHz",
          "Power handling capacity" : "1,000 mW",
-         "Sensitivity" : "106dB",
+         "Sensitivity" : "106 dB",
          "Type" : "Closed-back dynamic",
-         "Weight" : "Approx. 260g (9 3/16 oz) (without cord)"
+         "Weight" : "Approx. 260 g (9 3/16 oz) (without cord)"
       },
       "image" : true,
       "link" : "https://www.sony.com/electronics/headphones/t/headband-headphones",
@@ -1067,10 +1084,10 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Frequency Range" : "22 - 17500Hz",
-         "Impedance" : "17Ω at 1kHz",
-         "Net Weight" : "30g (1oz)",
-         "Sensitivity at 1 kHz" : "107dB SPL/mW",
+         "Frequency Range" : "22 - 17500 Hz",
+         "Impedance" : "17 Ω at 1 kHz",
+         "Net Weight" : "30 g (1 oz)",
+         "Sensitivity at 1 kHz" : "107 dB SPL/mW",
          "Transducer Type" : "Single High-Definition MicroDriver"
       },
       "image" : true,
@@ -1098,7 +1115,7 @@ var equipment = [
          "Dimensions" : "1U",
          "MIDI" : "In/Out",
          "Phones" : "1/4\" stereo",
-         "Sample Rates" : "44.1kHz, 48kHz, 88.2kHz, 96kHz",
+         "Sample Rates" : "44.1, 48, 88.2, 96 kHz",
          "Serial" : "8282153750",
          "Sync" : "In/Out, Word clock, ADAT sync, SMPTE I/O"
       },
@@ -1133,10 +1150,10 @@ var equipment = [
       "current_rack" : true,
       "detail" : {
          "Computer Interface" : "USB-B",
-         "Dimensions" : "11cm x 7cm x 4.4cm (4.3\" x 2.7\" x 1.73\")",
+         "Dimensions" : "11 cm x 7 cm x 4.4 cm (4.3\" x 2.7\" x 1.73\")",
          "MIDI" : "In/Out x 4",
          "Serial" : "MPU04150700109",
-         "Weight" : "0.323kg (0.71lbs)"
+         "Weight" : "0.323 kg (0.71 lbs)"
       },
       "image" : true,
       "link" : "https://www.midiplus.com.tw/en/product-detail/MIDI4X4/",
@@ -1182,10 +1199,10 @@ var equipment = [
          "Converters" : "24-bit",
          "Digital Inputs" : "TOSLINK, S/PDIF RCA coaxial",
          "Digital Outputs" : "TOSLINK, S/PDIF RCA coaxial",
-         "Dimensions" : "482mm x 45mm (1U) x 286mm (19\" x 1.73\" (1U) x 11.26”)",
+         "Dimensions" : "482 mm x 45 mm (1U) x 286 mm (19\" x 1.73\" (1U) x 11.26”)",
          "MIDI" : "In/Out",
          "Phones" : "1/4\" stereo",
-         "Sample Rates" : "44.1kHz, 48kHz, 88.2kHz, 96kHz, 176.4kHz, 192kHz",
+         "Sample Rates" : "44.1, 48, 88.2, 96, 176.4, 192 kHz",
          "Serial" : "V96613100879",
          "Sync" : "Out, Word clock",
          "Weight" : "3.27kg (7.21lbs)"
@@ -1213,9 +1230,9 @@ var equipment = [
          "Analog Outputs" : "1/4\" TRS x 2",
          "Computer Interface" : "USB-C",
          "Converters" : "24-bit",
-         "Dimensions" : "175mm x 47.5mm x 99mm (6.89\" x 1.87\" x 3.89”)",
+         "Dimensions" : "175 mm x 47.5 mm x 99 mm (6.89\" x 1.87\" x 3.89”)",
          "Phones" : "1/4\" stereo",
-         "Sample Rates" : "44.1kHz, 48kHz, 88.2kHz, 96kHz, 176.4kHz, 192kHz",
+         "Sample Rates" : "44.1, 48, 88.2, 96, 176.4, 192 kHz",
          "Serial" : "Y8Y8R4X0CAB486",
          "Weight" : "470g (1.04lbs)"
       },
@@ -1240,10 +1257,10 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "Stereo 1/4\" TRS balanced x 4, stereo RCA phono",
          "Analog Outputs" : "Stereo 1/4\" TRS balanced x 8",
-         "Dimensions" : "3.2” x 13.5” x 5.9” (81mm x 343mm x 150mm)",
+         "Dimensions" : "3.2” x 13.5” x 5.9” (81 mm x 343 mm x 150 mm)",
          "Phones" : "1/4\" stereo x 2",
          "Serial" : "2034070CWFU0456",
-         "Weight" : "3.5lbs (1.6kg)"
+         "Weight" : "3.5 lbs (1.6 kg)"
       },
       "image" : true,
       "link" : "https://mackie.com/products/big-knob-series-monitor-controllers-interfaces",
@@ -1265,14 +1282,14 @@ var equipment = [
          "Analog Inputs" : "Stereo 1/4\", stereo RCA phono",
          "Converters" : "24-bit",
          "Digital Inputs" : "optical, coax",
-         "Dimensions" : "170mm x 261mm x 280mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
-         "Frequency Range" : "50 - 22000Hz",
-         "Input Impedance" : "18MΩ",
+         "Dimensions" : "170 mm x 261 mm x 280 mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
+         "Frequency Range" : "50 - 22000 Hz",
+         "Input Impedance" : "18 MΩ",
          "Phones" : "1/4\" stereo",
-         "Sample Rates" : "32, 44.1, 48, 96kHz",
+         "Sample Rates" : "32, 44.1, 48, 96 kHz",
          "Serial" : "ZR32193",
-         "Speaker" : "12cm (4 3/4”), 4cm (1 5/8”)",
-         "Weight" : "4.5kg (9lbs 15oz) x 2"
+         "Speaker" : "12 cm (4 3/4”), 4 cm (1 5/8”)",
+         "Weight" : "4.5 kg (9 lbs 15 oz) x 2"
       },
       "image" : true,
       "make" : "Edirol",
@@ -1312,11 +1329,11 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "250W x 2",
+         "Amplifier" : "250 W x 2",
          "Analog Inputs" : "XLR/TS combo x 4, stereo 1/4\" x 2, stereo RCA x 2",
          "Analog Outputs" : "Stereo 1/4\" x 2, stereo RCA",
          "Serial" : "HH01636",
-         "Speaker" : "10\" (25cm)"
+         "Speaker" : "10\" (25 cm)"
       },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/proaudio/pa_systems/",
@@ -1358,12 +1375,12 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Connector" : "XLR-3",
-         "Dimensions" : "Ø 48 x 180mm",
-         "Frequency Response" : "40 - 16000Hz",
-         "Min. Terminating Impedance" : "1MΩ",
-         "Nominal Impedance" : "350Ω",
+         "Dimensions" : "Ø 48 x 180 mm",
+         "Frequency Response" : "40 - 16000 Hz",
+         "Min. Terminating Impedance" : "1 MΩ",
+         "Nominal Impedance" : "350 Ω",
          "Sensitivity in free field, no load (1kHz)" : "2.7 mV/Pa",
-         "Weight" : "330g"
+         "Weight" : "330 g"
       },
       "image" : true,
       "link" : "https://en-us.sennheiser.com/live-performance-microphone-vocal-stage-e-835",
@@ -1383,27 +1400,27 @@ var equipment = [
          "Adjacent Channel Rejection" : "≥ 65 dB",
          "Battery Compartment" : "AA x 2",
          "Blocking" : "≥ 70 dB",
-         "Dimensions" : "82mm x 64mm x 24mm",
-         "Frequency Range" : "518 - 544MHz (A)",
-         "Frequency Response" : "40 - 18000Hz",
-         "Frequency Stability" : "≤±15ppm",
+         "Dimensions" : "82 mm x 64 mm x 24 mm",
+         "Frequency Range" : "518 - 544 MHz (A)",
+         "Frequency Response" : "40 - 18000 Hz",
+         "Frequency Stability" : "≤±15 ppm",
          "Intermodulation Attenuation" : "≥ 65 dB",
          "Maximum SPL" : "120 dB SPL",
          "Modulation" : "Wideband FM",
-         "Nominal Deviation" : "± 24kHz",
-         "Operating Time" : "> 8h",
-         "Peak Deviation" : "± 48kHz",
+         "Nominal Deviation" : "± 24 kHz",
+         "Operating Time" : "> 8 h",
+         "Peak Deviation" : "± 48 kHz",
          "Polar Pattern" : "Super Cardioid",
-         "Power Consumption" : "~130mA (EK 100), ≤ 170mA (SK 100)",
-         "S/N Ratio (at 1mV and peak deviation)" : "≥ 110dB",
-         "Sensitivity" : "<2.5 μV at 52 dBA(rms) S/N ratio (EK 100), 40 mV/Pa (ME-4)",
+         "Power Consumption" : "~130 mA (EK 100), ≤ 170 mA (SK 100)",
+         "S/N Ratio (at 1mV and peak deviation)" : "≥ 110 dB",
+         "Sensitivity" : "<2.5 μV at 52 dBA (rms) S/N ratio (EK 100), 40 mV/Pa (ME-4)",
          "Serial" : "Transmitter: 163351, Receiver: 135282",
          "Squelch" : "OFF, LO: 5 dBμV, MID: 15 dBμV, HI: 25 dBμV",
          "Switching Bandwidth" : "36 MHz",
          "THD (at nominal deviation and 1 kHz)" : "≤ 0.9%",
          "Temperature Range" : "-10C - 55C",
          "Transducer Type" : "Condenser",
-         "Weight" : "158g (EK 100)"
+         "Weight" : "158 g (EK 100)"
       },
       "image" : true,
       "link" : "https://www.sennheiser.com/en-us/catalog/products/wireless-systems",
@@ -1420,15 +1437,15 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Diaphragm" : "Makrofol",
-         "Dimensions" : "Ø 23 x 260mm",
-         "Frequency Response" : "40 - 20000Hz",
-         "Load Impedance" : "≥ 200Ω",
-         "Nominal Impedance" : "200Ω",
-         "Open Circuit Voltage at 1kHz" : "1.3mV/Pa",
+         "Dimensions" : "Ø 23 x 260 mm",
+         "Frequency Response" : "40 - 20000 Hz",
+         "Load Impedance" : "≥ 200 Ω",
+         "Nominal Impedance" : "200 Ω",
+         "Open Circuit Voltage at 1kHz" : "1.3 mV/Pa",
          "Operating Principle" : "Pressure",
-         "Output Level" : "-57dBm",
+         "Output Level" : "-57 dBm",
          "Polar Pattern" : "Omnidirectional",
-         "Sensitivity" : "-149dBm",
+         "Sensitivity" : "-149 dBm",
          "Transducer Type" : "Dynamic moving coil",
          "Weight" : "256g"
       },
@@ -1446,20 +1463,20 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Audio frequency Bandwidth" : "20 - 20000Hz",
-         "Bass Cut Filter" : "300Hz - 12dB/octave",
-         "Current" : "≤ 3mA",
-         "Diameter" : "54mm",
-         "Electrical Impedance" : "≤ 200Ω",
-         "Equivalent Noise Level" : "16dB-A",
+         "Audio frequency Bandwidth" : "20 - 20000 Hz",
+         "Bass Cut Filter" : "300 Hz -12 dB/octave",
+         "Current" : "≤ 3 mA",
+         "Diameter" : "54 mm",
+         "Electrical Impedance" : "≤ 200 Ω",
+         "Equivalent Noise Level" : "16 dB-A",
          "Gender" : "Male",
-         "Length" : "165mm",
-         "Net Weight" : "530g",
+         "Length" : "165 mm",
+         "Net Weight" : "530 g",
          "Polar Pattern" : "Cardioid",
-         "Preattenuation Pad" : "-20dB",
-         "Recommended load impedance" : "≥ 1MΩ",
+         "Preattenuation Pad" : "-20 dB",
+         "Recommended load impedance" : "≥ 1 MΩ",
          "Sensitivity" : "20 mV/Pa",
-         "Signal to Noise" : "78dB-A",
+         "Signal to Noise" : "78 dB-A",
          "Type" : "Balanced XLR",
          "Voltage" : "44 - 52 V"
       },
@@ -1489,32 +1506,29 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "AD/DA Conversion" : "32 bits",
+         "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
-         "Computer Interface" : "USB Micro-B",
-         "Input Impedance" : "2 MΩ",
-         "Inputs" : "1/4\" TS x 2",
-         "MIDI" : "In/Out",
-         "Memory" : "127 + manual",
-         "Other" : "1/4\" TRS Expression / Ctrl TRS",
+         "Circuit" : "Analog",
+         "Controls" : "Level, Gain, Tone",
+         "Dimensions" : "73 mm x 129 mm x 59 mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
+         "Input Impedance" : "1 MΩ",
+         "Model Number" : "BD-2",
+         "Nominal Input Level" : "-20 dB",
+         "Nominal Output Level" : "-20 dB",
          "Output Impedance" : "1 kΩ",
-         "Outputs" : "1/4\" TS x 2",
-         "Power Consumption" : "225 mA",
-         "Power Supply" : "9V",
-         "Processing" : "32-bit floating point",
-         "Sample Rates" : "96 kHz",
-         "Serial" : ""
+         "Power Consumption" : "20 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "",
+         "Weight" : "360 g (13 oz)"
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://www.boss.info/us/products/dd-200/",
+      "link" : "https://www.boss.info/us/products/bd-2/",
       "make" : "BOSS",
-      "manuals" : {
-         "Owner’s Manual" : "DD-200_eng03_W.pdf"
-      },
-      "model" : "DD-200",
+      "model" : "Blues Driver",
+      "not_yet" : true,
       "notes" : [
-         "delay"
+         "overdrive"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1531,8 +1545,8 @@ var equipment = [
          "Direct Output" : "1/4\"",
          "Input Impedance" : "2 MΩ",
          "Output Impedance" : "600 Ω",
-         "Power Consumption" : "15mA",
-         "Power Supply" : "9V"
+         "Power Consumption" : "15 mA",
+         "Power Supply" : "9 V"
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/deluxe-bass-big-muff-pi",
@@ -1546,62 +1560,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2021"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\" TS x 2",
-         "Analog Outputs" : "1/4\" TS x 2",
-         "Bypass" : "True",
-         "Computer Interface" : "USB Mini-B",
-         "Dimensions" : "2.8\" x 4.8\" x 2\"",
-         "Loop Time" : "5 minutes",
-         "Power Consumption" : "100mA",
-         "Power Supply" : "9V",
-         "Serial" : "",
-         "Weight" : "0.94 lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.tcelectronic.com/product.html?modelCode=0709-AFY",
-      "make" : "tc electronic",
-      "manuals" : {
-         "Manual" : "Manual - Ditto Stereo Looper.pdf",
-         "Quick Start Guide" : "QSG_TE_0709-AFY_DITTO-STEREO-LOOPER_WW.pdf"
-      },
-      "model" : "Ditto Stereo",
-      "notes" : [
-         "looper"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Dimensions" : "4.6\" x 3.7\" x 1.5\"",
-         "Other" : "Footswitch 1/4\" input; Morning Glory V4; Moonshine V2",
-         "Power Consumption" : "108mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://jhspedals.info/products/double-barrel-v4",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-DoubleBarrelV4-Manual-English.pdf"
-      },
-      "model" : "Double Barrel V4",
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1622,11 +1580,11 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Depth" : "90mm (3 9/16”)",
-         "Height" : "43mm (1 3/4”)",
+         "Depth" : "90 mm (3 9/16”)",
+         "Height" : "43 mm (1 3/4”)",
          "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
-         "Weight" : "240g / 9oz",
-         "Width" : "96mm (3 13/16”)"
+         "Weight" : "240 g / 9 oz",
+         "Width" : "96 mm (3 13/16”)"
       },
       "image" : true,
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
@@ -1642,55 +1600,31 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\" TS x 2",
-         "Analog Outputs" : "1/4\" TS x 2",
-         "Bypass" : "True",
-         "Computer Interface" : "USB Mini-B",
-         "Dimensions" : "2.8\" x 4.8\" x 2\"",
-         "Power Consumption" : "300mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.tcelectronic.com/product.html?modelCode=0709-AFS",
-      "make" : "tc electronic",
-      "manuals" : {
-         "Quick Start Guide" : "QSG_TE_0709-AFS_HALL-OF-FAME-2-REVERB_WW.pdf",
-         "User Manual" : "hall-of-fame-2-reverb-manual-rev-4.pdf"
-      },
-      "model" : "Hall of Fame 2",
-      "notes" : [
-         "reverb"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Bypass" : "True",
-         "Dimensions" : "2.5\" x 4.8\" x 2.6\"",
-         "Input Impedance" : "1MΩ",
-         "Output Impedance" : "100Ω",
-         "Power Consumption" : "250mA",
-         "Power Supply" : "9V",
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
+         "Circuit" : "Analog",
+         "Controls" : "Tone (Hi, Mid, Lo), Volume, Gain, OD/Boost",
+         "Dimensions" : "2.25\" x 4.25\" x 1.25\"",
+         "Distortion Gain" : "34 dB - 67 dB",
+         "Gain Range" : "20 dB - 57 dB",
+         "Input Impedance" : "2.4 MΩ",
+         "Model Number" : "CSP033G",
+         "Noise Floor" : "-100 dB",
+         "Nominal Output Level" : "-17 dB",
+         "Output Impedance" : "24 kΩ",
+         "Power Consumption" : "4.7 mA",
+         "Power Supply" : "9 V",
          "Serial" : "",
-         "Weight" : "1 lbs"
+         "Weight" : "10.6 oz"
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://empresseffects.com/products/heavy-menace",
-      "make" : "Empress",
-      "manuals" : {
-         "User Manual" : "Heavy_Menace_manual_rev11_Web.pdf"
-      },
-      "model" : "Heavy Menace",
+      "link" : "https://www.jimdunlop.com/mxr-gran-torino-boost-overdrive/",
+      "make" : "MXR",
+      "model" : "Gran Torino",
+      "not_yet" : true,
       "notes" : [
-         "distortion"
+         "boost overdrive"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1699,30 +1633,28 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\" x 2, 1/4\" return x 2",
-         "Analog Outputs" : "1/4\" x 2, 1/4\" stereo send",
-         "Computer Interface" : "USB-B",
-         "Dimensions" : "12.4\" x 4.7\" x 2.7\"",
-         "Expression" : "TRS",
+         "Analog Inputs" : "1/4\" x 2, XLR, 1/4\" return x 4",
+         "Analog Outputs" : "1/4\" x 2, XLR x 2, 1/4\" send x4",
+         "Computer Interface" : "USB-C, USB-A, NEXUS",
+         "Dimensions" : "19.4\" x 10.1\" x 3\"",
+         "Expression" : "TRS x 2",
          "MIDI" : "In/Out+Thru",
          "Phones" : "1/4\" stereo",
-         "Power Consumption" : "3A",
-         "Power Supply" : "9V",
+         "Power Consumption" : "",
+         "Power Supply" : "",
+         "S/PDIF" : "In/Out",
          "Serial" : "",
-         "Weight" : "3.3lbs"
+         "Storage" : "Micro SD",
+         "Weight" : ""
       },
       "featured" : true,
       "hide" : true,
       "image" : true,
-      "link" : "https://line6.com/hx-stomp-xl/",
+      "link" : "https://line6.com/helix-stadium/",
       "main_rig" : true,
       "make" : "Line 6",
-      "manuals" : {
-         "Cheat Sheet" : "HX Stomp XL Cheat Sheet - English .pdf",
-         "HX Edit Pilot’s Guide" : "HX Edit Pilots Guide 3.80 - English .pdf",
-         "Manual" : "HX Stomp XL 3.80 Owner's Manual - English .pdf"
-      },
-      "model" : "HX Stomp XL",
+      "model" : "Helix Stadium XL",
+      "not_yet" : true,
       "notes" : [
          "multi-effects"
       ],
@@ -1738,8 +1670,8 @@ var equipment = [
          "Circuit" : "Analog",
          "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
          "Input Impedance" : "130 kΩ",
-         "Power Consumption" : "5mA",
-         "Power Supply" : "9V"
+         "Power Consumption" : "5 mA",
+         "Power Supply" : "9 V"
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/lizard-queen/",
@@ -1765,8 +1697,8 @@ var equipment = [
          "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
          "Input Impedance" : "1 MΩ",
          "Output Impedance" : "600 Ω",
-         "Power Consumption" : "25mA",
-         "Power Supply" : "9V"
+         "Power Consumption" : "25 mA",
+         "Power Supply" : "9 V"
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/metal-muff",
@@ -1785,40 +1717,13 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Bypass" : "True",
-         "Dimensions" : "1.5\" x 3.5\" x 1.5\"",
-         "Power Consumption" : "14mA/22mA",
-         "Power Supply" : "9V/18V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.wamplerpedals.com/products/compression/mini-ego-compressor/",
-      "make" : "Wampler",
-      "manuals" : {
-         "Manual" : "mini_ego_2019.pdf",
-         "Quick Start Guide" : "WP_-EgoCompressor-mini-Wampler-Manual-10-19-21_OL-w-bleed.pdf"
-      },
-      "model" : "Mini Ego",
-      "notes" : [
-         "compressor"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
          "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
          "Input Impedance" : "130 kΩ",
-         "Power Consumption" : "3mA",
-         "Power Supply" : "9V"
+         "Power Consumption" : "3 mA",
+         "Power Supply" : "9 V"
       },
       "image" : true,
       "link" : "https://www.ehx.com/products/nano-big-muff-pi",
@@ -1837,60 +1742,6 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Bypass" : "True",
-         "Dimensions" : "2.2\" x 4.8\" x 1.6\"",
-         "Power Consumption" : "100mA",
-         "Power Supply" : "9V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://jhspedals.info/products/packrat",
-      "make" : "JHS",
-      "manuals" : {
-         "Manual" : "JHS-Pedals-PackRat-Manual-English.pdf"
-      },
-      "model" : "PackRat",
-      "notes" : [
-         "distortion"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Bypass" : "True",
-         "Dimensions" : "3.9\" x 4.8\" x 2.5\"",
-         "Power Consumption" : "123mA",
-         "Power Supply" : "9V",
-         "Serial" : "",
-         "Weight" : "1.5 lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.ibanez.com/eu/products/detail/pteq.html",
-      "make" : "Ibanez",
-      "manuals" : {
-         "Owner’s Manual" : "PTEQ.pdf"
-      },
-      "model" : "Pentatone Equalizer",
-      "notes" : [
-         "equalizer",
-         "PTEQ"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
          "Analog Inputs" : "1/4”, XLR, 1/4” return x 2",
          "Analog Outputs" : "Stereo 1/4\" x 2, stereo XLR, 1/4\" send",
          "Computer Interface" : "USB-B",
@@ -1900,10 +1751,10 @@ var equipment = [
          "Line In" : "1/8\" stereo",
          "MIDI" : "In/Out+Thru",
          "Phones" : "1/4\" stereo",
-         "Power Consumption" : "2A",
-         "Power Supply" : "9V",
+         "Power Consumption" : "2 A",
+         "Power Supply" : "9 V",
          "Serial" : "X3L1S5937000703",
-         "Weight" : "8.4lbs"
+         "Weight" : "8.4 lbs"
       },
       "featured" : true,
       "image" : true,
@@ -1925,15 +1776,44 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
          "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Controls" : "Distortion, Filter, Volume",
+         "Dimensions" : "3.5\" x 4\" x 2.5\"",
+         "Power Consumption" : "1.6 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "",
+         "Weight" : "2 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://actentertainment.com/rat-2-distortion-pedal/",
+      "make" : "ProCo",
+      "model" : "Rat 2",
+      "not_yet" : true,
+      "notes" : [
+         "distortion"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
          "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
          "Input Impedance" : "1 MΩ",
          "Loop Time" : "16 minutes",
          "Output Impedance" : "1 kΩ",
-         "Power Consumption" : "50mA",
-         "Power Supply" : "9V",
+         "Power Consumption" : "50 mA",
+         "Power Supply" : "9 V",
          "Serial" : "AV 20887",
-         "Weight" : "420g (15oz)"
+         "Weight" : "420 g (15 oz)"
       },
       "image" : true,
       "link" : "https://www.boss.info/us/products/rc-2/",
@@ -1955,71 +1835,10 @@ var equipment = [
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Power-Manager-for-Line6-Variax-Line6-XPS--Handmade-USA_p_19.html",
       "make" : "Sweet Foot",
       "model" : "SchwartzPower",
+      "not_yet" : true,
       "notes" : [
          "Variax power",
          "custom with additional A/B switch"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Dimensions" : "9.9\" x 4.0\" x 3.25\" (8.7\" x 3.0\" pedal)",
-         "Impedance" : "10 KΩ",
-         "Output" : "1/4\" TS x 2",
-         "Serial" : "",
-         "Taper" : "Linear",
-         "Weight" : "3.5lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://missionengineering.com/shop/sp1-l6h/",
-      "make" : "Mission Engineering",
-      "manuals" : {
-         "Manual" : "Mission-EP1_SP1_QS-Guide.pdf"
-      },
-      "model" : "SP1-L6H",
-      "notes" : [
-         "expression (dual)"
-      ],
-      "type" : "Pedal",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Bypass" : "True/Buffered",
-         "Computer Interface" : "Micro USB",
-         "Detection Accuracy" : "±0.1 cent",
-         "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
-         "Dimensions" : "5.1\" x 2.6\" x 2.1\"",
-         "Input Impedance" : "5 MΩ",
-         "Output Impedance" : "1 LΩ",
-         "Power Consumption" : "85mA",
-         "Power Supply" : "9V",
-         "Reference Pitch" : "A4=390Hz-490Hz",
-         "Scale" : "configurable",
-         "Serial" : "",
-         "Weight" : "14 oz"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.petersontuners.com/products/stroboStompHD/",
-      "make" : "Peterson",
-      "manuals" : {
-         "Guided Tuning Manual" : "Guided Tuning Manual.pdf",
-         "StroboStomp HD Manual" : "StroboStomp_HD_Manual_v1.1_EN.pdf",
-         "StroboStomp HD Specifications" : "StroboStompHD_Specifications_rev1.0.pdf",
-         "StroboStomp HD Tuning & Sweetener Presets" : "StroboStomp HD Tuning & Sweetener Presets.pdf"
-      },
-      "model" : "StroboStomp HD",
-      "notes" : [
-         "tuner"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -2044,12 +1863,12 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Battery Life" : "1500 Hours",
-         "Current @9V" : "160µA",
+         "Current @9 V" : "160 µA",
          "Magnet" : "Ceramic and Steel",
          "Maximum Supply" : "27V DC",
-         "Output Impedance" : "10MΩ",
+         "Output Impedance" : "10 MΩ",
          "Output Noise (60 Hz)" : "-107 (single-coil), -109 (dual-coil)",
-         "Output Voltage (finger, thumb)" : "finger, thumb: 1.00V (single-coil), 2.00V (dual-coil); thump: 3.00V (single-coil), 4.50V (dual-coil)",
+         "Output Voltage (finger, thumb)" : "finger, thumb: 1.00 V (single-coil), 2.00 V (dual-coil); thump: 3.00 V (single-coil), 4.50 V (dual-coil)",
          "Resonant Frequency" : "5.40 kHz (single-coil), 2.50 kHz (dual-coil)"
       },
       "image" : true,
@@ -2064,7 +1883,7 @@ var equipment = [
       "detail" : {
          "Battery Life" : "220 hours",
          "Pickup Length" : "2.65\" (67.3 mm)",
-         "Soundhole" : "Round soundholes from 3 7/8\" (98mm) to 4 1/8\" (105mm) in diameter"
+         "Soundhole" : "Round soundholes from 3 7/8\" (98 mm) to 4 1/8\" (105 mm) in diameter"
       },
       "image" : true,
       "link" : "https://www.fishman.com/portfolio/ellipse-matrix-blend-pickup-preamp-system/",
@@ -2093,8 +1912,8 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Bobbin Material" : "Fiber",
-         "DC Resistance" : "Neck: 6.26K, Middle: 6.34K, Bridge: 6.43K",
-         "Inductance" : "Neck: 2.4H, Middle: 2.5H, Bridge: 2.63H",
+         "DC Resistance" : "Neck: 6.26 kΩ, Middle: 6.34 kΩ, Bridge: 6.43 kΩ",
+         "Inductance" : "Neck: 2.4 H, Middle: 2.5 H, Bridge: 2.63 H",
          "Lead Wire" : "Cloth-covered",
          "Magnet" : "Alnico 5",
          "Magnet Wire" : "Formvar-coated",
@@ -2155,6 +1974,7 @@ var equipment = [
          "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
       },
       "model" : "Canvas Power HP+",
+      "not_yet" : true,
       "notes" : [
          "pedal power"
       ],
@@ -2166,8 +1986,8 @@ var equipment = [
       "current_pedal" : true,
       "detail" : {
          "Dimensions" : "6.5\" x 1.97\" x 1.5\"",
-         "Outputs" : "11 isolated: (6) 9V 100mA; (2) 9V 400mA; (1) 12V 100mA; (1) 18V 100mA; (1) 5V 2A (USB)",
-         "Power Supply" : "240V 400mA",
+         "Outputs" : "11 isolated: (6) 9 V 100 mA; (2) 9 V 400 mA; (1) 12 V 100 mA; (1) 18 V 100 mA; (1) 5 V 2 A (USB)",
+         "Power Supply" : "240 V 400 mA",
          "Weight" : "1.18 lbs"
       },
       "image" : true,
@@ -2201,8 +2021,8 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\", XLR balanced",
-         "Power Consumption" : "2A",
-         "Power Supply" : "9V"
+         "Power Consumption" : "2 A",
+         "Power Supply" : "9 V"
       },
       "image" : true,
       "link" : "https://line6.com/support/page/kb/legacy-products/variax-guitars-bass-workbench/variax-xps-amp-vdi-cable-faqs-r511/",
@@ -2216,8 +2036,8 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
-         "Power Consumption" : "2A",
-         "Power Supply" : "9V"
+         "Power Consumption" : "2 A",
+         "Power Supply" : "9 V"
       },
       "image" : true,
       "link" : "https://line6.com/support/page/kb/legacy-products/variax-guitars-bass-workbench/variax-xps-amp-vdi-cable-faqs-r511/",
@@ -2269,7 +2089,8 @@ var equipment = [
          "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
          "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
       },
-      "model" : "Templeboard DUO 34",
+      "model" : "Templeboard TRIO 43",
+      "not_yet" : true,
       "notes" : [
          "temple red"
       ],
@@ -2299,7 +2120,7 @@ var equipment = [
          "Detection Accuracy" : "±0.1 cent",
          "Detection Range" : "A0 (27.5 Hz)–C8 (4186 Hz)",
          "Dimensions" : "18.94\" x 4.45\" x 1.81\"",
-         "Power Consumption" : "75mA",
+         "Power Consumption" : "75 mA",
          "Reference Pitch" : "A4=438-455 Hz",
          "Scale" : "12-note equal temperament",
          "Serial" : "13751",
@@ -2307,7 +2128,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/",
-      "main_rig" : true,
       "make" : "Korg",
       "manuals" : {
          "Owner’s Manual" : "DTR2000_1000_EFG2.pdf"
@@ -2346,7 +2166,7 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Back Material" : "High Pressure Laminate",
-         "Battery Compartment" : "9V",
+         "Battery Compartment" : "9 V",
          "Body Size" : "D-14 Fret",
          "Finish Top" : "Satin",
          "Fret Count" : "20",
@@ -2361,7 +2181,7 @@ var equipment = [
          "Side Material" : "High Pressure Laminate",
          "Top Color" : "Natural",
          "Top Material" : "Sitka Spruce",
-         "Truss Rod" : "Adjustable, 5mm Allen Nut"
+         "Truss Rod" : "Adjustable, 5 mm Allen Nut"
       },
       "image" : true,
       "link" : "https://www.martinguitar.com/series-x-series.html",
@@ -2403,8 +2223,8 @@ var equipment = [
          "Total Length" : "30\"",
          "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Black Anodized Closed Gear",
-         "Weight" : "4lbs 3oz",
-         "dB at 1'" : "Peak: 93db, Average: 80db"
+         "Weight" : "4 lbs 3 oz",
+         "dB at 1'" : "Peak: 93 db, Average: 80 db"
       },
       "featured" : true,
       "image" : true,
@@ -2451,8 +2271,8 @@ var equipment = [
          "Total Length" : "30\"",
          "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Black Anodized Closed Gear",
-         "Weight" : "4lbs 3oz",
-         "dB at 1'" : "Peak: 93db, Average: 80db"
+         "Weight" : "4 lbs 3 oz",
+         "dB at 1'" : "Peak: 93 db, Average: 80 db"
       },
       "image" : true,
       "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=40446336335957",
@@ -2497,7 +2317,7 @@ var equipment = [
          "Back Inlay Material" : "Multi-Stripe",
          "Back Material" : "East Indian Rosewood",
          "Back Purfling/Strip" : "Zig-Zag",
-         "Battery Compartment" : "9V",
+         "Battery Compartment" : "9 V",
          "Binding" : "Grained Ivoroid",
          "Body Size" : "D-14 Fret",
          "Brace Material" : "Spruce",
@@ -2569,9 +2389,9 @@ var equipment = [
       "detail" : {
          "Back Material" : "Laminated Sapele",
          "Binding" : "Aged White",
-         "Body Depth" : "3.75\" (95mm)",
+         "Body Depth" : "3.75\" (95 mm)",
          "Body Finish" : "Semi-Gloss",
-         "Body Length" : "17.8\" (45.2cm)",
+         "Body Length" : "17.8\" (45.2 cm)",
          "Body Material" : "Sapele",
          "Body Style" : "Parlor",
          "Bracing Pattern" : "X Bracing",
@@ -2588,7 +2408,7 @@ var equipment = [
          "Neck Material" : "Nato",
          "Neck Shape" : "“C” Shape",
          "Nut Material" : "Synthetic Bone",
-         "Nut Width" : "1.69\" (43mm)",
+         "Nut Width" : "1.69\" (43 mm)",
          "Pickguard" : "1-Ply Aged White with Black “G”",
          "Rosette" : "White/Black Rings",
          "Scale Length" : "24\"",
@@ -2628,8 +2448,8 @@ var equipment = [
          "Neck Finish" : "Satin Neck Finish",
          "Neck Material" : "Nato",
          "Nut Material" : "Synthetic Bone",
-         "Nut Width" : "1.69\" (43mm)",
-         "Scale Length" : "23.3\" (592mm)",
+         "Nut Width" : "1.69\" (43 mm)",
+         "Scale Length" : "23.3\" (592 mm)",
          "Serial" : "OI14087311",
          "Top Material" : "Laminated Agathis",
          "Truss Rod" : "Adjustable",
@@ -2659,9 +2479,9 @@ var equipment = [
          "Model Number" : "DR-100 EB",
          "Neck Joint" : "Dovetail; Glued-in",
          "Neck Profile" : "SlimTaper C-profile",
-         "Nut Width" : "43.0mm (1.692”)",
+         "Nut Width" : "43.0 mm (1.692”)",
          "Pickguard" : "1-Ply Black PVC",
-         "Scale Length" : "647.7mm (25.5”)",
+         "Scale Length" : "647.7 mm (25.5”)",
          "Serial" : "20121301028",
          "Top Material" : "Select Spruce",
          "Truss Rod" : "2-Way Adjustable",
@@ -2687,7 +2507,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.framus-vintage.de/en/Other/Banjos/",
-      "main_rig" : true,
       "make" : "Framus",
       "model" : "Tenor Banjo",
       "notes" : [
@@ -2706,7 +2525,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Battery Compartment" : "2 x 9V w/Screw Plate",
+         "Battery Compartment" : "2 x 9 V w/Screw Plate",
          "Binding" : "MOP Multi-Ply Black/White/Black",
          "Body Material" : "Mahogany",
          "Bridge" : "Schecter Custom Bass String Thru",
@@ -2723,15 +2542,15 @@ var equipment = [
          "Item Number" : "1918",
          "Knobs" : "Metal Knurled w/ Set Screw",
          "Location" : "South Korea",
-         "Neck @ 12th Fret" : ".866\" (22mm)",
-         "Neck @ 1st Fret" : ".787\" (20mm)",
+         "Neck @ 12th Fret" : ".866\" (22 mm)",
+         "Neck @ 1st Fret" : ".787\" (20 mm)",
          "Neck Material" : "Multi-Ply Maple/Walnut",
          "Neck Pickup" : "EMG 40TW",
          "Neck Shape" : "Thin “C”",
          "Nut Material" : "Graph Tech XL Black Tusq",
-         "Nut Width" : "1.771\" (45mm)",
+         "Nut Width" : "1.771\" (45 mm)",
          "Production Year" : "2021",
-         "Scale Length" : "35\" (889mm)",
+         "Scale Length" : "35\" (889 mm)",
          "Serial" : "W21052189",
          "Strings" : "Ernie Ball 5 String Super Long #2850 (.045-.130)",
          "Top Contour" : "Arched Top",
@@ -2760,10 +2579,10 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Body Material" : "Basswood and Birch",
-         "Bridge" : "Standard (19mm string spacing)",
-         "Bridge Pickup" : "Super P4",
-         "Controls" : "Volume, Tone, Balancer",
+         "Body Material" : "Basswood",
+         "Bridge" : "Standard (19 mm string spacing)",
+         "Bridge Pickup" : "P4",
+         "Controls" : "Tone, Volume, Balancer",
          "Fingerboard Inlays" : "Pearl dot and side dots",
          "Fingerboard Material" : "Rosewood",
          "Fret Count" : "22",
@@ -2774,13 +2593,13 @@ var equipment = [
          "Location" : "FujiGen Gakki, Japan",
          "Neck Joint" : "AANJ",
          "Neck Material" : "1-Piece Maple",
-         "Neck Pickup" : "Super J4",
+         "Neck Pickup" : "J4",
          "Neck Type" : "D shape",
          "Nut Material" : "Plastic",
-         "Nut Width" : "41mm",
+         "Nut Width" : "41 mm",
          "Pickup Configuration" : "PJ",
          "Production Year" : "January 1986",
-         "Scale Length" : "864mm (34”)",
+         "Scale Length" : "864 mm (34”)",
          "Serial" : "A865503",
          "Truss Rod" : "Adjustable",
          "Tuning Machines" : "Hercules B"
@@ -2789,6 +2608,10 @@ var equipment = [
       "link" : "https://www.ibanez.com/usa/products/category/electric_basses/",
       "main_rig" : true,
       "make" : "Ibanez",
+      "manuals" : {
+         "Catalog (1986 model)" : "1986_Catalog_p16-17.webp",
+         "Owner’s Manual (1983 model)" : "1983RoadstarII_Manual.pdf"
+      },
       "model" : "Roadstar II RB650",
       "notes" : [
          "EXL170 (2023-09-30)",
@@ -2803,7 +2626,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Battery Compartment" : "6 x AA or 1 x 9V",
+         "Battery Compartment" : "6 x AA or 1 x 9 V",
          "Body Material" : "Alder",
          "Color" : "Sunburst",
          "Fingerboard Material" : "Rosewood",
@@ -2813,11 +2636,11 @@ var equipment = [
          "Location" : "Korea",
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
-         "Power Consumption" : "500mA",
-         "Power Supply" : "7V",
+         "Power Consumption" : "500 mA",
+         "Power Supply" : "7 V",
          "Scale Length" : "34\"",
          "Serial" : "4101739",
-         "Truss Rod" : "Adjustable, 4mm Allen Nut"
+         "Truss Rod" : "Adjustable, 4 mm Allen Nut"
       },
       "image" : true,
       "link" : "https://line6.com/legacy/variaxbass700",
@@ -2879,7 +2702,7 @@ var equipment = [
          "Controls" : "2 Volume, 2 Tone, CTS® Potentiometers",
          "Fingerboard Inlays" : "Pearloid Trapezoid",
          "Fingerboard Material" : "Laurel",
-         "Fingerboard Radius" : "304.8mm / 12\"",
+         "Fingerboard Radius" : "304.8 mm / 12\"",
          "Finish" : "Nickel",
          "Fret Count" : "22",
          "Frets" : "Medium Jumbo",
@@ -2889,22 +2712,21 @@ var equipment = [
          "Neck Pickup" : "ProBucker™ 2",
          "Neck Profile" : "SlimTaper™ 60s C",
          "Nut Material" : "Graph Tech®",
-         "Nut Width" : "43.0mm (1.692”)",
+         "Nut Width" : "43.0 mm (1.692”)",
          "Pickguard" : "Cream",
          "Pickup Covers" : "Nickel",
          "Pickup Selector" : "3-way Epiphone toggle",
          "Production Year" : "February 2021",
-         "Scale Length" : "628.65mm (24.75”)",
+         "Scale Length" : "628.65 mm (24.75”)",
          "Serial" : "21021527363",
          "Tailpiece" : "Stopbar",
          "Top Material" : "AA Flame Maple",
-         "Truss Rod" : "Adjustable, 4mm Allen Nut",
+         "Truss Rod" : "Adjustable, 4 mm Allen Nut",
          "Truss Rod Cover" : "“Bell Shaped”; 2-layer (Black/White); 60s-era E",
          "Tuning Machines" : "Grover® Rotomatic® 18:1"
       },
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/p/Electric-Guitar/EPINA3562/Ebony",
-      "main_rig" : true,
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
@@ -2923,7 +2745,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Battery Compartment" : "2 x AAA, 1 x 9V",
+         "Battery Compartment" : "2 x AAA, 1 x 9 V",
          "Binding" : "6-Ply Cream/Black",
          "Body Depth" : "1.63\"",
          "Body Material" : "Carved Top Mahogany",
@@ -2979,7 +2801,7 @@ var equipment = [
          "Controls" : "2 Volume, 2 Tone, CTS® Potentiometers",
          "Fingerboard Inlays" : "Trapezoid",
          "Fingerboard Material" : "Laurel",
-         "Fingerboard Radius" : "304.8mm / 12\"",
+         "Fingerboard Radius" : "304.8 mm / 12\"",
          "Finish" : "Nickel",
          "Fret Count" : "22",
          "Frets" : "Medium Jumbo",
@@ -2989,14 +2811,14 @@ var equipment = [
          "Neck Pickup" : "Epiphone Alnico Classic PRO™ Neck",
          "Neck Profile" : "60s SlimTaper™",
          "Nut Material" : "Graph Tech NuBone®",
-         "Nut Width" : "43.0mm (1.692”)",
+         "Nut Width" : "43.0 mm (1.692”)",
          "Pickguard" : "5-Ply Black",
          "Pickup Selector" : "3-way Epiphone toggle",
          "Production Year" : "May 2023",
-         "Scale Length" : "628.65mm (24.75”)",
+         "Scale Length" : "628.65 mm (24.75”)",
          "Serial" : "23051530731",
          "Tailpiece" : "Epiphone LockTone™ Stop Bar",
-         "Truss Rod" : "Adjustable, 4mm Allen Nut",
+         "Truss Rod" : "Adjustable, 4 mm Allen Nut",
          "Tuning Machines" : "Epiphone Deluxe Tuners 18:1 ratio"
       },
       "image" : true,
@@ -3018,11 +2840,11 @@ var equipment = [
          "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Standard Stringlock*",
          "Color" : "Black",
          "Control Knobs" : "Guyker CKB005 Revolver Cylinders*",
-         "Controls" : "Fender 250K Potentiometers (1 Volume, 1 Push/Pull Neck Tone, 1 Middle/Bridge Tone); .022µF capacitor*",
+         "Controls" : "Fender 250 K Potentiometers (1 Volume, 1 Push/Pull Neck Tone, 1 Middle/Bridge Tone); .022 µF capacitor*",
          "Fingerboard Inlays" : "Black Dots",
          "Fingerboard Material" : "Maple",
          "Fret Count" : "21",
-         "Frets" : "Medium Jumbo",
+         "Frets" : "Medium Jumbo (Plek’d)",
          "Jack" : "Pure Tone Multi-Contact, Black Nickel*",
          "Jack Plate" : "Black*",
          "Joint" : "Bolt-on",
@@ -3030,7 +2852,7 @@ var equipment = [
          "Model Number" : "S-310B",
          "Neck Material" : "Maple",
          "Neck Plate" : "Black*",
-         "Nut Dimensions" : "41.85mm w x 8.54mm h x 5.87mm d, 34.01mm E-to-E",
+         "Nut Dimensions" : "41.85 mm W x 8.54 mm H x 5.87 mm D, 34.01 mm E-to-E",
          "Nut Material" : "Graph Tech XL Black Tusq (model 6060-00)*",
          "Pickguard" : "3-Ply Matte Yellow/Black/Yellow*",
          "Pickup Covers" : "Solid Black Plastic*",
@@ -3040,7 +2862,7 @@ var equipment = [
          "Rear Cover" : "1-Ply Black*",
          "Scale Length" : "25.5\"",
          "Serial" : "1103087",
-         "Truss Rod" : "Adjustable, 5mm Allen Nut",
+         "Truss Rod" : "Adjustable, 5 mm Allen Nut",
          "Truss Rod Cover" : "“Bell Shaped”; 2-Ply Black/White*",
          "Tuning Machines" : "Locking, 15:1*"
       },
@@ -3071,7 +2893,7 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Battery Compartment" : "6 x AA or 1 x 9V",
+         "Battery Compartment" : "6 x AA or 1 x 9 V",
          "Body Material" : "Basswood",
          "Color" : "Black",
          "Fingerboard Material" : "Rosewood",
@@ -3081,11 +2903,11 @@ var equipment = [
          "Location" : "Korea",
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
-         "Power Consumption" : "500mA",
+         "Power Consumption" : "500 mA",
          "Power Supply" : "7V",
          "Scale Length" : "25.5”",
          "Serial" : "3058431",
-         "Truss Rod" : "Adjustable, 4mm Allen Nut"
+         "Truss Rod" : "Adjustable, 4 mm Allen Nut"
       },
       "image" : true,
       "link" : "https://line6.com/legacy/variax500",
@@ -3156,7 +2978,7 @@ var equipment = [
          "Reed Material" : "Brass",
          "Reed Plates (material)" : "Brass",
          "Reed Plates (surface)" : "Brass",
-         "Reed Plates (thickness)" : "0.9mm",
+         "Reed Plates (thickness)" : "0.9 mm",
          "Tonal range" : "3 octaves",
          "Tuning" : "Richter",
          "Type" : "Diatonic"
@@ -3186,14 +3008,14 @@ var equipment = [
          "Comb (material)" : "ABS",
          "Cover Plates" : "Stainless Steel",
          "Keys" : "G, Ab, A, Bb, B, C, Db, D, Eb, E, F, F#, HG",
-         "Length" : "4.0\" (10.2cm)",
+         "Length" : "4.0\" (10.2 cm)",
          "Mouthpiece (surface)" : "ABS",
          "Number of Holes" : "10",
          "Reed Count" : "20",
          "Reed Material" : "Brass",
          "Reed Plates (material)" : "Brass",
          "Reed Plates (surface)" : "Brass",
-         "Reed Plates (thickness)" : "0.9mm",
+         "Reed Plates (thickness)" : "0.9 mm",
          "Tonal range" : "3 octaves",
          "Tuning" : "Richter",
          "Type" : "Diatonic"
@@ -3223,18 +3045,18 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Amplifier" : "20W x 2",
+         "Amplifier" : "20 W x 2",
          "Analog Inputs" : "1/4\" x 2",
          "Analog Outputs" : "1/4” x 2, RCA line-level x2",
-         "Dimensions" : "1370mm x 518mm x 850mm (53 15/16\" x 20 3/8\" x 33 7/16\")",
+         "Dimensions" : "1370 mm x 518 mm x 850 mm (53 15/16\" x 20 3/8\" x 33 7/16\")",
          "Keys" : "88 (A1 - C7)",
          "MIDI" : "In/Out/Thru",
          "Phones" : "1/4\" stereo x 2",
          "Polyphony" : "64 notes",
          "Serial" : "0606872",
          "Sound Source" : "AWM Stereo Sampling",
-         "Speaker" : "16cm x 2",
-         "Weight" : "51kg (112lbs 7oz)"
+         "Speaker" : "16 cm x 2",
+         "Weight" : "51 kg (112 lbs 7 oz)"
       },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/pianos/arius/",
@@ -3250,17 +3072,17 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Amplifier" : "2.5W x 2",
-         "Dimensions" : "945mm x 370mm x 128mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
+         "Amplifier" : "2.5 W x 2",
+         "Dimensions" : "945 mm x 370 mm x 128 mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
          "Keys" : "66 (C1 - C6)",
          "MIDI" : "In/Out",
          "Phones" : "1/4\" stereo",
          "Polyphony" : "32 notes",
-         "Power Consumption" : "10W",
+         "Power Consumption" : "10 W",
          "Serial" : "UBMJ03785",
          "Sound Source" : "XGlite, AWM Stereo Sampling (Grand Piano)",
-         "Speaker" : "12cm x 2",
-         "Weight" : "4.9kg (10lbs 13oz)"
+         "Speaker" : "12 cm x 2",
+         "Weight" : "4.9 kg (10 lbs 13 oz)"
       },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/keyboards/portable_keyboards/",
@@ -3275,28 +3097,28 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Armrest Dimensions" : "3 5/8\" x 11/16\" x 3/8\" (9.2cm x 1.8cm x 1cm)",
+         "Armrest Dimensions" : "3 5/8\" x 11/16\" x 3/8\" (9.2 cm x 1.8 cm x 1 cm)",
          "Armrest Material" : "Michigan Koa (Silver Maple)",
          "Back / Neck / Sides Material" : "Figured Maple",
          "Binding" : "None",
          "Bridge / Fingerboard Material" : "Black Walnut",
          "Color" : "Natural Amber",
-         "Depth of Body" : "1.7\" (43mm)",
-         "Fingerboard Radius" : "15.5\" (394mm)",
+         "Depth of Body" : "1.7\" (43 mm)",
+         "Fingerboard Radius" : "15.5\" (394 mm)",
          "Finish" : "Spirit Varnish",
          "Fret Count" : "19",
-         "Length of Body (w/ heel)" : "12.5\" (318mm)",
+         "Length of Body (w/ heel)" : "12.5\" (318 mm)",
          "Location" : "Michigan, USA",
-         "Nut Width" : "1 1/8\" (28mm)",
+         "Nut Width" : "1 1/8\" (28 mm)",
          "Pickguard" : "Adhered Maple",
          "Pickups" : "K&K Sound Mandolin Twin",
          "Serial" : "FT180030",
          "Strings" : "Northfield LITE, Phosphor Bronze, Loop end: E (.010), A (.015), D (.024), G (.036)",
          "Tailpiece" : "Cast",
          "Top Material" : "Spruce",
-         "Total Length" : "25.5\" (648mm)",
+         "Total Length" : "25.5\" (648 mm)",
          "Tuners" : "Gotoh",
-         "Width of Body" : "10\" (254mm)"
+         "Width of Body" : "10\" (254 mm)"
       },
       "featured" : true,
       "image" : true,
@@ -3368,24 +3190,24 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Back / Sides Material" : "Poplar",
-         "Body Depth" : " 2.0\"",
-         "Body Length" : " 9.0625\"",
+         "Body Depth" : "2.0\"",
+         "Body Length" : "9.0625\"",
          "Fingerboard Material" : "Rosewood",
-         "Fingerboard Width at Neck/Body Joint" : " 1.75\"",
-         "Fingerboard Width at Nut" : " 1.4375\"",
+         "Fingerboard Width at Neck/Body Joint" : "1.75\"",
+         "Fingerboard Width at Nut" : "1.4375\"",
          "Finish" : "Matte",
-         "Fret Count" : " 12",
-         "Length" : " 20.625\"",
+         "Fret Count" : "12",
+         "Length" : "20.625\"",
          "Neck Material" : "Pine",
          "Nut Material" : "Plastic",
          "Saddle Material" : "Plastic",
-         "Scale Length" : " 13.5\"",
+         "Scale Length" : "13.5\"",
          "Strap Button" : "Black x 1",
          "Strings" : "Aquila Super Nylgut®",
          "Top Material" : "Poplar",
-         "Width at Lower Bout" : " 7.0\"",
-         "Width at Upper Bout" : " 5.4375\"",
-         "Width at Waist" : " 4.75\""
+         "Width at Lower Bout" : "7.0\"",
+         "Width at Upper Bout" : "5.4375\"",
+         "Width at Waist" : "4.75\""
       },
       "image" : true,
       "link" : "https://kalabrand.com/collections/graphic-top-ukadelic/products/uk-happycamper?variant=31294286659654",
@@ -3453,7 +3275,7 @@ var equipment = [
          "Neck Material" : "Jabon",
          "Nut Material" : "ABS, White",
          "Saddle Material" : "Graph Tech NuBone XB",
-         "Scale Length" : "346mm",
+         "Scale Length" : "346 mm",
          "Tuning Machines" : "Dolphin, Gold Plated"
       },
       "image" : true,
@@ -3533,13 +3355,13 @@ var equipment = [
    {
       "category" : "Percussion Instruments",
       "detail" : {
-         "Amplifier" : "5W x 2",
-         "Dimensions" : "558mm x 355mm x 174mm (22\" x 14\" x 6 7/8\")",
+         "Amplifier" : "5 W x 2",
+         "Dimensions" : "558 mm x 355 mm x 174 mm (22\" x 14\" x 6 7/8\")",
          "MIDI" : "In/Out",
          "Output" : "1/4\"",
-         "Power" : "12V",
+         "Power" : "12 V",
          "Serial" : "UZMK02847",
-         "Speaker" : "8cm x 2",
+         "Speaker" : "8 cm x 2",
          "Weight" : "3.9 kg (8Ibs 10oz)"
       },
       "image" : true,
@@ -3870,6 +3692,7 @@ var links = {
    "M-Audio" : "https://www.m-audio.com/",
    "MIDIPLUS" : "https://www.midiplus.com.tw/en/",
    "MOTU" : "https://www.motu.com/",
+   "MXR" : "https://www.jimdunlop.com/products/electronics/mxr/",
    "Mackie" : "https://www.mackie.com/",
    "Mahalo" : "https://mahaloukuleles.com/",
    "Martin" : "https://www.martinguitar.com/",
@@ -3880,6 +3703,7 @@ var links = {
    "Peavey" : "https://peavey.com/",
    "Peterson" : "https://www.petersontuners.com/",
    "Pignose" : "https://pignoseamps.com/",
+   "ProCo" : "https://actentertainment.com/products/?brand=68",
    "Quick-Lok" : "https://www.quiklok.com/",
    "Road Runner" : "https://roadrunnercases.com/",
    "Roc-N-Soc" : "https://rocnsoc.com/",
