@@ -1512,7 +1512,6 @@ var equipment = [
          "Controls" : "Level, Gain, Tone",
          "Dimensions" : "73 mm x 129 mm x 59 mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
          "Input Impedance" : "1 MΩ",
-         "Model Number" : "BD-2",
          "Nominal Input Level" : "-20 dB",
          "Nominal Output Level" : "-20 dB",
          "Output Impedance" : "1 kΩ",
@@ -1525,7 +1524,7 @@ var equipment = [
       "image" : true,
       "link" : "https://www.boss.info/us/products/bd-2/",
       "make" : "BOSS",
-      "model" : "Blues Driver",
+      "model" : "Blues Driver BD-2",
       "not_yet" : true,
       "notes" : [
          "overdrive"
@@ -1693,6 +1692,34 @@ var equipment = [
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
+         "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
+         "Input Impedance" : "1 MΩ",
+         "Loop Time" : "16 minutes",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "50 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "AV 20887",
+         "Weight" : "420 g (15 oz)"
+      },
+      "image" : true,
+      "link" : "https://www.boss.info/us/products/rc-2/",
+      "make" : "BOSS",
+      "manuals" : {
+         "Owner’s Manual" : "RC-2_e2.pdf"
+      },
+      "model" : "Loop Station RC-2",
+      "notes" : [
+         "looper"
+      ],
+      "type" : "Pedal",
+      "year" : "2006"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
          "Circuit" : "Analog",
          "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
          "Input Impedance" : "1 MΩ",
@@ -1799,34 +1826,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Audio Channels" : "Mono",
-         "Bypass" : "Buffered",
-         "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
-         "Input Impedance" : "1 MΩ",
-         "Loop Time" : "16 minutes",
-         "Output Impedance" : "1 kΩ",
-         "Power Consumption" : "50 mA",
-         "Power Supply" : "9 V",
-         "Serial" : "AV 20887",
-         "Weight" : "420 g (15 oz)"
-      },
-      "image" : true,
-      "link" : "https://www.boss.info/us/products/rc-2/",
-      "make" : "BOSS",
-      "manuals" : {
-         "Owner’s Manual" : "RC-2_e2.pdf"
-      },
-      "model" : "RC-2 Loop Station",
-      "notes" : [
-         "looper"
-      ],
-      "type" : "Pedal",
-      "year" : "2006"
    },
    {
       "category" : "Hardware",
