@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-24T12:00:00+0000")
+var lastModified = new Date("2025-06-30T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1616,12 +1616,13 @@ var equipment = [
          "Serial" : "",
          "Weight" : "10.6 oz"
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://www.jimdunlop.com/mxr-gran-torino-boost-overdrive/",
       "make" : "MXR",
+      "manuals" : {
+         "Product Manual" : "CSP033G.pdf"
+      },
       "model" : "Gran Torino",
-      "not_yet" : true,
       "notes" : [
          "boost overdrive"
       ],
@@ -2843,7 +2844,7 @@ var equipment = [
          "Fingerboard Inlays" : "Black Dots",
          "Fingerboard Material" : "Maple",
          "Fret Count" : "21",
-         "Frets" : "Medium Jumbo (Plek’d)",
+         "Frets" : "Medium Jumbo (Plek’d 2025)*",
          "Jack" : "Pure Tone Multi-Contact, Black Nickel*",
          "Jack Plate" : "Black*",
          "Joint" : "Bolt-on",
