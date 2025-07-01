@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-06-30T12:00:00+0000")
+var lastModified = new Date("2025-07-02T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1504,30 +1504,29 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
          "Audio Channels" : "Mono",
-         "Bypass" : "Buffered",
+         "Bypass" : "True",
          "Circuit" : "Analog",
-         "Controls" : "Level, Gain, Tone",
-         "Dimensions" : "73 mm x 129 mm x 59 mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
+         "Dimensions" : "3.62\" x 1.65\" x 2.05\"",
          "Input Impedance" : "1 MΩ",
-         "Nominal Input Level" : "-20 dB",
-         "Nominal Output Level" : "-20 dB",
          "Output Impedance" : "1 kΩ",
-         "Power Consumption" : "20 mA",
+         "Power Consumption" : "12 mA",
          "Power Supply" : "9 V",
-         "Serial" : "",
-         "Weight" : "360 g (13 oz)"
+         "Weight" : "0.4 lbs"
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://www.boss.info/us/products/bd-2/",
-      "make" : "BOSS",
-      "model" : "Blues Driver BD-2",
-      "not_yet" : true,
+      "make" : "Dozzly",
+      "manuals" : {
+         "Manual" : "analogchorusmini.pdf"
+      },
+      "model" : "Analog Chorus Mini",
+      "not_mine" : true,
       "notes" : [
-         "overdrive"
+         "chorus"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -1559,6 +1558,66 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2021"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Delay Time" : "20-600 ms",
+         "Dimensions" : "3.62\" x 1.65\" x 2.05\"",
+         "Input Impedance" : "500 kΩ",
+         "Output Impedance" : "10 kΩ",
+         "Power Consumption" : "26 mA",
+         "Power Supply" : "9 V",
+         "Weight" : "0.4 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "make" : "Dozzly",
+      "manuals" : {
+         "Manual" : "digitaldelaymini.pdf"
+      },
+      "model" : "Digital Delay Mini",
+      "not_mine" : true,
+      "notes" : [
+         "delay"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Controls" : "Volume, Tone, Voice, Gain",
+         "Dimensions" : "3.74\" x 1.77\" x 1.89\"",
+         "Input Impedance" : "470 kΩ",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "10 mA",
+         "Power Supply" : "9 V",
+         "Weight" : "0.6 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "make" : "iSet",
+      "manuals" : {
+         "Manual" : "dumblemini.pdf"
+      },
+      "model" : "Dumble Mini",
+      "not_mine" : true,
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -1631,7 +1690,36 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Controls" : "100, 250, 630, 1600, 400 Hz; Volume",
+         "Dimensions" : "3.74\" x 1.77\" x 1.89\"",
+         "Input Impedance" : "470 kΩ",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "8 mA",
+         "Power Supply" : "9 V",
+         "Weight" : "0.5 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "make" : "iSet",
+      "manuals" : {
+         "Manual" : "gteqmini.pdf"
+      },
+      "model" : "GT EQ Mini",
+      "not_mine" : true,
+      "notes" : [
+         "eq"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
       "detail" : {
          "Analog Inputs" : "1/4\" x 2, XLR, 1/4\" return x 4",
          "Analog Outputs" : "1/4\" x 2, XLR x 2, 1/4\" send x4",
@@ -1804,44 +1892,110 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS x 1, 1/4\" TRS x 1 (return power for Variax on ring)",
          "Analog Outputs" : "1/4\"",
-         "Audio Channels" : "Mono",
-         "Bypass" : "True",
-         "Circuit" : "Analog",
-         "Controls" : "Distortion, Filter, Volume",
-         "Dimensions" : "3.5\" x 4\" x 2.5\"",
-         "Power Consumption" : "1.6 mA",
-         "Power Supply" : "9 V",
-         "Serial" : "",
-         "Weight" : "2 lbs"
+         "Controls" : "3-way power toggle",
+         "Power Consumption" : "300 mA",
+         "Power Supply" : "9V"
       },
       "hide" : true,
-      "image" : true,
-      "link" : "https://actentertainment.com/rat-2-distortion-pedal/",
-      "make" : "ProCo",
-      "model" : "Rat 2",
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/Power-Manager-PLUS-for-Line6-Variax-Line6-XPS--Handmade-USA-_p_615.html",
+      "make" : "Sweet Foot Pedals",
+      "model" : "Power Manager PLUS",
       "not_yet" : true,
       "notes" : [
-         "distortion"
+         "May The Schwartz Be With You",
+         "gold"
       ],
       "type" : "Pedal",
       "year" : "2025"
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Controls" : "Decay, Mix, Type",
+         "Dimensions" : "3.38\" x 1.6\" x 1.02\"",
+         "Power Consumption" : "",
+         "Power Supply" : "9 V"
+      },
       "hide" : true,
-      "link" : "https://sweetfootpedals-com.3dcartstores.com/Power-Manager-for-Line6-Variax-Line6-XPS--Handmade-USA_p_19.html",
-      "make" : "Sweet Foot",
-      "model" : "SchwartzPower",
-      "not_yet" : true,
+      "image" : true,
+      "make" : "None",
+      "manuals" : {
+         "Manual" : "reverbmini.pdf"
+      },
+      "model" : "Reverb Mini",
+      "not_mine" : true,
       "notes" : [
-         "Variax power",
-         "custom with additional A/B switch"
+         "reverb"
       ],
       "type" : "Pedal",
       "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Controls" : "Level, Tone, Mode",
+         "Dimensions" : "3.74\" x 1.77\" x 1.89\"",
+         "Input Impedance" : "470 kΩ",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "10 mA",
+         "Power Supply" : "9 V",
+         "Weight" : "0.6 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "make" : "iSet",
+      "manuals" : {
+         "Manual" : "sandwichcompmini.pdf"
+      },
+      "model" : "Sandwich Comp Mini",
+      "not_mine" : true,
+      "notes" : [
+         "compressor"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Detection Range" : "A-1 (13.75 Hz)–C8 (4186 Hz)",
+         "Dimensions" : "3.74\" x 1.77\" x 1.89\"",
+         "Input Impedance" : "100 kΩ",
+         "Output Impedance" : "0 Ω",
+         "Power Consumption" : "90 mA",
+         "Power Supply" : "9 V",
+         "Weight" : "0.6 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "make" : "Amuzik",
+      "manuals" : {
+         "Manual" : "tunermini.pdf"
+      },
+      "model" : "Tuner Mini",
+      "not_mine" : true,
+      "notes" : [
+         "tuner"
+      ],
+      "type" : "Pedal",
+      "year" : "2024"
    },
    {
       "category" : "Hardware",
@@ -1858,6 +2012,35 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2016"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Dimensions" : "14\" x 5.5\" x 1\"",
+         "Weight" : "0.77 lbs"
+      },
+      "image" : true,
+      "make" : "ENO Music",
+      "model" : "ES-1",
+      "type" : "Pedalboard",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Dimensions" : "19.69\" x 9.92\" x 2.36\"",
+         "Weight" : "43.6 oz"
+      },
+      "image" : true,
+      "make" : "RockHouse",
+      "model" : "Pedalboard",
+      "notes" : [
+         "black"
+      ],
+      "type" : "Pedalboard",
+      "year" : "2024"
    },
    {
       "category" : "Hardware",
@@ -1960,31 +2143,6 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
-         "Outputs" : "9V 500mA (7); 9V 500mA/12V 375 mA/18V 250mA; 9V/12V 3A (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
-         "Power Supply" : "24V 4A / 96W",
-         "Serial" : "",
-         "Weight" : "0.93lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
-      "make" : "Walrus Audio",
-      "manuals" : {
-         "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
-      },
-      "model" : "Canvas Power HP+",
-      "not_yet" : true,
-      "notes" : [
-         "pedal power"
-      ],
-      "type" : "Power",
-      "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
          "Dimensions" : "6.5\" x 1.97\" x 1.5\"",
          "Outputs" : "11 isolated: (6) 9 V 100 mA; (2) 9 V 400 mA; (1) 12 V 100 mA; (1) 18 V 100 mA; (1) 5 V 2 A (USB)",
          "Power Supply" : "240 V 400 mA",
@@ -2070,32 +2228,6 @@ var equipment = [
       ],
       "type" : "Rack Hardware",
       "year" : "2005"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Attachments" : "Dual Lock",
-         "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
-         "Material" : "Aluminum",
-         "Mods" : "IEC MOD, SUM MOD2, 4X MOD",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.templeaudio.com/templeboards",
-      "make" : "Temple Audio",
-      "manuals" : {
-         "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
-         "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
-      },
-      "model" : "Templeboard TRIO 43",
-      "not_yet" : true,
-      "notes" : [
-         "temple red"
-      ],
-      "type" : "Rack Hardware",
-      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -2979,7 +3111,7 @@ var equipment = [
          "Reed Plates (material)" : "Brass",
          "Reed Plates (surface)" : "Brass",
          "Reed Plates (thickness)" : "0.9 mm",
-         "Tonal range" : "3 octaves",
+         "Tonal Range" : "3 octaves",
          "Tuning" : "Richter",
          "Type" : "Diatonic"
       },
@@ -3016,7 +3148,7 @@ var equipment = [
          "Reed Plates (material)" : "Brass",
          "Reed Plates (surface)" : "Brass",
          "Reed Plates (thickness)" : "0.9 mm",
-         "Tonal range" : "3 octaves",
+         "Tonal Range" : "3 octaves",
          "Tuning" : "Richter",
          "Type" : "Diatonic"
       },
@@ -3647,6 +3779,7 @@ var equipment = [
 
 var links = {
    "AKG" : "https://www.akg.com/",
+   "Amuzik" : "",
    "Apple" : "https://www.apple.com/",
    "Audio Technica" : "https://www.audio-technica.com/en-us/",
    "BOSS" : "https://www.boss.info/us/",
@@ -3656,10 +3789,12 @@ var links = {
    "DR Strings" : "https://www.drstrings.com/",
    "Daisy Rock" : "https://www.daisyrock.com/",
    "Digitech" : "https://www.digitech.com/",
+   "Dozzly" : "",
    "Dunlop" : "https://www.jimdunlop.com/",
    "D’Addario" : "https://www.daddario.com/",
    "EBow" : "https://www.ebow.com/",
    "EMG" : "https://www.emgpickups.com/",
+   "ENO Music" : "",
    "ESP" : "https://www.espguitars.com/",
    "Edirol" : "https://www.roland.com/us/",
    "Electro-Harmonix" : "https://www.ehx.com/",
@@ -3698,6 +3833,7 @@ var links = {
    "Martin" : "https://www.martinguitar.com/",
    "Meinl" : "https://meinlcymbals.com/",
    "Mission Engineering" : "https://missionengineering.com/",
+   "None" : "",
    "Northfield" : "https://www.northfieldinstruments.com/",
    "O.C. White" : "https://www.ocwhite.com/",
    "Peavey" : "https://peavey.com/",
@@ -3707,6 +3843,7 @@ var links = {
    "Quick-Lok" : "https://www.quiklok.com/",
    "Road Runner" : "https://roadrunnercases.com/",
    "Roc-N-Soc" : "https://rocnsoc.com/",
+   "RockHouse" : "",
    "SKB" : "https://www.skbcases.com/",
    "Saga" : "https://www.sagamusic.com/",
    "Schaller" : "https://schaller.info/",
@@ -3721,7 +3858,7 @@ var links = {
    "String Swing" : "https://www.stringswing.com/",
    "Strymon" : "https://www.strymon.net/",
    "Studio Projects" : "http://www.studioprojects.com/",
-   "Sweet Foot" : "https://www.sweetfootpedals.com/",
+   "Sweet Foot Pedals" : "https://www.sweetfootpedals.com/",
    "Tama" : "https://www.tama.com/",
    "Tapco" : "https://www.mackie.com/",
    "Temple Audio" : "https://www.templeaudio.com/",
@@ -3736,5 +3873,6 @@ var links = {
    "Wittner" : "https://www.wittner-gmbh.de/",
    "Yamaha" : "https://usa.yamaha.com/",
    "Zildjian" : "https://zildjian.com/",
+   "iSet" : "",
    "tc electronic" : "https://www.tcelectronic.com/"
 }
