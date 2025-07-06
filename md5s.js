@@ -1,6 +1,6 @@
 const md5s = {
    "./code.js" : "1e6217fb551b6db8d970b6c9350fbd9d",
-   "./data.js" : "86c061ac46a91c4798fe5aca062d0e72",
+   "./data.js" : "3cb2f876e354c86d606f5e33332f9f91",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/445.webp" : "c02085faef2f0c3e840d1d6e4971cc98",
@@ -552,7 +552,9 @@ const md5s = {
    "./manuals/strobostomphd/StroboStomp_HD_Manual_v1.1_EN.pdf" : "bfe1d8b3c7f7539f349e3ba5fef5770b",
    "./manuals/templeboardtrio43/4X_Mod_Setup_Guide.pdf" : "b888cd4c4dd7f6ca863ac04c1409bf00",
    "./manuals/templeboardtrio43/Sum_Mod_Setup_Guide.pdf" : "7b46a95bd6102521d233ae7cc41ac889",
-   "./manuals/thr30iiwireless/thr30ii_en_rm_c0.pdf" : "23091982239f376683897a786e83f336",
+   "./manuals/thr30iiwireless/THR30II_Wireless_reference_manual_En_F0.pdf" : "9bbbf66e20c45cf55d533f1a6118d314",
+   "./manuals/thr30iiwireless/THR_Operation_Guide_en.pdf" : "f9fa1d0cd548d1a7eaa3416a9652b96a",
+   "./manuals/thr30iiwireless/Yamaha THRII Presets.pdf" : "72bd5534510d845c2e94e0942dd938cc",
    "./manuals/tunermini/tunermini.pdf" : "f04327610b7cd4292946f2719b3a6d10",
    "./manuals/variax500/Variax 500.pdf" : "5bf136a5c9a1bdcd05d892b724a2e674",
    "./manuals/variax700/Variax Bass Manual - English ( Rev A ).pdf" : "4ea506846827b12467c60f3d6414d079",

@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-07-02T12:00:00+0000")
+var lastModified = new Date("2025-07-06T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -962,7 +962,9 @@ var equipment = [
       "main_rig" : true,
       "make" : "Yamaha",
       "manuals" : {
-         "Reference Manual" : "thr30ii_en_rm_c0.pdf"
+         "Operation Guide" : "THR_Operation_Guide_en.pdf",
+         "Presets" : "Yamaha THRII Presets.pdf",
+         "Reference Manual" : "THR30II_Wireless_reference_manual_En_F0.pdf"
       },
       "model" : "THR30II Wireless",
       "notes" : [
