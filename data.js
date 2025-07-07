@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-07-06T12:00:00+0000")
+var lastModified = new Date("2025-07-07T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -810,7 +810,6 @@ var equipment = [
          "Manual" : "237030_bamp_manual_all_revA.pdf"
       },
       "model" : "Rumble 40",
-      "not_yet" : true,
       "notes" : [
          "bass guitar"
       ],
@@ -1744,7 +1743,6 @@ var equipment = [
       "main_rig" : true,
       "make" : "Line 6",
       "model" : "Helix Stadium XL",
-      "not_yet" : true,
       "notes" : [
          "multi-effects"
       ],
@@ -1904,7 +1902,6 @@ var equipment = [
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Power-Manager-PLUS-for-Line6-Variax-Line6-XPS--Handmade-USA-_p_615.html",
       "make" : "Sweet Foot Pedals",
       "model" : "Power Manager PLUS",
-      "not_yet" : true,
       "notes" : [
          "May The Schwartz Be With You",
          "gold"
@@ -2047,6 +2044,30 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Attachments" : "Dual Lock",
+         "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
+         "Material" : "Aluminum",
+         "Mods" : "IEC MOD, SUM MOD2, 4X MOD",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.templeaudio.com/templeboards",
+      "make" : "Temple Audio",
+      "manuals" : {
+         "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
+         "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
+      },
+      "model" : "Templeboard TRIO 43",
+      "notes" : [
+         "temple red"
+      ],
+      "type" : "Pedalboard",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Battery Life" : "1500 Hours",
          "Current @9 V" : "160 µA",
          "Magnet" : "Ceramic and Steel",
@@ -2140,6 +2161,29 @@ var equipment = [
       ],
       "type" : "Pickup",
       "year" : "2018"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
+         "Outputs" : "9V 500mA (7); 9V 500mA/12V 375 mA/18V 250mA; 9V/12V 3A (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
+         "Power Supply" : "24V 4A / 96W",
+         "Serial" : "",
+         "Weight" : "0.93lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
+      "make" : "Walrus Audio",
+      "manuals" : {
+         "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
+      },
+      "model" : "Canvas Power HP+",
+      "notes" : [
+         "pedal power"
+      ],
+      "type" : "Power",
+      "year" : "2025"
    },
    {
       "category" : "Hardware",
@@ -2295,6 +2339,51 @@ var equipment = [
       ],
       "type" : "Tuner",
       "year" : "2019"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\", 3,5mm, Vibe",
+         "Beat Subdivisions" : "Over 100",
+         "Beat Values" : "2, 4, 8, 16",
+         "Beats Per Measure" : "1-19",
+         "Computer Interface" : "USB-C",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
+         "Dimensions" : "5.5\" x 4.25\" x 1.5\"",
+         "Global Cent Offset Range" : "±50 cents",
+         "Power Consumption" : "500 mA",
+         "Power Supply" : "5V",
+         "Reference Pitch" : "A4=390 Hz-490 Hz",
+         "Serial" : "",
+         "Tempo / Rhythm Maps" : "100 Locations",
+         "Tempo Increment" : "0.1 Quarter Notes per Minute",
+         "Tempo Range" : "10-280 Quarter Notes per Minute",
+         "Tone Generator" : "C1 - G9",
+         "Transposition Range" : "-6 to +5",
+         "Weight" : "0.66 lbs"
+      },
+      "featured" : true,
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.petersontuners.com/products/stroboplushdc/",
+      "make" : "Peterson",
+      "manuals" : {
+         "Peterson Guided Tuning" : "Guided Tuning Manual.pdf",
+         "QuickStart" : "StroboPlusHDC_QuickStart_v1.1_EN-DE-ES-FR-IT.pdf",
+         "StroboPLUS HDC General Settings" : "Peterson StroboPLUS HDC General Settings Screen.pdf",
+         "StroboPLUS HDC Metronome" : "Peterson StroboPLUS HDC Metronome.pdf",
+         "StroboPLUS HDC Timer" : "Peterson StroboPLUS HDC Timer Screen.pdf",
+         "StroboPLUS HDC Tuner" : "Peterson StroboPLUS HDC Tuner.pdf",
+         "Tuning & Sweetener Presets" : "StroboPLUS HDC Tuning & Sweetener Presets.pdf"
+      },
+      "model" : "StroboPLUS HDC",
+      "notes" : [
+         "tuner"
+      ],
+      "type" : "Tuner",
+      "year" : "2025"
    },
    {
       "category" : "Instruments",

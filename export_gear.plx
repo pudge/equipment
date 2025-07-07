@@ -84,10 +84,7 @@ sub get_gear {
             current_pedal   => bool($x->{'Current Pedal'}),
             current_rack    => bool($x->{'Current Rack'}),
             main_rig        => bool($x->{'Main Rig'}),
-            not_yet         => bool($x->{'Not Yet'}),
         };
-
-        next if $y->{not_yet} && !$y->{hide};
 
         for my $k (keys %$y) {
             delete $y->{$k} unless length $y->{$k};
