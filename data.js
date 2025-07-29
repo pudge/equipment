@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-07-07T12:00:00+0000")
+var lastModified = new Date("2025-07-28T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -544,6 +544,29 @@ var equipment = [
       "category" : "Accessories",
       "detail" : {
          "Core Wire" : "High-carbon steel, hexagonal",
+         "Design ID" : "121451",
+         "End" : "Ball",
+         "Gauge" : ".012, .016, .024, .036",
+         "Gauge Name" : "Regular Light",
+         "Material" : "Nickel",
+         "Note" : "Set is based on EXL110, and includes two .010s (strings 1 and 6) unused by the banjo",
+         "String Count" : "4"
+      },
+      "image" : true,
+      "instrument" : "banjo",
+      "link" : "https://www.daddario.com/custom-guitar-strings/?designid=121451",
+      "make" : "D’Addario",
+      "model" : "CUSTOM-121451",
+      "notes" : [
+         "banjo",
+         "Irish Tenor Banjo Ball"
+      ],
+      "type" : "Strings"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Core Wire" : "High-carbon steel, hexagonal",
          "End" : "Ball",
          "Gauge" : ".045, .065, .080, .100, .132",
          "Gauge Name" : "Regular Light",
@@ -635,13 +658,12 @@ var equipment = [
          "String Count" : "6"
       },
       "image" : true,
-      "instrument" : "electric guitar, banjo",
+      "instrument" : "electric guitar",
       "link" : "https://www.daddario.com/products/guitar/electric-guitar/xl-nickel/exl110-nickel-wound-regular-light-10-46/",
       "make" : "D’Addario",
       "model" : "EXL110",
       "notes" : [
-         "electric guitar",
-         "banjo"
+         "electric guitar"
       ],
       "type" : "Strings"
    },
@@ -657,13 +679,12 @@ var equipment = [
          "String Count" : "6"
       },
       "image" : true,
-      "instrument" : "electric guitar, banjo",
+      "instrument" : "electric guitar",
       "link" : "https://www.daddario.com/products/guitar/electric-guitar/xt-nickel/xte1046-xt-electric-nickel-plated-steel-regular-light-10-462/item/daddario-xte1046-xt-electric-nickel-plated-steel-regular-light-electric-guitar-strings-10-46-8959/",
       "make" : "D’Addario",
       "model" : "XTE1046",
       "notes" : [
-         "electric guitar",
-         "banjo"
+         "electric guitar"
       ],
       "type" : "Strings"
    },
@@ -1637,7 +1658,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Depth" : "90 mm (3 9/16”)",
          "Height" : "43 mm (1 3/4”)",
@@ -1798,7 +1818,8 @@ var equipment = [
       },
       "model" : "Loop Station RC-2",
       "notes" : [
-         "looper"
+         "looper",
+         "Two-Button Footswitch"
       ],
       "type" : "Pedal",
       "year" : "2006"
@@ -1831,7 +1852,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
@@ -1892,13 +1912,14 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\" TS x 1, 1/4\" TRS x 1 (return power for Variax on ring)",
+         "Analog Inputs" : "1/4\" TRS (return power for Variax on ring), 1/4\"",
          "Analog Outputs" : "1/4\"",
-         "Controls" : "3-way power toggle",
+         "Bypass" : "True",
+         "Controls" : "3-way power toggle (7.5 V/9 V/off), 2-way input toggle",
          "Power Consumption" : "300 mA",
-         "Power Supply" : "9V"
+         "Power Supply" : "9 V"
       },
-      "hide" : true,
+      "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Power-Manager-PLUS-for-Line6-Variax-Line6-XPS--Handmade-USA-_p_615.html",
       "make" : "Sweet Foot Pedals",
       "model" : "Power Manager PLUS",
@@ -2000,6 +2021,24 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Output" : "1/4\" TRS"
+      },
+      "image" : true,
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/Sweet-Foot-Footswitch-for-Boss-Loopers--HANDEMADE-IN-USA-_p_393.html",
+      "make" : "Sweet Foot Pedals",
+      "model" : "Two-Button Footswitch",
+      "notes" : [
+         "Moonshine",
+         "black",
+         "Loop Station RC-2"
+      ],
+      "type" : "Pedal",
+      "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Dimensions" : "9.25\" x 2.76\" x 3.94\""
       },
       "image" : true,
@@ -2014,7 +2053,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "14\" x 5.5\" x 1\"",
          "Weight" : "0.77 lbs"
@@ -2283,8 +2321,8 @@ var equipment = [
       "make" : "Korg",
       "model" : "CM-300",
       "notes" : [
-         "DTR-2000",
-         "clip-on"
+         "clip-on",
+         "DTR-2000"
       ],
       "type" : "Tuner",
       "year" : "2023"
@@ -2733,14 +2771,14 @@ var equipment = [
       "make" : "Framus",
       "model" : "Tenor Banjo",
       "notes" : [
-         "EXL110 (2021-09-03)",
+         "CUSTOM-121451 (2021-09-03)",
          "Nylon Standard",
          "C5-R",
          "C5K",
          "PM14-DBR",
-         "Irish Tenor tuning: 13/17/26/36"
+         "Irish Tenor tuning: 12/16/24/36"
       ],
-      "strings" : "EXL110",
+      "strings" : "CUSTOM-121451",
       "type" : "Banjo",
       "year" : "1968",
       "year_uncertain" : true
@@ -3097,7 +3135,7 @@ var equipment = [
       "model" : "Theseia",
       "no_reverb" : true,
       "notes" : [
-         "EXL110 (2024-10-06)",
+         "EXL110 (2025-07-01)",
          "Acetal Standard",
          "S1",
          "C1K",
