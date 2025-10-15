@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-07-28T12:00:00+0000")
+var lastModified = new Date("2025-10-15T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -2424,6 +2424,27 @@ var equipment = [
       "year" : "2025"
    },
    {
+      "category" : "Hardware",
+      "detail" : {
+         "Detection Accuracy" : "±1 cent",
+         "Detection Range" : "Optimized for guitar",
+         "Reference Pitch" : "A4=415-466 Hz",
+         "Scale" : "12-note equal temperament"
+      },
+      "image" : true,
+      "link" : "https://www.snarktuners.com/products/snark-originals",
+      "make" : "Snark",
+      "manuals" : {
+         "Manual" : "SN1_SN2-revised.pdf"
+      },
+      "model" : "Super Snark SN-01",
+      "notes" : [
+         "clip-on"
+      ],
+      "type" : "Tuner",
+      "year" : "2014"
+   },
+   {
       "category" : "Instruments",
       "detail" : {
          "Back Material" : "High Pressure Laminate",
@@ -2817,7 +2838,7 @@ var equipment = [
          "Top Contour" : "Arched Top",
          "Top Material" : "Quilted Maple",
          "Truss Rod" : "2-Way Adjustable, 5/32\" (4mm) Allen Nut",
-         "Tuners" : "Grover"
+         "Tuning Machines" : "Grover"
       },
       "featured" : true,
       "image" : true,
@@ -2936,7 +2957,7 @@ var equipment = [
          "Scale Length" : "22 1/2\"",
          "Serial" : "207757",
          "Truss Rod" : "Adjustable",
-         "Tuners" : "Grover"
+         "Tuning Machines" : "Grover"
       },
       "image" : true,
       "link" : "https://www.daisyrock.com/collections/",
@@ -3378,7 +3399,7 @@ var equipment = [
          "Tailpiece" : "Cast",
          "Top Material" : "Spruce",
          "Total Length" : "25.5\" (648 mm)",
-         "Tuners" : "Gotoh",
+         "Tuning Machines" : "Gotoh",
          "Width of Body" : "10\" (254 mm)"
       },
       "featured" : true,
