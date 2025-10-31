@@ -81,8 +81,9 @@ sub get_gear {
             not_mine        => bool($x->{'Not Mine'}),
             inactive        => bool($x->{'Inactive'}),
             no_reverb       => bool($x->{'No Reverb'}),
-            current_pedal   => bool($x->{'Current Pedal'}),
             current_rack    => bool($x->{'Current Rack'}),
+            current_pedal   => bool($x->{'Current Pedal'}),
+            kids_pedal      => bool($x->{'Kids Pedal'}),
             main_rig        => bool($x->{'Main Rig'}),
         };
 

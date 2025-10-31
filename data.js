@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-10-15T12:00:00+0000")
+var lastModified = new Date("2025-10-31T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1539,14 +1539,13 @@ var equipment = [
          "Power Supply" : "9 V",
          "Weight" : "0.4 lbs"
       },
-      "hide" : true,
       "image" : true,
+      "kids_pedal" : true,
       "make" : "Dozzly",
       "manuals" : {
          "Manual" : "analogchorusmini.pdf"
       },
       "model" : "Analog Chorus Mini",
-      "not_mine" : true,
       "notes" : [
          "chorus"
       ],
@@ -1604,7 +1603,6 @@ var equipment = [
          "Manual" : "digitaldelaymini.pdf"
       },
       "model" : "Digital Delay Mini",
-      "not_mine" : true,
       "notes" : [
          "delay"
       ],
@@ -1627,14 +1625,13 @@ var equipment = [
          "Power Supply" : "9 V",
          "Weight" : "0.6 lbs"
       },
-      "hide" : true,
       "image" : true,
+      "kids_pedal" : true,
       "make" : "iSet",
       "manuals" : {
          "Manual" : "dumblemini.pdf"
       },
       "model" : "Dumble Mini",
-      "not_mine" : true,
       "notes" : [
          "overdrive"
       ],
@@ -1732,7 +1729,6 @@ var equipment = [
          "Manual" : "gteqmini.pdf"
       },
       "model" : "GT EQ Mini",
-      "not_mine" : true,
       "notes" : [
          "eq"
       ],
@@ -1771,7 +1767,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
@@ -1782,6 +1777,7 @@ var equipment = [
          "Power Supply" : "9 V"
       },
       "image" : true,
+      "kids_pedal" : true,
       "link" : "https://www.ehx.com/products/lizard-queen/",
       "make" : "Electro-Harmonix",
       "manuals" : {
@@ -1852,6 +1848,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
@@ -1950,7 +1947,6 @@ var equipment = [
          "Manual" : "reverbmini.pdf"
       },
       "model" : "Reverb Mini",
-      "not_mine" : true,
       "notes" : [
          "reverb"
       ],
@@ -1973,14 +1969,13 @@ var equipment = [
          "Power Supply" : "9 V",
          "Weight" : "0.6 lbs"
       },
-      "hide" : true,
       "image" : true,
+      "kids_pedal" : true,
       "make" : "iSet",
       "manuals" : {
          "Manual" : "sandwichcompmini.pdf"
       },
       "model" : "Sandwich Comp Mini",
-      "not_mine" : true,
       "notes" : [
          "compressor"
       ],
@@ -2005,12 +2000,12 @@ var equipment = [
       },
       "hide" : true,
       "image" : true,
+      "kids_pedal" : true,
       "make" : "Amuzik",
       "manuals" : {
          "Manual" : "tunermini.pdf"
       },
       "model" : "Tuner Mini",
-      "not_mine" : true,
       "notes" : [
          "tuner"
       ],
@@ -2037,7 +2032,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "9.25\" x 2.76\" x 3.94\""
       },
@@ -2058,6 +2052,7 @@ var equipment = [
          "Weight" : "0.77 lbs"
       },
       "image" : true,
+      "kids_pedal" : true,
       "make" : "ENO Music",
       "model" : "ES-1",
       "type" : "Pedalboard",

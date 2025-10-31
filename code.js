@@ -80,17 +80,20 @@ function linkItNotes(oData) {
   if (oData['hide']) {
     thisData.push('HIDDEN')
   }
+  if (oData['current_rack']) {
+    thisData.push('CURRENT_RACK')
+  }
   if (oData['current_pedal']) {
     thisData.push('CURRENT_PEDAL')
   }
-  if (oData['current_rack']) {
-    thisData.push('CURRENT_RACK')
+  if (oData['kids_pedal']) {
+    thisData.push('KIDS_PEDAL')
   }
 
   var icons = [ clipIt( fixModelName(oData['model']) ) ]
   var newData = []
   thisData.forEach(x => {
-    if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_PEDAL' || x === 'CURRENT_RACK') {
+    if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL') {
       icons.push(
         x === 'LINKME'
           ? linkShow(oData['model'], '\u{1F517}')
@@ -100,10 +103,12 @@ function linkItNotes(oData) {
           ? linkShow('', '\u{1F91D}', 'holding for a friend')
         : x === 'HIDDEN'
           ? linkShow('', '\u{1F977}', 'hidden')
-        : x === 'CURRENT_PEDAL'
-          ? linkShow('current_pedal', '\u{1F9B6}', 'in pedalboard')
         : x === 'CURRENT_RACK'
           ? linkShow('current_rack', '\u{1F5C4}\u{FE0F}', 'in rack')
+        : x === 'CURRENT_PEDAL'
+          ? linkShow('current_pedal', '\u{1F9B6}', 'in pedalboard')
+        : x === 'KIDS_PEDAL'
+          ? linkShow('kids_pedal', '\u{1F9B6}\u{1F3FB}', 'in pedalboard')
           : ''
       )
     }
@@ -204,8 +209,9 @@ function equipmentInit() {
     x['not_mine'] = x['not_mine'] ? 'not_mine' : ''
     x['hide'] = x['hide'] ? 'hidden' : ''
     x['main_rig'] = x['main_rig'] ? 'main_rig' : ''
-    x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
     x['current_rack'] = x['current_rack'] ? 'current_rack' : ''
+    x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
+    x['kids_pedal'] = x['kids_pedal'] ? 'kids_pedal' : ''
     x['featured'] = x['featured'] ? 'featured' : ''
     x['main_rig'] = (x['featured'] || x['main_rig']) ? 'main_rig' : ''
     x['instrument'] = x['instrument'] || ''
@@ -300,8 +306,9 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'not_mine', visible: false },
       { responsivePriority: 99, data: 'hide', visible: false },
       { responsivePriority: 99, data: 'main_rig', visible: false },
-      { responsivePriority: 99, data: 'current_pedal', visible: false },
       { responsivePriority: 99, data: 'current_rack', visible: false },
+      { responsivePriority: 99, data: 'current_pedal', visible: false },
+      { responsivePriority: 99, data: 'kids_pedal', visible: false },
       { responsivePriority: 99, data: 'manuals', title: 'Manuals', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'category_sort', visible: false, orderable: true },
