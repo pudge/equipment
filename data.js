@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-10-31T12:00:00+0000")
+var lastModified = new Date("2025-11-23T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1596,8 +1596,8 @@ var equipment = [
          "Power Supply" : "9 V",
          "Weight" : "0.4 lbs"
       },
-      "hide" : true,
       "image" : true,
+      "kids_pedal" : true,
       "make" : "Dozzly",
       "manuals" : {
          "Manual" : "digitaldelaymini.pdf"
@@ -1722,8 +1722,8 @@ var equipment = [
          "Power Supply" : "9 V",
          "Weight" : "0.5 lbs"
       },
-      "hide" : true,
       "image" : true,
+      "kids_pedal" : true,
       "make" : "iSet",
       "manuals" : {
          "Manual" : "gteqmini.pdf"
@@ -1940,8 +1940,8 @@ var equipment = [
          "Power Consumption" : "",
          "Power Supply" : "9 V"
       },
-      "hide" : true,
       "image" : true,
+      "kids_pedal" : true,
       "make" : "None",
       "manuals" : {
          "Manual" : "reverbmini.pdf"
@@ -1998,7 +1998,6 @@ var equipment = [
          "Power Supply" : "9 V",
          "Weight" : "0.6 lbs"
       },
-      "hide" : true,
       "image" : true,
       "kids_pedal" : true,
       "make" : "Amuzik",
