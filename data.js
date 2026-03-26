@@ -1,4 +1,4 @@
-var lastModified = new Date("2025-11-23T12:00:00+0000")
+var lastModified = new Date("2026-03-25T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -3348,6 +3348,24 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
+         "Battery" : "AAA x 3",
+         "Input" : "1/8\" stereo",
+         "Keys" : "20 (switch position 1: A1-E3, 2: A2-E4, 3: A3-E5)",
+         "Phones" : "1/8\" stereo"
+      },
+      "image" : true,
+      "link" : "https://stylophone.com/product/stylophone-s-1/",
+      "make" : "Dubreq",
+      "manuals" : {
+         "Manual" : "s1-booklet.pdf"
+      },
+      "model" : "Stylophone S-1",
+      "type" : "Synthesizer",
+      "year" : "2011"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
          "Amplifier" : "2.5 W x 2",
          "Dimensions" : "945 mm x 370 mm x 128 mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
          "Keys" : "66 (C1 - C6)",
@@ -3934,6 +3952,7 @@ var links = {
    "Daisy Rock" : "https://www.daisyrock.com/",
    "Digitech" : "https://www.digitech.com/",
    "Dozzly" : "",
+   "Dubreq" : "https://stylophone.com/",
    "Dunlop" : "https://www.jimdunlop.com/",
    "D’Addario" : "https://www.daddario.com/",
    "EBow" : "https://www.ebow.com/",
