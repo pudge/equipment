@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-04T12:00:00+0000")
+var lastModified = new Date("2026-05-05T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -108,6 +108,8 @@ var equipment = [
       "current_pedal" : true,
       "detail" : {
          "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
+         "Power Consumption" : "1000 mA",
+         "Power Supply" : "5 V",
          "Serial" : "W100M7038017336, W1ROM7244018777"
       },
       "image" : true,
@@ -2120,6 +2122,44 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Bypass" : "True/Buffered",
+         "Computer Interface" : "USB-C",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "E0 (20 Hz)–D#10 (20,000 Hz)",
+         "Dimensions" : "2.21\" x 2.42\" x 4.55\"",
+         "Input Impedance" : "1 MΩ",
+         "Noise Floor" : "-112dBu",
+         "Output Impedance" : "400 Ω",
+         "Power Consumption" : "300 mA",
+         "Power Supply" : "9 V",
+         "Reference Pitch" : "A4=390 Hz-490 Hz",
+         "S/N Ratio" : "98dB @ 1kHz",
+         "Scale" : "configurable",
+         "Serial" : "",
+         "THD" : "0.001% @ 20Hz -20dBu, 0.001% @ 1kHz -20dBu",
+         "Transposition Range" : "-6 to +5",
+         "Weight" : "8.7 oz"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.walrusaudio.com/products/canvas-tuner?variant=47141105369323",
+      "make" : "Walrus Audio",
+      "manuals" : {
+         "Manual" : "Canvas_Tuner_Digital_Manual_2_2_26.pdf"
+      },
+      "model" : "Canvas Tuner",
+      "notes" : [
+         "tuner"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Output" : "1/4\" TRS"
       },
       "image" : true,
@@ -2305,19 +2345,19 @@ var equipment = [
       "current_pedal" : true,
       "detail" : {
          "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
-         "Outputs" : "9V 500mA (7); 9V 500mA/12V 375 mA/18V 250mA; 9V/12V 3A (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
+         "Outputs" : "9V 500mA (13); 9V 500mA/12V 375 mA/18V 250mA (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
          "Power Supply" : "24V 4A / 96W",
          "Serial" : "",
          "Weight" : "0.93lbs"
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-hp-plus?variant=46372434149611",
+      "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-15?variant=45194582524139",
       "make" : "Walrus Audio",
       "manuals" : {
-         "Manual" : "Canvas_Power_HP_Plus_Digital_Manual.pdf"
+         "Manual" : "Canvas_Power_Digital_Manual_089a7368-9bbb-4d81-88de-18132ac68626.pdf"
       },
-      "model" : "Canvas Power HP+",
+      "model" : "Canvas Power 15",
       "notes" : [
          "pedal power"
       ],
@@ -2549,7 +2589,7 @@ var equipment = [
          "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
          "Dimensions" : "3.75\" x 2.6\" x 1.63\"",
          "Input Impedance" : "5 MΩ",
-         "Output Impedance" : "1 LΩ",
+         "Output Impedance" : "1 KΩ",
          "Power Consumption" : "85 mA",
          "Power Supply" : "9 V",
          "Reference Pitch" : "A4=390 Hz-490 Hz",
