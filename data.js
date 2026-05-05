@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-03-25T12:00:00+0000")
+var lastModified = new Date("2026-05-04T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -835,7 +835,7 @@ var equipment = [
          "bass guitar"
       ],
       "type" : "Amplifier",
-      "year" : "2025"
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -1231,7 +1231,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-18i20",
-      "main_rig" : true,
       "make" : "Focusrite",
       "manuals" : {
          "Focusrite Control User Guide" : "Focusrite Control Scarlett 2nd Gen User Guide - EN.pdf",
@@ -1286,7 +1285,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://mackie.com/products/big-knob-series-monitor-controllers-interfaces",
-      "main_rig" : true,
       "make" : "Mackie",
       "manuals" : {
          "Operation Guide" : "big_knob_studio_command_system.pdf",
@@ -1359,7 +1357,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/proaudio/pa_systems/",
-      "main_rig" : true,
       "make" : "Yamaha",
       "manuals" : {
          "Owner’s Manual" : "stagepas500_en_om_d0.pdf"
@@ -1556,6 +1553,32 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Bypass" : "Buffered",
+         "Dimensions" : "2.5\" x 4.8\" x 2.3\"",
+         "Power Consumption" : "200 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://origineffects.com/product/cali76-fet-compressor/",
+      "make" : "Origin Effects",
+      "manuals" : {
+         "Owner’s Manual" : "Origin-Effects-Cali76-FET-Compressor-Owners-Manual-V2-3.pdf"
+      },
+      "model" : "Cali76",
+      "notes" : [
+         "compressor"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
          "Circuit" : "Analog",
@@ -1608,6 +1631,35 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS x 2",
+         "Analog Outputs" : "1/4\" TS x 2",
+         "Bypass" : "True",
+         "Computer Interface" : "USB Mini-B",
+         "Dimensions" : "2.1\" x 4.4\" x 5.3\"",
+         "Loop Time" : "5 minutes",
+         "Power Consumption" : "100 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "",
+         "Weight" : "1.2 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.tcelectronic.com/en/products/0709-AFZ",
+      "make" : "tc electronic",
+      "manuals" : {
+         "Quick Start Guide" : "QSG_TE_0709-AFZ_DITTO X2 LOOPER_WW.pdf"
+      },
+      "model" : "Ditto X2",
+      "notes" : [
+         "looper"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -1737,33 +1789,59 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\" x 2, XLR, 1/4\" return x 4",
-         "Analog Outputs" : "1/4\" x 2, XLR x 2, 1/4\" send x4",
-         "Computer Interface" : "USB-C, USB-A, NEXUS",
-         "Dimensions" : "19.4\" x 10.1\" x 3\"",
-         "Expression" : "TRS x 2",
-         "MIDI" : "In/Out+Thru",
-         "Phones" : "1/4\" stereo",
-         "Power Consumption" : "",
-         "Power Supply" : "",
-         "S/PDIF" : "In/Out",
+         "Analog Inputs" : "1/4\" TS x 2",
+         "Analog Outputs" : "1/4\" TS x 2",
+         "Bypass" : "True",
+         "Computer Interface" : "USB Mini-B",
+         "Dimensions" : "2\" x 2.9\" x 4.8\"",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "100 Ω",
+         "Power Consumption" : "100 mA",
+         "Power Supply" : "9 V",
          "Serial" : "",
-         "Storage" : "Micro SD",
-         "Weight" : ""
+         "Weight" : "0.75 lbs"
       },
-      "featured" : true,
       "hide" : true,
       "image" : true,
-      "link" : "https://line6.com/helix-stadium/",
-      "main_rig" : true,
-      "make" : "Line 6",
-      "model" : "Helix Stadium XL",
+      "link" : "https://www.tcelectronic.com/en/products/0709-AJT",
+      "make" : "tc electronic",
+      "manuals" : {
+         "Quick Start Guide" : "QSG_TE_0709-AJT_INFINITE SAMPLE SUSTAINER_WW.pdf"
+      },
+      "model" : "Infinite",
       "notes" : [
-         "multi-effects"
+         "sustainer"
       ],
       "type" : "Pedal",
-      "year" : "2025"
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
+         "Other" : "Footswitch 1/4\" input",
+         "Power Consumption" : "64 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/products/kilt-10",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS_KILT_10_Manual_Multi.pdf"
+      },
+      "model" : "Kilt 10",
+      "notes" : [
+         "distortion"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -1850,6 +1928,32 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
+         "Other" : "Footswitch 1/4\" input",
+         "Power Consumption" : "43 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS-Pedals-MorningGloryV4-Manual-English.pdf"
+      },
+      "model" : "Morning Glory V4",
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -1922,7 +2026,9 @@ var equipment = [
       "model" : "Power Manager PLUS",
       "notes" : [
          "May The Schwartz Be With You",
-         "gold"
+         "gold",
+         "Variax 500",
+         "Variax 700"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -2075,27 +2181,28 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Attachments" : "Dual Lock",
-         "Dimensions" : "34\" x 12.5\" x 1.5\" (front), 2.5\" (back)",
+         "Dimensions" : "28.2\" x 16.5\" x 1.5\" (front), 2.5\" (back)",
          "Material" : "Aluminum",
          "Mods" : "IEC MOD, SUM MOD2, 4X MOD",
          "Serial" : ""
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://www.templeaudio.com/templeboards",
+      "link" : "https://www.templeaudio.com/templeboards/trio-series",
       "make" : "Temple Audio",
       "manuals" : {
          "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
          "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
       },
-      "model" : "Templeboard TRIO 43",
+      "model" : "Templeboard TRIO 28",
       "notes" : [
-         "temple red"
+         "gunmetal"
       ],
       "type" : "Pedalboard",
-      "year" : "2025"
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -2196,6 +2303,7 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
          "Outputs" : "9V 500mA (7); 9V 500mA/12V 375 mA/18V 250mA; 9V/12V 3A (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
@@ -2215,7 +2323,7 @@ var equipment = [
          "pedal power"
       ],
       "type" : "Power",
-      "year" : "2025"
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -2251,6 +2359,20 @@ var equipment = [
       ],
       "type" : "Power",
       "year" : "2005"
+   },
+   {
+      "category" : "Hardware",
+      "current_rack" : true,
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.radialeng.com/product/power-2",
+      "make" : "Radial Engineering",
+      "manuals" : {
+         "Manual" : "Power-2-Manual-WEB-03-2025.pdf"
+      },
+      "model" : "Power-2",
+      "type" : "Power",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -2396,7 +2518,6 @@ var equipment = [
          "Transposition Range" : "-6 to +5",
          "Weight" : "0.66 lbs"
       },
-      "featured" : true,
       "hide" : true,
       "image" : true,
       "link" : "https://www.petersontuners.com/products/stroboplushdc/",
@@ -2415,7 +2536,46 @@ var equipment = [
          "tuner"
       ],
       "type" : "Tuner",
-      "year" : "2025"
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Bypass" : "Buffered",
+         "Computer Interface" : "USB-C",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
+         "Dimensions" : "3.75\" x 2.6\" x 1.63\"",
+         "Input Impedance" : "5 MΩ",
+         "Output Impedance" : "1 LΩ",
+         "Power Consumption" : "85 mA",
+         "Power Supply" : "9 V",
+         "Reference Pitch" : "A4=390 Hz-490 Hz",
+         "Scale" : "configurable",
+         "Serial" : "",
+         "Transposition Range" : "-6 to +5",
+         "Weight" : "11 oz"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.petersontuners.com/products/stroboVUE/",
+      "make" : "Peterson",
+      "manuals" : {
+         "Guided Tuning Manual" : "Guided Tuning Manual.pdf",
+         "StroboVUE Beyond the Basics" : "StroboVUE_Beyond_The_Basics.pdf",
+         "StroboVUE Manual" : "StroboVUE_Tuner.pdf",
+         "StroboVUE Settings" : "StroboVUE_Settings.pdf",
+         "StroboVUE Tuning & Sweetener Presets" : "StroboVUE Tuning & Sweetener Presets.pdf"
+      },
+      "model" : "StroboVUE",
+      "notes" : [
+         "tuner"
+      ],
+      "type" : "Tuner",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -2502,10 +2662,8 @@ var equipment = [
          "Weight" : "4 lbs 3 oz",
          "dB at 1'" : "Peak: 93 db, Average: 80 db"
       },
-      "featured" : true,
       "image" : true,
       "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=39754219192405",
-      "main_rig" : true,
       "make" : "Traveler",
       "manuals" : {
          "Manual" : "Escape_Mark_3_Manual.pdf"
@@ -2694,10 +2852,8 @@ var equipment = [
          "Truss Rod" : "Adjustable, 4mm Allen Nut",
          "Tuning Machines" : "Open-Gear Die-Cast"
       },
-      "featured" : true,
       "image" : true,
       "link" : "https://www.gretschguitars.com/gear/build/acoustic/jim-dandy-parlor/2711020579",
-      "main_rig" : true,
       "make" : "Gretsch",
       "model" : "Jim Dandy Parlor",
       "notes" : [
@@ -2882,7 +3038,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.ibanez.com/usa/products/category/electric_basses/",
-      "main_rig" : true,
       "make" : "Ibanez",
       "manuals" : {
          "Catalog (1986 model)" : "1986_Catalog_p16-17.webp",
@@ -2920,7 +3075,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://line6.com/legacy/variaxbass700",
-      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Pilot’s Handbook" : "Variax Bass Manual - English ( Rev A ).pdf"
@@ -3045,10 +3199,8 @@ var equipment = [
          "Tuning Machines" : "Gold Locking",
          "Weight" : "5lbs 4oz"
       },
-      "featured" : true,
       "image" : true,
       "link" : "https://travelerguitar.com/products/ltd-ec-1?variant=39665627136085",
-      "main_rig" : true,
       "make" : "Traveler",
       "manuals" : {
          "Manual" : "EC-1_Manual.pdf"
@@ -3187,7 +3339,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://line6.com/legacy/variax500",
-      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Pilot’s Handbook" : "Variax 500.pdf"
@@ -3348,24 +3499,6 @@ var equipment = [
    {
       "category" : "Instruments",
       "detail" : {
-         "Battery" : "AAA x 3",
-         "Input" : "1/8\" stereo",
-         "Keys" : "20 (switch position 1: A1-E3, 2: A2-E4, 3: A3-E5)",
-         "Phones" : "1/8\" stereo"
-      },
-      "image" : true,
-      "link" : "https://stylophone.com/product/stylophone-s-1/",
-      "make" : "Dubreq",
-      "manuals" : {
-         "Manual" : "s1-booklet.pdf"
-      },
-      "model" : "Stylophone S-1",
-      "type" : "Synthesizer",
-      "year" : "2011"
-   },
-   {
-      "category" : "Instruments",
-      "detail" : {
          "Amplifier" : "2.5 W x 2",
          "Dimensions" : "945 mm x 370 mm x 128 mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
          "Keys" : "66 (C1 - C6)",
@@ -3456,6 +3589,24 @@ var equipment = [
       "strings" : "EJ74",
       "type" : "Mandolin",
       "year" : "1920s?"
+   },
+   {
+      "category" : "Instruments",
+      "detail" : {
+         "Battery" : "AAA x 3",
+         "Input" : "1/8\" stereo",
+         "Keys" : "20 (switch position 1: A1-E3, 2: A2-E4, 3: A3-E5)",
+         "Phones" : "1/8\" stereo"
+      },
+      "image" : true,
+      "link" : "https://stylophone.com/product/stylophone-s-1/",
+      "make" : "Dubreq",
+      "manuals" : {
+         "Manual" : "s1-booklet.pdf"
+      },
+      "model" : "Stylophone S-1",
+      "type" : "Synthesizer",
+      "year" : "2011"
    },
    {
       "category" : "Instruments",
@@ -3999,11 +4150,13 @@ var links = {
    "None" : "",
    "Northfield" : "https://www.northfieldinstruments.com/",
    "O.C. White" : "https://www.ocwhite.com/",
+   "Origin Effects" : "https://origineffects.com/",
    "Peavey" : "https://peavey.com/",
    "Peterson" : "https://www.petersontuners.com/",
    "Pignose" : "https://pignoseamps.com/",
    "ProCo" : "https://actentertainment.com/products/?brand=68",
    "Quick-Lok" : "https://www.quiklok.com/",
+   "Radial Engineering" : "https://www.radialeng.com/",
    "Road Runner" : "https://roadrunnercases.com/",
    "Roc-N-Soc" : "https://rocnsoc.com/",
    "RockHouse" : "",
