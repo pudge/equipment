@@ -1554,22 +1554,66 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Bypass" : "Buffered",
-         "Dimensions" : "2.5\" x 4.8\" x 2.3\"",
-         "Power Consumption" : "200 mA",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Bypass" : "True/Buffered",
+         "Computer Interface" : "USB-C",
+         "Detection Accuracy" : "±0.1 cent",
+         "Detection Range" : "E0 (20 Hz)–D#10 (20,000 Hz)",
+         "Dimensions" : "2.21\" x 2.42\" x 4.55\"",
+         "Input Impedance" : "1 MΩ",
+         "Noise Floor" : "-112dBu",
+         "Output Impedance" : "400 Ω",
+         "Power Consumption" : "300 mA",
          "Power Supply" : "9 V",
-         "Serial" : ""
+         "Reference Pitch" : "A4=390 Hz-490 Hz",
+         "S/N Ratio" : "98dB @ 1kHz",
+         "Scale" : "configurable",
+         "Serial" : "",
+         "THD" : "0.001% @ 20Hz -20dBu, 0.001% @ 1kHz -20dBu",
+         "Transposition Range" : "-6 to +5",
+         "Weight" : "8.7 oz"
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://origineffects.com/product/cali76-fet-compressor/",
-      "make" : "Origin Effects",
+      "link" : "https://www.walrusaudio.com/products/canvas-tuner?variant=47141105369323",
+      "make" : "Walrus Audio",
       "manuals" : {
-         "Owner’s Manual" : "Origin-Effects-Cali76-FET-Compressor-Owners-Manual-V2-3.pdf"
+         "Manual" : "Canvas_Tuner_Digital_Manual_2_2_26.pdf"
       },
-      "model" : "Cali76",
+      "model" : "Canvas Tuner",
+      "notes" : [
+         "tuner"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Bypass" : "True",
+         "Dimensions" : "2.5\" x 4.8\" x 1.5\"",
+         "Frequency Response" : "20 - 20000 Hz @ -3 dB",
+         "Input Impedance" : "1 MΩ",
+         "Noise Floor" : "-101 dB",
+         "Output Impedance" : "2.2 KΩ",
+         "Power Consumption" : "100 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "",
+         "THD" : "<0.1%",
+         "Weight" : "1 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://empresseffects.com/products/compressor-mkii?variant=31752414396531",
+      "make" : "Empress",
+      "manuals" : {
+         "Manual" : "Compressor_MKII_manual.pdf"
+      },
+      "model" : "Compressor MKII",
       "notes" : [
          "compressor"
       ],
@@ -1673,7 +1717,7 @@ var equipment = [
          "Controls" : "Volume, Tone, Voice, Gain",
          "Dimensions" : "3.74\" x 1.77\" x 1.89\"",
          "Input Impedance" : "470 kΩ",
-         "Output Impedance" : "1 kΩ",
+         "Output Impedance" : "1 KΩ",
          "Power Consumption" : "10 mA",
          "Power Supply" : "9 V",
          "Weight" : "0.6 lbs"
@@ -2117,44 +2161,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2024"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\" TS",
-         "Analog Outputs" : "1/4\" TS",
-         "Bypass" : "True/Buffered",
-         "Computer Interface" : "USB-C",
-         "Detection Accuracy" : "±0.1 cent",
-         "Detection Range" : "E0 (20 Hz)–D#10 (20,000 Hz)",
-         "Dimensions" : "2.21\" x 2.42\" x 4.55\"",
-         "Input Impedance" : "1 MΩ",
-         "Noise Floor" : "-112dBu",
-         "Output Impedance" : "400 Ω",
-         "Power Consumption" : "300 mA",
-         "Power Supply" : "9 V",
-         "Reference Pitch" : "A4=390 Hz-490 Hz",
-         "S/N Ratio" : "98dB @ 1kHz",
-         "Scale" : "configurable",
-         "Serial" : "",
-         "THD" : "0.001% @ 20Hz -20dBu, 0.001% @ 1kHz -20dBu",
-         "Transposition Range" : "-6 to +5",
-         "Weight" : "8.7 oz"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.walrusaudio.com/products/canvas-tuner?variant=47141105369323",
-      "make" : "Walrus Audio",
-      "manuals" : {
-         "Manual" : "Canvas_Tuner_Digital_Manual_2_2_26.pdf"
-      },
-      "model" : "Canvas Tuner",
-      "notes" : [
-         "tuner"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
    },
    {
       "category" : "Hardware",
