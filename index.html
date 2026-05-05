@@ -23,9 +23,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.6.0/dt-1.12.1/b-2.2.3/fh-3.2.4/r-2.3.0/datatables.min.css"/>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.6.0/dt-1.12.1/b-2.2.3/fh-3.2.4/r-2.3.0/datatables.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css?15e5441e8f0579602a9be976b9bd03ad">
-    <script class="file" type="text/javascript" src="./md5s.js?49517ab44e802905121c514ebed4d999"></script>
-    <script class="file" type="text/javascript" src="./data.js?c0a219122c7e89bc682a6802c698df96"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css?24e353ff77b17c3854e8c6d56c7a8b5f">
+    <script class="file" type="text/javascript" src="./md5s.js?826efe3f571ba9e4eaaafd12a2ebb423"></script>
+    <script class="file" type="text/javascript" src="./data.js?28f1d498bc8a1427c364a9e3ddacb4ce"></script>
     <script class="file" type="text/javascript" src="./code.js?980ae43a1bc1817d220ffa10cf067e02"></script>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Gear 🎸🤘🏼" />
@@ -42,7 +42,18 @@
 
     <div id="container">
         <div class="h2">Pudge&rsquo;s Music Gear</div>
-        <span class="h6 float-right">Pics: <a class="pic_modalize" alt="Pudge&rsquo;s Studio" href="./images/studio.webp">Studio</a> | <a class="pic_modalize" alt="Pudge&rsquo;s Old Studio" href="./images/studio-old.webp">Old Studio</a></span>
+        <span class="h6 float-left">
+            <a class="top_link" href="#" onclick="doShow('main_rig'); return false">Main Rig</a>
+            |
+            <a class="top_link" href="#" onclick="doShow('current_pedal'); return false">Current Pedalboard</a>
+            |
+            <a class="top_link" href="#" onclick="doShow('current_rack'); return false">Current Rack</a>
+        </span>
+        <span class="h6 float-right">Pics:
+            <a class="pic_modalize" alt="Pudge&rsquo;s Studio" href="./images/studio.webp">Studio</a>
+            |
+            <a class="pic_modalize" alt="Pudge&rsquo;s Old Studio" href="./images/studio-old.webp">Old Studio</a>
+        </span>
         <table id="equipment" class="display cell-border compact hover order-column row-border stripe" style="width: 100%"></table>
     </div>
 

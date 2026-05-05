@@ -1192,7 +1192,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_rack" : true,
       "detail" : {
          "Computer Interface" : "USB-B",
          "MIDI" : "Out x 2",
@@ -4080,7 +4079,6 @@ var equipment = [
    },
    {
       "category" : "Stands etc.",
-      "current_rack" : true,
       "image" : true,
       "link" : "https://www.skbcases.com/music/products/proddetail.php?f=&id=819&o=&offset=4&c=80&s=80",
       "make" : "SKB",

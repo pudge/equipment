@@ -56,10 +56,10 @@ a:link    { color: #9580FF }
 a:visited { color: #9580FF }
 a:link    { color: #9580FF }
 
-a.pic_modalize:link     { color: #8AFF80 }
-a.pic_modalize:visited  { color: #8AFF80 }
-a.pic_modalize:hover    { color: #8AFF80 }
-a.pic_modalize:active   { color: #8AFF80 }
+a.pic_modalize, a.top_link:link     { color: #8AFF80 }
+a.pic_modalize, a.top_link:visited  { color: #8AFF80 }
+a.pic_modalize, a.top_link:hover    { color: #8AFF80 }
+a.pic_modalize, a.top_link:active   { color: #8AFF80 }
 
 .h2 {
     font-family: 'New Rocker', luminari;
