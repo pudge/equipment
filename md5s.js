@@ -1,6 +1,6 @@
 const md5s = {
    "./code.js" : "980ae43a1bc1817d220ffa10cf067e02",
-   "./data.js" : "f4d7e9efe461b87d315ce1ab8e2d508d",
+   "./data.js" : "ab12537b78f81ba5c120788d1b68f16e",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/445.webp" : "c02085faef2f0c3e840d1d6e4971cc98",
@@ -186,6 +186,7 @@ const md5s = {
    "./images/sandwichcompmini.webp" : "b48ea1aca47522275f6e178a13dc91f0",
    "./images/scarlett18i20.webp" : "05c7864f554c3fa4223ca8338240dfc9",
    "./images/scarlett2i2.webp" : "e9dd03dfaba77b1546065274777b01aa",
+   "./images/sdrkst12tb.webp" : "82bf23d73c78ffd69c57b13d0524aa31",
    "./images/se215cl.webp" : "73be28f21e55742e3145b38c45a62583",
    "./images/sgr6b.webp" : "fd398e3d6781e51f4e40102bbb8ce78d",
    "./images/sgstandard.webp" : "9cbce4057e01e0b51370cf1551fb175a",
@@ -379,6 +380,7 @@ const md5s = {
    "./images/sm/sandwichcompmini-sm.webp" : "800d21c680605d8a7ea1c4757a7370b6",
    "./images/sm/scarlett18i20-sm.webp" : "8df86a3b4859c9510a1e46c1cc845b80",
    "./images/sm/scarlett2i2-sm.webp" : "65b359aab7d2e280544f60a78822cf73",
+   "./images/sm/sdrkst12tb-sm.webp" : "1264cc584733e526b1c20c27fe3bce7b",
    "./images/sm/se215cl-sm.webp" : "239b1b564dc30b765fcb32f40daea2fb",
    "./images/sm/sgr6b-sm.webp" : "3617fd5aea75b4a46fc2e840fdea5850",
    "./images/sm/sgstandard-sm.webp" : "6766350afff6e5dc53535e11680b3efc",

@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-05T12:00:00+0000")
+var lastModified = new Date("2026-05-06T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -4125,10 +4125,45 @@ var equipment = [
    },
    {
       "category" : "Stands etc.",
+      "current_rack" : true,
+      "detail" : {
+         "Color" : "Weathered brown",
+         "Depth" : "17\"",
+         "Finish" : "Stained",
+         "Height" : "27.6\" + 3.5\" casters",
+         "Material" : "15 mm plywood",
+         "Max Loading Capacity" : "140 lbs",
+         "Rack Space" : "12U",
+         "Rack Width" : "19\"",
+         "Weight" : "42.5 lbs",
+         "Width" : "20.4\""
+      },
       "image" : true,
-      "link" : "https://www.skbcases.com/music/products/proddetail.php?f=&id=819&o=&offset=4&c=80&s=80",
+      "link" : "https://www.soundtown.com/products/sdrk-st12tb",
+      "make" : "Sound Town",
+      "model" : "SDRK-ST12TB",
+      "notes" : [
+         "12U rack"
+      ],
+      "type" : "Rack Hardware",
+      "year" : "2025"
+   },
+   {
+      "category" : "Stands etc.",
+      "detail" : {
+         "Color" : "Black",
+         "Material" : "Rotationally molded plastic",
+         "Rack Depth" : "17\"",
+         "Rack Space" : "8U",
+         "Rack Width" : "19\""
+      },
+      "image" : true,
+      "link" : "https://www.skbcases.com/products/8-u-r-series-rack?_pos=2&_fid=f67bafb49&_ss=c",
       "make" : "SKB",
       "model" : "SKB-R8",
+      "notes" : [
+         "8U rack"
+      ],
       "type" : "Rack Hardware",
       "year" : "2005"
    }
@@ -4213,6 +4248,7 @@ var links = {
    "Shubb" : "https://www.shubb.com/",
    "Shure" : "https://www.shure.com/",
    "Sony" : "https://www.sony.com/",
+   "Sound Town" : "https://www.soundtown.com/",
    "Stageline" : "https://www.stagelinestands.com/",
    "Stagg" : "https://staggmusic.com/",
    "String Swing" : "https://www.stringswing.com/",
