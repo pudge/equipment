@@ -55,7 +55,7 @@ function linkHtml(text) {
 }
 
 function makeLink(text, link) {
-  return '<a target="_blank" href="'+link+'">'+text+'<\/a>'
+  return '<a href="'+link+'">'+text+'<\/a>'
 }
 
 function linkShow(acc, text, other) {
@@ -146,7 +146,7 @@ function linkItFindValue(oData) {
   var link = 'https://reverb.com/marketplace?query='
     + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
     // + '&condition=used'
-  return `<a target="_blank" href="${link}"><img class="findvalue" src="/reverb.webp" /></a>`
+  return `<a href="${link}"><img class="findvalue" src="/reverb.webp" /></a>`
 }
 
 function linkItManuals(oData) {
@@ -158,7 +158,7 @@ function linkItManuals(oData) {
   return '<div class="manuals">' + Object.keys(oData['manuals']).map((x) => {
       var file = `./manuals/${modelName}/${oData['manuals'][x]}`
       var md5 = (md5s[file] || '').substr(0, 5)
-      return `<div class="manual_row"><a target="_blank" href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
+      return `<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
     }).join('') + '</div>'
 }
 
@@ -321,7 +321,11 @@ function equipmentInit() {
     paging: false,
     // search: { smart: false, regex: false, search: anchorText },
     search: { search: anchorText },
-    language: { search: "" },
+    language: {
+      search: "",
+      info: "_START_ to _END_ of _TOTAL_ entries",
+      infoFiltered: " (of _MAX_ total)",
+    },
     dom: 'fti',
 
     initComplete: function () {
@@ -552,24 +556,59 @@ function initListeners() {
 }
 
 function initCache() {
-  if (window.navigator.standalone) {
-    caches.has('v1.0.3').then((e) => {
-      if (e === false) {
-        // only cache images for now
-        var files = Object.keys(md5s).filter(k => k.match(new RegExp(`\\.${IMAGE_TYPE}$`))).map(k => `${k}?${(md5s[k] || '').substr(0,5)}`)
-        caches
-          .open('v1.0.3')
-          .then((cache) => {
-              cache.addAll(files)
-            }
-          )
-      }
+  if (!('serviceWorker' in navigator)) return
+
+  const isStandalone =
+    window.navigator.standalone ||
+    window.matchMedia('(display-mode: standalone)').matches
+
+  if (!isStandalone) {
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(r => r.unregister())
     })
+    return
+  }
+
+  navigator.serviceWorker.addEventListener('message', (e) => {
+    if (e.data && e.data.type === 'cache-progress') renderCacheStatus(e.data)
+  })
+
+  navigator.serviceWorker
+    .register('./sw.js', { updateViaCache: 'none' })
+    .then(reg => {
+      reg.update()
+      askCacheStatus()
+    })
+    .catch(err => console.warn('SW registration failed', err))
+}
+
+function askCacheStatus() {
+  if (navigator.serviceWorker.controller) {
+    navigator.serviceWorker.controller.postMessage('cache-status')
+  } else {
+    navigator.serviceWorker.ready.then(reg => {
+      const sw = reg.active || reg.waiting || reg.installing
+      sw && sw.postMessage('cache-status')
+    })
+  }
+}
+
+function renderCacheStatus(p) {
+  const el = $('#cacheStatus')
+  if (!el.length) return
+  if (p.complete || (p.total > 0 && p.done >= p.total)) {
+    el.html('&nbsp;✓').css('color', 'green')
+  } else if (p.total > 0) {
+    const pct = Math.floor((p.done / p.total) * 100)
+    el.html('&nbsp;' + String(pct).padStart(2, '0') + '%').css('color', '')
+  } else {
+    el.html('')
   }
 }
 
 $(document).ready(function() {
   setLastMod('#lastModified')
+  $('#MANIFEST_REV').html(md5s['MANIFEST_REV'])
   equipmentInit()
   clearSearchInit()
   modalInit()

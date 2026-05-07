@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-06T12:00:00+0000")
+var lastModified = new Date("2026-05-07T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -3310,34 +3310,34 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Body Finish" : "Gloss",
-         "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Standard Stringlock*",
+         "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Standard Stringlock †",
          "Color" : "Black",
-         "Control Knobs" : "Guyker CKB005 Revolver Cylinders*",
-         "Controls" : "Fender 250 K Potentiometers (1 Volume, 1 Push/Pull Neck Tone, 1 Middle/Bridge Tone); .022 µF capacitor*",
+         "Control Knobs" : "Guyker CKB005 Revolver Cylinders †",
+         "Controls" : "Fender 250 K Potentiometers (1 Volume, 1 Push/Pull Neck Tone, 1 Middle/Bridge Tone); .022 µF capacitor †",
          "Fingerboard Inlays" : "Black Dots",
          "Fingerboard Material" : "Maple",
          "Fret Count" : "21",
-         "Frets" : "Medium Jumbo (Plek’d 2025)*",
-         "Jack" : "Pure Tone Multi-Contact, Black Nickel*",
-         "Jack Plate" : "Black*",
+         "Frets" : "Medium Jumbo (Plek’d 2025) †",
+         "Jack" : "Pure Tone Multi-Contact, Black Nickel †",
+         "Jack Plate" : "Black †",
          "Joint" : "Bolt-on",
          "Location" : "Samick, Korea",
          "Model Number" : "S-310B",
          "Neck Material" : "Maple",
-         "Neck Plate" : "Black*",
+         "Neck Plate" : "Black †",
          "Nut Dimensions" : "41.85 mm W x 8.54 mm H x 5.87 mm D, 34.01 mm E-to-E",
-         "Nut Material" : "Graph Tech XL Black Tusq (model 6060-00)*",
-         "Pickguard" : "3-Ply Matte Yellow/Black/Yellow*",
-         "Pickup Covers" : "Solid Black Plastic*",
-         "Pickup Selector" : "Fender 5-way Selector Switch, Blacked, w/Black Metal Tip; Neck Tone “pull” adds neck pickup*",
-         "Pickups" : "Fender Fat 50’s*",
+         "Nut Material" : "Graph Tech XL Black Tusq (model 6060-00) †",
+         "Pickguard" : "3-Ply Matte Yellow/Black/Yellow †",
+         "Pickup Covers" : "Solid Black Plastic †",
+         "Pickup Selector" : "Fender 5-way Selector Switch, Blacked, w/Black Metal Tip; Neck Tone “pull” adds neck pickup †",
+         "Pickups" : "Fender Fat 50’s †",
          "Production Year" : "1991",
-         "Rear Cover" : "1-Ply Black*",
+         "Rear Cover" : "1-Ply Black †",
          "Scale Length" : "25.5\"",
          "Serial" : "1103087",
          "Truss Rod" : "Adjustable, 5 mm Allen Nut",
-         "Truss Rod Cover" : "“Bell Shaped”; 2-Ply Black/White*",
-         "Tuning Machines" : "Locking, 15:1*"
+         "Truss Rod Cover" : "“Bell Shaped”; 2-Ply Black/White †",
+         "Tuning Machines" : "Locking, 15:1 †"
       },
       "featured" : true,
       "image" : true,
@@ -3788,7 +3788,6 @@ var equipment = [
          "Size" : "6\", 7.25\""
       },
       "image" : true,
-      "main_rig" : true,
       "make" : "Adam",
       "model" : "Bongos",
       "type" : "Bongos",
@@ -3803,7 +3802,6 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://meinlpercussion.com/en/products/jc50ab-b-m5746.html",
-      "main_rig" : true,
       "make" : "Meinl",
       "model" : "JC50AB-B",
       "notes" : [

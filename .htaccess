@@ -1,0 +1,7 @@
+<FilesMatch "\.html?$">
+    Header set Cache-Control "no-cache, must-revalidate"
+    ForceType 'text/html; charset=utf8'
+</FilesMatch>
+<FilesMatch "^font_kit_">
+    ForceType font/woff2
+</FilesMatch>
