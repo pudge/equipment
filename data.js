@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-07T12:00:00+0000")
+var lastModified = new Date("2026-05-08T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1831,6 +1831,42 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" x 2, XLR, 1/4\" return x 4",
+         "Analog Outputs" : "1/4\" x 2, XLR x 2, 1/4\" send x4",
+         "Computer Interface" : "USB-C, USB-A, NEXUS",
+         "Dimensions" : "19.4\" x 10.1\" x 3\"",
+         "Expression" : "TRS x 2",
+         "MIDI" : "In/Out+Thru",
+         "Phones" : "1/4\" stereo",
+         "Power Consumption" : "",
+         "Power Supply" : "",
+         "S/PDIF" : "In/Out",
+         "Serial" : "",
+         "Storage" : "Micro SD",
+         "Weight" : ""
+      },
+      "featured" : true,
+      "hide" : true,
+      "image" : true,
+      "link" : "https://line6.com/helix-stadium/",
+      "main_rig" : true,
+      "make" : "Line 6",
+      "manuals" : {
+         "Cheat Sheet" : "Helix Stadium XL Floor Cheat Sheet - English .pdf",
+         "Model Gallery" : "https://helixhelp.com/models",
+         "Owner’s Manual" : "https://manuals.line6.com/en/helix-stadium/live"
+      },
+      "model" : "Helix Stadium XL",
+      "notes" : [
+         "multi-effects"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",

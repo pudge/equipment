@@ -1,6 +1,6 @@
 const md5s = {
-   "./code.js" : "175b53844759ecf12ba69a5f6cd2dacc",
-   "./data.js" : "ca7e2d271df52b110ddd00dabe5940b9",
+   "./code.js" : "2e08881e717844daecdb47d958478ceb",
+   "./data.js" : "f87bb2a525c58cf0dc063e7a98c9c17e",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/445.webp" : "c02085faef2f0c3e840d1d6e4971cc98",
@@ -518,6 +518,7 @@ const md5s = {
    "./manuals/halloffame2/QSG_TE_0709-AFS_HALL-OF-FAME-2-REVERB_WW.pdf" : "16f92a9859a2f38d8f3b84347483eaba",
    "./manuals/halloffame2/hall-of-fame-2-reverb-manual-rev-4.pdf" : "47982a71bb2086a5b4e579d71a23a4eb",
    "./manuals/heavymenace/Heavy_Menace_manual_rev11_Web.pdf" : "a31fd61aaa1aac76925f4c615ee8ffed",
+   "./manuals/helixstadiumxl/Helix Stadium XL Floor Cheat Sheet - English .pdf" : "d15ca8211f14277f243bd47281bdef80",
    "./manuals/hxstompxl/HX Edit Pilots Guide 3.80 - English .pdf" : "e426a5d6cdfc517e4b525344ad377bdb",
    "./manuals/hxstompxl/HX Stomp XL 3.80 Owner's Manual - English .pdf" : "ebf67168fd47265555e91de106e4292b",
    "./manuals/hxstompxl/HX Stomp XL Cheat Sheet - English .pdf" : "af396f3512d08b211a380d77a1945831",
@@ -629,6 +630,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "9c42d08b"
+   "MANIFEST_REV" : "d96265d3"
 }
 

@@ -156,6 +156,9 @@ function linkItManuals(oData) {
 
   var modelName = fixModelName(oData['model'])
   return '<div class="manuals">' + Object.keys(oData['manuals']).map((x) => {
+      if (oData['manuals'][x].match('^https?://')) {
+        return `<div class="manual_row"><a href="${oData['manuals'][x]}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
+      }
       var file = `./manuals/${modelName}/${oData['manuals'][x]}`
       var md5 = (md5s[file] || '').substr(0, 5)
       return `<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
