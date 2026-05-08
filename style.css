@@ -46,12 +46,18 @@ img.imgsmall {
     height: 1.5em;
 }
 
+img.imgsmaller {
+    height: 1em;
+}
+
 img.findvalue {
     float: right;
     height: 0.8em;
     margin-top: 3pt;
     filter: grayscale(100%) brightness(125%);
 }
+
+.checkit { color: #8AFF80 }
 
 th { vertical-align: bottom }
 

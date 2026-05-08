@@ -533,7 +533,7 @@ function clipInfo(el, model) {
 }
 
 function clearSearchInit() {
-  $('#equipment_filter').append('<i id="clear_search" class="fas fa-circle-xmark fa-fw" onclick="doShow(\'\')"></i>')
+  $('#equipment_filter').append('<i id="clear_search" class="fas fa-circle-xmark fa-fw" onclick="$(\'#filter_tags\').val(\'\').trigger(\'change\'); return false"></i>')
 }
 
 function redrawTable() {
@@ -597,10 +597,10 @@ function renderCacheStatus(p) {
   const el = $('#cacheStatus')
   if (!el.length) return
   if (p.complete || (p.total > 0 && p.done >= p.total)) {
-    el.html('&nbsp;✓').css('color', 'green')
+    el.html('&nbsp;✓').addClass('checkit')
   } else if (p.total > 0) {
     const pct = Math.floor((p.done / p.total) * 100)
-    el.html('&nbsp;' + String(pct).padStart(2, '0') + '%').css('color', '')
+    el.html('&nbsp;' + String(pct).padStart(2, '0') + '%').removeClass('checkit')
   } else {
     el.html('')
   }

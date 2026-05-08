@@ -27,7 +27,7 @@ sub get_md5s {
     md5sum($_, \%md5s) for @main;
     
     # get image files
-    my @dirs = ('images', 'images/sm');
+    my @dirs = ('images', 'images/sm', 'pic');
     for my $dir (@dirs) {
         md5sum("$dir/*.webp", \%md5s);
     }
@@ -83,7 +83,9 @@ sub save_index {
     my $index = join '', <$fh>;
     close $fh;
 
-    $index =~ s!((?:href|src)="./$_)\?.*?"!$1?$md5s{"./$_"}"! for (@main, 'md5s.js');
+    for (keys %md5s) {
+        $index =~ s!((?:href|src)="$_)\?.*?"!$1?$md5s{$_}"!;
+    }
 
     open $fh, '>', 'index.html' or die "cannot open index.html: $!";
     print $fh $index;

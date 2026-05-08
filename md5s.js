@@ -1,5 +1,5 @@
 const md5s = {
-   "./code.js" : "14346b704f54a7b714be45e3a49182b1",
+   "./code.js" : "175b53844759ecf12ba69a5f6cd2dacc",
    "./data.js" : "ca7e2d271df52b110ddd00dabe5940b9",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw.webp" : "7909ebfa8a632d452b48521220cacea2",
@@ -401,9 +401,6 @@ const md5s = {
    "./images/sm/stroboplushdc-sm.webp" : "816975a17b1212640e172aa9ad57e0c1",
    "./images/sm/strobostomphd-sm.webp" : "71ea5b4db17c264a9dda46292c8a476a",
    "./images/sm/strobovue-sm.webp" : "e3f26b7b346b3002d730dac5aaf1f94d",
-   "./images/sm/studio-old-sm.webp" : "068a696d751e3bf4b172d764ba7cb789",
-   "./images/sm/studio-sm.webp" : "ee6d60c69dd0b0a01fb6c1b0b2426e96",
-   "./images/sm/studio1-sm.webp" : "25fc96313d851bbb17541a65d07f1b8a",
    "./images/sm/stylophones1-sm.webp" : "b7ad766ee148d104c4104c753951cac4",
    "./images/sm/supersnarksn01-sm.webp" : "8ef9227ae2b1db3a83c169f4aac0dd0f",
    "./images/sm/suvma100bk-sm.webp" : "aea0a19ca79802b332df735949a91240",
@@ -441,9 +438,6 @@ const md5s = {
    "./images/stroboplushdc.webp" : "c6c54b3a59e63f9dabc97cb87286229f",
    "./images/strobostomphd.webp" : "579228193a093e34783bc447be3e2d13",
    "./images/strobovue.webp" : "c7eda2bcd846c16d1e517ec00763a52d",
-   "./images/studio-old.webp" : "969c536895266b783eb341d819b5c306",
-   "./images/studio.webp" : "6b1bd63d8306c93e05c48261a17edb7d",
-   "./images/studio1.webp" : "f5b324fdafe7dc1681be30c047e665ee",
    "./images/stylophones1.webp" : "6484c376ad034bde4269c694cb4ff009",
    "./images/supersnarksn01.webp" : "4c881b9dd2529c0383347e8704789399",
    "./images/suvma100bk.webp" : "359df3387b2bd64657d8712e23e130dc",
@@ -619,7 +613,12 @@ const md5s = {
    "./manuals/variax700/Variax Bass Manual - English ( Rev A ).pdf" : "4ea506846827b12467c60f3d6414d079",
    "./manuals/ydp223/YDP223.pdf" : "be913fb5737ab4e6cd092edd536ca95d",
    "./manuals/ypt300/YPT300_1.pdf" : "05b566baeb4e9064ab170a87abddcb1d",
-   "./style.css" : "fc484c238bcf1b60d268ecf51f53fd13",
+   "./pic/PB-current-k.webp" : "d87fd6898244119104c9a9bd8378c76c",
+   "./pic/PB-current.webp" : "f2380ba7cc10e936bb35e4f21fd1640f",
+   "./pic/studio-sd.webp" : "6b1bd63d8306c93e05c48261a17edb7d",
+   "./pic/studio-wa-1.webp" : "f5b324fdafe7dc1681be30c047e665ee",
+   "./pic/studio-wa-2.webp" : "969c536895266b783eb341d819b5c306",
+   "./style.css" : "9bb91c13e8de3581694f2c945f3bade2",
    "./vendor/datatables.min.css" : "932a5121ac2845af7293669d1283419e",
    "./vendor/datatables.min.js" : "7c31eef34afcd50095805985c20b40f2",
    "./vendor/fontawesome-kit.js" : "47ad0026a54a9f7270be005c2abcc277",
@@ -630,6 +629,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "1bfd9f01"
+   "MANIFEST_REV" : "9c42d08b"
 }
 
