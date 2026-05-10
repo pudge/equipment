@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-08T12:00:00+0000")
+var lastModified = new Date("2026-05-09T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1717,7 +1717,7 @@ var equipment = [
          "Controls" : "Volume, Tone, Voice, Gain",
          "Dimensions" : "3.74\" x 1.77\" x 1.89\"",
          "Input Impedance" : "470 kΩ",
-         "Output Impedance" : "1 KΩ",
+         "Output Impedance" : "1 kΩ",
          "Power Consumption" : "10 mA",
          "Power Supply" : "9 V",
          "Weight" : "0.6 lbs"
@@ -2324,6 +2324,25 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Digital Conversion" : "24-bit",
+         "Digital Signal Processing" : "32-bit",
+         "Dynamic Range" : "97 dB",
+         "Image 1" : "Shure KSM353 (Bi-Directional Ribbon)",
+         "Image 2" : "AEA KU4 (Super Cardioid Ribbon)",
+         "Image 3" : "Telefunken Elam 251 (Large Diaphragm Tube Condenser)",
+         "Image 4" : "Neumann U47 (Large Diaphragm Condenser)",
+         "Image 5" : "AEA 440 (Active Ribbon)",
+         "Image 6" : "RCA 77 DX (Poly-Directional Ribbon)",
+         "Image 7" : "Sanken 31 (Small Diaphragm Condenser)",
+         "Image 8" : "Telefunken ELA M 260 (Small Diaphragm Tube Condenser)",
+         "Image 9" : "Neumann U64 (Small Diaphrgm Condenser)",
+         "Maximum Output Level" : "+5 dBV",
+         "Noise Floor" : "-92 dBV",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "18 mA",
+         "Power Supply" : "9 V"
+      },
       "image" : true,
       "link" : "https://www.fishman.com/product-series-aura-imaging/",
       "make" : "Fishman",
@@ -2631,7 +2650,7 @@ var equipment = [
          "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
          "Dimensions" : "3.75\" x 2.6\" x 1.63\"",
          "Input Impedance" : "5 MΩ",
-         "Output Impedance" : "1 KΩ",
+         "Output Impedance" : "1 kΩ",
          "Power Consumption" : "85 mA",
          "Power Supply" : "9 V",
          "Reference Pitch" : "A4=390 Hz-490 Hz",

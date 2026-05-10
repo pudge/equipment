@@ -1,6 +1,6 @@
 const md5s = {
    "./code.js" : "2e08881e717844daecdb47d958478ceb",
-   "./data.js" : "f87bb2a525c58cf0dc063e7a98c9c17e",
+   "./data.js" : "0a1d706a9105b20267a4a536ab5dea1a",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/445.webp" : "c02085faef2f0c3e840d1d6e4971cc98",
@@ -630,6 +630,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "d96265d3"
+   "MANIFEST_REV" : "67e429d0"
 }
 
