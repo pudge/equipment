@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-09T12:00:00+0000")
+var lastModified = new Date("2026-05-10T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -3920,8 +3920,13 @@ var equipment = [
    {
       "category" : "Percussion Instruments",
       "detail" : {
-         "Bass Drum" : "20\"",
-         "Color" : "Burgundy Glitter"
+         "Base Drum Head" : "P3 type",
+         "Bass Drum" : "20\" x 16\"",
+         "Color" : "Burgundy Glitter",
+         "Floor Tom" : "14\" x 13\"",
+         "Model Number" : "RDP0F5",
+         "Snare" : "14\" x 5.5\"",
+         "Tom" : "10\" x 7\", 12\" x 8\""
       },
       "image" : true,
       "link" : "https://usa.yamaha.com/products/musical_instruments/drums/ac_drums/drum_sets/rydeen/",

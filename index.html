@@ -36,10 +36,10 @@
     <link rel="stylesheet" type="text/css" href="vendor/datatables.min.css"/>
     <script type="text/javascript" src="vendor/datatables.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css?9bb91c13e8de3581694f2c945f3bade2">
-    <script class="file" type="text/javascript" src="./md5s.js?496b8f6903360c011f5ee6a346c41ccf"></script>
-    <script class="file" type="text/javascript" src="./data.js?0a1d706a9105b20267a4a536ab5dea1a"></script>
-    <script class="file" type="text/javascript" src="./code.js?2e08881e717844daecdb47d958478ceb"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css?597c4def3977c5935306b887d269736a">
+    <script class="file" type="text/javascript" src="./md5s.js?8d66aa3c79744e9a757c9904cbf0de1c"></script>
+    <script class="file" type="text/javascript" src="./data.js?035c1ee6027e111574ae499cabd2a373"></script>
+    <script class="file" type="text/javascript" src="./code.js?c806d8676712ba805597c4671d1febe3"></script>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Gear 🎸🤘🏼" />
 
@@ -48,7 +48,7 @@
   <body>
   <div id="main"> 
     <div id="pic_modal" class="modal">
-        <div id="pic_caption"></div>
+        <div id="pic_caption"><span id="pic_title"></span><span id="pic_variants"></span></div>
         <span id="pic_close">&times;</span>
         <img class="modal-content" id="pic_img">
     </div>
@@ -56,16 +56,17 @@
     <div id="container">
         <div class="h2">Pudge&rsquo;s Music Gear</div>
         <span class="h6 float-left">
-            Studios:
-            <a class="pic_modalize" alt="Pudge&rsquo;s SD Studio" href="./pic/studio-sd.webp?6b1bd63d8306c93e05c48261a17edb7d">SD</a>
-            |
-            <a class="pic_modalize" alt="Pudge&rsquo;s WA Studio 1" href="./pic/studio-wa-1.webp?f5b324fdafe7dc1681be30c047e665ee">WA 1</a>,
-            <a class="pic_modalize" alt="Pudge&rsquo;s WA Studio 2" href="./pic/studio-wa-2.webp?969c536895266b783eb341d819b5c306">2</a>
+            <a class="pic_modalize" data-collection="studios"
+                data-variants="sd,wa-1,wa-2"
+                data-labels="SD,WA 1,WA 2"
+                alt="Pudge&rsquo;s Studio"
+                href="./pic/studios/sd.webp">Studios</a>
             &nbsp;&nbsp;
-            Pedalboards:
-            <a class="pic_modalize" alt="Pudge&rsquo;s Pedalboard" href="./pic/PB-current.webp?f2380ba7cc10e936bb35e4f21fd1640f">Mine</a>
-            |
-            <a class="pic_modalize" alt="Pudge&rsquo;s Kids&rsquo; Pedalboard" href="./pic/PB-current-k.webp?d87fd6898244119104c9a9bd8378c76c">Kids&rsquo;</a>
+            <a class="pic_modalize" data-collection="pedalboards"
+                data-variants="mine,kids"
+                data-labels="Mine,Kids&rsquo;"
+                alt="Pudge&rsquo;s Pedalboard"
+                href="./pic/pedalboards/mine.webp">Pedalboards</a>
         </span>
         <span class="h6 float-right">
             <select id="filter_tags" onchange="doShow(this.value); return false">

@@ -26,13 +26,11 @@ sub get_md5s {
     # get main files
     md5sum($_, \%md5s) for @main;
     
-    # get image files
-    my @dirs = ('images', 'images/sm', 'pic');
-    for my $dir (@dirs) {
-        md5sum("$dir/*.webp", \%md5s);
+    # get image/pdf files
+    for (qw(images pic manuals)) {
+        md5sum("$_/*/*", \%md5s);
     }
 
-    md5sum("manuals/*/*", \%md5s);
     md5sum("vendor/*.*", \%md5s);
     md5sum("vendor/fonts/*", \%md5s);
 }

@@ -124,7 +124,26 @@ td.dt-center {
     text-align: center;
     color: #F8F8F2;
     padding: 0;
-    height: 2em;
+    min-height: 2em;
+}
+
+#pic_title {
+    display: inline-block;
+}
+
+#pic_variants {
+    margin-left: 1em;
+}
+#pic_variants a {
+    color: #8AFF80;
+    padding: 0.25em 0.5em;
+    display: inline-block;
+    min-height: 1.5em;
+    text-decoration: none;
+}
+#pic_variants a.active {
+    color: #F8F8F2;
+    text-decoration: underline;
 }
 
 /* Add Animation - Zoom in the Modal */

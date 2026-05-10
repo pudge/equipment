@@ -45,8 +45,14 @@ var columnMap = {}
 columnMap[COL.MODEL] = COL.CAT
 var anchorText
 var equipmentOrig = {}
-var currentImgRow = null
 var touchstartX, touchstartY, touchendX, touchendY
+
+var imageVariants = {}
+var manualsByName = {}
+var imageSequence = []
+var currentIndex = -1
+var currentVariant = null
+var currentSequenceKey = null
 
 // link handling
 
@@ -150,19 +156,34 @@ function linkItFindValue(oData) {
 }
 
 function linkItManuals(oData) {
-  if (oData['manuals'] == null) {
-    return '<div class="manuals" />'
+  var modelName = fixModelName(oData['model'])
+  var rows = []
+  var seen = {}
+
+  if (oData['manuals']) {
+    Object.keys(oData['manuals']).forEach(function(label) {
+      var val = oData['manuals'][label]
+      if (/^https?:\/\//.test(val)) {
+        rows.push(`<div class="manual_row"><a href="${val}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+      } else {
+        var file = `./manuals/${modelName}/${val}`
+        var md5 = (md5s[file] || '').substr(0, 5)
+        rows.push(`<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+        seen[file] = true
+      }
+    })
   }
 
-  var modelName = fixModelName(oData['model'])
-  return '<div class="manuals">' + Object.keys(oData['manuals']).map((x) => {
-      if (oData['manuals'][x].match('^https?://')) {
-        return `<div class="manual_row"><a href="${oData['manuals'][x]}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
-      }
-      var file = `./manuals/${modelName}/${oData['manuals'][x]}`
-      var md5 = (md5s[file] || '').substr(0, 5)
-      return `<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${x}</a></div>`
-    }).join('') + '</div>'
+  var files = manualsByName[modelName] || []
+  files.forEach(function(file) {
+    if (seen[file]) return
+    var md5 = (md5s[file] || '').substr(0, 5)
+    var label = file.replace(/^\.\/manuals\/[^/]+\//, '').replace(/\.[^.]+$/, '')
+    rows.push(`<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+  })
+
+  if (!rows.length) return '<div class="manuals" />'
+  return '<div class="manuals">' + rows.join('') + '</div>'
 }
 
 function clipIt(model) {
@@ -170,24 +191,53 @@ function clipIt(model) {
 }
 
 function imgIt(oData) {
-  //console.log(oData)
   var text = '<i class="fas fa-fw"></i>'
   if (oData['image']) {
     var alt = [oData['make'], oData['model'], oData['type']].join(' ')
     var name = fixModelName(oData['model'])
-    if (oData['image'] === true) {
-      oData['image'] = '.' + IMAGE_PATH + name + '.' + IMAGE_TYPE
-      oData['image_sm'] = '.' + IMAGE_PATH + 'sm/' + name + '-sm.' + IMAGE_TYPE
-    }
-    text = '<a id="pic_' + name + '" class="pic_modalize" alt="' + alt + '" href="'+ oData['image'] + '?' + (md5s[oData['image']] || '').substr(0, 5) + '">' + '<img class="imgsmall" src="'+ oData['image_sm'] + '?' + (md5s[oData['image_sm']] || '').substr(0, 5) + '" /></a>'
+    var main = '.' + IMAGE_PATH + name + '/main.' + IMAGE_TYPE
+    var sm   = '.' + IMAGE_PATH + name + '/sm.'   + IMAGE_TYPE
+    oData['image'] = main
+    oData['image_sm'] = sm
+    text = '<a id="pic_' + name + '" class="pic_modalize" data-collection="gear" data-name="' + name + '" alt="' + alt + '" href="'+ main + '?' + (md5s[main] || '').substr(0, 5) + '">' + '<img class="imgsmall" src="'+ sm + '?' + (md5s[sm] || '').substr(0, 5) + '" /></a>'
   }
   return text
+}
+
+function buildImageMaps() {
+  imageVariants = {}
+  manualsByName = {}
+  for (var k in md5s) {
+    var m = k.match(/^\.\/(?:images|pic)\/([^/]+)\/([^/]+)\.webp$/)
+    if (m && m[2] !== 'sm') {
+      if (!imageVariants[m[1]]) imageVariants[m[1]] = []
+      imageVariants[m[1]].push(m[2])
+      continue
+    }
+    var mm = k.match(/^\.\/manuals\/([^/]+)\/.+$/)
+    if (mm) {
+      if (!manualsByName[mm[1]]) manualsByName[mm[1]] = []
+      manualsByName[mm[1]].push(k)
+    }
+  }
+  var pref = ['main', 'front', 'rear', 'side', 'top', 'bottom', 'detail']
+  for (var n in imageVariants) {
+    imageVariants[n].sort(function(a, b) {
+      var ai = pref.indexOf(a), bi = pref.indexOf(b)
+      if (ai !== -1 && bi !== -1) return ai - bi
+      if (ai !== -1) return -1
+      if (bi !== -1) return 1
+      return a.localeCompare(b)
+    })
+  }
 }
 
 
 // do the table
 
 function equipmentInit() {
+  buildImageMaps()
+
 //   // custom search
 //   $.fn.dataTable.ext.search = []
 //   
@@ -400,69 +450,146 @@ function doShow(item) {
   table.rows('.parent').nodes().to$().find('td:first-child').trigger('click')
 }
 
-function picClick(t, e) {
-  if (t == null) {
-    return
-  }
-  var modal = $('#pic_modal')
-  var image = $('#pic_img')
-  var caption = $('#pic_caption')
+function variantLabel(v) {
+  return v.charAt(0).toUpperCase() + v.slice(1)
+}
 
-  if (e) {
-    e.preventDefault()
+function buildGearSequence() {
+  var seq = []
+  $('#equipment tbody tr').each(function() {
+    if (this.classList.contains('child')) return
+    var a = $(this).find('a.pic_modalize[data-collection="gear"]')[0]
+    if (!a) return
+    var name = a.getAttribute('data-name')
+    var alt  = a.getAttribute('alt')
+    var vs   = imageVariants[name] || ['main']
+    var labels = vs.map(variantLabel)
+    seq.push({ name: name, alt: alt, dir: 'images', variants: vs, labels: labels })
+  })
+  return seq
+}
+
+function buildStaticSequenceItem(collection, variants, labels, alt) {
+  return [{
+    name: collection,
+    alt: alt,
+    dir: 'pic',
+    variants: variants,
+    labels: variants.map(function(v, i) { return (labels && labels[i]) || variantLabel(v) }),
+  }]
+}
+
+function srcFor(entry, variant) {
+  var path = './' + entry.dir + '/' + entry.name + '/' + variant + '.' + IMAGE_TYPE
+  var md5  = (md5s[path] || '').substr(0, 5)
+  return path + (md5 ? '?' + md5 : '')
+}
+
+function preloadAround(idx) {
+  [idx - 1, idx + 1].forEach(function(i) {
+    if (i < 0 || i >= imageSequence.length) return
+    var e = imageSequence[i]
+    var img = new Image()
+    img.src = srcFor(e, e.variants[0])
+  })
+}
+
+function renderCurrent() {
+  if (currentIndex < 0 || currentIndex >= imageSequence.length) return
+  var entry = imageSequence[currentIndex]
+  var variant = currentVariant || entry.variants[0]
+  $('#pic_img').attr('src', srcFor(entry, variant))
+  $('#pic_title').text(entry.alt)
+
+  var strip = $('#pic_variants').empty()
+  if (entry.variants.length > 1) {
+    entry.variants.forEach(function(v, i) {
+      if (i > 0) strip.append(document.createTextNode(' | '))
+      var a = $('<a href="#"></a>').text(entry.labels[i])
+      if (v === variant) a.addClass('active')
+      a.on('click', function(ev) {
+        ev.preventDefault()
+        ev.stopPropagation()
+        currentVariant = v
+        renderCurrent()
+        return false
+      })
+      strip.append(a)
+    })
   }
-  modal.css('display', 'block')
-  caption.html( $(t).attr('alt') )
-  image.attr('src', $(t).attr('href') )
-  currentImgRow = $(t).parents()[1]
+}
+
+function openModalWithSequence(key, seq, startIndex) {
+  if (!seq.length) return
+  currentSequenceKey = key
+  imageSequence = seq
+  currentIndex = Math.max(0, Math.min(startIndex || 0, seq.length - 1))
+  currentVariant = null
+  $('#pic_modal').css('display', 'block')
+  renderCurrent()
+  preloadAround(currentIndex)
+}
+
+function picClick(t, e) {
+  if (t == null) return
+  if (e) e.preventDefault()
+
+  var collection = $(t).attr('data-collection')
+  if (collection === 'gear') {
+    var name = $(t).attr('data-name')
+    var seq = buildGearSequence()
+    var start = seq.findIndex(function(x) { return x.name === name })
+    openModalWithSequence('gear', seq, start < 0 ? 0 : start)
+  }
+  else if (collection) {
+    var variants = ($(t).attr('data-variants') || '').split(',').map(function(s) { return s.trim() }).filter(Boolean)
+    var labels   = ($(t).attr('data-labels')   || '').split(',').map(function(s) { return s.trim() })
+    var alt = $(t).attr('alt') || ''
+    openModalWithSequence(collection, buildStaticSequenceItem(collection, variants, labels, alt), 0)
+  }
   return false
 }
 
 function modalInit() {
   var modal = $('#pic_modal')
   var image = $('#pic_img')
-  var caption = $('#pic_caption')
 
-  var close_modal = function() { modal.css('display', 'none') }
+  var close_modal = function() {
+    modal.css('display', 'none')
+    currentSequenceKey = null
+    currentIndex = -1
+    currentVariant = null
+    imageSequence = []
+  }
   $('#pic_close').click(close_modal)
   $('#pic_modal').click(close_modal)
   $('#pic_img').click(function() { return false })
+  $('#pic_caption').click(function(e) { e.stopPropagation() })
   $(document).keydown(function(e) {
-    if (modal.css('display') != 'none') {
-      if (e.key === 'Escape') {
-        close_modal()
-      }
-      if (currentImgRow != null) {
-        var sibling
-        if (e.which == 40 || e.which == 39) { // down or right
-          swapPic('right')
-        }
-        else if (e.which == 38 || e.which == 37) { // up or left
-          swapPic('left')
-        }
-      }
+    if (modal.css('display') == 'none') return
+    if (e.key === 'Escape') {
+      close_modal()
+      return
     }
+    if (e.which == 40 || e.which == 39) swapPic('right')
+    else if (e.which == 38 || e.which == 37) swapPic('left')
   })
   .on('touchstart', function(event) {
-    if (modal.css('display') != 'none' && currentImgRow != null) {
+    if (modal.css('display') != 'none') {
       touchstartX = event.pageX
       touchstartY = event.pageY
     }
   })
   .on('touchend', function(event) {
-    if (modal.css('display') != 'none' && currentImgRow != null) {
+    if (modal.css('display') != 'none') {
       touchendX = event.pageX
       touchendY = event.pageY
       var horiz = touchstartX - touchendX
       var vert  = touchstartY - touchendY
 
-      if (Math.abs(horiz) > Math.abs(vert)) { // swipe horizontally
-        if (horiz > 0) {
-          swapPic('right')
-        }
-        else {
-          swapPic('left')
-        }
+      if (Math.abs(horiz) > Math.abs(vert)) {
+        if (horiz > 0) swapPic('right')
+        else           swapPic('left')
       }
     }
   })
@@ -502,29 +629,18 @@ function modalInit() {
 }
 
 function swapPic(direction) {
-  var sibling
-  if (direction == 'right') { // down or right
-    sibling = currentImgRow.nextSibling
-    if (sibling != null && sibling.classList.contains('child')) {
-      sibling = sibling.nextSibling
-    }
-  }
-  else if (direction == 'left') { // up or left
-    sibling = currentImgRow.previousSibling
-    if (sibling != null && sibling.classList.contains('child')) {
-      sibling = sibling.previousSibling
-    }
-  }
-  if (sibling) {
-    event.preventDefault()
-    $('#pic_modal').click
-    picClick(sibling.children[1].children[0])
-  }
+  if (currentIndex < 0) return
+  var next = currentIndex + (direction === 'right' ? 1 : -1)
+  if (next < 0 || next >= imageSequence.length) return
+  currentIndex = next
+  currentVariant = null
+  renderCurrent()
+  preloadAround(currentIndex)
 }
 
 function picInit() {
-  $('.pic_modalize:not([data-linked="1"]').each(function() {
-    $(this).click(function() { return picClick(this, event) })
+  $('.pic_modalize:not([data-linked="1"])').each(function() {
+    $(this).click(function(ev) { return picClick(this, ev) })
     $(this).attr('data-linked', 1)
   })
 }
