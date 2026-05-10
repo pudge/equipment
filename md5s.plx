@@ -64,7 +64,7 @@ sub compare_md5s {
 sub open_md5s {
     open my $fh, '<', 'md5s.js' or die "cannot open md5.js: $!";
     my $md5s_json = join('', <$fh>) =~ s/^const md5s = //r;
-    return $JSON->decode($md5s_json);
+    return eval { $JSON->decode($md5s_json)} || {};
 }
 
 sub save_md5s {

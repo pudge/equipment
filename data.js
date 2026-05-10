@@ -1037,7 +1037,7 @@ var equipment = [
       "notes" : [
          "locking tremolo",
          "not a Spyder",
-         "Standard Stringlock"
+         "Stringlock"
       ],
       "type" : "Guitar Accessory",
       "year" : "1991"
@@ -1051,9 +1051,10 @@ var equipment = [
          "Brochure" : "stringlocks-locknuts.jpg",
          "Installation Guide" : "X-5513-5514W.gif"
       },
-      "model" : "Standard Stringlock",
+      "model" : "Stringlock",
       "notes" : [
          "string lock",
+         "standard",
          "black krome",
          "Killer 2710"
       ],
@@ -1974,7 +1975,7 @@ var equipment = [
       "model" : "Loop Station RC-2",
       "notes" : [
          "looper",
-         "Two-Button Footswitch"
+         "Two-Button Switch"
       ],
       "type" : "Pedal",
       "year" : "2006"
@@ -2207,7 +2208,7 @@ var equipment = [
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Sweet-Foot-Footswitch-for-Boss-Loopers--HANDEMADE-IN-USA-_p_393.html",
       "make" : "Sweet Foot Pedals",
-      "model" : "Two-Button Footswitch",
+      "model" : "Two-Button Switch",
       "notes" : [
          "Moonshine",
          "black",
@@ -2962,7 +2963,7 @@ var equipment = [
          "S1",
          "C1K",
          "M25-DBR",
-         "Mini Acoustic Guitar Gig Bag"
+         "Mini Acoustic Gig Bag"
       ],
       "strings" : "XTAPB1253",
       "type" : "Acoustic Guitar",
@@ -3365,7 +3366,7 @@ var equipment = [
       "category" : "Instruments",
       "detail" : {
          "Body Finish" : "Gloss",
-         "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Standard Stringlock †",
+         "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Stringlock †",
          "Color" : "Black",
          "Control Knobs" : "Guyker CKB005 Revolver Cylinders †",
          "Controls" : "Fender 250 K Potentiometers (1 Volume, 1 Push/Pull Neck Tone, 1 Middle/Bridge Tone); .022 µF capacitor †",
@@ -3410,7 +3411,7 @@ var equipment = [
          "S-Locks",
          "GC-ELECTRIC-A",
          "Killer 2710",
-         "Standard Stringlock",
+         "Stringlock",
          "Fat 50’s",
          "CKB005"
       ],
@@ -3964,7 +3965,7 @@ var equipment = [
       "instrument" : "acoustic guitar",
       "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
       "make" : "Gator",
-      "model" : "Mini Acoustic Guitar Gig Bag",
+      "model" : "Mini Acoustic Gig Bag",
       "notes" : [
          "acoustic guitar"
       ],

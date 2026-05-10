@@ -11,17 +11,18 @@ const COL = {
   YEAR     :  6,
   NOTES    :  7,
   CAT      :  8,
-  FEAT     :  9,
-  NOTER    : 10,
-  NMINE    : 11,
-  HIDE     : 12,
-  MAIN     : 13,
+  NOTER    :  9,
+  NMINE    : 10,
+  HIDE     : 11,
+  MAIN     : 12,
+  CRACK    : 13,
   CPEDAL   : 14,
-  CRACK    : 15,
+  KPEDAL   : 15,
   MANUALS  : 16,
   DETAILS  : 17,
   CAT_SORT : 18,
   INST     : 19,
+//   FEAT     : 20,
 }
 
 const CAT = {
@@ -34,7 +35,7 @@ const CAT = {
 
 const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.FINDVAL, COL.TYPE, COL.MAKE, COL.YEAR]
 const columnOrder = [
-  [ COL.FEAT,     'desc' ],
+//  [ COL.FEAT,     'desc' ],
   [ COL.CAT_SORT, 'asc'  ],
   [ COL.TYPE,     'asc'  ],
   [ COL.INST,     'asc'  ],
@@ -265,7 +266,7 @@ function equipmentInit() {
     x['current_rack'] = x['current_rack'] ? 'current_rack' : ''
     x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
     x['kids_pedal'] = x['kids_pedal'] ? 'kids_pedal' : ''
-    x['featured'] = x['featured'] ? 'featured' : ''
+//     x['featured'] = x['featured'] ? 'featured' : ''
     x['main_rig'] = (x['featured'] || x['main_rig']) ? 'main_rig' : ''
     x['instrument'] = x['instrument'] || ''
     x['category_sort'] = CAT[x['category']] || 99
@@ -321,9 +322,11 @@ function equipmentInit() {
     x['findvalue'] = linkItFindValue(x)
     x['notes'] = linkItNotes(x)
     x['model'] = linkItFindValue(x) + ' ' + linkHtml(x['model'])
+/* 
     if (x['featured']) {
       x['x'] = ' <i class="fa-solid fa-star featured"></i>'
     }
+ */
     x['make'] = linkHtml(x['make'])
   })
 
@@ -345,16 +348,15 @@ function equipmentInit() {
       }
     },
     columns: [
-      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', className: 'dt-center', defaultContent: '', orderable: false },
-      { responsivePriority: 25, data: 'img', title: '<i class="fas fa-image fa-fw"></i>', className: 'dt-center', orderable: false },
-      { responsivePriority: 10, data: 'model', title: 'Model' },
+      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', className: 'dt-center all', defaultContent: '', orderable: false },
+      { responsivePriority: 25, data: 'img', title: '<i class="fas fa-image fa-fw"></i>', className: 'dt-center all', orderable: false },
+      { responsivePriority: 10, data: 'model', title: 'Model', className: 'all', },
       { responsivePriority: 95, data: 'findvalue', title: '$', orderable: false, visible: false },
       { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
       { responsivePriority: 40, data: 'make', title: 'Make' },
       { responsivePriority: 80, data: 'year', title: 'Year', defaultContent: '-' },
       { responsivePriority: 90, data: 'notes', title: 'Notes', className: 'none', defaultContent: '', orderable: false },
       { responsivePriority: 98, data: 'category', visible: false },
-      { responsivePriority: 99, data: 'featured', visible: false },
       { responsivePriority: 99, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
       { responsivePriority: 99, data: 'not_mine', visible: false },
       { responsivePriority: 99, data: 'hide', visible: false },
@@ -366,8 +368,10 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'category_sort', visible: false, orderable: true },
       { responsivePriority: 99, data: 'instrument', visible: false, orderable: true },
+//       { responsivePriority: 99, data: 'featured', visible: false },
     ],
-    scrollX: true,
+    // scrollX: true,
+    autoWidth: false,
     order: columnOrder,
     data: equipment,
 
@@ -575,15 +579,25 @@ function modalInit() {
     else if (e.which == 38 || e.which == 37) swapPic('left')
   })
   .on('touchstart', function(event) {
-    if (modal.css('display') != 'none') {
-      touchstartX = event.pageX
-      touchstartY = event.pageY
+    var t = event.originalEvent && event.originalEvent.touches
+    if (modal.css('display') != 'none' && t && t.length === 1) {
+      touchstartX = t[0].pageX
+      touchstartY = t[0].pageY
+    } else {
+      touchstartX = null
     }
   })
+  .on('touchmove', function(event) {
+    var t = event.originalEvent && event.originalEvent.touches
+    if (t && t.length > 1) touchstartX = null
+  })
   .on('touchend', function(event) {
+    if (touchstartX == null) return
     if (modal.css('display') != 'none') {
-      touchendX = event.pageX
-      touchendY = event.pageY
+      var t = event.originalEvent && event.originalEvent.changedTouches
+      if (!t || t.length !== 1) return
+      touchendX = t[0].pageX
+      touchendY = t[0].pageY
       var horiz = touchstartX - touchendX
       var vert  = touchstartY - touchendY
 

@@ -133,6 +133,7 @@ td.dt-center {
 
 #pic_variants {
     margin-left: 1em;
+    white-space: nowrap;
 }
 #pic_variants a {
     color: #8AFF80;
