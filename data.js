@@ -3,6 +3,24 @@ var equipment_data = {}
 var equipment = [
    {
       "category" : "Accessories",
+      "current_pedal" : true,
+      "detail" : {
+         "Dimensions" : "22mm x 11.5mm x 5.7mm (contact house)"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://ebssweden.com/cables/hp-series/",
+      "make" : "EBS",
+      "model" : "HP Cables",
+      "next" : true,
+      "notes" : [
+         "pedalboard"
+      ],
+      "type" : "Cables",
+      "year" : "2026"
+   },
+   {
+      "category" : "Accessories",
       "image" : true,
       "instrument" : "banjo, mandolin",
       "link" : "https://shubb.com/product/standard-capo-c5/",
@@ -813,24 +831,59 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
+         "Amplifier" : "100 W",
+         "Analog Inputs" : "1/4\" TS, 1/8\" TRS (aux), 1/4\" TRS (return)",
+         "Analog Outputs" : "XLR balanced, 1/8\" TRS (phones), 1/4\" TRS (send)",
+         "Dimensions" : "18.5\" x 16.5\" x 14\"",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "3.3 kΩ",
+         "Return Impedance" : "22 kΩ",
+         "Send Impedance" : "1 kΩ",
+         "Serial" : "",
+         "Shape FIlter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
+         "Speaker" : "12\" 8 Ω ceramic",
+         "Tone Controls" : "±15 dB @ 10 kHz (treble); ±12 dB @ 1.2 kHz (high-mid); ±12 dB @ 280 Hz (low-mid); ±15 dB @ 80 Hz (bass)",
+         "Weight" : "22 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "instrument" : "bass guitar",
+      "link" : "https://www.fender.com/products/rumble-100",
+      "main_rig" : true,
+      "make" : "Fender",
+      "manuals" : {
+         "Owner’s Manual" : "OM_Rumble_40_100_200_500_US_5.pdf"
+      },
+      "model" : "Rumble 100",
+      "next" : true,
+      "notes" : [
+         "bass guitar"
+      ],
+      "type" : "Amplifier",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Amplifier" : "40 W",
-         "Analog Inputs" : "1/4\", 1/8\"",
-         "Analog Outputs" : "XLR balanced, 1/8\"",
+         "Analog Inputs" : "1/4\" TS, 1/8\" TRS (aux)",
+         "Analog Outputs" : "XLR balanced, 1/8\" TRS (phones)",
          "Dimensions" : "16.5\" x 16.5\" x 12\"",
          "Input Impedance" : "1 MΩ",
          "Output Impedance" : "3.3 kΩ",
          "Serial" : "",
-         "Speaker" : "10\"",
+         "Shape FIlter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
+         "Speaker" : "10\" 8 Ω ceramic",
+         "Tone Controls" : "±15 dB @ 10 kHz (treble); ±12 dB @ 1.2 kHz (high-mid); ±12 dB @ 280 Hz (low-mid); ±15 dB @ 80 Hz (bass)",
          "Weight" : "18 lbs"
       },
       "hide" : true,
       "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://www.fender.com/products/rumble-40",
-      "main_rig" : true,
       "make" : "Fender",
       "manuals" : {
-         "Manual" : "237030_bamp_manual_all_revA.pdf"
+         "Owner’s Manual" : "OM_Rumble_40_100_200_500_US_5.pdf"
       },
       "model" : "Rumble 40",
       "next" : true,
@@ -2342,6 +2395,7 @@ var equipment = [
       "make" : "Temple Audio",
       "manuals" : {
          "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
+         "IEC MOD Setup Guide" : "IECMOD_Setup_Guide.pdf",
          "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
       },
       "model" : "Templeboard TRIO 28",
@@ -2728,6 +2782,543 @@ var equipment = [
       ],
       "type" : "Tuner",
       "year" : "2014"
+   },
+   {
+      "category" : "Other Instruments",
+      "detail" : {
+         "Comb (color)" : "Brown",
+         "Comb (finish)" : "Triple Lacquered",
+         "Comb (material)" : "Pearwood",
+         "Cover Plates" : "Stainless Steel",
+         "Keys" : "G, Ab, A, Bb, B, C, Db, D, Eb, E, F",
+         "Length" : "3.9\" (10cm)",
+         "Mouthpiece (surface)" : "Pearwood",
+         "Number of Holes" : "10",
+         "Reed Count" : "20",
+         "Reed Material" : "Brass",
+         "Reed Plates (material)" : "Brass",
+         "Reed Plates (surface)" : "Brass",
+         "Reed Plates (thickness)" : "0.9 mm",
+         "Tonal Range" : "3 octaves",
+         "Tuning" : "Richter",
+         "Type" : "Diatonic"
+      },
+      "featured" : true,
+      "image" : true,
+      "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/marine-band/marine-band-deluxe",
+      "main_rig" : true,
+      "make" : "Hohner",
+      "manuals" : {
+         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
+      },
+      "model" : "Marine Band Deluxe",
+      "notes" : [
+         "G",
+         "FlexRack",
+         "C12"
+      ],
+      "type" : "Harmonica",
+      "year" : "2020"
+   },
+   {
+      "category" : "Other Instruments",
+      "detail" : {
+         "Comb (color)" : "Black",
+         "Comb (finish)" : "ABS",
+         "Comb (material)" : "ABS",
+         "Cover Plates" : "Stainless Steel",
+         "Keys" : "G, Ab, A, Bb, B, C, Db, D, Eb, E, F, F#, HG",
+         "Length" : "4.0\" (10.2 cm)",
+         "Mouthpiece (surface)" : "ABS",
+         "Number of Holes" : "10",
+         "Reed Count" : "20",
+         "Reed Material" : "Brass",
+         "Reed Plates (material)" : "Brass",
+         "Reed Plates (surface)" : "Brass",
+         "Reed Plates (thickness)" : "0.9 mm",
+         "Tonal Range" : "3 octaves",
+         "Tuning" : "Richter",
+         "Type" : "Diatonic"
+      },
+      "featured" : true,
+      "image" : true,
+      "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/progressive/special-20",
+      "main_rig" : true,
+      "make" : "Hohner",
+      "manuals" : {
+         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
+      },
+      "model" : "Special 20",
+      "notes" : [
+         "A",
+         "C",
+         "D",
+         "E",
+         "F",
+         "G",
+         "FlexRack",
+         "C12"
+      ],
+      "type" : "Harmonica",
+      "year" : "various"
+   },
+   {
+      "category" : "Other Instruments",
+      "detail" : {
+         "Amplifier" : "20 W x 2",
+         "Analog Inputs" : "1/4\" x 2",
+         "Analog Outputs" : "1/4” x 2, RCA line-level x2",
+         "Dimensions" : "1370 mm x 518 mm x 850 mm (53 15/16\" x 20 3/8\" x 33 7/16\")",
+         "Keys" : "88 (A1 - C7)",
+         "MIDI" : "In/Out/Thru",
+         "Phones" : "1/4\" stereo x 2",
+         "Polyphony" : "64 notes",
+         "Serial" : "0606872",
+         "Sound Source" : "AWM Stereo Sampling",
+         "Speaker" : "16 cm x 2",
+         "Weight" : "51 kg (112 lbs 7 oz)"
+      },
+      "image" : true,
+      "link" : "https://usa.yamaha.com/products/musical_instruments/pianos/arius/",
+      "main_rig" : true,
+      "make" : "Yamaha",
+      "manuals" : {
+         "Manual" : "YDP223.pdf"
+      },
+      "model" : "YDP-223",
+      "type" : "Keyboard",
+      "year" : "2006"
+   },
+   {
+      "category" : "Other Instruments",
+      "detail" : {
+         "Amplifier" : "2.5 W x 2",
+         "Dimensions" : "945 mm x 370 mm x 128 mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
+         "Keys" : "66 (C1 - C6)",
+         "MIDI" : "In/Out",
+         "Phones" : "1/4\" stereo",
+         "Polyphony" : "32 notes",
+         "Power Consumption" : "10 W",
+         "Serial" : "UBMJ03785",
+         "Sound Source" : "XGlite, AWM Stereo Sampling (Grand Piano)",
+         "Speaker" : "12 cm x 2",
+         "Weight" : "4.9 kg (10 lbs 13 oz)"
+      },
+      "image" : true,
+      "link" : "https://usa.yamaha.com/products/musical_instruments/keyboards/portable_keyboards/",
+      "make" : "Yamaha",
+      "manuals" : {
+         "Manual" : "YPT300_1.pdf"
+      },
+      "model" : "YPT-300",
+      "type" : "Keyboard",
+      "year" : "2007"
+   },
+   {
+      "category" : "Other Instruments",
+      "detail" : {
+         "Battery" : "AAA x 3",
+         "Input" : "1/8\" stereo",
+         "Keys" : "20 (switch position 1: A1-E3, 2: A2-E4, 3: A3-E5)",
+         "Phones" : "1/8\" stereo"
+      },
+      "image" : true,
+      "link" : "https://stylophone.com/product/stylophone-s-1/",
+      "make" : "Dubreq",
+      "manuals" : {
+         "Manual" : "s1-booklet.pdf"
+      },
+      "model" : "Stylophone S-1",
+      "type" : "Synthesizer",
+      "year" : "2011"
+   },
+   {
+      "category" : "Percussion Instruments",
+      "detail" : {
+         "Size" : "6\", 7.25\""
+      },
+      "image" : true,
+      "make" : "Adam",
+      "model" : "Bongos",
+      "type" : "Bongos",
+      "year" : "2013",
+      "year_uncertain" : true
+   },
+   {
+      "category" : "Percussion Instruments",
+      "detail" : {
+         "Material" : "Baltic Birch, Almond Birch",
+         "String" : "Dual internal fixed snare wires"
+      },
+      "image" : true,
+      "link" : "https://meinlpercussion.com/en/products/jc50ab-b-m5746.html",
+      "make" : "Meinl",
+      "model" : "JC50AB-B",
+      "notes" : [
+         "Snare Cajon 50"
+      ],
+      "type" : "Cajon",
+      "year" : "2022"
+   },
+   {
+      "category" : "Percussion Instruments",
+      "image" : true,
+      "link" : "https://meinlcymbals.com/en/products/hcs14c-m3486.html",
+      "make" : "Meinl",
+      "model" : "HCS 14\" Crash",
+      "type" : "Cymbal",
+      "year" : "2013",
+      "year_uncertain" : true
+   },
+   {
+      "category" : "Percussion Instruments",
+      "image" : true,
+      "link" : "https://zildjian.com/products/planet-z-hihats?variant=45264675406116",
+      "make" : "Zildjian",
+      "model" : "Planet Z 13\" Hi-Hat",
+      "type" : "Cymbal",
+      "year" : "2013",
+      "year_uncertain" : true
+   },
+   {
+      "category" : "Percussion Instruments",
+      "image" : true,
+      "link" : "https://zildjian.com/products/18-planet-z-crash-ride",
+      "make" : "Zildjian",
+      "model" : "Planet Z 18\" Crash Ride",
+      "type" : "Cymbal",
+      "year" : "2013",
+      "year_uncertain" : true
+   },
+   {
+      "category" : "Percussion Instruments",
+      "detail" : {
+         "Amplifier" : "5 W x 2",
+         "Dimensions" : "558 mm x 355 mm x 174 mm (22\" x 14\" x 6 7/8\")",
+         "MIDI" : "In/Out",
+         "Output" : "1/4\"",
+         "Power" : "12 V",
+         "Serial" : "UZMK02847",
+         "Speaker" : "8 cm x 2",
+         "Weight" : "3.9 kg (8Ibs 10oz)"
+      },
+      "image" : true,
+      "link" : "https://usa.yamaha.com/products/musical_instruments/drums/el_drums/digital_percussion/",
+      "make" : "Yamaha",
+      "manuals" : {
+         "Manual" : "dd55.pdf"
+      },
+      "model" : "DD-55C",
+      "type" : "Drums",
+      "year" : "2007"
+   },
+   {
+      "category" : "Percussion Instruments",
+      "detail" : {
+         "Base Drum Head" : "P3 type",
+         "Bass Drum" : "20\" x 16\"",
+         "Color" : "Burgundy Glitter",
+         "Floor Tom" : "14\" x 13\"",
+         "Model Number" : "RDP0F5",
+         "Snare" : "14\" x 5.5\"",
+         "Tom" : "10\" x 7\", 12\" x 8\""
+      },
+      "image" : true,
+      "link" : "https://usa.yamaha.com/products/musical_instruments/drums/ac_drums/drum_sets/rydeen/",
+      "main_rig" : true,
+      "make" : "Yamaha",
+      "model" : "Rydeen",
+      "type" : "Drums",
+      "year" : "2013",
+      "year_uncertain" : true
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "link" : "https://www.rocnsoc.com/products/",
+      "make" : "Roc-N-Soc",
+      "model" : "Nitro",
+      "type" : "Furniture",
+      "year" : "2000s"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "make" : "Martin",
+      "model" : "445",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2012"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "acoustic guitar",
+      "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
+      "make" : "Gator",
+      "model" : "Mini Acoustic Gig Bag",
+      "notes" : [
+         "acoustic guitar"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2024"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "bass guitar",
+      "link" : "https://www.schecterguitars.com/sgr-6b-c-shape-bass-hardcase",
+      "make" : "Schecter",
+      "model" : "SGR-6B",
+      "notes" : [
+         "bass guitar"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2021"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "electric guitar",
+      "link" : "https://gatorco.com/product/electric-guitar-case-gc-electric-a/",
+      "make" : "Gator",
+      "model" : "GC-ELECTRIC-A",
+      "notes" : [
+         "electric guitar"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2005"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "electric guitar",
+      "link" : "https://roadrunnercases.com/rr3eg-electric-guitar-gig-bag/",
+      "make" : "Road Runner",
+      "model" : "RR3EG",
+      "notes" : [
+         "electric guitar"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2021"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "harmonica",
+      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/harmonica-case",
+      "make" : "Hohner",
+      "model" : "C12",
+      "notes" : [
+         "harmonica"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2000"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "mandolin",
+      "link" : "https://www.sagamusic.com/shop/cases-and-bags/superior-c-3770-trailpak-ii-a-or-f-model-mandolin-gig-bag/",
+      "make" : "Saga",
+      "model" : "C-3770 Trailpak II",
+      "notes" : [
+         "mandolin"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2018"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "ukulele",
+      "link" : "https://gatorco.com/product/soprano-ukulele-gig-bag-gbe-uke-sop/",
+      "make" : "Gator",
+      "model" : "GBE-UKE-SOP",
+      "notes" : [
+         "ukulele"
+      ],
+      "type" : "Instrument Case",
+      "year" : "2015"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://www.ultimatesupport.com/products/gs-102",
+      "make" : "Ultimate Support",
+      "model" : "GS-102",
+      "not_mine" : true,
+      "notes" : [
+         "guitar"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2023"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://www.stagelinestands.com/product/gs550a-acoustic-guitar-stand/",
+      "make" : "Stageline",
+      "model" : "GS550A",
+      "notes" : [
+         "guitar"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2013",
+      "year_uncertain" : true
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar",
+      "link" : "https://shopwmusicdistributionusa.com/collections/rockstand/products/rockstand-multiple-guitar-rack-flat-packs?variant=40798720196760",
+      "make" : "Warwick",
+      "model" : "RS 20861",
+      "notes" : [
+         "guitar"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2007"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar, banjo, mandolin",
+      "link" : "https://www.stringswing.com/product/cc01k-hardwood-home-studio-guitar-keeper-wall-mounted-guitar-hanger",
+      "make" : "String Swing",
+      "model" : "CC01K",
+      "notes" : [
+         "guitar",
+         "banjo",
+         "mandolin"
+      ],
+      "type" : "Instrument Stand"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar, banjo, mandolin",
+      "link" : "https://en.guittochina.com/Details/20.html",
+      "make" : "Guitto",
+      "model" : "GGS-01",
+      "notes" : [
+         "guitar",
+         "banjo",
+         "mandolin"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2024"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "harmonica",
+      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/flexrack",
+      "make" : "Hohner",
+      "model" : "FlexRack",
+      "notes" : [
+         "harmonica"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2016"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "mandolin",
+      "link" : "https://staggmusic.com/en/products/view/SUVMA100BK-foldable-a-stand-for-ukuleles-mandolins-and-violins/",
+      "make" : "Stagg",
+      "model" : "SUVM-A100BK",
+      "notes" : [
+         "mandolin"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2019"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "link" : "https://www.tama.com/usa/products/hardware/snare_stands/",
+      "make" : "Tama",
+      "model" : "HS10 Swingstar",
+      "type" : "Instrument Stand",
+      "year" : "2007"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "link" : "https://gatorco.com/product/telescoping-boom-podcast-bass-drum-and-amp-mic-stand-gfw-mic-0822/",
+      "make" : "Gator",
+      "model" : "GFW-MIC-0822",
+      "type" : "Microphone Stand",
+      "year" : "2021"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "link" : "https://herculesstands.us/product/ms531b/",
+      "make" : "Hercules",
+      "model" : "MS531B",
+      "type" : "Microphone Stand",
+      "year" : "2017"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "link" : "https://www.ocwhite.com/broadcast-arms/proboom.html",
+      "make" : "O.C. White",
+      "model" : "ProBoom Deluxe",
+      "type" : "Microphone Stand",
+      "year" : "2006"
+   },
+   {
+      "category" : "Stands etc.",
+      "current_rack" : true,
+      "detail" : {
+         "Color" : "Weathered brown",
+         "Depth" : "17\"",
+         "Finish" : "Stained",
+         "Height" : "27.6\" + 3.5\" casters",
+         "Material" : "15 mm plywood",
+         "Max Loading Capacity" : "140 lbs",
+         "Rack Space" : "12U",
+         "Rack Width" : "19\"",
+         "Weight" : "42.5 lbs",
+         "Width" : "20.4\""
+      },
+      "image" : true,
+      "link" : "https://www.soundtown.com/products/sdrk-st12tb",
+      "make" : "Sound Town",
+      "model" : "SDRK-ST12TB",
+      "notes" : [
+         "12U rack"
+      ],
+      "type" : "Rack Hardware",
+      "year" : "2025"
+   },
+   {
+      "category" : "Stands etc.",
+      "detail" : {
+         "Color" : "Black",
+         "Material" : "Rotationally molded plastic",
+         "Rack Depth" : "17\"",
+         "Rack Space" : "8U",
+         "Rack Width" : "19\""
+      },
+      "image" : true,
+      "link" : "https://www.skbcases.com/products/8-u-r-series-rack?_pos=2&_fid=f67bafb49&_ss=c",
+      "make" : "SKB",
+      "model" : "SKB-R8",
+      "notes" : [
+         "8U rack"
+      ],
+      "type" : "Rack Hardware",
+      "year" : "2005"
    },
    {
       "category" : "Stringed Instruments",
@@ -3523,137 +4114,6 @@ var equipment = [
       "year" : "2002"
    },
    {
-      "category" : "Other Instruments",
-      "detail" : {
-         "Comb (color)" : "Brown",
-         "Comb (finish)" : "Triple Lacquered",
-         "Comb (material)" : "Pearwood",
-         "Cover Plates" : "Stainless Steel",
-         "Keys" : "G, Ab, A, Bb, B, C, Db, D, Eb, E, F",
-         "Length" : "3.9\" (10cm)",
-         "Mouthpiece (surface)" : "Pearwood",
-         "Number of Holes" : "10",
-         "Reed Count" : "20",
-         "Reed Material" : "Brass",
-         "Reed Plates (material)" : "Brass",
-         "Reed Plates (surface)" : "Brass",
-         "Reed Plates (thickness)" : "0.9 mm",
-         "Tonal Range" : "3 octaves",
-         "Tuning" : "Richter",
-         "Type" : "Diatonic"
-      },
-      "featured" : true,
-      "image" : true,
-      "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/marine-band/marine-band-deluxe",
-      "main_rig" : true,
-      "make" : "Hohner",
-      "manuals" : {
-         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
-      },
-      "model" : "Marine Band Deluxe",
-      "notes" : [
-         "G",
-         "FlexRack",
-         "C12"
-      ],
-      "type" : "Harmonica",
-      "year" : "2020"
-   },
-   {
-      "category" : "Other Instruments",
-      "detail" : {
-         "Comb (color)" : "Black",
-         "Comb (finish)" : "ABS",
-         "Comb (material)" : "ABS",
-         "Cover Plates" : "Stainless Steel",
-         "Keys" : "G, Ab, A, Bb, B, C, Db, D, Eb, E, F, F#, HG",
-         "Length" : "4.0\" (10.2 cm)",
-         "Mouthpiece (surface)" : "ABS",
-         "Number of Holes" : "10",
-         "Reed Count" : "20",
-         "Reed Material" : "Brass",
-         "Reed Plates (material)" : "Brass",
-         "Reed Plates (surface)" : "Brass",
-         "Reed Plates (thickness)" : "0.9 mm",
-         "Tonal Range" : "3 octaves",
-         "Tuning" : "Richter",
-         "Type" : "Diatonic"
-      },
-      "featured" : true,
-      "image" : true,
-      "link" : "https://www.hohner.de/en/instruments/harmonicas/diatonic/progressive/special-20",
-      "main_rig" : true,
-      "make" : "Hohner",
-      "manuals" : {
-         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
-      },
-      "model" : "Special 20",
-      "notes" : [
-         "A",
-         "C",
-         "D",
-         "E",
-         "F",
-         "G",
-         "FlexRack",
-         "C12"
-      ],
-      "type" : "Harmonica",
-      "year" : "various"
-   },
-   {
-      "category" : "Other Instruments",
-      "detail" : {
-         "Amplifier" : "20 W x 2",
-         "Analog Inputs" : "1/4\" x 2",
-         "Analog Outputs" : "1/4” x 2, RCA line-level x2",
-         "Dimensions" : "1370 mm x 518 mm x 850 mm (53 15/16\" x 20 3/8\" x 33 7/16\")",
-         "Keys" : "88 (A1 - C7)",
-         "MIDI" : "In/Out/Thru",
-         "Phones" : "1/4\" stereo x 2",
-         "Polyphony" : "64 notes",
-         "Serial" : "0606872",
-         "Sound Source" : "AWM Stereo Sampling",
-         "Speaker" : "16 cm x 2",
-         "Weight" : "51 kg (112 lbs 7 oz)"
-      },
-      "image" : true,
-      "link" : "https://usa.yamaha.com/products/musical_instruments/pianos/arius/",
-      "main_rig" : true,
-      "make" : "Yamaha",
-      "manuals" : {
-         "Manual" : "YDP223.pdf"
-      },
-      "model" : "YDP-223",
-      "type" : "Keyboard",
-      "year" : "2006"
-   },
-   {
-      "category" : "Other Instruments",
-      "detail" : {
-         "Amplifier" : "2.5 W x 2",
-         "Dimensions" : "945 mm x 370 mm x 128 mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
-         "Keys" : "66 (C1 - C6)",
-         "MIDI" : "In/Out",
-         "Phones" : "1/4\" stereo",
-         "Polyphony" : "32 notes",
-         "Power Consumption" : "10 W",
-         "Serial" : "UBMJ03785",
-         "Sound Source" : "XGlite, AWM Stereo Sampling (Grand Piano)",
-         "Speaker" : "12 cm x 2",
-         "Weight" : "4.9 kg (10 lbs 13 oz)"
-      },
-      "image" : true,
-      "link" : "https://usa.yamaha.com/products/musical_instruments/keyboards/portable_keyboards/",
-      "make" : "Yamaha",
-      "manuals" : {
-         "Manual" : "YPT300_1.pdf"
-      },
-      "model" : "YPT-300",
-      "type" : "Keyboard",
-      "year" : "2007"
-   },
-   {
       "category" : "Stringed Instruments",
       "detail" : {
          "Armrest Dimensions" : "3 5/8\" x 11/16\" x 3/8\" (9.2 cm x 1.8 cm x 1 cm)",
@@ -3721,24 +4181,6 @@ var equipment = [
       "strings" : "EJ74",
       "type" : "Mandolin",
       "year" : "1920s?"
-   },
-   {
-      "category" : "Other Instruments",
-      "detail" : {
-         "Battery" : "AAA x 3",
-         "Input" : "1/8\" stereo",
-         "Keys" : "20 (switch position 1: A1-E3, 2: A2-E4, 3: A3-E5)",
-         "Phones" : "1/8\" stereo"
-      },
-      "image" : true,
-      "link" : "https://stylophone.com/product/stylophone-s-1/",
-      "make" : "Dubreq",
-      "manuals" : {
-         "Manual" : "s1-booklet.pdf"
-      },
-      "model" : "Stylophone S-1",
-      "type" : "Synthesizer",
-      "year" : "2011"
    },
    {
       "category" : "Stringed Instruments",
@@ -3868,394 +4310,6 @@ var equipment = [
       "strings" : "EJ88S",
       "type" : "Ukulele",
       "year" : "2015"
-   },
-   {
-      "category" : "Percussion Instruments",
-      "detail" : {
-         "Size" : "6\", 7.25\""
-      },
-      "image" : true,
-      "make" : "Adam",
-      "model" : "Bongos",
-      "type" : "Bongos",
-      "year" : "2013",
-      "year_uncertain" : true
-   },
-   {
-      "category" : "Percussion Instruments",
-      "detail" : {
-         "Material" : "Baltic Birch, Almond Birch",
-         "String" : "Dual internal fixed snare wires"
-      },
-      "image" : true,
-      "link" : "https://meinlpercussion.com/en/products/jc50ab-b-m5746.html",
-      "make" : "Meinl",
-      "model" : "JC50AB-B",
-      "notes" : [
-         "Snare Cajon 50"
-      ],
-      "type" : "Cajon",
-      "year" : "2022"
-   },
-   {
-      "category" : "Percussion Instruments",
-      "image" : true,
-      "link" : "https://meinlcymbals.com/en/products/hcs14c-m3486.html",
-      "make" : "Meinl",
-      "model" : "HCS 14\" Crash",
-      "type" : "Cymbal",
-      "year" : "2013",
-      "year_uncertain" : true
-   },
-   {
-      "category" : "Percussion Instruments",
-      "image" : true,
-      "link" : "https://zildjian.com/products/planet-z-hihats?variant=45264675406116",
-      "make" : "Zildjian",
-      "model" : "Planet Z 13\" Hi-Hat",
-      "type" : "Cymbal",
-      "year" : "2013",
-      "year_uncertain" : true
-   },
-   {
-      "category" : "Percussion Instruments",
-      "image" : true,
-      "link" : "https://zildjian.com/products/18-planet-z-crash-ride",
-      "make" : "Zildjian",
-      "model" : "Planet Z 18\" Crash Ride",
-      "type" : "Cymbal",
-      "year" : "2013",
-      "year_uncertain" : true
-   },
-   {
-      "category" : "Percussion Instruments",
-      "detail" : {
-         "Amplifier" : "5 W x 2",
-         "Dimensions" : "558 mm x 355 mm x 174 mm (22\" x 14\" x 6 7/8\")",
-         "MIDI" : "In/Out",
-         "Output" : "1/4\"",
-         "Power" : "12 V",
-         "Serial" : "UZMK02847",
-         "Speaker" : "8 cm x 2",
-         "Weight" : "3.9 kg (8Ibs 10oz)"
-      },
-      "image" : true,
-      "link" : "https://usa.yamaha.com/products/musical_instruments/drums/el_drums/digital_percussion/",
-      "make" : "Yamaha",
-      "manuals" : {
-         "Manual" : "dd55.pdf"
-      },
-      "model" : "DD-55C",
-      "type" : "Drums",
-      "year" : "2007"
-   },
-   {
-      "category" : "Percussion Instruments",
-      "detail" : {
-         "Base Drum Head" : "P3 type",
-         "Bass Drum" : "20\" x 16\"",
-         "Color" : "Burgundy Glitter",
-         "Floor Tom" : "14\" x 13\"",
-         "Model Number" : "RDP0F5",
-         "Snare" : "14\" x 5.5\"",
-         "Tom" : "10\" x 7\", 12\" x 8\""
-      },
-      "image" : true,
-      "link" : "https://usa.yamaha.com/products/musical_instruments/drums/ac_drums/drum_sets/rydeen/",
-      "main_rig" : true,
-      "make" : "Yamaha",
-      "model" : "Rydeen",
-      "type" : "Drums",
-      "year" : "2013",
-      "year_uncertain" : true
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "link" : "https://www.rocnsoc.com/products/",
-      "make" : "Roc-N-Soc",
-      "model" : "Nitro",
-      "type" : "Furniture",
-      "year" : "2000s"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "acoustic guitar",
-      "make" : "Martin",
-      "model" : "445",
-      "notes" : [
-         "acoustic guitar"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2012"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "acoustic guitar",
-      "link" : "https://gatorco.com/product/mini-acoustic-guitar-gig-bag-gbe-mini-acou/",
-      "make" : "Gator",
-      "model" : "Mini Acoustic Gig Bag",
-      "notes" : [
-         "acoustic guitar"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2024"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "bass guitar",
-      "link" : "https://www.schecterguitars.com/sgr-6b-c-shape-bass-hardcase",
-      "make" : "Schecter",
-      "model" : "SGR-6B",
-      "notes" : [
-         "bass guitar"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2021"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "electric guitar",
-      "link" : "https://gatorco.com/product/electric-guitar-case-gc-electric-a/",
-      "make" : "Gator",
-      "model" : "GC-ELECTRIC-A",
-      "notes" : [
-         "electric guitar"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2005"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "electric guitar",
-      "link" : "https://roadrunnercases.com/rr3eg-electric-guitar-gig-bag/",
-      "make" : "Road Runner",
-      "model" : "RR3EG",
-      "notes" : [
-         "electric guitar"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2021"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "harmonica",
-      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/harmonica-case",
-      "make" : "Hohner",
-      "model" : "C12",
-      "notes" : [
-         "harmonica"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2000"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "mandolin",
-      "link" : "https://www.sagamusic.com/shop/cases-and-bags/superior-c-3770-trailpak-ii-a-or-f-model-mandolin-gig-bag/",
-      "make" : "Saga",
-      "model" : "C-3770 Trailpak II",
-      "notes" : [
-         "mandolin"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2018"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "ukulele",
-      "link" : "https://gatorco.com/product/soprano-ukulele-gig-bag-gbe-uke-sop/",
-      "make" : "Gator",
-      "model" : "GBE-UKE-SOP",
-      "notes" : [
-         "ukulele"
-      ],
-      "type" : "Instrument Case",
-      "year" : "2015"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://www.ultimatesupport.com/products/gs-102",
-      "make" : "Ultimate Support",
-      "model" : "GS-102",
-      "not_mine" : true,
-      "notes" : [
-         "guitar"
-      ],
-      "type" : "Instrument Stand",
-      "year" : "2023"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://www.stagelinestands.com/product/gs550a-acoustic-guitar-stand/",
-      "make" : "Stageline",
-      "model" : "GS550A",
-      "notes" : [
-         "guitar"
-      ],
-      "type" : "Instrument Stand",
-      "year" : "2013",
-      "year_uncertain" : true
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "guitar",
-      "link" : "https://shopwmusicdistributionusa.com/collections/rockstand/products/rockstand-multiple-guitar-rack-flat-packs?variant=40798720196760",
-      "make" : "Warwick",
-      "model" : "RS 20861",
-      "notes" : [
-         "guitar"
-      ],
-      "type" : "Instrument Stand",
-      "year" : "2007"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "guitar, banjo, mandolin",
-      "link" : "https://www.stringswing.com/product/cc01k-hardwood-home-studio-guitar-keeper-wall-mounted-guitar-hanger",
-      "make" : "String Swing",
-      "model" : "CC01K",
-      "notes" : [
-         "guitar",
-         "banjo",
-         "mandolin"
-      ],
-      "type" : "Instrument Stand"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "guitar, banjo, mandolin",
-      "link" : "https://en.guittochina.com/Details/20.html",
-      "make" : "Guitto",
-      "model" : "GGS-01",
-      "notes" : [
-         "guitar",
-         "banjo",
-         "mandolin"
-      ],
-      "type" : "Instrument Stand",
-      "year" : "2024"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "harmonica",
-      "link" : "https://www.hohner.de/en/instruments/harmonicas/accessories/flexrack",
-      "make" : "Hohner",
-      "model" : "FlexRack",
-      "notes" : [
-         "harmonica"
-      ],
-      "type" : "Instrument Stand",
-      "year" : "2016"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "mandolin",
-      "link" : "https://staggmusic.com/en/products/view/SUVMA100BK-foldable-a-stand-for-ukuleles-mandolins-and-violins/",
-      "make" : "Stagg",
-      "model" : "SUVM-A100BK",
-      "notes" : [
-         "mandolin"
-      ],
-      "type" : "Instrument Stand",
-      "year" : "2019"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "link" : "https://www.tama.com/usa/products/hardware/snare_stands/",
-      "make" : "Tama",
-      "model" : "HS10 Swingstar",
-      "type" : "Instrument Stand",
-      "year" : "2007"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "link" : "https://gatorco.com/product/telescoping-boom-podcast-bass-drum-and-amp-mic-stand-gfw-mic-0822/",
-      "make" : "Gator",
-      "model" : "GFW-MIC-0822",
-      "type" : "Microphone Stand",
-      "year" : "2021"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "link" : "https://herculesstands.us/product/ms531b/",
-      "make" : "Hercules",
-      "model" : "MS531B",
-      "type" : "Microphone Stand",
-      "year" : "2017"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "link" : "https://www.ocwhite.com/broadcast-arms/proboom.html",
-      "make" : "O.C. White",
-      "model" : "ProBoom Deluxe",
-      "type" : "Microphone Stand",
-      "year" : "2006"
-   },
-   {
-      "category" : "Stands etc.",
-      "current_rack" : true,
-      "detail" : {
-         "Color" : "Weathered brown",
-         "Depth" : "17\"",
-         "Finish" : "Stained",
-         "Height" : "27.6\" + 3.5\" casters",
-         "Material" : "15 mm plywood",
-         "Max Loading Capacity" : "140 lbs",
-         "Rack Space" : "12U",
-         "Rack Width" : "19\"",
-         "Weight" : "42.5 lbs",
-         "Width" : "20.4\""
-      },
-      "image" : true,
-      "link" : "https://www.soundtown.com/products/sdrk-st12tb",
-      "make" : "Sound Town",
-      "model" : "SDRK-ST12TB",
-      "notes" : [
-         "12U rack"
-      ],
-      "type" : "Rack Hardware",
-      "year" : "2025"
-   },
-   {
-      "category" : "Stands etc.",
-      "detail" : {
-         "Color" : "Black",
-         "Material" : "Rotationally molded plastic",
-         "Rack Depth" : "17\"",
-         "Rack Space" : "8U",
-         "Rack Width" : "19\""
-      },
-      "image" : true,
-      "link" : "https://www.skbcases.com/products/8-u-r-series-rack?_pos=2&_fid=f67bafb49&_ss=c",
-      "make" : "SKB",
-      "model" : "SKB-R8",
-      "notes" : [
-         "8U rack"
-      ],
-      "type" : "Rack Hardware",
-      "year" : "2005"
    }
 ]
 
@@ -4275,6 +4329,7 @@ var links = {
    "Dubreq" : "https://stylophone.com/",
    "Dunlop" : "https://www.jimdunlop.com/",
    "D’Addario" : "https://www.daddario.com/",
+   "EBS" : "https://ebssweden.com/",
    "EBow" : "https://www.ebow.com/",
    "EMG" : "https://www.emgpickups.com/",
    "ENO Music" : "",
