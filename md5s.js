@@ -1,6 +1,7 @@
 const md5s = {
-   "./code.js" : "7b5d927b36afc9960c0119e268136bbc",
-   "./data.js" : "7a66bbafad1c371e9fae3637bd562ac2",
+   "./code.js" : "3e4bde79e557e3acecf408bf628c517c",
+   "./conf.js" : "b58ade49025ef029e2610d643a139000",
+   "./data.js" : "246de2846fa5353e0bf9da0ade53cabe",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw/main.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/40tw/sm.webp" : "2bbaebafabc4c0f623549c9468d86da5",
@@ -642,6 +643,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "ebac7676"
+   "MANIFEST_REV" : "5b05d665"
 }
 

@@ -1,52 +1,20 @@
-const IMAGE_TYPE = 'webp'
-const IMAGE_PATH = '/images/'
-
-const COL = {
-  INFO     :  0,
-  IMG      :  1,
-  MODEL    :  2,
-  FINDVAL  :  3,
-  TYPE     :  4,
-  MAKE     :  5,
-  YEAR     :  6,
-  NOTES    :  7,
-  CAT      :  8,
-  NOTER    :  9,
-  NMINE    : 10,
-  HIDE     : 11,
-  MAIN     : 12,
-  CRACK    : 13,
-  CPEDAL   : 14,
-  KPEDAL   : 15,
-  MANUALS  : 16,
-  DETAILS  : 17,
-  CAT_SORT : 18,
-  INST     : 19,
-  CUSTOM   : 20,
-  NEXT     : 21,
-//   FEAT     : 20,
+function buildDtColumns(schema) {
+  return schema.map(function(f) {
+    var c = { data: f.name, defaultContent: '' }
+    if (f.title != null)              c.title = f.title
+    if (f.priority != null)           c.responsivePriority = f.priority
+    if (f.visible === 0 || f.visible === false) c.visible = false
+    if (f.searchable === 0 || f.searchable === false) c.searchable = false
+    if (f.orderable === 0 || f.orderable === false)   c.orderable = false
+    if (f.classname)                  c.className = f.classname
+    if (f.sort_type)                  c.type = f.sort_type
+    if (f.default != null)            c.defaultContent = f.default
+    return c
+  })
 }
 
-const CAT = {
-  "Stringed Instruments":     1,
-  "Other Instruments":        2,
-  "Hardware":                 3,
-  "Accessories":              4,
-  "Percussion Instruments":   5,
-  "Stands etc.":              6,
-}
-
-const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.FINDVAL, COL.TYPE, COL.MAKE, COL.YEAR]
-const columnOrder = [
-//  [ COL.FEAT,     'desc' ],
-  [ COL.CAT_SORT, 'asc'  ],
-  [ COL.TYPE,     'asc'  ],
-  [ COL.INST,     'asc'  ],
-  [ COL.MAKE,     'asc'  ],
-  [ COL.MODEL,    'asc'  ],
-]
 var columnMap = {}
-columnMap[COL.MODEL] = COL.CAT
+columnMap[COL.MODEL] = COL.CATEGORY
 var anchorText
 var equipmentOrig = {}
 var touchstartX, touchstartY, touchendX, touchendY
@@ -270,15 +238,11 @@ function equipmentInit() {
   equipment.forEach(function(x, index, object) {
     equipmentOrig[ fixModelName(x['model']) ] = structuredClone(x)
     x['reverse_notes'] = []
-    x['not_mine'] = x['not_mine'] ? 'not_mine' : ''
-    x['hide'] = x['hide'] ? 'hidden' : ''
-    x['main_rig'] = x['main_rig'] ? 'main_rig' : ''
-    x['current_rack'] = x['current_rack'] ? 'current_rack' : ''
-    x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
-    x['kids_pedal'] = x['kids_pedal'] ? 'kids_pedal' : ''
-//     x['featured'] = x['featured'] ? 'featured' : ''
-    x['custom'] = x['custom'] ? 'custom' : ''
-    x['next'] = x['next'] ? 'next' : ''
+    equipment_schema.forEach(function(f) {
+      if (f.kind === 'bool_marker') {
+        x[f.name] = x[f.name] ? f.name : ''
+      }
+    })
     x['main_rig'] = (x['featured'] || x['main_rig']) ? 'main_rig' : ''
     x['instrument'] = x['instrument'] || ''
     x['category_sort'] = CAT[x['category']] || 99
@@ -360,31 +324,7 @@ function equipmentInit() {
         // display: $.fn.dataTable.Responsive.display.childRowImmediate,
       }
     },
-    columns: [
-      { responsivePriority: 20, data: 'x', title: '<i class="fas fa-circle-info fa-fw"></i>', className: 'dt-center all', defaultContent: '', orderable: false },
-      { responsivePriority: 25, data: 'img', title: '<i class="fas fa-image fa-fw"></i>', className: 'dt-center all', orderable: false },
-      { responsivePriority: 10, data: 'model', title: 'Model', className: 'all', },
-      { responsivePriority: 95, data: 'findvalue', title: '$', orderable: false, visible: false },
-      { responsivePriority: 30, data: 'type', title: 'Type', type: 'numeric' },
-      { responsivePriority: 40, data: 'make', title: 'Make' },
-      { responsivePriority: 80, data: 'year', title: 'Year', defaultContent: '-' },
-      { responsivePriority: 90, data: 'notes', title: 'Notes', className: 'none', defaultContent: '', orderable: false },
-      { responsivePriority: 98, data: 'category', visible: false },
-      { responsivePriority: 99, data: 'reverse_notes', title: 'Reverse Notes', className: 'none', visible: false },
-      { responsivePriority: 99, data: 'not_mine', visible: false },
-      { responsivePriority: 99, data: 'hide', visible: false },
-      { responsivePriority: 99, data: 'main_rig', visible: false },
-      { responsivePriority: 99, data: 'current_rack', visible: false },
-      { responsivePriority: 99, data: 'current_pedal', visible: false },
-      { responsivePriority: 99, data: 'kids_pedal', visible: false },
-      { responsivePriority: 99, data: 'manuals', title: 'Manuals', defaultContent: '', className: 'none' },
-      { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
-      { responsivePriority: 99, data: 'category_sort', visible: false, orderable: true },
-      { responsivePriority: 99, data: 'instrument', visible: false, orderable: true },
-      { responsivePriority: 99, data: 'custom', visible: false },
-      { responsivePriority: 99, data: 'next', visible: false },
-//       { responsivePriority: 99, data: 'featured', visible: false },
-    ],
+    columns: buildDtColumns(equipment_schema),
     // scrollX: true,
     autoWidth: false,
     order: columnOrder,
@@ -404,7 +344,7 @@ function equipmentInit() {
       // create dropdown filters
       var table = this.api().table()
       table.columns(columns).every(function (i) {
-        if (i != COL.INFO && i != COL.IMG && i != COL.FINDVAL) {
+        if (i != COL.X && i != COL.IMG && i != COL.FINDVALUE) {
           var column = this
           var column_d = table.column(columnMap[i] || i)
           var select = $('<select id="sel_' + i + '"></select><br>')

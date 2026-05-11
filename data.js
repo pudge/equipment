@@ -2290,6 +2290,7 @@ var equipment = [
          "Quick Start Guide" : "Quick Start Guide.pdf"
       },
       "model" : "Zeus",
+      "next" : true,
       "notes" : [
          "overdrive"
       ],
@@ -2700,46 +2701,6 @@ var equipment = [
          "Tuning & Sweetener Presets" : "StroboPLUS HDC Tuning & Sweetener Presets.pdf"
       },
       "model" : "StroboPLUS HDC",
-      "next" : true,
-      "notes" : [
-         "tuner"
-      ],
-      "type" : "Tuner",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\" TS",
-         "Analog Outputs" : "1/4\" TS",
-         "Bypass" : "Buffered",
-         "Computer Interface" : "USB-C",
-         "Detection Accuracy" : "±0.1 cent",
-         "Detection Range" : "C0 (16.35 Hz)–A#8 (7302 Hz)",
-         "Dimensions" : "3.75\" x 2.6\" x 1.63\"",
-         "Input Impedance" : "5 MΩ",
-         "Output Impedance" : "1 kΩ",
-         "Power Consumption" : "85 mA",
-         "Power Supply" : "9 V",
-         "Reference Pitch" : "A4=390 Hz-490 Hz",
-         "Scale" : "configurable",
-         "Serial" : "",
-         "Transposition Range" : "-6 to +5",
-         "Weight" : "11 oz"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.petersontuners.com/products/stroboVUE/",
-      "make" : "Peterson",
-      "manuals" : {
-         "Guided Tuning Manual" : "Guided Tuning Manual.pdf",
-         "StroboVUE Beyond the Basics" : "StroboVUE_Beyond_The_Basics.pdf",
-         "StroboVUE Manual" : "StroboVUE_Tuner.pdf",
-         "StroboVUE Settings" : "StroboVUE_Settings.pdf",
-         "StroboVUE Tuning & Sweetener Presets" : "StroboVUE Tuning & Sweetener Presets.pdf"
-      },
-      "model" : "StroboVUE",
       "next" : true,
       "notes" : [
          "tuner"

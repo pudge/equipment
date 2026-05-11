@@ -1,4 +1,4 @@
-const MANIFEST_REV = 'ebac7676' // rewritten by md5s.plx on each build
+const MANIFEST_REV = '5b05d665' // rewritten by md5s.plx on each build
 importScripts('./md5s.js')
 
 const CACHE_PREFIX = 'gear-'
