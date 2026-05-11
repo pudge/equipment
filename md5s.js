@@ -13,7 +13,9 @@ const md5s = {
    "./images/7100/sm.webp" : "0af24ccf1e21ce518113ed46eafedc18",
    "./images/801m/main.webp" : "9a59d2769dda2b14041e67d20fefb813",
    "./images/801m/sm.webp" : "8ea2ec9f4116504f401d4fc98dde9dcb",
+   "./images/828mkii/front.webp" : "602757aec6c35eb682099ca76feee39b",
    "./images/828mkii/main.webp" : "8bcb8515b9878f55216da807996a0fd0",
+   "./images/828mkii/rear.webp" : "2607894280c34aab7d2f37239320bae8",
    "./images/828mkii/sm.webp" : "285fd80df0d95af3bd4dcb66782a65e1",
    "./images/a250/main.webp" : "f408d8cdf4749bf7f37410eeb78b0564",
    "./images/a250/sm.webp" : "d161f3b861587c566e861c3fbfeab538",
@@ -38,6 +40,7 @@ const md5s = {
    "./images/b1/main.webp" : "b605a1d4193ad64b7d4b1e08bf32a0a0",
    "./images/b1/sm.webp" : "1cb2b3b98284955b33678563afb5cf08",
    "./images/bigknob/main.webp" : "b617f57537a309184783ec7b913267fb",
+   "./images/bigknob/rear.webp" : "a889cc7389027b17f6932f7f63bfab5f",
    "./images/bigknob/sm.webp" : "4542c87fb4a989dfef1d94d893063a48",
    "./images/bigmuffpi/main.webp" : "39899ee3465d3b6e5297a33d537a3b11",
    "./images/bigmuffpi/sm.webp" : "3ba9e0e09b47419e64eed128f2de981f",
@@ -409,6 +412,7 @@ const md5s = {
    "./images/spyder2700/main.webp" : "3e7f63d92cde7c6427fce4874644f6c2",
    "./images/spyder2700/sm.webp" : "199a0429cc6187234cce9ccc4789849f",
    "./images/stagepas500/main.webp" : "fab3fce0d3dfa81e61965f92d03a19d2",
+   "./images/stagepas500/mixer.webp" : "bf414896a21969c36e8bd5723e8d54f6",
    "./images/stagepas500/sm.webp" : "5f761f3953894eb4b268ca722b2cab4f",
    "./images/straplok/main.webp" : "cae29311d6329c4184daf0f8a1d11e63",
    "./images/straplok/sm.webp" : "d9b82b5fd2586b2f13ef5e450864d59f",
@@ -643,6 +647,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "5b05d665"
+   "MANIFEST_REV" : "a2941f27"
 }
 
