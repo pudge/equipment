@@ -948,7 +948,6 @@ var equipment = [
       "image" : true,
       "instrument" : "guitar",
       "link" : "https://line6.com/legacy/spideriv15",
-      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "Pilot’s Handbook" : "Spider IV 15 Pilot's Guide - English ( Rev F ).pdf"
@@ -2056,6 +2055,34 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2020"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "2.5\" x 4.75\" x 2.25\"",
+         "Input Impedance" : "10 MΩ",
+         "Other" : "",
+         "Output Impedance" : "100 Ω",
+         "Power Consumption" : "25 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.earthquakerdevices.com/plumes",
+      "make" : "EarthQuaker Devices",
+      "manuals" : {
+         "Operation Manual" : "EQD-EU-Plumes-R3.pdf"
+      },
+      "model" : "Plumes",
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -4248,6 +4275,7 @@ var links = {
    "EMG" : "https://www.emgpickups.com/",
    "ENO Music" : "",
    "ESP" : "https://www.espguitars.com/",
+   "EarthQuaker Devices" : "https://www.earthquakerdevices.com/",
    "Edirol" : "https://www.roland.com/us/",
    "Electro-Harmonix" : "https://www.ehx.com/",
    "Empress" : "https://empresseffects.com/",

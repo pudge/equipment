@@ -1,6 +1,6 @@
 const md5s = {
    "./code.js" : "1ad4dfae79824cb19eff963d74addc2b",
-   "./data.js" : "5819580ad93e5a310fb11bd463ad6a0f",
+   "./data.js" : "b6e5e9002131a9529d2b55490a4a9f16",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw/main.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/40tw/sm.webp" : "2bbaebafabc4c0f623549c9468d86da5",
@@ -325,6 +325,8 @@ const md5s = {
    "./images/planetz13hihat/sm.webp" : "71262182d8ff63fdb32e85cdf162bc85",
    "./images/planetz18crashride/main.webp" : "3e538e6ade2e81003303a048bf5ac06a",
    "./images/planetz18crashride/sm.webp" : "71262182d8ff63fdb32e85cdf162bc85",
+   "./images/plumes/main.webp" : "07d50d62f8685f5cc3d957b0ea7492f2",
+   "./images/plumes/sm.webp" : "d797f99feb9ad13d0bf1acf36b1d1d1c",
    "./images/pm14dbr/main.webp" : "5b487d7deb1e845edb5a9fc3c7b99fa8",
    "./images/pm14dbr/sm.webp" : "11247bd2ca60b81ba58c63704a6ef948",
    "./images/pm8ii/main.webp" : "0e57d663a93cdfed90110913339aec9f",
@@ -557,6 +559,7 @@ const md5s = {
    "./manuals/pb48/PB-48_PB-48D_manual.pdf" : "81ab7ba6afa4d60111391d70e6f77090",
    "./manuals/pentatoneequalizer/PTEQ.pdf" : "fa3251c0c631bece1a50a1172287a383",
    "./manuals/pitchblackxsbass/Pitchblack_XS_Bass_OM_EFGSCJ1.pdf" : "a9b89877559bd3036f0bd299a0c96b0b",
+   "./manuals/plumes/EQD-EU-Plumes-R3.pdf" : "81a771de192f3c173862f73a59ef9246",
    "./manuals/pm8ii/SERIES_II_15AMP_manual.pdf" : "c6a284b8b4b8da91bc16c67d8481392c",
    "./manuals/podx3live/POD X3 Advanced Guide - English ( Rev E ).pdf" : "900f572399e5bcf41286942b79f1f658",
    "./manuals/podx3live/POD X3 Model Gallery - English ( Rev B ).pdf" : "56d23172d2f4f614d378952e9d534c5b",
@@ -636,6 +639,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "ad8cf0a3"
+   "MANIFEST_REV" : "fb0f5184"
 }
 
