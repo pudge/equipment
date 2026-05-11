@@ -1,6 +1,6 @@
 const md5s = {
-   "./code.js" : "1ad4dfae79824cb19eff963d74addc2b",
-   "./data.js" : "b6e5e9002131a9529d2b55490a4a9f16",
+   "./code.js" : "7b5d927b36afc9960c0119e268136bbc",
+   "./data.js" : "7a66bbafad1c371e9fae3637bd562ac2",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw/main.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/40tw/sm.webp" : "2bbaebafabc4c0f623549c9468d86da5",
@@ -471,6 +471,8 @@ const md5s = {
    "./images/ydp223/sm.webp" : "979d9559a067a52d1678b27b4ed53fc6",
    "./images/ypt300/main.webp" : "fef626c2c57c654c6e41caaa435d16dd",
    "./images/ypt300/sm.webp" : "e72bc3ab5eebb44d6937da0ebe72a41c",
+   "./images/zeus/main.webp" : "6eebd4418a80665b939e469ca6ef4a10",
+   "./images/zeus/sm.webp" : "8d4c0382a9d98861265b052585b6a4eb",
    "./lastmod.js" : "835b568c7d69ba5bbc98c19e3c9294af",
    "./manuals/801m/maelzel_gebrauchsanleitung.pdf" : "caffabaaf81e99a4962319dd9a1a1d39",
    "./manuals/828mkii/828mkII_Manual_Mac.pdf" : "f2b7d660cc564fb6aa921479bd0a6223",
@@ -623,12 +625,13 @@ const md5s = {
    "./manuals/variax700/Variax Bass Manual - English ( Rev A ).pdf" : "4ea506846827b12467c60f3d6414d079",
    "./manuals/ydp223/YDP223.pdf" : "be913fb5737ab4e6cd092edd536ca95d",
    "./manuals/ypt300/YPT300_1.pdf" : "05b566baeb4e9064ab170a87abddcb1d",
+   "./manuals/zeus/Quick Start Guide.pdf" : "57fd8927b9c597aca1753d1c95c9ec68",
    "./pic/pedalboards/kids.webp" : "d87fd6898244119104c9a9bd8378c76c",
    "./pic/pedalboards/mine.webp" : "f2380ba7cc10e936bb35e4f21fd1640f",
    "./pic/studios/sd.webp" : "6b1bd63d8306c93e05c48261a17edb7d",
    "./pic/studios/wa-1.webp" : "f5b324fdafe7dc1681be30c047e665ee",
    "./pic/studios/wa-2.webp" : "969c536895266b783eb341d819b5c306",
-   "./style.css" : "a0101c91a59dff013f537a1e587eaddd",
+   "./style.css" : "3163e828a57257f85754a561f698e884",
    "./vendor/datatables.min.css" : "932a5121ac2845af7293669d1283419e",
    "./vendor/datatables.min.js" : "7c31eef34afcd50095805985c20b40f2",
    "./vendor/fontawesome-kit.js" : "47ad0026a54a9f7270be005c2abcc277",
@@ -639,6 +642,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "fb0f5184"
+   "MANIFEST_REV" : "ebac7676"
 }
 

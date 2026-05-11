@@ -22,15 +22,18 @@ const COL = {
   DETAILS  : 17,
   CAT_SORT : 18,
   INST     : 19,
+  CUSTOM   : 20,
+  NEXT     : 21,
 //   FEAT     : 20,
 }
 
 const CAT = {
-  "Instruments":              1,
-  "Hardware":                 2,
-  "Accessories":              3,
-  "Percussion Instruments":   4,
-  "Stands etc.":              5,
+  "Stringed Instruments":     1,
+  "Other Instruments":        2,
+  "Hardware":                 3,
+  "Accessories":              4,
+  "Percussion Instruments":   5,
+  "Stands etc.":              6,
 }
 
 const columns = [COL.INFO, COL.IMG, COL.MODEL, COL.FINDVAL, COL.TYPE, COL.MAKE, COL.YEAR]
@@ -153,7 +156,14 @@ function linkItFindValue(oData) {
   var link = 'https://reverb.com/marketplace?query='
     + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
     // + '&condition=used'
-  return `<a href="${link}"><img class="findvalue" src="/reverb.webp" /></a>`
+  return `<a href="${link}"><img class="findvalue" src="./reverb.webp" /></a>`
+}
+
+function linkItCustom(oData) {
+  if (!oData['custom']) {
+    return ''
+  }
+  return `<span class="custom" />†</span>`
 }
 
 function linkItManuals(oData) {
@@ -267,6 +277,8 @@ function equipmentInit() {
     x['current_pedal'] = x['current_pedal'] ? 'current_pedal' : ''
     x['kids_pedal'] = x['kids_pedal'] ? 'kids_pedal' : ''
 //     x['featured'] = x['featured'] ? 'featured' : ''
+    x['custom'] = x['custom'] ? 'custom' : ''
+    x['next'] = x['next'] ? 'next' : ''
     x['main_rig'] = (x['featured'] || x['main_rig']) ? 'main_rig' : ''
     x['instrument'] = x['instrument'] || ''
     x['category_sort'] = CAT[x['category']] || 99
@@ -321,7 +333,8 @@ function equipmentInit() {
     x['detail'] = linkItDetail(x)
     x['findvalue'] = linkItFindValue(x)
     x['notes'] = linkItNotes(x)
-    x['model'] = linkItFindValue(x) + ' ' + linkHtml(x['model'])
+    custom = linkItCustom(x)
+    x['model'] = linkItFindValue(x) + linkItCustom(x) + linkHtml(x['model'])
 /* 
     if (x['featured']) {
       x['x'] = ' <i class="fa-solid fa-star featured"></i>'
@@ -368,6 +381,8 @@ function equipmentInit() {
       { responsivePriority: 99, data: 'detail', title: 'Detail', defaultContent: '', className: 'none' },
       { responsivePriority: 99, data: 'category_sort', visible: false, orderable: true },
       { responsivePriority: 99, data: 'instrument', visible: false, orderable: true },
+      { responsivePriority: 99, data: 'custom', visible: false },
+      { responsivePriority: 99, data: 'next', visible: false },
 //       { responsivePriority: 99, data: 'featured', visible: false },
     ],
     // scrollX: true,

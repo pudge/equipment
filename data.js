@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-10T12:00:00+0000")
+var lastModified = new Date("2026-05-11T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -833,6 +833,7 @@ var equipment = [
          "Manual" : "237030_bamp_manual_all_revA.pdf"
       },
       "model" : "Rumble 40",
+      "next" : true,
       "notes" : [
          "bass guitar"
       ],
@@ -1582,6 +1583,7 @@ var equipment = [
          "Manual" : "Canvas_Tuner_Digital_Manual_2_2_26.pdf"
       },
       "model" : "Canvas Tuner",
+      "next" : true,
       "notes" : [
          "tuner"
       ],
@@ -1614,6 +1616,7 @@ var equipment = [
          "Manual" : "Compressor_MKII_manual.pdf"
       },
       "model" : "Compressor MKII",
+      "next" : true,
       "notes" : [
          "compressor"
       ],
@@ -1700,6 +1703,7 @@ var equipment = [
          "Quick Start Guide" : "QSG_TE_0709-AFZ_DITTO X2 LOOPER_WW.pdf"
       },
       "model" : "Ditto X2",
+      "next" : true,
       "notes" : [
          "looper"
       ],
@@ -1862,6 +1866,7 @@ var equipment = [
          "Owner’s Manual" : "https://manuals.line6.com/en/helix-stadium/live"
       },
       "model" : "Helix Stadium XL",
+      "next" : true,
       "notes" : [
          "multi-effects"
       ],
@@ -1892,6 +1897,7 @@ var equipment = [
          "Quick Start Guide" : "QSG_TE_0709-AJT_INFINITE SAMPLE SUSTAINER_WW.pdf"
       },
       "model" : "Infinite",
+      "next" : true,
       "notes" : [
          "sustainer"
       ],
@@ -1918,6 +1924,7 @@ var equipment = [
          "Manual" : "JHS_KILT_10_Manual_Multi.pdf"
       },
       "model" : "Kilt 10",
+      "next" : true,
       "notes" : [
          "distortion"
       ],
@@ -2025,6 +2032,7 @@ var equipment = [
          "Manual" : "JHS-Pedals-MorningGloryV4-Manual-English.pdf"
       },
       "model" : "Morning Glory V4",
+      "next" : true,
       "notes" : [
          "overdrive"
       ],
@@ -2078,6 +2086,7 @@ var equipment = [
          "Operation Manual" : "EQD-EU-Plumes-R3.pdf"
       },
       "model" : "Plumes",
+      "next" : true,
       "notes" : [
          "overdrive"
       ],
@@ -2261,6 +2270,34 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Bypass" : "True/Buffered",
+         "Dimensions" : "3.9\" x 2.2\" x 2.2\"",
+         "Input Impedance" : "1 MΩ",
+         "Power Consumption" : "40 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "",
+         "Weight" : "0.64 lbs"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.tcelectronic.com/en/products/0709-AKF",
+      "make" : "tc electronic",
+      "manuals" : {
+         "Quick Start Guide" : "Quick Start Guide.pdf"
+      },
+      "model" : "Zeus",
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
       "detail" : {
          "Dimensions" : "14\" x 5.5\" x 1\"",
          "Weight" : "0.77 lbs"
@@ -2307,6 +2344,7 @@ var equipment = [
          "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
       },
       "model" : "Templeboard TRIO 28",
+      "next" : true,
       "notes" : [
          "gunmetal"
       ],
@@ -2447,6 +2485,7 @@ var equipment = [
          "Manual" : "Canvas_Power_Digital_Manual_089a7368-9bbb-4d81-88de-18132ac68626.pdf"
       },
       "model" : "Canvas Power 15",
+      "next" : true,
       "notes" : [
          "pedal power"
       ],
@@ -2499,6 +2538,7 @@ var equipment = [
          "Manual" : "Power-2-Manual-WEB-03-2025.pdf"
       },
       "model" : "Power-2",
+      "next" : true,
       "type" : "Power",
       "year" : "2026"
    },
@@ -2660,6 +2700,7 @@ var equipment = [
          "Tuning & Sweetener Presets" : "StroboPLUS HDC Tuning & Sweetener Presets.pdf"
       },
       "model" : "StroboPLUS HDC",
+      "next" : true,
       "notes" : [
          "tuner"
       ],
@@ -2699,6 +2740,7 @@ var equipment = [
          "StroboVUE Tuning & Sweetener Presets" : "StroboVUE Tuning & Sweetener Presets.pdf"
       },
       "model" : "StroboVUE",
+      "next" : true,
       "notes" : [
          "tuner"
       ],
@@ -2727,7 +2769,7 @@ var equipment = [
       "year" : "2014"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Back Material" : "High Pressure Laminate",
          "Battery Compartment" : "9 V",
@@ -2764,7 +2806,7 @@ var equipment = [
       "year" : "2000"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Battery Compartment" : "2 x AAA",
          "Body Depth" : "1.75\"",
@@ -2810,7 +2852,7 @@ var equipment = [
       "year" : "2018"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Battery Compartment" : "2 x AAA",
          "Body Depth" : "1.75\"",
@@ -2853,7 +2895,7 @@ var equipment = [
       "year" : "2024"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Location" : "Tenryu/Wada Factory, Japan",
          "Production Year" : "November 1967",
@@ -2873,7 +2915,7 @@ var equipment = [
       "year" : "1967"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Back / Side Finish" : "Gloss",
          "Back Inlay Material" : "Multi-Stripe",
@@ -2947,7 +2989,7 @@ var equipment = [
       "year" : "2012"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Back Material" : "Laminated Sapele",
          "Binding" : "Aged White",
@@ -2997,7 +3039,7 @@ var equipment = [
       "year" : "2024"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body Finish" : "Satin Body Finish",
          "Body Material" : "Laminated Sapele",
@@ -3028,7 +3070,7 @@ var equipment = [
       "year" : "2014"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body Finish" : "Gloss",
          "Body Material" : "Mahogany",
@@ -3060,7 +3102,7 @@ var equipment = [
       "year" : "2021"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Fret Count" : "19",
          "Serial" : "27726-680"
@@ -3083,7 +3125,7 @@ var equipment = [
       "year_uncertain" : true
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Battery Compartment" : "2 x 9 V w/Screw Plate",
          "Binding" : "MOP Multi-Ply Black/White/Black",
@@ -3137,7 +3179,7 @@ var equipment = [
       "year" : "2021"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body Material" : "Basswood",
          "Bridge" : "Standard (19 mm string spacing)",
@@ -3183,7 +3225,7 @@ var equipment = [
       "year" : "1986"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Battery Compartment" : "6 x AA or 1 x 9 V",
          "Body Material" : "Alder",
@@ -3220,7 +3262,7 @@ var equipment = [
       "year" : "2004"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body Material" : "Solid Basswood",
          "Body Style" : "3/4 size",
@@ -3248,7 +3290,7 @@ var equipment = [
       "year" : "2004"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Binding" : "Cream",
          "Body Finish" : "Gloss",
@@ -3301,7 +3343,7 @@ var equipment = [
       "year" : "2021"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Battery Compartment" : "2 x AAA, 1 x 9 V",
          "Binding" : "6-Ply Cream/Black",
@@ -3346,7 +3388,7 @@ var equipment = [
       "year" : "2024"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body Finish" : "Gloss",
          "Body Material" : "Mahogany",
@@ -3390,7 +3432,8 @@ var equipment = [
       "year" : "2023"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
+      "custom" : true,
       "detail" : {
          "Body Finish" : "Gloss",
          "Bridge" : "Kahler Killer 2710 Double-Locking Tremolo w/Stringlock †",
@@ -3447,7 +3490,7 @@ var equipment = [
       "year" : "1991"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Battery Compartment" : "6 x AA or 1 x 9 V",
          "Body Material" : "Basswood",
@@ -3487,7 +3530,7 @@ var equipment = [
       "year" : "2003"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body Material" : "Mahogany",
          "Bridge" : "Schaller Floyd Rose Tremolo",
@@ -3519,7 +3562,7 @@ var equipment = [
       "year" : "2002"
    },
    {
-      "category" : "Instruments",
+      "category" : "Other Instruments",
       "detail" : {
          "Comb (color)" : "Brown",
          "Comb (finish)" : "Triple Lacquered",
@@ -3556,7 +3599,7 @@ var equipment = [
       "year" : "2020"
    },
    {
-      "category" : "Instruments",
+      "category" : "Other Instruments",
       "detail" : {
          "Comb (color)" : "Black",
          "Comb (finish)" : "ABS",
@@ -3598,7 +3641,7 @@ var equipment = [
       "year" : "various"
    },
    {
-      "category" : "Instruments",
+      "category" : "Other Instruments",
       "detail" : {
          "Amplifier" : "20 W x 2",
          "Analog Inputs" : "1/4\" x 2",
@@ -3625,7 +3668,7 @@ var equipment = [
       "year" : "2006"
    },
    {
-      "category" : "Instruments",
+      "category" : "Other Instruments",
       "detail" : {
          "Amplifier" : "2.5 W x 2",
          "Dimensions" : "945 mm x 370 mm x 128 mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
@@ -3650,7 +3693,7 @@ var equipment = [
       "year" : "2007"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Armrest Dimensions" : "3 5/8\" x 11/16\" x 3/8\" (9.2 cm x 1.8 cm x 1 cm)",
          "Armrest Material" : "Michigan Koa (Silver Maple)",
@@ -3695,7 +3738,7 @@ var equipment = [
       "year" : "2018"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body" : "Resonator",
          "Fingerboard Inlay Material" : "MOP",
@@ -3719,7 +3762,7 @@ var equipment = [
       "year" : "1920s?"
    },
    {
-      "category" : "Instruments",
+      "category" : "Other Instruments",
       "detail" : {
          "Battery" : "AAA x 3",
          "Input" : "1/8\" stereo",
@@ -3737,7 +3780,7 @@ var equipment = [
       "year" : "2011"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Fret Count" : "16",
          "Location" : "China",
@@ -3760,7 +3803,7 @@ var equipment = [
       "year_uncertain" : true
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Back / Sides Material" : "Poplar",
          "Body Depth" : "2.0\"",
@@ -3798,7 +3841,7 @@ var equipment = [
       "year" : "2024"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Back / Sides Material" : "Composite",
          "Body Depth" : "2.375\"",
@@ -3836,7 +3879,7 @@ var equipment = [
       "year" : "2000s"
    },
    {
-      "category" : "Instruments",
+      "category" : "Stringed Instruments",
       "detail" : {
          "Body Material" : "Sengon",
          "Bridge Material" : "Mahogany",

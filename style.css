@@ -57,6 +57,12 @@ img.findvalue {
     filter: grayscale(100%) brightness(125%);
 }
 
+span.custom {
+    float: right;
+    padding-right: 0.1em;
+    filter: grayscale(100%) brightness(125%);
+}
+
 .checkit { color: #8AFF80 }
 
 th { vertical-align: bottom }

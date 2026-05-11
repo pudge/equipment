@@ -85,6 +85,8 @@ sub get_gear {
             current_pedal   => bool($x->{'Current Pedal'}),
             kids_pedal      => bool($x->{'Kids Pedal'}),
             main_rig        => bool($x->{'Main Rig'}),
+            custom          => bool($x->{'Custom'}),
+            'next'          => bool($x->{'Next'}),
         };
 
         for my $k (keys %$y) {
