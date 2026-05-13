@@ -68,7 +68,7 @@ function linkItNotes(oData) {
     thisData.push('KIDS_PEDAL')
   }
 
-  var icons = [ clipIt( fixModelName(oData['model']) ) ]
+  var icons = [ clipIt( modelId(oData) ) ]
   var newData = []
   thisData.forEach(x => {
     if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL') {
@@ -112,9 +112,11 @@ function linkItDetail(oData) {
     return '<div class="detail" />'
   }
 
-  return '<div class="detail">' + Object.keys(oData['detail']).map(
+  detail = '<div class="detail">' + Object.keys(oData['detail']).map(
       x => `<div class="detail_row"><span class="detail_head">${x}</span>: <span class="detail_body">${oData['detail'][x]}</span></div>`
     ).join('') + '</div>'
+
+  return detail // .replace(/†/g, '<i class="fa-solid fa-cross"></i>')
 }
 
 function linkItFindValue(oData) {
@@ -131,11 +133,12 @@ function linkItCustom(oData) {
   if (!oData['custom']) {
     return ''
   }
+//   return `<span class="custom" /><i class="fa-solid fa-cross"></i></span>`
   return `<span class="custom" />†</span>`
 }
 
 function linkItManuals(oData) {
-  var modelName = fixModelName(oData['model'])
+  var modelName = modelId(oData)
   var rows = []
   var seen = {}
 
@@ -173,7 +176,7 @@ function imgIt(oData) {
   var text = '<i class="fas fa-fw"></i>'
   if (oData['image']) {
     var alt = [oData['make'], oData['model'], oData['type']].join(' ')
-    var name = fixModelName(oData['model'])
+    var name = modelId(oData)
     var main = '.' + IMAGE_PATH + name + '/main.' + IMAGE_TYPE
     var sm   = '.' + IMAGE_PATH + name + '/sm.'   + IMAGE_TYPE
     oData['image'] = main
@@ -236,7 +239,7 @@ function equipmentInit() {
   var removeElements = []
   var foundNote = {}
   equipment.forEach(function(x, index, object) {
-    equipmentOrig[ fixModelName(x['model']) ] = structuredClone(x)
+    equipmentOrig[ modelId(x) ] = structuredClone(x)
     x['reverse_notes'] = []
     equipment_schema.forEach(function(f) {
       if (f.kind === 'bool_marker') {
@@ -632,6 +635,10 @@ function childRowCleanUp() {
   $('.dtr-data .manuals:empty').parent().parent().hide()
   $('.dtr-data .detail:empty').parent().parent().hide()
   picInit()
+}
+
+function modelId(oData) {
+  return oData['id'] || fixModelName(oData['model'])
 }
 
 function fixModelName(str) {
