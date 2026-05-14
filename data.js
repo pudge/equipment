@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-11T12:00:00+0000")
+var lastModified = new Date("2026-05-14T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -840,7 +840,7 @@ var equipment = [
          "Return Impedance" : "22 kΩ",
          "Send Impedance" : "1 kΩ",
          "Serial" : "",
-         "Shape FIlter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
+         "Shape Filter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
          "Speaker" : "12\" 8 Ω ceramic",
          "Tone Controls" : "±15 dB @ 10 kHz (treble); ±12 dB @ 1.2 kHz (high-mid); ±12 dB @ 280 Hz (low-mid); ±15 dB @ 80 Hz (bass)",
          "Weight" : "22 lbs"
@@ -872,7 +872,7 @@ var equipment = [
          "Input Impedance" : "1 MΩ",
          "Output Impedance" : "3.3 kΩ",
          "Serial" : "",
-         "Shape FIlter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
+         "Shape Filter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
          "Speaker" : "10\" 8 Ω ceramic",
          "Tone Controls" : "±15 dB @ 10 kHz (treble); ±12 dB @ 1.2 kHz (high-mid); ±12 dB @ 280 Hz (low-mid); ±15 dB @ 80 Hz (bass)",
          "Weight" : "18 lbs"
@@ -2071,20 +2071,19 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
-         "Dimensions" : "2.6\" x 4.8\" x 1.5\"",
-         "Other" : "Footswitch 1/4\" input",
-         "Power Consumption" : "43 mA",
-         "Power Supply" : "9 V",
+         "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
+         "Power Consumption" : "60 mA",
+         "Power Supply" : "9 V (dual supply)",
          "Serial" : ""
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory",
+      "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory-clean",
       "make" : "JHS",
       "manuals" : {
-         "Manual" : "JHS-Pedals-MorningGloryV4-Manual-English.pdf"
+         "Manual" : "2236981e27051efc_DBA_MORNING_GLORY_CLEAN_MANUAL_EN_DE_FR_IT_ES_CN.pdf"
       },
-      "model" : "Morning Glory V4",
+      "model" : "Morning Glory Clean",
       "next" : true,
       "notes" : [
          "overdrive"

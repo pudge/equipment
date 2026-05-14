@@ -1,7 +1,7 @@
 const md5s = {
    "./code.js" : "fd73220e8dfe90025c0333dd54c09f39",
    "./conf.js" : "b58ade49025ef029e2610d643a139000",
-   "./data.js" : "370dff864fa95ea04828ad763a9fc139",
+   "./data.js" : "906fdf796195d8e721b33bd04fa72284",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
    "./images/40tw/main.webp" : "7909ebfa8a632d452b48521220cacea2",
    "./images/40tw/sm.webp" : "2bbaebafabc4c0f623549c9468d86da5",
@@ -287,6 +287,8 @@ const md5s = {
    "./images/mksdrdburst/sm.webp" : "cf91c869afc0c51daa17138fdf73c260",
    "./images/moonshinev2/main.webp" : "27b3b5a8d06bdb65397298be7530560b",
    "./images/moonshinev2/sm.webp" : "aadfc755365e978b49d8c89bf8a53c36",
+   "./images/morninggloryclean/main.webp" : "77f4d046a4c753654b0710687cbeb81e",
+   "./images/morninggloryclean/sm.webp" : "fd865947dfba42a89283a5d3ec2c0121",
    "./images/morninggloryv4/main.webp" : "196f693a53f14496f8244c7e0bdf7779",
    "./images/morninggloryv4/sm.webp" : "9a0fbbe5ea0f5965cb40ffd861407bd3",
    "./images/ms531b/main.webp" : "e2f119675ac1f269f4bcc4f7cfee1cb7",
@@ -568,6 +570,7 @@ const md5s = {
    "./manuals/miniego/mini_ego_2019.pdf" : "e62849a4443e2f25510c0a30a53c859d",
    "./manuals/mix50/MixSeries_OM.pdf" : "6dc97a84cbb0d53da93f2ba48b1f43c8",
    "./manuals/moonshinev2/JHS-Pedals-MoonshineV2-Manual-English.pdf" : "76afee7c34020bcdcc6a5fd5de6f00e6",
+   "./manuals/morninggloryclean/2236981e27051efc_DBA_MORNING_GLORY_CLEAN_MANUAL_EN_DE_FR_IT_ES_CN.pdf" : "2a4197007545119c2e7bb245c1d54555",
    "./manuals/morninggloryv4/JHS-Pedals-MorningGloryV4-Manual-English.pdf" : "570994aecbd83e3e0a69ba781b9c05db",
    "./manuals/nanobigmuffpi/nano-big-muff-pi-manual.pdf" : "d47cb006713d2183854a15f1945931e2",
    "./manuals/oceans11/oceans-11-manual.pdf" : "3affffd78d78e1b5af9823281df7b166",
@@ -660,6 +663,6 @@ const md5s = {
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
    "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "0e94c5e5"
+   "MANIFEST_REV" : "fb615b3b"
 }
 
