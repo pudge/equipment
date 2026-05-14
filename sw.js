@@ -1,4 +1,4 @@
-const MANIFEST_REV = 'fb615b3b' // rewritten by md5s.plx on each build
+const MANIFEST_REV = '36fbe9ea' // rewritten by md5s.plx on each build
 importScripts('./md5s.js')
 
 const CACHE_PREFIX = 'gear-'
@@ -13,7 +13,7 @@ function isAssetPath(pathname) {
 function manifestEntries() {
   return Object.keys(md5s)
     .filter(k => isAssetPath(k))
-    .map(k => FONT_DIR.test(k) ? k : `${k}?${(md5s[k] || '').substr(0, 5)}`)
+    .map(k => FONT_DIR.test(k) ? k : `${k}?${(md5s[k] || '')`)
 }
 
 function djb2(s) {

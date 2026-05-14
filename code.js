@@ -116,7 +116,7 @@ function linkItDetail(oData) {
       x => `<div class="detail_row"><span class="detail_head">${x}</span>: <span class="detail_body">${oData['detail'][x]}</span></div>`
     ).join('') + '</div>'
 
-  return detail // .replace(/†/g, '<i class="fa-solid fa-cross"></i>')
+  return detail
 }
 
 function linkItFindValue(oData) {
@@ -133,7 +133,6 @@ function linkItCustom(oData) {
   if (!oData['custom']) {
     return ''
   }
-//   return `<span class="custom" /><i class="fa-solid fa-cross"></i></span>`
   return `<span class="custom" />†</span>`
 }
 
@@ -149,7 +148,7 @@ function linkItManuals(oData) {
         rows.push(`<div class="manual_row"><a href="${val}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
       } else {
         var file = `./manuals/${modelName}/${val}`
-        var md5 = (md5s[file] || '').substr(0, 5)
+        var md5 = (md5s[file] || '')
         rows.push(`<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
         seen[file] = true
       }
@@ -159,7 +158,7 @@ function linkItManuals(oData) {
   var files = manualsByName[modelName] || []
   files.forEach(function(file) {
     if (seen[file]) return
-    var md5 = (md5s[file] || '').substr(0, 5)
+    var md5 = (md5s[file] || '')
     var label = file.replace(/^\.\/manuals\/[^/]+\//, '').replace(/\.[^.]+$/, '')
     rows.push(`<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
   })
@@ -181,7 +180,7 @@ function imgIt(oData) {
     var sm   = '.' + IMAGE_PATH + name + '/sm.'   + IMAGE_TYPE
     oData['image'] = main
     oData['image_sm'] = sm
-    text = '<a id="pic_' + name + '" class="pic_modalize" data-collection="gear" data-name="' + name + '" alt="' + alt + '" href="'+ main + '?' + (md5s[main] || '').substr(0, 5) + '">' + '<img class="imgsmall" src="'+ sm + '?' + (md5s[sm] || '').substr(0, 5) + '" /></a>'
+    text = '<a id="pic_' + name + '" class="pic_modalize" data-collection="gear" data-name="' + name + '" alt="' + alt + '" href="'+ main + '?' + (md5s[main] || '') + '">' + '<img class="imgsmall" src="'+ sm + '?' + (md5s[sm] || '') + '" /></a>'
   }
   return text
 }
@@ -443,7 +442,7 @@ function buildStaticSequenceItem(collection, variants, labels, alt) {
 
 function srcFor(entry, variant) {
   var path = './' + entry.dir + '/' + entry.name + '/' + variant + '.' + IMAGE_TYPE
-  var md5  = (md5s[path] || '').substr(0, 5)
+  var md5  = (md5s[path] || '')
   return path + (md5 ? '?' + md5 : '')
 }
 

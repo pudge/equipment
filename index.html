@@ -1,48 +1,32 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-        "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
 <!-- 
     <base href="//gear.pudge.net/">
  -->
-    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="theme-color" content="#000">
 
     <!-- fonts -->
-<!-- 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f4cd074eec.js" crossorigin="anonymous"></script>
- -->
     <link href="vendor/fonts/new-rocker.css" rel="stylesheet">
     <link href="vendor/fonts/karla.css" rel="stylesheet">
     <script src="vendor/fontawesome-kit.js"></script>
 
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="vendor/moment.min.js"></script>
-    <script class="file" type="text/javascript" src="./footer.js?34dc7c2d96a5c9742b503e29bb75ff91"></script>
-    <script class="file" type="text/javascript" src="./lastmod.js?835b568c7d69ba5bbc98c19e3c9294af"></script>
+    <script src="./footer.js?34dc7c2d96a5c9742b503e29bb75ff91"></script>
+    <script src="./lastmod.js?835b568c7d69ba5bbc98c19e3c9294af"></script>
 
     <!-- https://datatables.net/download/ : bootstrap 4, datatables, jquery 4, buttons, responsive, fixedheader -->
-<!-- 
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.6.0/dt-1.12.1/b-2.2.3/fh-3.2.4/r-2.3.0/datatables.min.css"/>
-    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.6.0/dt-1.12.1/b-2.2.3/fh-3.2.4/r-2.3.0/datatables.min.js"></script>
- -->
     <link rel="stylesheet" type="text/css" href="vendor/datatables.min.css"/>
-    <script type="text/javascript" src="vendor/datatables.min.js"></script>
+    <script src="vendor/datatables.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css?39f3027bd3017a3d9fe67c79f3fbbe1b">
-    <script class="file" type="text/javascript" src="./md5s.js?1fa658f5bb8b76f2142abe0b25888a6e"></script>
-    <script class="file" type="text/javascript" src="./conf.js?b58ade49025ef029e2610d643a139000"></script>
-    <script class="file" type="text/javascript" src="./data.js?906fdf796195d8e721b33bd04fa72284"></script>
-    <script class="file" type="text/javascript" src="./code.js?fd73220e8dfe90025c0333dd54c09f39"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css?12c87437259f74364c3c1c710f9bec2e">
+    <script src="./md5s.js?9ac614e4a11f57533b53dde5a34ff691"></script>
+    <script src="./conf.js?b58ade49025ef029e2610d643a139000"></script>
+    <script src="./data.js?0d30a88429198240be0578f02cf282e1"></script>
+    <script src="./code.js?c8f25dab0dd0ac659716c2c678e236ce"></script>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Gear 🎸🤘🏼" />
 
@@ -53,7 +37,7 @@
     <div id="pic_modal" class="modal">
         <div id="pic_caption"><span id="pic_title"></span><span id="pic_variants"></span></div>
         <span id="pic_close">&times;</span>
-        <img class="modal-content" id="pic_img">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="🌉" class="modal-content" id="pic_img">
     </div>
 
     <div id="container">
@@ -62,22 +46,21 @@
             <a class="pic_modalize" data-collection="studios"
                 data-variants="sd,wa-1,wa-2"
                 data-labels="SD,WA 1,WA 2"
-                alt="Pudge&rsquo;s Studio"
                 href="./pic/studios/sd.webp">Studios</a>
             &nbsp;&nbsp;
             <a class="pic_modalize" data-collection="pedalboards"
                 data-variants="mine,kids"
                 data-labels="Mine,Kids&rsquo;"
-                alt="Pudge&rsquo;s Pedalboard"
                 href="./pic/pedalboards/mine.webp">Pedalboards</a>
+            <!-- Pedalboard pics powered by https://pedalplayground.com/ -->
         </span>
         <span class="h6 float-right">
             <select id="filter_tags" onchange="doShow(this.value); return false">
-                <option value=""></option>
-                <option value="main_rig" selected>Main</option>
-                <option value="current_pedal">Pedalboard</option>
-                <option value="kids_pedal">Kids&rsquo; Pedalboard</option>
-                <option value="current_rack">Rack</option>
+                <option value="" label=" "></option>
+                <option value="main_rig" label="Main" selected></option>
+                <option value="current_pedal" label="Pedalboard"></option>
+                <option value="kids_pedal" label="Kids&rsquo; Pedalboard"></option>
+                <option value="current_rack" label="Rack"></option>
             </select>
         </span>
         <table id="equipment" class="display cell-border compact hover order-column row-border stripe" style="width: 100%"></table>
@@ -85,16 +68,9 @@
 
     <div>
         <div>
-            <a href="https://github.com/pudge/equipment" title="GitHub Project"><img src="https://github.com/fluidicon.png" alt="*" class="imgsmaller"></a>
-<!-- 
-            &nbsp;&nbsp;
-            <i class="fa-solid fa-star featured"></i> Featured
- -->
-            &nbsp;&nbsp;
-<!-- 
-            <i class="fa-solid fa-cross"></i> Custom Modification
- -->
             † Custom Modification
+            <br />
+            Code available at <a href="https://github.com/pudge/equipment" title="GitHub Project"><img src="./github.png" alt="GitHub" class="imgsmaller"></a>
         </div>
         <div class="pLastModified">Last modified <span id="lastModified">1973.07.25</span> (rev: <span id="MANIFEST_REV">deadbeef</span><span id="cacheStatus"></span>)</div>
     </div>

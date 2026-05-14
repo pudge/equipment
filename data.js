@@ -2120,35 +2120,6 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Dimensions" : "2.5\" x 4.75\" x 2.25\"",
-         "Input Impedance" : "10 MΩ",
-         "Other" : "",
-         "Output Impedance" : "100 Ω",
-         "Power Consumption" : "25 mA",
-         "Power Supply" : "9 V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.earthquakerdevices.com/plumes",
-      "make" : "EarthQuaker Devices",
-      "manuals" : {
-         "Operation Manual" : "EQD-EU-Plumes-R3.pdf"
-      },
-      "model" : "Plumes",
-      "next" : true,
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
          "Analog Inputs" : "1/4”, XLR, 1/4” return x 2",
          "Analog Outputs" : "Stereo 1/4\" x 2, stereo XLR, 1/4\" send",
          "Computer Interface" : "USB-B",
@@ -2319,35 +2290,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2016"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\" TS",
-         "Analog Outputs" : "1/4\" TS",
-         "Bypass" : "True/Buffered",
-         "Dimensions" : "3.9\" x 2.2\" x 2.2\"",
-         "Input Impedance" : "1 MΩ",
-         "Power Consumption" : "40 mA",
-         "Power Supply" : "9 V",
-         "Serial" : "",
-         "Weight" : "0.64 lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.tcelectronic.com/en/products/0709-AKF",
-      "make" : "tc electronic",
-      "manuals" : {
-         "Quick Start Guide" : "Quick Start Guide.pdf"
-      },
-      "model" : "Zeus",
-      "next" : true,
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
    },
    {
       "category" : "Hardware",

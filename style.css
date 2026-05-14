@@ -60,7 +60,7 @@ img.findvalue {
 span.custom {
     float: right;
     padding-right: 0.1em;
-    filter: grayscale(100%) brightness(125%);
+    color: #C1C1C1;
 }
 
 .checkit { color: #8AFF80 }

@@ -9,7 +9,12 @@ use JSON::XS;
 my $JSON = JSON::XS->new->pretty->canonical;
 
 my %md5s;
-my @main = qw(data.js conf.js code.js footer.js lastmod.js style.css);
+my @main = qw(
+    data.js conf.js code.js
+    footer.js lastmod.js
+    style.css
+    github.png reverb.webp
+);
 
 my $rev = sprintf '%08x', int(rand(2**32));
 
