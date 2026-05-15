@@ -1,5 +1,5 @@
 const md5s = {
-   "./code.js" : "c8f25dab0dd0ac659716c2c678e236ce",
+   "./code.js" : "d65d221b83839d6e7676fc2a7d3e91c7",
    "./conf.js" : "b58ade49025ef029e2610d643a139000",
    "./data.js" : "0d30a88429198240be0578f02cf282e1",
    "./footer.js" : "34dc7c2d96a5c9742b503e29bb75ff91",
@@ -648,6 +648,7 @@ const md5s = {
    "./manuals/ydp223/YDP223.pdf" : "be913fb5737ab4e6cd092edd536ca95d",
    "./manuals/ypt300/YPT300_1.pdf" : "05b566baeb4e9064ab170a87abddcb1d",
    "./manuals/zeus/Quick Start Guide.pdf" : "57fd8927b9c597aca1753d1c95c9ec68",
+   "./md5s.js" : "ae03a563",
    "./pic/pedalboards/kids.webp" : "d87fd6898244119104c9a9bd8378c76c",
    "./pic/pedalboards/mine.webp" : "f2380ba7cc10e936bb35e4f21fd1640f",
    "./pic/studios/sd.webp" : "6b1bd63d8306c93e05c48261a17edb7d",
@@ -664,7 +665,6 @@ const md5s = {
    "./vendor/fonts/font_kit_qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaHUlMZbLXGhmRytc_skey_139a38ebe1800a84_v_v33" : "96f114af2803d0242277d23ab9058aec",
    "./vendor/fonts/karla.css" : "fec9709812b20bec5b6a1fd2a0bcb436",
    "./vendor/fonts/new-rocker.css" : "2c876272fe46fae0e8b1be2b6aa46474",
-   "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078",
-   "MANIFEST_REV" : "36fbe9ea"
+   "./vendor/moment.min.js" : "be51675f16a773d868e992735ecbf078"
 }
 

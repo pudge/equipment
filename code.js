@@ -126,7 +126,7 @@ function linkItFindValue(oData) {
   var link = 'https://reverb.com/marketplace?query='
     + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
     // + '&condition=used'
-  return `<a href="${link}"><img class="findvalue" src="./reverb.webp" /></a>`
+  return `<a href="${link}"><img class="findvalue" src="${md5Src('./reverb.webp')}" /></a>`
 }
 
 function linkItCustom(oData) {
@@ -148,8 +148,7 @@ function linkItManuals(oData) {
         rows.push(`<div class="manual_row"><a href="${val}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
       } else {
         var file = `./manuals/${modelName}/${val}`
-        var md5 = (md5s[file] || '')
-        rows.push(`<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+        rows.push(`<div class="manual_row"><a href="${md5Src(file)}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
         seen[file] = true
       }
     })
@@ -158,9 +157,8 @@ function linkItManuals(oData) {
   var files = manualsByName[modelName] || []
   files.forEach(function(file) {
     if (seen[file]) return
-    var md5 = (md5s[file] || '')
     var label = file.replace(/^\.\/manuals\/[^/]+\//, '').replace(/\.[^.]+$/, '')
-    rows.push(`<div class="manual_row"><a href="${file}?${md5}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+    rows.push(`<div class="manual_row"><a href="${md5Src(file)}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
   })
 
   if (!rows.length) return '<div class="manuals" />'
@@ -180,7 +178,7 @@ function imgIt(oData) {
     var sm   = '.' + IMAGE_PATH + name + '/sm.'   + IMAGE_TYPE
     oData['image'] = main
     oData['image_sm'] = sm
-    text = '<a id="pic_' + name + '" class="pic_modalize" data-collection="gear" data-name="' + name + '" alt="' + alt + '" href="'+ main + '?' + (md5s[main] || '') + '">' + '<img class="imgsmall" src="'+ sm + '?' + (md5s[sm] || '') + '" /></a>'
+    text = '<a id="pic_' + name + '" class="pic_modalize" data-collection="gear" data-name="' + name + '" alt="' + alt + '" href="'+ md5Src(main) + '">' + '<img class="imgsmall" src="'+ md5Src(sm) + '" /></a>'
   }
   return text
 }
@@ -440,10 +438,14 @@ function buildStaticSequenceItem(collection, variants, labels, alt) {
   }]
 }
 
-function srcFor(entry, variant) {
-  var path = './' + entry.dir + '/' + entry.name + '/' + variant + '.' + IMAGE_TYPE
+function md5Src(path) {
   var md5  = (md5s[path] || '')
   return path + (md5 ? '?' + md5 : '')
+}
+
+function srcFor(entry, variant) {
+  var path = './' + entry.dir + '/' + entry.name + '/' + variant + '.' + IMAGE_TYPE
+  return md5Src(path)
 }
 
 function preloadAround(idx) {
@@ -702,7 +704,7 @@ function renderCacheStatus(p) {
 
 $(document).ready(function() {
   setLastMod('#lastModified')
-  $('#MANIFEST_REV').html(md5s['MANIFEST_REV'])
+  $('#MANIFEST_REV').html(md5s['./md5s.js'])
   equipmentInit()
   clearSearchInit()
   modalInit()

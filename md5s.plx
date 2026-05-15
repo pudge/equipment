@@ -23,7 +23,6 @@ my $changes = compare_md5s(open_md5s());
 if ($changes) {
     save_md5s();
     save_index();
-    save_sw();
 }
 exit();
 
@@ -38,13 +37,14 @@ sub get_md5s {
 
     md5sum("vendor/*.*", \%md5s);
     md5sum("vendor/fonts/*", \%md5s);
+
+    $md5s{'./md5s.js'} = $rev;
 }
 
 sub compare_md5s {
     my($old) = @_;
     my $changes = 0;
     for my $f (sort keys %$old) {
-        last if $f eq 'MANIFEST_REV';
         if (! exists $md5s{$f}) {
             $changes++;
             print "Deleted : $f\n";
@@ -56,7 +56,6 @@ sub compare_md5s {
     }
 
     for my $f (sort keys %md5s) {
-        last if $f eq 'MANIFEST_REV';
         if (! exists $old->{$f}) {
             $changes++;
             print "Created : $f\n";
@@ -74,14 +73,12 @@ sub open_md5s {
 
 sub save_md5s {
     open my $fh, '>', 'md5s.js' or die "cannot open md5.js: $!";
-    $md5s{'MANIFEST_REV'} = $rev;
     my $md5s_json = $JSON->encode(\%md5s);
     printf $fh "const md5s = $md5s_json\n";
     close $fh;
 }
 
 sub save_index {
-    md5sum("md5s.js", \%md5s);
     open my $fh, '<', 'index.html' or die "cannot open index.html: $!";
     my $index = join '', <$fh>;
     close $fh;
@@ -92,18 +89,6 @@ sub save_index {
 
     open $fh, '>', 'index.html' or die "cannot open index.html: $!";
     print $fh $index;
-    close $fh;
-}
-
-sub save_sw {
-    open my $fh, '<', 'sw.js' or die "cannot open sw.js: $!";
-    my $sw = join '', <$fh>;
-    close $fh;
-
-    return unless $sw =~ s/(const MANIFEST_REV = ')[^']*(')/$1$rev$2/;
-
-    open $fh, '>', 'sw.js' or die "cannot open sw.js: $!";
-    print $fh $sw;
     close $fh;
 }
 

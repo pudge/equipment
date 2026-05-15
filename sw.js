@@ -1,4 +1,3 @@
-const MANIFEST_REV = '36fbe9ea' // rewritten by md5s.plx on each build
 importScripts('./md5s.js')
 
 const CACHE_PREFIX = 'gear-'
@@ -13,7 +12,7 @@ function isAssetPath(pathname) {
 function manifestEntries() {
   return Object.keys(md5s)
     .filter(k => isAssetPath(k))
-    .map(k => FONT_DIR.test(k) ? k : `${k}?${(md5s[k] || '')`)
+    .map(k => FONT_DIR.test(k) ? k : `${k}?${(md5s[k] || '')}`)
 }
 
 function djb2(s) {
@@ -35,20 +34,36 @@ async function broadcast(msg) {
 
 self.addEventListener('install', (e) => {
   e.waitUntil((async () => {
-    const cache = await caches.open(currentCacheName())
+    const keep = currentCacheName()
+    const cache = await caches.open(keep)
     const urls = SHELL_URLS.concat(manifestEntries())
     cacheProgress = { done: 0, total: urls.length, complete: false }
     broadcast({ type: 'cache-progress', ...cacheProgress })
-    await Promise.all(
-      urls.map(u =>
-        cache.add(new Request(u, { cache: 'reload' }))
-          .catch(err => console.warn('sw precache miss', u, err))
-          .finally(() => {
-            cacheProgress.done++
-            broadcast({ type: 'cache-progress', ...cacheProgress })
-          })
-      )
-    )
+
+    // URL identity == content identity (hash is in the query string), so any
+    // matching entry in an older gear-* cache is byte-identical to a fresh fetch.
+    const oldNames = (await caches.keys())
+      .filter(n => n.startsWith(CACHE_PREFIX) && n !== keep)
+    const oldCaches = await Promise.all(oldNames.map(n => caches.open(n)))
+
+    await Promise.all(urls.map(async u => {
+      try {
+        for (const old of oldCaches) {
+          const hit = await old.match(u)
+          if (hit) {
+            await cache.put(new Request(u), hit.clone())
+            return
+          }
+        }
+        await cache.add(new Request(u, { cache: 'reload' }))
+      } catch (err) {
+        console.warn('sw precache miss', u, err)
+      } finally {
+        cacheProgress.done++
+        broadcast({ type: 'cache-progress', ...cacheProgress })
+      }
+    }))
+
     cacheProgress.complete = true
     broadcast({ type: 'cache-progress', ...cacheProgress })
     self.skipWaiting()
