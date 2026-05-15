@@ -1,10 +1,12 @@
-#!/usr/bin/perl
+#!/usr/bin/perl -s
 use warnings;
 use strict;
 use feature ':5.10';
 
 use Data::Dumper; $Data::Dumper::Sortkeys=1;
 use JSON::XS;
+
+our $force;
 
 my $JSON = JSON::XS->new->pretty->canonical;
 
@@ -20,9 +22,13 @@ my $rev = sprintf '%08x', int(rand(2**32));
 
 get_md5s();
 my $changes = compare_md5s(open_md5s());
-if ($changes) {
+if ($force || $changes) {
     save_md5s();
     save_index();
+    say "Done.";
+}
+else {
+    say "No changes.";
 }
 exit();
 
@@ -45,6 +51,7 @@ sub compare_md5s {
     my($old) = @_;
     my $changes = 0;
     for my $f (sort keys %$old) {
+        next if $f eq './md5s.js';
         if (! exists $md5s{$f}) {
             $changes++;
             print "Deleted : $f\n";
@@ -56,6 +63,7 @@ sub compare_md5s {
     }
 
     for my $f (sort keys %md5s) {
+        next if $f eq './md5s.js';
         if (! exists $old->{$f}) {
             $changes++;
             print "Created : $f\n";

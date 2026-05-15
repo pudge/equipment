@@ -567,12 +567,19 @@ function modalInit() {
     }
   })
 
-  $('#pic_img').on('load', function() {
+  function sizeModalImage() {
+    if (modal.css('display') === 'none') return
+    if (!image[0].complete || !image[0].naturalWidth) return
+
     image.css('width', 'auto')
     image.css('height', 'auto')
 
-    var win_height = $(window).height() - 50
-    var win_width  = $(window).width() - 25
+    var vp = window.visualViewport
+    var vp_height = vp ? vp.height : $(window).height()
+    var vp_width  = vp ? vp.width  : $(window).width()
+    var caption_height = $('#pic_caption').outerHeight(true) || 0
+    var win_height = vp_height - caption_height - 24
+    var win_width  = vp_width - 25
 
     var img_height = image.height()
     var img_width = image.width()
@@ -598,7 +605,20 @@ function modalInit() {
         image.css('width', img_width)
       }
     }
-  })
+  }
+
+  $('#pic_img').on('load', sizeModalImage)
+
+  var sizeRaf = 0
+  var onViewportChange = function() {
+    if (sizeRaf) return
+    sizeRaf = requestAnimationFrame(function() {
+      sizeRaf = 0
+      sizeModalImage()
+    })
+  }
+  window.addEventListener('resize', onViewportChange)
+  window.addEventListener('orientationchange', onViewportChange)
 }
 
 function swapPic(direction) {
