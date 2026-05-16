@@ -14,7 +14,7 @@ my %md5s;
 my @main = qw(
     data.js conf.js code.js
     footer.js lastmod.js
-    style.css
+    dracula-variables.css style.css
     github.png reverb.webp
 );
 

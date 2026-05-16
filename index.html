@@ -22,11 +22,12 @@
     <link rel="stylesheet" type="text/css" href="./vendor/datatables.min.css?932a5121ac2845af7293669d1283419e"/>
     <script src="./vendor/datatables.min.js?7c31eef34afcd50095805985c20b40f2"></script>
 
-    <link rel="stylesheet" type="text/css" href="./style.css?a34634324f69aca751a3fdca0815db0a">
-    <script src="./md5s.js?1fb73a83"></script>
+    <link rel="stylesheet" type="text/css" href="./dracula-variables.css?594c5652a3d8e902b50e517a343bc202">
+    <link rel="stylesheet" type="text/css" href="./style.css?6f4489427bf231253a5499ff866dacbe">
+    <script src="./md5s.js?b699de16"></script>
     <script src="./conf.js?b58ade49025ef029e2610d643a139000"></script>
     <script src="./data.js?0d30a88429198240be0578f02cf282e1"></script>
-    <script src="./code.js?903cd98e924b0f5d07777779a5a09552"></script>
+    <script src="./code.js?dfc6817f8131ff5afc5a944f035fc374"></script>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Gear 🎸🤘🏼" />
 
@@ -40,9 +41,11 @@
         <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="🌉" class="modal-content" id="pic_img">
     </div>
 
+    <div id="loading"><span>🤘</span></div>
+
     <div id="container">
-        <div class="h2">Pudge&rsquo;s Music Gear</div>
-        <span class="h6 float-left">
+        <div class="h2" id="page_title">Pudge&rsquo;s Music Gear 🤘</div>
+        <span id="page_pics" class="h6 float-left">
             <a class="pic_modalize" data-collection="studios"
                 data-variants="sd,wa-1,wa-2"
                 data-labels="SD,WA 1,WA 2"
@@ -54,7 +57,7 @@
                 href="./pic/pedalboards/mine.webp?f2380ba7cc10e936bb35e4f21fd1640f">Pedalboards</a>
             <!-- Pedalboard pics powered by https://pedalplayground.com/ -->
         </span>
-        <span class="h6 float-right">
+        <span id="page_options" class="h6 float-right">
             <select id="filter_tags" onchange="doShow(this.value); return false">
                 <option value="" label=" "></option>
                 <option value="main_rig" label="Main" selected></option>
@@ -66,7 +69,7 @@
         <table id="equipment" class="display cell-border compact hover order-column row-border stripe" style="width: 100%"></table>
     </div>
 
-    <div>
+    <div id="page_footer">
         <div>
             † Custom Modification
             <br />

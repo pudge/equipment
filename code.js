@@ -564,6 +564,9 @@ function modalInit() {
         if (horiz > 0) swapPic('right')
         else           swapPic('left')
       }
+      else if (vert > 0) {
+        close_modal()
+      }
     }
   })
 
@@ -617,6 +620,36 @@ function modelId(oData) {
 function fixModelName(str) {
   return str.replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase()
 }
+
+function colorizeTitle() {
+  var titleColors = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'purple',
+    'cyan',
+    'pink',
+  ].map(s => `--drac-pro-${s}`)
+
+  var title = $('#page_title')
+  var text = title.text()
+  var frag = $(document.createDocumentFragment())
+  var i = 0
+  for (var c of text) {
+    if (/\S/.test(c)) {
+      $('<span/>')
+        .text(c)
+        .css('color', 'var(' + titleColors[i % titleColors.length] + ')')
+        .appendTo(frag)
+      i++
+    } else {
+      frag.append(document.createTextNode(c))
+    }
+  }
+  title.empty().append(frag)
+}
+
 
 function initListeners() {
   window.addEventListener('resize', redrawTable)
@@ -674,10 +707,13 @@ function renderCacheStatus(p) {
   }
 }
 
-$(document).ready(function() {
+$(document).ready(async function() {
+  //colorizeTitle()
   setLastMod('#lastModified')
   $('#MANIFEST_REV').html(md5s['./md5s.js'])
   equipmentInit()
+  $('#loading').remove()
+  $('#page_pics, #page_options, #page_footer').show()
   clearSearchInit()
   modalInit()
   redrawTable()
