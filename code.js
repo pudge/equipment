@@ -488,7 +488,7 @@ function openModalWithSequence(key, seq, startIndex) {
   imageSequence = seq
   currentIndex = Math.max(0, Math.min(startIndex || 0, seq.length - 1))
   currentVariant = null
-  $('#pic_modal').css('display', 'block')
+  $('#pic_modal').css('display', 'grid')
   renderCurrent()
   preloadAround(currentIndex)
 }

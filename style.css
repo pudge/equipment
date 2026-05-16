@@ -94,9 +94,12 @@ a.pic_modalize, a.top_link:active   { color: #8AFF80 }
 /* The Modal (background) */
 #pic_modal {
     display: none; /* Hidden by default */
+    grid-template-rows: auto 1fr;
+    align-items: center;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: max(1em, env(safe-area-inset-top));
+    padding-bottom: max(1em, env(safe-area-inset-bottom));
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -126,7 +129,9 @@ td.dt-center {
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #pic_caption {
     margin: auto;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     max-width: 700px;
     text-align: center;
@@ -136,18 +141,18 @@ td.dt-center {
 }
 
 #pic_title {
-    display: inline-block;
+    line-height: 1.5em;
 }
 
 #pic_variants {
     margin-left: 1em;
     white-space: nowrap;
+    line-height: 1.5em;
 }
 #pic_variants a {
     color: #8AFF80;
-    padding: 0.25em 0.5em;
-    display: inline-block;
-    min-height: 1.5em;
+    padding: 0 0.5em;
+    line-height: 1.5em;
     text-decoration: none;
 }
 #pic_variants a.active {
