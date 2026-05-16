@@ -527,7 +527,7 @@ function modalInit() {
   $('#pic_close').click(close_modal)
   $('#pic_modal').click(close_modal)
   $('#pic_img').click(function() { return false })
-  $('#pic_caption').click(function(e) { e.stopPropagation() })
+  $('#pic_caption').on('click touchstart touchmove touchend', function(e) { e.stopPropagation() })
   $(document).keydown(function(e) {
     if (modal.css('display') == 'none') return
     if (e.key === 'Escape') {
@@ -567,58 +567,10 @@ function modalInit() {
     }
   })
 
-  function sizeModalImage() {
-    if (modal.css('display') === 'none') return
-    if (!image[0].complete || !image[0].naturalWidth) return
+  document.addEventListener('touchmove', function(event) {
+    if (modal.css('display') !== 'none') event.preventDefault()
+  }, { passive: false })
 
-    image.css('width', 'auto')
-    image.css('height', 'auto')
-
-    var vp = window.visualViewport
-    var vp_height = vp ? vp.height : $(window).height()
-    var vp_width  = vp ? vp.width  : $(window).width()
-    var caption_height = $('#pic_caption').outerHeight(true) || 0
-    var win_height = vp_height - caption_height - 24
-    var win_width  = vp_width - 25
-
-    var img_height = image.height()
-    var img_width = image.width()
-
-    var scale = 1
-    if (img_height > win_height) {
-      scale = win_height / img_height
-      img_width *= scale
-      image.css('width', img_width)
-
-      if (img_width > win_width) {
-        img_height *= scale
-        image.css('height', img_height)
-      }
-    }
-    else if (img_width > win_width) {
-      scale = win_width / img_width
-      img_height *= scale
-      image.css('height', img_height)
-
-      if (img_height > win_height) {
-        img_width *= scale
-        image.css('width', img_width)
-      }
-    }
-  }
-
-  $('#pic_img').on('load', sizeModalImage)
-
-  var sizeRaf = 0
-  var onViewportChange = function() {
-    if (sizeRaf) return
-    sizeRaf = requestAnimationFrame(function() {
-      sizeRaf = 0
-      sizeModalImage()
-    })
-  }
-  window.addEventListener('resize', onViewportChange)
-  window.addEventListener('orientationchange', onViewportChange)
 }
 
 function swapPic(direction) {
