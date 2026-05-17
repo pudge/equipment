@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-14T12:00:00+0000")
+var lastModified = new Date("2026-05-17T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -2014,14 +2014,18 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "AD/DA Conversion" : "16 bits",
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
          "Dimensions" : "73mm x 129mm x 59mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
          "Input Impedance" : "1 MΩ",
          "Loop Time" : "16 minutes",
+         "Nominal Input Level" : "-20 dBu",
+         "Nominal Output Level" : "-20 dBu",
          "Output Impedance" : "1 kΩ",
          "Power Consumption" : "50 mA",
          "Power Supply" : "9 V",
+         "Sampling Frequency" : "44.1 kHz",
          "Serial" : "AV 20887",
          "Weight" : "420 g (15 oz)"
       },
@@ -2038,6 +2042,43 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2006"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "AD/DA Conversion" : "32-bit",
+         "Audio Channels" : "Stereo",
+         "Bypass" : "Buffered",
+         "Digital Signal Processing" : "32-bit floating point",
+         "Dimensions" : "73mm x 129mm x 56mm (2 7/8\" x 5 1/8\" x 2 1/4\")",
+         "Input Impedance" : "1 MΩ",
+         "Loop Time" : "13 hours (1.5 hours per track(",
+         "Nominal Input Level" : "-20 dBu",
+         "Nominal Output Level" : "-20 dBu",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "170 mA",
+         "Power Supply" : "9 V",
+         "Sampling Frequency" : "44.1 kHz",
+         "Serial" : "",
+         "Weight" : "450 g (1 lbs)"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.boss.info/us/products/rc-5/",
+      "make" : "BOSS",
+      "manuals" : {
+         "Owner’s Manual" : "RC-5_eng02_W.pdf",
+         "Reference Manual" : "RC-5_reference_eng02_W.pdf"
+      },
+      "model" : "Loop Station RC-5",
+      "next" : true,
+      "notes" : [
+         "looper",
+         "Two-Button Switch"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
