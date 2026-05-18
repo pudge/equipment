@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-17T12:00:00+0000")
+var lastModified = new Date("2026-05-18T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -126,9 +126,15 @@ var equipment = [
       "current_pedal" : true,
       "detail" : {
          "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
+         "Depth" : "3.9\" (99 mm)",
+         "Dynamic Range" : ">107 dB",
+         "Frequency Response" : "10 Hz - 20 kHz",
+         "Height" : "2.6\" (66 mm)",
+         "Line of Sight Range" : "50 ft",
          "Power Consumption" : "1000 mA",
          "Power Supply" : "5 V",
-         "Serial" : "W100M7038017336, W1ROM7244018777"
+         "Serial" : "W100M7038017336, W1ROM7244018777",
+         "Width" : "3.9\" (99 mm)"
       },
       "image" : true,
       "link" : "https://line6.com/relay-wireless/g10-g10s/",
@@ -1735,36 +1741,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\" TS x 2",
-         "Analog Outputs" : "1/4\" TS x 2",
-         "Bypass" : "True",
-         "Computer Interface" : "USB Mini-B",
-         "Dimensions" : "2.1\" x 4.4\" x 5.3\"",
-         "Loop Time" : "5 minutes",
-         "Power Consumption" : "100 mA",
-         "Power Supply" : "9 V",
-         "Serial" : "",
-         "Weight" : "1.2 lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.tcelectronic.com/en/products/0709-AFZ",
-      "make" : "tc electronic",
-      "manuals" : {
-         "Quick Start Guide" : "QSG_TE_0709-AFZ_DITTO X2 LOOPER_WW.pdf"
-      },
-      "model" : "Ditto X2",
-      "next" : true,
-      "notes" : [
-         "looper"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
@@ -1930,26 +1906,26 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\" TS x 2",
-         "Analog Outputs" : "1/4\" TS x 2",
-         "Bypass" : "True",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Bypass" : "True/Buffered",
          "Computer Interface" : "USB Mini-B",
-         "Dimensions" : "2\" x 2.9\" x 4.8\"",
+         "Dimensions" : "1.9\" x 1.9\" x 3.7\"",
          "Input Impedance" : "1 MΩ",
          "Output Impedance" : "100 Ω",
-         "Power Consumption" : "100 mA",
+         "Power Consumption" : "> 100 mA",
          "Power Supply" : "9 V",
          "Serial" : "",
-         "Weight" : "0.75 lbs"
+         "Weight" : "0.44 lbs"
       },
       "hide" : true,
       "image" : true,
-      "link" : "https://www.tcelectronic.com/en/products/0709-AJT",
+      "link" : "https://www.tcelectronic.com/en/products/0709-AJU",
       "make" : "tc electronic",
       "manuals" : {
-         "Quick Start Guide" : "QSG_TE_0709-AJT_INFINITE SAMPLE SUSTAINER_WW.pdf"
+         "Quick Start Guide" : "Quick Start Guide.pdf"
       },
-      "model" : "Infinite",
+      "model" : "Infinite mini",
       "next" : true,
       "notes" : [
          "sustainer"
@@ -2369,7 +2345,8 @@ var equipment = [
          "Dimensions" : "28.2\" x 16.5\" x 1.5\" (front), 2.5\" (back)",
          "Material" : "Aluminum",
          "Mods" : "IEC MOD, SUM MOD2, 4X MOD",
-         "Serial" : ""
+         "Serial" : "",
+         "Underside Clearance" : "1.25\" (front), 2.25\" (back)"
       },
       "hide" : true,
       "image" : true,
