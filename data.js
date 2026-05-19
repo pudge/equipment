@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-18T12:00:00+0000")
+var lastModified = new Date("2026-05-19T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1614,6 +1614,39 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
+         "Circuit" : "Analog",
+         "Controls" : "Level, Gain, Tone",
+         "Dimensions" : "73 mm x 129 mm x 59 mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
+         "Input Impedance" : "1 MΩ",
+         "Nominal Input Level" : "-20 dB",
+         "Nominal Output Level" : "-20 dB",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "18 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "",
+         "Weight" : "360 g (13 oz)"
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.boss.info/us/products/bd-2w/",
+      "make" : "BOSS",
+      "manuals" : {
+         "Owner’s Manual" : "BD-2W_eng02_W.pdf"
+      },
+      "model" : "Blues Driver BD-2w",
+      "next" : true,
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Analog Inputs" : "1/4\" TS",
          "Analog Outputs" : "1/4\" TS",
          "Bypass" : "True/Buffered",
@@ -2137,6 +2170,35 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Dimensions" : "2.5\" x 4.75\" x 2.25\"",
+         "Input Impedance" : "10 MΩ",
+         "Other" : "",
+         "Output Impedance" : "100 Ω",
+         "Power Consumption" : "25 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.earthquakerdevices.com/plumes",
+      "make" : "EarthQuaker Devices",
+      "manuals" : {
+         "Operation Manual" : "EQD-EU-Plumes-R3.pdf"
+      },
+      "model" : "Plumes",
+      "next" : true,
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Analog Inputs" : "1/4”, XLR, 1/4” return x 2",
          "Analog Outputs" : "Stereo 1/4\" x 2, stereo XLR, 1/4\" send",
          "Computer Interface" : "USB-B",
@@ -2245,6 +2307,33 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2025"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Bypass" : "True/Buffered",
+         "Circuit" : "Analog",
+         "Dimensions" : "2.50\" x 4.50\" x 1.5\" (63.5 mm x 114.3 mm x 38.1 mm)",
+         "Power Consumption" : "70.3 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.wamplerpedals.com/products/distortion-overdrive/tumnus-deluxe/",
+      "make" : "Wampler",
+      "manuals" : {
+         "Manual" : "tumnus_deluxe_2019.pdf",
+         "Quick Guide" : "WP_-Tumnus-Deluxe-Wampler-Manual-10-26-21_OL-w-bleed.pdf"
+      },
+      "model" : "Tumnus Deluxe",
+      "next" : true,
+      "notes" : [
+         "overdrive"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
