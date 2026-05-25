@@ -13,6 +13,7 @@ function buildDtColumns(schema) {
   })
 }
 
+var hIdDeNz = false
 var columnMap = {}
 columnMap[COL.MODEL] = COL.CATEGORY
 var anchorText
@@ -126,7 +127,16 @@ function linkItFindValue(oData) {
   var link = 'https://reverb.com/marketplace?query='
     + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
     // + '&condition=used'
-  return `<a href="${link}"><img class="findvalue" src="${md5Src('./reverb.webp')}" /></a>`
+
+  var returnIt = `<a href="${link}"><img class="findvalue" src="${md5Src('./reverb.webp')}" /></a>`
+
+  if (hIdDeNz) {
+    var linkz = 'https://reverb.com/my/collection/search?query='
+      + escape([oData['make'], oData['model']].join(' ').replace(/[^\x00-\x7F]/g, ''))
+    returnIt += `<a href="${linkz}"><img class="findvalue" src="${md5Src('./reverb.webp')}" /></a>`
+  }
+
+  return returnIt
 }
 
 function linkItCustom(oData) {
@@ -215,6 +225,16 @@ function buildImageMaps() {
 // do the table
 
 function equipmentInit() {
+  var uri = window.location.href
+  var query_idx = uri.indexOf('?')
+  var anchor_idx = uri.indexOf('#')
+  var query = query_idx === -1 ? null : anchor_idx === -1 ? uri.substring(query_idx+1) : uri.substring(query_idx+1, anchor_idx)
+  anchorText = anchor_idx === -1 ? 'main_rig' : unescape(uri.substring(anchor_idx+1))
+
+  if (query == 'hidden') {
+    hIdDeNz = true
+  }
+
   buildImageMaps()
 
 //   // custom search
@@ -308,12 +328,7 @@ function equipmentInit() {
   })
 
   // remove hidden elements
-  var uri = window.location.href
-  var query_idx = uri.indexOf('?')
-  var anchor_idx = uri.indexOf('#')
-  var query = query_idx === -1 ? null : anchor_idx === -1 ? uri.substring(query_idx+1) : uri.substring(query_idx+1, anchor_idx)
-  anchorText = anchor_idx === -1 ? 'main_rig' : unescape(uri.substring(anchor_idx+1))
-  if (query != 'hidden') {
+  if (!hIdDeNz) {
     removeElements.reverse().forEach(x => equipment.splice(x, 1))
   }
 

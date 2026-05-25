@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-19T12:00:00+0000")
+var lastModified = new Date("2026-05-25T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1647,6 +1647,32 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Bypass" : "True",
+         "Dimensions" : "3.65\" x 4.65\" x 1.2\"",
+         "Power Consumption" : "10 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "698"
+      },
+      "image" : true,
+      "link" : "https://jhspedals.info/collections/discontinued-rare/products/calhoun-v2-mike-campbell",
+      "make" : "JHS",
+      "manuals" : {
+         "Manual" : "JHS_CALHOUN_V2_manual_EN.pdf"
+      },
+      "model" : "Calhoun V2",
+      "notes" : [
+         "overdrive",
+         "fuzz"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Analog Inputs" : "1/4\" TS",
          "Analog Outputs" : "1/4\" TS",
          "Bypass" : "True/Buffered",
@@ -1667,7 +1693,6 @@ var equipment = [
          "Transposition Range" : "-6 to +5",
          "Weight" : "8.7 oz"
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://www.walrusaudio.com/products/canvas-tuner?variant=47141105369323",
       "make" : "Walrus Audio",
@@ -1675,7 +1700,6 @@ var equipment = [
          "Manual" : "Canvas_Tuner_Digital_Manual_2_2_26.pdf"
       },
       "model" : "Canvas Tuner",
-      "next" : true,
       "notes" : [
          "tuner"
       ],
@@ -1978,15 +2002,13 @@ var equipment = [
          "Power Supply" : "9 V",
          "Serial" : ""
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://jhspedals.info/products/kilt-10",
       "make" : "JHS",
       "manuals" : {
-         "Manual" : "JHS_KILT_10_Manual_Multi.pdf"
+         "Manual" : "JHS_KILT_10_MANUAL_EN.pdf"
       },
       "model" : "Kilt 10",
-      "next" : true,
       "notes" : [
          "distortion"
       ],
@@ -2001,6 +2023,7 @@ var equipment = [
          "Circuit" : "Analog",
          "Dimensions" : "4.5\" x 2.75\" x 2.1\"",
          "Input Impedance" : "130 kΩ",
+         "Note" : "Accepts 12 V",
          "Power Consumption" : "5 mA",
          "Power Supply" : "9 V"
       },
@@ -2121,20 +2144,20 @@ var equipment = [
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
+         "Bypass" : "Buffered",
          "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
+         "Note" : "Dual Power Supply",
          "Power Consumption" : "60 mA",
-         "Power Supply" : "9 V (dual supply)",
+         "Power Supply" : "9 V",
          "Serial" : ""
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory-clean",
       "make" : "JHS",
       "manuals" : {
-         "Manual" : "2236981e27051efc_DBA_MORNING_GLORY_CLEAN_MANUAL_EN_DE_FR_IT_ES_CN.pdf"
+         "Manual" : "JHS_MORNING_GLORY_CLEAN_MANUAL_EN.pdf"
       },
       "model" : "Morning Glory Clean",
-      "next" : true,
       "notes" : [
          "overdrive"
       ],
@@ -2580,7 +2603,6 @@ var equipment = [
          "Serial" : "",
          "Weight" : "0.93lbs"
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-15?variant=45194582524139",
       "make" : "Walrus Audio",
@@ -2588,7 +2610,6 @@ var equipment = [
          "Manual" : "Canvas_Power_Digital_Manual_089a7368-9bbb-4d81-88de-18132ac68626.pdf"
       },
       "model" : "Canvas Power 15",
-      "next" : true,
       "notes" : [
          "pedal power"
       ],
