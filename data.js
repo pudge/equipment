@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-25T12:00:00+0000")
+var lastModified = new Date("2026-05-29T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1139,6 +1139,10 @@ var equipment = [
       "link" : "https://www.audio-technica.com/en-us/ath-m40fs",
       "make" : "Audio Technica",
       "model" : "ATH-M40fs",
+      "notes" : [
+         "WC Padz ATH",
+         "WC BandZ ATH"
+      ],
       "type" : "Headphones",
       "year" : "2004"
    },
@@ -1185,6 +1189,30 @@ var equipment = [
       "model" : "SE215-CL",
       "type" : "Headphones",
       "year" : "2021"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://wickedcushions.com/products/audio-technica-ath-m50x-m40x-headband-cover?variant=42220770787407",
+      "make" : "Wicked Cushions",
+      "model" : "WC BandZ ATH",
+      "notes" : [
+         "ATH-M40fs"
+      ],
+      "type" : "Headphones",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://wickedcushions.com/products/audio-technica-ath-m50x-ear-pads-by-wicked-cushions?variant=39299443425359",
+      "make" : "Wicked Cushions",
+      "model" : "WC Padz ATH",
+      "notes" : [
+         "ATH-M40fs"
+      ],
+      "type" : "Headphones",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -1651,6 +1679,7 @@ var equipment = [
          "Analog Outputs" : "1/4\"",
          "Bypass" : "True",
          "Dimensions" : "3.65\" x 4.65\" x 1.2\"",
+         "Original Purchase Date" : "2018",
          "Power Consumption" : "10 mA",
          "Power Supply" : "9 V",
          "Serial" : "698"
@@ -1688,7 +1717,7 @@ var equipment = [
          "Reference Pitch" : "A4=390 Hz-490 Hz",
          "S/N Ratio" : "98dB @ 1kHz",
          "Scale" : "configurable",
-         "Serial" : "",
+         "Serial" : "10852635",
          "THD" : "0.001% @ 20Hz -20dBu, 0.001% @ 1kHz -20dBu",
          "Transposition Range" : "-6 to +5",
          "Weight" : "8.7 oz"
@@ -1877,7 +1906,7 @@ var equipment = [
          "Output Impedance" : "24 kΩ",
          "Power Consumption" : "4.7 mA",
          "Power Supply" : "9 V",
-         "Serial" : "",
+         "Serial" : "AC76P220",
          "Weight" : "10.6 oz"
       },
       "image" : true,
@@ -2000,7 +2029,7 @@ var equipment = [
          "Other" : "Footswitch 1/4\" input",
          "Power Consumption" : "64 mA",
          "Power Supply" : "9 V",
-         "Serial" : ""
+         "Serial" : "12588954"
       },
       "image" : true,
       "link" : "https://jhspedals.info/products/kilt-10",
@@ -2149,7 +2178,7 @@ var equipment = [
          "Note" : "Dual Power Supply",
          "Power Consumption" : "60 mA",
          "Power Supply" : "9 V",
-         "Serial" : ""
+         "Serial" : "05940660"
       },
       "image" : true,
       "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory-clean",
@@ -2600,7 +2629,7 @@ var equipment = [
          "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
          "Outputs" : "9V 500mA (13); 9V 500mA/12V 375 mA/18V 250mA (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
          "Power Supply" : "24V 4A / 96W",
-         "Serial" : "",
+         "Serial" : "1089US6114",
          "Weight" : "0.93lbs"
       },
       "image" : true,
@@ -4481,6 +4510,7 @@ var links = {
    "Wampler" : "https://www.wamplerpedals.com/",
    "Warwick" : "https://www.warwick.de/en/Warwick-.html",
    "Washburn" : "https://www.washburn.com/",
+   "Wicked Cushions" : "https://wickedcushions.com/",
    "Wittner" : "https://www.wittner-gmbh.de/",
    "Yamaha" : "https://usa.yamaha.com/",
    "Zildjian" : "https://zildjian.com/",
