@@ -1,5 +1,5 @@
 const md5s = {
-   "./code.js" : "6c81886ec1145c1dacaa449ad6fe9dde",
+   "./code.js" : "f7eb0397f3c3aafe7b01a757ad66093c",
    "./conf.js" : "b58ade49025ef029e2610d643a139000",
    "./data.js" : "375494268f4fbf2993f83e2f9053f7e4",
    "./dracula-variables.css" : "594c5652a3d8e902b50e517a343bc202",
@@ -681,7 +681,7 @@ const md5s = {
    "./manuals/ydp223/YDP223.pdf" : "be913fb5737ab4e6cd092edd536ca95d",
    "./manuals/ypt300/YPT300_1.pdf" : "05b566baeb4e9064ab170a87abddcb1d",
    "./manuals/zeus/Quick Start Guide.pdf" : "57fd8927b9c597aca1753d1c95c9ec68",
-   "./md5s.js" : "61b9bb25",
+   "./md5s.js" : "2a5291c6",
    "./pic/pedalboards/kids-20260501.webp" : "d87fd6898244119104c9a9bd8378c76c",
    "./pic/pedalboards/mine-20260501.webp" : "f2380ba7cc10e936bb35e4f21fd1640f",
    "./pic/studios/sd.webp" : "6b1bd63d8306c93e05c48261a17edb7d",

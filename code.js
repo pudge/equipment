@@ -128,13 +128,7 @@ function linkItFindValue(oData) {
     + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
     // + '&condition=used'
 
-  var returnIt = `<a href="${link}"><img class="findvalue" src="${md5Src('./reverb.webp')}" /></a>`
-
-  if (hIdDeNz) {
-    var linkz = 'https://reverb.com/my/collection/search?query='
-      + escape([oData['make'], oData['model']].join(' ').replace(/[^\x00-\x7F]/g, ''))
-    returnIt += `<a href="${linkz}"><img class="findvalue" src="${md5Src('./reverb.webp')}" /></a>`
-  }
+  var returnIt = `<a href="${link}"><img class="findvalue" src="${md5Src('./reverb.webp')}" alt="Find on Reverb" /></a>`
 
   return returnIt
 }
