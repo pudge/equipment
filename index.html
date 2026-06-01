@@ -1,81 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-<!-- 
-    <base href="//gear.pudge.net/">
- -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="theme-color" content="#000">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="theme-color" content="#000">
 
-    <!-- fonts -->
-    <link href="./vendor/fonts/new-rocker.css" rel="stylesheet">
-    <link href="./vendor/fonts/karla.css" rel="stylesheet">
-    <script src="./vendor/fontawesome-kit.js?47ad0026a54a9f7270be005c2abcc277"></script>
+        <!-- fonts -->
+        <link href="./vendor/fonts/new-rocker.css" rel="stylesheet">
+        <link href="./vendor/fonts/karla.css" rel="stylesheet">
+        <script src="./vendor/fontawesome-kit.js?47ad0026a54a9f7270be005c2abcc277"></script>
 
-    <script src="./vendor/moment.min.js?be51675f16a773d868e992735ecbf078"></script>
-    <script src="./footer.js?34dc7c2d96a5c9742b503e29bb75ff91"></script>
-    <script src="./lastmod.js?835b568c7d69ba5bbc98c19e3c9294af"></script>
+        <script src="./vendor/moment.min.js?be51675f16a773d868e992735ecbf078"></script>
+        <script src="./imageMapResizer.js?91a0319dfb70a545c9dd73e63338d51c"></script>
+        <script src="./footer.js?34dc7c2d96a5c9742b503e29bb75ff91"></script>
+        <script src="./lastmod.js?835b568c7d69ba5bbc98c19e3c9294af"></script>
 
-    <!-- https://datatables.net/download/ : bootstrap 4, datatables, jquery 4, buttons, responsive, fixedheader -->
-    <link rel="stylesheet" type="text/css" href="./vendor/datatables.min.css?932a5121ac2845af7293669d1283419e"/>
-    <script src="./vendor/datatables.min.js?7c31eef34afcd50095805985c20b40f2"></script>
+        <!-- https://datatables.net/download/ : bootstrap 4, datatables, jquery 4, buttons, responsive, fixedheader -->
+        <link rel="stylesheet" type="text/css" href="./vendor/datatables.min.css?932a5121ac2845af7293669d1283419e"/>
+        <script src="./vendor/datatables.min.js?7c31eef34afcd50095805985c20b40f2"></script>
 
-    <link rel="stylesheet" type="text/css" href="./dracula-variables.css?594c5652a3d8e902b50e517a343bc202">
-    <link rel="stylesheet" type="text/css" href="./style.css?6f4489427bf231253a5499ff866dacbe">
-    <script src="./md5s.js?2a5291c6"></script>
-    <script src="./conf.js?b58ade49025ef029e2610d643a139000"></script>
-    <script src="./data.js?375494268f4fbf2993f83e2f9053f7e4"></script>
-    <script src="./code.js?f7eb0397f3c3aafe7b01a757ad66093c"></script>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="Gear 🎸🤘🏼" />
+        <link rel="stylesheet" type="text/css" href="./dracula-variables.css?594c5652a3d8e902b50e517a343bc202">
+        <link rel="stylesheet" type="text/css" href="./style.css?12ed2830958684d6afc1a1e91d6b1519">
+        <script src="./md5s.js?c0ed0de9"></script>
+        <script src="./conf.js?b58ade49025ef029e2610d643a139000"></script>
+        <script src="./data.js?375494268f4fbf2993f83e2f9053f7e4"></script>
+        <script src="./code.js?218b2e8fc28a2666f9c2968ef0934135"></script>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Gear 🎸🤘🏼" />
 
-    <title>Pudge&rsquo;s Music Gear 🎸🤘🏼</title>
-  </head>
-  <body>
-  <div id="main"> 
-    <div id="pic_modal" class="modal">
-        <div id="pic_caption"><span id="pic_title"></span><span id="pic_variants"></span></div>
-        <span id="pic_close">&times;</span>
-        <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="🌉" class="modal-content" id="pic_img">
-    </div>
-
-    <div id="loading"><span>🤘</span></div>
-
-    <div id="container">
-        <div class="h2" id="page_title">Pudge&rsquo;s Music Gear 🤘</div>
-        <span id="page_pics" class="h6 float-left">
-            <a class="pic_modalize" data-collection="studios"
-                data-variants="sd,wa-1,wa-2"
-                data-labels="SD,WA 1,WA 2"
-                href="./pic/studios/sd.webp?6b1bd63d8306c93e05c48261a17edb7d">Studios</a>
-            &nbsp;&nbsp;
-            <a class="pic_modalize" data-collection="pedalboards"
-                data-variants="mine-20260501,kids-20260501"
-                data-labels="Mine,Kids&rsquo;"
-                href="./pic/pedalboards/mine-20260501.webp?f2380ba7cc10e936bb35e4f21fd1640f">Pedalboards</a>
-            <!-- Pedalboard pics powered by https://pedalplayground.com/ -->
-        </span>
-        <span id="page_options" class="h6 float-right">
-            <select id="filter_tags" onchange="doShow(this.value); return false">
-                <option value="" label=" "></option>
-                <option value="main_rig" label="Main" selected></option>
-                <option value="current_pedal" label="Pedalboard"></option>
-                <option value="kids_pedal" label="Kids&rsquo; Pedalboard"></option>
-                <option value="current_rack" label="Rack"></option>
-            </select>
-        </span>
-        <table id="equipment" class="display cell-border compact hover order-column row-border stripe" style="width: 100%"></table>
-    </div>
-
-    <div id="page_footer">
-        <div>
-            † Custom
-            <br />
-            Source Code at <a href="https://github.com/pudge/equipment" title="GitHub Project"><img src="./github.png?ca1ef68de99bb1c21b54a2de9c2f5603" alt="GitHub" class="imgsmaller"></a>
+        <title>Pudge&rsquo;s Music Gear 🎸🤘🏼</title>
+    </head>
+    <body>
+    <div id="main">
+        <div id="pic_modal" class="modal">
+            <div id="pic_caption"><span id="pic_title"></span><span id="pic_variants"></span></div>
+            <span id="pic_close">&times;</span>
+            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="🌉" class="modal-content" id="pic_img">
         </div>
-        <div class="pLastModified">Last modified <span id="lastModified">1973.07.25</span> (rev: <span id="MANIFEST_REV">deadbeef</span><span id="cacheStatus"></span>)</div>
+
+        <div id="loading"><span>🤘</span></div>
+
+        <div id="container">
+            <div class="h2" id="page_title">Pudge&rsquo;s Music Gear 🤘</div>
+
+            <!-- add top custom images and maps here! -->
+            <span id="page_pics" class="h6 float-left">
+                <a class="pic_modalize" data-collection="studios"
+                    data-variants="sd,wa-1,wa-2"
+                    data-labels="SD,WA 1,WA 2"
+                    href="./pic/studios/sd.webp?6b1bd63d8306c93e05c48261a17edb7d">Studios</a>
+                &nbsp;&nbsp;
+                <a class="pic_modalize" data-collection="pedalboards"
+                    data-variants="mine-20260501,kids-20260501"
+                    data-labels="Mine,Kids&rsquo;"
+                    href="./pic/pedalboards/mine-20260501.webp?f2380ba7cc10e936bb35e4f21fd1640f">Pedalboards</a>
+                <!-- Pedalboard pics powered by https://pedalplayground.com/ -->
+            </span>
+            <span id="page_options" class="h6 float-right">
+                <select id="filter_tags" onchange="doShow(this.value); return false">
+                    <option value="" label=" "></option>
+                    <option value="main_rig" label="Main" selected></option>
+                    <option value="current_pedal" label="Pedalboard"></option>
+                    <option value="kids_pedal" label="Kids&rsquo; Pedalboard"></option>
+                    <option value="current_rack" label="Rack"></option>
+                </select>
+            </span>
+            <map name="mine-20260501">
+                <area shape="rect" href="#" coords="550,32,1201,197"        alt="GD-02">
+                <area shape="rect" href="#" coords="253,311,465,736"        alt="Power Manager PLUS">
+                <area shape="rect" href="#" coords="515,297,923,711"        alt="Relay G10">
+                <area shape="rect" href="#" coords="1001,259,1633,761"      alt="Deluxe Bass Big Muff Pi">
+                <area shape="rect" href="#" coords="1689,267,1971,751"      alt="Nano Big Muff Pi">
+                <area shape="rect" href="#" coords="155,774,450,1314"       alt="Loop Station RC-2">
+                <area shape="rect" href="#" coords="597,833,806,1254"       alt="Two-Button Switch">
+                <area shape="rect" href="#" coords="953,793,1588,1294"      alt="Metal Muff">
+                <area shape="rect" href="#" coords="1681,814,1962,1296"     alt="Gran Torino">
+                <area shape="rect" href="#" coords="134,278,2212,1325"      alt="RockHouse">
+                <area shape="rect" href="#" coords="2400,285,4536,1278"     alt="POD X3 Live">
+            </map>
+            <map name="kids-20260501">
+                <area shape="rect" href="#" coords="167,237,352,633"        alt="Reverb Mini">
+                <area shape="rect" href="#" coords="446,261,596,631"        alt="GT EQ Mini">
+                <area shape="rect" href="#" coords="721,261,870,631"        alt="Dumble Mini">
+                <area shape="rect" href="#" coords="985,255,1135,626"       alt="Sandwich Comp Mini">
+                <area shape="rect" href="#" coords="1242,205,1495,680"      alt="Lizard Queen">
+            </map>
+            <!-- end top custom images and maps -->
+
+            <table id="equipment" class="display cell-border compact hover order-column row-border stripe" style="width: 100%"></table>
+        </div>
+
+        <div id="page_footer">
+            <div>
+                † Custom
+                <br />
+                Source Code at <a href="https://github.com/pudge/equipment" title="GitHub Project"><img src="./github.png?ca1ef68de99bb1c21b54a2de9c2f5603" alt="GitHub" class="imgsmaller"></a>
+            </div>
+            <div class="pLastModified">Last modified <span id="lastModified">1973.07.25</span> (rev: <span id="MANIFEST_REV">deadbeef</span><span id="cacheStatus"></span>)</div>
+        </div>
     </div>
-  </div></body>
+    </body>
 </html>

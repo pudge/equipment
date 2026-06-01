@@ -13,6 +13,7 @@ my $JSON = JSON::XS->new->pretty->canonical;
 my %md5s;
 my @main = qw(
     data.js conf.js code.js
+    imageMapResizer.js
     footer.js lastmod.js
     dracula-variables.css style.css
     github.png reverb.webp

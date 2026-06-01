@@ -26,6 +26,7 @@ var imageSequence = []
 var currentIndex = -1
 var currentVariant = null
 var currentSequenceKey = null
+var lastVariantByCollection = {}
 
 // link handling
 
@@ -470,8 +471,12 @@ function renderCurrent() {
   if (currentIndex < 0 || currentIndex >= imageSequence.length) return
   var entry = imageSequence[currentIndex]
   var variant = currentVariant || entry.variants[0]
+  if (currentSequenceKey && currentSequenceKey !== 'gear') {
+    lastVariantByCollection[currentSequenceKey] = variant
+  }
   $('#pic_img').attr('src', srcFor(entry, variant))
   $('#pic_title').text(entry.alt)
+  setImageMap($('#pic_img'), variant)
 
   var strip = $('#pic_variants').empty()
   if (entry.variants.length > 1) {
@@ -491,12 +496,34 @@ function renderCurrent() {
   }
 }
 
+function setImageMap(img, mapName) {
+  var map = $('map').filter(function () {
+    return this.name === mapName
+  })
+
+  if (map.length) {
+    img.attr('usemap', '#' + mapName)
+  } else {
+    img.removeAttr('usemap')
+  }
+}
+
+function followImageMap(name) {
+  doShow(name)
+  $('#pic_close').click()
+}
+
+
 function openModalWithSequence(key, seq, startIndex) {
   if (!seq.length) return
   currentSequenceKey = key
   imageSequence = seq
   currentIndex = Math.max(0, Math.min(startIndex || 0, seq.length - 1))
-  currentVariant = null
+  var remembered = lastVariantByCollection[key]
+  var available = seq[currentIndex] && seq[currentIndex].variants
+  currentVariant = (remembered && available && available.indexOf(remembered) !== -1)
+    ? remembered
+    : null
   $('#pic_modal').css('display', 'grid')
   renderCurrent()
   preloadAround(currentIndex)
@@ -524,7 +551,6 @@ function picClick(t, e) {
 
 function modalInit() {
   var modal = $('#pic_modal')
-  var image = $('#pic_img')
 
   var close_modal = function() {
     modal.css('display', 'none')
@@ -536,6 +562,9 @@ function modalInit() {
   $('#pic_close').click(close_modal)
   $('#pic_modal').click(close_modal)
   $('#pic_img').click(function() { return false })
+  $('#pic_img').on('load', function() {
+    if (this.getAttribute('usemap')) imageMapResize()
+  })
   $('#pic_caption').on('click touchstart touchmove touchend', function(e) { e.stopPropagation() })
   $(document).keydown(function(e) {
     if (modal.css('display') == 'none') return
@@ -716,6 +745,14 @@ function renderCacheStatus(p) {
   }
 }
 
+function initMapResizing() {
+  $('map area').on('click', function (e) {
+    e.preventDefault()
+    followImageMap(this.alt)
+    return false
+  });
+}
+
 $(document).ready(async function() {
   //colorizeTitle()
   setLastMod('#lastModified')
@@ -728,4 +765,5 @@ $(document).ready(async function() {
   redrawTable()
   initListeners()
   initCache()
+  initMapResizing()
 })

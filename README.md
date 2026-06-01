@@ -19,3 +19,7 @@ Then you put your images in `images/hd28/` (`main.webp` for the main big image, 
 And any manuals go in `manuals/hd28/`.
 
 That’s it! Have fun. Hit me up if you use it, I’d like to know.
+
+### Custom images, and popup
+
+In the top left I have a list of series of images: pictures of studios, and of pedalboards. Pretty neat. This is all configured directly in `index.html`. And each image can have an image map associated with it, so you can click on a part of the image, and it will select the thing you clicked on in the table! Have fun with that.

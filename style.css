@@ -160,6 +160,8 @@ td.dt-center {
 
 }
 
+map area { cursor: default }
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #pic_caption {
     margin: auto;
