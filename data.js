@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-29T12:00:00+0000")
+var lastModified = new Date("2026-05-31T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1284,8 +1284,14 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Computer Interface" : "USB-B",
+         "Dimensions" : "42 cm x 23.7 cm x 7.62 cm",
+         "Keys" : "25",
          "MIDI" : "Out x 2",
-         "Serial" : "2105084"
+         "Polyphony" : "10 keys",
+         "Power Consumption" : "500 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "2105084",
+         "Weight" : "1.4 kg"
       },
       "image" : true,
       "link" : "https://www.m-audio.com/products/browse/category/keyboards-and-controllers",
@@ -1688,7 +1694,11 @@ var equipment = [
       "link" : "https://jhspedals.info/collections/discontinued-rare/products/calhoun-v2-mike-campbell",
       "make" : "JHS",
       "manuals" : {
-         "Manual" : "JHS_CALHOUN_V2_manual_EN.pdf"
+         "Manual" : "JHS_CALHOUN_V2_manual_EN.pdf",
+         "Manual - Firefly" : "JHS_FIREFLY_manual_EN.pdf",
+         "Manual - Twin Twelve" : "JHS_TWIN_TWELVE_manual_EN.pdf",
+         "Web Page - Firefly" : "https://jhspedals.info/products/firefly",
+         "Web Page - Twin Twelve" : "https://jhspedals.info/products/twin-twelve-drive"
       },
       "model" : "Calhoun V2",
       "notes" : [
