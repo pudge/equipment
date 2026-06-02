@@ -1019,6 +1019,7 @@ var equipment = [
          "MkI",
          "FBV Express"
       ],
+      "pop_brian" : true,
       "type" : "Amplifier",
       "year" : "2015",
       "year_uncertain" : true
@@ -3386,6 +3387,7 @@ var equipment = [
       "link" : "https://www.tama.com/usa/products/hardware/snare_stands/",
       "make" : "Tama",
       "model" : "HS10 Swingstar",
+      "pop_george" : true,
       "type" : "Instrument Stand",
       "year" : "2007"
    },
@@ -3402,7 +3404,6 @@ var equipment = [
       "notes" : [
          "DD-55C"
       ],
-      "pop_george" : true,
       "type" : "Instrument Stand",
       "year" : "2026"
    },
