@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-05-31T12:00:00+0000")
+var lastModified = new Date("2026-06-02T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -2446,6 +2446,34 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
+      "hide" : true,
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/Two-Button-Micro-Footswitch-Boss-DD-500-RC-500-MD-500etc-HANDMADE-IN-USA_p_472.html",
+      "make" : "Sweet Foot Pedals",
+      "model" : "Two-Button Micro Switch",
+      "next" : true,
+      "notes" : [
+         "Loop Station RC-5"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "hide" : true,
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/Footswitch-for-JHS-Red-Remote-Morning-Glory-V4-SuperBolt-V2-Twin-Rwelve-V2-Double-Barrel-V4-Switchback-Boss-Angry-Driver--HANDMADE-IN-USA_p_441.html",
+      "make" : "Sweet Foot Pedals",
+      "model" : "Tiny Tap Switch",
+      "next" : true,
+      "notes" : [
+         "Kilt 10"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
       "detail" : {
          "Dimensions" : "9.25\" x 2.76\" x 3.94\""
       },
@@ -2991,6 +3019,7 @@ var equipment = [
       "main_rig" : true,
       "make" : "Yamaha",
       "manuals" : {
+         "50 Greats for Piano" : "yamaha-50-greats-piano.pdf",
          "Manual" : "YDP223.pdf"
       },
       "model" : "YDP-223",
@@ -3356,6 +3385,22 @@ var equipment = [
       "model" : "HS10 Swingstar",
       "type" : "Instrument Stand",
       "year" : "2007"
+   },
+   {
+      "category" : "Stands etc.",
+      "detail" : {
+         "Height" : "14.2\"-22.8\"",
+         "Size" : "10\"-14\" snare"
+      },
+      "image" : true,
+      "link" : "https://us.donnermusic.com/collections/electronic-drums",
+      "make" : "Donner",
+      "model" : "Snare Drum Stand",
+      "notes" : [
+         "DD-55C"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2026"
    },
    {
       "category" : "Stands etc.",
@@ -4433,6 +4478,7 @@ var links = {
    "DR Strings" : "https://www.drstrings.com/",
    "Daisy Rock" : "https://www.daisyrock.com/",
    "Digitech" : "https://www.digitech.com/",
+   "Donner" : "https://us.donnermusic.com/",
    "Dozzly" : "",
    "Dubreq" : "https://stylophone.com/",
    "Dunlop" : "https://www.jimdunlop.com/",

@@ -45,7 +45,6 @@ make_path('vendor/fonts');
 for my $f (@FETCH) {
     fetch_one($f);
 }
-update_index();
 exit();
 
 sub fetch_one {
@@ -97,28 +96,4 @@ sub dirname_of {
     my ($p) = @_;
     (my $d = $p) =~ s!/[^/]+$!!;
     return $d eq $p ? '' : $d;
-}
-
-sub update_index {
-    open my $fh, '<', 'index.html' or die "cannot open index.html: $!";
-    my $html = join '', <$fh>;
-    close $fh;
-
-    # Replace each CDN URL with its local path.
-    for my $f (@FETCH) {
-        my $from = $f->{url};
-        my $to   = $f->{local};
-        $html =~ s{\Q$from\E}{$to}g;
-    }
-
-    # Preconnects are no longer useful once fonts are local. Strip them.
-    $html =~ s{^\s*<link\s+rel="preconnect"\s+href="https://fonts\.(?:googleapis|gstatic)\.com"[^>]*>\s*\n}{}gm;
-
-    # Cross-origin hints are wrong now that the files are same-origin. Strip them.
-    $html =~ s{\s+crossorigin(?:="[^"]*")?}{}g;
-    $html =~ s{\s+referrerpolicy="[^"]*"}{}g;
-
-    open $fh, '>', 'index.html' or die "cannot open index.html: $!";
-    print $fh $html;
-    close $fh;
 }
