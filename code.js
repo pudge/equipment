@@ -268,6 +268,11 @@ function equipmentInit() {
         links[x['make'] + ' ' + x['model'] + ' ' + x['type']] = x['link']
       }
     }
+    for (const key in x) {
+      if (key.startsWith("pop_") && x[key] === true) {
+        x[key] = key
+      }
+    }
 
     if (x['hide']) { // || x['not_mine']) {
       removeElements.push(index)
@@ -410,6 +415,11 @@ function drawDropdowns(i) {
 // misc events
 
 function doShow(item) {
+  const optionVal = $('#filter_tags').val()
+  if (optionVal !== '' && optionVal !== item) {
+    $('#filter_tags').val('').trigger('change')
+  }
+
   var table = $('#equipment').dataTable().api().table()
   table.search(item).draw()
   table.columns().search('').draw()
@@ -659,39 +669,10 @@ function fixModelName(str) {
   return str.replace(/&\w+?;/g, '').replace(/\W+/g, '').toLowerCase()
 }
 
-function colorizeTitle() {
-  var titleColors = [
-    'red',
-    'orange',
-    'yellow',
-    'green',
-    'purple',
-    'cyan',
-    'pink',
-  ].map(s => `--drac-pro-${s}`)
-
-  var title = $('#page_title')
-  var text = title.text()
-  var frag = $(document.createDocumentFragment())
-  var i = 0
-  for (var c of text) {
-    if (/\S/.test(c)) {
-      $('<span/>')
-        .text(c)
-        .css('color', 'var(' + titleColors[i % titleColors.length] + ')')
-        .appendTo(frag)
-      i++
-    } else {
-      frag.append(document.createTextNode(c))
-    }
-  }
-  title.empty().append(frag)
-}
-
-
 function initListeners() {
   window.addEventListener('resize', redrawTable)
   window.addEventListener('orientationchange', redrawTable)
+  $('#filter_tags').val(anchorText).trigger('change')
 }
 
 function initCache() {
@@ -754,11 +735,9 @@ function initMapResizing() {
 }
 
 $(document).ready(async function() {
-  //colorizeTitle()
   setLastMod('#lastModified')
   $('#MANIFEST_REV').html(md5s['./md5s.js'])
   equipmentInit()
-  $('#loading').remove()
   $('#page_pics, #page_options, #page_footer').show()
   clearSearchInit()
   modalInit()
@@ -766,4 +745,5 @@ $(document).ready(async function() {
   initListeners()
   initCache()
   initMapResizing()
+  $('#loading').remove()
 })

@@ -108,6 +108,7 @@ a.pic_modalize, a.top_link:active   { color: var(--drac-pro-green) }
 .h2 {
     font-family: 'New Rocker', luminari;
     text-align: center;
+    font-size: 2em;
 }
 
 /* Style the Image Used to Trigger the Modal */

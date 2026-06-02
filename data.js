@@ -990,6 +990,7 @@ var equipment = [
       "notes" : [
          "guitar"
       ],
+      "pop_brian" : true,
       "type" : "Amplifier",
       "year" : "2024"
    },
@@ -3146,6 +3147,7 @@ var equipment = [
          "Manual" : "dd55.pdf"
       },
       "model" : "DD-55C",
+      "pop_george" : true,
       "type" : "Drums",
       "year" : "2007"
    },
@@ -3292,6 +3294,7 @@ var equipment = [
       "notes" : [
          "guitar"
       ],
+      "pop_brian" : true,
       "type" : "Instrument Stand",
       "year" : "2023"
    },
@@ -3399,6 +3402,7 @@ var equipment = [
       "notes" : [
          "DD-55C"
       ],
+      "pop_george" : true,
       "type" : "Instrument Stand",
       "year" : "2026"
    },
@@ -3595,6 +3599,7 @@ var equipment = [
          "XTAPB1047",
          "Nanoflex"
       ],
+      "pop_brian" : true,
       "strings" : "XTAPB1047",
       "type" : "Acoustic Guitar",
       "year" : "2024"
@@ -3770,6 +3775,7 @@ var equipment = [
       "notes" : [
          "XTAPB1253 (2023-10-16)"
       ],
+      "pop_lucy" : true,
       "strings" : "XTAPB1253",
       "type" : "Acoustic Guitar",
       "year" : "2014"
@@ -3802,6 +3808,7 @@ var equipment = [
       "notes" : [
          "XTAPB1356 (2024-03-16)"
       ],
+      "pop_brian" : true,
       "strings" : "XTAPB1356",
       "type" : "Acoustic Guitar",
       "year" : "2021"
@@ -4132,6 +4139,7 @@ var equipment = [
       "notes" : [
          "EXL110 (2023-10-01)"
       ],
+      "pop_brian" : true,
       "strings" : "EXL110",
       "type" : "Electric Guitar",
       "year" : "2023"
@@ -4392,6 +4400,7 @@ var equipment = [
          "Ukadelic",
          "GBE-UKE-SOP"
       ],
+      "pop_charlotte" : true,
       "strings" : "EJ88S",
       "type" : "Ukulele",
       "year" : "2024"
@@ -4430,6 +4439,7 @@ var equipment = [
          "Makala",
          "GBE-UKE-SOP"
       ],
+      "pop_charlotte" : true,
       "strings" : "EJ88S",
       "type" : "Ukulele",
       "year" : "2000s"
@@ -4460,6 +4470,7 @@ var equipment = [
          "Soprano",
          "GBE-UKE-SOP"
       ],
+      "pop_brian" : true,
       "strings" : "EJ88S",
       "type" : "Ukulele",
       "year" : "2015"

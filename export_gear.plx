@@ -168,7 +168,7 @@ sub idx {
 sub export_numbers {
     my $script = <<"EOS";
 tell application "Numbers"
-	export document 1 as CSV to POSIX file "$ENV{HOME}/Downloads/Guitar Strings"
+	export document of window "Gear.numbers" as CSV to POSIX file "$ENV{HOME}/Downloads/Guitar Strings"
 end tell
 EOS
 

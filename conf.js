@@ -53,6 +53,10 @@ const equipment_schema = [
   { name: 'inactive',       visible: false, kind: 'bool' },
   { name: 'strings',        visible: false, kind: 'str' },
   { name: 'link',           visible: false, kind: 'str' },
+  { name: 'pop_lucy',       visible: false, kind: 'bool' },
+  { name: 'pop_brian',      visible: false, kind: 'bool' },
+  { name: 'pop_george',     visible: false, kind: 'bool' },
+  { name: 'pop_charlotte',  visible: false, kind: 'bool' },
 ]
 
 // Category sort priorities.

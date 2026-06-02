@@ -1,4 +1,4 @@
-# Pudge’s Gear 🤘
+# 🎸 Pudge’s Music Gear 🤘
 
 ## Description
 
