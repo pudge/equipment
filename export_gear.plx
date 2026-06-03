@@ -173,7 +173,6 @@ end tell
 EOS
 
     system(osascript => '-e', $script);
-
 }
 
 __END__

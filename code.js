@@ -13,6 +13,8 @@ function buildDtColumns(schema) {
   })
 }
 
+const baseURL = window.location.origin + window.location.pathname
+
 var hIdDeNz = false
 var columnMap = {}
 columnMap[COL.MODEL] = COL.CATEGORY
@@ -70,15 +72,15 @@ function linkItNotes(oData) {
     thisData.push('KIDS_PEDAL')
   }
 
-  var icons = [ clipIt( modelId(oData) ) ]
+  var icons = [ externalLinkIt(modelId(oData)), clipIt( modelId(oData) ) ]
   var newData = []
   thisData.forEach(x => {
     if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL') {
       icons.push(
-        x === 'LINKME'
-          ? linkShow(oData['model'], '\u{1F517}')
-        : x === 'LINKEDME'
-          ? linkShow(oData['model'], '\u{1F578}')
+        x === 'LINKME' || x === 'LINKEDME'
+          ? linkShow(oData['model'], '\u{1F578}', 'show related')
+//         : x === 'LINKEDME'
+//           ? linkShow(oData['model'], '\u{1F517}', 'show related')
         : x === 'NOTMINE'
           ? linkShow('', '\u{1F91D}', 'holding for a friend')
         : x === 'HIDDEN'
@@ -169,6 +171,18 @@ function linkItManuals(oData) {
   if (!rows.length) return '<div class="manuals" />'
   return '<div class="manuals">' + rows.join('') + '</div>'
 }
+
+
+function externalLinkIt(model) {
+  return '<i class="fa-regular fa-copy fa-fw" onclick="clipExternalLink(this, \'' + model + '\')" title="copy link"></i>'
+}
+
+function clipExternalLink(el, model) {
+  navigator.clipboard.writeText(baseURL + '#' + escape(model))
+  el.classList.add('copying')
+  setTimeout(() => { el.classList.remove('copying') }, 500)
+}
+
 
 function clipIt(model) {
   return '<i class="far fa-clipboard fa-fw" onclick="clipInfo(this, \'' + model + '\')" title="copy info"></i>'
@@ -430,7 +444,7 @@ function doShow(item) {
 }
 
 function variantLabel(v) {
-  return v.charAt(0).toUpperCase() + v.slice(1)
+  return v.replace(/(_)/g, ' ').replace(/(^|\s)\S/g, (c) => c.toUpperCase());
 }
 
 function buildGearSequence() {
@@ -672,7 +686,8 @@ function fixModelName(str) {
 function initListeners() {
   window.addEventListener('resize', redrawTable)
   window.addEventListener('orientationchange', redrawTable)
-  $('#filter_tags').val(anchorText).trigger('change')
+  $('#page_title').click(function () { doShow('') })
+  $('#filter_tags').val(anchorText)
 }
 
 function initCache() {

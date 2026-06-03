@@ -27,6 +27,7 @@ body {
 }
 
 #page_title {
+    cursor: pointer;
     margin: 0 auto;
     width: fit-content;
     background-image: linear-gradient(

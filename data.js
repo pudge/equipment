@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-06-02T12:00:00+0000")
+var lastModified = new Date("2026-06-04T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -986,6 +986,9 @@ var equipment = [
       "instrument" : "guitar",
       "link" : "https://travelerguitar.com/products/ma-5-micro-amp",
       "make" : "Traveler",
+      "manuals" : {
+         "User Manual" : "user manual.pdf"
+      },
       "model" : "MA-5 Micro Amp",
       "notes" : [
          "guitar"
@@ -1650,39 +1653,6 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Audio Channels" : "Mono",
-         "Bypass" : "Buffered",
-         "Circuit" : "Analog",
-         "Controls" : "Level, Gain, Tone",
-         "Dimensions" : "73 mm x 129 mm x 59 mm (2 7/8\" x 5 1/8\" x 2 3/8\")",
-         "Input Impedance" : "1 MΩ",
-         "Nominal Input Level" : "-20 dB",
-         "Nominal Output Level" : "-20 dB",
-         "Output Impedance" : "1 kΩ",
-         "Power Consumption" : "18 mA",
-         "Power Supply" : "9 V",
-         "Serial" : "",
-         "Weight" : "360 g (13 oz)"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.boss.info/us/products/bd-2w/",
-      "make" : "BOSS",
-      "manuals" : {
-         "Owner’s Manual" : "BD-2W_eng02_W.pdf"
-      },
-      "model" : "Blues Driver BD-2w",
-      "next" : true,
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
          "Bypass" : "True",
@@ -1887,6 +1857,7 @@ var equipment = [
          "Depth" : "90 mm (3 9/16”)",
          "Height" : "43 mm (1 3/4”)",
          "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
+         "Switch Jack" : "1/4\" TS output (latching, switch between normally closed and open)",
          "Weight" : "240 g / 9 oz",
          "Width" : "96 mm (3 13/16”)"
       },
@@ -2038,10 +2009,10 @@ var equipment = [
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
          "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
-         "Other" : "Footswitch 1/4\" input",
          "Power Consumption" : "64 mA",
          "Power Supply" : "9 V",
-         "Serial" : "12588954"
+         "Serial" : "12588954",
+         "Switch Jack" : "1/4\" TS input (latching, normally closed)"
       },
       "image" : true,
       "link" : "https://jhspedals.info/products/kilt-10",
@@ -2234,35 +2205,6 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
-         "Dimensions" : "2.5\" x 4.75\" x 2.25\"",
-         "Input Impedance" : "10 MΩ",
-         "Other" : "",
-         "Output Impedance" : "100 Ω",
-         "Power Consumption" : "25 mA",
-         "Power Supply" : "9 V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.earthquakerdevices.com/plumes",
-      "make" : "EarthQuaker Devices",
-      "manuals" : {
-         "Operation Manual" : "EQD-EU-Plumes-R3.pdf"
-      },
-      "model" : "Plumes",
-      "next" : true,
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
          "Analog Inputs" : "1/4”, XLR, 1/4” return x 2",
          "Analog Outputs" : "Stereo 1/4\" x 2, stereo XLR, 1/4\" send",
          "Computer Interface" : "USB-B",
@@ -2301,6 +2243,7 @@ var equipment = [
          "Analog Outputs" : "1/4\"",
          "Bypass" : "True",
          "Controls" : "3-way power toggle (7.5 V/9 V/off), 2-way input toggle",
+         "Model Number" : "Variax-2",
          "Power Consumption" : "300 mA",
          "Power Supply" : "9 V"
       },
@@ -2374,33 +2317,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Bypass" : "True/Buffered",
-         "Circuit" : "Analog",
-         "Dimensions" : "2.50\" x 4.50\" x 1.5\" (63.5 mm x 114.3 mm x 38.1 mm)",
-         "Power Consumption" : "70.3 mA",
-         "Power Supply" : "9 V",
-         "Serial" : ""
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.wamplerpedals.com/products/distortion-overdrive/tumnus-deluxe/",
-      "make" : "Wampler",
-      "manuals" : {
-         "Manual" : "tumnus_deluxe_2019.pdf",
-         "Quick Guide" : "WP_-Tumnus-Deluxe-Wampler-Manual-10-26-21_OL-w-bleed.pdf"
-      },
-      "model" : "Tumnus Deluxe",
-      "next" : true,
-      "notes" : [
-         "overdrive"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
       "detail" : {
          "Analog Inputs" : "1/4\"",
          "Analog Outputs" : "1/4\"",
@@ -2432,7 +2348,8 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Output" : "1/4\" TRS"
+         "Model Number" : "Sw2-13 MiniM",
+         "Switch Jack" : "1/4\" TS output (momentary, normally closed)"
       },
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Sweet-Foot-Footswitch-for-Boss-Loopers--HANDEMADE-IN-USA-_p_393.html",
@@ -2445,34 +2362,6 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2025"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "hide" : true,
-      "link" : "https://sweetfootpedals-com.3dcartstores.com/Two-Button-Micro-Footswitch-Boss-DD-500-RC-500-MD-500etc-HANDMADE-IN-USA_p_472.html",
-      "make" : "Sweet Foot Pedals",
-      "model" : "Two-Button Micro Switch",
-      "next" : true,
-      "notes" : [
-         "Loop Station RC-5"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "hide" : true,
-      "link" : "https://sweetfootpedals-com.3dcartstores.com/Footswitch-for-JHS-Red-Remote-Morning-Glory-V4-SuperBolt-V2-Twin-Rwelve-V2-Double-Barrel-V4-Switchback-Boss-Angry-Driver--HANDMADE-IN-USA_p_441.html",
-      "make" : "Sweet Foot Pedals",
-      "model" : "Tiny Tap Switch",
-      "next" : true,
-      "notes" : [
-         "Kilt 10"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -2551,16 +2440,21 @@ var equipment = [
       "detail" : {
          "Battery Life" : "1500 Hours",
          "Current @9 V" : "160 µA",
+         "Dimensions" : "4\" x 1.5\" x 0.75\"",
          "Magnet" : "Ceramic and Steel",
-         "Maximum Supply" : "27V DC",
-         "Output Impedance" : "10 MΩ",
+         "Maximum Supply" : "27 V DC",
+         "Output Impedance" : "10 kΩ",
          "Output Noise (60 Hz)" : "-107 (single-coil), -109 (dual-coil)",
-         "Output Voltage (finger, thumb)" : "finger, thumb: 1.00 V (single-coil), 2.00 V (dual-coil); thump: 3.00 V (single-coil), 4.50 V (dual-coil)",
+         "Output Voltage (finger, thumb)" : "finger, thumb: 1.0 V (single-coil), 2.0 V (dual-coil); thump: 3.0 V (single-coil), 4.5 V (dual-coil)",
          "Resonant Frequency" : "5.40 kHz (single-coil), 2.50 kHz (dual-coil)"
       },
       "image" : true,
       "link" : "https://www.emgpickups.com/40tw.html",
       "make" : "EMG",
+      "manuals" : {
+         "Pickup Instructions" : "40tw_0230-0139rc.pdf",
+         "Pot Instructions" : "b136re_ppp_0230-0269ra.pdf"
+      },
       "model" : "40TW",
       "type" : "Pickup",
       "year" : "2021"
@@ -2637,6 +2531,28 @@ var equipment = [
       "model" : "Fat 50’s",
       "type" : "Pickup",
       "year" : "2004"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Cable Length (including jack)" : "15.5\"",
+         "DC Resistance" : "6.07 kΩ",
+         "Dimensions" : "2.7\" x 1.45\" x 0.78\" (bracket: 4.25\" x 1.75\")",
+         "Input" : "1/4\" TS"
+      },
+      "featured" : true,
+      "image" : true,
+      "make" : "Barcus-Berry",
+      "manuals" : {
+         "For Sale" : "https://reverb.com/item/97821604-vintage-barcus-berry-hi-tek-acoustic-pickup-1980-s"
+      },
+      "model" : "Hi-Tek Acoustic",
+      "notes" : [
+         "soundhole pickup",
+         "BB"
+      ],
+      "type" : "Pickup",
+      "year" : "1990"
    },
    {
       "category" : "Hardware",
@@ -4484,6 +4400,7 @@ var links = {
    "Apple" : "https://www.apple.com/",
    "Audio Technica" : "https://www.audio-technica.com/en-us/",
    "BOSS" : "https://www.boss.info/us/",
+   "Barcus-Berry" : "",
    "Beyer Dynamic" : "https://north-america.beyerdynamic.com/",
    "Blackstar" : "https://www.blackstaramps.com/",
    "Clayton" : "https://www.steveclayton.com/",
@@ -4543,6 +4460,7 @@ var links = {
    "O.C. White" : "https://www.ocwhite.com/",
    "Origin Effects" : "https://origineffects.com/",
    "Peavey" : "https://peavey.com/",
+   "Pedalnetics" : "https://pedalnetics.com/",
    "Peterson" : "https://www.petersontuners.com/",
    "Pignose" : "https://pignoseamps.com/",
    "ProCo" : "https://actentertainment.com/products/?brand=68",
