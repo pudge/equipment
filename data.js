@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-06-04T12:00:00+0000")
+var lastModified = new Date("2026-06-05T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -126,15 +126,13 @@ var equipment = [
       "current_pedal" : true,
       "detail" : {
          "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
-         "Depth" : "3.9\" (99 mm)",
+         "Dimensions" : "3.9\" x 3.9\" x 2.6\"",
          "Dynamic Range" : ">107 dB",
          "Frequency Response" : "10 Hz - 20 kHz",
-         "Height" : "2.6\" (66 mm)",
          "Line of Sight Range" : "50 ft",
          "Power Consumption" : "1000 mA",
          "Power Supply" : "5 V",
-         "Serial" : "W100M7038017336, W1ROM7244018777",
-         "Width" : "3.9\" (99 mm)"
+         "Serial" : "W100M7038017336, W1ROM7244018777"
       },
       "image" : true,
       "link" : "https://line6.com/relay-wireless/g10-g10s/",
@@ -2424,7 +2422,10 @@ var equipment = [
       "make" : "Temple Audio",
       "manuals" : {
          "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
+         "DI MOD Pro Setup Guide" : "DI_Mod_Pro_Setup_Guide.pdf",
+         "DI MOD Setup Guide" : "DI_Mod_Setup_Guide.pdf",
          "IEC MOD Setup Guide" : "IECMOD_Setup_Guide.pdf",
+         "MODs" : "https://www.templeaudio.com/mods",
          "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
       },
       "model" : "Templeboard TRIO 28",

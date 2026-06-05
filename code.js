@@ -155,8 +155,10 @@ function linkItManuals(oData) {
         rows.push(`<div class="manual_row"><a href="${val}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
       } else {
         var file = `./manuals/${modelName}/${val}`
-        rows.push(`<div class="manual_row"><a href="${md5Src(file)}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
-        seen[file] = true
+        if (md5s[file]) {
+          rows.push(`<div class="manual_row"><a href="${md5Src(file)}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+          seen[file] = true
+        }
       }
     })
   }
