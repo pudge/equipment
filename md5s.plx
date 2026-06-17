@@ -103,9 +103,15 @@ sub save_index {
 
 sub md5sum {
     my($f, $m) = @_;
-    chomp(my @md5s = `md5sum $f`);
+    chomp(my @md5s = `md5sum $f 2>&1`);
     for my $line (@md5s) {
         my($md5, $file) = split ' ', $line, 2;
+        if (!$md5 || !$file || "$md5  $file" ne $line) {
+            if ($line !~ /\/hidden: Not a regular file$/) {
+                warn "$line\n";
+            }
+            next;
+        }
         $m->{'./' . $file} = $md5;
     }
 }

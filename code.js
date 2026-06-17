@@ -127,7 +127,7 @@ function linkItFindValue(oData) {
   if (oData['no_reverb']) {
     return ''
   }
-  var link = 'https://reverb.com/marketplace?query='
+  var link = 'https://reverb.com/marketplace?condition=used&query='
     + escape([oData['make'], oData['model'], oData['type']].join(' ').replace(/[^\x00-\x7F]/g, ''))
     // + '&condition=used'
 
