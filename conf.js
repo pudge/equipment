@@ -39,6 +39,7 @@ const equipment_schema = [
   { name: 'main_rig',       visible: false, kind: 'bool_marker' },
   { name: 'current_rack',   visible: false, kind: 'bool_marker' },
   { name: 'current_pedal',  visible: false, kind: 'bool_marker' },
+  { name: 'bass_pedal',     visible: false, kind: 'bool_marker' },
   { name: 'kids_pedal',     visible: false, kind: 'bool_marker' },
   { name: 'manuals',        priority: 99,   synthetic: true,    classname: 'none',          default: '',                    title: 'Docs' },
   { name: 'detail',         priority: 99,   synthetic: true,    classname: 'none',          default: '',                    title: 'Detail'  },

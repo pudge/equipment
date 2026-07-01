@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-06-05T12:00:00+0000")
+var lastModified = new Date("2026-07-02T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -7,12 +7,10 @@ var equipment = [
       "detail" : {
          "Dimensions" : "22mm x 11.5mm x 5.7mm (contact house)"
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://ebssweden.com/cables/hp-series/",
       "make" : "EBS",
       "model" : "HP Cables",
-      "next" : true,
       "notes" : [
          "pedalboard"
       ],
@@ -853,7 +851,6 @@ var equipment = [
       "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://www.fender.com/products/rumble-100",
-      "main_rig" : true,
       "make" : "Fender",
       "manuals" : {
          "Owner’s Manual" : "OM_Rumble_40_100_200_500_US_5.pdf"
@@ -885,6 +882,7 @@ var equipment = [
       "image" : true,
       "instrument" : "bass guitar",
       "link" : "https://www.fender.com/products/rumble-40",
+      "main_rig" : true,
       "make" : "Fender",
       "manuals" : {
          "Owner’s Manual" : "OM_Rumble_40_100_200_500_US_5.pdf"
@@ -1749,8 +1747,8 @@ var equipment = [
       "year" : "2026"
    },
    {
+      "bass_pedal" : true,
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "Buffered",
@@ -2020,7 +2018,8 @@ var equipment = [
       },
       "model" : "Kilt 10",
       "notes" : [
-         "distortion"
+         "distortion",
+         "One-Button Switch"
       ],
       "type" : "Pedal",
       "year" : "2026"
@@ -2080,7 +2079,7 @@ var equipment = [
       "model" : "Loop Station RC-2",
       "notes" : [
          "looper",
-         "Two-Button Switch"
+         "Two-Button Micro Switch"
       ],
       "type" : "Pedal",
       "year" : "2006"
@@ -2117,7 +2116,7 @@ var equipment = [
       "next" : true,
       "notes" : [
          "looper",
-         "Two-Button Switch"
+         "Two-Button Micro Switch"
       ],
       "type" : "Pedal",
       "year" : "2026"
@@ -2176,7 +2175,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Audio Channels" : "Mono",
          "Bypass" : "True",
@@ -2187,6 +2185,7 @@ var equipment = [
          "Power Supply" : "9 V"
       },
       "image" : true,
+      "kids_pedal" : true,
       "link" : "https://www.ehx.com/products/nano-big-muff-pi",
       "make" : "Electro-Harmonix",
       "manuals" : {
@@ -2198,6 +2197,79 @@ var equipment = [
       ],
       "type" : "Pedal",
       "year" : "2020"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Built By" : "Brian",
+         "Bypass" : "Buffered",
+         "Dimensions" : "3.7\" x 4.7\" x 1.66\"",
+         "Power Consumption" : "10 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "kids_pedal" : true,
+      "link" : "https://jhspedals.info/products/notadumble",
+      "make" : "JHS",
+      "model" : "NOTADÜMBLË V2",
+      "next" : true,
+      "notes" : [
+         "overdrive"
+      ],
+      "pop_brian" : true,
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\"",
+         "Analog Outputs" : "1/4\"",
+         "Built By" : "George",
+         "Bypass" : "Buffered",
+         "Dimensions" : "4.7\" x 3.7\" x 1.66\"",
+         "Power Consumption" : "30 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "kids_pedal" : true,
+      "link" : "https://jhspedals.info/products/notaklon",
+      "make" : "JHS",
+      "model" : "NOTAKLÖN",
+      "next" : true,
+      "notes" : [
+         "overdrive"
+      ],
+      "pop_george" : true,
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Dimensions" : "2\" x 2\" x 1\"",
+         "Part Number" : "Sw1-13L",
+         "Switch Jack" : "1/4\" TS output (momentary, normally closed)"
+      },
+      "image" : true,
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/Footswitch-for-JHS-Red-Remote-Morning-Glory-V4-SuperBolt-V2-Twin-Rwelve-V2-Double-Barrel-V4-Switchback-Boss-Angry-Driver--HANDMADE-IN-USA_p_441.html",
+      "make" : "Sweet Foot Pedals",
+      "model" : "One-Button Switch",
+      "next" : true,
+      "notes" : [
+         "MoonShine",
+         "black",
+         "Kilt 10"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
    },
    {
       "category" : "Hardware",
@@ -2241,7 +2313,8 @@ var equipment = [
          "Analog Outputs" : "1/4\"",
          "Bypass" : "True",
          "Controls" : "3-way power toggle (7.5 V/9 V/off), 2-way input toggle",
-         "Model Number" : "Variax-2",
+         "Dimensions" : "4\" x 2\" x .75\"",
+         "Part Number" : "Variax-2",
          "Power Consumption" : "300 mA",
          "Power Supply" : "9 V"
       },
@@ -2346,15 +2419,36 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Model Number" : "Sw2-13 MiniM",
-         "Switch Jack" : "1/4\" TS output (momentary, normally closed)"
+         "Dimensions" : "3.5” x 1.5” x 1.25”",
+         "Part Number" : "Sw2-12 MicroM",
+         "Switch Jack" : "1/4\" TRS output (momentary, normally closed)"
+      },
+      "image" : true,
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/Two-Button-Micro-Footswitch-Boss-DD-500-RC-500-MD-500etc-HANDMADE-IN-USA_p_472.html",
+      "make" : "Sweet Foot Pedals",
+      "model" : "Two-Button Micro Switch",
+      "next" : true,
+      "notes" : [
+         "Custom",
+         "black",
+         "Loop Station RC-2"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "4\" x 2\" x 1\"",
+         "Part Number" : "Sw2-13 MiniM",
+         "Switch Jack" : "1/4\" TRS output (momentary, normally closed)"
       },
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Sweet-Foot-Footswitch-for-Boss-Loopers--HANDEMADE-IN-USA-_p_393.html",
       "make" : "Sweet Foot Pedals",
       "model" : "Two-Button Switch",
       "notes" : [
-         "Moonshine",
+         "MoonShine",
          "black",
          "Loop Station RC-2"
       ],
@@ -2362,6 +2456,7 @@ var equipment = [
       "year" : "2025"
    },
    {
+      "bass_pedal" : true,
       "category" : "Hardware",
       "detail" : {
          "Dimensions" : "9.25\" x 2.76\" x 3.94\""
@@ -2377,13 +2472,13 @@ var equipment = [
       "year" : "2016"
    },
    {
+      "bass_pedal" : true,
       "category" : "Hardware",
       "detail" : {
          "Dimensions" : "14\" x 5.5\" x 1\"",
          "Weight" : "0.77 lbs"
       },
       "image" : true,
-      "kids_pedal" : true,
       "make" : "ENO Music",
       "model" : "ES-1",
       "type" : "Pedalboard",
@@ -2391,12 +2486,12 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "19.69\" x 9.92\" x 2.36\"",
          "Weight" : "43.6 oz"
       },
       "image" : true,
+      "kids_pedal" : true,
       "make" : "RockHouse",
       "model" : "Pedalboard",
       "notes" : [
@@ -2409,14 +2504,32 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
+         "Power Consumption" : "710 mA/270 mA",
+         "Power Supply" : "9 V/12 V",
+         "Remote" : "RF",
+         "Serial" : ""
+      },
+      "image" : true,
+      "link" : "https://www.templeaudio.com/accessories/rgb-lighting",
+      "make" : "Temple Audio",
+      "model" : "Templeboard RGB Lighting",
+      "notes" : [
+         "Templeboard TRIO 28"
+      ],
+      "type" : "Pedalboard",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
          "Attachments" : "Dual Lock",
          "Dimensions" : "28.2\" x 16.5\" x 1.5\" (front), 2.5\" (back)",
          "Material" : "Aluminum",
-         "Mods" : "IEC MOD, SUM MOD2, 4X MOD",
+         "Mods" : "4X MOD, RGB MOD",
          "Serial" : "",
          "Underside Clearance" : "1.25\" (front), 2.25\" (back)"
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://www.templeaudio.com/templeboards/trio-series",
       "make" : "Temple Audio",
@@ -2429,9 +2542,9 @@ var equipment = [
          "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
       },
       "model" : "Templeboard TRIO 28",
-      "next" : true,
       "notes" : [
-         "gunmetal"
+         "gunmetal",
+         "Templeboard RGB Lighting"
       ],
       "type" : "Pedalboard",
       "year" : "2026"
@@ -2584,8 +2697,8 @@ var equipment = [
       "current_pedal" : true,
       "detail" : {
          "Dimensions" : "12.28\" x 2.12\" x 1\" (5.74\" x 2.24\" x 1.24\" power supply)",
-         "Outputs" : "9V 500mA (13); 9V 500mA/12V 375 mA/18V 250mA (2); USB-C 5V 1.5A (1); 24V thru, center-positive (1)",
-         "Power Supply" : "24V 4A / 96W",
+         "Outputs" : "9 V 500 mA (13); 9 V 500 mA/12 V 375 mA/18 V 250mA (2); USB-C 5 V 1.5A (1); 24 V thru, center-positive (1)",
+         "Power Supply" : "24 V 4 A / 96 W",
          "Serial" : "1089US6114",
          "Weight" : "0.93lbs"
       },
@@ -2604,7 +2717,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Dimensions" : "6.5\" x 1.97\" x 1.5\"",
          "Outputs" : "11 isolated: (6) 9 V 100 mA; (2) 9 V 400 mA; (1) 12 V 100 mA; (1) 18 V 100 mA; (1) 5 V 2 A (USB)",
@@ -2612,6 +2724,7 @@ var equipment = [
          "Weight" : "1.18 lbs"
       },
       "image" : true,
+      "kids_pedal" : true,
       "make" : "Godtone",
       "model" : "GD-02",
       "notes" : [
