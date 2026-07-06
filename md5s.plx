@@ -4,11 +4,11 @@ use strict;
 use feature ':5.10';
 
 use Data::Dumper; $Data::Dumper::Sortkeys=1;
-use JSON::XS;
+use JSON;
 
 our $force;
 
-my $JSON = JSON::XS->new->pretty->canonical;
+my $JSON = JSON->new->pretty->canonical;
 
 my %md5s;
 my @main = qw(

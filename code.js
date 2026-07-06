@@ -500,9 +500,9 @@ function renderCurrent() {
   if (currentSequenceKey && currentSequenceKey !== 'gear') {
     lastVariantByCollection[currentSequenceKey] = variant
   }
+  setImageMap($('#pic_img'), variant)
   $('#pic_img').attr('src', srcFor(entry, variant))
   $('#pic_title').text(entry.alt)
-  setImageMap($('#pic_img'), variant)
 
   var strip = $('#pic_variants').empty()
   if (entry.variants.length > 1) {
@@ -537,6 +537,29 @@ function setImageMap(img, mapName) {
 function followImageMap(name) {
   doShow(name)
   $('#pic_close').click()
+}
+
+// Find the alt of the map area under the pointer WITHOUT relying on the browser's
+// hit-test (e.target is often the bare <img> in the gaps between pedal rects, so it
+// misses the catch-all background area). imageMapResizer rewrites each area's coords
+// into content-box space, the same space as screenX/screenY, so we compare directly.
+// First rect (document order) that contains the point wins, matching image-map rules.
+function areaAltAt(img, screenX, screenY) {
+  var name = img.getAttribute('usemap')
+  if (!name) return ''
+  var map = document.querySelector('map[name="' + name.replace(/^#/, '') + '"]')
+  if (!map) return ''
+  var areas = map.getElementsByTagName('area')
+  for (var i = 0; i < areas.length; i++) {
+    var c = areas[i].coords.split(',')
+    if (c.length < 4) continue
+    var x1 = +c[0], y1 = +c[1], x2 = +c[2], y2 = +c[3]
+    if (screenX >= Math.min(x1, x2) && screenX <= Math.max(x1, x2) &&
+        screenY >= Math.min(y1, y2) && screenY <= Math.max(y1, y2)) {
+      return areas[i].alt || ''
+    }
+  }
+  return ''
 }
 
 
@@ -590,6 +613,36 @@ function modalInit() {
   $('#pic_img').click(function() { return false })
   $('#pic_img').on('load', function() {
     if (this.getAttribute('usemap')) imageMapResize()
+  })
+  // Live pointer coords + hovered area alt, shown in an in-page status bar pinned to
+  // the modal (the native browser status bar can't display arbitrary text).
+  // Bound on document: an <area>'s events bubble through its <map> (in #container),
+  // a different DOM branch than #pic_modal, so neither the image nor the modal catches
+  // them. document sees every mousemove regardless of branch.
+  $(document).on('mousemove', function(e) {
+    if (modal.css('display') === 'none') return
+    var img = $('#pic_img')[0]
+    var c = imageMapResize.pointFor(img, e.clientX, e.clientY)
+    if (!c) { $('#pic_statusbar').text(''); return }
+    // Only report while inside the rendered bitmap, not the letterbox margins.
+    if (c.mapX < 0 || c.mapY < 0 || c.mapX > img.naturalWidth || c.mapY > img.naturalHeight) {
+      $('#pic_statusbar').text(''); return
+    }
+    // Name comes from our own rect hit-test, not e.target: over gaps between pedals
+    // the browser reports the bare <img>, so relying on e.target showed nothing.
+    var alt = areaAltAt(img, c.screenX, c.screenY)
+    var s = ''
+/* 
+    s += 'screen: (' + Math.round(c.screenX) + ', ' + Math.round(c.screenY) + ')'
+          + '  |  map: (' + Math.round(c.mapX) + ', ' + Math.round(c.mapY) + ')'
+ */
+    if (alt) {
+      if (s.length) {
+        s += '  |  '
+      }
+      s += alt
+    }
+    $('#pic_statusbar').text(s)
   })
   $('#pic_caption').on('click touchstart touchmove touchend', function(e) { e.stopPropagation() })
   $(document).keydown(function(e) {

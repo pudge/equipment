@@ -165,4 +165,26 @@
   }
 
   window.imageMapResize = factory()
+
+  // Inverse of the resizeMap() forward transform above (rendered = pad + floor(map*sf)).
+  // Kept here, next to the forward math, so the two share one derivation and cannot drift.
+  window.imageMapResize.pointFor = function (img, clientX, clientY) {
+    var rect = img.getBoundingClientRect()
+    var cs = window.getComputedStyle(img, null)
+    var bl = parseFloat(cs.getPropertyValue('border-left-width')) || 0
+    var bt = parseFloat(cs.getPropertyValue('border-top-width'))  || 0
+    var pl = parseInt(cs.getPropertyValue('padding-left'), 10) || 0
+    var pt = parseInt(cs.getPropertyValue('padding-top'),  10) || 0
+    var natW = img.naturalWidth, natH = img.naturalHeight
+    var boxW = img.width, boxH = img.height
+    if (!natW || !natH || !boxW || !boxH) return null
+    var fit = (natW <= boxW && natH <= boxH) ? 1 : Math.min(boxW / natW, boxH / natH)
+    var sfW = (natW * fit) / natW, sfH = (natH * fit) / natH
+    var padW = pl + (boxW - natW * fit) / 2
+    var padH = pt + (boxH - natH * fit) / 2
+    var screenX = clientX - rect.left - bl
+    var screenY = clientY - rect.top  - bt
+    return { screenX: screenX, screenY: screenY,
+             mapX: (screenX - padW) / sfW, mapY: (screenY - padH) / sfH }
+  }
 })()

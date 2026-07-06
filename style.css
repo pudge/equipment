@@ -164,6 +164,25 @@ td.dt-center {
 
 map area { cursor: default }
 
+/* In-page status bar for image-map hover readout (coords + alt) */
+#pic_statusbar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    max-width: 100%;
+    padding: 0.15em 0.6em;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--drac-fg);
+    background: rgba(3.24, 2.94, 3.64, 0.85);
+    pointer-events: none;
+}
+#pic_statusbar:empty { display: none; }
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #pic_caption {
     margin: auto;

@@ -57,6 +57,29 @@ That’s it! Have fun. Hit me up if you use it, I’d like to know.
 
 In the top left I have a list of series of images: pictures of studios, and of pedalboards. Pretty neat. This is all configured directly in `index.html`. And each image can have an image map associated with it, so you can click on a part of the image, and it will select the thing you clicked on in the table! Have fun with that.
 
+If you use [Pedalboard Playground](https://pedalplayground.com/), you can (mostly) automatically generate your image map. I use a single Pedalboard Playground file with all three of my pedalboards, and generate the map for each board, separately.
+
+1. In Pedalboard Playground, click “Save to File” in the top right menu
+1. Make a screenshot of the window
+1. In an image editor, crop the image so there are ~32 pixels all around the pedalboard
+1. Identify the first element (furthest top/left), and the last element (furthest right/bottom), in the image
+1. Measure the width (in pixels) of the first element
+1. On the command line, run:
+    ```
+    # ./import_pp.plx PATH_TO_PP_FILE.json NAME_OF_FIRST_ELEMENT NAME_OF_LAST_ELEMENT WIDTH_OF_FIRST_ELEMENT
+    # for example:
+    $ ./import_pp.plx ~/Downloads/PP.json 'Templeboards Trio 28' 'Walrus Audio Canvas Power' 2555
+    $ ./import_pp.plx ~/Downloads/PP.json Rockhouse Godtone 2432
+    $ ./import_pp.plx ~/Downloads/PP.json 'Quick-Lok VP-2611' 'ENO ES-1' 576
+    ```
+1. Then copy the output and paste it into the right `<map>` area in `index.html`
+
+#### NOTES
+
+* your gear names may be different from Pedalboard Playground’s name for it, adjust as necessary
+    * I make a lot of changes to the JSON file, then reload it into the browser, which allows my changes to persist
+* if your pedalboard itself is not the first element, move it to the end of the areas, manually
+
 ## Author
 
 [Pudge](https://pudge.net/)

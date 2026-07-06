@@ -4,10 +4,10 @@ use strict;
 use feature ':5.10';
 
 use Data::Dumper; $Data::Dumper::Sortkeys=1;
-use JSON::XS 'encode_json';
-use Text::CSV_XS 'csv';
+use JSON 'encode_json';
+use Text::CSV_XS 'csv'; # needed from CPAN
 
-my $JSON = JSON::XS->new->utf8->pretty->canonical;
+my $JSON = JSON->new->utf8->pretty->canonical;
 
 # The schema lives in conf.js. This script parses conf.js for field metadata
 # so the per-field extraction loop in get_gear() is driven by the same
