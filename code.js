@@ -75,12 +75,10 @@ function linkItNotes(oData) {
   var icons = [ externalLinkIt(modelId(oData)), clipIt( modelId(oData) ) ]
   var newData = []
   thisData.forEach(x => {
-    if (x === 'LINKME' || x === 'LINKEDME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL') {
+    if (x === 'LINKME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL') {
       icons.push(
-        x === 'LINKME' || x === 'LINKEDME'
+        x === 'LINKME'
           ? linkShow(oData['model'], '\u{1F578}', 'show related')
-//         : x === 'LINKEDME'
-//           ? linkShow(oData['model'], '\u{1F517}', 'show related')
         : x === 'NOTMINE'
           ? linkShow('', '\u{1F91D}', 'holding for a friend')
         : x === 'HIDDEN'
@@ -295,6 +293,7 @@ function equipmentInit() {
     }
   })
 
+  var linked = false
   equipment.forEach(function(x, index, object) {
     if (x['notes']) {
       var thisData = Array.isArray(x['notes']) ? x['notes'] : [x['notes']]
@@ -311,7 +310,8 @@ function equipmentInit() {
         }
       })
       if (found === true) {
-        thisData.unshift('LINKEDME')
+        thisData.unshift('LINKME')
+        linked = true
       }
     }
   })
@@ -323,7 +323,9 @@ function equipmentInit() {
           ? x['notes']
           : [x['notes']]
         : []
-      thisData.unshift('LINKME')
+      if (!linked) {
+        thisData.unshift('LINKME')
+      }
       x['notes'] = thisData
     }
 

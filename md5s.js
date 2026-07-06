@@ -1,5 +1,5 @@
 const md5s = {
-   "./code.js" : "cbc3a5b9fa4728fad3da718c41df4666",
+   "./code.js" : "6650e45844951ce5c6ad45dd62e859d3",
    "./conf.js" : "f446a246de4e84158c6204b7cdccab03",
    "./data.js" : "77db160e54033761f20c741053576299",
    "./dracula-variables.css" : "594c5652a3d8e902b50e517a343bc202",
@@ -701,7 +701,7 @@ const md5s = {
    "./manuals/ydp223/yamaha-50-greats-piano.pdf" : "698e4d35ecf2625911a6ca5fb7f7d5d7",
    "./manuals/ypt300/YPT300_1.pdf" : "05b566baeb4e9064ab170a87abddcb1d",
    "./manuals/zeus/Quick Start Guide.pdf" : "57fd8927b9c597aca1753d1c95c9ec68",
-   "./md5s.js" : "e4c6bbc3",
+   "./md5s.js" : "0a24f015",
    "./pic/pedalboards/bass-20260701.webp" : "f7cd591fb7a81960bedfeafe59e45ae1",
    "./pic/pedalboards/bass-20260706.webp" : "40d0ee044a6aa3593d6c627e1388ac7c",
    "./pic/pedalboards/kids-20260501.webp" : "d87fd6898244119104c9a9bd8378c76c",
