@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-07-02T12:00:00+0000")
+var lastModified = new Date("2026-07-06T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -2822,6 +2822,26 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "image" : true,
+      "make" : "Crafty Gizmos",
+      "model" : "Deluxe Music Stand",
+      "type" : "Stand",
+      "year" : "2017"
+   },
+   {
+      "category" : "Hardware",
+      "image" : true,
+      "link" : "https://pyleusa.com/products/pstnd25?_pos=1&_sid=9ac181a9a&_ss=r",
+      "make" : "Pyle",
+      "model" : "Tripod Speaker Stand",
+      "notes" : [
+         "STAGEPAS 500"
+      ],
+      "type" : "Stand",
+      "year" : "2014"
+   },
+   {
+      "category" : "Hardware",
       "current_rack" : true,
       "image" : true,
       "link" : "https://www.korg.com/us/products/tuners/cm_300/index.php",
@@ -3198,6 +3218,12 @@ var equipment = [
       "main_rig" : true,
       "make" : "Yamaha",
       "model" : "Rydeen",
+      "notes" : [
+         "HCS 14\" Crash",
+         "Planet Z 13\" Hi-Hat",
+         "Planet Z 18\" Crash Ride",
+         "Nitro"
+      ],
       "type" : "Drums",
       "year" : "2013",
       "year_uncertain" : true
@@ -4510,6 +4536,7 @@ var equipment = [
 
 var links = {
    "AKG" : "https://www.akg.com/",
+   "Adam" : "",
    "Amuzik" : "",
    "Apple" : "https://www.apple.com/",
    "Audio Technica" : "https://www.audio-technica.com/en-us/",
@@ -4518,6 +4545,7 @@ var links = {
    "Beyer Dynamic" : "https://north-america.beyerdynamic.com/",
    "Blackstar" : "https://www.blackstaramps.com/",
    "Clayton" : "https://www.steveclayton.com/",
+   "Crafty Gizmos" : "",
    "DR Strings" : "https://www.drstrings.com/",
    "Daisy Rock" : "https://www.daisyrock.com/",
    "Digitech" : "https://www.digitech.com/",
@@ -4578,6 +4606,7 @@ var links = {
    "Peterson" : "https://www.petersontuners.com/",
    "Pignose" : "https://pignoseamps.com/",
    "ProCo" : "https://actentertainment.com/products/?brand=68",
+   "Pyle" : "https://pyleusa.com/",
    "Quick-Lok" : "https://www.quiklok.com/",
    "Radial Engineering" : "https://www.radialeng.com/",
    "Road Runner" : "https://roadrunnercases.com/",
@@ -4591,6 +4620,7 @@ var links = {
    "Shadow" : "https://shadowelectronics.com/",
    "Shubb" : "https://www.shubb.com/",
    "Shure" : "https://www.shure.com/",
+   "Snark" : "",
    "Sony" : "https://www.sony.com/",
    "Sound Town" : "https://www.soundtown.com/",
    "Stageline" : "https://www.stagelinestands.com/",
@@ -4612,6 +4642,7 @@ var links = {
    "Washburn" : "https://www.washburn.com/",
    "Wicked Cushions" : "https://wickedcushions.com/",
    "Wittner" : "https://www.wittner-gmbh.de/",
+   "Wm. Schmick" : "",
    "Yamaha" : "https://usa.yamaha.com/",
    "Zildjian" : "https://zildjian.com/",
    "iSet" : "",

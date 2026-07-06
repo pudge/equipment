@@ -19,7 +19,7 @@ my @main = qw(
     github.png reverb.webp
 );
 
-my $rev = sprintf '%08x', int(rand(2**32));
+my $rev = sprintf '%05x', int(rand(2**20));
 
 get_md5s();
 my $changes = compare_md5s(open_md5s());
