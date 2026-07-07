@@ -71,11 +71,14 @@ function linkItNotes(oData) {
   if (oData['kids_pedal']) {
     thisData.push('KIDS_PEDAL')
   }
+  if (oData['bass_pedal']) {
+    thisData.push('BASS_PEDAL')
+  }
 
   var icons = [ externalLinkIt(modelId(oData)), clipIt( modelId(oData) ) ]
   var newData = []
   thisData.forEach(x => {
-    if (x === 'LINKME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL') {
+    if (x === 'LINKME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL' || 'BASS_PEDAL') {
       icons.push(
         x === 'LINKME'
           ? linkShow(oData['model'], '\u{1F578}', 'show related')
@@ -88,7 +91,9 @@ function linkItNotes(oData) {
         : x === 'CURRENT_PEDAL'
           ? linkShow('current_pedal', '\u{1F9B6}', 'in pedalboard')
         : x === 'KIDS_PEDAL'
-          ? linkShow('kids_pedal', '\u{1F9B6}\u{1F3FB}', 'in pedalboard')
+          ? linkShow('kids_pedal', '\u{1F9B6}\u{1F3FB}', 'in kids’ pedalboard')
+        : x === 'BASS_PEDAL'
+          ? linkShow('bass_pedal', '\u{1F9B6}\u{1F3FF}', 'in bass pedalboard')
           : ''
       )
     }
