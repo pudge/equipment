@@ -27,7 +27,7 @@ sub create_map {
         my $item = $gear{$id};
         printf(
             (' ' x (4 * 4)) .
-            qq[<area shape="rect" href="#" coords="%s,%s,%s,%s" alt="%s">\n],
+            qq[<area shape="rect" coords="%s,%s,%s,%s" alt="%s">\n],
                 $item->{left_s},
                 $item->{top_s},
                 $item->{left_s} + $item->{width_s},

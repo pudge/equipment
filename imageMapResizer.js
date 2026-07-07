@@ -182,8 +182,13 @@
     var sfW = (natW * fit) / natW, sfH = (natH * fit) / natH
     var padW = pl + (boxW - natW * fit) / 2
     var padH = pt + (boxH - natH * fit) / 2
-    var screenX = clientX - rect.left - bl
-    var screenY = clientY - rect.top  - bt
+    // getBoundingClientRect() reports the RENDERED box (after CSS `zoom` / transform:scale),
+    // but boxW/boxH/padding are LAYOUT pixels. Divide the pointer offset by the measured
+    // scale so screen/map coords stay in layout space and match the area coords.
+    var scaleX = img.offsetWidth ? rect.width / img.offsetWidth : 1
+    var scaleY = img.offsetHeight ? rect.height / img.offsetHeight : 1
+    var screenX = (clientX - rect.left) / scaleX - bl
+    var screenY = (clientY - rect.top)  / scaleY - bt
     return { screenX: screenX, screenY: screenY,
              mapX: (screenX - padW) / sfW, mapY: (screenY - padH) / sfH }
   }

@@ -78,7 +78,7 @@ function linkItNotes(oData) {
   var icons = [ externalLinkIt(modelId(oData)), clipIt( modelId(oData) ) ]
   var newData = []
   thisData.forEach(x => {
-    if (x === 'LINKME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL' || 'BASS_PEDAL') {
+    if (x === 'LINKME' || x === 'NOTMINE' || x === 'HIDDEN' || x === 'CURRENT_RACK' || x === 'CURRENT_PEDAL' || x === 'KIDS_PEDAL' || x === 'BASS_PEDAL') {
       icons.push(
         x === 'LINKME'
           ? linkShow(oData['model'], '\u{1F578}', 'show related')
@@ -298,7 +298,6 @@ function equipmentInit() {
     }
   })
 
-  var linked = false
   equipment.forEach(function(x, index, object) {
     if (x['notes']) {
       var thisData = Array.isArray(x['notes']) ? x['notes'] : [x['notes']]
@@ -309,15 +308,17 @@ function equipmentInit() {
           y = matches[1]
         }
         if (equipment_data[y]) {
+          foundNote[x['model']] = true
           foundNote[y] = true
           found = true
-          equipment_data[y]['reverse_notes'].push(x['model'])
+          pushUnless(equipment_data[x['model']]['reverse_notes'], y)
+          pushUnless(equipment_data[y]['reverse_notes'], x['model'])
+          if (!equipment_data[y]['notes']) {
+            equipment_data[y]['notes'] = []
+          }
+          pushUnless(equipment_data[y]['notes'], x['model'])
         }
       })
-      if (found === true) {
-        thisData.unshift('LINKME')
-        linked = true
-      }
     }
   })
 
@@ -328,9 +329,7 @@ function equipmentInit() {
           ? x['notes']
           : [x['notes']]
         : []
-      if (!linked) {
-        thisData.unshift('LINKME')
-      }
+      thisData.unshift('LINKME')
       x['notes'] = thisData
     }
 
@@ -437,14 +436,14 @@ function drawDropdowns(i) {
 
 // misc events
 
-function doShow(item) {
+function doShow(item, quote=true) {
   const optionVal = $('#filter_tags').val()
   if (optionVal !== '' && optionVal !== item) {
     $('#filter_tags').val('').trigger('change')
   }
 
   var table = $('#equipment').dataTable().api().table()
-  table.search(item).draw()
+  table.search(quote == false || item == '' ? item : `"${item}"`).draw()
   table.columns().search('').draw()
   columns.forEach(j => drawDropdowns(j))
   columns.forEach(function (i) { $('#sel_' + i).val('') })
@@ -542,15 +541,37 @@ function setImageMap(img, mapName) {
 }
 
 function followImageMap(name) {
-  doShow(name)
+  doShow(name, false)
   $('#pic_close').click()
+}
+
+// Point-in-shape test honoring the area's shape= (rect, poly, circle), so hovering a
+// polygon hotspot reports its alt like the browser's own hit-test does.
+function pointInArea(shape, c, x, y) {
+  if (shape === 'circle') {
+    var dx = x - c[0], dy = y - c[1]
+    return dx * dx + dy * dy <= c[2] * c[2]
+  }
+  if (shape === 'poly') {
+    // Ray casting: count crossings of the polygon edges to the point's left.
+    var inside = false
+    for (var i = 0, j = c.length - 2; i < c.length; j = i, i += 2) {
+      var xi = c[i], yi = c[i + 1], xj = c[j], yj = c[j + 1]
+      if (((yi > y) !== (yj > y)) &&
+          (x < (xj - xi) * (y - yi) / (yj - yi) + xi)) inside = !inside
+    }
+    return inside
+  }
+  // rect (default): coords are x1,y1,x2,y2
+  return x >= Math.min(c[0], c[2]) && x <= Math.max(c[0], c[2]) &&
+         y >= Math.min(c[1], c[3]) && y <= Math.max(c[1], c[3])
 }
 
 // Find the alt of the map area under the pointer WITHOUT relying on the browser's
 // hit-test (e.target is often the bare <img> in the gaps between pedal rects, so it
 // misses the catch-all background area). imageMapResizer rewrites each area's coords
 // into content-box space, the same space as screenX/screenY, so we compare directly.
-// First rect (document order) that contains the point wins, matching image-map rules.
+// First area (document order) that contains the point wins, matching image-map rules.
 function areaAltAt(img, screenX, screenY) {
   var name = img.getAttribute('usemap')
   if (!name) return ''
@@ -558,11 +579,11 @@ function areaAltAt(img, screenX, screenY) {
   if (!map) return ''
   var areas = map.getElementsByTagName('area')
   for (var i = 0; i < areas.length; i++) {
-    var c = areas[i].coords.split(',')
-    if (c.length < 4) continue
-    var x1 = +c[0], y1 = +c[1], x2 = +c[2], y2 = +c[3]
-    if (screenX >= Math.min(x1, x2) && screenX <= Math.max(x1, x2) &&
-        screenY >= Math.min(y1, y2) && screenY <= Math.max(y1, y2)) {
+    var shape = (areas[i].getAttribute('shape') || 'rect').toLowerCase()
+    var c = areas[i].coords.split(',').map(Number)
+    var need = shape === 'circle' ? 3 : 4
+    if (c.length < need) continue
+    if (pointInArea(shape, c, screenX, screenY)) {
       return areas[i].alt || ''
     }
   }
@@ -698,6 +719,12 @@ function modalInit() {
     if (modal.css('display') !== 'none') event.preventDefault()
   }, { passive: false })
 
+}
+
+function pushUnless(arr, el) {
+  if (!arr.includes(el)) {
+    arr.push(el)
+  }
 }
 
 function swapPic(direction) {

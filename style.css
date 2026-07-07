@@ -6,6 +6,26 @@ body {
     margin: 1/5em;
 }
 
+/* Mobile */
+@media {
+  html { zoom: 100% }
+}
+
+/* Tablet — touch-primary, any size */
+@media (min-width: 768px) and (pointer: coarse) {
+  html { zoom: 120% }
+  /* Cancel the inherited html zoom so the overlay image is not magnified */
+  #pic_modal { zoom: calc(1 / 1.2) }
+  #pic_caption { zoom: 120% }
+}
+
+/* Laptop/desktop — mouse/trackpad-primary */
+@media (min-width: 768px) and (pointer: fine) {
+  html { zoom: 110% }
+  #pic_modal { zoom: calc(1 / 1.1) }
+  #pic_caption { zoom: 110% }
+}
+
 #main {
     margin: 0 auto;
     width: 1000px;

@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-07-06T12:00:00+0000")
+var lastModified = new Date("2026-07-07T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1115,8 +1115,7 @@ var equipment = [
       "notes" : [
          "string lock",
          "standard",
-         "black krome",
-         "Killer 2710"
+         "black krome"
       ],
       "type" : "Guitar Accessory",
       "year" : "2025"
@@ -1197,9 +1196,6 @@ var equipment = [
       "link" : "https://wickedcushions.com/products/audio-technica-ath-m50x-m40x-headband-cover?variant=42220770787407",
       "make" : "Wicked Cushions",
       "model" : "WC BandZ ATH",
-      "notes" : [
-         "ATH-M40fs"
-      ],
       "type" : "Headphones",
       "year" : "2026"
    },
@@ -1209,9 +1205,6 @@ var equipment = [
       "link" : "https://wickedcushions.com/products/audio-technica-ath-m50x-ear-pads-by-wicked-cushions?variant=39299443425359",
       "make" : "Wicked Cushions",
       "model" : "WC Padz ATH",
-      "notes" : [
-         "ATH-M40fs"
-      ],
       "type" : "Headphones",
       "year" : "2026"
    },
@@ -1458,6 +1451,9 @@ var equipment = [
          "Owner’s Manual" : "stagepas500_en_om_d0.pdf"
       },
       "model" : "STAGEPAS 500",
+      "notes" : [
+         "Tripod Speaker Stand"
+      ],
       "type" : "Live Audio",
       "year" : "2011"
    },
@@ -2260,7 +2256,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Footswitch-for-JHS-Red-Remote-Morning-Glory-V4-SuperBolt-V2-Twin-Rwelve-V2-Double-Barrel-V4-Switchback-Boss-Angry-Driver--HANDMADE-IN-USA_p_441.html",
-      "make" : "Sweet Foot Pedals",
+      "make" : "Sweet Foot",
       "model" : "One-Button Switch",
       "next" : true,
       "notes" : [
@@ -2316,17 +2312,16 @@ var equipment = [
          "Dimensions" : "4\" x 2\" x .75\"",
          "Part Number" : "Variax-2",
          "Power Consumption" : "300 mA",
+         "Power Output" : "7.5 V (JTV Variax) / 9 V (original Variax)",
          "Power Supply" : "9 V"
       },
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Power-Manager-PLUS-for-Line6-Variax-Line6-XPS--Handmade-USA-_p_615.html",
-      "make" : "Sweet Foot Pedals",
+      "make" : "Sweet Foot",
       "model" : "Power Manager PLUS",
       "notes" : [
          "May The Schwartz Be With You",
-         "gold",
-         "Variax 500",
-         "Variax 700"
+         "gold"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -2346,7 +2341,7 @@ var equipment = [
       },
       "image" : true,
       "kids_pedal" : true,
-      "make" : "None",
+      "make" : "Mediorays",
       "manuals" : {
          "Manual" : "reverbmini.pdf"
       },
@@ -2425,13 +2420,12 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Two-Button-Micro-Footswitch-Boss-DD-500-RC-500-MD-500etc-HANDMADE-IN-USA_p_472.html",
-      "make" : "Sweet Foot Pedals",
+      "make" : "Sweet Foot",
       "model" : "Two-Button Micro Switch",
       "next" : true,
       "notes" : [
          "Custom",
-         "black",
-         "Loop Station RC-2"
+         "black"
       ],
       "type" : "Pedal",
       "year" : "2026"
@@ -2445,12 +2439,11 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Sweet-Foot-Footswitch-for-Boss-Loopers--HANDEMADE-IN-USA-_p_393.html",
-      "make" : "Sweet Foot Pedals",
+      "make" : "Sweet Foot",
       "model" : "Two-Button Switch",
       "notes" : [
          "MoonShine",
-         "black",
-         "Loop Station RC-2"
+         "black"
       ],
       "type" : "Pedal",
       "year" : "2025"
@@ -2513,9 +2506,6 @@ var equipment = [
       "link" : "https://www.templeaudio.com/accessories/rgb-lighting",
       "make" : "Temple Audio",
       "model" : "Templeboard RGB Lighting",
-      "notes" : [
-         "Templeboard TRIO 28"
-      ],
       "type" : "Pedalboard",
       "year" : "2026"
    },
@@ -2834,9 +2824,6 @@ var equipment = [
       "link" : "https://pyleusa.com/products/pstnd25?_pos=1&_sid=9ac181a9a&_ss=r",
       "make" : "Pyle",
       "model" : "Tripod Speaker Stand",
-      "notes" : [
-         "STAGEPAS 500"
-      ],
       "type" : "Stand",
       "year" : "2014"
    },
@@ -2848,8 +2835,7 @@ var equipment = [
       "make" : "Korg",
       "model" : "CM-300",
       "notes" : [
-         "clip-on",
-         "DTR-2000"
+         "clip-on"
       ],
       "type" : "Tuner",
       "year" : "2023"
@@ -2877,7 +2863,8 @@ var equipment = [
       },
       "model" : "DTR-2000",
       "notes" : [
-         "rackmount"
+         "rackmount",
+         "CM-300"
       ],
       "type" : "Tuner",
       "year" : "2005"
@@ -4007,7 +3994,7 @@ var equipment = [
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
          "Power Consumption" : "500 mA",
-         "Power Supply" : "7 V",
+         "Power Supply" : "9 V",
          "Scale Length" : "34\"",
          "Serial" : "4101739",
          "Truss Rod" : "Adjustable, 4 mm Allen Nut"
@@ -4024,7 +4011,8 @@ var equipment = [
          "Tortex Standard",
          "MSS3-BRN",
          "Straplok",
-         "XPS-AB"
+         "XPS-AB",
+         "Power Manager PLUS"
       ],
       "strings" : "EXL170",
       "type" : "Bass Guitar",
@@ -4096,6 +4084,7 @@ var equipment = [
       },
       "image" : true,
       "link" : "https://www.epiphone.com/en-US/p/Electric-Guitar/EPINA3562/Ebony",
+      "main_rig" : true,
       "make" : "Epiphone",
       "model" : "Les Paul Standard",
       "notes" : [
@@ -4273,7 +4262,7 @@ var equipment = [
          "Neck Material" : "Maple",
          "Nut Width" : "1.5\"",
          "Power Consumption" : "500 mA",
-         "Power Supply" : "7V",
+         "Power Supply" : "9 V",
          "Scale Length" : "25.5”",
          "Serial" : "3058431",
          "Truss Rod" : "Adjustable, 4 mm Allen Nut"
@@ -4293,7 +4282,8 @@ var equipment = [
          "M17SS-BLK",
          "S-Locks",
          "GC-ELECTRIC-A",
-         "XPS-DI"
+         "XPS-DI",
+         "Power Manager PLUS"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -4595,9 +4585,9 @@ var links = {
    "Mackie" : "https://www.mackie.com/",
    "Mahalo" : "https://mahaloukuleles.com/",
    "Martin" : "https://www.martinguitar.com/",
+   "Mediorays" : "",
    "Meinl" : "https://meinlcymbals.com/",
    "Mission Engineering" : "https://missionengineering.com/",
-   "None" : "",
    "Northfield" : "https://www.northfieldinstruments.com/",
    "O.C. White" : "https://www.ocwhite.com/",
    "Origin Effects" : "https://origineffects.com/",
@@ -4628,7 +4618,7 @@ var links = {
    "String Swing" : "https://www.stringswing.com/",
    "Strymon" : "https://www.strymon.net/",
    "Studio Projects" : "http://www.studioprojects.com/",
-   "Sweet Foot Pedals" : "https://www.sweetfootpedals.com/",
+   "Sweet Foot" : "https://www.sweetfootpedals.com/",
    "Tama" : "https://www.tama.com/",
    "Tapco" : "https://www.mackie.com/",
    "Temple Audio" : "https://www.templeaudio.com/",
