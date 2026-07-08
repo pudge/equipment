@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-07-07T12:00:00+0000")
+var lastModified = new Date("2026-07-08T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -11,6 +11,19 @@ var equipment = [
       "link" : "https://ebssweden.com/cables/hp-series/",
       "make" : "EBS",
       "model" : "HP Cables",
+      "notes" : [
+         "pedalboard"
+      ],
+      "type" : "Cables",
+      "year" : "2026"
+   },
+   {
+      "category" : "Accessories",
+      "current_pedal" : true,
+      "image" : true,
+      "link" : "https://www.jimdunlop.com/mxr-3ft-patch-cable/",
+      "make" : "MXR",
+      "model" : "MXR Patch Cables",
       "notes" : [
          "pedalboard"
       ],
