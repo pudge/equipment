@@ -83,7 +83,12 @@ sub get_gear {
 
     my %manuals;
     for my $x (@$manuals) {
-        $manuals{ $x->{'Model'} }{ $x->{'Name'} } = $x->{'File'};
+        if ($x->{'Skip'} eq 'TRUE') {
+            $manuals{ $x->{'Model'} }{ $x->{'File'} } = '__SKIP__';
+        }
+        else {
+            $manuals{ $x->{'Model'} }{ $x->{'File'} } = $x->{'Name'};
+        }
     }
 
     my %instrumans;

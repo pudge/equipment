@@ -4,7 +4,7 @@
  *  License: MIT
  */
 
-// heavily modified by me
+// heavily modified 2026 by projects@pudge.net
 
 ;(function() {
   'use strict'
@@ -189,7 +189,11 @@
     var scaleY = img.offsetHeight ? rect.height / img.offsetHeight : 1
     var screenX = (clientX - rect.left) / scaleX - bl
     var screenY = (clientY - rect.top)  / scaleY - bt
-    return { screenX: screenX, screenY: screenY,
-             mapX: (screenX - padW) / sfW, mapY: (screenY - padH) / sfH }
+    return {
+      screenX: screenX,
+      screenY: screenY,
+      mapX: (screenX - padW) / sfW,
+      mapY: (screenY - padH) / sfH,
+    }
   }
 })()

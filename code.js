@@ -152,15 +152,21 @@ function linkItManuals(oData) {
   var seen = {}
 
   if (oData['manuals']) {
-    Object.keys(oData['manuals']).forEach(function(label) {
-      var val = oData['manuals'][label]
-      if (/^https?:\/\//.test(val)) {
-        rows.push(`<div class="manual_row"><a href="${val}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+    Object.keys(oData['manuals'])
+    .sort(function(a, b) {
+      return oData['manuals'][a].localeCompare(oData['manuals'][b]);
+    })
+    .forEach(function(file) {
+      var label = oData['manuals'][file]
+      if (/^https?:\/\//.test(file)) {
+        rows.push(`<div class="manual_row"><a href="${file}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
       } else {
-        var file = `./manuals/${modelName}/${val}`
-        if (md5s[file]) {
-          rows.push(`<div class="manual_row"><a href="${md5Src(file)}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
-          seen[file] = true
+        var file2 = `./manuals/${modelName}/${file}`
+        if (md5s[file2]) {
+          if (label != '__SKIP__') {
+            rows.push(`<div class="manual_row"><a href="${md5Src(file2)}"><i class="far fa-file fa-fw"></i>&nbsp;${label}</a></div>`)
+          }
+          seen[file2] = true
         }
       }
     })

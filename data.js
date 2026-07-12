@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-07-08T12:00:00+0000")
+var lastModified = new Date("2026-07-13T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -19,7 +19,6 @@ var equipment = [
    },
    {
       "category" : "Accessories",
-      "current_pedal" : true,
       "image" : true,
       "link" : "https://www.jimdunlop.com/mxr-3ft-patch-cable/",
       "make" : "MXR",
@@ -105,7 +104,7 @@ var equipment = [
       "link" : "https://ebow.com/",
       "make" : "EBow",
       "manuals" : {
-         "Player’s Guide" : "EBowPlayersGuide.pdf"
+         "EBowPlayersGuide.pdf" : "Player’s Guide"
       },
       "model" : "EBow",
       "notes" : [
@@ -149,7 +148,7 @@ var equipment = [
       "link" : "https://line6.com/relay-wireless/g10-g10s/",
       "make" : "Line 6",
       "manuals" : {
-         "Pilot’s Guide" : "Relay G10TII - G10 - G10S Pilot's Guide - English .pdf"
+         "Relay G10TII - G10 - G10S Pilot's Guide - English .pdf" : "Pilot’s Guide"
       },
       "model" : "Relay G10",
       "notes" : [
@@ -866,7 +865,7 @@ var equipment = [
       "link" : "https://www.fender.com/products/rumble-100",
       "make" : "Fender",
       "manuals" : {
-         "Owner’s Manual" : "OM_Rumble_40_100_200_500_US_5.pdf"
+         "OM_Rumble_40_100_200_500_US_5.pdf" : "Owner’s Manual"
       },
       "model" : "Rumble 100",
       "next" : true,
@@ -898,7 +897,7 @@ var equipment = [
       "main_rig" : true,
       "make" : "Fender",
       "manuals" : {
-         "Owner’s Manual" : "OM_Rumble_40_100_200_500_US_5.pdf"
+         "OM_Rumble_40_100_200_500_US_5.pdf" : "Owner’s Manual"
       },
       "model" : "Rumble 40",
       "next" : true,
@@ -945,7 +944,7 @@ var equipment = [
       "link" : "https://voxamps.com/product/amplug/",
       "make" : "VOX",
       "manuals" : {
-         "Owner’s Manual" : "amPlug_30_CR_Metal.pdf"
+         "amPlug_30_CR_Metal.pdf" : "Owner’s Manual"
       },
       "model" : "amPlug AC30",
       "notes" : [
@@ -969,7 +968,7 @@ var equipment = [
       "link" : "https://www.blackstaramps.com/uk/products/fly-3",
       "make" : "Blackstar",
       "manuals" : {
-         "Owner’s Manual" : "fly-handbook.pdf"
+         "fly-handbook.pdf" : "Owner’s Manual"
       },
       "model" : "Fly 3",
       "notes" : [
@@ -996,7 +995,7 @@ var equipment = [
       "link" : "https://travelerguitar.com/products/ma-5-micro-amp",
       "make" : "Traveler",
       "manuals" : {
-         "User Manual" : "user manual.pdf"
+         "user manual.pdf" : "User Manual"
       },
       "model" : "MA-5 Micro Amp",
       "notes" : [
@@ -1023,7 +1022,7 @@ var equipment = [
       "link" : "https://line6.com/legacy/spideriv15",
       "make" : "Line 6",
       "manuals" : {
-         "Pilot’s Handbook" : "Spider IV 15 Pilot's Guide - English ( Rev F ).pdf"
+         "Spider IV 15 Pilot's Guide - English ( Rev F ).pdf" : "Pilot’s Handbook"
       },
       "model" : "Spider IV 15",
       "notes" : [
@@ -1057,9 +1056,9 @@ var equipment = [
       "main_rig" : true,
       "make" : "Yamaha",
       "manuals" : {
-         "Operation Guide" : "THR_Operation_Guide_en.pdf",
-         "Presets" : "Yamaha THRII Presets.pdf",
-         "Reference Manual" : "THR30II_Wireless_reference_manual_En_F0.pdf"
+         "THR30II_Wireless_reference_manual_En_F0.pdf" : "Reference Manual",
+         "THR_Operation_Guide_en.pdf" : "Operation Guide",
+         "Yamaha THRII Presets.pdf" : "Presets"
       },
       "model" : "THR30II Wireless",
       "notes" : [
@@ -1103,8 +1102,8 @@ var equipment = [
       "link" : "https://kahlerusa.com/product/2700-series-fulcrum-tremolo-system/",
       "make" : "Kahler",
       "manuals" : {
-         "Brochure" : "Fulcrum-Systems.jpg",
-         "Installation Guide" : "Double locking tremolo installation instructions.pdf"
+         "Double locking tremolo installation instructions.pdf" : "Installation Guide",
+         "Fulcrum-Systems.jpg" : "Brochure"
       },
       "model" : "Killer 2710",
       "notes" : [
@@ -1121,8 +1120,8 @@ var equipment = [
       "link" : "https://kahlerusa.com/product/standard-stringlock/",
       "make" : "Kahler",
       "manuals" : {
-         "Brochure" : "stringlocks-locknuts.jpg",
-         "Installation Guide" : "X-5513-5514W.gif"
+         "X-5513-5514W.gif" : "Installation Guide",
+         "stringlocks-locknuts.jpg" : "Brochure"
       },
       "model" : "Stringlock",
       "notes" : [
@@ -1176,7 +1175,7 @@ var equipment = [
       "link" : "https://www.sony.com/electronics/headphones/t/headband-headphones",
       "make" : "Sony",
       "manuals" : {
-         "Operating Instructions" : "26673061M.pdf"
+         "26673061M.pdf" : "Operating Instructions"
       },
       "model" : "MDR-V600",
       "type" : "Headphones",
@@ -1195,9 +1194,9 @@ var equipment = [
       "link" : "https://www.shure.com/en-US/products/earphones/se215cl",
       "make" : "Shure",
       "manuals" : {
-         "Earphone Resource Center" : "Earphone-Resource-Center_guide_en-US.pdf",
-         "Exploded View" : "SE215_Exploded_View.pdf",
-         "User Guide" : "SE215M_guide_en-US.pdf"
+         "Earphone-Resource-Center_guide_en-US.pdf" : "Earphone Resource Center",
+         "SE215M_guide_en-US.pdf" : "User Guide",
+         "SE215_Exploded_View.pdf" : "Exploded View"
       },
       "model" : "SE215-CL",
       "type" : "Headphones",
@@ -1242,7 +1241,7 @@ var equipment = [
       "link" : "https://www.motu.com/products/motuaudio/828/",
       "make" : "MOTU",
       "manuals" : {
-         "User Guide" : "828mkII_Manual_Mac.pdf"
+         "828mkII_Manual_Mac.pdf" : "User Guide"
       },
       "model" : "828mkII",
       "notes" : [
@@ -1278,7 +1277,7 @@ var equipment = [
       "link" : "https://www.midiplus.com.tw/en/product-detail/MIDI4X4/",
       "make" : "MIDIPLUS",
       "manuals" : {
-         "Owner’s Manual" : "MIDIPLUS_Manual_MIDI4x4_EN_V1.0.pdf"
+         "MIDIPLUS_Manual_MIDI4x4_EN_V1.0.pdf" : "Owner’s Manual"
       },
       "model" : "MIDI 4X4",
       "notes" : [
@@ -1304,7 +1303,7 @@ var equipment = [
       "link" : "https://www.m-audio.com/products/browse/category/keyboards-and-controllers",
       "make" : "M-Audio",
       "manuals" : {
-         "Manual" : "Oxygen8.pdf"
+         "Oxygen8.pdf" : "Manual"
       },
       "model" : "Oxygen8",
       "notes" : [
@@ -1335,8 +1334,8 @@ var equipment = [
       "link" : "https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-18i20",
       "make" : "Focusrite",
       "manuals" : {
-         "Focusrite Control User Guide" : "Focusrite Control Scarlett 2nd Gen User Guide - EN.pdf",
-         "User Guide" : "374164.pdf"
+         "374164.pdf" : "User Guide",
+         "Focusrite Control Scarlett 2nd Gen User Guide - EN.pdf" : "Focusrite Control User Guide"
       },
       "model" : "Scarlett 18i20",
       "notes" : [
@@ -1363,8 +1362,8 @@ var equipment = [
       "link" : "https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2",
       "make" : "Focusrite",
       "manuals" : {
-         "Focusrite Control User Guide" : "Focusrite Control Scarlett 3rd Gen User Guide_EN_0.pdf",
-         "User Guide" : "516658.pdf"
+         "516658.pdf" : "User Guide",
+         "Focusrite Control Scarlett 3rd Gen User Guide_EN_0.pdf" : "Focusrite Control User Guide"
       },
       "model" : "Scarlett 2i2",
       "notes" : [
@@ -1389,8 +1388,8 @@ var equipment = [
       "link" : "https://mackie.com/products/big-knob-series-monitor-controllers-interfaces",
       "make" : "Mackie",
       "manuals" : {
-         "Operation Guide" : "big_knob_studio_command_system.pdf",
-         "Quick Start Guide" : "big_knob.pdf"
+         "big_knob.pdf" : "Quick Start Guide",
+         "big_knob_studio_command_system.pdf" : "Operation Guide"
       },
       "model" : "Big Knob",
       "type" : "Live Audio",
@@ -1416,7 +1415,7 @@ var equipment = [
       "image" : true,
       "make" : "Edirol",
       "manuals" : {
-         "Owner’s Manual" : "MA-20D_egfis2.pdf"
+         "MA-20D_egfis2.pdf" : "Owner’s Manual"
       },
       "model" : "MA-20D",
       "type" : "Live Audio",
@@ -1429,7 +1428,7 @@ var equipment = [
       "link" : "https://mackie.com/en/products/mixers/mix-series",
       "make" : "Tapco",
       "manuals" : {
-         "Manual" : "MixSeries_OM.pdf"
+         "MixSeries_OM.pdf" : "Manual"
       },
       "model" : "Mix.50",
       "type" : "Live Audio",
@@ -1442,7 +1441,7 @@ var equipment = [
       "link" : "https://peavey.com/product-category/pro-audio/mixers/compact-mixers/",
       "make" : "Peavey",
       "manuals" : {
-         "Operations Guide" : "pv6_manual.pdf"
+         "pv6_manual.pdf" : "Operations Guide"
       },
       "model" : "PV 6",
       "type" : "Live Audio",
@@ -1461,7 +1460,7 @@ var equipment = [
       "link" : "https://usa.yamaha.com/products/proaudio/pa_systems/",
       "make" : "Yamaha",
       "manuals" : {
-         "Owner’s Manual" : "stagepas500_en_om_d0.pdf"
+         "stagepas500_en_om_d0.pdf" : "Owner’s Manual"
       },
       "model" : "STAGEPAS 500",
       "notes" : [
@@ -1476,7 +1475,7 @@ var equipment = [
       "link" : "https://wittner-gmbh.de/wittner_metronome_maelzel_wooden_casing.html",
       "make" : "Wittner",
       "manuals" : {
-         "Manual" : "maelzel_gebrauchsanleitung.pdf"
+         "maelzel_gebrauchsanleitung.pdf" : "Manual"
       },
       "model" : "801m",
       "type" : "Metronome",
@@ -1488,8 +1487,8 @@ var equipment = [
       "link" : "http://www.studioprojects.com/b1.html",
       "make" : "Studio Projects",
       "manuals" : {
-         "Manual" : "studio_projects_b_series_manual.pdf",
-         "Pattern" : "studio_projects_b1.pdf"
+         "studio_projects_b1.pdf" : "Pattern",
+         "studio_projects_b_series_manual.pdf" : "Manual"
       },
       "model" : "B1",
       "type" : "Microphone",
@@ -1510,9 +1509,9 @@ var equipment = [
       "link" : "https://en-us.sennheiser.com/live-performance-microphone-vocal-stage-e-835",
       "make" : "Sennheiser",
       "manuals" : {
-         "Manual" : "e835_Manual_01_2019_EN.pdf",
-         "Product Specification" : "SP_1209_v1.0_e_835_e_835-S_Product_Specification_EN.pdf",
-         "Quick Guide" : "e835_Quick_Guide_09_2023.pdf"
+         "SP_1209_v1.0_e_835_e_835-S_Product_Specification_EN.pdf" : "Product Specification",
+         "e835_Manual_01_2019_EN.pdf" : "Manual",
+         "e835_Quick_Guide_09_2023.pdf" : "Quick Guide"
       },
       "model" : "e 835",
       "type" : "Microphone",
@@ -1550,7 +1549,7 @@ var equipment = [
       "link" : "https://www.sennheiser.com/en-us/catalog/products/wireless-systems",
       "make" : "Sennheiser",
       "manuals" : {
-         "Instructions" : "Sennheiser_Ew100_ENGG2.pdf"
+         "Sennheiser_Ew100_ENGG2.pdf" : "Instructions"
       },
       "model" : "ew 122-p G2",
       "type" : "Microphone",
@@ -1577,7 +1576,7 @@ var equipment = [
       "link" : "https://north-america.beyerdynamic.com/microphones.html",
       "make" : "Beyer Dynamic",
       "manuals" : {
-         "Datasheet" : "Beyer M58 datasheet.pdf"
+         "Beyer M58 datasheet.pdf" : "Datasheet"
       },
       "model" : "M 58",
       "type" : "Microphone",
@@ -1608,7 +1607,7 @@ var equipment = [
       "link" : "https://www.akg.com/Microphones/Condenser%20Microphones/P220.html",
       "make" : "AKG",
       "manuals" : {
-         "User Instructions" : "585203.pdf"
+         "585203.pdf" : "User Instructions"
       },
       "model" : "P220",
       "type" : "Microphone",
@@ -1620,7 +1619,7 @@ var equipment = [
       "link" : "https://www.shure.com/en-US/products/microphones/sm58",
       "make" : "Shure",
       "manuals" : {
-         "User Guide" : "us_pro_sm58_ug.pdf"
+         "us_pro_sm58_ug.pdf" : "User Guide"
       },
       "model" : "SM-58",
       "type" : "Microphone",
@@ -1645,7 +1644,7 @@ var equipment = [
       "kids_pedal" : true,
       "make" : "Dozzly",
       "manuals" : {
-         "Manual" : "analogchorusmini.pdf"
+         "analogchorusmini.pdf" : "Manual"
       },
       "model" : "Analog Chorus Mini",
       "notes" : [
@@ -1671,11 +1670,11 @@ var equipment = [
       "link" : "https://jhspedals.info/collections/discontinued-rare/products/calhoun-v2-mike-campbell",
       "make" : "JHS",
       "manuals" : {
-         "Manual" : "JHS_CALHOUN_V2_manual_EN.pdf",
-         "Manual - Firefly" : "JHS_FIREFLY_manual_EN.pdf",
-         "Manual - Twin Twelve" : "JHS_TWIN_TWELVE_manual_EN.pdf",
-         "Web Page - Firefly" : "https://jhspedals.info/products/firefly",
-         "Web Page - Twin Twelve" : "https://jhspedals.info/products/twin-twelve-drive"
+         "JHS_CALHOUN_V2_manual_EN.pdf" : "Manual",
+         "JHS_FIREFLY_manual_EN.pdf" : "Manual - Firefly",
+         "JHS_TWIN_TWELVE_manual_EN.pdf" : "Manual - Twin Twelve",
+         "https://jhspedals.info/products/firefly" : "Web Page - Firefly",
+         "https://jhspedals.info/products/twin-twelve-drive" : "Web Page - Twin Twelve"
       },
       "model" : "Calhoun V2",
       "notes" : [
@@ -1713,7 +1712,7 @@ var equipment = [
       "link" : "https://www.walrusaudio.com/products/canvas-tuner?variant=47141105369323",
       "make" : "Walrus Audio",
       "manuals" : {
-         "Manual" : "Canvas_Tuner_Digital_Manual_2_2_26.pdf"
+         "Canvas_Tuner_Digital_Manual_2_2_26.pdf" : "Manual"
       },
       "model" : "Canvas Tuner",
       "notes" : [
@@ -1745,7 +1744,7 @@ var equipment = [
       "link" : "https://empresseffects.com/products/compressor-mkii?variant=31752414396531",
       "make" : "Empress",
       "manuals" : {
-         "Manual" : "Compressor_MKII_manual.pdf"
+         "Compressor_MKII_manual.pdf" : "Manual"
       },
       "model" : "Compressor MKII",
       "next" : true,
@@ -1774,7 +1773,7 @@ var equipment = [
       "link" : "https://www.ehx.com/products/deluxe-bass-big-muff-pi",
       "make" : "Electro-Harmonix",
       "manuals" : {
-         "Manual" : "deluxe-bass-big-muff-pi.pdf"
+         "deluxe-bass-big-muff-pi.pdf" : "Manual"
       },
       "model" : "Deluxe Bass Big Muff Pi",
       "notes" : [
@@ -1803,7 +1802,7 @@ var equipment = [
       "kids_pedal" : true,
       "make" : "Dozzly",
       "manuals" : {
-         "Manual" : "digitaldelaymini.pdf"
+         "digitaldelaymini.pdf" : "Manual"
       },
       "model" : "Digital Delay Mini",
       "notes" : [
@@ -1832,7 +1831,7 @@ var equipment = [
       "kids_pedal" : true,
       "make" : "iSet",
       "manuals" : {
-         "Manual" : "dumblemini.pdf"
+         "dumblemini.pdf" : "Manual"
       },
       "model" : "Dumble Mini",
       "notes" : [
@@ -1850,7 +1849,7 @@ var equipment = [
       "link" : "https://line6.com/legacy/fbve",
       "make" : "Line 6",
       "manuals" : {
-         "User Manual" : "FBV User Manual - English.pdf"
+         "FBV User Manual - English.pdf" : "User Manual"
       },
       "model" : "FBV Express",
       "type" : "Pedal",
@@ -1901,7 +1900,7 @@ var equipment = [
       "link" : "https://www.jimdunlop.com/mxr-gran-torino-boost-overdrive/",
       "make" : "MXR",
       "manuals" : {
-         "Product Manual" : "CSP033G.pdf"
+         "CSP033G.pdf" : "Product Manual"
       },
       "model" : "Gran Torino",
       "notes" : [
@@ -1930,7 +1929,7 @@ var equipment = [
       "kids_pedal" : true,
       "make" : "iSet",
       "manuals" : {
-         "Manual" : "gteqmini.pdf"
+         "gteqmini.pdf" : "Manual"
       },
       "model" : "GT EQ Mini",
       "notes" : [
@@ -1941,13 +1940,12 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "Analog Inputs" : "1/4\" x 2, XLR, 1/4\" return x 4",
          "Analog Outputs" : "1/4\" x 2, XLR x 2, 1/4\" send x4",
          "Computer Interface" : "USB-C, USB-A, NEXUS",
          "Dimensions" : "19.4\" x 10.1\" x 3\"",
-         "Expression" : "TRS x 2",
+         "Expression" : "1/4\" TRS x 2",
          "MIDI" : "In/Out+Thru",
          "Phones" : "1/4\" stereo",
          "Power Consumption" : "",
@@ -1957,52 +1955,19 @@ var equipment = [
          "Storage" : "Micro SD",
          "Weight" : ""
       },
-      "featured" : true,
       "hide" : true,
       "image" : true,
       "link" : "https://line6.com/helix-stadium/",
-      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
-         "Cheat Sheet" : "Helix Stadium XL Floor Cheat Sheet - English .pdf",
-         "Model Gallery" : "https://helixhelp.com/models",
-         "Owner’s Manual" : "https://manuals.line6.com/en/helix-stadium/live"
+         "Helix Stadium XL Floor Cheat Sheet - English .pdf" : "Cheat Sheet",
+         "https://helixhelp.com/models" : "Model Gallery",
+         "https://manuals.line6.com/en/helix-stadium/live" : "Owner’s Manual"
       },
       "model" : "Helix Stadium XL",
       "next" : true,
       "notes" : [
          "multi-effects"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
-      "current_pedal" : true,
-      "detail" : {
-         "Analog Inputs" : "1/4\" TS",
-         "Analog Outputs" : "1/4\" TS",
-         "Bypass" : "True/Buffered",
-         "Computer Interface" : "USB Mini-B",
-         "Dimensions" : "1.9\" x 1.9\" x 3.7\"",
-         "Input Impedance" : "1 MΩ",
-         "Output Impedance" : "100 Ω",
-         "Power Consumption" : "> 100 mA",
-         "Power Supply" : "9 V",
-         "Serial" : "",
-         "Weight" : "0.44 lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.tcelectronic.com/en/products/0709-AJU",
-      "make" : "tc electronic",
-      "manuals" : {
-         "Quick Start Guide" : "Quick Start Guide.pdf"
-      },
-      "model" : "Infinite mini",
-      "next" : true,
-      "notes" : [
-         "sustainer"
       ],
       "type" : "Pedal",
       "year" : "2026"
@@ -2023,7 +1988,7 @@ var equipment = [
       "link" : "https://jhspedals.info/products/kilt-10",
       "make" : "JHS",
       "manuals" : {
-         "Manual" : "JHS_KILT_10_MANUAL_EN.pdf"
+         "JHS_KILT_10_MANUAL_EN.pdf" : "Manual"
       },
       "model" : "Kilt 10",
       "notes" : [
@@ -2050,7 +2015,7 @@ var equipment = [
       "link" : "https://www.ehx.com/products/lizard-queen/",
       "make" : "Electro-Harmonix",
       "manuals" : {
-         "Manual" : "lizard-queen-manual.pdf"
+         "lizard-queen-manual.pdf" : "Manual"
       },
       "model" : "Lizard Queen",
       "notes" : [
@@ -2062,7 +2027,6 @@ var equipment = [
    },
    {
       "category" : "Hardware",
-      "current_pedal" : true,
       "detail" : {
          "AD/DA Conversion" : "16 bits",
          "Audio Channels" : "Mono",
@@ -2080,10 +2044,11 @@ var equipment = [
          "Weight" : "420 g (15 oz)"
       },
       "image" : true,
+      "kids_pedal" : true,
       "link" : "https://www.boss.info/us/products/rc-2/",
       "make" : "BOSS",
       "manuals" : {
-         "Owner’s Manual" : "RC-2_e2.pdf"
+         "RC-2_e2.pdf" : "Owner’s Manual"
       },
       "model" : "Loop Station RC-2",
       "notes" : [
@@ -2113,16 +2078,14 @@ var equipment = [
          "Serial" : "",
          "Weight" : "450 g (1 lbs)"
       },
-      "hide" : true,
       "image" : true,
       "link" : "https://www.boss.info/us/products/rc-5/",
       "make" : "BOSS",
       "manuals" : {
-         "Owner’s Manual" : "RC-5_eng02_W.pdf",
-         "Reference Manual" : "RC-5_reference_eng02_W.pdf"
+         "RC-5_eng02_W.pdf" : "Owner’s Manual",
+         "RC-5_reference_eng02_W.pdf" : "Reference Manual"
       },
       "model" : "Loop Station RC-5",
-      "next" : true,
       "notes" : [
          "looper",
          "Two-Button Micro Switch"
@@ -2147,7 +2110,7 @@ var equipment = [
       "link" : "https://www.ehx.com/products/metal-muff",
       "make" : "Electro-Harmonix",
       "manuals" : {
-         "Manual" : "metal-muff-manual.pdf"
+         "metal-muff-manual.pdf" : "Manual"
       },
       "model" : "Metal Muff",
       "notes" : [
@@ -2173,7 +2136,7 @@ var equipment = [
       "link" : "https://jhspedals.info/collections/overdrive-distortions/products/morning-glory-clean",
       "make" : "JHS",
       "manuals" : {
-         "Manual" : "JHS_MORNING_GLORY_CLEAN_MANUAL_EN.pdf"
+         "JHS_MORNING_GLORY_CLEAN_MANUAL_EN.pdf" : "Manual"
       },
       "model" : "Morning Glory Clean",
       "notes" : [
@@ -2198,7 +2161,7 @@ var equipment = [
       "link" : "https://www.ehx.com/products/nano-big-muff-pi",
       "make" : "Electro-Harmonix",
       "manuals" : {
-         "Manual" : "nano-big-muff-pi-manual.pdf"
+         "nano-big-muff-pi-manual.pdf" : "Manual"
       },
       "model" : "Nano Big Muff Pi",
       "notes" : [
@@ -2271,7 +2234,6 @@ var equipment = [
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Footswitch-for-JHS-Red-Remote-Morning-Glory-V4-SuperBolt-V2-Twin-Rwelve-V2-Double-Barrel-V4-Switchback-Boss-Angry-Driver--HANDMADE-IN-USA_p_441.html",
       "make" : "Sweet Foot",
       "model" : "One-Button Switch",
-      "next" : true,
       "notes" : [
          "MoonShine",
          "black",
@@ -2284,15 +2246,48 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4”, XLR, 1/4” return x 2",
-         "Analog Outputs" : "Stereo 1/4\" x 2, stereo XLR, 1/4\" send",
-         "Computer Interface" : "USB-B",
+         "Analog Inputs" : "1/4\" TRS",
+         "Analog Outputs" : "1/4\" TRS",
+         "Bypass" : "True/Buffered",
+         "Dimensions" : "4.88\" x 2.87\" x 2.36\"",
+         "Expression" : "1/4\" TRS (EXP/CV)",
+         "MIDI" : "1/4\" TRS (or momentary, normally-open)",
+         "Power Consumption" : "200 mA",
+         "Power Supply" : "9 V",
+         "Serial" : ""
+      },
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.chasebliss.com/onward",
+      "make" : "Chase Bliss",
+      "manuals" : {
+         "Onward_MIDI-Manual_Pedal_Chase+Bliss.pdf" : "MIDI Manual",
+         "Onward_Manual_Pedal_Chase-Bliss.pdf" : "Manual",
+         "Onward_Quick-Start-Guide_Pedal_Chase-Bliss.pdf" : "Quick Start Guide"
+      },
+      "model" : "Onward",
+      "next" : true,
+      "notes" : [
+         "dynamic sampler",
+         "sustainer"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS Guitar, 1/4” TS Aux, 1/4\" TS Return x 2, 1/4\" TRS Headphones, XLR, 1/8\" TRS",
+         "Analog Outputs" : "1/4\" TS x 2, 1/4\" TS Send, XLR x 2",
+         "Computer Interface" : "USB-B 2.0",
+         "Digital Conversion" : "24-bit",
+         "Digital Inputs" : "Variax Digital Connector",
          "Digital Outputs" : "S/PDIF RCA coaxial",
+         "Digital Signal Processing" : "32-bit floating point",
          "Dimensions" : "21.5\" x 10\" x 4.75\"",
-         "Guitar Input" : "1/4\", Variax",
-         "Line In" : "1/8\" stereo",
+         "Expression" : "1/4\" TS",
          "MIDI" : "In/Out+Thru",
-         "Phones" : "1/4\" stereo",
          "Power Consumption" : "2 A",
          "Power Supply" : "9 V",
          "Serial" : "X3L1S5937000703",
@@ -2304,8 +2299,10 @@ var equipment = [
       "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
-         "Advanced Guide" : "POD X3 Advanced Guide - English ( Rev E ).pdf",
-         "Model Gallery" : "POD X3 Model Gallery - English ( Rev B ).pdf"
+         "MIDI Continuous Controller Reference ( Rev F ).pdf" : "MIDI Continuous Controller Reference",
+         "POD X3 Advanced Guide - English ( Rev E ).pdf" : "Advanced Guide",
+         "POD X3 Model Gallery - English ( Rev B ).pdf" : "Model Gallery",
+         "POD X3 Quick Start - English ( Rev F ).pdf" : "__SKIP__"
       },
       "model" : "POD X3 Live",
       "notes" : [
@@ -2356,7 +2353,7 @@ var equipment = [
       "kids_pedal" : true,
       "make" : "Mediorays",
       "manuals" : {
-         "Manual" : "reverbmini.pdf"
+         "reverbmini.pdf" : "Manual"
       },
       "model" : "Reverb Mini",
       "notes" : [
@@ -2385,7 +2382,7 @@ var equipment = [
       "kids_pedal" : true,
       "make" : "iSet",
       "manuals" : {
-         "Manual" : "sandwichcompmini.pdf"
+         "sandwichcompmini.pdf" : "Manual"
       },
       "model" : "Sandwich Comp Mini",
       "notes" : [
@@ -2414,7 +2411,7 @@ var equipment = [
       "kids_pedal" : true,
       "make" : "Amuzik",
       "manuals" : {
-         "Manual" : "tunermini.pdf"
+         "tunermini.pdf" : "Manual"
       },
       "model" : "Tuner Mini",
       "notes" : [
@@ -2435,7 +2432,6 @@ var equipment = [
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Two-Button-Micro-Footswitch-Boss-DD-500-RC-500-MD-500etc-HANDMADE-IN-USA_p_472.html",
       "make" : "Sweet Foot",
       "model" : "Two-Button Micro Switch",
-      "next" : true,
       "notes" : [
          "Custom",
          "black"
@@ -2451,6 +2447,7 @@ var equipment = [
          "Switch Jack" : "1/4\" TRS output (momentary, normally closed)"
       },
       "image" : true,
+      "kids_pedal" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Sweet-Foot-Footswitch-for-Boss-Loopers--HANDEMADE-IN-USA-_p_393.html",
       "make" : "Sweet Foot",
       "model" : "Two-Button Switch",
@@ -2537,12 +2534,12 @@ var equipment = [
       "link" : "https://www.templeaudio.com/templeboards/trio-series",
       "make" : "Temple Audio",
       "manuals" : {
-         "4X MOD Setup Guide" : "4X_Mod_Setup_Guide.pdf",
-         "DI MOD Pro Setup Guide" : "DI_Mod_Pro_Setup_Guide.pdf",
-         "DI MOD Setup Guide" : "DI_Mod_Setup_Guide.pdf",
-         "IEC MOD Setup Guide" : "IECMOD_Setup_Guide.pdf",
-         "MODs" : "https://www.templeaudio.com/mods",
-         "SUM MOD Setup Guide" : "Sum_Mod_Setup_Guide.pdf"
+         "4X_Mod_Setup_Guide.pdf" : "4X MOD Setup Guide",
+         "DI_Mod_Pro_Setup_Guide.pdf" : "DI MOD Pro Setup Guide",
+         "DI_Mod_Setup_Guide.pdf" : "DI MOD Setup Guide",
+         "IECMOD_Setup_Guide.pdf" : "IEC MOD Setup Guide",
+         "Sum_Mod_Setup_Guide.pdf" : "SUM MOD Setup Guide",
+         "https://www.templeaudio.com/mods" : "MODs"
       },
       "model" : "Templeboard TRIO 28",
       "notes" : [
@@ -2569,8 +2566,8 @@ var equipment = [
       "link" : "https://www.emgpickups.com/40tw.html",
       "make" : "EMG",
       "manuals" : {
-         "Pickup Instructions" : "40tw_0230-0139rc.pdf",
-         "Pot Instructions" : "b136re_ppp_0230-0269ra.pdf"
+         "40tw_0230-0139rc.pdf" : "Pickup Instructions",
+         "b136re_ppp_0230-0269ra.pdf" : "Pot Instructions"
       },
       "model" : "40TW",
       "type" : "Pickup",
@@ -2587,8 +2584,8 @@ var equipment = [
       "link" : "https://www.fishman.com/portfolio/ellipse-matrix-blend-pickup-preamp-system/",
       "make" : "Fishman",
       "manuals" : {
-         "Installation Guide" : "ellipse_matrix_blend_installation_guide.pdf",
-         "User Guide" : "ellipse_matrix_blend_user_guide.pdf"
+         "ellipse_matrix_blend_installation_guide.pdf" : "Installation Guide",
+         "ellipse_matrix_blend_user_guide.pdf" : "User Guide"
       },
       "model" : "Ellipse Matrix Blend",
       "type" : "Pickup",
@@ -2619,7 +2616,7 @@ var equipment = [
       "link" : "https://www.fishman.com/product-series-aura-imaging/",
       "make" : "Fishman",
       "manuals" : {
-         "User Guide" : "f1-aura-plus.pdf"
+         "f1-aura-plus.pdf" : "User Guide"
       },
       "model" : "F1 Aura+",
       "type" : "Pickup",
@@ -2643,7 +2640,7 @@ var equipment = [
       "link" : "https://shop.fender.com/en-US/parts/stratocaster-parts/custom-shop-fat-50s-stratocaster-pickups/0992113000.html",
       "make" : "Fender",
       "manuals" : {
-         "Wiring Diagram" : "0992113000_custom_shop_fat_50s_strat_pickups.pdf"
+         "0992113000_custom_shop_fat_50s_strat_pickups.pdf" : "Wiring Diagram"
       },
       "model" : "Fat 50’s",
       "type" : "Pickup",
@@ -2661,7 +2658,7 @@ var equipment = [
       "image" : true,
       "make" : "Barcus-Berry",
       "manuals" : {
-         "For Sale" : "https://reverb.com/item/97821604-vintage-barcus-berry-hi-tek-acoustic-pickup-1980-s"
+         "https://reverb.com/item/97821604-vintage-barcus-berry-hi-tek-acoustic-pickup-1980-s" : "For Sale"
       },
       "model" : "Hi-Tek Acoustic",
       "notes" : [
@@ -2677,7 +2674,7 @@ var equipment = [
       "link" : "https://kksound.com/products/mandolintwin.php",
       "make" : "K&K",
       "manuals" : {
-         "Installation Guide" : "mandolintwin-internal-new.pdf"
+         "mandolintwin-internal-new.pdf" : "Installation Guide"
       },
       "model" : "Mandolin Twin",
       "type" : "Pickup",
@@ -2709,7 +2706,7 @@ var equipment = [
       "link" : "https://www.walrusaudio.com/collections/canvas-power-supplies/products/canvas-power-15?variant=45194582524139",
       "make" : "Walrus Audio",
       "manuals" : {
-         "Manual" : "Canvas_Power_Digital_Manual_089a7368-9bbb-4d81-88de-18132ac68626.pdf"
+         "Canvas_Power_Digital_Manual_089a7368-9bbb-4d81-88de-18132ac68626.pdf" : "Manual"
       },
       "model" : "Canvas Power 15",
       "notes" : [
@@ -2743,7 +2740,7 @@ var equipment = [
       "link" : "https://furmanpower.com/pro-av-power/",
       "make" : "Furman",
       "manuals" : {
-         "Owner’s Manual" : "SERIES_II_15AMP_manual.pdf"
+         "SERIES_II_15AMP_manual.pdf" : "Owner’s Manual"
       },
       "model" : "PM-8 II",
       "notes" : [
@@ -2761,7 +2758,7 @@ var equipment = [
       "link" : "https://www.radialeng.com/product/power-2",
       "make" : "Radial Engineering",
       "manuals" : {
-         "Manual" : "Power-2-Manual-WEB-03-2025.pdf"
+         "Power-2-Manual-WEB-03-2025.pdf" : "Manual"
       },
       "model" : "Power-2",
       "next" : true,
@@ -2814,7 +2811,7 @@ var equipment = [
       "image" : true,
       "make" : "Furman",
       "manuals" : {
-         "Owner’s Manual" : "PB-48_PB-48D_manual.pdf"
+         "PB-48_PB-48D_manual.pdf" : "Owner’s Manual"
       },
       "model" : "PB-48",
       "notes" : [
@@ -2872,7 +2869,7 @@ var equipment = [
       "link" : "https://www.korg.com/us/products/tuners/",
       "make" : "Korg",
       "manuals" : {
-         "Owner’s Manual" : "DTR2000_1000_EFG2.pdf"
+         "DTR2000_1000_EFG2.pdf" : "Owner’s Manual"
       },
       "model" : "DTR-2000",
       "notes" : [
@@ -2896,7 +2893,7 @@ var equipment = [
       "link" : "https://www.korg.com/us/products/tuners/sledgehammer_pro/",
       "make" : "Korg",
       "manuals" : {
-         "Owner’s Manual" : "SledgehammerPro_OM_EFGSJ2.pdf"
+         "SledgehammerPro_OM_EFGSJ2.pdf" : "Owner’s Manual"
       },
       "model" : "Sledgehammer Pro",
       "notes" : [
@@ -2934,13 +2931,13 @@ var equipment = [
       "link" : "https://www.petersontuners.com/products/stroboplushdc/",
       "make" : "Peterson",
       "manuals" : {
-         "Peterson Guided Tuning" : "Guided Tuning Manual.pdf",
-         "QuickStart" : "StroboPlusHDC_QuickStart_v1.1_EN-DE-ES-FR-IT.pdf",
-         "StroboPLUS HDC General Settings" : "Peterson StroboPLUS HDC General Settings Screen.pdf",
-         "StroboPLUS HDC Metronome" : "Peterson StroboPLUS HDC Metronome.pdf",
-         "StroboPLUS HDC Timer" : "Peterson StroboPLUS HDC Timer Screen.pdf",
-         "StroboPLUS HDC Tuner" : "Peterson StroboPLUS HDC Tuner.pdf",
-         "Tuning & Sweetener Presets" : "StroboPLUS HDC Tuning & Sweetener Presets.pdf"
+         "Guided Tuning Manual.pdf" : "Peterson Guided Tuning",
+         "Peterson StroboPLUS HDC General Settings Screen.pdf" : "StroboPLUS HDC General Settings",
+         "Peterson StroboPLUS HDC Metronome.pdf" : "StroboPLUS HDC Metronome",
+         "Peterson StroboPLUS HDC Timer Screen.pdf" : "StroboPLUS HDC Timer",
+         "Peterson StroboPLUS HDC Tuner.pdf" : "StroboPLUS HDC Tuner",
+         "StroboPLUS HDC Tuning & Sweetener Presets.pdf" : "Tuning & Sweetener Presets",
+         "StroboPlusHDC_QuickStart_v1.1_EN-DE-ES-FR-IT.pdf" : "QuickStart"
       },
       "model" : "StroboPLUS HDC",
       "next" : true,
@@ -2962,7 +2959,7 @@ var equipment = [
       "link" : "https://www.snarktuners.com/products/snark-originals",
       "make" : "Snark",
       "manuals" : {
-         "Manual" : "SN1_SN2-revised.pdf"
+         "SN1_SN2-revised.pdf" : "Manual"
       },
       "model" : "Super Snark SN-01",
       "notes" : [
@@ -2997,7 +2994,7 @@ var equipment = [
       "main_rig" : true,
       "make" : "Hohner",
       "manuals" : {
-         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
+         "Diatonic Tuning Charts.pdf" : "Diatonic Tuning Charts"
       },
       "model" : "Marine Band Deluxe",
       "notes" : [
@@ -3034,7 +3031,7 @@ var equipment = [
       "main_rig" : true,
       "make" : "Hohner",
       "manuals" : {
-         "Diatonic Tuning Charts" : "Diatonic Tuning Charts.pdf"
+         "Diatonic Tuning Charts.pdf" : "Diatonic Tuning Charts"
       },
       "model" : "Special 20",
       "notes" : [
@@ -3071,8 +3068,8 @@ var equipment = [
       "main_rig" : true,
       "make" : "Yamaha",
       "manuals" : {
-         "50 Greats for Piano" : "yamaha-50-greats-piano.pdf",
-         "Manual" : "YDP223.pdf"
+         "YDP223.pdf" : "Manual",
+         "yamaha-50-greats-piano.pdf" : "50 Greats for Piano"
       },
       "model" : "YDP-223",
       "type" : "Keyboard",
@@ -3097,7 +3094,7 @@ var equipment = [
       "link" : "https://usa.yamaha.com/products/musical_instruments/keyboards/portable_keyboards/",
       "make" : "Yamaha",
       "manuals" : {
-         "Manual" : "YPT300_1.pdf"
+         "YPT300_1.pdf" : "Manual"
       },
       "model" : "YPT-300",
       "type" : "Keyboard",
@@ -3115,7 +3112,7 @@ var equipment = [
       "link" : "https://stylophone.com/product/stylophone-s-1/",
       "make" : "Dubreq",
       "manuals" : {
-         "Manual" : "s1-booklet.pdf"
+         "s1-booklet.pdf" : "Manual"
       },
       "model" : "Stylophone S-1",
       "type" : "Synthesizer",
@@ -3195,7 +3192,7 @@ var equipment = [
       "link" : "https://usa.yamaha.com/products/musical_instruments/drums/el_drums/digital_percussion/",
       "make" : "Yamaha",
       "manuals" : {
-         "Manual" : "dd55.pdf"
+         "dd55.pdf" : "Manual"
       },
       "model" : "DD-55C",
       "pop_george" : true,
@@ -3602,7 +3599,7 @@ var equipment = [
       "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=39754219192405",
       "make" : "Traveler",
       "manuals" : {
-         "Manual" : "Escape_Mark_3_Manual.pdf"
+         "Escape_Mark_3_Manual.pdf" : "Manual"
       },
       "model" : "Escape Mark III",
       "notes" : [
@@ -3648,7 +3645,7 @@ var equipment = [
       "link" : "https://travelerguitar.com/products/escape-mark-iii?variant=40446336335957",
       "make" : "Traveler",
       "manuals" : {
-         "Manual" : "Escape_Mark_3_Manual.pdf"
+         "Escape_Mark_3_Manual.pdf" : "Manual"
       },
       "model" : "Escape Mark III (black)",
       "not_mine" : true,
@@ -3979,8 +3976,8 @@ var equipment = [
       "link" : "https://www.ibanez.com/usa/products/category/electric_basses/",
       "make" : "Ibanez",
       "manuals" : {
-         "Catalog (1986 model)" : "1986_Catalog_p16-17.webp",
-         "Owner’s Manual (1983 model)" : "1983RoadstarII_Manual.pdf"
+         "1983RoadstarII_Manual.pdf" : "Owner’s Manual (1983 model)",
+         "1986_Catalog_p16-17.webp" : "Catalog (1986 model)"
       },
       "model" : "Roadstar II RB650",
       "notes" : [
@@ -4016,7 +4013,7 @@ var equipment = [
       "link" : "https://line6.com/legacy/variaxbass700",
       "make" : "Line 6",
       "manuals" : {
-         "Pilot’s Handbook" : "Variax Bass Manual - English ( Rev A ).pdf"
+         "Variax Bass Manual - English ( Rev A ).pdf" : "Pilot’s Handbook"
       },
       "model" : "Variax 700",
       "notes" : [
@@ -4144,7 +4141,7 @@ var equipment = [
       "link" : "https://travelerguitar.com/products/ltd-ec-1?variant=39665627136085",
       "make" : "Traveler",
       "manuals" : {
-         "Manual" : "EC-1_Manual.pdf"
+         "EC-1_Manual.pdf" : "Manual"
       },
       "model" : "LTD EC-1",
       "notes" : [
@@ -4284,7 +4281,7 @@ var equipment = [
       "link" : "https://line6.com/legacy/variax500",
       "make" : "Line 6",
       "manuals" : {
-         "Pilot’s Handbook" : "Variax 500.pdf"
+         "Variax 500.pdf" : "Pilot’s Handbook"
       },
       "model" : "Variax 500",
       "notes" : [
@@ -4547,6 +4544,7 @@ var links = {
    "Barcus-Berry" : "",
    "Beyer Dynamic" : "https://north-america.beyerdynamic.com/",
    "Blackstar" : "https://www.blackstaramps.com/",
+   "Chase Bliss" : "https://www.chasebliss.com/",
    "Clayton" : "https://www.steveclayton.com/",
    "Crafty Gizmos" : "",
    "DR Strings" : "https://www.drstrings.com/",
