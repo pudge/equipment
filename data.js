@@ -19,15 +19,42 @@ var equipment = [
    },
    {
       "category" : "Accessories",
+      "hide" : true,
       "image" : true,
       "link" : "https://www.jimdunlop.com/mxr-3ft-patch-cable/",
       "make" : "MXR",
       "model" : "MXR Patch Cables",
-      "notes" : [
-         "pedalboard"
-      ],
       "type" : "Cables",
       "year" : "2026"
+   },
+   {
+      "category" : "Accessories",
+      "detail" : {
+         "Cable Ends" : "Switchcraft straight ends, right ends",
+         "Capacitance" : "33.27 pF/ft (109pF/M)",
+         "Diameter" : "0.237\" (6.02 mm)",
+         "Gauge" : "20 AWG",
+         "Inductance" : "0.07 µH/ft (0.2 µH/M)",
+         "Insulation" : "Polyethylene inner with PVC outer",
+         "Jacket + Material" : "PVC + Nylon Overbraid",
+         "Length" : "6'",
+         "Resistance" : "8.8 Ω/1,000' (29 Ω/km)",
+         "Shield" : "Copper Braid",
+         "Shield + Material" : "Copper Braid + Conductive PVC 98%",
+         "Termination Method" : "Silver Solder"
+      },
+      "image" : true,
+      "link" : "https://www.dimarzio.com/cables/guitar/guitar-cable",
+      "make" : "DiMarzio",
+      "model" : "DiMarzio Guitar Cables",
+      "notes" : [
+         "woven",
+         "red",
+         "electric blue"
+      ],
+      "type" : "Cables",
+      "year" : "2005",
+      "year_uncertain" : true
    },
    {
       "category" : "Accessories",
@@ -4549,6 +4576,7 @@ var links = {
    "Crafty Gizmos" : "",
    "DR Strings" : "https://www.drstrings.com/",
    "Daisy Rock" : "https://www.daisyrock.com/",
+   "DiMarzio" : "https://www.dimarzio.com/",
    "Digitech" : "https://www.digitech.com/",
    "Donner" : "https://us.donnermusic.com/",
    "Dozzly" : "",
