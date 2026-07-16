@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-07-16T12:00:00+0000")
+var lastModified = new Date("2026-07-18T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -2102,7 +2102,7 @@ var equipment = [
          "Power Consumption" : "170 mA",
          "Power Supply" : "9 V",
          "Sampling Frequency" : "44.1 kHz",
-         "Serial" : "",
+         "Serial" : "J7P5819",
          "Weight" : "450 g (1 lbs)"
       },
       "image" : true,
@@ -2205,17 +2205,19 @@ var equipment = [
          "Built By" : "Brian",
          "Bypass" : "True",
          "Dimensions" : "3.7\" x 4.7\" x 1.66\"",
-         "Power Consumption" : "10 mA",
+         "Effects Loop" : "1/4\" TRS (send/return)",
+         "Power Consumption" : "25 mA",
          "Power Supply" : "9 V",
-         "Serial" : ""
+         "Serial" : "06059361"
       },
-      "hide" : true,
       "image" : true,
       "kids_pedal" : true,
-      "link" : "https://jhspedals.info/products/notadumble",
+      "link" : "https://jhspedals.info/products/notadumble-v2",
       "make" : "JHS",
+      "manuals" : {
+         "manual.pdf" : "Manual"
+      },
       "model" : "NOTADÜMBLË V2",
-      "next" : true,
       "notes" : [
          "overdrive"
       ],
@@ -2235,13 +2237,14 @@ var equipment = [
          "Power Supply" : "9 V",
          "Serial" : ""
       },
-      "hide" : true,
       "image" : true,
       "kids_pedal" : true,
       "link" : "https://jhspedals.info/products/notaklon",
       "make" : "JHS",
+      "manuals" : {
+         "manual.pdf" : "Manual"
+      },
       "model" : "NOTAKLÖN",
-      "next" : true,
       "notes" : [
          "overdrive"
       ],

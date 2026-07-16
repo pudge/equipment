@@ -12,6 +12,8 @@ our $MAX = 1_000_000;
 my(%found, %gear, $el_a, $el_z);
 my($input, $first, $last, $firstwidth) = @ARGV;
 
+binmode(STDOUT, ':encoding(UTF-8)');
+
 process_gear();
 create_map();
 
