@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-07-13T12:00:00+0000")
+var lastModified = new Date("2026-07-16T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -162,7 +162,7 @@ var equipment = [
       "category" : "Accessories",
       "current_pedal" : true,
       "detail" : {
-         "Analog Outputs" : "XLR balanced, 1/4” unbalanced",
+         "Analog Outputs" : "XLR balanced, 1/4” TS",
          "Dimensions" : "3.9\" x 3.9\" x 2.6\"",
          "Dynamic Range" : ">107 dB",
          "Frequency Response" : "10 Hz - 20 kHz",
@@ -940,7 +940,7 @@ var equipment = [
          "Amplifier" : "5 W",
          "Battery Compartment" : "AA x 6",
          "Dimensions" : "6-1/4\" x 5\" x 9-1/2\"",
-         "Guitar Input" : "1/4\"",
+         "Guitar Input" : "1/4\" TS",
          "Serial" : "03/04183",
          "Speaker" : "6\"",
          "Weight" : "6 lbs"
@@ -962,8 +962,8 @@ var equipment = [
          "Battery Compartment" : "AAA x 2",
          "Battery Life" : "27 hours",
          "Dimensions" : "86 mm x 80 mm x 31 mm (3.39\" x 3.15\" x 1.22”)",
-         "Line In" : "1/8\" stereo",
-         "Phones" : "1/8\" stereo",
+         "Line In" : "1/8\" TRS",
+         "Phones" : "1/8\" TRS",
          "Weight" : "40 g (1.41 oz)"
       },
       "image" : true,
@@ -984,9 +984,9 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Amplifier" : "3 W",
-         "Guitar Input" : "1/4\"",
-         "Line In" : "1/8\" stereo",
-         "Phones" : "1/8\" stereo",
+         "Guitar Input" : "1/4\" TS",
+         "Line In" : "1/8\" TRS",
+         "Phones" : "1/8\" TRS",
          "Serial" : "UZA200408593",
          "Speaker" : "3\""
       },
@@ -1010,9 +1010,9 @@ var equipment = [
          "Amplifier" : "5W",
          "Battery" : "Rechargable (USB-C)",
          "Dimensions" : "6\" x 3.75\" x 3\"",
-         "Guitar Input" : "1/4\"",
-         "Line In" : "1/8\" stereo",
-         "Phones" : "1/8\" stereo",
+         "Guitar Input" : "1/4\" TS",
+         "Line In" : "1/8\" TRS",
+         "Phones" : "1/8\" TRS",
          "Power" : "5 V 1 A",
          "Speakers" : "2 x 2\"",
          "Weight" : "12 oz"
@@ -1037,9 +1037,9 @@ var equipment = [
       "detail" : {
          "Amplifier" : "15 W",
          "Dimensions" : "16” x 15\" x 8.5\" (406.4 mm x 381 mm x 215.9 mm)",
-         "Guitar Input" : "1/4\"",
-         "Line In" : "1/8\" stereo",
-         "Output" : "1/4\"",
+         "Guitar Input" : "1/4\" TS",
+         "Line In" : "1/8\" TRS",
+         "Output" : "1/4\" TS",
          "Serial" : "SF11L6420006862",
          "Speaker" : "8\"",
          "Weight" : "17 lbs (7.7 kg)"
@@ -1067,10 +1067,10 @@ var equipment = [
       "detail" : {
          "Amplifier" : "15 W x 2; battery operation 7.5 W x 2",
          "Dimensions" : "420 mm x 195 mm x 155 mm (16.5\" × 7.7\" × 6.1\")",
-         "Guitar Input" : "1/4\"",
-         "Line In" : "1/8\" stereo",
-         "Output" : "1/4\" balanced",
-         "Phones" : "1/8\" stereo",
+         "Guitar Input" : "1/4\" TS",
+         "Line In" : "1/8\" TRS",
+         "Output" : "1/4\" TRS x 2",
+         "Phones" : "1/8\" TRS",
          "Power Consumption" : "22 W",
          "Serial" : "T219990XZ",
          "Speaker" : "3.5\" (9 cm) x 2",
@@ -1162,7 +1162,7 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Connector" : "1/4\" stereo",
+         "Connector" : "1/4\" TRS",
          "Cord" : "11' (3.4 m) (OFC litz wire, left-side exit)",
          "Driver Diameter" : "40 mm",
          "Frequency Response" : "5 - 28000 Hz",
@@ -1188,7 +1188,7 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Connector" : "1/8\" stereo (gold-plated)",
+         "Connector" : "1/8\" TRS (gold-plated)",
          "Cord" : "Coiled 1-3 m long single-sided OFC litz cord",
          "Driver Diameter" : "40 mm",
          "Frequency Range" : "5 - 30000 Hz",
@@ -1259,7 +1259,7 @@ var equipment = [
          "Digital Outputs" : "TOSLINK, S/PDIF RCA coaxial",
          "Dimensions" : "1U",
          "MIDI" : "In/Out",
-         "Phones" : "1/4\" stereo",
+         "Phones" : "1/4\" TRS",
          "Sample Rates" : "44.1, 48, 88.2, 96 kHz",
          "Serial" : "8282153750",
          "Sync" : "In/Out, Word clock, ADAT sync, SMPTE I/O"
@@ -1280,8 +1280,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/8\" stereo"
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/8\" TRS"
       },
       "image" : true,
       "link" : "https://www.ikmultimedia.com/products/irig/",
@@ -1351,7 +1351,7 @@ var equipment = [
          "Digital Outputs" : "TOSLINK, S/PDIF RCA coaxial",
          "Dimensions" : "482 mm x 45 mm (1U) x 286 mm (19\" x 1.73\" (1U) x 11.26”)",
          "MIDI" : "In/Out",
-         "Phones" : "1/4\" stereo",
+         "Phones" : "1/4\" TRS",
          "Sample Rates" : "44.1, 48, 88.2, 96, 176.4, 192 kHz",
          "Serial" : "V96613100879",
          "Sync" : "Out, Word clock",
@@ -1380,7 +1380,7 @@ var equipment = [
          "Computer Interface" : "USB-C",
          "Converters" : "24-bit",
          "Dimensions" : "175 mm x 47.5 mm x 99 mm (6.89\" x 1.87\" x 3.89”)",
-         "Phones" : "1/4\" stereo",
+         "Phones" : "1/4\" TRS",
          "Sample Rates" : "44.1, 48, 88.2, 96, 176.4, 192 kHz",
          "Serial" : "Y8Y8R4X0CAB486",
          "Weight" : "470g (1.04lbs)"
@@ -1404,10 +1404,10 @@ var equipment = [
       "category" : "Hardware",
       "current_rack" : true,
       "detail" : {
-         "Analog Inputs" : "Stereo 1/4\" TRS balanced x 4, stereo RCA phono",
-         "Analog Outputs" : "Stereo 1/4\" TRS balanced x 8",
+         "Analog Inputs" : "1/4\" TRS stereo pairs x 4, stereo RCA phono",
+         "Analog Outputs" : "1/4\" TRS stereo pairs x 8",
          "Dimensions" : "3.2” x 13.5” x 5.9” (81 mm x 343 mm x 150 mm)",
-         "Phones" : "1/4\" stereo x 2",
+         "Phones" : "1/4\" TRS x 2",
          "Serial" : "2034070CWFU0456",
          "Weight" : "3.5 lbs (1.6 kg)"
       },
@@ -1427,13 +1427,13 @@ var equipment = [
       "current_rack" : true,
       "detail" : {
          "Amplifier" : "20W x 2",
-         "Analog Inputs" : "Stereo 1/4\", stereo RCA phono",
+         "Analog Inputs" : "1/4\" TS x 2, RCA phono x 2",
          "Converters" : "24-bit",
          "Digital Inputs" : "optical, coax",
          "Dimensions" : "170 mm x 261 mm x 280 mm (6 3/4\" x 10 5/16\" x 11 1/16”) x 2",
          "Frequency Range" : "50 - 22000 Hz",
          "Input Impedance" : "18 MΩ",
-         "Phones" : "1/4\" stereo",
+         "Phones" : "1/4\" TRS",
          "Sample Rates" : "32, 44.1, 48, 96 kHz",
          "Serial" : "ZR32193",
          "Speaker" : "12 cm (4 3/4”), 4 cm (1 5/8”)",
@@ -1478,8 +1478,8 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Amplifier" : "250 W x 2",
-         "Analog Inputs" : "XLR/TS combo x 4, stereo 1/4\" x 2, stereo RCA x 2",
-         "Analog Outputs" : "Stereo 1/4\" x 2, stereo RCA",
+         "Analog Inputs" : "XLR + 1/4\" TS combo x 4, 1/4\" TS stereo pair, RCA stereo pair, 1/4\" TS stereo pair + RCA stereo pair",
+         "Analog Outputs" : "1/4\" TRS stereo pairs x 2, RCA stereo pair",
          "Serial" : "HH01636",
          "Speaker" : "10\" (25 cm)"
       },
@@ -1655,8 +1655,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -1684,8 +1684,8 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Bypass" : "True",
          "Dimensions" : "3.65\" x 4.65\" x 1.2\"",
          "Original Purchase Date" : "2018",
@@ -1752,8 +1752,8 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Bypass" : "True",
          "Dimensions" : "2.5\" x 4.8\" x 1.5\"",
          "Frequency Response" : "20 - 20000 Hz @ -3 dB",
@@ -1790,7 +1790,7 @@ var equipment = [
          "Circuit" : "Analog",
          "DI Output" : "XLR balanced",
          "Dimensions" : "5.75\" x 4.75\" x 2.5\"",
-         "Direct Output" : "1/4\"",
+         "Direct Output" : "1/4\" TS",
          "Input Impedance" : "2 MΩ",
          "Output Impedance" : "600 Ω",
          "Power Consumption" : "15 mA",
@@ -1812,8 +1812,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -1841,8 +1841,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -1939,8 +1939,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -1968,13 +1968,13 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\" x 2, XLR, 1/4\" return x 4",
-         "Analog Outputs" : "1/4\" x 2, XLR x 2, 1/4\" send x4",
+         "Analog Inputs" : "1/4\" TS x 2, XLR, 1/4\" TS return x 4",
+         "Analog Outputs" : "1/4\" TS x 2, XLR x 2, 1/4\" TS send x4",
          "Computer Interface" : "USB-C, USB-A, NEXUS",
          "Dimensions" : "19.4\" x 10.1\" x 3\"",
          "Expression" : "1/4\" TRS x 2",
          "MIDI" : "In/Out+Thru",
-         "Phones" : "1/4\" stereo",
+         "Phones" : "1/4\" TRS",
          "Power Consumption" : "",
          "Power Supply" : "",
          "S/PDIF" : "In/Out",
@@ -2003,8 +2003,8 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
          "Power Consumption" : "64 mA",
          "Power Supply" : "9 V",
@@ -2150,8 +2150,8 @@ var equipment = [
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Bypass" : "Buffered",
          "Dimensions" : "2.6\" x 4.8\" x 1.6\"",
          "Note" : "Dual Power Supply",
@@ -2200,10 +2200,10 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Built By" : "Brian",
-         "Bypass" : "Buffered",
+         "Bypass" : "True",
          "Dimensions" : "3.7\" x 4.7\" x 1.66\"",
          "Power Consumption" : "10 mA",
          "Power Supply" : "9 V",
@@ -2226,10 +2226,10 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Built By" : "George",
-         "Bypass" : "Buffered",
+         "Bypass" : "True",
          "Dimensions" : "4.7\" x 3.7\" x 1.66\"",
          "Power Consumption" : "30 mA",
          "Power Supply" : "9 V",
@@ -2343,7 +2343,7 @@ var equipment = [
       "current_pedal" : true,
       "detail" : {
          "Analog Inputs" : "1/4\" TRS (return power for Variax on ring), 1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Outputs" : "1/4\" TS",
          "Bypass" : "True",
          "Controls" : "3-way power toggle (7.5 V/9 V/off), 2-way input toggle",
          "Dimensions" : "4\" x 2\" x .75\"",
@@ -2366,8 +2366,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -2392,8 +2392,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -2421,8 +2421,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
          "Audio Channels" : "Mono",
          "Bypass" : "True",
          "Circuit" : "Analog",
@@ -2795,8 +2795,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\", XLR balanced",
+         "Analog Inputs" : "1/4\" TRS",
+         "Analog Outputs" : "1/4\" TS, XLR balanced",
          "Power Consumption" : "2 A",
          "Power Supply" : "9 V"
       },
@@ -2810,8 +2810,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TRS",
+         "Analog Outputs" : "1/4\" TS",
          "Power Consumption" : "2 A",
          "Power Supply" : "9 V"
       },
@@ -2881,8 +2881,8 @@ var equipment = [
       "category" : "Hardware",
       "current_rack" : true,
       "detail" : {
-         "Analog Inputs" : "1/4\" x 3 (two channels)",
-         "Analog Outputs" : "1/4\"",
+         "Analog Inputs" : "1/4\" TS x 3 (two channels)",
+         "Analog Outputs" : "1/4\" TS",
          "Detection Accuracy" : "±0.1 cent",
          "Detection Range" : "A0 (27.5 Hz)–C8 (4186 Hz)",
          "Dimensions" : "18.94\" x 4.45\" x 1.81\"",
@@ -2932,8 +2932,8 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Analog Inputs" : "1/4\"",
-         "Analog Outputs" : "1/4\", 3,5mm, Vibe",
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS, 3.5mm, Vibe",
          "Beat Subdivisions" : "Over 100",
          "Beat Values" : "2, 4, 8, 16",
          "Beats Per Measure" : "1-19",
@@ -3078,12 +3078,12 @@ var equipment = [
       "category" : "Other Instruments",
       "detail" : {
          "Amplifier" : "20 W x 2",
-         "Analog Inputs" : "1/4\" x 2",
-         "Analog Outputs" : "1/4” x 2, RCA line-level x2",
+         "Analog Inputs" : "1/4\" TS x 2",
+         "Analog Outputs" : "1/4” TS x 2, RCA line-level x 2",
          "Dimensions" : "1370 mm x 518 mm x 850 mm (53 15/16\" x 20 3/8\" x 33 7/16\")",
          "Keys" : "88 (A1 - C7)",
          "MIDI" : "In/Out/Thru",
-         "Phones" : "1/4\" stereo x 2",
+         "Phones" : "1/4\" TRS x 2",
          "Polyphony" : "64 notes",
          "Serial" : "0606872",
          "Sound Source" : "AWM Stereo Sampling",
@@ -3109,7 +3109,7 @@ var equipment = [
          "Dimensions" : "945 mm x 370 mm x 128 mm (37-1/4\" x 14-5/8\" x 5-1/16”)",
          "Keys" : "66 (C1 - C6)",
          "MIDI" : "In/Out",
-         "Phones" : "1/4\" stereo",
+         "Phones" : "1/4\" TRS",
          "Polyphony" : "32 notes",
          "Power Consumption" : "10 W",
          "Serial" : "UBMJ03785",
@@ -3131,9 +3131,9 @@ var equipment = [
       "category" : "Other Instruments",
       "detail" : {
          "Battery" : "AAA x 3",
-         "Input" : "1/8\" stereo",
+         "Input" : "1/8\" TRS",
          "Keys" : "20 (switch position 1: A1-E3, 2: A2-E4, 3: A3-E5)",
-         "Phones" : "1/8\" stereo"
+         "Phones" : "1/8\" TRS"
       },
       "image" : true,
       "link" : "https://stylophone.com/product/stylophone-s-1/",
@@ -3209,7 +3209,7 @@ var equipment = [
          "Amplifier" : "5 W x 2",
          "Dimensions" : "558 mm x 355 mm x 174 mm (22\" x 14\" x 6 7/8\")",
          "MIDI" : "In/Out",
-         "Output" : "1/4\"",
+         "Output" : "1/4\" TRS stereo",
          "Power" : "12 V",
          "Serial" : "UZMK02847",
          "Speaker" : "8 cm x 2",
@@ -3603,15 +3603,16 @@ var equipment = [
          "Body Material" : "Mahogany",
          "Body Width" : "10.75\"",
          "Color" : "Mahogany",
-         "Electronics" : "Active preamp, volume/treble/bass, 1/8\" aux in, 1/8\" headphone out, tuner",
+         "Electronics" : "Active preamp, volume/treble/bass, tuner",
          "Fingerboard Material" : "Black Walnut",
          "Finish" : "Satin",
          "Fret Count" : "22",
          "Frets" : "Medium Profile",
-         "Inputs" : "1/8\" stereo",
+         "Inputs" : "1/8\" TRS",
          "Neck Material" : "Mahogany",
          "Neck Radius" : "9.5\"",
          "Neck Width at Nut" : "1.75\"",
+         "Outputs" : "1/4\" TS guitar, 1/8\" TRS phones",
          "Pickups" : "Shadow Nanoflex",
          "Scale Length" : "25.5\"",
          "Serial" : "M3-02910",
@@ -3649,15 +3650,16 @@ var equipment = [
          "Body Material" : "Mahogany",
          "Body Width" : "10.75\"",
          "Color" : "Black Satin",
-         "Electronics" : "Active preamp, volume/treble/bass, 1/8\" aux in, 1/8\" headphone out, tuner",
+         "Electronics" : "Active preamp, volume/treble/bass, tuner",
          "Fingerboard Material" : "Black Walnut",
          "Finish" : "Satin",
          "Fret Count" : "22",
          "Frets" : "Medium Profile",
-         "Inputs" : "1/8\" stereo",
+         "Inputs" : "1/8\" TRS",
          "Neck Material" : "Mahogany",
          "Neck Radius" : "9.5\"",
          "Neck Width at Nut" : "1.75\"",
+         "Outputs" : "1/4\" TS guitar, 1/8\" TRS phones",
          "Pickups" : "Shadow Nanoflex",
          "Scale Length" : "25.5\"",
          "Serial" : "M3-07576",
@@ -4146,15 +4148,16 @@ var equipment = [
          "Body Material" : "Carved Top Mahogany",
          "Body Width" : "10.5\"",
          "Color" : "Black",
-         "Electronics" : "Active preamp, volume/tone, 1/8\" aux in, 1/8\" headphone out, clean/boost/overdrive/distortion",
+         "Electronics" : "Active preamp, volume/tone, clean/boost/overdrive/distortion",
          "Fingerboard Material" : "Black Walnut",
          "Finish" : "Vintage Black Matte",
          "Fret Count" : "22",
          "Frets" : "Jumbo Profile",
-         "Inputs" : "1/8\" stereo",
+         "Inputs" : "1/8\" TRS",
          "Neck Material" : "Mahogany",
          "Neck Radius" : "15.75\"",
          "Neck Width at Nut" : "1.63\"",
+         "Outputs" : "1/4\" TS guitar, 1/8\" TRS phones",
          "Pickups" : "ESP ALH-200B Active Humbucker",
          "Scale Length" : "24.75\"",
          "Serial" : "LTD02455",
