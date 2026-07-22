@@ -143,7 +143,7 @@ function linkItCustom(oData) {
   if (!oData['custom']) {
     return ''
   }
-  return `<span class="custom" />†</span>`
+  return `<span class="custom" />𝄐</span>`
 }
 
 function linkItManuals(oData) {

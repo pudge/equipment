@@ -1,32 +1,6 @@
-var lastModified = new Date("2026-07-18T12:00:00+0000")
+var lastModified = new Date("2026-07-22T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
-   {
-      "category" : "Accessories",
-      "current_pedal" : true,
-      "detail" : {
-         "Dimensions" : "22mm x 11.5mm x 5.7mm (contact house)"
-      },
-      "image" : true,
-      "link" : "https://ebssweden.com/cables/hp-series/",
-      "make" : "EBS",
-      "model" : "HP Cables",
-      "notes" : [
-         "pedalboard"
-      ],
-      "type" : "Cables",
-      "year" : "2026"
-   },
-   {
-      "category" : "Accessories",
-      "hide" : true,
-      "image" : true,
-      "link" : "https://www.jimdunlop.com/mxr-3ft-patch-cable/",
-      "make" : "MXR",
-      "model" : "MXR Patch Cables",
-      "type" : "Cables",
-      "year" : "2026"
-   },
    {
       "category" : "Accessories",
       "detail" : {
@@ -55,6 +29,46 @@ var equipment = [
       "type" : "Cables",
       "year" : "2005",
       "year_uncertain" : true
+   },
+   {
+      "category" : "Accessories",
+      "current_pedal" : true,
+      "detail" : {
+         "Dimensions" : "22mm x 11.5mm x 5.7mm (contact house)"
+      },
+      "image" : true,
+      "link" : "https://ebssweden.com/cables/hp-series/",
+      "make" : "EBS",
+      "model" : "HP Cables",
+      "notes" : [
+         "pedalboard"
+      ],
+      "type" : "Cables",
+      "year" : "2026"
+   },
+   {
+      "category" : "Accessories",
+      "hide" : true,
+      "image" : true,
+      "link" : "https://www.jimdunlop.com/mxr-3ft-patch-cable/",
+      "make" : "MXR",
+      "model" : "MXR Patch Cables",
+      "type" : "Cables",
+      "year" : "2026"
+   },
+   {
+      "category" : "Accessories",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TRS",
+         "Analog Outputs" : "1/4\" TS x 2"
+      },
+      "image" : true,
+      "link" : "https://sweetfootpedals-com.3dcartstores.com/StereoTRS-to-Dual-MonoTS-Box--HANDMADE-IN-USA-_p_142.html",
+      "make" : "Sweet Foot",
+      "model" : "Stereo to Dual Mono",
+      "type" : "Cables",
+      "year" : "2026"
    },
    {
       "category" : "Accessories",
