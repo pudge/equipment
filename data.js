@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-07-22T12:00:00+0000")
+var lastModified = new Date("2026-08-01T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -886,64 +886,28 @@ var equipment = [
    {
       "category" : "Hardware",
       "detail" : {
-         "Amplifier" : "100 W",
+         "Amplifier" : "50 W",
          "Analog Inputs" : "1/4\" TS, 1/8\" TRS (aux), 1/4\" TRS (return)",
-         "Analog Outputs" : "XLR balanced, 1/8\" TRS (phones), 1/4\" TRS (send)",
-         "Dimensions" : "18.5\" x 16.5\" x 14\"",
-         "Input Impedance" : "1 MΩ",
-         "Output Impedance" : "3.3 kΩ",
-         "Return Impedance" : "22 kΩ",
-         "Send Impedance" : "1 kΩ",
-         "Serial" : "",
-         "Shape Filter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
-         "Speaker" : "12\" 8 Ω ceramic",
-         "Tone Controls" : "±15 dB @ 10 kHz (treble); ±12 dB @ 1.2 kHz (high-mid); ±12 dB @ 280 Hz (low-mid); ±15 dB @ 80 Hz (bass)",
-         "Weight" : "22 lbs"
+         "Analog Outputs" : "1/4\" TRS (phones), 1/4\" TRS (send)",
+         "Dimensions" : "16.93\" x 19.09\" x 10.83\"",
+         "Pad" : "-6 dB",
+         "Serial" : "37928-0426",
+         "Speaker" : "12\" 8 Ω",
+         "Tone Controls" : "Middle frequency 300 Hz-2.7 kHz",
+         "Weight" : "31.85 lbs"
       },
-      "hide" : true,
       "image" : true,
       "instrument" : "bass guitar",
-      "link" : "https://www.fender.com/products/rumble-100",
-      "make" : "Fender",
-      "manuals" : {
-         "OM_Rumble_40_100_200_500_US_5.pdf" : "Owner’s Manual"
-      },
-      "model" : "Rumble 100",
-      "next" : true,
-      "notes" : [
-         "bass guitar"
-      ],
-      "type" : "Amplifier",
-      "year" : "2026"
-   },
-   {
-      "category" : "Hardware",
-      "detail" : {
-         "Amplifier" : "40 W",
-         "Analog Inputs" : "1/4\" TS, 1/8\" TRS (aux)",
-         "Analog Outputs" : "XLR balanced, 1/8\" TRS (phones)",
-         "Dimensions" : "16.5\" x 16.5\" x 12\"",
-         "Input Impedance" : "1 MΩ",
-         "Output Impedance" : "3.3 kΩ",
-         "Serial" : "",
-         "Shape Filter" : "+13 dB @ 10 kHz (bright); ±2 dB @ 8 kHz, -13 dB @ 670 Hz, +1 dB @ 80 Hz (contour); dynamic compression (-9 dB mac) with low pass (-6 dB/oct) @ 4000 Hz (vintage)",
-         "Speaker" : "10\" 8 Ω ceramic",
-         "Tone Controls" : "±15 dB @ 10 kHz (treble); ±12 dB @ 1.2 kHz (high-mid); ±12 dB @ 280 Hz (low-mid); ±15 dB @ 80 Hz (bass)",
-         "Weight" : "18 lbs"
-      },
-      "hide" : true,
-      "image" : true,
-      "instrument" : "bass guitar",
-      "link" : "https://www.fender.com/products/rumble-40",
+      "link" : "https://orangeamps.com/en-us/products/crush-bass-50-combo",
       "main_rig" : true,
-      "make" : "Fender",
+      "make" : "Orange",
       "manuals" : {
-         "OM_Rumble_40_100_200_500_US_5.pdf" : "Owner’s Manual"
+         "Crush_Bass_50_-_Word_Manual_2025_V1.0_EN.pdf" : "Product Manual"
       },
-      "model" : "Rumble 40",
-      "next" : true,
+      "model" : "Crush Bass 50",
       "notes" : [
-         "bass guitar"
+         "bass guitar",
+         "FS-1 Mini Footswitch"
       ],
       "type" : "Amplifier",
       "year" : "2026"
@@ -1902,7 +1866,7 @@ var equipment = [
          "Depth" : "90 mm (3 9/16”)",
          "Height" : "43 mm (1 3/4”)",
          "Serial" : "GU 97541, ET 31580, HV 22318, GU 97537",
-         "Switch Jack" : "1/4\" TS output (latching, switch between normally closed and open)",
+         "Switch Jack" : "1/4\" TS output (momentary, switch between normally closed and open)",
          "Weight" : "240 g / 9 oz",
          "Width" : "96 mm (3 13/16”)"
       },
@@ -1910,9 +1874,6 @@ var equipment = [
       "link" : "https://www.boss.info/us/products/fs-5u_5l/",
       "make" : "BOSS",
       "model" : "FS-5U",
-      "notes" : [
-         "non-latching switch"
-      ],
       "type" : "Pedal",
       "year" : "2007"
    },
@@ -2249,7 +2210,7 @@ var equipment = [
          "Dimensions" : "4.7\" x 3.7\" x 1.66\"",
          "Power Consumption" : "30 mA",
          "Power Supply" : "9 V",
-         "Serial" : ""
+         "Serial" : "02836461"
       },
       "image" : true,
       "kids_pedal" : true,
@@ -2267,12 +2228,30 @@ var equipment = [
       "year" : "2026"
    },
    {
+      "bass_pedal" : true,
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "3.66\" x 1.5\" x 2.05\"",
+         "Serial" : "",
+         "Switch Jack" : "1/4\" TS output (latching, normally open)"
+      },
+      "image" : true,
+      "link" : "https://orangeamps.com/en-us/products/fs-1-mini-footswitch",
+      "make" : "Orange",
+      "model" : "FS-1 Mini Footswitch",
+      "notes" : [
+         "Crush Bass 50"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
          "Dimensions" : "2\" x 2\" x 1\"",
          "Part Number" : "Sw1-13L",
-         "Switch Jack" : "1/4\" TS output (momentary, normally closed)"
+         "Switch Jack" : "1/4\" TS output (latching, normally closed)"
       },
       "image" : true,
       "link" : "https://sweetfootpedals-com.3dcartstores.com/Footswitch-for-JHS-Red-Remote-Morning-Glory-V4-SuperBolt-V2-Twin-Rwelve-V2-Double-Barrel-V4-Switchback-Boss-Angry-Driver--HANDMADE-IN-USA_p_441.html",
@@ -2295,7 +2274,7 @@ var equipment = [
          "Bypass" : "True/Buffered",
          "Dimensions" : "4.88\" x 2.87\" x 2.36\"",
          "Expression" : "1/4\" TRS (EXP/CV)",
-         "MIDI" : "1/4\" TRS (or momentary, normally-open)",
+         "MIDI" : "1/4\" TRS (or momentary, normally open)",
          "Power Consumption" : "200 mA",
          "Power Supply" : "9 V",
          "Serial" : ""
@@ -4649,6 +4628,7 @@ var links = {
    "Mission Engineering" : "https://missionengineering.com/",
    "Northfield" : "https://www.northfieldinstruments.com/",
    "O.C. White" : "https://www.ocwhite.com/",
+   "Orange" : "https://orangeamps.com/",
    "Origin Effects" : "https://origineffects.com/",
    "Peavey" : "https://peavey.com/",
    "Pedalnetics" : "https://pedalnetics.com/",
