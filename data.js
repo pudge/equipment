@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-08-01T12:00:00+0000")
+var lastModified = new Date("2026-08-06T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1861,6 +1861,24 @@ var equipment = [
       "year" : "2015"
    },
    {
+      "bass_pedal" : true,
+      "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "3.66\" x 1.5\" x 2.05\"",
+         "Serial" : "",
+         "Switch Jack" : "1/4\" TS output (latching, normally open)"
+      },
+      "image" : true,
+      "link" : "https://orangeamps.com/en-us/products/fs-1-mini-footswitch",
+      "make" : "Orange",
+      "model" : "FS-1 Mini Footswitch",
+      "notes" : [
+         "Crush Bass 50"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
       "category" : "Hardware",
       "detail" : {
          "Depth" : "90 mm (3 9/16”)",
@@ -2228,24 +2246,6 @@ var equipment = [
       "year" : "2026"
    },
    {
-      "bass_pedal" : true,
-      "category" : "Hardware",
-      "detail" : {
-         "Dimensions" : "3.66\" x 1.5\" x 2.05\"",
-         "Serial" : "",
-         "Switch Jack" : "1/4\" TS output (latching, normally open)"
-      },
-      "image" : true,
-      "link" : "https://orangeamps.com/en-us/products/fs-1-mini-footswitch",
-      "make" : "Orange",
-      "model" : "FS-1 Mini Footswitch",
-      "notes" : [
-         "Crush Bass 50"
-      ],
-      "type" : "Pedal",
-      "year" : "2026"
-   },
-   {
       "category" : "Hardware",
       "current_pedal" : true,
       "detail" : {
@@ -2532,8 +2532,7 @@ var equipment = [
       "detail" : {
          "Power Consumption" : "710 mA/270 mA",
          "Power Supply" : "9 V/12 V",
-         "Remote" : "RF",
-         "Serial" : ""
+         "Remote" : "RF"
       },
       "image" : true,
       "link" : "https://www.templeaudio.com/accessories/rgb-lighting",
@@ -2550,7 +2549,6 @@ var equipment = [
          "Dimensions" : "28.2\" x 16.5\" x 1.5\" (front), 2.5\" (back)",
          "Material" : "Aluminum",
          "Mods" : "4X MOD, RGB MOD",
-         "Serial" : "",
          "Underside Clearance" : "1.25\" (front), 2.25\" (back)"
       },
       "image" : true,
