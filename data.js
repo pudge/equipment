@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-08-06T12:00:00+0000")
+var lastModified = new Date("2026-08-07T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1865,7 +1865,7 @@ var equipment = [
       "category" : "Hardware",
       "detail" : {
          "Dimensions" : "3.66\" x 1.5\" x 2.05\"",
-         "Serial" : "",
+         "Serial" : "(10)00469(11)251212",
          "Switch Jack" : "1/4\" TS output (latching, normally open)"
       },
       "image" : true,
@@ -1873,7 +1873,8 @@ var equipment = [
       "make" : "Orange",
       "model" : "FS-1 Mini Footswitch",
       "notes" : [
-         "Crush Bass 50"
+         "Crush Bass 50",
+         "blend toggle"
       ],
       "type" : "Pedal",
       "year" : "2026"
