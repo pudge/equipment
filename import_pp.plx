@@ -9,8 +9,13 @@ use HTML::TreeBuilder; # needed from CPAN
 
 our $MAX = 1_000_000;
 
-my(%found, %gear, $el_a, $el_z);
-my($input, $first, $last, $firstwidth) = @ARGV;
+my(%found, %gear, $el_a, $el_b, $el_z);
+my($input, $first, $first_top, $last, $firstwidth) = @ARGV;
+
+if (@ARGV == 4) {
+    ($input, $first, $first_top, $last, $firstwidth) =
+        ($input, $first, undef, $first_top, $last);
+}
 
 binmode(STDOUT, ':encoding(UTF-8)');
 
@@ -18,7 +23,8 @@ process_gear();
 create_map();
 
 sub create_map {
-    say((' ' x (4 * 4)) . "<!-- $0 \Q$first\E \Q$last\E $firstwidth -->");
+    my $note = $first_top ? "\Q$first\E \Q$first_top\E" : "\Q$first\E";
+    say((' ' x (4 * 4)) . "<!-- $0 $note \Q$last\E $firstwidth -->");
     for my $id (sort {
         $a eq $el_a
             ||
@@ -29,7 +35,7 @@ sub create_map {
         my $item = $gear{$id};
         printf(
             (' ' x (4 * 4)) .
-            qq[<area shape="rect" coords="%s,%s,%s,%s" alt="%s">\n],
+            qq[<area shape="rect" coords="%d,%d,%d,%d" alt="%s">\n],
                 $item->{left_s},
                 $item->{top_s},
                 $item->{left_s} + $item->{width_s},
@@ -57,17 +63,22 @@ sub process_gear {
 
     my($scale, $off_top, $off_left) = (1, 0, 0);
     if ($el_a) {
-        my $el = $gear{$el_a};
+        my $item    = $gear{$el_a};
         if ($firstwidth) {
-            $scale = $firstwidth / $el->{width};
+            $scale  = $firstwidth / $item->{width};
         }
-        $off_top  = $el->{top} * $scale - 32;
-        $off_left = $el->{left} * $scale - 32;
+        $off_top    = $scale * $item->{top}  - 32;
+        $off_left   = $scale * $item->{left} - 32;
+    }
+
+    if ($el_b) {
+        my $item    = $gear{$el_b};
+        $off_top    = $scale * $item->{top}  - 32;
     }
 
     my($Left, $Top, $Right, $Bottom) = (0, 0, $MAX, $MAX);
     for my $id (keys %gear) {
-        my $item = $gear{$id};
+        my $item    = $gear{$id};
         my $title   = $item->{title};
         my $top     = $scale * $item->{top} - $off_top;
         my $left    = $scale * $item->{left} - $off_left;
@@ -93,7 +104,7 @@ sub process_gear {
             right_s   => $right,
         );
 
-        if ($id eq $el_a || $id eq $el_z) {
+        if ($id eq $el_a || $id eq $el_b || $id eq $el_z) {
             $Top = $top if $top < $Top || $Top <= 0;
             $Left = $left if $left < $Left || $Left <= 0;
 
@@ -146,6 +157,9 @@ sub process_node {
 
     if (!$el_a && $title =~ /^\Q$first\E/) {
         $el_a = $id;
+    }
+    if (!$el_b && $title =~ /^\Q$first_top\E/) {
+        $el_b = $id;
     }
     if (!$el_z && $title =~ /^\Q$last\E/) {
         $el_z = $id;
