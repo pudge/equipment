@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-08-07T12:00:00+0000")
+var lastModified = new Date("2026-08-09T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -3396,7 +3396,8 @@ var equipment = [
       "make" : "Warwick",
       "model" : "RS 20861",
       "notes" : [
-         "guitar"
+         "guitar",
+         "5 guitars"
       ],
       "type" : "Instrument Stand",
       "year" : "2007"
@@ -3413,7 +3414,26 @@ var equipment = [
          "banjo",
          "mandolin"
       ],
-      "type" : "Instrument Stand"
+      "type" : "Instrument Stand",
+      "year" : "various"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar, banjo, mandolin",
+      "link" : "https://www.stringswing.com/swxrl-offer-3-in-1-sizes/",
+      "make" : "String Swing",
+      "model" : "SWXRL",
+      "notes" : [
+         "guitar",
+         "banjo",
+         "mandolin",
+         "copper",
+         "5 guitars",
+         "3 guitars"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2026"
    },
    {
       "category" : "Stands etc.",
