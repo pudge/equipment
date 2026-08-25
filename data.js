@@ -1,4 +1,4 @@
-var lastModified = new Date("2026-08-09T12:00:00+0000")
+var lastModified = new Date("2026-09-02T12:00:00+0000")
 var equipment_data = {}
 var equipment = [
    {
@@ -1075,6 +1075,22 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "detail" : {
+         "Dimensions" : "1.732\" x 0.245\" x 0.363\"",
+         "String Spacing" : "1.354\""
+      },
+      "image" : true,
+      "link" : "https://graphtech.com/products/tusq-nut-slotted-1-4-epiphone?variant=40524971606039",
+      "make" : "Graph Tech",
+      "model" : "Black TUSQ XL",
+      "notes" : [
+         "nut model 6060-00"
+      ],
+      "type" : "Guitar Accessory",
+      "year" : "2024"
+   },
+   {
+      "category" : "Hardware",
       "image" : true,
       "link" : "https://www.guyker.com/products/1-piece-metal-pure-copper-potentiometer-knob-inner-diameter-6mm-for-electric-guitar-or-bass-in-five-colors?variant=43538741166258",
       "make" : "Guyker",
@@ -1866,7 +1882,8 @@ var equipment = [
       "detail" : {
          "Dimensions" : "3.66\" x 1.5\" x 2.05\"",
          "Serial" : "(10)00469(11)251212",
-         "Switch Jack" : "1/4\" TS output (latching, normally open)"
+         "Switch Jack" : "1/4\" TS output (latching, normally open)",
+         "Weight" : "0.42 lbs"
       },
       "image" : true,
       "link" : "https://orangeamps.com/en-us/products/fs-1-mini-footswitch",
@@ -2317,10 +2334,8 @@ var equipment = [
          "Serial" : "X3L1S5937000703",
          "Weight" : "8.4 lbs"
       },
-      "featured" : true,
       "image" : true,
       "link" : "https://line6.com/legacy/podx3live",
-      "main_rig" : true,
       "make" : "Line 6",
       "manuals" : {
          "MIDI Continuous Controller Reference ( Rev F ).pdf" : "MIDI Continuous Controller Reference",
@@ -2417,6 +2432,64 @@ var equipment = [
    },
    {
       "category" : "Hardware",
+      "current_pedal" : true,
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Attack" : "1.7 ms to 0.020 ms",
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
+         "Circuit" : "Analog",
+         "Dimensions" : "93.5 mm x 42 mm x 52 mm",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "100 Ω",
+         "Power Consumption" : "80 mA/97 mA",
+         "Power Supply" : "9 V/18 V",
+         "Ratio" : "4:1 to 20:1",
+         "Release" : "267 ms to 32 ms",
+         "Serial" : "20240523",
+         "Weight" : "234 g"
+      },
+      "image" : true,
+      "link" : "https://www.sonicake.com/products/source-comp",
+      "make" : "Sonicake",
+      "manuals" : {
+         "SourceComp-User_Manual.jpg" : "User Manual"
+      },
+      "model" : "Source Comp",
+      "notes" : [
+         "1176-style compressor"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Audio Channels" : "Mono",
+         "Bypass" : "True",
+         "Circuit" : "Analog",
+         "Dimensions" : "3.38\" x 1.6\" x 1.02\"",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "1 kΩ",
+         "Power Consumption" : "7 mA",
+         "Power Supply" : "9 V",
+         "Speed" : "1Hz-25Hz"
+      },
+      "image" : true,
+      "kids_pedal" : true,
+      "make" : "Lanlison",
+      "model" : "Tremolo Mini",
+      "notes" : [
+         "tremolo"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
       "detail" : {
          "Analog Inputs" : "1/4\" TS",
          "Analog Outputs" : "1/4\" TS",
@@ -2486,14 +2559,45 @@ var equipment = [
       "bass_pedal" : true,
       "category" : "Hardware",
       "detail" : {
+         "Analog Inputs" : "1/4\" TS",
+         "Analog Outputs" : "1/4\" TS",
+         "Audio Channels" : "Mono",
+         "Bypass" : "Buffered",
+         "Circuit" : "Analog",
+         "Dimensions" : "148.5 mm x 65.5 mm x 61 mm",
+         "Input Impedance" : "1 MΩ",
+         "Output Impedance" : "100 Ω",
+         "Power Consumption" : "22 mA",
+         "Power Supply" : "9 V",
+         "Serial" : "62010053092",
+         "Weight" : "280 g"
+      },
+      "image" : true,
+      "link" : "https://www.sonicake.com/products/volwah",
+      "make" : "Sonicake",
+      "manuals" : {
+         "VolWah-User_Manual.jpg" : "User Manual"
+      },
+      "model" : "VolWah",
+      "notes" : [
+         "active volume",
+         "Crybaby-style wah"
+      ],
+      "type" : "Pedal",
+      "year" : "2026"
+   },
+   {
+      "category" : "Hardware",
+      "detail" : {
          "Dimensions" : "9.25\" x 2.76\" x 3.94\""
       },
       "image" : true,
+      "kids_pedal" : true,
       "link" : "https://www.quiklok.com/product/vp-2611-mono-volume-pedal/",
       "make" : "Quick-Lok",
       "model" : "VP-2611",
       "notes" : [
-         "volume"
+         "passive volume"
       ],
       "type" : "Pedal",
       "year" : "2016"
@@ -3421,6 +3525,21 @@ var equipment = [
       "category" : "Stands etc.",
       "image" : true,
       "instrument" : "guitar, banjo, mandolin",
+      "link" : "https://en.guittochina.com/Details/20.html",
+      "make" : "Guitto",
+      "model" : "GGS-01",
+      "notes" : [
+         "guitar",
+         "banjo",
+         "mandolin"
+      ],
+      "type" : "Instrument Stand",
+      "year" : "2024"
+   },
+   {
+      "category" : "Stands etc.",
+      "image" : true,
+      "instrument" : "guitar, banjo, mandolin",
       "link" : "https://www.stringswing.com/swxrl-offer-3-in-1-sizes/",
       "make" : "String Swing",
       "model" : "SWXRL",
@@ -3434,21 +3553,6 @@ var equipment = [
       ],
       "type" : "Instrument Stand",
       "year" : "2026"
-   },
-   {
-      "category" : "Stands etc.",
-      "image" : true,
-      "instrument" : "guitar, banjo, mandolin",
-      "link" : "https://en.guittochina.com/Details/20.html",
-      "make" : "Guitto",
-      "model" : "GGS-01",
-      "notes" : [
-         "guitar",
-         "banjo",
-         "mandolin"
-      ],
-      "type" : "Instrument Stand",
-      "year" : "2024"
    },
    {
       "category" : "Stands etc.",
@@ -4297,7 +4401,8 @@ var equipment = [
          "Killer 2710",
          "Stringlock",
          "Fat 50’s",
-         "CKB005"
+         "CKB005",
+         "Black TUSQ XL"
       ],
       "strings" : "EXL110",
       "type" : "Electric Guitar",
@@ -4586,7 +4691,7 @@ var links = {
    "Apple" : "https://www.apple.com/",
    "Audio Technica" : "https://www.audio-technica.com/en-us/",
    "BOSS" : "https://www.boss.info/us/",
-   "Barcus-Berry" : "",
+   "Barcus-Berry" : "https://kmconline.com/barcus-berry",
    "Beyer Dynamic" : "https://north-america.beyerdynamic.com/",
    "Blackstar" : "https://www.blackstaramps.com/",
    "Chase Bliss" : "https://www.chasebliss.com/",
@@ -4620,6 +4725,7 @@ var links = {
    "GHS" : "https://www.ghsstrings.com/",
    "Gator" : "https://www.gatorcases.com/",
    "Godtone" : "",
+   "Graph Tech" : "https://graphtech.com/",
    "Gretsch" : "https://www.gretschguitars.com/",
    "Guitto" : "https://en.guittochina.com/",
    "Guyker" : "https://www.guyker.com/",
@@ -4633,6 +4739,7 @@ var links = {
    "Kala" : "https://kalabrand.com/",
    "Kamoa" : "https://kamoaukuleles.myshopify.com/",
    "Korg" : "https://www.korg.com/",
+   "Lanlison" : "",
    "Levys" : "https://www.levysleathers.com/",
    "Line 6" : "https://line6.com/",
    "M-Audio" : "https://www.m-audio.com/",
@@ -4668,7 +4775,8 @@ var links = {
    "Shadow" : "https://shadowelectronics.com/",
    "Shubb" : "https://www.shubb.com/",
    "Shure" : "https://www.shure.com/",
-   "Snark" : "",
+   "Snark" : "https://www.snarktuners.com/",
+   "Sonicake" : "https://www.sonicake.com/",
    "Sony" : "https://www.sony.com/",
    "Sound Town" : "https://www.soundtown.com/",
    "Stageline" : "https://www.stagelinestands.com/",
